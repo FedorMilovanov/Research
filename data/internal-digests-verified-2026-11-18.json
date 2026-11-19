@@ -26,7 +26,16 @@
       "md5": 7,
       "sha1": 3,
       "sha256": 333
-    }
+    },
+    "unclaimedByReason": {
+      "labelled-no-path": 205,
+      "bare-hash": 141,
+      "short-digest-no-path": 95,
+      "artifact-not-in-tree": 59,
+      "media-segment": 12,
+      "corpus-digest": 2
+    },
+    "unclaimedDigestClaimedElsewhere": 11
   },
   "staleByFile": {
     "СЕРИЯ СЕРДЦЕ/V68_SINGLE_ZIP_MANIFEST.md": 7,
@@ -145,7 +154,8 @@
       "digest": "1f444991ecc2f180abdbe0f459148ba8dbf0a5045b1d8888e462683c78366c7d",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "corpus-digest"
     },
     {
       "file": "1_PETER_BOT/product_handoff/RELEASE_ASSESSMENT.md",
@@ -169,7 +179,8 @@
       "digest": "1f444991ecc2f180abdbe0f459148ba8dbf0a5045b1d8888e462683c78366c7d",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "corpus-digest"
     },
     {
       "file": "1_PETER_BOT/product_handoff/RELEASE_ASSESSMENT.md",
@@ -185,7 +196,8 @@
       "digest": "ceaa386b11edb3e4ae01971ab15e66a433952998",
       "algorithm": "sha1",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "1КОРИНФЯНАМ_11_ПОКРЫВАЛО/00ZZZZZZZZZZZZZZZZZZZZZZZZZZ_VISUAL_ARCHAEOLOGY_CAPITE_VELATO_LEDGER_2026-08-10.md",
@@ -193,7 +205,8 @@
       "digest": "5bd067867204a13353d3175fa2c704d60163359a",
       "algorithm": "sha1",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "1КОРИНФЯНАМ_11_ПОКРЫВАЛО/00ZZZZZZZZZZZZZZZZZZZZZZZZZZ_VISUAL_ARCHAEOLOGY_CAPITE_VELATO_LEDGER_2026-08-10.md",
@@ -201,7 +214,8 @@
       "digest": "0752c9a5dbd0269f8da48449e288a3c1e44abfc4",
       "algorithm": "sha1",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "1КОРИНФЯНАМ_11_ПОКРЫВАЛО/00ZZZ_OPEN_WEB_EXHAUSTION_AND_LATEST_EDITION_AUDIT_2026-08-10.md",
@@ -281,7 +295,8 @@
       "digest": "ceaa386b11edb3e4ae01971ab15e66a433952998",
       "algorithm": "sha1",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "1КОРИНФЯНАМ_11_ПОКРЫВАЛО/dossiers/PATRISTIC_PG_OCR_VERIFICATION_WORKFLOW.md",
@@ -289,7 +304,8 @@
       "digest": "db3109f7faf65140603eb488acf4491b55c0ecbc",
       "algorithm": "sha1",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "1КОРИНФЯНАМ_11_ПОКРЫВАЛО/dossiers/PATRISTIC_PG_OCR_VERIFICATION_WORKFLOW.md",
@@ -297,7 +313,8 @@
       "digest": "ceaa386b11edb3e4ae01971ab15e66a433952998",
       "algorithm": "sha1",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "APOSTASY/00_APOSTASY_BIBLICAL_THEOLOGY_DOSSIER.md",
@@ -385,7 +402,8 @@
       "digest": "da78c6e20275ec2c688c76688fb163833f98e09251ade104abe76733d7d2a45b",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "G3_HISTORY/ASSET_TRANSFER_AND_RIGHTS.md",
@@ -393,7 +411,8 @@
       "digest": "48846b93808c2ffcacac6dc1995fb7890a630ccef9f711fa8a27cd4445541ac2",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "G3_HISTORY/ASSET_TRANSFER_FORENSICS.md",
@@ -401,7 +420,8 @@
       "digest": "48846b93808c2ffcacac6dc1995fb7890a630ccef9f711fa8a27cd4445541ac2",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "G3_HISTORY/BUCK_ITEMS/10_TITUS_2_11_15_ORIGINAL_MEDIA_GATE_2026-09-08.md",
@@ -417,7 +437,8 @@
       "digest": "954041ea7b697ed98c27db8a852c8bb798db14ec44f69ec6e634046a2bd9729a",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "media-segment"
     },
     {
       "file": "G3_HISTORY/BUCK_ITEMS/11_ROMANS_7_1_6_SOURCE_SPECIFICITY.md",
@@ -425,7 +446,8 @@
       "digest": "f687a171bd039d090f0a08a56d5294f77f585cc3bc75fcc72cb7fbdd46a7f56e",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "media-segment"
     },
     {
       "file": "G3_HISTORY/BUCK_ITEMS/11_ROMANS_7_1_6_SOURCE_SPECIFICITY.md",
@@ -433,7 +455,8 @@
       "digest": "f09ad601f40d6da795245bdb8c550fa771cc78c4c5beefeaf0aa4f7b3c45d573",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "media-segment"
     },
     {
       "file": "G3_HISTORY/BUCK_ITEMS/11_ROMANS_7_1_6_SOURCE_SPECIFICITY.md",
@@ -441,7 +464,8 @@
       "digest": "b91e404bc0c250f329986dcc3d05bc3d108e0f49803df82d2b83f2a8e0dad36c",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "G3_HISTORY/BUCK_ITEMS/12_ROMANS_15_1_6_SOURCE_LINEAGE.md",
@@ -449,7 +473,8 @@
       "digest": "562f9de0af30d716dc9908a7d850ca37f9f4b1a1cfde35360794c5ed7e3e8753",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "media-segment"
     },
     {
       "file": "G3_HISTORY/BUCK_ITEMS/12_ROMANS_15_1_6_SOURCE_LINEAGE.md",
@@ -457,7 +482,8 @@
       "digest": "95c6ec79da2fb42c4d1f8323a91a7b7564f954dc149232ae45918fdc02a2a1dc",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "media-segment"
     },
     {
       "file": "G3_HISTORY/BUCK_ITEMS/12_ROMANS_15_1_6_SOURCE_LINEAGE.md",
@@ -465,7 +491,8 @@
       "digest": "9c2ef3af0768894142ecdc8094c45258573e32199909704a96ae556f290d136d",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "G3_HISTORY/BUCK_ITEMS/13_ROMANS_16_25_27_SOURCE_SPECIFICITY.md",
@@ -489,7 +516,8 @@
       "digest": "98a2ec5c8870289988b211f43ab0be75002d8f7aa7f02d5b413ed4a34d7fc0fb",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "G3_HISTORY/BUCK_ITEMS/14_JOSHUA_1_1_9_STRUCTURE_SPECIFICITY.md",
@@ -513,7 +541,8 @@
       "digest": "06bfa49f0a42745bac44a0aebe98a6533d10fe24bf9336d70bfeec1868c62df6",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "G3_HISTORY/BUCK_ITEMS/15_JOSHUA_2_1_24_SOURCE_OBJECT_AND_SPECIFICITY.md",
@@ -537,7 +566,8 @@
       "digest": "a0e579732a9251fde2d02563df994e9e6943177c738cb010674f9812fb0f706b",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "G3_HISTORY/BUCK_ITEMS/16_JOSHUA_3_1_17_SOURCE_LINEAGE.md",
@@ -561,7 +591,8 @@
       "digest": "e0f601f4c9168d0d05ae4ca3afbe567ff3a1f15d31565b171eda486f9b86c399",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "G3_HISTORY/BUCK_ITEMS/17_JOSHUA_4_1_24_MEMORY_PHRASE.md",
@@ -585,7 +616,8 @@
       "digest": "c336c6962b56a908fec6e53993f3eeee35e232f89524d58f07f6664a0f7c9422",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "G3_HISTORY/CONTENT_CENSUS_ACQUISITION_STATUS_2026-09-08.md",
@@ -609,7 +641,8 @@
       "digest": "9e476dcb497229f005c72e6ad6f9a313a96e41b70788b82182e8935b98ee1e37",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "G3_HISTORY/DIRECTOR_TRANSITION_FORENSICS_2025.md",
@@ -737,7 +770,8 @@
       "digest": "954041ea7b697ed98c27db8a852c8bb798db14ec44f69ec6e634046a2bd9729a",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "media-segment"
     },
     {
       "file": "G3_HISTORY/EVIDENCE_BATCH_2026-09-08_PASS20.md",
@@ -769,7 +803,8 @@
       "digest": "47297b27f9818dd24059851c0c6210b407c4637816a29b99d18fc68f77afb7f5",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "G3_HISTORY/EVIDENCE_BATCH_2026-09-08_PASS21.md",
@@ -777,7 +812,8 @@
       "digest": "50fd012bf5a1da802f3eeed16d31a85fafdfc37bb247a8b9b011646f871632bf",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "G3_HISTORY/EVIDENCE_BATCH_2026-09-08_PASS22.md",
@@ -793,7 +829,8 @@
       "digest": "b91e404bc0c250f329986dcc3d05bc3d108e0f49803df82d2b83f2a8e0dad36c",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "G3_HISTORY/EVIDENCE_BATCH_2026-09-08_PASS22.md",
@@ -801,7 +838,8 @@
       "digest": "9c2ef3af0768894142ecdc8094c45258573e32199909704a96ae556f290d136d",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "G3_HISTORY/EVIDENCE_BATCH_2026-09-08_PASS22.md",
@@ -809,7 +847,8 @@
       "digest": "98a2ec5c8870289988b211f43ab0be75002d8f7aa7f02d5b413ed4a34d7fc0fb",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "G3_HISTORY/EVIDENCE_BATCH_2026-09-08_PASS22.md",
@@ -817,7 +856,8 @@
       "digest": "06bfa49f0a42745bac44a0aebe98a6533d10fe24bf9336d70bfeec1868c62df6",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "G3_HISTORY/EVIDENCE_BATCH_2026-09-08_PASS22.md",
@@ -825,7 +865,8 @@
       "digest": "a0e579732a9251fde2d02563df994e9e6943177c738cb010674f9812fb0f706b",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "G3_HISTORY/EVIDENCE_BATCH_2026-09-08_PASS22.md",
@@ -833,7 +874,8 @@
       "digest": "e0f601f4c9168d0d05ae4ca3afbe567ff3a1f15d31565b171eda486f9b86c399",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "G3_HISTORY/EVIDENCE_BATCH_2026-09-08_PASS22.md",
@@ -841,7 +883,8 @@
       "digest": "c336c6962b56a908fec6e53993f3eeee35e232f89524d58f07f6664a0f7c9422",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "G3_HISTORY/EVIDENCE_BATCH_2026-09-08_PASS23.md",
@@ -881,7 +924,8 @@
       "digest": "0b8063f380651affb9ec1ec101dcb9c4ef7e13492b13ec2638958d232f2ac6b3",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "G3_HISTORY/EVIDENCE_BATCH_2026-09-09_PASS24.md",
@@ -921,7 +965,8 @@
       "digest": "c8eb0baa2265eadef2b6798c68868f91f8fde6ca9fbffe40e138877df92ce5c0",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "G3_HISTORY/FINANCES.md",
@@ -929,7 +974,8 @@
       "digest": "c14f511cf66051b916748440594586b4db1ecdb0d07ab14ef05e01e92524aca3",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "G3_HISTORY/FINANCES.md",
@@ -937,7 +983,8 @@
       "digest": "48846b93808c2ffcacac6dc1995fb7890a630ccef9f711fa8a27cd4445541ac2",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "G3_HISTORY/FINANCIAL_FORENSICS_2023.md",
@@ -945,7 +992,8 @@
       "digest": "c8eb0baa2265eadef2b6798c68868f91f8fde6ca9fbffe40e138877df92ce5c0",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "G3_HISTORY/FINANCIAL_FORENSICS_2023.md",
@@ -961,7 +1009,8 @@
       "digest": "678b391e948adb6090107435369e175cf2694c69705e107f13be6befe361bc03",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "G3_HISTORY/GOVERNANCE.md",
@@ -969,7 +1018,8 @@
       "digest": "a946cafd2e02252ebbf83deb19ee59015ca1a808cb7a214b85fb3468f71b5865",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "G3_HISTORY/GOVERNANCE.md",
@@ -977,7 +1027,8 @@
       "digest": "30908b37854208516bc7681d8a33e089e1335e611cc1c3fc9bcc8314250b5dd7",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "G3_HISTORY/IRS_RAW_XML_ACQUISITION_GATE.md",
@@ -993,7 +1044,8 @@
       "digest": "c8eb0baa2265eadef2b6798c68868f91f8fde6ca9fbffe40e138877df92ce5c0",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "G3_HISTORY/IRS_RAW_XML_ACQUISITION_GATE.md",
@@ -1001,7 +1053,8 @@
       "digest": "c14f511cf66051b916748440594586b4db1ecdb0d07ab14ef05e01e92524aca3",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "G3_HISTORY/IRS_RAW_XML_ACQUISITION_GATE.md",
@@ -1009,7 +1062,8 @@
       "digest": "48846b93808c2ffcacac6dc1995fb7890a630ccef9f711fa8a27cd4445541ac2",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "G3_HISTORY/IRS_RAW_XML_ACQUISITION_GATE.md",
@@ -1033,7 +1087,8 @@
       "digest": "c8eb0baa2265eadef2b6798c68868f91f8fde6ca9fbffe40e138877df92ce5c0",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "G3_HISTORY/P0_CLOSURE_CHECKPOINT_2026-09-08.md",
@@ -1041,7 +1096,8 @@
       "digest": "c14f511cf66051b916748440594586b4db1ecdb0d07ab14ef05e01e92524aca3",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "G3_HISTORY/P0_CLOSURE_CHECKPOINT_2026-09-08.md",
@@ -1049,7 +1105,8 @@
       "digest": "48846b93808c2ffcacac6dc1995fb7890a630ccef9f711fa8a27cd4445541ac2",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "G3_HISTORY/PRODUCT_HANDOFF_G3_DOSSIER_2026-09-09.md",
@@ -1073,7 +1130,8 @@
       "digest": "48846b93808c2ffcacac6dc1995fb7890a630ccef9f711fa8a27cd4445541ac2",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "G3_HISTORY/Q004_FY2025_IRS_INTERNAL_PRESIDENCY_DATE_CONFLICT_2026-09-09.md",
@@ -1081,7 +1139,8 @@
       "digest": "002b35b94360a14d48581e31125c555922bed5b47c23ed5463651cdca5358e7f",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "G3_HISTORY/README.md",
@@ -1113,7 +1172,8 @@
       "digest": "95320cc56c678fcacf4f24985f96150c231b1d91338349c19005e277b16125dd",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "LE_CANON_SUCRE/00_CURRENT_AUTHORITY.md",
@@ -1305,7 +1365,8 @@
       "digest": "3d33eb3691dd18f0109028cf1c2c51bb71e21b882dfddfff4393438311498c1c",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "RUSSIAN_BAPTISTS_ARCHIVE/00_CURRENT_AUTHORITY_2026-08-02.md",
@@ -1313,7 +1374,8 @@
       "digest": "6d23e500ef19dc457d2f23c06b695ea95e2670759558e0419847022ccc969cc9",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "RUSSIAN_BAPTISTS_ARCHIVE/00_CURRENT_AUTHORITY_2026-08-02.md",
@@ -1321,7 +1383,8 @@
       "digest": "7c9674b65e15bf76c1833ba0b99b4d735e2c9f3f268351af17f8206516003327",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "RUSSIAN_BAPTISTS_ARCHIVE/00_CURRENT_AUTHORITY_2026-08-02.md",
@@ -1329,7 +1392,8 @@
       "digest": "c6ef11f8b2fef460bcc083709e0a74fcc6c29a70c353ac73fbff0907126cb8a0",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "RUSSIAN_BAPTISTS_ARCHIVE/00_CURRENT_AUTHORITY_2026-08-02.md",
@@ -1337,7 +1401,8 @@
       "digest": "0d54f0c2157e76f621bf2fd65137386ae538a792516c473703179bc3127fba73",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "RUSSIAN_BAPTISTS_ARCHIVE/00_CURRENT_AUTHORITY_2026-08-02.md",
@@ -1361,7 +1426,8 @@
       "digest": "0d54f0c2157e76f621bf2fd65137386ae538a792516c473703179bc3127fba73",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "RUSSIAN_BAPTISTS_ARCHIVE/BAPTIST_1909_NO11_MAZAEV_VISUAL_CLOSURE_2026-08-02.md",
@@ -1433,7 +1499,8 @@
       "digest": "6f908b8ca33dfbb95b503bba1d57c8cfcbd367209075c85310350c289e1d27b0",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "RUSSIAN_BAPTISTS_ARCHIVE/BRATSKY_LISTOK_1906_1910_RESEARCH_LEDGER_2026-07-31.md",
@@ -1441,7 +1508,8 @@
       "digest": "540fd2b98e2ca2bc082e0274de6a9666a18eebc006384aa8f6463286f82c59ba",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "RUSSIAN_BAPTISTS_ARCHIVE/BRATSKY_LISTOK_PUBLICATION_AUTHORITY_2026-08-01.md",
@@ -1457,7 +1525,8 @@
       "digest": "6f908b8ca33dfbb95b503bba1d57c8cfcbd367209075c85310350c289e1d27b0",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "RUSSIAN_BAPTISTS_ARCHIVE/MASTER_STATUS_2026-07-31.md",
@@ -1465,7 +1534,8 @@
       "digest": "540fd2b98e2ca2bc082e0274de6a9666a18eebc006384aa8f6463286f82c59ba",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "RUSSIAN_BAPTISTS_ARCHIVE/MOSCOW_COMMUNITY_1923_DERIVATIVE_CLASSIFICATION_2026-08-02.md",
@@ -1473,7 +1543,8 @@
       "digest": "c6ef11f8b2fef460bcc083709e0a74fcc6c29a70c353ac73fbff0907126cb8a0",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "RUSSIAN_BAPTISTS_ARCHIVE/NEXT_ACTIONS.md",
@@ -1481,7 +1552,8 @@
       "digest": "2108ab5c80b26a64fae96d97fb6e8a0a9d9e5908",
       "algorithm": "sha1",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "RUSSIAN_BAPTISTS_ARCHIVE/SHILOV_LENIN_1919_DERIVATIVE_CLASSIFICATION_2026-08-02.md",
@@ -1489,7 +1561,8 @@
       "digest": "7c9674b65e15bf76c1833ba0b99b4d735e2c9f3f268351af17f8206516003327",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "RUSSIAN_BAPTISTS_ARCHIVE/TELEGRAM_REEXPORT_BRATSKY_LISTOK_15_INSTRUCTION_2026-07-31.md",
@@ -1497,7 +1570,8 @@
       "digest": "6f908b8ca33dfbb95b503bba1d57c8cfcbd367209075c85310350c289e1d27b0",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "RUSSIAN_BAPTISTS_ARCHIVE/TELEGRAM_REEXPORT_BRATSKY_LISTOK_15_INSTRUCTION_2026-07-31.md",
@@ -1505,7 +1579,8 @@
       "digest": "540fd2b98e2ca2bc082e0274de6a9666a18eebc006384aa8f6463286f82c59ba",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "SOURCE_LIBRARY/TOTAL_SOURCE_AUDIT_CLOSEOUT_2026-07-30.md",
@@ -1521,7 +1596,8 @@
       "digest": "b86d26cdb1f51729e73b5b4eb7f7ccadc5dfba39",
       "algorithm": "sha1",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "SOURCE_LIBRARY/TOTAL_SOURCE_AUDIT_CLOSEOUT_2026-07-30.md",
@@ -1529,7 +1605,8 @@
       "digest": "6845fa9660c62301a0eec38c009ca34ef82647a9737529d8c56ac45d35182df0",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "SOURCE_LIBRARY/TOTAL_SOURCE_AUDIT_CLOSEOUT_2026-07-30.md",
@@ -1545,7 +1622,8 @@
       "digest": "3d15126fb1ef74867fc1434be1942e837932691f",
       "algorithm": "sha1",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "SOURCE_LIBRARY/TOTAL_SOURCE_AUDIT_CLOSEOUT_2026-07-30.md",
@@ -1553,7 +1631,8 @@
       "digest": "f56c150708b5d74719ecb709c712c31eae9855bca7b111fd82ec91b5d177b4c7",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "SOURCE_LIBRARY/TOTAL_SOURCE_AUDIT_CLOSEOUT_2026-07-30.md",
@@ -1569,7 +1648,8 @@
       "digest": "c4d241a9c1c479a55b989ba35a4976c1d0b8052c",
       "algorithm": "sha1",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "SOURCE_LIBRARY/TOTAL_SOURCE_AUDIT_CLOSEOUT_2026-07-30.md",
@@ -1577,7 +1657,8 @@
       "digest": "4fc2659ce10ec6f57552f22e039de927ed3e417c7b5a757f34f05dae530e4c0f",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "STEVE_LAWSON/01_EVIDENCE_DOSSIER_2024_2026.md",
@@ -1585,7 +1666,8 @@
       "digest": "24162964450f397b43663b7674d80965557c23ff6a4265cee3131cfb24ada4dc",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "STEVE_LAWSON/02_SOURCE_LEDGER_2026-09-27.md",
@@ -1593,7 +1675,8 @@
       "digest": "24162964450f397b43663b7674d80965557c23ff6a4265cee3131cfb24ada4dc",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "media-segment"
     },
     {
       "file": "STEVE_LAWSON/02_SOURCE_LEDGER_2026-09-27.md",
@@ -1625,7 +1708,8 @@
       "digest": "24162964450f397b43663b7674d80965557c23ff6a4265cee3131cfb24ada4dc",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "STEVE_LAWSON/06_PRIMARY_OBJECT_AND_STATUS_AUDIT_2026-09-27.md",
@@ -1633,7 +1717,8 @@
       "digest": "195a8c44acc9383b6fc04f27eaef353839d8bfaf8046b3d36bdc34f5de696595",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "STEVE_LAWSON/06_PRIMARY_OBJECT_AND_STATUS_AUDIT_2026-09-27.md",
@@ -1665,7 +1750,8 @@
       "digest": "5fbac8e8bcaae69eb0d3a06066ae3b8c2b6fa4b5676f42402e171595cc03f49e",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "STEVE_LAWSON/09_LONDON_2023_QA_ADDENDUM_2026-09-27.md",
@@ -1673,7 +1759,8 @@
       "digest": "4b0d69d8b0cc6d7a732e74d8fbfd19b61c4d5b59c9bc785a2b73de262d86c90c",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "media-segment"
     },
     {
       "file": "STEVE_LAWSON/09_LONDON_2023_QA_ADDENDUM_2026-09-27.md",
@@ -1681,7 +1768,8 @@
       "digest": "6e690e07e92c8cf8b8fef1365df8fb12a0277b6309bf1058c5118d8fcb8b08c5",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "media-segment"
     },
     {
       "file": "STEVE_LAWSON/09_LONDON_2023_QA_ADDENDUM_2026-09-27.md",
@@ -1689,7 +1777,8 @@
       "digest": "6c9681093d756ddcd77af2b30e25efd98ebecf50f09f1bdbd6c70b98666f6415",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "media-segment"
     },
     {
       "file": "STEVE_LAWSON/09_LONDON_2023_QA_ADDENDUM_2026-09-27.md",
@@ -1697,7 +1786,8 @@
       "digest": "e3f773f6bc626d9c17b00a6fa046274061c0574f9fa88eee8a06c4540d0e0e82",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "STEVE_LAWSON/09_LONDON_2023_QA_ADDENDUM_2026-09-27.md",
@@ -1705,7 +1795,8 @@
       "digest": "6c9681093d756ddcd77af2b30e25efd98ebecf50f09f1bdbd6c70b98666f6415",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "STEVE_LAWSON/10_BOOK_SAMPLE_PAGES_ADDENDUM_2026-09-27.md",
@@ -1729,7 +1820,8 @@
       "digest": "f47c184e4cede5d9564cf3521e5c4a70a7e4c76fb3645dd33c51224a69cec610",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "STEVE_LAWSON/10_BOOK_SAMPLE_PAGES_ADDENDUM_2026-09-27.md",
@@ -1737,7 +1829,8 @@
       "digest": "efa25c7758eeb1a89398ea07d42ac8a3aa6d960aac8fb0e8b8294c3409d735ee",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "STEVE_LAWSON/10_BOOK_SAMPLE_PAGES_ADDENDUM_2026-09-27.md",
@@ -1745,7 +1838,8 @@
       "digest": "cae843c86888a4bb98cb13e55a90736fbe101360c932ab850a9aee1538d19502",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "STEVE_LAWSON/23_NASHVILLE_ACCOUNTABILITY_CHAIN_AUDIT_2026-09-29.md",
@@ -1929,7 +2023,8 @@
       "digest": "8049e9a7f7de2f32e827e8bd393b906b4983be8e35e3e99dacfd198f0e8fb776",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "STEVE_LAWSON/87_NOV2026_ELDERS_LETTER_SOURCE_DEPENDENCY_AND_RESTORATION_SCOPE_2026-11-13.md",
@@ -2001,7 +2096,8 @@
       "digest": "24162964450f397b43663b7674d80965557c23ff6a4265cee3131cfb24ada4dc",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "media-segment"
     },
     {
       "file": "STEVE_LAWSON/_START_HERE.md",
@@ -2017,7 +2113,8 @@
       "digest": "493cf7c0e5607e7045f834616e84002614f8930ac2287ee46b7ff0fd4bbc27c7",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "STEVE_LAWSON/assets/README.md",
@@ -2025,7 +2122,8 @@
       "digest": "94471b83d377a0ec5bd3cabdf3fa773af46d4ecc0d88c7f3fc90d1cfebf5e6dd",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "SUNO_HYMNS/RESEARCH/DOSSIER_PHOS-002_PART5_PLATE_AND_CORPUS.md",
@@ -2317,7 +2415,8 @@
       "digest": "c302ce4b7ffed7289fdf432ac9e43915dde9ca2cbb04911c69cc9caeda31a00b",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "apostasy/58_ACTS_7_EXACT_LOCATOR_SUPPLEMENT_2026-09-30.md",
@@ -2421,7 +2520,8 @@
       "digest": "bbd079b9fd4b0dbf53f0c291af3ed47f3cad6381",
       "algorithm": "sha1",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "data/1cor11-fee-1987-spanish-user-acquisition-2026-08-11.md",
@@ -2429,7 +2529,8 @@
       "digest": "fa21ab766537b80c3f52e0de16fa4398ccb8bcfd4971c8b2b2344c707a6755df",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "docs/research/arena/AGENT4_DOGMATICS_SYNTHESIS_WAVES_1_7_2026-11-15.md",
@@ -2477,7 +2578,9 @@
       "digest": "9c42c595dfb080a6f46c768e3a16c7df08d2778cc75273f44d5331fc76d99cc8",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path",
+      "sameDigestClaimedElsewhere": true
     },
     {
       "file": "docs/research/atonement/19_veiled_arminianism_and_imputation_critique.md",
@@ -2493,7 +2596,9 @@
       "digest": "9c42c595dfb080a6f46c768e3a16c7df08d2778cc75273f44d5331fc76d99cc8",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree",
+      "sameDigestClaimedElsewhere": true
     },
     {
       "file": "docs/research/atonement/26_unattributed_sources_and_baxterian_dependence.md",
@@ -2509,7 +2614,8 @@
       "digest": "d7c7519ddbe845110c50793450dccf980f38783ef757c337c83ea1c71f99bea8",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "docs/research/atonement/35_four_point_authors_mass_registry.md",
@@ -2517,7 +2623,8 @@
       "digest": "8e8bfbbbb22df1037ea928e03f7e7c93",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "docs/research/atonement/35_four_point_authors_mass_registry.md",
@@ -2525,7 +2632,8 @@
       "digest": "a7a0593f80b85705fe6e59d36242cfca",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "docs/research/atonement/THEMATIC_TAXONOMY_AND_SYNTHESIS.md",
@@ -2533,7 +2641,8 @@
       "digest": "d7c7519ddbe845110c50793450dccf980f38783ef757c337c83ea1c71f99bea8",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "docs/research/reformation/02_open_primary_sources_and_reading.md",
@@ -2541,7 +2650,8 @@
       "digest": "8554aa33cefb137e642ebba362e4bd9412da807e5efcc4318a99993d5a6c6edc",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "docs/research/reformation/02_open_primary_sources_and_reading.md",
@@ -2573,7 +2683,8 @@
       "digest": "6f7aa50455a95566c82328dc24f42907018ff6c882564a2da46cfcad2f1fe19f",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "docs/research/reformation/03_claim_verification_register.md",
@@ -2637,7 +2748,8 @@
       "digest": "8f33def301bedd6614bf3e502781818540a6571f708f08df0b2ebcf90a326144",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "media-segment"
     },
     {
       "file": "docs/research/reformation/03_claim_verification_register.md",
@@ -2729,7 +2841,8 @@
       "digest": "3331c5863552131a3f3ad779bae0613b7651f499ed68fee40c8980a340ef77fa",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "docs/research/reformation/06_primary_source_collation_2026-11-04.md",
@@ -2737,7 +2850,8 @@
       "digest": "3331c5863552131a3f3ad779bae0613b7651f499ed68fee40c8980a340ef77fa",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "docs/research/reformation/09_france_confession_nantes_source_study.md",
@@ -2769,7 +2883,9 @@
       "digest": "e80ae4159427ecb0034f5b98b914f59442abf6af38783575425560efe7e8fc33",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree",
+      "sameDigestClaimedElsewhere": true
     },
     {
       "file": "docs/research/reformation/11_schleitheim_1527_original_iiif_audit.md",
@@ -2813,7 +2929,8 @@
       "digest": "f0dbcab8b6af238360f78ed11b09bb154fb763e4c8e3064ddd0c07fa760b1279",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "docs/research/reformation/11_schleitheim_1527_original_iiif_audit.md",
@@ -2821,7 +2938,8 @@
       "digest": "2a5cd18abf943f24b2e8c865a276534b26e9b283c09fbd3d8f00b83b9a932b32",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "docs/research/reformation/11_schleitheim_1527_original_iiif_audit.md",
@@ -2853,7 +2971,8 @@
       "digest": "2b7bd600f28d1805a46d2d3b577c6f01dbbd2b21a7e70caa8ead518c037edb4f",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "docs/research/reformation/12_worms_1521_speech_edict_source_dossier.md",
@@ -2875,7 +2994,8 @@
       "digest": "fc65a7e41da0daba033dd151c611132ecfa0e335477e22e065234f2eca7202ca",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "docs/research/reformation/12_worms_1521_speech_edict_source_dossier.md",
@@ -2883,7 +3003,8 @@
       "digest": "9f2ce265b268174454df83a65647d6863c6f1e5332b5a47339f9aaef17bad9c0",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "docs/research/reformation/12_worms_1521_speech_edict_source_dossier.md",
@@ -2891,7 +3012,8 @@
       "digest": "c85ba0f11b3de3c56091032c057f649ed4fe3ebf18ce273c47a1b46546d04316",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "docs/research/reformation/12_worms_1521_speech_edict_source_dossier.md",
@@ -2899,7 +3021,8 @@
       "digest": "c875be511e67cea417d2f16ac5b595fd7f041e38fef5cfdd3190e8086072f615",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "docs/research/reformation/12_worms_1521_speech_edict_source_dossier.md",
@@ -2907,7 +3030,8 @@
       "digest": "06f2453a6b055ef0d8900d98910338cf50dd8cfe43d04f597129fbc0d1f94c72",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "docs/research/reformation/12_worms_1521_speech_edict_source_dossier.md",
@@ -2915,7 +3039,8 @@
       "digest": "f762fb6261c45a2031cda9b602ceb13ce0c329b1a7ed0587d05a6487be78e383",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "docs/research/reformation/12_worms_1521_speech_edict_source_dossier.md",
@@ -2923,7 +3048,8 @@
       "digest": "7744574be57fb5de638612553662066659f94bf6ab1f23758f7b30168a091788",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "docs/research/reformation/12_worms_1521_speech_edict_source_dossier.md",
@@ -2931,7 +3057,8 @@
       "digest": "56c3e7c8456f746b7641995d9f85a67cd910711c8688a98a1a64dba8ffd03dbb",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "docs/research/reformation/12_worms_1521_speech_edict_source_dossier.md",
@@ -2939,7 +3066,8 @@
       "digest": "7c66c9a38b95078072fcd03185865cb68b94a73a07c165437e2a714f89181def",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "docs/research/reformation/12_worms_1521_speech_edict_source_dossier.md",
@@ -2947,7 +3075,8 @@
       "digest": "8135bce780447c78bc63c5d6b917260b94dbb78050da597e9c85a693a6f54da4",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "docs/research/reformation/12_worms_1521_speech_edict_source_dossier.md",
@@ -2955,7 +3084,8 @@
       "digest": "6211b4ef0c91287b2c616897cd2f158909a692b8c65dedb2edf123435301ce9e",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "docs/research/reformation/12_worms_1521_speech_edict_source_dossier.md",
@@ -2963,7 +3093,8 @@
       "digest": "9139d864063b8b21f37fb74c6e7c0e82e59f1ae631c22961c8c81f01c5c1cd97",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "docs/research/reformation/12_worms_1521_speech_edict_source_dossier.md",
@@ -2971,7 +3102,8 @@
       "digest": "af65ab1af979d3186f8d8352c98494ff06781602c3c0a8706f0c99df6ffed9a6",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "docs/research/reformation/12_worms_1521_speech_edict_source_dossier.md",
@@ -2979,7 +3111,8 @@
       "digest": "6ce0ac28cc69f1920230d62efd0c30fae3d4568fc7c9aadd28ef7bc846b57fd7",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "docs/research/reformation/12_worms_1521_speech_edict_source_dossier.md",
@@ -2987,7 +3120,8 @@
       "digest": "6f77a837fdb776ca246b52a942a44be3031fdc7bd0ad4f13a14dbd35a7f231e7",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "docs/research/reformation/12_worms_1521_speech_edict_source_dossier.md",
@@ -2995,7 +3129,8 @@
       "digest": "d17d21c0e0c6752092c6d4c8750f04e946360ddd2f16f1ba753fe46340db2725",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "docs/research/reformation/EDITORIAL_AUDIT_2026-11-11.md",
@@ -3067,7 +3202,8 @@
       "digest": "9a418fefc3541f772cca13d3bf4a41c0d4195e03aaa66f51571fc20a35e93f44",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "docs/research/reformation/HOLD_SOURCE_SWEEP_2026-11-11.md",
@@ -3115,7 +3251,8 @@
       "digest": "f42672348c4e442786a951406f3bd5733fa412e491058a2bae5cd3575bfe80fd",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "docs/research/reformation/HOLD_SOURCE_SWEEP_2026-11-11.md",
@@ -3123,7 +3260,8 @@
       "digest": "6a89d031ba1eaa8ed5ac233a454549b1aa25d3ca2d71aa290d51a67ee1199b7d",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "docs/research/reformation/HOLD_SOURCE_SWEEP_2026-11-11.md",
@@ -3131,7 +3269,8 @@
       "digest": "21086da7e4d6d1253a94a6ab3e42bb1779018610d3d8789c62c4aa6aaef1b2fd",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "docs/research/reformation/HOLD_SOURCE_SWEEP_2026-11-11.md",
@@ -3139,7 +3278,8 @@
       "digest": "642fd48c8ca41a921425448cd61ac8f5dc9bb14efa97da44c747aa6bf392bc1f",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "docs/research/reformation/HOLD_SOURCE_SWEEP_2026-11-11.md",
@@ -3147,7 +3287,8 @@
       "digest": "8f27fcb42daf9f1c075be3dad66184e4b2a1957da5e7627c20e447822b42c0a9",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "docs/research/reformation/README.md",
@@ -3187,7 +3328,8 @@
       "digest": "f0dbcab8b6af238360f78ed11b09bb154fb763e4c8e3064ddd0c07fa760b1279",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "docs/research/reformation/README.md",
@@ -3195,7 +3337,8 @@
       "digest": "2a5cd18abf943f24b2e8c865a276534b26e9b283c09fbd3d8f00b83b9a932b32",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "docs/research/reformation/README.md",
@@ -3315,7 +3458,8 @@
       "digest": "8f27fcb42daf9f1c075be3dad66184e4b2a1957da5e7627c20e447822b42c0a9",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "docs/research/reformation/SELF_PLAN.md",
@@ -3355,7 +3499,8 @@
       "digest": "9a418fefc3541f772cca13d3bf4a41c0d4195e03aaa66f51571fc20a35e93f44",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "docs/research/reformation/SELF_PLAN.md",
@@ -3451,7 +3596,8 @@
       "digest": "d8481415ed48ad4f283e0dd9dc6426bdc511c2c3e6e858bd07d53a7e3c705356",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "docs/research/reformation/SELF_PLAN.md",
@@ -3459,7 +3605,8 @@
       "digest": "2389623ecd67cded96cc887e226a7e81db6de6febfe265a70a95c7d7d317a237",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "docs/research/reformation/SELF_PLAN.md",
@@ -3979,7 +4126,8 @@
       "digest": "ca504f86b77a24d1afdd08aaf7caea48e542f5c3",
       "algorithm": "sha1",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "docs/research/reformation/SELF_PLAN.md",
@@ -3995,7 +4143,8 @@
       "digest": "9a418fefc3541f772cca13d3bf4a41c0d4195e03aaa66f51571fc20a35e93f44",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "docs/research/reformation/episode11_france_catholic_reform_nantes_1545_1599_manuscript.md",
@@ -4051,7 +4200,8 @@
       "digest": "f7f413206e723ab0931a3e57623636a9f94161f5113adc33201fb7fa02ca1379",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "docs/research/reformation/nantes_bge_ms_fr_413_archival_request.md",
@@ -4059,7 +4209,8 @@
       "digest": "32945087dc4e3966c7e8b02778a390b37c0f8b25d036d40b69b431aea06c3003",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "docs/research/reformation/nantes_bge_ms_fr_413_archival_request.md",
@@ -4067,7 +4218,8 @@
       "digest": "383fb8c108bd9161ce4d17c606f61e2ec7582d19c74521ed18ff95eefd04ebc7",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "projects/gb-is-my-strength/reader-platform/R6_UNIFIED_READING_STATE_2026-07-22.md",
@@ -4099,7 +4251,8 @@
       "digest": "1f2576aeeefdf95f4366b740ecf06a7a1dbd374b82c9575a68d8931021db258b",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/100-ch08-periodical-acquisition-and-page-control-2026-09-06.md",
@@ -4107,7 +4260,8 @@
       "digest": "48d8611d27ad9d26329e713e4405ae6d11719f9b42704b88ca68f506f26c45b9",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/100-ch08-periodical-acquisition-and-page-control-2026-09-06.md",
@@ -4115,7 +4269,8 @@
       "digest": "09fee235887ae29dd60060e277b7208dae3e6baa6c25e95fca7f26269355f333",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/100-ch08-periodical-acquisition-and-page-control-2026-09-06.md",
@@ -4123,7 +4278,8 @@
       "digest": "fb9030ad4a1309ab578374731c07180b885488406e46ead566b13d7b837a6554",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/100-ch08-periodical-acquisition-and-page-control-2026-09-06.md",
@@ -4131,7 +4287,8 @@
       "digest": "a90c76e0375ac8ac49177ed5d369891123c42f76748519a4f1db88aeb3af5130",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/100-ch08-periodical-acquisition-and-page-control-2026-09-06.md",
@@ -4139,7 +4296,8 @@
       "digest": "67c1de40d68ea200c4cc1ea80fa61db6697437d84ad3a9365bad01db1de2bc25",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/100-ch08-periodical-acquisition-and-page-control-2026-09-06.md",
@@ -4147,7 +4305,8 @@
       "digest": "750b92b27612fac2025b9af2ab94f5c2ea50c19bf199f2c02779d4ea75bac2db",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/100-ch08-periodical-acquisition-and-page-control-2026-09-06.md",
@@ -4155,7 +4314,8 @@
       "digest": "255ecccbac553ceb6e8b22595eaa6791130d033c7ed5685f67e0a5793248d624",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/100-ch08-periodical-acquisition-and-page-control-2026-09-06.md",
@@ -4163,7 +4323,8 @@
       "digest": "c0299138c65e775870092427b6c48f8a873ce8627d506fb1cb9dd1bd8a4ee0c4",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/100-ch08-periodical-acquisition-and-page-control-2026-09-06.md",
@@ -4171,7 +4332,8 @@
       "digest": "ed2899b8957158f5638ccd2557ef68467b7f8d408ce63f7f23b1251089c26683",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/100-ch08-periodical-acquisition-and-page-control-2026-09-06.md",
@@ -4179,7 +4341,8 @@
       "digest": "0ee01385271aa83d5464465271319c1a27753fa609cab7a3cdc566974daac6fe",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/100-ch08-periodical-acquisition-and-page-control-2026-09-06.md",
@@ -4187,7 +4350,8 @@
       "digest": "1fbc119781a19e74d7b94a8672968e270fcc1017cd2f76a55fed4d0c94819bef",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/100-ch08-periodical-acquisition-and-page-control-2026-09-06.md",
@@ -4195,7 +4359,8 @@
       "digest": "19679a242c3872a970d0cf560850d8e9b20feb22684a4954bd33d76d0376d389",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/100-ch08-periodical-acquisition-and-page-control-2026-09-06.md",
@@ -4203,7 +4368,8 @@
       "digest": "64161aac155ee77d84985758807fb8ea3ec0f082df35094d714a068ab9c0c8a6",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/100-ch08-periodical-acquisition-and-page-control-2026-09-06.md",
@@ -4211,7 +4377,8 @@
       "digest": "775cd42c3f9656c641de8f913b594716308718743fdf67373640b89757f4c577",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/100-ch08-periodical-acquisition-and-page-control-2026-09-06.md",
@@ -4219,7 +4386,8 @@
       "digest": "f259338653848c00a26df3f291806115bf7a604f88ce5b59acec30382ca8227a",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/100-ch08-periodical-acquisition-and-page-control-2026-09-06.md",
@@ -4227,7 +4395,8 @@
       "digest": "4f61f13d34bc5c85eea4d2433d89652cbfc808c626bdc503224925f6a2fd8f3c",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/100-ch08-periodical-acquisition-and-page-control-2026-09-06.md",
@@ -4235,7 +4404,8 @@
       "digest": "4a00b37b5518e8c1d447e00c0efdc4daff4462f3d51c19fb460af239829870ba",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/100-ch08-periodical-acquisition-and-page-control-2026-09-06.md",
@@ -4243,7 +4413,8 @@
       "digest": "95751678e4e943de85a2648e79f5e2fa88cb4a55295d0254d1a15e83211c38f7",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/102-ch09-fetler-house-gospel-source-to-claim-2026-09-06.md",
@@ -4251,7 +4422,8 @@
       "digest": "26a505c1c3e5c289e0d8b36d994058f9787a18eb8a729643b04ae4247810979f",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/102-ch09-fetler-house-gospel-source-to-claim-2026-09-06.md",
@@ -4259,7 +4431,8 @@
       "digest": "67660e73643fd13a63c42d43c64923c271efa374b367edaf2ec57247629bc0ac",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/102-ch09-fetler-house-gospel-source-to-claim-2026-09-06.md",
@@ -4267,7 +4440,8 @@
       "digest": "5fb055b3235d3f9f16f47b308b99f322198ccf0924e7a60634bd99cf2a82c0f3",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/102-ch09-fetler-house-gospel-source-to-claim-2026-09-06.md",
@@ -4275,7 +4449,8 @@
       "digest": "983cfd2b94ee5b635343824a95dc19f27a45d90b572b82f793e6a70c09caebf8",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/102-ch09-fetler-house-gospel-source-to-claim-2026-09-06.md",
@@ -4283,7 +4458,8 @@
       "digest": "6ba9708c18b42f4842099cbb90ba28eee78b3bca1d4ac8aa9a2a360fb435b0bc",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/102-ch09-fetler-house-gospel-source-to-claim-2026-09-06.md",
@@ -4291,7 +4467,8 @@
       "digest": "d6caa432379fd6335a91e29e791eb0708b5ceaabf8cd8c5269d81cf7c3334a89",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/102-ch09-fetler-house-gospel-source-to-claim-2026-09-06.md",
@@ -4299,7 +4476,8 @@
       "digest": "ce5824d6e6c33487d8db829cb201607940b00f403d4c8414ca6eedefa2ee630e",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/103-ch09-fetler-house-gospel-visual-dossier-2026-09-06.md",
@@ -4307,7 +4485,8 @@
       "digest": "6ba9708c18b42f4842099cbb90ba28eee78b3bca1d4ac8aa9a2a360fb435b0bc",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/103-ch09-fetler-house-gospel-visual-dossier-2026-09-06.md",
@@ -4315,7 +4494,8 @@
       "digest": "d6caa432379fd6335a91e29e791eb0708b5ceaabf8cd8c5269d81cf7c3334a89",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/103-ch09-fetler-house-gospel-visual-dossier-2026-09-06.md",
@@ -4323,7 +4503,8 @@
       "digest": "ce5824d6e6c33487d8db829cb201607940b00f403d4c8414ca6eedefa2ee630e",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/106-ch10-1917-1921-source-to-claim-2026-09-06.md",
@@ -4331,7 +4512,9 @@
       "digest": "e71a4c59480717b829c94b0ede45b6d40748fb0a232278bcf89be50397ab81fd",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path",
+      "sameDigestClaimedElsewhere": true
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/106-ch10-1917-1921-source-to-claim-2026-09-06.md",
@@ -4339,7 +4522,8 @@
       "digest": "b382b86b4cd288f082be528e714ee1b1d16d4e11e0bcd582f72a5394a0f31d39",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/106-ch10-1917-1921-source-to-claim-2026-09-06.md",
@@ -4347,7 +4531,8 @@
       "digest": "65014b2fdcb6737ac6d2e354389b2e7ca3ec4d37fabff49c56c5947f9aa1caea",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/107-ch10-1917-1921-visual-dossier-2026-09-06.md",
@@ -4369,7 +4554,8 @@
       "digest": "b382b86b4cd288f082be528e714ee1b1d16d4e11e0bcd582f72a5394a0f31d39",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/107-ch10-1917-1921-visual-dossier-2026-09-06.md",
@@ -4377,7 +4563,8 @@
       "digest": "65014b2fdcb6737ac6d2e354389b2e7ca3ec4d37fabff49c56c5947f9aa1caea",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/115-ch12-school-bible-failed-unity-source-to-claim-2026-09-06.md",
@@ -4385,7 +4572,8 @@
       "digest": "a0aa83e5de929272f256aed26fa5b1cc40ea905bd599bc121ae182225b9917c3",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/115-ch12-school-bible-failed-unity-source-to-claim-2026-09-06.md",
@@ -4393,7 +4581,8 @@
       "digest": "4adb3ffeda64105a4651353fa71735d0cb795ad719ffe205517d1c0b49ff500f",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/116-ch12-school-bible-failed-unity-visual-dossier-2026-09-06.md",
@@ -4401,7 +4590,8 @@
       "digest": "a0aa83e5de929272f256aed26fa5b1cc40ea905bd599bc121ae182225b9917c3",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/116-ch12-school-bible-failed-unity-visual-dossier-2026-09-06.md",
@@ -4409,7 +4599,8 @@
       "digest": "4adb3ffeda64105a4651353fa71735d0cb795ad719ffe205517d1c0b49ff500f",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/118-ch12-bible-and-periodical-publishing-object-audit-2026-09-06.md",
@@ -4417,7 +4608,8 @@
       "digest": "a0aa83e5de929272f256aed26fa5b1cc40ea905bd599bc121ae182225b9917c3",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/118-ch12-bible-and-periodical-publishing-object-audit-2026-09-06.md",
@@ -4425,7 +4617,8 @@
       "digest": "4adb3ffeda64105a4651353fa71735d0cb795ad719ffe205517d1c0b49ff500f",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/12-iniciativnaya-gruppa-golden-chapter-source-to-claim-2026-09-06.md",
@@ -4441,7 +4634,8 @@
       "digest": "25c43a0bd3c7c6f72d968b45361cb037ddea361ea95e7283aef56a71fb7a10f9",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/146-ch01-pre-baptist-origins-authority-reconciliation-2026-09-11.md",
@@ -4457,7 +4651,8 @@
       "digest": "3d33eb3691dd18f0109028cf1c2c51bb71e21b882dfddfff4393438311498c1c",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/146-ch01-pre-baptist-origins-authority-reconciliation-2026-09-11.md",
@@ -4465,7 +4660,8 @@
       "digest": "6d23e500ef19dc457d2f23c06b695ea95e2670759558e0419847022ccc969cc9",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/147-total-production-audit-2026-09-11.md",
@@ -4481,7 +4677,8 @@
       "digest": "3d33eb3691dd18f0109028cf1c2c51bb71e21b882dfddfff4393438311498c1c",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/147-total-production-audit-2026-09-11.md",
@@ -4489,7 +4686,8 @@
       "digest": "6d23e500ef19dc457d2f23c06b695ea95e2670759558e0419847022ccc969cc9",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/147-total-production-audit-2026-09-11.md",
@@ -4521,7 +4719,9 @@
       "digest": "e71a4c59480717b829c94b0ede45b6d40748fb0a232278bcf89be50397ab81fd",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path",
+      "sameDigestClaimedElsewhere": true
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/153-ch12-school-bible-failed-unity-literary-manuscript-2026-11-16.md",
@@ -4529,7 +4729,8 @@
       "digest": "a0aa83e5de929272f256aed26fa5b1cc40ea905bd599bc121ae182225b9917c3",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/153-ch12-school-bible-failed-unity-literary-manuscript-2026-11-16.md",
@@ -4537,7 +4738,8 @@
       "digest": "4adb3ffeda64105a4651353fa71735d0cb795ad719ffe205517d1c0b49ff500f",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/158-ch18-1959-1965-crisis-and-council-literary-manuscript-2026-11-16.md",
@@ -4597,7 +4799,9 @@
       "digest": "79e9fab61164ffd2c881ac641402e8b8bd9806bad8cf9b1360aa8b35568ce55c",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path",
+      "sameDigestClaimedElsewhere": true
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/164-ch09-fetler-house-gospel-literary-manuscript-2026-11-17.md",
@@ -4605,7 +4809,8 @@
       "digest": "6ba9708c18b42f4842099cbb90ba28eee78b3bca1d4ac8aa9a2a360fb435b0bc",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/164-ch09-fetler-house-gospel-literary-manuscript-2026-11-17.md",
@@ -4613,7 +4818,8 @@
       "digest": "d6caa432379fd6335a91e29e791eb0708b5ceaabf8cd8c5269d81cf7c3334a89",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/26-pre-1867-origin-open-questions-and-source-leads-2026-06-18.md",
@@ -4645,7 +4851,8 @@
       "digest": "1cbebbf9e9614bdec0de24f1d465be7e1541694c",
       "algorithm": "sha1",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/97-ch07-baptist-1911-1912-periodical-acquisition-2026-09-06.md",
@@ -4653,7 +4860,8 @@
       "digest": "9749e5cf36f04190aa4c44b956b1afcf067789e5",
       "algorithm": "sha1",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/99-ch08-print-republic-visual-dossier-2026-09-06.md",
@@ -4661,7 +4869,8 @@
       "digest": "1f2576aeeefdf95f4366b740ecf06a7a1dbd374b82c9575a68d8931021db258b",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/99-ch08-print-republic-visual-dossier-2026-09-06.md",
@@ -4669,7 +4878,8 @@
       "digest": "48d8611d27ad9d26329e713e4405ae6d11719f9b42704b88ca68f506f26c45b9",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/99-ch08-print-republic-visual-dossier-2026-09-06.md",
@@ -4677,7 +4887,8 @@
       "digest": "09fee235887ae29dd60060e277b7208dae3e6baa6c25e95fca7f26269355f333",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/99-ch08-print-republic-visual-dossier-2026-09-06.md",
@@ -4685,7 +4896,8 @@
       "digest": "fb9030ad4a1309ab578374731c07180b885488406e46ead566b13d7b837a6554",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/99-ch08-print-republic-visual-dossier-2026-09-06.md",
@@ -4693,7 +4905,8 @@
       "digest": "a90c76e0375ac8ac49177ed5d369891123c42f76748519a4f1db88aeb3af5130",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/99-ch08-print-republic-visual-dossier-2026-09-06.md",
@@ -4701,7 +4914,8 @@
       "digest": "67c1de40d68ea200c4cc1ea80fa61db6697437d84ad3a9365bad01db1de2bc25",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/99-ch08-print-republic-visual-dossier-2026-09-06.md",
@@ -4709,7 +4923,8 @@
       "digest": "9ba83bc93f22b9c31ea7380a5a50aa52fb08d28a",
       "algorithm": "sha1",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/99-ch08-print-republic-visual-dossier-2026-09-06.md",
@@ -4717,7 +4932,8 @@
       "digest": "95751678e4e943de85a2648e79f5e2fa88cb4a55295d0254d1a15e83211c38f7",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/README.md",
@@ -4733,7 +4949,8 @@
       "digest": "6dc68b35b9b346a795e31483022136b049b7771bc302011806699dc6454c1249",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/media-ledger.md",
@@ -12311,7 +12528,8 @@
       "digest": "66fee582deb7355138ead003c9cee8b0668486050c72201c0d6911f259cc2e27",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БИОГРАФИИ/08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md",
@@ -12319,7 +12537,8 @@
       "digest": "74a088df6613a4d14325ab18ca42710a72594e4b672afd073b4418efbfe339cd",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БИОГРАФИИ/08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md",
@@ -12327,7 +12546,8 @@
       "digest": "4fccbb73884a20f468022e0536b96b4febc27edd227059e4c850a73ae207d64a",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БИОГРАФИИ/08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md",
@@ -12335,7 +12555,8 @@
       "digest": "519157f9026bbd91538aa140e640fc5b",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "БИОГРАФИИ/08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md",
@@ -12471,7 +12692,8 @@
       "digest": "711ad88a9737ef282776a88762ec9b77b62844d0be9891f73d24d779994d2e91",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БИОГРАФИИ/08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md",
@@ -12551,7 +12773,8 @@
       "digest": "5f3ec11cb6627d90dc93208f68c3a096",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "БИОГРАФИИ/08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md",
@@ -12559,7 +12782,8 @@
       "digest": "5779ffccdfdd4995820e08c53424ba48459122289d8e2a27e160ea87a6b73623",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БИОГРАФИИ/08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md",
@@ -12639,7 +12863,8 @@
       "digest": "1dcd1f1744737f6fa1dee3419248ea5e",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "БИОГРАФИИ/08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md",
@@ -12647,7 +12872,8 @@
       "digest": "246cc81eb97bb01486ee6340353d7a484f0b26300046ccba5740f9e8f2281f91",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md",
@@ -12799,7 +13025,8 @@
       "digest": "4fe280e848ae23d5d1807dee507bcd37",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "БИОГРАФИИ/08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md",
@@ -12807,7 +13034,8 @@
       "digest": "cea7523717c54e4385d6b9fcc184ecef0c150e7a6845646c148594679540b647",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md",
@@ -13439,7 +13667,8 @@
       "digest": "d6205c4062867acf7f01c963ca06395ed07bb4f00774a071fcc8f903d22e6376",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БИОГРАФИИ/08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md",
@@ -13455,7 +13684,8 @@
       "digest": "efaf653b7c9d058927dc546382d3a9771fbffdc6e15b50d08a7941bd0aafa007",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БИОГРАФИИ/08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md",
@@ -13767,7 +13997,8 @@
       "digest": "ed2038ae64d1e5bb05f90eb5fdf10d6b67c3023b83903cdbe55204f4afc7b5a7",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md",
@@ -14079,7 +14310,8 @@
       "digest": "b25bad732f769d06e49315e201b2ce6004fa5a5d6ffb360c8a435b090fcb11c1",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md",
@@ -14095,7 +14327,8 @@
       "digest": "4708c9c4b5e3036c4ed477852b5b1b4372d5a27aa294c930000df19a5073508c",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md",
@@ -14295,7 +14528,8 @@
       "digest": "dd3588d681fe1ff35f067625504d275f31764b668476efbdb3eadfd0655f1cee",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md",
@@ -14487,7 +14721,8 @@
       "digest": "ef8f6b296e9a62ce3a37481968f40b80ac696aff493ebda32b9341219878a19b",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md",
@@ -14583,7 +14818,8 @@
       "digest": "ef8f6b296e9a62ce3a37481968f40b80ac696aff493ebda32b9341219878a19b",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БИОГРАФИИ/08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md",
@@ -14679,7 +14915,8 @@
       "digest": "ef8f6b296e9a62ce3a37481968f40b80ac696aff493ebda32b9341219878a19b",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БИОГРАФИИ/08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md",
@@ -14775,7 +15012,8 @@
       "digest": "ef8f6b296e9a62ce3a37481968f40b80ac696aff493ebda32b9341219878a19b",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БИОГРАФИИ/08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md",
@@ -14917,7 +15155,8 @@
       "digest": "3a0fc08101e59a645ed5d302c52c70c8d9aabf95dabfd94d94a03a21d5e71163",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БИОГРАФИИ/08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md",
@@ -14933,7 +15172,8 @@
       "digest": "ef8f6b296e9a62ce3a37481968f40b80ac696aff493ebda32b9341219878a19b",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БИОГРАФИИ/08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md",
@@ -14941,7 +15181,8 @@
       "digest": "e31ce709829631c0d18509a4979d0fbd311b8947c2e184450a2d2ee008e7e8b9",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БИОГРАФИИ/08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md",
@@ -14949,7 +15190,8 @@
       "digest": "e18a5b3dd6f9833f5fe45fe1b15a59c790717dfe043aea8ab069e5f6fdca1ee3",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БИОГРАФИИ/08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md",
@@ -15077,7 +15319,8 @@
       "digest": "ff7e220cd60eb48cd7ca0cedcef4dfc3801bb8f0d9d564d2e557d89df7a1dced",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Джон Гилл/00A_PR2_LOSSLESS_RECOVERY_AND_SUPERSESSION.md",
@@ -15125,7 +15368,8 @@
       "digest": "86834ecb1f90775de6876c91cafab054450914b521291ad3dd7522823c612f14",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Джон Гилл/00A_PR2_LOSSLESS_RECOVERY_AND_SUPERSESSION.md",
@@ -15171,7 +15415,8 @@
       "digest": "362019ee851280e14eb4c6cd8bca70a30df957af225ac56c7c6d95bbaf461792",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "БИОГРАФИИ/Джон Гилл/56_FIRST_EDITION_DATE_RESOLUTION.md",
@@ -15179,7 +15424,8 @@
       "digest": "75c914ec2b94e078cce9680992873aecccd7034410d5e50c63d007d16cc417a3",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "БИОГРАФИИ/Джон Гилл/74_PR2_001_480_RECONCILIATION_MATRIX.md",
@@ -15235,7 +15481,8 @@
       "digest": "362019ee851280e14eb4c6cd8bca70a30df957af225ac56c7c6d95bbaf461792",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Джон Гилл/76_RIPPON_1838_OPEN_ACCESS_VERIFICATION_2026-08-04.md",
@@ -15243,7 +15490,8 @@
       "digest": "362019ee851280e14eb4c6cd8bca70a30df957af225ac56c7c6d95bbaf461792",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Джон Гилл/77_RIPPON_1838_BIRTH_AND_PARENTS_CLAIM_CARD_2026-08-04.md",
@@ -15251,7 +15499,8 @@
       "digest": "362019ee851280e14eb4c6cd8bca70a30df957af225ac56c7c6d95bbaf461792",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "БИОГРАФИИ/Джон Гилл/77_RIPPON_1838_BIRTH_AND_PARENTS_CLAIM_CARD_2026-08-04.md",
@@ -15259,7 +15508,8 @@
       "digest": "0a7fa164c13ae653ee9d6ab754057224cf266674536070a49e78a48d31eb9b86",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Джон Гилл/77_RIPPON_1838_BIRTH_AND_PARENTS_CLAIM_CARD_2026-08-04.md",
@@ -15267,7 +15517,8 @@
       "digest": "98f923d831023617ee3d8c99c6663c34edfcc44470dc7a08e6270fae64583590",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Джон Гилл/77_RIPPON_1838_BIRTH_AND_PARENTS_CLAIM_CARD_2026-08-04.md",
@@ -15275,7 +15526,8 @@
       "digest": "ba341d1321897649e616f94a1693d21ab5fc632010bc4f839b8c49aa823e2587",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/00_README_AND_NAVIGATION.md",
@@ -15323,7 +15575,8 @@
       "digest": "32dc300bd4ca63015021850f38a214a53a0a67e3",
       "algorithm": "sha1",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/02_LIFE_CHRONOLOGY_AND_DATE_CONFLICTS.md",
@@ -15331,7 +15584,8 @@
       "digest": "32dc300bd4ca63015021850f38a214a53a0a67e3",
       "algorithm": "sha1",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/02_LIFE_CHRONOLOGY_AND_DATE_CONFLICTS.md",
@@ -15339,7 +15593,8 @@
       "digest": "e2bea34fb919b90d21c076895c0cb09c4630505f020f3608f72ddf72d3f5b64b",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/02_LIFE_CHRONOLOGY_AND_DATE_CONFLICTS.md",
@@ -15363,7 +15618,8 @@
       "digest": "97f473a5d46036ac46b5fe7c2d3be603d3946d9a",
       "algorithm": "sha1",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/02_LIFE_CHRONOLOGY_AND_DATE_CONFLICTS.md",
@@ -15371,7 +15627,8 @@
       "digest": "97f473a5d46036ac46b5fe7c2d3be603d3946d9a",
       "algorithm": "sha1",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/02_LIFE_CHRONOLOGY_AND_DATE_CONFLICTS.md",
@@ -15379,7 +15636,8 @@
       "digest": "beaa62b9b406cbc3bcb589143266da53f714ccfb344408e38c3f953f0c4881d2",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/02_LIFE_CHRONOLOGY_AND_DATE_CONFLICTS.md",
@@ -15403,7 +15661,8 @@
       "digest": "460e9c2a90b1b67ba77febbfa0c009860cfe7367",
       "algorithm": "sha1",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/02_LIFE_CHRONOLOGY_AND_DATE_CONFLICTS.md",
@@ -15411,7 +15670,8 @@
       "digest": "460e9c2a90b1b67ba77febbfa0c009860cfe7367",
       "algorithm": "sha1",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/02_LIFE_CHRONOLOGY_AND_DATE_CONFLICTS.md",
@@ -15419,7 +15679,8 @@
       "digest": "1268a63fa8eebeac66291887e30d655df8cc3a2d1c7a9508c3dba7ceafc1a497",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/02_LIFE_CHRONOLOGY_AND_DATE_CONFLICTS.md",
@@ -15443,7 +15704,8 @@
       "digest": "492c601345cecd8310428cc2607d12ff87461a8e",
       "algorithm": "sha1",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/02_LIFE_CHRONOLOGY_AND_DATE_CONFLICTS.md",
@@ -15451,7 +15713,8 @@
       "digest": "492c601345cecd8310428cc2607d12ff87461a8e",
       "algorithm": "sha1",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/02_LIFE_CHRONOLOGY_AND_DATE_CONFLICTS.md",
@@ -15459,7 +15722,8 @@
       "digest": "5f07206177dcffc80dde89ec85d0df9394acc6c6ddb8a8c7e319f5285b6ea5ac",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/02_LIFE_CHRONOLOGY_AND_DATE_CONFLICTS.md",
@@ -15475,7 +15739,8 @@
       "digest": "ed2038ae64d1e5bb05f90eb5fdf10d6b67c3023b83903cdbe55204f4afc7b5a7",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/02_LIFE_CHRONOLOGY_AND_DATE_CONFLICTS.md",
@@ -15491,7 +15756,8 @@
       "digest": "505f653df483ce85f615b02e67dd454e7963b68fd16e2c008a724e480def1748",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/03_WORKS_EDITIONS_AND_PUBLICATION_CHRONOLOGY.md",
@@ -15521,7 +15787,8 @@
       "digest": "b25bad732f769d06e49315e201b2ce6004fa5a5d6ffb360c8a435b090fcb11c1",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/03_WORKS_EDITIONS_AND_PUBLICATION_CHRONOLOGY.md",
@@ -15537,7 +15804,8 @@
       "digest": "4708c9c4b5e3036c4ed477852b5b1b4372d5a27aa294c930000df19a5073508c",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/03_WORKS_EDITIONS_AND_PUBLICATION_CHRONOLOGY.md",
@@ -15553,7 +15821,8 @@
       "digest": "dd3588d681fe1ff35f067625504d275f31764b668476efbdb3eadfd0655f1cee",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/04_CHARACTER_MINISTRY_AND_THEOLOGY.md",
@@ -15577,7 +15846,8 @@
       "digest": "d6205c4062867acf7f01c963ca06395ed07bb4f00774a071fcc8f903d22e6376",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/04_CHARACTER_MINISTRY_AND_THEOLOGY.md",
@@ -15593,7 +15863,8 @@
       "digest": "caa75dffdc96aa353a6424679877f41e15b8c73e",
       "algorithm": "sha1",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/04_CHARACTER_MINISTRY_AND_THEOLOGY.md",
@@ -15601,7 +15872,8 @@
       "digest": "d6205c4062867acf7f01c963ca06395ed07bb4f00774a071fcc8f903d22e6376",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/04_CHARACTER_MINISTRY_AND_THEOLOGY.md",
@@ -15617,7 +15889,8 @@
       "digest": "aa97893297d0bd0db63318afd4957ac38d53dd05",
       "algorithm": "sha1",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/04_CHARACTER_MINISTRY_AND_THEOLOGY.md",
@@ -15625,7 +15898,8 @@
       "digest": "efaf653b7c9d058927dc546382d3a9771fbffdc6e15b50d08a7941bd0aafa007",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/04_CHARACTER_MINISTRY_AND_THEOLOGY.md",
@@ -15641,7 +15915,8 @@
       "digest": "81cb68885c517252d3f7acccf5c1d52ab77c1e6c",
       "algorithm": "sha1",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/04_CHARACTER_MINISTRY_AND_THEOLOGY.md",
@@ -15649,7 +15924,8 @@
       "digest": "5ef15afca7c22866b6f1ce5a4c1286e88b898b1ab9ebd9ec0fb628043ac159c8",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/04_CHARACTER_MINISTRY_AND_THEOLOGY.md",
@@ -15689,7 +15965,8 @@
       "digest": "d6205c4062867acf7f01c963ca06395ed07bb4f00774a071fcc8f903d22e6376",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/04_CHARACTER_MINISTRY_AND_THEOLOGY.md",
@@ -15713,7 +15990,8 @@
       "digest": "3a06e69c869ba8515dd8844bf2352a87",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/04_CHARACTER_MINISTRY_AND_THEOLOGY.md",
@@ -15729,7 +16007,8 @@
       "digest": "d6205c4062867acf7f01c963ca06395ed07bb4f00774a071fcc8f903d22e6376",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/04_CHARACTER_MINISTRY_AND_THEOLOGY.md",
@@ -15745,7 +16024,8 @@
       "digest": "efaf653b7c9d058927dc546382d3a9771fbffdc6e15b50d08a7941bd0aafa007",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/04_CHARACTER_MINISTRY_AND_THEOLOGY.md",
@@ -15769,7 +16049,8 @@
       "digest": "1b0ec102e0e3ef827d485c659c11c207c6cdb8ff2dc77f17f8b47fd67a304999",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md",
@@ -15785,7 +16066,8 @@
       "digest": "d6205c4062867acf7f01c963ca06395ed07bb4f00774a071fcc8f903d22e6376",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md",
@@ -15801,7 +16083,8 @@
       "digest": "5053eb7f8d864cea3372c512da84dcb8f2ec3653",
       "algorithm": "sha1",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md",
@@ -15809,7 +16092,8 @@
       "digest": "ceb3281a1b9718688c67add4a64786eee5c1ab9541a3631b9f220a7a28baa0e5",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md",
@@ -15825,7 +16109,8 @@
       "digest": "16db80b82a479d879e689b9e763b87ce13c6017e",
       "algorithm": "sha1",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md",
@@ -15833,7 +16118,8 @@
       "digest": "81642ad5411e4581928bed26e9b117aeb28e5d8a0fab37ae9efbdc8fbdd6770d",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md",
@@ -15849,7 +16135,8 @@
       "digest": "d6205c4062867acf7f01c963ca06395ed07bb4f00774a071fcc8f903d22e6376",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md",
@@ -15865,7 +16152,8 @@
       "digest": "efaf653b7c9d058927dc546382d3a9771fbffdc6e15b50d08a7941bd0aafa007",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md",
@@ -15873,7 +16161,8 @@
       "digest": "d6205c4062867acf7f01c963ca06395ed07bb4f00774a071fcc8f903d22e6376",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md",
@@ -15889,7 +16178,8 @@
       "digest": "d6205c4062867acf7f01c963ca06395ed07bb4f00774a071fcc8f903d22e6376",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md",
@@ -15905,7 +16195,8 @@
       "digest": "4708c9c4b5e3036c4ed477852b5b1b4372d5a27aa294c930000df19a5073508c",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md",
@@ -15921,7 +16212,8 @@
       "digest": "efaf653b7c9d058927dc546382d3a9771fbffdc6e15b50d08a7941bd0aafa007",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md",
@@ -15929,7 +16221,8 @@
       "digest": "efaf653b7c9d058927dc546382d3a9771fbffdc6e15b50d08a7941bd0aafa007",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md",
@@ -15953,7 +16246,8 @@
       "digest": "efaf653b7c9d058927dc546382d3a9771fbffdc6e15b50d08a7941bd0aafa007",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md",
@@ -15969,7 +16263,8 @@
       "digest": "efaf653b7c9d058927dc546382d3a9771fbffdc6e15b50d08a7941bd0aafa007",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md",
@@ -15985,7 +16280,8 @@
       "digest": "efaf653b7c9d058927dc546382d3a9771fbffdc6e15b50d08a7941bd0aafa007",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md",
@@ -15993,7 +16289,8 @@
       "digest": "efaf653b7c9d058927dc546382d3a9771fbffdc6e15b50d08a7941bd0aafa007",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md",
@@ -16009,7 +16306,8 @@
       "digest": "efaf653b7c9d058927dc546382d3a9771fbffdc6e15b50d08a7941bd0aafa007",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md",
@@ -16033,7 +16331,8 @@
       "digest": "efaf653b7c9d058927dc546382d3a9771fbffdc6e15b50d08a7941bd0aafa007",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md",
@@ -16089,7 +16388,8 @@
       "digest": "556d58c5a1e454d1d4a4bbe760928c9f651182b99cc09148b71dd68fe4096788",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md",
@@ -16113,7 +16413,8 @@
       "digest": "95b16856e35f754ce67c22c6457232264a4fbbc2",
       "algorithm": "sha1",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md",
@@ -16121,7 +16422,8 @@
       "digest": "17ab8f4fe6e8f8be29480cb5ac64de2c204eb68d",
       "algorithm": "sha1",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md",
@@ -16129,7 +16431,8 @@
       "digest": "3b3bfc5a790c58301942086cfaf76de7a9bb600e9f41fca477b64960b5ab039e",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md",
@@ -16153,7 +16456,8 @@
       "digest": "11d6066a17a8bc03eaf98be73c1dfe30d9489444",
       "algorithm": "sha1",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md",
@@ -16161,7 +16465,8 @@
       "digest": "88d447743fce0e9b3f47bb815431f1f238918962",
       "algorithm": "sha1",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md",
@@ -16169,7 +16474,8 @@
       "digest": "ab5ac74066bbde5fb3574fac4bdb64af641eb9f6d280267fab6938e86dda3588",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md",
@@ -16193,7 +16499,8 @@
       "digest": "0405687f5ac825c7d18719aae7e7785a029f7045642f34fe4d181b5704fcc709",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md",
@@ -16289,7 +16596,8 @@
       "digest": "e2bea34fb919b90d21c076895c0cb09c4630505f020f3608f72ddf72d3f5b64b",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/AGENT7_INDEPENDENT_CRITICAL_AUDIT_2026-11-16.md",
@@ -16297,7 +16605,8 @@
       "digest": "beaa62b9b406cbc3bcb589143266da53f714ccfb344408e38c3f953f0c4881d2",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/AGENT7_INDEPENDENT_CRITICAL_AUDIT_2026-11-16.md",
@@ -16305,7 +16614,8 @@
       "digest": "2584e9c0d6f8e068f7e3190ba1411c8fd84a2a748220675eb53c183b67b34685",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/AGENT7_INDEPENDENT_CRITICAL_AUDIT_2026-11-16.md",
@@ -16313,7 +16623,8 @@
       "digest": "2005c609b996785847da0a9f53e02e7fd1de665d58860229cdf237c033460c88",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/BLOCK1_ENGLAND_IRELAND_1628_1680_CONTEXT_LEDGER_2026-10-28.md",
@@ -16427,7 +16738,8 @@
       "digest": "25ac66885c61a5b4fea772465c1f24d597b3daec148e34884023d261f2800f49",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED02_BSB_LINGENDES_1663_IMAGE_READBACK_2026-11-17.md",
@@ -16435,7 +16747,8 @@
       "digest": "29519c27c0e1599331efea4a4cbcf210825b9380aa31d11595d26026170a8005",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED02_BSB_LINGENDES_1663_IMAGE_READBACK_2026-11-17.md",
@@ -16443,7 +16756,8 @@
       "digest": "1dc662acc479865965f7a6358cb63c8b37717bf6593df127b5bf3569cff2edf3",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED02_BSB_LINGENDES_1663_IMAGE_READBACK_2026-11-17.md",
@@ -16451,7 +16765,8 @@
       "digest": "984f4d419bd8865c46b29043c481aea766d77c17482204beb0ef8f4af00dfb66",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED02_BSB_LINGENDES_1663_IMAGE_READBACK_2026-11-17.md",
@@ -16459,7 +16774,8 @@
       "digest": "bb2e25f567d1b165b2bed84b2fb8f13a1acf6136dfc2b21b1841d494a20fff45",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED02_BSB_LINGENDES_1663_IMAGE_READBACK_2026-11-17.md",
@@ -16491,7 +16807,8 @@
       "digest": "033010bfb5963c4d0cdd4a84b99ca999edf659d97ca60e7e2eeeec232af4f9f4",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED02_LINGENDES_84_87_TO_CHARNOCK_621_ALIGNMENT_2026-11-18.md",
@@ -16499,7 +16816,8 @@
       "digest": "1c3d86908e0ef80c7db60b00829b6e0358a91562d1bc104c3c705ff6f227b735",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED06_ALL12_TRANSLATION_CONTEXT_REVIEW_2026-11-17.md",
@@ -16523,7 +16841,8 @@
       "digest": "31a309e2031a57b1d2368da0050feaf89c01c37581c9c507a001f104bef98ad3",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED06_EXTERNAL_REVIEW_PACKET_ALL12_2026-11-18.md",
@@ -16531,7 +16850,8 @@
       "digest": "5e1d2bf3f8bf35f19dc76adb0be38b48c5e73738",
       "algorithm": "sha1",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED06_EXTERNAL_REVIEW_PACKET_ALL12_2026-11-18.md",
@@ -16539,7 +16859,8 @@
       "digest": "1ba91bc903f2b3d32b9e97622984f75e15520ddfeec97cdfe1eb76ae3c474921",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED06_EXTERNAL_REVIEW_PACKET_ALL12_2026-11-18.md",
@@ -16547,7 +16868,8 @@
       "digest": "e86a6c162d621abe22a3069b6d53603afa58908ee3620a7254ca130ac58a27f0",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED06_EXTERNAL_REVIEW_PACKET_ALL12_2026-11-18.md",
@@ -16555,7 +16877,8 @@
       "digest": "370640653f23a36b1262e4f6f06900690d846ff8def6a851bcded4890cb689c6",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED06_EXTERNAL_REVIEW_PACKET_ALL12_2026-11-18.md",
@@ -16563,7 +16886,8 @@
       "digest": "a516e5aa9a869d1ecb06191fd3e6e7cd0b95b39b46a414fc87696e149f391465",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED06_EXTERNAL_REVIEW_PACKET_ALL12_2026-11-18.md",
@@ -16571,7 +16895,8 @@
       "digest": "2fb361af0a7a0ada8cf7283513779c69479236e8f451716185d049e388fac67c",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED06_EXTERNAL_REVIEW_PACKET_ALL12_2026-11-18.md",
@@ -16579,7 +16904,8 @@
       "digest": "a624369c269a56e0b0d90e64029867cc1a1f8e953549c94eb08f92a203c9bc8d",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED06_EXTERNAL_REVIEW_PACKET_ALL12_2026-11-18.md",
@@ -16587,7 +16913,8 @@
       "digest": "c28b9586d6f4636a8bc968910a2104e3c963763b25a6feb441d9f0d97ec3cb2c",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED06_EXTERNAL_REVIEW_PACKET_ALL12_2026-11-18.md",
@@ -16595,7 +16922,8 @@
       "digest": "ea0f037aea32f8f25502dc93a50374d49ab46c9f1384037c1d362ce2105e9b2c",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED06_EXTERNAL_REVIEW_PACKET_ALL12_2026-11-18.md",
@@ -16603,7 +16931,8 @@
       "digest": "bcc4dddc512d4afea8b95afb451e4a3534c80b6c6aceca3ea4e6a04a154528b2",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED06_EXTERNAL_REVIEW_PACKET_ALL12_2026-11-18.md",
@@ -16611,7 +16940,8 @@
       "digest": "f79b6197314267820f9a5c8d2e7a99742055e92dcb59efe15f0b104a99b986b9",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED06_EXTERNAL_REVIEW_PACKET_ALL12_2026-11-18.md",
@@ -16619,7 +16949,8 @@
       "digest": "a86f173144f676994a755813cd61f062566ed31675a12fddd9fff2cf49751fb6",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED06_EXTERNAL_REVIEW_PACKET_ALL12_2026-11-18.md",
@@ -16627,7 +16958,8 @@
       "digest": "4bd47b2aed471a844b99d7a64fe7fe2eb44789f8a932fa653fef6a4b98e98f23",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED06_EXTERNAL_REVIEW_PACKET_ALL12_2026-11-18.md",
@@ -16635,7 +16967,8 @@
       "digest": "bcedc5c224bb53f38e7bfa3a09587ff4b27e652b8dd11ad2330913f2177395bc",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED06_EXTERNAL_REVIEW_PACKET_ALL12_2026-11-18.md",
@@ -16643,7 +16976,8 @@
       "digest": "8323187f3d54d52740f27313c517497ab2a1f77fa3472999f90edb9a0b01f087",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED06_EXTERNAL_REVIEW_PACKET_ALL12_2026-11-18.md",
@@ -16651,7 +16985,8 @@
       "digest": "9fc7225ac6093e457ab9cc6dbe8d13f9bcd143f482f8891d0331fffa34ca7da6",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED06_EXTERNAL_REVIEW_PACKET_ALL12_2026-11-18.md",
@@ -16659,7 +16994,8 @@
       "digest": "f33be02203f2db973410e900e67f2ef1169b0edc1424694f52b6afa060e91aa3",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED06_EXTERNAL_REVIEW_PACKET_ALL12_2026-11-18.md",
@@ -16667,7 +17003,8 @@
       "digest": "e22265376e553be05b1d8045da860029e23e80b7505aefadb83da2a90c9c00ec",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED06_EXTERNAL_REVIEW_PACKET_ALL12_2026-11-18.md",
@@ -16675,7 +17012,8 @@
       "digest": "4a440d429b42963e6f19e3b1d2e490fa49dab84f2bef8576af03ffce89b0526a",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED06_EXTERNAL_REVIEW_PACKET_ALL12_2026-11-18.md",
@@ -16683,7 +17021,8 @@
       "digest": "0efac5e590105f210909a9701e590ee0a38fedef246a48042c6b014db8f4fbce",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED06_EXTERNAL_REVIEW_PACKET_ALL12_2026-11-18.md",
@@ -16691,7 +17030,8 @@
       "digest": "879ce508fc97523635f161c0f85790d14858555b63f2fc98e070911ad7d836cb",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED06_EXTERNAL_REVIEW_PACKET_ALL12_2026-11-18.md",
@@ -16699,7 +17039,8 @@
       "digest": "5b46e50e0579a5042503b30e7167812c77fbe9b9d4bf094a6d3fcee3cdd58805",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED06_EXTERNAL_REVIEW_PACKET_ALL12_2026-11-18.md",
@@ -16707,7 +17048,8 @@
       "digest": "cecf3c9e3006c757975feee59b726c7e5370958273cee3de6c9ec02242e1e38d",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED06_EXTERNAL_REVIEW_PACKET_ALL12_2026-11-18.md",
@@ -16715,7 +17057,8 @@
       "digest": "b41da91e534e0ec3c412a57b48ff1595fecb91400a86116bff9e3730ddb14760",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED06_EXTERNAL_REVIEW_PACKET_ALL12_2026-11-18.md",
@@ -16723,7 +17066,8 @@
       "digest": "0cbe2ee6fadf32f00e9e9ac803f5f5d99a606040c0609deff96180e45a784ea7",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED06_EXTERNAL_REVIEW_PACKET_ALL12_2026-11-18.md",
@@ -16731,7 +17075,8 @@
       "digest": "d809acc20a34942b963cf7515acf78613b03d54f9d06d0ed11ec830683e00b49",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED06_EXTERNAL_REVIEW_PACKET_ALL12_2026-11-18.md",
@@ -16739,7 +17084,8 @@
       "digest": "4314618dcfb6adc7cba1d4fb10dd4bda902f99ae3bcedd798b202fd2bc9c6112",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED06_EXTERNAL_REVIEW_PACKET_ALL12_2026-11-18.md",
@@ -16747,7 +17093,8 @@
       "digest": "224b3646de8d8e37421592a5fd489a6373ff3edb442e0602f197a61c9df85d4f",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED06_EXTERNAL_REVIEW_PACKET_ALL12_2026-11-18.md",
@@ -16755,7 +17102,8 @@
       "digest": "ccf6f6ca06125ae9cf77f21a221e9c43a6f9de48237b96e9ec49c5708883025f",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED06_EXTERNAL_REVIEW_PACKET_ALL12_2026-11-18.md",
@@ -16763,7 +17111,8 @@
       "digest": "07a12705776027a375b043e4a61fab491ca0d5eeb642e950d4310087dd23cb40",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED06_EXTERNAL_REVIEW_PACKET_ALL12_2026-11-18.md",
@@ -16771,7 +17120,8 @@
       "digest": "7ba06fb7abc1a54a20ff5bbd09bf6e7a8bed0c7be674155376aeeccaa4151c32",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED06_EXTERNAL_REVIEW_PACKET_ALL12_2026-11-18.md",
@@ -16779,7 +17129,8 @@
       "digest": "aee11a44d2a22a2f7451efc5e4ee448c41d89889490af84aa93715161b698b3b",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED06_EXTERNAL_REVIEW_PACKET_ALL12_2026-11-18.md",
@@ -16787,7 +17138,8 @@
       "digest": "2751ebf1f730508f5a0c978ba96373f589443cdc338c67b79a591a8a33a5f74b",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/agent6/Чарнок_ED-08_handoff_preparation.md",
@@ -17065,7 +17417,8 @@
       "digest": "1533e9fc46c2e1110e5043be72642996",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/07_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md",
@@ -17073,7 +17426,8 @@
       "digest": "efff943ab6501bf492c7904edf677f67",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/07_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md",
@@ -17137,7 +17491,8 @@
       "digest": "62f55ebb30571ac133f12a51f5e47b73",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/07_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md",
@@ -17145,7 +17500,8 @@
       "digest": "8476d2de4cd33d9ffe9c20cf6bd05090",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/07_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md",
@@ -17153,7 +17509,8 @@
       "digest": "10a95be7332a12f898c7ef6940ecde1c",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/07_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md",
@@ -17161,7 +17518,8 @@
       "digest": "458e35f909e36c0c07ed4c868cd7fbd8",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/07_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md",
@@ -17169,7 +17527,8 @@
       "digest": "f37a067dea5c61504f62ddfdec367a4f",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/07_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md",
@@ -17185,7 +17544,8 @@
       "digest": "a9ccb9fb017e76ba2bb73a7f9aec9df6",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/07_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md",
@@ -17193,7 +17553,8 @@
       "digest": "ff7e220cd60eb48cd7ca0cedcef4dfc3801bb8f0d9d564d2e557d89df7a1dced",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "ИСКУПЛЕНИЕ/09_MURRAY_RAA_INTAKE_AND_COMPLETENESS.md",
@@ -17201,7 +17562,8 @@
       "digest": "e2adc9d8d7f8646a65cdb957140d4da16cf8dbb87f120010971a273e64b123a8",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "ИСКУПЛЕНИЕ/11_MURRAY_OTHER_WORKS_HARD_TEXTS.md",
@@ -17209,7 +17571,8 @@
       "digest": "527ac2739c26e2f3babae3ca571be6ef",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/15_CALVIN_III24_AND_DORT_II_LOCATORS.md",
@@ -17233,7 +17596,8 @@
       "digest": "3b00eafbfa8893fd9914daaa1fb4e850",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md",
@@ -17281,7 +17645,8 @@
       "digest": "566c1323a72b9f7d2fd38810850a1a67",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md",
@@ -17297,7 +17662,8 @@
       "digest": "566c1323a72b9f7d2fd38810850a1a67",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md",
@@ -17313,7 +17679,8 @@
       "digest": "bda18997d97f9062008ba1e02665aeab",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/18_SERIES_AUDIT_AND_ARCS_2026-10-26.md",
@@ -17329,7 +17696,8 @@
       "digest": "c50c742a9e38126ec6b7a4055baa5f2f",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/18_SERIES_AUDIT_AND_ARCS_2026-10-26.md",
@@ -17337,7 +17705,8 @@
       "digest": "88dd6f995d348ac09bc58818cede7a06",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/18_SERIES_AUDIT_AND_ARCS_2026-10-26.md",
@@ -17345,7 +17714,8 @@
       "digest": "5dbb44a86dbf6e8a84c7aa1745e67a2d",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/18_SERIES_AUDIT_AND_ARCS_2026-10-26.md",
@@ -17353,7 +17723,8 @@
       "digest": "bb2500681e19836db454ca0022fab610",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/18_SERIES_AUDIT_AND_ARCS_2026-10-26.md",
@@ -17369,7 +17740,8 @@
       "digest": "8b175dd2f3cadcbb9062ae6ababfc609faef2f415656c573c377b1a602aca83c",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "ИСКУПЛЕНИЕ/18_SERIES_AUDIT_AND_ARCS_2026-10-26.md",
@@ -17377,7 +17749,8 @@
       "digest": "88dd6f995d348ac09bc58818cede7a06",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/18_SERIES_AUDIT_AND_ARCS_2026-10-26.md",
@@ -17385,7 +17758,8 @@
       "digest": "5dbb44a86dbf6e8a84c7aa1745e67a2d",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/18_SERIES_AUDIT_AND_ARCS_2026-10-26.md",
@@ -17417,7 +17791,8 @@
       "digest": "d7c7519ddbe845110c50793450dccf980f38783ef757c337c83ea1c71f99bea8",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "ИСКУПЛЕНИЕ/19_OPC_FREE_OFFER_1948_RU_INTAKE_AND_STUDY_2026-10-28.md",
@@ -17433,7 +17808,8 @@
       "digest": "527ac2739c26e2f3babae3ca571be6ef",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/19_OPC_FREE_OFFER_1948_RU_INTAKE_AND_STUDY_2026-10-28.md",
@@ -17441,7 +17817,8 @@
       "digest": "a9ccb9fb017e76ba2bb73a7f9aec9df6",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/20_SCHOLARLY_SERIES_AUDIT_AND_RESEARCH_GAPS_2026-11-04.md",
@@ -17545,7 +17922,9 @@
       "digest": "3beb37329739f71476f64dd7288e530f",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path",
+      "sameDigestClaimedElsewhere": true
     },
     {
       "file": "ИСКУПЛЕНИЕ/evidence/AGENT7_DRIVE_LIBRARY_RIGHTS_LOCATORS_AND_ACQUISITION_AUDIT_2026-11-16.md",
@@ -17553,7 +17932,8 @@
       "digest": "5d80885ae76f98a9a01392439bb6e908",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/evidence/AGENT7_DRIVE_LIBRARY_RIGHTS_LOCATORS_AND_ACQUISITION_AUDIT_2026-11-16.md",
@@ -17561,7 +17941,8 @@
       "digest": "a2755d55b53972ddd0fbf4b68a5d1643",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/evidence/AGENT7_DRIVE_LIBRARY_RIGHTS_LOCATORS_AND_ACQUISITION_AUDIT_2026-11-16.md",
@@ -17569,7 +17950,8 @@
       "digest": "c992905d7f02a04c8cc33fbf4731529b",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/evidence/AGENT7_DRIVE_LIBRARY_RIGHTS_LOCATORS_AND_ACQUISITION_AUDIT_2026-11-16.md",
@@ -17593,7 +17975,8 @@
       "digest": "54e1393b7b9eb26170d5c40f0f023ede",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/evidence/AGENT7_DRIVE_LIBRARY_RIGHTS_LOCATORS_AND_ACQUISITION_AUDIT_2026-11-16.md",
@@ -17661,7 +18044,8 @@
       "digest": "0ee482bc4a27f4a734181715c9979ec1",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/evidence/AGENT7_DRIVE_LIBRARY_RIGHTS_LOCATORS_AND_ACQUISITION_AUDIT_2026-11-16.md",
@@ -17669,7 +18053,8 @@
       "digest": "d3f4a2d8755e72e7a2b6fc0aad6646d1",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/evidence/AGENT7_DRIVE_LIBRARY_RIGHTS_LOCATORS_AND_ACQUISITION_AUDIT_2026-11-16.md",
@@ -17677,7 +18062,8 @@
       "digest": "5af435b255f00d4a449ce857f2928f45",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/evidence/AGENT7_DRIVE_LIBRARY_RIGHTS_LOCATORS_AND_ACQUISITION_AUDIT_2026-11-16.md",
@@ -17685,7 +18071,8 @@
       "digest": "fe7191cd7c9b7d3a977e8f4c71677543",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/evidence/AGENT7_DRIVE_LIBRARY_RIGHTS_LOCATORS_AND_ACQUISITION_AUDIT_2026-11-16.md",
@@ -17693,7 +18080,8 @@
       "digest": "b6c557479b5ec56794f803ad31710022",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/evidence/AGENT7_DRIVE_LIBRARY_RIGHTS_LOCATORS_AND_ACQUISITION_AUDIT_2026-11-16.md",
@@ -17701,7 +18089,8 @@
       "digest": "295bc04cfc8d424be60a25a20de69e72",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/evidence/AGENT7_DRIVE_LIBRARY_RIGHTS_LOCATORS_AND_ACQUISITION_AUDIT_2026-11-16.md",
@@ -17709,7 +18098,8 @@
       "digest": "54e1393b7b9eb26170d5c40f0f023ede",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/evidence/AGENT7_DRIVE_LIBRARY_RIGHTS_LOCATORS_AND_ACQUISITION_AUDIT_2026-11-16.md",
@@ -17717,7 +18107,8 @@
       "digest": "a0a4c4dfd8429f02e30793142877f380",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/evidence/AGENT7_DRIVE_LIBRARY_RIGHTS_LOCATORS_AND_ACQUISITION_AUDIT_2026-11-16.md",
@@ -17725,7 +18116,8 @@
       "digest": "9559852501456f56372f71480da790ea",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/evidence/AGENT7_DRIVE_LIBRARY_RIGHTS_LOCATORS_AND_ACQUISITION_AUDIT_2026-11-16.md",
@@ -17733,7 +18125,8 @@
       "digest": "9559852501456f56372f71480da790ea",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/evidence/AGENT7_DRIVE_LIBRARY_RIGHTS_LOCATORS_AND_ACQUISITION_AUDIT_2026-11-16.md",
@@ -17741,7 +18134,8 @@
       "digest": "f0f80315250f5d7cf85bdec66a7bdfd5",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/evidence/AGENT7_DRIVE_LIBRARY_RIGHTS_LOCATORS_AND_ACQUISITION_AUDIT_2026-11-16.md",
@@ -17749,7 +18143,8 @@
       "digest": "f0f80315250f5d7cf85bdec66a7bdfd5",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/evidence/AGENT7_DRIVE_LIBRARY_RIGHTS_LOCATORS_AND_ACQUISITION_AUDIT_2026-11-16.md",
@@ -17757,7 +18152,8 @@
       "digest": "a2755d55b53972ddd0fbf4b68a5d1643",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/evidence/AGENT7_DRIVE_LIBRARY_RIGHTS_LOCATORS_AND_ACQUISITION_AUDIT_2026-11-16.md",
@@ -17765,7 +18161,9 @@
       "digest": "3beb37329739f71476f64dd7288e530f",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path",
+      "sameDigestClaimedElsewhere": true
     },
     {
       "file": "ИСКУПЛЕНИЕ/evidence/AGENT7_DRIVE_LIBRARY_RIGHTS_LOCATORS_AND_ACQUISITION_AUDIT_2026-11-16.md",
@@ -17773,7 +18171,8 @@
       "digest": "5d80885ae76f98a9a01392439bb6e908",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/evidence/AGENT7_DRIVE_LIBRARY_RIGHTS_LOCATORS_AND_ACQUISITION_AUDIT_2026-11-16.md",
@@ -17781,7 +18180,9 @@
       "digest": "88fd5920c005a2900ed371b1b020de1c",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path",
+      "sameDigestClaimedElsewhere": true
     },
     {
       "file": "ИСКУПЛЕНИЕ/evidence/AGENT7_DRIVE_LIBRARY_RIGHTS_LOCATORS_AND_ACQUISITION_AUDIT_2026-11-16.md",
@@ -17803,7 +18204,8 @@
       "digest": "c992905d7f02a04c8cc33fbf4731529b",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/evidence/AGENT7_DRIVE_LIBRARY_RIGHTS_LOCATORS_AND_ACQUISITION_AUDIT_2026-11-16.md",
@@ -17811,7 +18213,8 @@
       "digest": "263c762500bfdf65da3a904d69ba642f",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/evidence/AGENT8_CALVIN_RED_TEAM_REVIEW_2026-11-17.md",
@@ -17867,7 +18270,8 @@
       "digest": "6f551d9971f0840284ade1a0fdf4b9b96f45692859aa1cd5dfb7dd9e3b2afacc",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "ИСКУПЛЕНИЕ/evidence/AT010_ARTICLE02_SEMANTIC_REVIEW_2026-11-07.md",
@@ -17875,7 +18279,8 @@
       "digest": "ae333210ed5aa6e367ca7bc99bd52f74f09671c565ce1cf3264275b01ab92acd",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "ИСКУПЛЕНИЕ/evidence/AT010_ARTICLE02_SEMANTIC_REVIEW_2026-11-07.md",
@@ -17883,7 +18288,8 @@
       "digest": "88f40df3d06c6bf7ef47a057d7d10e130ec7f776ff1aac08f141dc566feb0207",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "ИСКУПЛЕНИЕ/evidence/AT010_ARTICLE02_SEMANTIC_REVIEW_2026-11-07.md",
@@ -17891,7 +18297,8 @@
       "digest": "099e6defc02fd49ceb066a3e9c15ba7e5cb38808adacef803127accabbf50408",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "ИСКУПЛЕНИЕ/evidence/AT010_ARTICLE02_SEMANTIC_REVIEW_2026-11-07.md",
@@ -17899,7 +18306,8 @@
       "digest": "50c7d0437d7902b146fdc1bbbb7f62f3901de893c7f0ce46060fbd485f241537",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "ИСКУПЛЕНИЕ/evidence/AT010_ARTICLE02_SEMANTIC_REVIEW_2026-11-07.md",
@@ -17907,7 +18315,8 @@
       "digest": "96bc229e40a0203c607073f11019000763886847bbfb5debcf945198be40c80d",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "ИСКУПЛЕНИЕ/evidence/DORT_BAND_R_ACTA_1620_LYNCH_ACCESS_UPDATE_2026-11-17.md",
@@ -17955,7 +18364,8 @@
       "digest": "904fed08a14bffea6e1776d8c4c3eeb7c6092688",
       "algorithm": "sha1",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/nt/00_NT_AUTHORITY_2026-10-07.md",
@@ -17963,7 +18373,8 @@
       "digest": "f95833b147bb182786750700423625528dcb38f1508ea7585bce52e730a352f9",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "ИСКУПЛЕНИЕ/nt/00_NT_AUTHORITY_2026-10-07.md",
@@ -17979,7 +18390,8 @@
       "digest": "6049a43b135ed870f843b83eb6a04764fc796678",
       "algorithm": "sha1",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/nt/00_NT_AUTHORITY_2026-10-07.md",
@@ -17987,7 +18399,8 @@
       "digest": "61f4b97a80b2a8ec5faaf929f78a492b70e18fa7b4505e84983ee686782c19ea",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "ИСКУПЛЕНИЕ/nt/00_NT_AUTHORITY_2026-10-07.md",
@@ -18003,7 +18416,8 @@
       "digest": "4314af2042d9e77b2ce5c1c86d0c49325dd81684",
       "algorithm": "sha1",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/nt/00_NT_AUTHORITY_2026-10-07.md",
@@ -18011,7 +18425,8 @@
       "digest": "b94776ff4870570ee63240dfe36c9fc3f696600cfff39d408d85c4bb453ba4e9",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "ИСКУПЛЕНИЕ/nt/00_NT_AUTHORITY_2026-10-07.md",
@@ -18027,7 +18442,8 @@
       "digest": "94f31e2d2e8bd451d4d2f9739d13c419f7ce86c2",
       "algorithm": "sha1",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/nt/00_NT_AUTHORITY_2026-10-07.md",
@@ -18035,7 +18451,8 @@
       "digest": "dbdc40702d84dcd889c2090c6be3b8ad6c49fa61efa3e3dbd69fd69b03768504",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "ИСКУПЛЕНИЕ/nt/00_NT_AUTHORITY_2026-10-07.md",
@@ -18051,7 +18468,8 @@
       "digest": "26bad3eb42bba98471d154c954e36a6f30a0279d",
       "algorithm": "sha1",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/nt/00_NT_AUTHORITY_2026-10-07.md",
@@ -18059,7 +18477,8 @@
       "digest": "5cf3ee82efa214caee9059ada09f67a1079fc397f3c1343aa1b72d8c49be5458",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "ИСКУПЛЕНИЕ/nt/00_NT_AUTHORITY_2026-10-07.md",
@@ -18075,7 +18494,8 @@
       "digest": "f600a50fd902b6c9d31d67cf5611365df4169bce",
       "algorithm": "sha1",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/nt/00_NT_AUTHORITY_2026-10-07.md",
@@ -18083,7 +18503,8 @@
       "digest": "51922d3bac47159d54a766748e6864449981f37939e31340b451fc67b1c62a4c",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "ИСКУПЛЕНИЕ/nt/00_NT_AUTHORITY_2026-10-07.md",
@@ -18099,7 +18520,8 @@
       "digest": "2a95589b2a9cb9b8bda5372650c7f55745ceecad",
       "algorithm": "sha1",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/nt/00_NT_AUTHORITY_2026-10-07.md",
@@ -18107,7 +18529,8 @@
       "digest": "dc2888b956c63fe895fc5e809f1677e48455a6625c936a5bdb7e1fa2bd223462",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "ИСКУПЛЕНИЕ/nt/00_NT_AUTHORITY_2026-10-07.md",
@@ -18123,7 +18546,8 @@
       "digest": "07ecf2165c9e404926365f5060b8150e0e19af49",
       "algorithm": "sha1",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/nt/00_NT_AUTHORITY_2026-10-07.md",
@@ -18131,7 +18555,8 @@
       "digest": "52efbe59b499b9e366c8c90bfa6793c5b72a44f18011a8e8187fa7b1a29b7e32",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "ИСКУПЛЕНИЕ/nt/00_NT_AUTHORITY_2026-10-07.md",
@@ -18147,7 +18572,8 @@
       "digest": "013b2f0db69cf577f866c75c82f5a98cbb558dc2",
       "algorithm": "sha1",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/nt/00_NT_AUTHORITY_2026-10-07.md",
@@ -18155,7 +18581,8 @@
       "digest": "a9314ab4236e2d1a481e58cf7408542b014a28bfd7cf3439f414df5711d1159c",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "ИСКУПЛЕНИЕ/nt/00_NT_AUTHORITY_2026-10-07.md",
@@ -18171,7 +18598,8 @@
       "digest": "4ada2a729cc3e36ab29d101fe924e435d0a8bd54",
       "algorithm": "sha1",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/nt/00_NT_AUTHORITY_2026-10-07.md",
@@ -18179,7 +18607,8 @@
       "digest": "5758c2bdcd837bcde92b7c1af250d23f50bf72f6769cd914b9788a9866c433a0",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "ИСКУПЛЕНИЕ/nt/11_NT_LXX_COLLATION.md",
@@ -18195,7 +18624,8 @@
       "digest": "5cf3ee82efa214caee9059ada09f67a1079fc397f3c1343aa1b72d8c49be5458",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/nt/11_NT_LXX_COLLATION.md",
@@ -18211,7 +18641,8 @@
       "digest": "51922d3bac47159d54a766748e6864449981f37939e31340b451fc67b1c62a4c",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/nt/12_NT_TEXTUAL_APPARATUS.md",
@@ -18227,7 +18658,8 @@
       "digest": "dc2888b956c63fe895fc5e809f1677e48455a6625c936a5bdb7e1fa2bd223462",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/nt/12_NT_TEXTUAL_APPARATUS.md",
@@ -18243,7 +18675,8 @@
       "digest": "52efbe59b499b9e366c8c90bfa6793c5b72a44f18011a8e8187fa7b1a29b7e32",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/nt/12_NT_TEXTUAL_APPARATUS.md",
@@ -18251,7 +18684,8 @@
       "digest": "a9314ab4236e2d1a481e58cf7408542b014a28bfd7cf3439f414df5711d1159c",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/nt/12_NT_TEXTUAL_APPARATUS.md",
@@ -18259,7 +18693,8 @@
       "digest": "5758c2bdcd837bcde92b7c1af250d23f50bf72f6769cd914b9788a9866c433a0",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "ИСКУПЛЕНИЕ/nt/14_NT_BRANCH_AUDIT_2026-10-12.md",
@@ -18291,7 +18726,8 @@
       "digest": "c3bea117dd39014ffc38bda82b9176e1f00a04ca3069f9d96609905885b45854",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "ИСКУПЛЕНИЕ/nt/14_NT_BRANCH_AUDIT_2026-10-12.md",
@@ -18849,7 +19285,8 @@
       "digest": "79a1ce46206e504d082d0af9094bd308afc6abe3163d432099263ca5229c3ec2",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/102_I4_READER_ASSEMBLY_2026-08-04.md",
@@ -18857,7 +19294,8 @@
       "digest": "50657f3473c06e16d75ffe740828a9311f642562e824f148113ae28ff9b03c07",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/103_I4_CITATION_REVIEW_2026-08-04.md",
@@ -18945,7 +19383,8 @@
       "digest": "96cf828429bc60fd1ba4cec313182f629f17131d2004017e7ff3c88df4a741e0",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/104_ENTRY_CITATION_PASS_CURRENT_V3_2026-08-04.md",
@@ -19009,7 +19448,8 @@
       "digest": "0da103d12bf6dca8bf4aced0c9734052c8d6ef3501ffea7c3368f42708398d24",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/106_I1_READER_ASSEMBLY_2026-08-04.md",
@@ -19025,7 +19465,8 @@
       "digest": "50657f3473c06e16d75ffe740828a9311f642562e824f148113ae28ff9b03c07",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/106_I1_READER_ASSEMBLY_2026-08-04.md",
@@ -19041,7 +19482,8 @@
       "digest": "5acd1ed1ec0f50707a694332ae4ed56c274f31294d67956999f7eb7437f8250d",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/107_I1_CITATION_REVIEW_2026-08-04.md",
@@ -19097,7 +19539,8 @@
       "digest": "422e855d715df99f5f4648f337366f94897eaa25413a165a7b11b71878d5f387",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/108_ENTRY_CITATION_PASS_CURRENT_V4_2026-08-04.md",
@@ -19201,7 +19644,8 @@
       "digest": "6d00cbd44a7d3540faddcbdbc03bfff1fd1c5a441c380392010f973d76ce92f9",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/110_I3_READER_ASSEMBLY_2026-08-04.md",
@@ -19209,7 +19653,8 @@
       "digest": "4292f76ff3e2fa15dfd682b5a421400ce9a62ec391109b3109aef14d72b224f0",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/110_I3_READER_ASSEMBLY_2026-08-04.md",
@@ -19217,7 +19662,8 @@
       "digest": "ebad12d8f1a9d8c1f0c1bd5fd4790ee49fd24f0d4e04626e5cd785cfdb2b702b",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/110_I3_READER_ASSEMBLY_2026-08-04.md",
@@ -19225,7 +19671,8 @@
       "digest": "8804a6e3488a8c5feea6c264b8d08e6ec8530852f452167a73a2db4f1919ebc2",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/111_I3_CITATION_REVIEW_2026-08-04.md",
@@ -19273,7 +19720,8 @@
       "digest": "6d00cbd44a7d3540faddcbdbc03bfff1fd1c5a441c380392010f973d76ce92f9",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/111_I3_CITATION_REVIEW_2026-08-04.md",
@@ -19281,7 +19729,8 @@
       "digest": "4292f76ff3e2fa15dfd682b5a421400ce9a62ec391109b3109aef14d72b224f0",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/111_I3_CITATION_REVIEW_2026-08-04.md",
@@ -19289,7 +19738,8 @@
       "digest": "25a12fcd595c213eb09589c08b3be4a9b76d7cb24e586ba2b505f0b7fc6c56a1",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/111_I3_CITATION_REVIEW_2026-08-04.md",
@@ -19297,7 +19747,8 @@
       "digest": "120f305e7474a0baf3da7a068ea91159333a879e3fbe4a5f0f6b006a841e3d9b",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/111_I3_CITATION_REVIEW_2026-08-04.md",
@@ -19305,7 +19756,8 @@
       "digest": "cc083ae3149eed2a989b2b1fcff16d5f02152664e40249a10e5cea10aeeace46",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/111_I3_CITATION_REVIEW_2026-08-04.md",
@@ -19313,7 +19765,8 @@
       "digest": "f46b756c5f6e4f3afcda331d2e0ae94543ccabb24b6b02af537c78f1943df30e",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/112_ENTRY_CITATION_PASS_CURRENT_V5_2026-08-04.md",
@@ -19401,7 +19854,8 @@
       "digest": "12c4344acfc96050eaae35d98ed666102e62c700ead9db34c24681a914102efb",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/114_PART2_READER_ASSEMBLY_2026-08-04.md",
@@ -19409,7 +19863,8 @@
       "digest": "1e5ff030fea335f64dda3a613898d1237d3a4e34d0c303d67f51a64af92e1964",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/114_PART2_READER_ASSEMBLY_2026-08-04.md",
@@ -19417,7 +19872,8 @@
       "digest": "c7e37a30651bf96f77f2a2eba204251591edb2ab28aff1cc8332d6c72f99086d",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/114_PART2_READER_ASSEMBLY_2026-08-04.md",
@@ -19425,7 +19881,8 @@
       "digest": "5d78a0e23ed09e10f71dfcf9010269430c53faf2bd6ffe1225a3160ee9ffc4a6",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/114_PART2_READER_ASSEMBLY_2026-08-04.md",
@@ -19433,7 +19890,8 @@
       "digest": "f5ce26d3f27bf9e6aa2c87e625d9b91875d580f296d02d80e974a27dd279187f",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/114_PART2_READER_ASSEMBLY_2026-08-04.md",
@@ -19441,7 +19899,8 @@
       "digest": "340d19206af863e8b9a7098a84d47199360bec49d1062545c199a4fda8572c65",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/115_PART2_CITATION_REVIEW_2026-08-04.md",
@@ -19505,7 +19964,8 @@
       "digest": "d51a1de91ac865bf81c485797092637ff39d3b50ca59dbbaddec85e9cd2cb804",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/115_PART2_CITATION_REVIEW_2026-08-04.md",
@@ -19513,7 +19973,8 @@
       "digest": "f7cf291e9cecb4a3a9d5aa28ae0185982c54c477448ce3e1b3752501379538cc",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/115_PART2_CITATION_REVIEW_2026-08-04.md",
@@ -19521,7 +19982,8 @@
       "digest": "be48bfb08f60853e858217c3df3a3456dc1b9a7d8235aed394ca5c39f3e65894",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/115_PART2_CITATION_REVIEW_2026-08-04.md",
@@ -19529,7 +19991,8 @@
       "digest": "b0932037fbc01a403aa22347d2c3065b6115a1513b3747a4b46fdeb926e6adf7",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/115_PART2_CITATION_REVIEW_2026-08-04.md",
@@ -19537,7 +20000,8 @@
       "digest": "f5ce26d3f27bf9e6aa2c87e625d9b91875d580f296d02d80e974a27dd279187f",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/115_PART2_CITATION_REVIEW_2026-08-04.md",
@@ -19545,7 +20009,8 @@
       "digest": "0811af3bd3865bc4dfd36f7d1f62048cdbd85f73c243512eb33410b07bbf8fe1",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/116_ENTRY_CITATION_PASS_CURRENT_V6_2026-08-04.md",
@@ -20065,7 +20530,8 @@
       "digest": "df4fd39e73c031083d8fad145263281c3be10ededa0a20d14f89b78e64a3b576",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/136_PART5_NATIVE_ENTRY_CITATION_PASS_2026-08-09.md",
@@ -20281,7 +20747,8 @@
       "digest": "f93b2e4bd2ff2c89475ed57e384a460d5f4400f4d2ee740c63cd8d56b0660f37",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/69_V84F_FINAL_EXACT_HEAD_CLOSURE.md",
@@ -20297,7 +20764,8 @@
       "digest": "9214b35ee34e07da58e44c9aaf349b3815c3ca1d02032347bef4ec92ff81c95a",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/69_V84F_FINAL_EXACT_HEAD_CLOSURE.md",
@@ -20313,7 +20781,8 @@
       "digest": "1ef9ebe9d28c1dcaec47cb6d2f7cc0a8bd3e5a1e6f685dd3c7b992177ab1a678",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/69_V84F_FINAL_EXACT_HEAD_CLOSURE.md",
@@ -20321,7 +20790,8 @@
       "digest": "302801f04589b39342197db7d394cf0b4b1872ab88b314f5f915b61dbdb3ac0a",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/69_V84F_FINAL_EXACT_HEAD_CLOSURE.md",
@@ -20329,7 +20799,8 @@
       "digest": "f72654f60fee1bcb8b652d271160753788255e95a61e02e3401014b801b54065",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/69_V84F_FINAL_EXACT_HEAD_CLOSURE.md",
@@ -20337,7 +20808,8 @@
       "digest": "bde7435ab093dad8dacb808b7120fbf8f791ad04a40d1df5477309681107a6e7",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/70_V84G_TRINITARIAN_CROSS_AND_DERELICTION_BOUNDARY.md",
@@ -20441,7 +20913,8 @@
       "digest": "50a959aa85959f928b3789d09c0fb2fd003a82e4cd1b1587285c4bdaba85d657",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/71_V84H_DIRECT_SOURCE_CLEANUP_TRINITARIAN_AND_FINAL_EXACT_HEAD.md",
@@ -20449,7 +20922,8 @@
       "digest": "28f276d335032932f1ef9db1ba471767bdd7facc74601ad5b622df85576aea09",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/71_V84H_DIRECT_SOURCE_CLEANUP_TRINITARIAN_AND_FINAL_EXACT_HEAD.md",
@@ -20457,7 +20931,8 @@
       "digest": "b8ca32c43f02a80baf012a89ce69131da4d19d04adfb3df2aa7f26c4806bbf80",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/71_V84H_DIRECT_SOURCE_CLEANUP_TRINITARIAN_AND_FINAL_EXACT_HEAD.md",
@@ -20465,7 +20940,8 @@
       "digest": "8cde1642e807ee7941a6815f92010e66d831420af0f6c97e6b00a11c48188b65",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/71_V84H_DIRECT_SOURCE_CLEANUP_TRINITARIAN_AND_FINAL_EXACT_HEAD.md",
@@ -20473,7 +20949,8 @@
       "digest": "cd2b40be6957521f19087c8bb4f80dbd2aa1075cc5a7333c33a3fb9fbd66f46c",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/71_V84H_DIRECT_SOURCE_CLEANUP_TRINITARIAN_AND_FINAL_EXACT_HEAD.md",
@@ -20481,7 +20958,8 @@
       "digest": "9c02eba3172a9c4660634ad36d19f47ffd872bac5dab322e6d1e43b6cccb731d",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/71_V84H_DIRECT_SOURCE_CLEANUP_TRINITARIAN_AND_FINAL_EXACT_HEAD.md",
@@ -20489,7 +20967,8 @@
       "digest": "67a31e5513ce785a8a5391562bcb28b9b80146b6e1da3abffcb87381da826d6a",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/71_V84H_DIRECT_SOURCE_CLEANUP_TRINITARIAN_AND_FINAL_EXACT_HEAD.md",
@@ -20497,7 +20976,8 @@
       "digest": "d3a4a2e747db5cf6e0d7842643e030a5ee67a1fad82ddcdf04739d2e12f67066",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/72_V84I_POST_MERGE_TOTAL_AUDIT_AND_CLOSURE_GATES.md",
@@ -20697,7 +21177,8 @@
       "digest": "b25ff1a498057f6c20d92e5f98965338c40a9de752af198e9de97fefcf81b000",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/89_WHOLE_BOOK_CITATION_INVENTORY_2026-08-04.md",
@@ -20705,7 +21186,8 @@
       "digest": "e1aea1238abea14bf8b7a4157bd36038c760073ce7932eacdb2582f473277dd8",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/90_CITATION_INVENTORY_CURRENT_OVERLAY_2026-08-04.md",
@@ -20713,7 +21195,8 @@
       "digest": "b25ff1a498057f6c20d92e5f98965338c40a9de752af198e9de97fefcf81b000",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/90_CITATION_INVENTORY_CURRENT_OVERLAY_2026-08-04.md",
@@ -20721,7 +21204,8 @@
       "digest": "e1aea3fdbe537972bfc9382d2fa0267d661dd70f5929602ecfcd50dda5f0f834",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/90_CITATION_INVENTORY_CURRENT_OVERLAY_2026-08-04.md",
@@ -20729,7 +21213,8 @@
       "digest": "b25ff1a498057f6c20d92e5f98965338c40a9de752af198e9de97fefcf81b000",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/90_CITATION_INVENTORY_CURRENT_OVERLAY_2026-08-04.md",
@@ -20769,7 +21254,8 @@
       "digest": "91ccbce5aa0bf8a22c75af4ab984b09dd8928623666eaef30ded88cbb1fe4c73",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/94_X1_CITATION_REVIEW_2026-08-04.md",
@@ -20801,7 +21287,8 @@
       "digest": "7e27c913e38325dc86a2c35220a7f069e4c7c53fca7dac5c750dbfbf09659e99",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/95_X3_CITATION_REVIEW_2026-08-04.md",
@@ -20825,7 +21312,8 @@
       "digest": "556f29a8402172abaf76dd62480398a8e3a73d0154341b745bc85bc0fb7caa5f",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/95_X3_CITATION_REVIEW_2026-08-04.md",
@@ -20865,7 +21353,8 @@
       "digest": "4b4c812566e075fcb94612ed94f7fd16d4ec7c43185cd2516f6386298180fc74",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/96_ENTRY_CITATION_PASS_CURRENT_OVERLAY_2026-08-04.md",
@@ -20945,7 +21434,8 @@
       "digest": "1f85220c268c2c11b7e3b50345241fa42baf8690c21dd17ba525655ffa7466aa",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/98_X2_READER_ASSEMBLY_2026-08-04.md",
@@ -20953,7 +21443,8 @@
       "digest": "ecbec7c26d082cb710fc141521561e31d68e9414f65d4f6ebcb85aca810d9d96",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/98_X2_READER_ASSEMBLY_2026-08-04.md",
@@ -20961,7 +21452,8 @@
       "digest": "9627108225bf3d8791ae9f8ba01b5e4e44819eb46e3c815a5cb141dbdc54db01",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/98_X2_READER_ASSEMBLY_2026-08-04.md",
@@ -20969,7 +21461,8 @@
       "digest": "2b5d382283b401e016257e2f14eac7f17c51a86482f98ce53cf9e86ea652aa6f",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/98_X2_READER_ASSEMBLY_2026-08-04.md",
@@ -20977,7 +21470,8 @@
       "digest": "fded44e3bae5140bfb54536f75c483d65272da7f19f347f02cf51ba4ff1583d2",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/99_X2_CITATION_REVIEW_2026-08-04.md",
@@ -21041,7 +21535,8 @@
       "digest": "9754ba5e5545d57d56d56ee9f23f3204c7e40e424cc4ed7956db8e83707347a6",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "СЕРИЯ СЕРДЦЕ/V68_SINGLE_ZIP_MANIFEST.md",
@@ -22999,7 +23494,8 @@
       "digest": "f48fb5127934d2d25d4f6019b8fc24231a63720330ac2fb333a046557a2994f5",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "ТРУДНЫЕ ТЕКСТЫ/1_ENOCH_LXIV_15_8_12_DEMON_ORIGIN_BLOCKING_HOLD_CLOSURE_PROTOCOL.md",
@@ -23007,7 +23503,8 @@
       "digest": "91962dabccc4aca0178ae8b8a25da8fb",
       "algorithm": "md5",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "short-digest-no-path"
     },
     {
       "file": "ТРУДНЫЕ ТЕКСТЫ/ARTICLE_ENOCH_6A_LIX_CLAIM_LEVEL_FOOTNOTE_MAP.md",
@@ -23031,7 +23528,9 @@
       "digest": "e681fb764e48856115a747122cab2f9c8746bfb558d46dc9a5f97cb223d81ba2",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash",
+      "sameDigestClaimedElsewhere": true
     },
     {
       "file": "ТРУДНЫЕ ТЕКСТЫ/DEEP_PASS_VII_STUCKENBRUCK_PARTIAL_ANCIENT_TALES_FULL_READING_AND_40_LINK_AUDIT.md",
@@ -23039,7 +23538,9 @@
       "digest": "e681fb764e48856115a747122cab2f9c8746bfb558d46dc9a5f97cb223d81ba2",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash",
+      "sameDigestClaimedElsewhere": true
     },
     {
       "file": "ТРУДНЫЕ ТЕКСТЫ/DEEP_PASS_VII_STUCKENBRUCK_PARTIAL_ANCIENT_TALES_FULL_READING_AND_40_LINK_AUDIT.md",
@@ -23055,7 +23556,8 @@
       "digest": "f1f314d83bcde73760bd1d22ccdec50c4e59fd538b84a6db8e69c6e331ff0e61",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "ТРУДНЫЕ ТЕКСТЫ/DEEP_PASS_VI_RECEIVED_MAJOR_SOURCES_INGEST_AND_FIRST_SYNTHESIS.md",
@@ -23107,7 +23609,8 @@
       "digest": "c2ff43e7380e5dfff3eeb35e47e1a78202e8d6f4e1720ef96b26be5dea250f58",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "artifact-not-in-tree"
     },
     {
       "file": "ТРУДНЫЕ ТЕКСТЫ/DEEP_PASS_XIX_DIRECT_TEXT_MANUSCRIPTS_CLOSEOUT.md",
@@ -23731,7 +24234,8 @@
       "digest": "4332012a599a6f54152d006729e9ce8cbf1b4628465ecbbb134c675da77d2b61",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "ТРУДНЫЕ ТЕКСТЫ/DRAWNEL_2020_SACRED_TEXTS_DISPARATE_INTERPRETATIONS_SOURCE_CARD.md",
@@ -23739,7 +24243,8 @@
       "digest": "f2e8573ee22110a896eb6966d4b2504fbf474c88cf4a9a921c0624eae0b6b015",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "ТРУДНЫЕ ТЕКСТЫ/DRAWNEL_2024_ARAMAIC_ENOCH_RELATED_LITERATURE_SOURCE_CARD.md",
@@ -23747,7 +24252,8 @@
       "digest": "b1e5f71761b37c06b6992e815fbd879ae9ae3781a0fc65eb357f5dfb34c1bda6",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "ТРУДНЫЕ ТЕКСТЫ/GENESIS6_LX_ARTICLES_6A_6B_CLAIM_LEVEL_SOURCE_INSERTION_IMPLEMENTATION_RECORD.md",
@@ -23779,7 +24285,8 @@
       "digest": "0089182f3c191d24d491686c60b18c9255b3b81c67f4209f365eaab7376f905b",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "ТРУДНЫЕ ТЕКСТЫ/HISTORY_WIDE_UPLOADED_SOURCE_INVENTORY_DUPLICATE_AND_RELEVANCE_LEDGER.md",
@@ -23787,7 +24294,8 @@
       "digest": "1a4a7d7624c1c1d3f324e68b0622af1284ce7c93f18a9c4a9ee46708d28202d7",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "ТРУДНЫЕ ТЕКСТЫ/HISTORY_WIDE_UPLOADED_SOURCE_INVENTORY_DUPLICATE_AND_RELEVANCE_LEDGER.md",
@@ -23795,7 +24303,8 @@
       "digest": "6533edc62849614c6e4dcf2cd04b63bc11677d0b4b584946fee641660fc4b159",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "ТРУДНЫЕ ТЕКСТЫ/HISTORY_WIDE_UPLOADED_SOURCE_INVENTORY_DUPLICATE_AND_RELEVANCE_LEDGER.md",
@@ -23803,7 +24312,8 @@
       "digest": "6e4682a153a75946d54e3570e300075d1a2068d02504ab8ab671a2d7ea0c765b",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "ТРУДНЫЕ ТЕКСТЫ/HISTORY_WIDE_UPLOADED_SOURCE_INVENTORY_DUPLICATE_AND_RELEVANCE_LEDGER.md",
@@ -23811,7 +24321,8 @@
       "digest": "98a4dba53dfa7942424cf48ba1bb833f46375d9af1cb90a0fa4ffd5922e33387",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "ТРУДНЫЕ ТЕКСТЫ/HISTORY_WIDE_UPLOADED_SOURCE_INVENTORY_DUPLICATE_AND_RELEVANCE_LEDGER.md",
@@ -23819,7 +24330,8 @@
       "digest": "9d39a9e0824f8ac003f076d31a07af56a3e8e7fc415370ab73576bb7e9b5f361",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "ТРУДНЫЕ ТЕКСТЫ/HISTORY_WIDE_UPLOADED_SOURCE_INVENTORY_DUPLICATE_AND_RELEVANCE_LEDGER.md",
@@ -23827,7 +24339,8 @@
       "digest": "df4ba4117b0c5ea666b18be1f53a42abaea3c0a70d81f2b460fce0cbbc23e89c",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "ТРУДНЫЕ ТЕКСТЫ/MACHIELA_2023_ARAMAIC_SCROLLS_HANDBOOK_SOURCE_CARD.md",
@@ -23835,7 +24348,8 @@
       "digest": "9d39a9e0824f8ac003f076d31a07af56a3e8e7fc415370ab73576bb7e9b5f361",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "ТРУДНЫЕ ТЕКСТЫ/MILIK_DRAWNEL_2022_TESTAMENT_OF_LEVI_SOURCE_CARD.md",
@@ -23843,7 +24357,8 @@
       "digest": "2ec0950595caaaca78449907da51887a293ccf008a6627a0de1e71193201e190",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "ТРУДНЫЕ ТЕКСТЫ/NICKELSBURG_VANDERKAM_2012_HERMENEIA_TRANSLATION_SOURCE_CARD.md",
@@ -23851,7 +24366,8 @@
       "digest": "76976ddf74a3d9aa0d1e03ab0f8c26831f4b3ed90b4eb5fde28b8bb789cfb45c",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "ТРУДНЫЕ ТЕКСТЫ/PDF_CORPUS_REAUDIT_2026_07_22.md",
@@ -23859,7 +24375,8 @@
       "digest": "98a4dba53dfa7942424cf48ba1bb833f46375d9af1cb90a0fa4ffd5922e33387",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "ТРУДНЫЕ ТЕКСТЫ/PDF_CORPUS_REAUDIT_2026_07_22.md",
@@ -23867,7 +24384,8 @@
       "digest": "9d39a9e0824f8ac003f076d31a07af56a3e8e7fc415370ab73576bb7e9b5f361",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "ТРУДНЫЕ ТЕКСТЫ/PDF_CORPUS_REAUDIT_2026_07_22.md",
@@ -23875,7 +24393,8 @@
       "digest": "6e4682a153a75946d54e3570e300075d1a2068d02504ab8ab671a2d7ea0c765b",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "ТРУДНЫЕ ТЕКСТЫ/PDF_CORPUS_REAUDIT_2026_07_22.md",
@@ -23883,7 +24402,8 @@
       "digest": "0089182f3c191d24d491686c60b18c9255b3b81c67f4209f365eaab7376f905b",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "ТРУДНЫЕ ТЕКСТЫ/PDF_CORPUS_REAUDIT_2026_07_22.md",
@@ -23891,7 +24411,8 @@
       "digest": "df4ba4117b0c5ea666b18be1f53a42abaea3c0a70d81f2b460fce0cbbc23e89c",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "ТРУДНЫЕ ТЕКСТЫ/PDF_CORPUS_REAUDIT_2026_07_22.md",
@@ -23899,7 +24420,8 @@
       "digest": "76976ddf74a3d9aa0d1e03ab0f8c26831f4b3ed90b4eb5fde28b8bb789cfb45c",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "ТРУДНЫЕ ТЕКСТЫ/PDF_CORPUS_REAUDIT_2026_07_22.md",
@@ -23907,7 +24429,8 @@
       "digest": "b1e5f71761b37c06b6992e815fbd879ae9ae3781a0fc65eb357f5dfb34c1bda6",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "ТРУДНЫЕ ТЕКСТЫ/PDF_CORPUS_REAUDIT_2026_07_22.md",
@@ -23915,7 +24438,8 @@
       "digest": "1a4a7d7624c1c1d3f324e68b0622af1284ce7c93f18a9c4a9ee46708d28202d7",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "ТРУДНЫЕ ТЕКСТЫ/PDF_CORPUS_REAUDIT_2026_07_22.md",
@@ -23923,7 +24447,8 @@
       "digest": "f2e8573ee22110a896eb6966d4b2504fbf474c88cf4a9a921c0624eae0b6b015",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "ТРУДНЫЕ ТЕКСТЫ/PDF_CORPUS_REAUDIT_2026_07_22.md",
@@ -23931,7 +24456,8 @@
       "digest": "4332012a599a6f54152d006729e9ce8cbf1b4628465ecbbb134c675da77d2b61",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "ТРУДНЫЕ ТЕКСТЫ/PDF_CORPUS_REAUDIT_2026_07_22.md",
@@ -23939,7 +24465,8 @@
       "digest": "2ec0950595caaaca78449907da51887a293ccf008a6627a0de1e71193201e190",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "ТРУДНЫЕ ТЕКСТЫ/PDF_CORPUS_REAUDIT_2026_07_22.md",
@@ -23947,7 +24474,8 @@
       "digest": "e9f278a882c33840d13076cb676998d53bd73af683acdeeaf83a753b8de541b7",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "ТРУДНЫЕ ТЕКСТЫ/PDF_CORPUS_REAUDIT_2026_07_22.md",
@@ -23955,7 +24483,8 @@
       "digest": "ac7167232c4b07cbe8c7207b4353b7e37b362a0c0e8a94e95a75fdd7c4f27fbc",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "ТРУДНЫЕ ТЕКСТЫ/PDF_CORPUS_REAUDIT_2026_07_22.md",
@@ -23963,7 +24492,8 @@
       "digest": "f04c64161cb0cfde9e18bd354128ae1b18bdd3492a4e7bca168cf22b05f61d5d",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "ТРУДНЫЕ ТЕКСТЫ/PDF_CORPUS_REAUDIT_2026_07_22.md",
@@ -23971,7 +24501,8 @@
       "digest": "8019bc3af2bd5afc35459b63209504558cf72974ba91c68dcb13c3c6f77e730d",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "ТРУДНЫЕ ТЕКСТЫ/PDF_CORPUS_REAUDIT_2026_07_22.md",
@@ -23979,7 +24510,8 @@
       "digest": "8b2d5b6782ab91b6d8553fdc0c74d8ce61dd572c4234f842673df39118211fe1",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "ТРУДНЫЕ ТЕКСТЫ/PDF_CORPUS_REAUDIT_2026_07_22.md",
@@ -23987,7 +24519,8 @@
       "digest": "5cbe468cabe43f6c86b02e6f2f09be23b6c4869e9296d6d2ce9e6ff4e95ceb70",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "bare-hash"
     },
     {
       "file": "ТРУДНЫЕ ТЕКСТЫ/STADEL_2024_FRAGMENTARY_QUMRAN_ARAMAIC_METHOD_SOURCE_CARD.md",
@@ -23995,7 +24528,8 @@
       "digest": "98a4dba53dfa7942424cf48ba1bb833f46375d9af1cb90a0fa4ffd5922e33387",
       "algorithm": "sha256",
       "state": "unclaimed",
-      "paths": []
+      "paths": [],
+      "reason": "labelled-no-path"
     },
     {
       "file": "ТРУДНЫЕ ТЕКСТЫ/АРХИВ/PR25_10_8_15_8_12/README.md",
@@ -24007,10 +24541,10 @@
     }
   ],
   "jsonRecords": {
-    "records": 3046,
+    "records": 3060,
     "byState": {
-      "external": 183,
-      "stale": 2836,
+      "external": 190,
+      "stale": 2843,
       "match": 27
     }
   }

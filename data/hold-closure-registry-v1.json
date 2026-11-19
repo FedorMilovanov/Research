@@ -240,7 +240,7 @@
       "verification": {
         "command": "python3 -B scripts/verify_internal_digests.py --summary",
         "expect": "Markdown: 1 537 подписей, match=58, stale=27 (round-manifest=21, handoff=6), 0 в живых документах, external=248, external-drive=778, ambiguous=7, unclaimed=419. JSON: 2 329 записей, 1 908 о файлах в дереве (58 совпало, 1 850 описывают прошлое состояние), 421 о файлах вне дерева; JSON-проход не гейтится",
-        "tests": "python3 -B -m unittest discover -s scripts -p 'test_verify_internal_digests.py' → 19 OK",
+        "tests": "python3 -B -m unittest discover -s scripts -p 'test_verify_internal_digests.py' → 30 OK",
         "ci": ".github/workflows/holds-inventory.yml, шаг «Reject stale digests in live documents»"
       },
       "limits": [
@@ -346,6 +346,29 @@
         "python3 -B scripts/audit_drive_ledger.py --snapshot data/drive-ledger-snapshot-2026-11-18.json -o data/drive-ledger-audit-2026-11-18.json"
       ],
       "tests": "python3 -B -m unittest discover -s scripts -p 'test_audit_drive_ledger.py' → 7 OK"
+    }
+
+    ,{
+      "id": "HCR-2026-11-18-14",
+      "axis": "hashes that stand without a file name (514 of 1 537)",
+      "method": "unclaimed-reason-classification",
+      "closedOn": "2026-11-18",
+      "state": "closed",
+      "question": "Проверяемы ли 514 подписей SHA-256, в строке которых не назван ни один файл репозитория?",
+      "finding": "Нет, и причина у каждой записана: 205 подписаны словами, но объект — не файл дерева (фиды, Vimeo); 141 стоят без подписи вообще (объект назван другой колонкой или строкой выше); 95 — короткие дайджесты без пути; 59 — артефакты вне дерева (ZIP, XML, PDF, скан); 12 — медиа-сегменты; 2 — дайджесты состояния корпуса. 11 значений подписаны с путём в другом документе и подтверждаются там.",
+      "evidence": "data/internal-digests-verified-2026-11-18.json, totals.unclaimedByReason и unclaimedDigestClaimedElsewhere",
+      "closedScope": "Разобраны все 514. Проверена и отклонена гипотеза «взять путь из предыдущей строки»: подходящих строк 18, и выборка показала обрывки URL и ссылки на внешние файлы — правило дало бы подписи, которых документ не делал.",
+      "notClosed": "Ни один из 514 не сверен с байтами, потому что сверять нечего: объекты вне дерева. Дотянуть их можно только загрузкой этих объектов, а не проверкой.",
+      "limits": [
+        "Классификация по словам строки, а не по смыслу документа; слово «архив» в другом значении попадёт в artifact-not-in-tree.",
+        "Классы — карта поверхности, а не приговор; --check на них не гейтится.",
+        "Перекрёстное совпадение значения подтверждает, что значение известно репозиторию, но не проверяет эту строку."
+      ],
+      "commands": [
+        "python3 -B scripts/verify_internal_digests.py --only unclaimed",
+        "python3 -B -m unittest discover -s scripts -p 'test_verify_internal_digests.py'"
+      ],
+      "tests": "python3 -B -m unittest discover -s scripts -p 'test_verify_internal_digests.py' → 30 OK"
     }
   ],
   "confirmations": [

@@ -115,6 +115,51 @@ class SourceKindTests(unittest.TestCase):
         self.assertEqual(vid.source_kind("docs/research/HOLDS_REGISTER_2026-11-18.md"), "live-document")
 
 
+class UnclaimedReasonTests(unittest.TestCase):
+    """514 hashes stand without a file name; the reason is what makes the count mean something."""
+
+    def setUp(self) -> None:
+        self.fx = Fixture()
+
+    def tearDown(self) -> None:
+        self.fx.close()
+
+    def report(self, line: str) -> dict:
+        self.fx.write("doc.md", line + "\n")
+        return vid.verify(self.fx.root)
+
+    def test_media_segment(self) -> None:
+        report = self.report(f"- `16:30\u201319:35` SHA-256: `{'a' * 64}`")
+        self.assertEqual(report["findings"][0]["reason"], "media-segment")
+
+    def test_artifact_outside_the_tree(self) -> None:
+        report = self.report(f"- Artifact ZIP digest: `sha256:{'b' * 64}`")
+        self.assertEqual(report["findings"][0]["reason"], "artifact-not-in-tree")
+
+    def test_corpus_digest(self) -> None:
+        report = self.report(f"- effective authority digest = `{'c' * 64}`")
+        self.assertEqual(report["findings"][0]["reason"], "corpus-digest")
+
+    def test_labelled_but_no_path(self) -> None:
+        report = self.report(f"- Feed SHA-256: `{'d' * 64}`")
+        self.assertEqual(report["findings"][0]["reason"], "labelled-no-path")
+
+    def test_bare_hash(self) -> None:
+        report = self.report(f"`{'e' * 64}`")
+        self.assertEqual(report["findings"][0]["reason"], "bare-hash")
+        self.assertEqual(report["totals"]["unclaimedByReason"], {"bare-hash": 1})
+
+    def test_same_digest_claimed_with_a_path_elsewhere(self) -> None:
+        self.fx.write("target.md", "bytes\n")
+        digest = self.fx.digest("target.md")
+        self.fx.write("a.md", f"- `target.md` sha256 `{digest}`\n")
+        self.fx.write("b.md", f"- digest: `{digest}`\n")
+        report = vid.verify(self.fx.root)
+        lone = [f for f in report["findings"] if f["file"] == "b.md"][0]
+        self.assertTrue(lone.get("sameDigestClaimedElsewhere"))
+        self.assertEqual(report["totals"]["unclaimedDigestClaimedElsewhere"], 1)
+
+
 class ShortDigestTests(unittest.TestCase):
     """A 40-hex value is a Git object id unless the line says it is a file digest."""
 

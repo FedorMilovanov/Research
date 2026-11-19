@@ -180,6 +180,30 @@ def classify(line: str, digest: str, source: Path, root: Path) -> dict:
     return {"state": state, "paths": claimed_paths, "marked": bool(DIGEST_WORDS.search(line))}
 
 
+# An unclaimed hash is not automatically a gap: often the line names an object this
+# checkout does not contain (a media segment, a ZIP artifact, a scan). The reason is
+# recorded so the count of "hashes we cannot check" splits into "nothing to check" and
+# "genuinely unclassified".
+MEDIA_RE = re.compile(r"\d{1,2}:\d{2}\s*[\u2013\u2014-]\s*\d{1,2}:\d{2}|segment|\u0444\u0440\u0430\u0433\u043c\u0435\u043d\u0442|clip|\u0432\u044b\u0440\u0435\u0437|media|\u0430\u0443\u0434\u0438\u043e|\u0432\u0438\u0434\u0435\u043e", re.I)
+ARTIFACT_RE = re.compile(r"zip|archive|artifact|xml|pdf|scan|facsimile|djvu|capture|\u0441\u043a\u0430\u043d|\u0430\u0440\u0445\u0438\u0432", re.I)
+CORPUS_RE = re.compile(r"authority digest|corpus digest|state digest|\u0434\u0430\u0439\u0434\u0436\u0435\u0441\u0442|\u0441\u0432\u043e\u0434\u043d|effective", re.I)
+
+
+def unclaimed_reason(line: str, digest: str) -> str:
+    prefix = line.split(digest)[0]
+    if len(digest) != 64:
+        return "short-digest-no-path"
+    if MEDIA_RE.search(prefix):
+        return "media-segment"
+    if ARTIFACT_RE.search(prefix):
+        return "artifact-not-in-tree"
+    if CORPUS_RE.search(prefix):
+        return "corpus-digest"
+    if DIGEST_WORDS.search(prefix):
+        return "labelled-no-path"
+    return "bare-hash"
+
+
 def sha1_is_labelled(line: str) -> bool:
     """Only a labelled short digest is a claim about the bytes of a named file."""
     if not SHA1_LABEL_RE.search(line):
@@ -215,6 +239,7 @@ def verify(root: Path, skip_lines: int = 0) -> dict:
     by_state: dict[str, int] = {}
     stale_by_kind: dict[str, int] = {}
     by_algorithm: dict[str, int] = {}
+    unclaimed_reasons: dict[str, int] = {}
     files_touched: dict[str, int] = {}
     for path in iter_markdown(root):
         rel = path.relative_to(root).as_posix()
@@ -256,14 +281,20 @@ def verify(root: Path, skip_lines: int = 0) -> dict:
                 if pairs is None:
                     if not PATH_RE.findall(line):
                         state = "unclaimed"
+                        reason = unclaimed_reason(line, match.group(0))
+                        unclaimed_reasons[reason] = unclaimed_reasons.get(reason, 0) + 1
                     else:
+                        reason = None
                         state = "ambiguous"
                     by_state[state] = by_state.get(state, 0) + 1
-                    findings.append({
+                    finding = {
                         "file": rel, "line": lineno, "digest": match.group(0),
                         "algorithm": algorithm_of(match.group(0)),
                         "state": state, "paths": [],
-                    })
+                    }
+                    if reason:
+                        finding["reason"] = reason
+                    findings.append(finding)
                     continue
                 digest = match.group(0)
                 claimed = [p for h, p in pairs if h == digest] or [p for _, p in pairs]
@@ -302,6 +333,16 @@ def verify(root: Path, skip_lines: int = 0) -> dict:
                     "state": result["state"],
                     "paths": result["paths"],
                 })
+    # A hash that stands alone here may still be verified elsewhere: the same value can
+    # be claimed next to a file name in another document. That does not verify this line
+    # (it names no object), but it says the value is not unknown to the repository.
+    claimed_elsewhere = {f["digest"] for f in findings if f.get("paths")}
+    cross = 0
+    for finding in findings:
+        if finding["state"] == "unclaimed" and finding["digest"] in claimed_elsewhere:
+            finding["sameDigestClaimedElsewhere"] = True
+            cross += 1
+
     return {
         "schemaVersion": SCHEMA_VERSION,
         "authorityId": AUTHORITY_ID,
@@ -313,6 +354,8 @@ def verify(root: Path, skip_lines: int = 0) -> dict:
             "filesWithStaleClaims": len(files_touched),
             "staleBySourceKind": stale_by_kind,
             "byAlgorithm": dict(sorted(by_algorithm.items())),
+            "unclaimedByReason": dict(sorted(unclaimed_reasons.items(), key=lambda kv: -kv[1])),
+            "unclaimedDigestClaimedElsewhere": cross,
         },
         "staleByFile": dict(sorted(files_touched.items(), key=lambda kv: (-kv[1], kv[0]))),
         "findings": findings,
