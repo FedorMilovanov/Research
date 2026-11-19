@@ -49,7 +49,10 @@ AUTHORITY_ID = "DRIVE-LEDGER-AUDIT-2026-11-18"
 SKIP_DIRS = {".git", "node_modules", "incoming", ".venv", "__pycache__"}
 ROW_RE = re.compile(
     r"\|\s*(?P<label>[^|]{1,200}?)\|\s*`?(?P<id>1[A-Za-z0-9_-]{27,43})`?\s*\|"
-    r"\s*(?P<size>[\d\s]{1,12})\|\s*`?(?P<md5>[0-9a-f]{32})`?"
+    # The checksum cell is 32 hex (MD5) or 64 hex (SHA-256). It must be bounded on both
+    # sides: an unbounded {32} silently reads the first half of a SHA-256 as an MD5 and
+    # then reports a mismatch against Drive's MD5 - a false accusation, not a finding.
+    r"\s*(?P<size>[\d\s]{1,12})\|\s*`?(?P<hash>(?<![0-9a-fA-F])[0-9a-fA-F]{32}(?:[0-9a-fA-F]{32})?)(?![0-9a-fA-F])`?"
 )
 LOCAL_RE = re.compile(r"`([^`\n]+\.(?:md|json|txt|pdf|docx|xml))`")
 # A row whose label carries a wave or a revision records one upload, not "now".
@@ -88,7 +91,8 @@ def parse_rows(root: Path) -> list[dict]:
                 "label": label[:120],
                 "driveId": match.group("id"),
                 "size": int(re.sub(r"\s", "", match.group("size")) or 0),
-                "md5": match.group("md5"),
+                "md5": match.group("hash").lower() if len(match.group("hash")) == 32 else None,
+                "sha256": match.group("hash").lower() if len(match.group("hash")) == 64 else None,
                 "localName": local.group(1) if local else None,
                 "moment": bool(WAVE_RE.search(label)),
             })
@@ -127,6 +131,11 @@ def audit(root: Path, snapshot: dict | None = None) -> dict:
         claimed = objects.get(row["driveId"])
         if claimed is None:
             dstate = "drive-not-sampled"
+        elif row["md5"] is None:
+            # SHA-256-only row: Drive's file metadata exposes MD5, never SHA-256, so the
+            # byte claim cannot be confirmed without downloading. Size can be.
+            dstate = ("drive-size-only"
+                      if str(claimed.get("size")) == str(row["size"]) else "drive-size-mismatch")
         elif (str(claimed.get("size")) == str(row["size"])
               and (claimed.get("md5") or "").lower() == row["md5"]):
             dstate = "drive-verified"
@@ -143,13 +152,15 @@ def audit(root: Path, snapshot: dict | None = None) -> dict:
             elif local is not None:
                 local_path = local.relative_to(root).as_posix()
                 local_md5 = md5_of(local)
-                same = local_md5 == row["md5"] and local.stat().st_size == row["size"]
+                same = (row["md5"] is not None and local_md5 == row["md5"]
+                        and local.stat().st_size == row["size"])
                 lstate = "local-current" if same else "local-moved-on"
         local_state[lstate] = local_state.get(lstate, 0) + 1
 
         findings.append({
             "file": row["file"], "line": row["line"], "label": row["label"],
             "driveId": row["driveId"], "claimedSize": row["size"], "claimedMd5": row["md5"],
+            "claimedSha256": row["sha256"],
             "moment": row["moment"],
             "driveState": dstate,
             "driveSize": None if claimed is None else claimed.get("size"),

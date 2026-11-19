@@ -1,10 +1,15 @@
 {
   "schemaVersion": "drive-ledger-snapshot/1",
   "retrievedOn": "2026-11-18",
-  "method": "google-drive-connector-get_file",
-  "fields": ["id", "name", "size", "md5Checksum"],
-  "whatWasRead": "Ответ Drive API на get_file по семи id из строк реестра: имя, размер и md5Checksum хранимого объекта на 18.11.2026.",
-  "whatWasNotRead": "Байты объектов не скачивались; остальные 85 id из реестра в этом проходе не запрашивались (по одному вызову на объект, фильтр по id в языке запросов Drive недоступен).",
+  "method": "google-drive-connector-get_file и list_files (name contains 'wave')",
+  "fields": [
+    "id",
+    "name",
+    "size",
+    "md5Checksum"
+  ],
+  "whatWasRead": "Ответ Drive на 18.11.2026 по всем 92 id из строк реестра: имя, размер и md5Checksum хранимого объекта. 7 id прочитаны отдельными get_file, остальные 85 — тем же get_file по одному вызову на объект плюс контрольная выборка list_files по волнам.",
+  "whatWasNotRead": "Байты объектов не скачивались: сверяется серверный md5Checksum, а не содержимое. Для четырёх строк wave40 в реестре записан SHA-256, а не MD5; Drive отдаёт только MD5, поэтому у них подтверждён размер, а байтовое утверждение SHA-256 этим проходом не проверяется.",
   "objects": {
     "1sV3jfs0slLQh1lX6FawkL-It7tob2X10": {
       "name": "Стивен Чарнок — 00 Navigation (wave 22, 2026-10-25).md",
@@ -40,6 +45,517 @@
       "name": "16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN_wave39_2026-10-26.md",
       "size": "176170",
       "md5": "381ca9dc937ac05708c175378d5299f0"
+    },
+    "1JmhghsHYSS13PF_nVpn4b0jdEc7WrQkT": {
+      "size": "67556",
+      "md5": "7a66dc655eab8019798d7ced795ca8ba",
+      "name": "`01_BIOGRAPHICAL_WITNESSES_AND_EVIDENCE_HIERARCHY.md`",
+      "nameSource": "ledger-label"
+    },
+    "12btSm2nqtKH7PaI0KbpVeSs2nalWvI5W": {
+      "size": "78099",
+      "md5": "5e1a6a638e09992ee8dea932a98a9028",
+      "name": "`03_WORKS_EDITIONS_AND_PUBLICATION_CHRONOLOGY.md`",
+      "nameSource": "ledger-label"
+    },
+    "1liMd0gBB7tWsYQTqonR_QnglutSPnn1A": {
+      "size": "259911",
+      "md5": "926ea6c3c175ec37368452bf1ce1fdad",
+      "name": "`04_CHARACTER_MINISTRY_AND_THEOLOGY.md`",
+      "nameSource": "ledger-label"
+    },
+    "10q8rOMAWPxUqMRqoR9M-lEYWU8HHvewl": {
+      "size": "96664",
+      "md5": "8fe201a0e447dd7394b477bc2b8d3c69",
+      "name": "`16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md`",
+      "nameSource": "ledger-label"
+    },
+    "1iCUZfGdbKooPjYAPbNsb2TFcffILhlCT": {
+      "size": "90213",
+      "md5": "518f3be8bf91deff087244e6214cccc8",
+      "name": "`00_README_AND_NAVIGATION.md`",
+      "nameSource": "ledger-label"
+    },
+    "1AhkIF3iJkQhLW4yYGwqQNoJMChq2Eb4t": {
+      "size": "282635",
+      "md5": "21a46cccf359f6370e65541ffc6447c8",
+      "name": "`04_CHARACTER_MINISTRY_AND_THEOLOGY.md`",
+      "nameSource": "ledger-label"
+    },
+    "1bl8xcxmO8-rf0IzVOukQRsk9y09MFt2U": {
+      "size": "99321",
+      "md5": "9542b66ccd1fe85c3d043d55af37c859",
+      "name": "`16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md`",
+      "nameSource": "ledger-label"
+    },
+    "1_wHf4f_UMG1SkQS4Fl4_w801Vez47Oex": {
+      "size": "90930",
+      "md5": "2f32cac89e370731b41ad619ddf21d46",
+      "name": "`00_README_AND_NAVIGATION.md`",
+      "nameSource": "ledger-label"
+    },
+    "1VMvcvf6kYoEAyzJiB9U9lbq4utChNRgI": {
+      "size": "322011",
+      "md5": "9067f1ef8bb26aa14c9b011cda01af53",
+      "name": "`04_CHARACTER_MINISTRY_AND_THEOLOGY.md`",
+      "nameSource": "ledger-label"
+    },
+    "1GE2jLataKXvuS2ytMbu_f_hF0AnM296T": {
+      "size": "92265",
+      "md5": "68a5c8b796aa76508c0503b486137a1d",
+      "name": "`00_README_AND_NAVIGATION.md`",
+      "nameSource": "ledger-label"
+    },
+    "1_kvylXXki0nstpKPcM4vWMu2YhjMrMsI": {
+      "size": "95394",
+      "md5": "95093d8caaa4ed9ae3a95a6b477dcdac",
+      "name": "00_README_AND_NAVIGATION_wave29_2026-10-25.md",
+      "nameSource": "ledger-label"
+    },
+    "1NlTDPYZuhU-pPtMg58vSTaGlHTSqi86y": {
+      "size": "68175",
+      "md5": "89b063cf61e13e77277f3a3ad26e36ba",
+      "name": "01_BIOGRAPHICAL_WITNESSES_AND_EVIDENCE_HIERARCHY_wave29_2026-10-25.md",
+      "nameSource": "ledger-label"
+    },
+    "12hKkyGtQE4H3tyBApXhOMz5t2_G-XLVu": {
+      "size": "136694",
+      "md5": "5874030c62f11b07933fa834aaa908a2",
+      "name": "16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN_wave29_2026-10-25.md",
+      "nameSource": "ledger-label"
+    },
+    "1U6lEkEd6LnWnSjfxZ4JhDvQz1NDW8ufu": {
+      "size": "17348",
+      "md5": "2074b52a59999cfb4d09fa121ab41db5",
+      "name": "charnock-biographical-anchors-v1_wave29_2026-10-25.json",
+      "nameSource": "ledger-label"
+    },
+    "1aRxSaAjMadjxffp4-PuIwsLfYT8P9DGO": {
+      "size": "2226818",
+      "md5": "d34828f7fdb2357eace57aff3f39bf77",
+      "name": "CHARNOCK_BIOGRAPHICAL_WITNESSES_wave29_2026-10-25.zip",
+      "nameSource": "ledger-label"
+    },
+    "10fn9-mKA0SBHveem4ed8Ol84VFtNzqcn": {
+      "size": "388423",
+      "md5": "5e7f17baf435400eb897605b9d0c4b2a",
+      "name": "04_CHARACTER_MINISTRY_AND_THEOLOGY_wave30_2026-10-25.md",
+      "nameSource": "ledger-label"
+    },
+    "1z_62mcHFmCBwM9LQgI7pGDbSB1plCfDc": {
+      "size": "140637",
+      "md5": "e879c6a17d2acc430e16b01323bc6495",
+      "name": "16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN_wave30_2026-10-25.md",
+      "nameSource": "ledger-label"
+    },
+    "1N6zakxnk1bA2WpIuldM0gaDWALocer-q": {
+      "size": "45167",
+      "md5": "1db8b8aaa3985f11b6d157327c7dea06",
+      "name": "charnock-biographical-anchors-v1_wave30_2026-10-25.json",
+      "nameSource": "ledger-label"
+    },
+    "1gYj8Xe7iCnNz6HeJ_aLTxnZ-ekv8SbUx": {
+      "size": "85149",
+      "md5": "4f07b443d6691c46de8bbdad766295a2",
+      "name": "03_WORKS_EDITIONS_AND_PUBLICATION_CHRONOLOGY_wave30_2026-10-25.md",
+      "nameSource": "ledger-label"
+    },
+    "13ILixCge5z3dOm_yFh57Hx0GC92HcvlM": {
+      "size": "3980668",
+      "md5": "cfed52961c69692d76bc250658029ff7",
+      "name": "CHARNOCK_SELECTED_TEXTS_wave30_2026-10-25.zip",
+      "nameSource": "ledger-label"
+    },
+    "1bzQHV94jT09M48xVy0ha-Xk1M9DGDo6A": {
+      "size": "96063",
+      "md5": "3a03afe59e5f25c529a1d237f8cccbb9",
+      "name": "00_README_AND_NAVIGATION_wave31_2026-10-25.md",
+      "nameSource": "ledger-label"
+    },
+    "1sL6cs5DN9UarLkOW-pvsfqhroHOlo14m": {
+      "size": "77687",
+      "md5": "ded6d160e7d3c836732223ee5fe08ff8",
+      "name": "01_BIOGRAPHICAL_WITNESSES_AND_EVIDENCE_HIERARCHY_wave31_2026-10-25.md",
+      "nameSource": "ledger-label"
+    },
+    "1F45KbNXG_PS5L1XBF_7hXmyUINFGdLLa": {
+      "size": "78280",
+      "md5": "8345ae7fc8a844c990dc7837a7f6adc5",
+      "name": "02_LIFE_CHRONOLOGY_AND_DATE_CONFLICTS_wave31_2026-10-25.md",
+      "nameSource": "ledger-label"
+    },
+    "1Yp6dZNPX9w9SvkcAm-WiSLVeNSJzGURT": {
+      "size": "143456",
+      "md5": "1f7e0de06a5c4e3731e10072cbd9c581",
+      "name": "16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN_wave31_2026-10-25.md",
+      "nameSource": "ledger-label"
+    },
+    "1Sz57PUJJF7GljpDulTSECivdeERsnoUL": {
+      "size": "59367",
+      "md5": "bdfef57d1ce9093e9fcc6f8333a77684",
+      "name": "charnock-biographical-anchors-v1_wave31_2026-10-25.json",
+      "nameSource": "ledger-label"
+    },
+    "1zzutErddNLDV3tUvm62oRzsZhh8rQNkW": {
+      "size": "96421",
+      "md5": "45be4a82719cf9b2c5d410518b5c89d8",
+      "name": "00_README_AND_NAVIGATION_wave32_2026-10-25.md",
+      "nameSource": "ledger-label"
+    },
+    "1dLhqzFFn0YJ5Bi7FjZSMeJjL_ZeuG5Rd": {
+      "size": "88289",
+      "md5": "3681a260bd0e5798d0779d95e120fce5",
+      "name": "02_LIFE_CHRONOLOGY_AND_DATE_CONFLICTS_wave32_2026-10-25.md",
+      "nameSource": "ledger-label"
+    },
+    "1visTX2G2JAKmNVCqzt1bOukO-PmN-gqy": {
+      "size": "44837",
+      "md5": "c5866694fe7258c86ecff9af1289591d",
+      "name": "15_THE_EMMANUEL_LINE_PRESTON_POOLE_FOWLER_wave32_2026-10-25.md",
+      "nameSource": "ledger-label"
+    },
+    "1vEIX_jjA3ooPiKSomHiDmKHiDbl-fRFj": {
+      "size": "145831",
+      "md5": "27fabcda28a9f14a8c44244f321db4b9",
+      "name": "16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN_wave32_2026-10-25.md",
+      "nameSource": "ledger-label"
+    },
+    "1tINfMFYTiuzD-T-H9unRc-YyMoW-r4mC": {
+      "size": "75784",
+      "md5": "8564ab273a3fcf309d1ec5c98e5d5fdb",
+      "name": "charnock-biographical-anchors-v1_wave32_2026-10-25.json",
+      "nameSource": "ledger-label"
+    },
+    "1enDc0jrETf5-Yov7TjBZCedpUpD2EoQ0": {
+      "size": "4003148",
+      "md5": "526a10c45e60c5b732d14df66d5998fa",
+      "name": "charnock_tcp_replay_wave32_2026-10-25.zip",
+      "nameSource": "ledger-label"
+    },
+    "1UP8wok_eyHRssxkAVsw4wjEdcGlETSvK": {
+      "size": "126496",
+      "md5": "2f3dbae6307801b718f840b51dc93109",
+      "name": "BIOGRAPHIES_SHARED_ATLAS_wave33_2026-10-25.zip",
+      "nameSource": "ledger-label"
+    },
+    "16eGOuZ4lk9-z-d24as8WKKqeplhc5DzK": {
+      "size": "15078",
+      "md5": "f8a412116edf7744e0241f1b16d12726",
+      "name": "biographies-shared.svg",
+      "nameSource": "ledger-label"
+    },
+    "1R-n_GnEy8F-sQaR8F95CoPPwr0S8-IFV": {
+      "size": "31558",
+      "md5": "bdc5ff986431c2a3445e892f33616f7c",
+      "name": "index.html",
+      "nameSource": "ledger-label"
+    },
+    "1DESYbGRC-jI8FW_SeW1o3YpE-diqIqQ8": {
+      "size": "10024",
+      "md5": "f43e94cea39ca92a3fd7a65b07af3ebd",
+      "name": "biographies-shared-atlas-v1.json",
+      "nameSource": "ledger-label"
+    },
+    "1HwziQXy-UqQSPEq-jHHIfrOPZFO3E6S1": {
+      "size": "97152",
+      "md5": "858da7a3a9e87e0b180ab0e874871e6a",
+      "name": "00_README_AND_NAVIGATION_wave34_2026-10-25.md",
+      "nameSource": "ledger-label"
+    },
+    "1DvvottvwzkH4BWMz_XUO4XD6pkRVZ0DT": {
+      "size": "99446",
+      "md5": "adeda0f91652fa46ddd6fa8688414e2e",
+      "name": "03_WORKS_EDITIONS_AND_PUBLICATION_CHRONOLOGY_wave34_2026-10-25.md",
+      "nameSource": "ledger-label"
+    },
+    "1PtM0Od5Fk3UUBgTYHYD0g6F_HGyEpcXw": {
+      "size": "41798",
+      "md5": "eac39eff73fe274bb16a22886e3e3f88",
+      "name": "08_ADAMS_AND_VEAL_TO_THE_READER_PRIMARY_EPISTLE_wave34_2026-10-25.md",
+      "nameSource": "ledger-label"
+    },
+    "1v0PSsYcoOjpoyBYB5iHXlTARlMp8vuex": {
+      "size": "152288",
+      "md5": "97d76e25a40feda3bb30c39f10b7e36e",
+      "name": "16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN_wave34_2026-10-25.md",
+      "nameSource": "ledger-label"
+    },
+    "1WIFkGlQLZXG2JsifHj2gng29k3fFZp5q": {
+      "size": "109131",
+      "md5": "b3007f7b4d9220c0d5d89b42bc5b141b",
+      "name": "charnock-biographical-anchors-v1_wave34_2026-10-25.json",
+      "nameSource": "ledger-label"
+    },
+    "1kzWY_XMpvry2f7SEZhWg_H3l5YGov4M7": {
+      "size": "31558",
+      "md5": "d0f0b58cdc315fb634fab1357282a326",
+      "name": "index_wave34_2026-10-25.html",
+      "nameSource": "ledger-label"
+    },
+    "184Bo1Gc1IuOpujh6BOVwnpudMFhhYGl9": {
+      "size": "4357817",
+      "md5": "c2e9e369df6a9f5989bc3259a3bb2fdf",
+      "name": "CHARNOCK_BIBLIOGRAPHY_AND_TCP_wave34_2026-10-25.zip",
+      "nameSource": "ledger-label"
+    },
+    "1qBrQWmWD-u8E2aV8OPvJ7WqBgPfP-8nO": {
+      "size": "97487",
+      "md5": "c39afeba231ed8f4d4a348ba381ab9f5",
+      "name": "00_README_AND_NAVIGATION_wave35_2026-10-25.md",
+      "nameSource": "ledger-label"
+    },
+    "1R-wxtOIYTIfufK9pjEtID7uICisJn9Oi": {
+      "size": "28430",
+      "md5": "7f5e6c8ac556da9b293f4068f68e1087",
+      "name": "06_CORPUS_ACCESS_MATRIX_AND_LOCATORS_wave35_2026-10-25.md",
+      "nameSource": "ledger-label"
+    },
+    "1ATlV13vpeZqum135Ons-8_WFYmbe99yV": {
+      "size": "154103",
+      "md5": "0b3c74cc7379f875042dfaf12bd26d62",
+      "name": "16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN_wave35_2026-10-25.md",
+      "nameSource": "ledger-label"
+    },
+    "1_w0sXomgdO8aZ9K_Z8kMLqxxdx0nv0gR": {
+      "size": "124815",
+      "md5": "c54dbc10fd20e6fcebdf4122489628d4",
+      "name": "charnock-biographical-anchors-v1_wave35_2026-10-25.json",
+      "nameSource": "ledger-label"
+    },
+    "1IZPutjF8-NpNXR00koxMHCeXAKxsIPqe": {
+      "size": "31558",
+      "md5": "bab0089fc24b6c2c647f5c8efee1181b",
+      "name": "index_wave35_2026-10-25.html",
+      "nameSource": "ledger-label"
+    },
+    "116ByRONJ6-YyCRcOZwgoLs6IR7jBlCUs": {
+      "size": "5443769",
+      "md5": "e885c9c573cb42d5b97e8d7b88f3f4b5",
+      "name": "CHARNOCK_MORNING_EXERCISE_TCP_wave35_2026-10-25.zip",
+      "nameSource": "ledger-label"
+    },
+    "1jrkaqJdIjVSaeJ2MUVFnQlZijjYKUPJR": {
+      "size": "160235",
+      "md5": "126cecdef9b2e26f3bd11356b911a3c1",
+      "name": "16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN_wave36_2026-10-26.md",
+      "nameSource": "ledger-label"
+    },
+    "1LXUkT8w8czm9y_5HhdoZce2nfXgC-4zY": {
+      "size": "133491",
+      "md5": "c92d7704ae651a1b9b98dfde9d816837",
+      "name": "charnock-biographical-anchors-v1_wave36_2026-10-26.json",
+      "nameSource": "ledger-label"
+    },
+    "1PS9sTsqAxRteFPW3YggaWUJaBIhyzyGW": {
+      "size": "193833",
+      "md5": "2673f4ec2d98d594055eeb75d87041ba",
+      "name": "CHARNOCK_SELECTION_AND_REQUESTS_delta_wave36_2026-10-26.zip",
+      "nameSource": "ledger-label"
+    },
+    "1MCRkURG20B-NJ3hfnlQ103fKupNQohoF": {
+      "size": "106361",
+      "md5": "608a11a00bc3a7abb38e8499539c0863",
+      "name": "02_LIFE_CHRONOLOGY_AND_DATE_CONFLICTS_wave37_2026-10-26.md",
+      "nameSource": "ledger-label"
+    },
+    "16SN_3osMuadQvXUH0UGRPLgdJNkVe-HU": {
+      "size": "179162",
+      "md5": "f21958214f0384b58c7d6b715bf24d55",
+      "name": "charnock-biographical-anchors-v1_wave37_2026-10-26.json",
+      "nameSource": "ledger-label"
+    },
+    "1EYchmFRNs--jkpbutegk8jKQXIM3laop": {
+      "size": "258570",
+      "md5": "d46fac102b272f5388ef190fe46b28e9",
+      "name": "CHARNOCK_BIOGRAPHICAL_CORE_delta_wave37_2026-10-26.zip",
+      "nameSource": "ledger-label"
+    },
+    "1JjY-2wLlU14rng16foipVmxWQENz3PEU": {
+      "size": "404419",
+      "md5": "bdbb2dd2304a50a9a271c56cb095769e",
+      "name": "04_CHARACTER_MINISTRY_AND_THEOLOGY_wave38_2026-10-26.md",
+      "nameSource": "ledger-label"
+    },
+    "1b9ClOdmpzWn0ZTl0kWhJ6hi9TcW3w1cg": {
+      "size": "198704",
+      "md5": "570a74dad4f782165e7173782c9d9b7c",
+      "name": "charnock-biographical-anchors-v1_wave38_2026-10-26.json",
+      "nameSource": "ledger-label"
+    },
+    "1UHwzDnIzE9DoqCaHMK1QCggO-3wK1MXp": {
+      "size": "399620",
+      "md5": "35839ac95fe9209e128e5a52ef5487df",
+      "name": "CHARNOCK_RECEPTION_delta_wave38_2026-10-26.zip",
+      "nameSource": "ledger-label"
+    },
+    "1VUd-KwDPPD8sGwbv5q3R-tiz0NB3ze9j": {
+      "size": "247844",
+      "md5": "21503816b2825b6710f2519f4bfb4336",
+      "name": "charnock-biographical-anchors-v1_wave39_2026-10-26.json",
+      "nameSource": "ledger-label"
+    },
+    "1N5pxxtFOoCQVIOj3a9JAm7fKrJAXpV5v": {
+      "size": "419009",
+      "md5": "ceb44003f7261090e970570c45efc2bf",
+      "name": "CHARNOCK_PREPARATION_delta_wave39_2026-10-26.zip",
+      "nameSource": "ledger-label"
+    },
+    "1OOuRZtnL1iKHSNzqqgcnn6ULro7MMpdQ": {
+      "size": "5866202",
+      "md5": "10312933a89736796ec7267afab08c59",
+      "name": "CHARNOCK_FULL_BOUNDED_RESEARCH_wave40_2026-10-26.zip",
+      "nameSource": "ledger-label"
+    },
+    "12220wSPwfZtzfEEI2OFSOwCvadl6MhZv": {
+      "size": "104472",
+      "md5": "21f0fc05522478e321af052ef43842cd",
+      "name": "00_README_AND_NAVIGATION_wave40_2026-10-26.md",
+      "nameSource": "ledger-label"
+    },
+    "1jtuD_DhLG3HP9TJyvMLPKDYjmIbX8iQv": {
+      "size": "188283",
+      "md5": "9a85383d46b2cb1dff04d8480c9c7659",
+      "name": "16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN_wave40_2026-10-26.md",
+      "nameSource": "ledger-label"
+    },
+    "1K_bJVxmRQQg-hIz92h699L5dkpVTpi4M": {
+      "size": "262179",
+      "md5": "435d38ca6dbbbae683de888f366b4509",
+      "name": "charnock-biographical-anchors-v1_wave40_2026-10-26.json",
+      "nameSource": "ledger-label"
+    },
+    "1swq3vIOnx4EBLUZ3bTdOxrTertuzcGmy": {
+      "size": "79802",
+      "md5": "c043b44241d8efd90d10c17b4546faee",
+      "name": "`03_WORKS_EDITIONS_AND_PUBLICATION_CHRONOLOGY.md`",
+      "nameSource": "ledger-label"
+    },
+    "1IJ0b2EdKmV2SfhocXXcZpRiCqJa1_h86": {
+      "size": "361036",
+      "md5": "02e15c9d2920d8b16e4d1cd228e2398d",
+      "name": "`04_CHARACTER_MINISTRY_AND_THEOLOGY.md`",
+      "nameSource": "ledger-label"
+    },
+    "17L0RvwAQJoSME3oGBbbeyFRQQbP84J2M": {
+      "size": "26361",
+      "md5": "bc0945af5a4c099346f9ef3d9d0b8c4b",
+      "name": "`05_CONTROVERSIES_AND_CLAIM_AUDIT.md`",
+      "nameSource": "ledger-label"
+    },
+    "1dU7xOdML0KZtUfqAsmRXiQ7ru4rYhkz3": {
+      "size": "114395",
+      "md5": "0b4260e670bcd39409ecdac468e6d29c",
+      "name": "`16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md`",
+      "nameSource": "ledger-label"
+    },
+    "1z_Kv6vTbloN5bQ35BfwWeS8Ams7BeOLQ": {
+      "size": "23093",
+      "md5": "d19f55e71eee91264ad4747830a29c47",
+      "name": "`17_PROMPT_PARALLEL_AGENT_HISTORICAL_CONTEXT.md`",
+      "nameSource": "ledger-label"
+    },
+    "1Q2O9hNrKSXnVpPfuzbWLtW1TO0VvHURC": {
+      "size": "93437",
+      "md5": "571024dae5f865a905ce9fb8df2ac7dd",
+      "name": "00_README_AND_NAVIGATION.md",
+      "nameSource": "ledger-label"
+    },
+    "1gLNYeT7nWWERYtAYTNzIjKWQzZ8gUO0U": {
+      "size": "365440",
+      "md5": "3a72e9e88253a4231b08bf600da094b1",
+      "name": "04_CHARACTER_MINISTRY_AND_THEOLOGY.md",
+      "nameSource": "ledger-label"
+    },
+    "1jgx_CP2x3E8KSfCM7unUvKrMKTfoi2o_": {
+      "size": "36724",
+      "md5": "81c6d5d2ffc70f964a295efc2a047ad1",
+      "name": "05_CONTROVERSIES_AND_CLAIM_AUDIT.md",
+      "nameSource": "ledger-label"
+    },
+    "1i-WSm6ZP3jHLoZMa0Q2FTyO4gQEjeIUN": {
+      "size": "117123",
+      "md5": "60921b0ee709c4e9d450e2aa2236d3dc",
+      "name": "16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md",
+      "nameSource": "ledger-label"
+    },
+    "1VE_CeG7OrEGZFa0SUKXHB0Z0YuDwQBVJ": {
+      "size": "94507",
+      "md5": "374494fd674913ce703cd0faa2bf7fd2",
+      "name": "00_README_AND_NAVIGATION.md",
+      "nameSource": "ledger-label"
+    },
+    "1iGThJ5bZQaKA_xN6dK-DujoKtTxcMVO2": {
+      "size": "377346",
+      "md5": "26746cc0d8fca44fbafd98ec97112001",
+      "name": "04_CHARACTER_MINISTRY_AND_THEOLOGY.md",
+      "nameSource": "ledger-label"
+    },
+    "1HjzEa2PO6tHss0ST2mMP6b2qt_WqfRr0": {
+      "size": "38924",
+      "md5": "33a9566bcd1f05d7ee17d7d40acd3b5c",
+      "name": "05_CONTROVERSIES_AND_CLAIM_AUDIT.md",
+      "nameSource": "ledger-label"
+    },
+    "15JCx-alLZ7GPEipvmgIbpZ8nF3lWkU0m": {
+      "size": "119499",
+      "md5": "ba4a72cb220ed891faeb9a8dcc85f3ab",
+      "name": "16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md",
+      "nameSource": "ledger-label"
+    },
+    "1fsSX7VrAc7bhtg8UJNEj6Ul685WmeCjz": {
+      "size": "378071",
+      "md5": "5a77d9a108eb627a46e147ff75de5054",
+      "name": "04_CHARACTER_MINISTRY_AND_THEOLOGY.md",
+      "nameSource": "ledger-label"
+    },
+    "1rLSZ_WRm8VNcCgJdhONgwy8IBOKcGG7-": {
+      "size": "26352",
+      "md5": "56f0ad7b1e7124f99ecfe37b3e8a34dc",
+      "name": "06_CORPUS_ACCESS_MATRIX_AND_LOCATORS.md",
+      "nameSource": "ledger-label"
+    },
+    "1e2fj3wRoXi_UVV1fma_495cUFmKIjdog": {
+      "size": "18254",
+      "md5": "977a5020e8ba0344a5c8c05851c526a4",
+      "name": "07_REPO_CROSSLINKS_AND_DRIVE_MIRROR.md",
+      "nameSource": "ledger-label"
+    },
+    "1fKfp8iSjGjuvbvZ_O-peqgcW5Y7j-A2G": {
+      "size": "38828",
+      "md5": "7cb8f07be609d7308d1308bb91d21d13",
+      "name": "08_ADAMS_AND_VEAL_TO_THE_READER_PRIMARY_EPISTLE.md",
+      "nameSource": "ledger-label"
+    },
+    "15KnJMODD5P7dn3CX9O-IJTW_Hjl9xseL": {
+      "size": "135093",
+      "md5": "c476cf434ca0894c9d48b5697da78544",
+      "name": "16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md",
+      "nameSource": "ledger-label"
+    },
+    "1LEEseh_v3BO8CRxrzTFI5evKLkveeR1Z": {
+      "size": "67677",
+      "md5": "39a238e1efb3f877cae762cb02ab2da0",
+      "name": "02_LIFE_CHRONOLOGY_AND_DATE_CONFLICTS_wave29_2026-10-25.md",
+      "nameSource": "ledger-label"
+    },
+    "1iOsqRIJ7qMZTUvWJVmFpJ-uVcq9fbgQ_": {
+      "size": "40275",
+      "md5": "74ce11133a33e5768dfe41d787a7cdc7",
+      "name": "08_ADAMS_AND_VEAL_TO_THE_READER_PRIMARY_EPISTLE_wave29_2026-10-25.md",
+      "nameSource": "ledger-label"
+    },
+    "12eW6HHarcG7DWRlJl9XZt8nsCSKF_zxI": {
+      "size": "32600",
+      "md5": "cdfb094e242e97b3421fb2613c44cfc5",
+      "name": "09_JOHNSON_FUNERAL_SERMON_1680_PRIMARY_TRANSCRIPTION_wave29_2026-10-25.md",
+      "nameSource": "ledger-label"
+    },
+    "13HCjCKpSMgGCUDU6xh7nVmILUCSFwmpi": {
+      "size": "28024",
+      "md5": "858f71d22f250eb1d30be03befd933a5",
+      "name": "11_WOOD_ATHENAE_OXONIENSES_1691_PRIMARY_TRANSCRIPTION_wave29_2026-10-25.md",
+      "nameSource": "ledger-label"
     }
-  }
+  },
+  "objectsCount": 92
 }

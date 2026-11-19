@@ -620,6 +620,31 @@
       "tests": "python3 -B -m unittest discover -s scripts -p 'test_verify_internal_digests.py' → 30 OK",
       "title": "Хеши без имени файла: 514 строк разобраны по причине",
       "holdType": "EVIDENCE_HOLD"
+    },
+    {
+      "id": "HCR-2026-11-18-15",
+      "title": "Drive-реестр: опрошены 92 из 92 id; ложное расхождение wave40 снято как дефект парсера",
+      "holdType": "ARCHIVE_HOLD",
+      "previousState": "«7 id подтверждены, 85 не опрошены»; четыре строки wave40 выглядели как расхождение MD5",
+      "closedScope": "Drive-сторона реестра: размер и md5Checksum совпали у 88 строк из 88 с записанным MD5; у 4 SHA-256-строк подтверждён размер, байтовое утверждение не подтверждается метаданными; расхождений 0.",
+      "recordLocations": [
+        "docs/research/HOLDS_REGISTER_2026-11-18.md §19",
+        "data/drive-ledger-audit-2026-11-18.json",
+        "data/drive-ledger-snapshot-2026-11-18.json"
+      ],
+      "method": "drive-ledger-join",
+      "objects": [
+        {
+          "sample": "92 of 92 Drive ids",
+          "verifiedSizeAndMd5": 88,
+          "sizeOnlySha256": 4,
+          "mismatches": 0
+        }
+      ],
+      "residualHolds": [
+        "ARCHIVE_HOLD"
+      ],
+      "residualReason": "Байты не скачивались: сверялся серверный md5Checksum, а не содержимое. Актуальность локального зеркала (13 moved-on, 75 unresolved, 4 ambiguous) опросом не снимается — нужна новая загрузка текущих редакций."
     }
   ],
   "confirmations": [

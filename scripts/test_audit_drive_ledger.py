@@ -33,6 +33,52 @@ def row(label: str, size: int, md5: str, drive_id: str = DRIVE_ID) -> str:
     return f"| {label} | `{drive_id}` | {size} | `{md5}` |\n"
 
 
+class ChecksumColumnTests(unittest.TestCase):
+    """The checksum cell is either MD5 (32 hex) or SHA-256 (64 hex).
+
+    Reading the first 32 hex of a SHA-256 as an MD5 makes four wave40 rows look like
+    byte mismatches when nothing is wrong with them. That happened once, during the
+    92-of-92 sampling pass, and is what these tests hold shut.
+    """
+
+    def setUp(self) -> None:
+        self.fx = Fixture()
+
+    def tearDown(self) -> None:
+        self.fx.close()
+
+    def finding(self, checksum: str, drive_size: int = 10) -> dict:
+        self.fx.write("dept/ledger.md", row("`doc.md`", 10, checksum))
+        snapshot = {"retrievedOn": "2026-11-18",
+                    "objects": {DRIVE_ID: {"size": str(drive_size), "md5": "b" * 32, "name": "doc.md"}}}
+        return ledger.audit(self.fx.root, snapshot)["findings"][0]
+
+    def test_sha256_cell_is_not_read_as_md5(self) -> None:
+        finding = self.finding("a" * 64)
+        self.assertIsNone(finding["claimedMd5"])
+        self.assertEqual(finding["claimedSha256"], "a" * 64)
+
+    def test_sha256_row_is_never_called_a_mismatch(self) -> None:
+        self.assertEqual(self.finding("a" * 64)["driveState"], "drive-size-only")
+
+    def test_sha256_row_with_different_size_is_a_size_mismatch(self) -> None:
+        self.assertEqual(self.finding("a" * 64, drive_size=11)["driveState"], "drive-size-mismatch")
+
+    def test_md5_row_still_compares_bytes(self) -> None:
+        finding = self.finding("b" * 32)
+        self.assertEqual(finding["claimedMd5"], "b" * 32)
+        self.assertEqual(finding["driveState"], "drive-verified")
+
+    def test_md5_row_with_wrong_hash_is_a_mismatch(self) -> None:
+        self.assertEqual(self.finding("c" * 32)["driveState"], "drive-mismatch")
+
+    def test_mixed_lengths_in_one_file(self) -> None:
+        self.fx.write("dept/ledger.md",
+                      row("`a.md`", 10, "b" * 32) + row("`b.md`", 10, "a" * 64, drive_id="1" + "c" * 32))
+        report = ledger.audit(self.fx.root, None)
+        self.assertEqual([f["claimedMd5"] is None for f in report["findings"]], [False, True])
+
+
 class LedgerTests(unittest.TestCase):
     def setUp(self) -> None:
         self.fx = Fixture()

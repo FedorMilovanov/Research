@@ -41,7 +41,7 @@ METHOD_NAMES = {
     "short-digest-label": "разметка коротких подписей",
     "document-twin-shingles": "сравнение текстов",
     "state-stamp-vs-commit": "дата в заголовке против Git",
-    "drive-ledger-join": "реестр против Drive и локальных байтов",
+    "drive-ledger-join": "реестр против ответа Drive",
     "unclaimed-reason-classification": "классификация строк",
     "relative-link-audit": "проверка относительных ссылок",
     "pinned-github-locator-readback": "перечитывание закреплённых локаторов",
