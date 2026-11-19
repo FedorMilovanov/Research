@@ -42,6 +42,7 @@ jobs:
       - name: Validate current editorial plan and authority
         run: |
           python3 scripts/audit_charnock_series_plan.py
+          python3 scripts/audit_charnock_manuscripts.py
           python3 scripts/validate_research_root_authority.py
           python3 scripts/validate_repository_authority_integrity.py
       - name: Confirm validators did not alter the checkout
