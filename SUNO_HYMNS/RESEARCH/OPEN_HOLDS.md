@@ -1,6 +1,6 @@
 # OPEN_HOLDS — открытые HOLD-ы реестров SUNO_HYMNS
 
-Файл собран скриптом `scripts/render_hold_ledger.py` из `data/source-registry-v1.json` и `data/claim-ledger-v1.json`; сборка от 2026-11-18. **Вручную не править** — при изменении реестров пересобрать: `python3 scripts/render_hold_ledger.py`.
+Файл собран скриптом `scripts/render_hold_ledger.py` из `data/source-registry-v1.json` и `data/claim-ledger-v1.json`; сборка от 2026-11-19. **Вручную не править** — при изменении реестров пересобрать: `python3 scripts/render_hold_ledger.py`.
 
 Смысл сводки: HOLD — это обещание, которое ещё не исполнено. Список ниже — перечень того, что в текстах рубрики **нельзя** выдавать за проверенное.
 
