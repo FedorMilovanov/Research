@@ -61,6 +61,11 @@ INFORMATIONAL = [
         ROOT,
         ["python3", "-B", "scripts/audit_prose_holds.py"],
     ),
+    (
+        "Зеркала Drive: пары объект+коммит",
+        ROOT,
+        ["python3", "-B", "scripts/check_drive_mirror_pairs.py", "--summary"],
+    ),
 ]
 
 
