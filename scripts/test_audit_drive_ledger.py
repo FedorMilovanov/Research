@@ -36,9 +36,10 @@ def row(label: str, size: int, md5: str, drive_id: str = DRIVE_ID) -> str:
 class ChecksumColumnTests(unittest.TestCase):
     """The checksum cell is either MD5 (32 hex) or SHA-256 (64 hex).
 
-    Reading the first 32 hex of a SHA-256 as an MD5 makes four wave40 rows look like
-    byte mismatches when nothing is wrong with them. That happened once, during the
-    92-of-92 sampling pass, and is what these tests hold shut.
+    Two mistakes live here. First, reading the first 32 hex of a SHA-256 as an MD5 makes
+    four wave40 rows look like byte mismatches when nothing is wrong with them. Second,
+    assuming Drive exposes only MD5 - it also returns sha256Checksum, so a SHA-256 row can
+    be confirmed outright instead of being written off as "size only".
     """
 
     def setUp(self) -> None:
@@ -47,10 +48,12 @@ class ChecksumColumnTests(unittest.TestCase):
     def tearDown(self) -> None:
         self.fx.close()
 
-    def finding(self, checksum: str, drive_size: int = 10) -> dict:
+    def finding(self, checksum: str, drive_size: int = 10, drive_sha256: str | None = None) -> dict:
         self.fx.write("dept/ledger.md", row("`doc.md`", 10, checksum))
-        snapshot = {"retrievedOn": "2026-11-18",
-                    "objects": {DRIVE_ID: {"size": str(drive_size), "md5": "b" * 32, "name": "doc.md"}}}
+        obj = {"size": str(drive_size), "md5": "b" * 32, "name": "doc.md"}
+        if drive_sha256 is not None:
+            obj["sha256"] = drive_sha256
+        snapshot = {"retrievedOn": "2026-11-18", "objects": {DRIVE_ID: obj}}
         return ledger.audit(self.fx.root, snapshot)["findings"][0]
 
     def test_sha256_cell_is_not_read_as_md5(self) -> None:
@@ -60,6 +63,12 @@ class ChecksumColumnTests(unittest.TestCase):
 
     def test_sha256_row_is_never_called_a_mismatch(self) -> None:
         self.assertEqual(self.finding("a" * 64)["driveState"], "drive-size-only")
+
+    def test_sha256_confirmed_by_drive_field(self) -> None:
+        self.assertEqual(self.finding("a" * 64, drive_sha256="a" * 64)["driveState"], "drive-verified")
+
+    def test_sha256_that_disagrees_with_drive_is_a_mismatch(self) -> None:
+        self.assertEqual(self.finding("a" * 64, drive_sha256="d" * 64)["driveState"], "drive-mismatch")
 
     def test_sha256_row_with_different_size_is_a_size_mismatch(self) -> None:
         self.assertEqual(self.finding("a" * 64, drive_size=11)["driveState"], "drive-size-mismatch")
@@ -77,6 +86,13 @@ class ChecksumColumnTests(unittest.TestCase):
                       row("`a.md`", 10, "b" * 32) + row("`b.md`", 10, "a" * 64, drive_id="1" + "c" * 32))
         report = ledger.audit(self.fx.root, None)
         self.assertEqual([f["claimedMd5"] is None for f in report["findings"]], [False, True])
+
+    def test_sha256_verifications_are_counted_separately(self) -> None:
+        self.fx.write("dept/ledger.md", row("`doc.md`", 10, "a" * 64))
+        snapshot = {"retrievedOn": "2026-11-18",
+                    "objects": {DRIVE_ID: {"size": "10", "md5": "b" * 32, "sha256": "a" * 64}}}
+        totals = ledger.audit(self.fx.root, snapshot)["totals"]
+        self.assertEqual(totals["driveVerifiedBySha256"], 1)
 
 
 class LedgerTests(unittest.TestCase):

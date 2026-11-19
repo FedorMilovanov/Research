@@ -132,10 +132,19 @@ def audit(root: Path, snapshot: dict | None = None) -> dict:
         if claimed is None:
             dstate = "drive-not-sampled"
         elif row["md5"] is None:
-            # SHA-256-only row: Drive's file metadata exposes MD5, never SHA-256, so the
-            # byte claim cannot be confirmed without downloading. Size can be.
-            dstate = ("drive-size-only"
-                      if str(claimed.get("size")) == str(row["size"]) else "drive-size-mismatch")
+            # SHA-256-only row. Drive does expose sha256Checksum (the first version of this
+            # tool assumed otherwise and fell back to size alone), so compare it when the
+            # snapshot has it; otherwise only the size can be confirmed.
+            size_ok = str(claimed.get("size")) == str(row["size"])
+            drive_sha = (claimed.get("sha256") or "").lower()
+            if not size_ok:
+                dstate = "drive-size-mismatch"
+            elif drive_sha and drive_sha == row["sha256"]:
+                dstate = "drive-verified"
+            elif drive_sha:
+                dstate = "drive-mismatch"
+            else:
+                dstate = "drive-size-only"
         elif (str(claimed.get("size")) == str(row["size"])
               and (claimed.get("md5") or "").lower() == row["md5"]):
             dstate = "drive-verified"
@@ -165,6 +174,7 @@ def audit(root: Path, snapshot: dict | None = None) -> dict:
             "driveState": dstate,
             "driveSize": None if claimed is None else claimed.get("size"),
             "driveMd5": None if claimed is None else claimed.get("md5"),
+            "driveSha256": None if claimed is None else claimed.get("sha256"),
             "driveName": None if claimed is None else claimed.get("name"),
             "localState": lstate, "localPath": local_path, "localMd5": local_md5,
             "localMatches": find_local(row["localName"], (root / row["file"]).parent, root)[1]
@@ -186,6 +196,9 @@ def audit(root: Path, snapshot: dict | None = None) -> dict:
             "drive": drive_state,
             "local": local_state,
             "driveVerifiedOfSampled": drive_state.get("drive-verified", 0),
+            "driveVerifiedBySha256": sum(
+                1 for f in findings
+                if f["driveState"] == "drive-verified" and f["claimedMd5"] is None),
         },
         "findings": findings,
     }

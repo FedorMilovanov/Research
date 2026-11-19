@@ -6,10 +6,11 @@
     "id",
     "name",
     "size",
-    "md5Checksum"
+    "md5Checksum",
+    "sha256Checksum"
   ],
   "whatWasRead": "Ответ Drive на 18.11.2026 по всем 92 id из строк реестра: имя, размер и md5Checksum хранимого объекта. 7 id прочитаны отдельными get_file, остальные 85 — тем же get_file по одному вызову на объект плюс контрольная выборка list_files по волнам.",
-  "whatWasNotRead": "Байты объектов не скачивались: сверяется серверный md5Checksum, а не содержимое. Для четырёх строк wave40 в реестре записан SHA-256, а не MD5; Drive отдаёт только MD5, поэтому у них подтверждён размер, а байтовое утверждение SHA-256 этим проходом не проверяется.",
+  "whatWasNotRead": "Байты объектов не скачивались: сверяются серверные checksum-поля Drive (md5Checksum и sha256Checksum), а не содержимое. Поэтому подтверждается тождество объекта, а не прочтение документа.",
   "objects": {
     "1sV3jfs0slLQh1lX6FawkL-It7tob2X10": {
       "name": "Стивен Чарнок — 00 Navigation (wave 22, 2026-10-25).md",
@@ -404,25 +405,29 @@
       "size": "5866202",
       "md5": "10312933a89736796ec7267afab08c59",
       "name": "CHARNOCK_FULL_BOUNDED_RESEARCH_wave40_2026-10-26.zip",
-      "nameSource": "ledger-label"
+      "nameSource": "ledger-label",
+      "sha256": "3bda1d7693e02aebaf59313cad2029a37534c914e542445965b0d27751c9bc41"
     },
     "12220wSPwfZtzfEEI2OFSOwCvadl6MhZv": {
       "size": "104472",
       "md5": "21f0fc05522478e321af052ef43842cd",
       "name": "00_README_AND_NAVIGATION_wave40_2026-10-26.md",
-      "nameSource": "ledger-label"
+      "nameSource": "ledger-label",
+      "sha256": "21a2e1af6fe409c788b1af1b11f30ac913e8488484a10529236193fa72c2a863"
     },
     "1jtuD_DhLG3HP9TJyvMLPKDYjmIbX8iQv": {
       "size": "188283",
       "md5": "9a85383d46b2cb1dff04d8480c9c7659",
       "name": "16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN_wave40_2026-10-26.md",
-      "nameSource": "ledger-label"
+      "nameSource": "ledger-label",
+      "sha256": "41d98132f96eb62703b8803ecc89d28a87e96b2ae03f870c056472275116f313"
     },
     "1K_bJVxmRQQg-hIz92h699L5dkpVTpi4M": {
       "size": "262179",
       "md5": "435d38ca6dbbbae683de888f366b4509",
       "name": "charnock-biographical-anchors-v1_wave40_2026-10-26.json",
-      "nameSource": "ledger-label"
+      "nameSource": "ledger-label",
+      "sha256": "f35b1fd7bbd0d8ca89dc3100d7a0d0e8392d0980dca08516cd91056628775784"
     },
     "1swq3vIOnx4EBLUZ3bTdOxrTertuzcGmy": {
       "size": "79802",
@@ -557,5 +562,6 @@
       "nameSource": "ledger-label"
     }
   },
-  "objectsCount": 92
+  "objectsCount": 92,
+  "correction": "Первый проход §19 утверждал, что Drive отдаёт только MD5. Это неверно: поле sha256Checksum доступно и вернулось для всех четырёх строк wave40, совпав с записью реестра байт в байт."
 }
