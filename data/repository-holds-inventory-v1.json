@@ -76,13 +76,13 @@
     ]
   },
   "totals": {
-    "filesScanned": 3110,
-    "filesWithMentions": 904,
+    "filesScanned": 3112,
+    "filesWithMentions": 906,
     "mentions": {
-      "ARCHIVE_HOLD": 1410,
+      "ARCHIVE_HOLD": 1414,
       "BLOCKING-HOLD": 16,
       "BOOK-FULLTEXT-HOLD": 15,
-      "EVIDENCE_HOLD": 1291,
+      "EVIDENCE_HOLD": 1295,
       "HOLD-APPARATUS": 1,
       "HOLD-AS": 3,
       "HOLD-GLOSS": 1,
@@ -98,16 +98,16 @@
       "HOLD_MAJOR": 11,
       "HOLD_RETAINED": 1,
       "LIVE-READBACK-HOLD": 4,
-      "LOCATOR_HOLD": 1967,
+      "LOCATOR_HOLD": 1974,
       "PAGE-IMAGE-HOLD": 14,
-      "PUBLICATION_HOLD": 2596,
-      "RIGHTS_HOLD": 1453,
+      "PUBLICATION_HOLD": 2600,
+      "RIGHTS_HOLD": 1457,
       "VERSION-HOLD": 23
     },
     "mentionsByStatus": {
       "closed": 821,
       "open": 2343,
-      "unmarked": 5956
+      "unmarked": 5979
     },
     "canonicalFlagLineStatesRecordedAsBothOpenAndClosed": 403,
     "filesWithJsonHolds": 38,
@@ -371,12 +371,12 @@
       }
     },
     "scripts": {
-      "files": 43,
+      "files": 45,
       "mentions": {
-        "ARCHIVE_HOLD": 38,
+        "ARCHIVE_HOLD": 42,
         "BLOCKING-HOLD": 4,
         "BOOK-FULLTEXT-HOLD": 1,
-        "EVIDENCE_HOLD": 50,
+        "EVIDENCE_HOLD": 54,
         "HOLD-APPARATUS": 1,
         "HOLD-AS": 1,
         "HOLD-GLOSS": 1,
@@ -392,16 +392,16 @@
         "HOLD_MAJOR": 1,
         "HOLD_RETAINED": 1,
         "LIVE-READBACK-HOLD": 1,
-        "LOCATOR_HOLD": 16,
+        "LOCATOR_HOLD": 23,
         "PAGE-IMAGE-HOLD": 2,
-        "PUBLICATION_HOLD": 103,
-        "RIGHTS_HOLD": 47,
+        "PUBLICATION_HOLD": 107,
+        "RIGHTS_HOLD": 51,
         "VERSION-HOLD": 4
       },
       "status": {
         "closed": 7,
         "open": 13,
-        "unmarked": 236
+        "unmarked": 259
       }
     },
     "БАПТИСТЫ РОССИИ": {
@@ -27521,6 +27521,20 @@
       }
     },
     {
+      "path": "scripts/audit_register_claims.py",
+      "corpus": "scripts",
+      "mentions": {
+        "ARCHIVE_HOLD": 4,
+        "EVIDENCE_HOLD": 4,
+        "LOCATOR_HOLD": 5,
+        "PUBLICATION_HOLD": 4,
+        "RIGHTS_HOLD": 4
+      },
+      "status": {
+        "unmarked": 21
+      }
+    },
+    {
       "path": "scripts/audit_relative_links.py",
       "corpus": "scripts",
       "mentions": {
@@ -27641,6 +27655,16 @@
       },
       "status": {
         "unmarked": 1
+      }
+    },
+    {
+      "path": "scripts/test_audit_register_claims.py",
+      "corpus": "scripts",
+      "mentions": {
+        "LOCATOR_HOLD": 2
+      },
+      "status": {
+        "unmarked": 2
       }
     },
     {

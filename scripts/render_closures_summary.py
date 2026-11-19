@@ -46,6 +46,7 @@ METHOD_NAMES = {
     "relative-link-audit": "проверка относительных ссылок",
     "pinned-github-locator-readback": "перечитывание закреплённых локаторов",
     "text-integrity-repair": "сверка склеек с историей",
+    "register-claims-audit": "счётчики против артефактов",
     "server-checksum-readback": "серверная контрольная сумма",
     "read-only-link-audit": "read-only проверка ссылок",
     "space-restoration-backed-by-file-history": "пробелы по истории файла",

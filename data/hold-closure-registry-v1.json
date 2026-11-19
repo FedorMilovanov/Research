@@ -645,6 +645,32 @@
         "ARCHIVE_HOLD"
       ],
       "residualReason": "Байты не скачивались: сверялись серверные checksum-поля Drive, то есть тождество объекта, а не прочтение документа. Актуальность локального зеркала (13 moved-on, 75 unresolved, 4 ambiguous) опросом не снимается — нужна новая загрузка текущих редакций."
+    },
+    {
+      "id": "HCR-2026-11-18-16",
+      "title": "Регистр проверен на собственные счётчики: 8 просроченных чисел и таблица по корпусам, ставшая генерируемой",
+      "holdType": "EVIDENCE_HOLD",
+      "previousState": "Счётчики в §2 и §13 были верны при написании и молча разошлись с артефактами; таблица §2.1 по 25 корпусам отставала на одну пересборку инвентаря",
+      "closedScope": "32 объявленных счётчика сверяются с полями артефактов; таблица §2.1 генерируется из byCorpus; оба механизма под гейтом CI",
+      "recordLocations": [
+        "docs/research/HOLDS_REGISTER_2026-11-18.md §20",
+        "scripts/audit_register_claims.py",
+        "scripts/test_audit_register_claims.py"
+      ],
+      "method": "register-claims-audit",
+      "objects": [
+        {
+          "declaredClaims": 32,
+          "staleFound": 8,
+          "anchorMissing": 1,
+          "corpusTableRows": 25,
+          "corpusRowsReshot": 4
+        }
+      ],
+      "residualHolds": [
+        "EVIDENCE_HOLD"
+      ],
+      "residualReason": "Проверяются только объявленные счётчики: числа без машинного поля остаются утверждениями без срока годности, и это записано как граница."
     }
   ],
   "confirmations": [

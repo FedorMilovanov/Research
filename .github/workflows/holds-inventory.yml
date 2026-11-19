@@ -39,6 +39,8 @@ on:
       - 'data/drive-ledger-snapshot-2026-11-18.json'
       - 'scripts/render_closures_summary.py'
       - 'scripts/test_render_closures_summary.py'
+      - 'scripts/audit_register_claims.py'
+      - 'scripts/test_audit_register_claims.py'
       - 'data/text-integrity-repairs-2026-11-18.json'
       - 'data/hold-closure-registry-v1.json'
       - 'docs/research/HOLDS_REGISTER_2026-11-18.md'
@@ -81,6 +83,8 @@ on:
       - 'data/drive-ledger-snapshot-2026-11-18.json'
       - 'scripts/render_closures_summary.py'
       - 'scripts/test_render_closures_summary.py'
+      - 'scripts/audit_register_claims.py'
+      - 'scripts/test_audit_register_claims.py'
       - 'data/text-integrity-repairs-2026-11-18.json'
       - 'data/hold-closure-registry-v1.json'
       - 'docs/research/HOLDS_REGISTER_2026-11-18.md'
@@ -126,6 +130,7 @@ jobs:
           python3 -B -m unittest discover -s scripts -p 'test_audit_state_stamps.py' -v
           python3 -B -m unittest discover -s scripts -p 'test_audit_drive_ledger.py' -v
           python3 -B -m unittest discover -s scripts -p 'test_render_closures_summary.py' -v
+          python3 -B -m unittest discover -s scripts -p 'test_audit_register_claims.py' -v
       - name: Scan (must not touch the working tree)
         run: |
           python3 scripts/audit_repository_holds.py -o /tmp/holds-a.json
@@ -161,6 +166,9 @@ jobs:
       # counter: it quotes an older state of the file it summarises. This one is gated.
       - name: Closure map matches the registry
         run: python3 -B scripts/render_closures_summary.py --check
+      # A counter in prose has no expiry date; this is the only thing that gives it one.
+      - name: Register counters match their artefacts
+        run: python3 -B scripts/audit_register_claims.py --check
       - name: Check publication gate queue composition
         run: python3 -B scripts/publication_gate_status.py --check
       - name: Report counts without asserting closure

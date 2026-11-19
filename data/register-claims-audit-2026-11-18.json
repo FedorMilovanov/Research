@@ -1,0 +1,304 @@
+{
+  "schemaVersion": "register-claims-audit/1",
+  "authorityId": "REGISTER-CLAIMS-AUDIT-2026-11-18",
+  "register": "docs/research/HOLDS_REGISTER_2026-11-18.md",
+  "scope": {
+    "declaredClaims": 32,
+    "numericTableRows": 128
+  },
+  "totals": {
+    "match": 32
+  },
+  "corpusTable": "match",
+  "sliceTable": "match",
+  "findings": [
+    {
+      "label": "просканировано текстовых файлов",
+      "artefact": "data/repository-holds-inventory-v1.json",
+      "field": "totals.filesScanned",
+      "claimed": 3112,
+      "actual": 3112,
+      "line": 77,
+      "state": "match"
+    },
+    {
+      "label": "файлов хотя бы с одним маркером",
+      "artefact": "data/repository-holds-inventory-v1.json",
+      "field": "totals.filesWithMentions",
+      "claimed": 906,
+      "actual": 906,
+      "line": 78,
+      "state": "match"
+    },
+    {
+      "label": "канонические упоминания `PUBLICATION_HOLD`",
+      "artefact": "data/repository-holds-inventory-v1.json",
+      "field": "totals.mentions.PUBLICATION_HOLD",
+      "claimed": 2600,
+      "actual": 2600,
+      "line": 79,
+      "state": "match"
+    },
+    {
+      "label": "канонические упоминания `LOCATOR_HOLD`",
+      "artefact": "data/repository-holds-inventory-v1.json",
+      "field": "totals.mentions.LOCATOR_HOLD",
+      "claimed": 1974,
+      "actual": 1974,
+      "line": 80,
+      "state": "match"
+    },
+    {
+      "label": "канонические упоминания `RIGHTS_HOLD`",
+      "artefact": "data/repository-holds-inventory-v1.json",
+      "field": "totals.mentions.RIGHTS_HOLD",
+      "claimed": 1457,
+      "actual": 1457,
+      "line": 81,
+      "state": "match"
+    },
+    {
+      "label": "канонические упоминания `ARCHIVE_HOLD`",
+      "artefact": "data/repository-holds-inventory-v1.json",
+      "field": "totals.mentions.ARCHIVE_HOLD",
+      "claimed": 1414,
+      "actual": 1414,
+      "line": 82,
+      "state": "match"
+    },
+    {
+      "label": "канонические упоминания `EVIDENCE_HOLD`",
+      "artefact": "data/repository-holds-inventory-v1.json",
+      "field": "totals.mentions.EVIDENCE_HOLD",
+      "claimed": 1295,
+      "actual": 1295,
+      "line": 83,
+      "state": "match"
+    },
+    {
+      "label": "строки, где флаг зафиксирован как действующий (`open`)",
+      "artefact": "data/repository-holds-inventory-v1.json",
+      "field": "totals.mentionsByStatus.open",
+      "claimed": 2343,
+      "actual": 2343,
+      "line": 84,
+      "state": "match"
+    },
+    {
+      "label": "строки, где флаг зафиксирован как снятый (`closed`)",
+      "artefact": "data/repository-holds-inventory-v1.json",
+      "field": "totals.mentionsByStatus.closed",
+      "claimed": 821,
+      "actual": 821,
+      "line": 85,
+      "state": "match"
+    },
+    {
+      "label": "строки без явного состояния (`unmarked`)",
+      "artefact": "data/repository-holds-inventory-v1.json",
+      "field": "totals.mentionsByStatus.unmarked",
+      "claimed": 5979,
+      "actual": 5979,
+      "line": 86,
+      "state": "match"
+    },
+    {
+      "label": "строки, где одновременно записаны и снятие, и сохранение (`mixed`)",
+      "artefact": "data/repository-holds-inventory-v1.json",
+      "field": "totals.canonicalFlagLineStatesRecordedAsBothOpenAndClosed",
+      "claimed": 403,
+      "actual": 403,
+      "line": 87,
+      "state": "match"
+    },
+    {
+      "label": "JSON-файлов с массивом `holds`",
+      "artefact": "data/repository-holds-inventory-v1.json",
+      "field": "totals.filesWithJsonHolds",
+      "claimed": 38,
+      "actual": 38,
+      "line": 88,
+      "state": "match"
+    },
+    {
+      "label": "`match`",
+      "artefact": "data/internal-digests-verified-2026-11-18.json",
+      "field": "totals.byState.match",
+      "claimed": 58,
+      "actual": 58,
+      "line": 542,
+      "state": "match"
+    },
+    {
+      "label": "`stale`",
+      "artefact": "data/internal-digests-verified-2026-11-18.json",
+      "field": "totals.byState.stale",
+      "claimed": 27,
+      "actual": 27,
+      "line": 543,
+      "state": "match"
+    },
+    {
+      "label": "`external`",
+      "artefact": "data/internal-digests-verified-2026-11-18.json",
+      "field": "totals.byState.external",
+      "claimed": 258,
+      "actual": 258,
+      "line": 544,
+      "state": "match"
+    },
+    {
+      "label": "`external-drive`",
+      "artefact": "data/internal-digests-verified-2026-11-18.json",
+      "field": "totals.byState.external-drive",
+      "claimed": 920,
+      "actual": 920,
+      "line": 545,
+      "state": "match"
+    },
+    {
+      "label": "`ambiguous`",
+      "artefact": "data/internal-digests-verified-2026-11-18.json",
+      "field": "totals.byState.ambiguous",
+      "claimed": 8,
+      "actual": 8,
+      "line": 546,
+      "state": "match"
+    },
+    {
+      "label": "`unclaimed`",
+      "artefact": "data/internal-digests-verified-2026-11-18.json",
+      "field": "totals.byState.unclaimed",
+      "claimed": 514,
+      "actual": 514,
+      "line": 547,
+      "state": "match"
+    },
+    {
+      "label": "`git-object-id`",
+      "artefact": "data/internal-digests-verified-2026-11-18.json",
+      "field": "totals.byState.git-object-id",
+      "claimed": 789,
+      "actual": 789,
+      "line": 548,
+      "state": "match"
+    },
+    {
+      "label": "`labelled-no-path`",
+      "artefact": "data/internal-digests-verified-2026-11-18.json",
+      "field": "totals.unclaimedByReason.labelled-no-path",
+      "claimed": 205,
+      "actual": 205,
+      "line": 774,
+      "state": "match"
+    },
+    {
+      "label": "`bare-hash`",
+      "artefact": "data/internal-digests-verified-2026-11-18.json",
+      "field": "totals.unclaimedByReason.bare-hash",
+      "claimed": 141,
+      "actual": 141,
+      "line": 775,
+      "state": "match"
+    },
+    {
+      "label": "`short-digest-no-path`",
+      "artefact": "data/internal-digests-verified-2026-11-18.json",
+      "field": "totals.unclaimedByReason.short-digest-no-path",
+      "claimed": 95,
+      "actual": 95,
+      "line": 776,
+      "state": "match"
+    },
+    {
+      "label": "`artifact-not-in-tree`",
+      "artefact": "data/internal-digests-verified-2026-11-18.json",
+      "field": "totals.unclaimedByReason.artifact-not-in-tree",
+      "claimed": 59,
+      "actual": 59,
+      "line": 777,
+      "state": "match"
+    },
+    {
+      "label": "`media-segment`",
+      "artefact": "data/internal-digests-verified-2026-11-18.json",
+      "field": "totals.unclaimedByReason.media-segment",
+      "claimed": 12,
+      "actual": 12,
+      "line": 778,
+      "state": "match"
+    },
+    {
+      "label": "`corpus-digest`",
+      "artefact": "data/internal-digests-verified-2026-11-18.json",
+      "field": "totals.unclaimedByReason.corpus-digest",
+      "claimed": 2,
+      "actual": 2,
+      "line": 779,
+      "state": "match"
+    },
+    {
+      "label": "`identical-text`",
+      "artefact": "data/document-twins-2026-11-18.json",
+      "field": "totals.byState.identical-text",
+      "claimed": 3,
+      "actual": 3,
+      "line": 635,
+      "state": "match"
+    },
+    {
+      "label": "`near-identical`",
+      "artefact": "data/document-twins-2026-11-18.json",
+      "field": "totals.byState.near-identical",
+      "claimed": 1,
+      "actual": 1,
+      "line": 636,
+      "state": "match"
+    },
+    {
+      "label": "`shared-text`",
+      "artefact": "data/document-twins-2026-11-18.json",
+      "field": "totals.byState.shared-text",
+      "claimed": 6,
+      "actual": 6,
+      "line": 638,
+      "state": "match"
+    },
+    {
+      "label": "`superset`",
+      "artefact": "data/document-twins-2026-11-18.json",
+      "field": "totals.byState.superset",
+      "claimed": 2,
+      "actual": 2,
+      "line": 637,
+      "state": "match"
+    },
+    {
+      "label": "`current` — последний коммит в тот же день",
+      "artefact": "data/state-stamps-2026-11-18.json",
+      "field": "totals.byState.current",
+      "claimed": 9,
+      "actual": 9,
+      "line": 679,
+      "state": "match"
+    },
+    {
+      "label": "`edited-after-stamp` — файл менялся после своей даты",
+      "artefact": "data/state-stamps-2026-11-18.json",
+      "field": "totals.byState.edited-after-stamp",
+      "claimed": 6,
+      "actual": 6,
+      "line": 680,
+      "state": "match"
+    },
+    {
+      "label": "`stamp-ahead-of-history` — дата позже любого коммита",
+      "artefact": "data/state-stamps-2026-11-18.json",
+      "field": "totals.byState.stamp-ahead-of-history",
+      "claimed": 2,
+      "actual": 2,
+      "line": 681,
+      "state": "match"
+    }
+  ]
+}

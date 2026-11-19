@@ -1,0 +1,323 @@
+#!/usr/bin/env python3
+"""Check the counters printed in the HOLD register against the artefacts they describe.
+
+The register's §2 says "1 966 canonical LOCATOR_HOLD mentions". If the inventory is
+regenerated and the number moves, that sentence keeps asserting the old value - it
+becomes a quotation of a previous state of a file, which is the defect this whole
+document keeps finding elsewhere. Nothing in the repo noticed, because a number in prose
+is not a link and not a digest.
+
+So each printed counter that has a machine home is declared here once, with the exact
+artefact field it mirrors, and checked both ways:
+
+* ``match``  - the register prints what the artefact says;
+* ``stale``  - the register prints something else, and here is the truth;
+* ``anchor-missing`` - the sentence the claim talks about is gone (renamed or deleted),
+  which also has to be reported rather than silently skipped;
+* ``source-missing`` - the artefact or field is missing.
+
+``--check`` exits non-zero on anything but ``match``. It refuses to touch the register:
+the point is to report the drift, not to launder it.
+
+    python3 -B scripts/audit_register_claims.py --check
+    python3 -B scripts/audit_register_claims.py --summary
+    python3 -B scripts/audit_register_claims.py -o data/register-claims-audit-2026-11-18.json
+"""
+from __future__ import annotations
+
+import argparse
+import json
+import re
+import sys
+from pathlib import Path
+
+SCHEMA_VERSION = "register-claims-audit/1"
+AUTHORITY_ID = "REGISTER-CLAIMS-AUDIT-2026-11-18"
+REGISTER = "docs/research/HOLDS_REGISTER_2026-11-18.md"
+
+INVENTORY = "data/repository-holds-inventory-v1.json"
+DIGESTS = "data/internal-digests-verified-2026-11-18.json"
+TWINS = "data/document-twins-2026-11-18.json"
+STAMPS = "data/state-stamps-2026-11-18.json"
+LEDGER = "data/drive-ledger-audit-2026-11-18.json"
+REGISTRY = "data/hold-closure-registry-v1.json"
+
+# label as printed in the register -> (artefact, field). The label is matched literally
+# inside a markdown table row, so a reworded row is reported instead of passing silently.
+CLAIMS: list[tuple[str, str, str]] = [
+    # §2 machine slice
+    ("просканировано текстовых файлов", INVENTORY, "totals.filesScanned"),
+    ("файлов хотя бы с одним маркером", INVENTORY, "totals.filesWithMentions"),
+    ("канонические упоминания `PUBLICATION_HOLD`", INVENTORY, "totals.mentions.PUBLICATION_HOLD"),
+    ("канонические упоминания `LOCATOR_HOLD`", INVENTORY, "totals.mentions.LOCATOR_HOLD"),
+    ("канонические упоминания `RIGHTS_HOLD`", INVENTORY, "totals.mentions.RIGHTS_HOLD"),
+    ("канонические упоминания `ARCHIVE_HOLD`", INVENTORY, "totals.mentions.ARCHIVE_HOLD"),
+    ("канонические упоминания `EVIDENCE_HOLD`", INVENTORY, "totals.mentions.EVIDENCE_HOLD"),
+    ("строки, где флаг зафиксирован как действующий (`open`)", INVENTORY, "totals.mentionsByStatus.open"),
+    ("строки, где флаг зафиксирован как снятый (`closed`)", INVENTORY, "totals.mentionsByStatus.closed"),
+    ("строки без явного состояния (`unmarked`)", INVENTORY, "totals.mentionsByStatus.unmarked"),
+    ("строки, где одновременно записаны и снятие, и сохранение (`mixed`)",
+     INVENTORY, "totals.canonicalFlagLineStatesRecordedAsBothOpenAndClosed"),
+    ("JSON-файлов с массивом `holds`", INVENTORY, "totals.filesWithJsonHolds"),
+    # §13 signature states
+    ("`match`", DIGESTS, "totals.byState.match"),
+    ("`stale`", DIGESTS, "totals.byState.stale"),
+    ("`external`", DIGESTS, "totals.byState.external"),
+    ("`external-drive`", DIGESTS, "totals.byState.external-drive"),
+    ("`ambiguous`", DIGESTS, "totals.byState.ambiguous"),
+    ("`unclaimed`", DIGESTS, "totals.byState.unclaimed"),
+    ("`git-object-id`", DIGESTS, "totals.byState.git-object-id"),
+    # §18 unclaimed reasons
+    ("`labelled-no-path`", DIGESTS, "totals.unclaimedByReason.labelled-no-path"),
+    ("`bare-hash`", DIGESTS, "totals.unclaimedByReason.bare-hash"),
+    ("`short-digest-no-path`", DIGESTS, "totals.unclaimedByReason.short-digest-no-path"),
+    ("`artifact-not-in-tree`", DIGESTS, "totals.unclaimedByReason.artifact-not-in-tree"),
+    ("`media-segment`", DIGESTS, "totals.unclaimedByReason.media-segment"),
+    ("`corpus-digest`", DIGESTS, "totals.unclaimedByReason.corpus-digest"),
+    # §15 twin states
+    ("`identical-text`", TWINS, "totals.byState.identical-text"),
+    ("`near-identical`", TWINS, "totals.byState.near-identical"),
+    ("`shared-text`", TWINS, "totals.byState.shared-text"),
+    ("`superset`", TWINS, "totals.byState.superset"),
+    # §16 stamp states
+    ("`current` — последний коммит в тот же день", STAMPS, "totals.byState.current"),
+    ("`edited-after-stamp` — файл менялся после своей даты", STAMPS, "totals.byState.edited-after-stamp"),
+    ("`stamp-ahead-of-history` — дата позже любого коммита", STAMPS,
+     "totals.byState.stamp-ahead-of-history"),
+]
+
+# Three or more cells: the register also has tables where the number sits in the
+# second cell and a description follows in the third.
+# The §2.1 corpus table is not transcribed by hand any more: 25 rows of counters that
+# change whenever the inventory is regenerated would always be one regeneration behind.
+CORPUS_BEGIN = "<!-- corpus-table:begin -->"
+CORPUS_END = "<!-- corpus-table:end -->"
+
+
+def fmt(number: int) -> str:
+    """Thousands separator as a thin space - and only the digits, never the label."""
+    return f"{number:,}".replace(",", "\u2009")
+
+
+def render_corpus_table(inventory: dict) -> str:
+    by_corpus = inventory.get("byCorpus", {})
+    rows = []
+    for name, block in by_corpus.items():
+        rows.append((name, block.get("files", 0), sum(block.get("mentions", {}).values())))
+    rows.sort(key=lambda item: (-item[2], -item[1], item[0]))
+    lines = [CORPUS_BEGIN,
+             "| Корпус | Файлов с маркерами | Канонических упоминаний |",
+             "|---|---:|---:|"]
+    for name, files, mentions in rows:
+        label = "корневые файлы" if name == "_root" else f"`{name}/`"
+        lines.append(f"| {label} | {files} | {fmt(mentions)} |")
+    lines.append(CORPUS_END)
+    return "\n".join(lines)
+
+
+def replace_corpus_block(text: str, block: str) -> tuple[str, bool]:
+    start, end = text.find(CORPUS_BEGIN), text.find(CORPUS_END)
+    if start == -1 or end == -1 or end < start:
+        return text, False
+    return text[:start] + block + text[end + len(CORPUS_END):], True
+
+
+
+# §2 is the inventory's own table. Same argument as §2.1: a hand-kept copy of counters that
+# move whenever a file mentions a flag can only ever be one edit behind.
+SLICE_BEGIN = "<!-- inventory-slice:begin -->"
+SLICE_END = "<!-- inventory-slice:end -->"
+SLICE_ROWS = [
+    ("просканировано текстовых файлов", "totals.filesScanned"),
+    ("файлов хотя бы с одним маркером", "totals.filesWithMentions"),
+    ("канонические упоминания `PUBLICATION_HOLD`", "totals.mentions.PUBLICATION_HOLD"),
+    ("канонические упоминания `LOCATOR_HOLD`", "totals.mentions.LOCATOR_HOLD"),
+    ("канонические упоминания `RIGHTS_HOLD`", "totals.mentions.RIGHTS_HOLD"),
+    ("канонические упоминания `ARCHIVE_HOLD`", "totals.mentions.ARCHIVE_HOLD"),
+    ("канонические упоминания `EVIDENCE_HOLD`", "totals.mentions.EVIDENCE_HOLD"),
+    ("строки, где флаг зафиксирован как действующий (`open`)", "totals.mentionsByStatus.open"),
+    ("строки, где флаг зафиксирован как снятый (`closed`)", "totals.mentionsByStatus.closed"),
+    ("строки без явного состояния (`unmarked`)", "totals.mentionsByStatus.unmarked"),
+    ("строки, где одновременно записаны и снятие, и сохранение (`mixed`)",
+     "totals.canonicalFlagLineStatesRecordedAsBothOpenAndClosed"),
+    ("JSON-файлов с массивом `holds`", "totals.filesWithJsonHolds"),
+]
+
+
+def render_slice_table(inventory: dict) -> str:
+    lines = [SLICE_BEGIN, "| Показатель | Значение |", "|---|---:|"]
+    for label, field in SLICE_ROWS:
+        node = inventory
+        for part in field.split("."):
+            node = node.get(part, {}) if isinstance(node, dict) else {}
+        if isinstance(node, int):
+            lines.append(f"| {label} | {fmt(node)} |")
+    lines.append(SLICE_END)
+    return "\n".join(lines)
+
+
+def replace_slice_block(text: str, block: str) -> tuple[str, bool]:
+    start, end = text.find(SLICE_BEGIN), text.find(SLICE_END)
+    if start == -1 or end == -1 or end < start:
+        return text, False
+    return text[:start] + block + text[end + len(SLICE_END):], True
+
+
+TABLE_ROW = re.compile(r"^\|\s*(?P<label>[^|]+?)\s*\|\s*(?P<value>-?[\d\s\u2009\u00a0]{1,12})\s*\|")
+NUMBER_SPACES = " \u2009\u00a0"
+
+
+def normalize(value: str) -> int | None:
+    cleaned = "".join(ch for ch in value if ch not in NUMBER_SPACES)
+    return int(cleaned) if cleaned.lstrip("-").isdigit() else None
+
+
+def resolve(root: Path, artefact: str, field: str) -> tuple[int | None, str | None]:
+    path = root / artefact
+    if field.startswith("len:"):
+        if not path.exists():
+            return None, "source-missing"
+        data = json.loads(path.read_text(encoding="utf-8"))
+        key = field.split(":", 1)[1]
+        if not isinstance(data.get(key), list):
+            return None, "source-missing"
+        return len(data[key]), None
+    if not path.exists():
+        return None, "source-missing"
+    node = json.loads(path.read_text(encoding="utf-8"))
+    for part in field.split("."):
+        if isinstance(node, dict) and part in node:
+            node = node[part]
+        else:
+            return None, "source-missing"
+    return (node, None) if isinstance(node, int) else (None, "source-missing")
+
+
+def rows(text: str) -> dict[str, list[tuple[int, int]]]:
+    """label -> [(printed value, line number)], every table row whose second cell is a number."""
+    found: dict[str, list[tuple[int, int]]] = {}
+    for lineno, line in enumerate(text.splitlines(), 1):
+        match = TABLE_ROW.match(line.strip())
+        if not match:
+            continue
+        value = normalize(match.group("value"))
+        if value is None:
+            continue
+        found.setdefault(match.group("label").strip(), []).append((value, lineno))
+    return found
+
+
+def audit(root: Path, register: Path | None = None) -> dict:
+    register = register or root / REGISTER
+    text = register.read_text(encoding="utf-8")
+    inventory_path = root / INVENTORY
+    corpus_state = slice_state = "source-missing"
+    if inventory_path.exists():
+        inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
+        updated, found = replace_corpus_block(text, render_corpus_table(inventory))
+        corpus_state = "match" if found and updated == text else ("anchor-missing" if not found else "stale")
+        updated2, found2 = replace_slice_block(text, render_slice_table(inventory))
+        slice_state = "match" if found2 and updated2 == text else ("anchor-missing" if not found2 else "stale")
+    printed = rows(text)
+    findings = []
+    totals: dict[str, int] = {}
+    for label, artefact, field in CLAIMS:
+        actual, error = resolve(root, artefact, field)
+        entry = {"label": label, "artefact": artefact, "field": field,
+                 "claimed": None, "actual": actual, "line": None}
+        hits = printed.get(label, [])
+        if error:
+            state = "source-missing"
+        elif not hits:
+            state = "anchor-missing"
+        elif len({value for value, _ in hits}) > 1:
+            # The same label printed with two different numbers: which one is the claim?
+            entry["claimed"], entry["line"] = hits[0]
+            state = "anchor-ambiguous"
+        else:
+            entry["claimed"], entry["line"] = hits[0]
+            state = "match" if entry["claimed"] == actual else "stale"
+        entry["state"] = state
+        totals[state] = totals.get(state, 0) + 1
+        findings.append(entry)
+    return {
+        "schemaVersion": SCHEMA_VERSION,
+        "authorityId": AUTHORITY_ID,
+        "register": register.relative_to(root).as_posix() if register.is_relative_to(root) else str(register),
+        "scope": {"declaredClaims": len(CLAIMS),
+                  "numericTableRows": sum(len(v) for v in printed.values())},
+        "totals": totals,
+        "corpusTable": corpus_state,
+        "sliceTable": slice_state,
+        "findings": findings,
+    }
+
+
+def summary(report: dict) -> str:
+    totals = report["totals"]
+    lines = [f"Заявленных счётчиков: {report['scope']['declaredClaims']} — " +
+             ", ".join(f"{k}={v}" for k, v in sorted(totals.items())),
+             f"Таблица §2.1 по корпусам: {report['corpusTable']}",
+             f"Таблица §2 (машинный срез): {report['sliceTable']}"]
+    for finding in report["findings"]:
+        if finding["state"] == "match":
+            continue
+        where = f"стр.{finding['line']}" if finding["line"] else "строка не найдена"
+        lines.append(f"  {finding['state']:14s} {where:16s} «{finding['label'][:52]}»: "
+                     f"напечатано {finding['claimed']}, в артефакте {finding['actual']}")
+    return "\n".join(lines)
+
+
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(description="Check register counters against artefacts.")
+    parser.add_argument("--root", default=".")
+    parser.add_argument("--register", default=None)
+    parser.add_argument("--check", action="store_true")
+    parser.add_argument("--summary", action="store_true")
+    parser.add_argument("-o", "--output", default=None)
+    parser.add_argument("--write-corpus-table", action="store_true")
+    parser.add_argument("--write-slice-table", action="store_true")
+    args = parser.parse_args(argv)
+
+    root = Path(args.root).resolve()
+    register = Path(args.register) if args.register else None
+    report = audit(root, register)
+    if args.output:
+        Path(args.output).write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n",
+                                     encoding="utf-8")
+        print(f"wrote {args.output}", file=sys.stderr)
+    if args.summary:
+        print(summary(report))
+    bad = [f for f in report["findings"] if f["state"] != "match"]
+    for state, label in ((report["corpusTable"], "§2.1 таблица по корпусам"),
+                         (report["sliceTable"], "§2 машинный срез")):
+        if state != "match":
+            bad = bad + [{"state": state, "label": label, "claimed": None, "actual": None, "line": None}]
+    if args.write_corpus_table or args.write_slice_table:
+        inventory = json.loads((root / INVENTORY).read_text(encoding="utf-8"))
+        target = Path(args.register) if args.register else root / REGISTER
+        text = target.read_text(encoding="utf-8")
+        writes = []
+        if args.write_corpus_table:
+            text, found = replace_corpus_block(text, render_corpus_table(inventory))
+            if not found:
+                print("corpus-table markers not found", file=sys.stderr)
+                return 1
+            writes.append("corpus table")
+        if args.write_slice_table:
+            text, found = replace_slice_block(text, render_slice_table(inventory))
+            if not found:
+                print("inventory-slice markers not found", file=sys.stderr)
+                return 1
+            writes.append("inventory slice")
+        target.write_text(text, encoding="utf-8")
+        print(f"wrote {', '.join(writes)} into {target}", file=sys.stderr)
+        return 0
+    if args.check and bad:
+        print(summary(report), file=sys.stderr)
+        return 1
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
