@@ -1608,6 +1608,44 @@ S. Chandler, *The Case of Subscription to Explanatory Articles of Faith* (London
 | Независим ли его довод | **Нет.** Фраза Кларка об устном обещании пересказывает послесловие самого Чандлера (л. 182). Поправка к §40: вместо «оппонент Чандлера ближе к тексту» точнее «**Чандлер** (1748) прямо называет *Consensus Helveticus* в остаточном обещании, Кларк (1749) это повторяет» |
 | Конфликт с DeYoung/Клаубером | Метка **`RESOLVED_PARTIAL`** прежняя, теперь уточнена. Текст акта (Боржо) не называет Формулу — это согласуется с DeYoung: компромисс с её прямым названием не прошёл. Чандлер называет её, но это **пересказ**, а не текст акта (`PARAPHRASE_NOT_ACT`). По существу обе передачи сходятся: остаточное обещание «pour le bien de la paix» касалось и швейцарских «règlements» |
 | Сн. 27: «отменена в 1706 г.» | Вердикт **`SIMPLIFIED`** не меняется, опора расширена. Даже сторонник отмены (Чандлер, 1748) сообщает, что после 1706 г. требовалось обещание не учить вопреки *Consensus Helveticus*. Отменена была подписка, а не Формула как норма |
-| Дата речи | «Вторник, 2?-е июня 1706 г.»: 22 или 29 (по григорианскому счёту) либо 25 (по юлианскому) — **не установлено**. Речь произнесена после решения Компании и до ратификации Советом (л. 181) |
+| Дата речи | «Вторник, 2?-е июня 1706 г.»: 22 или 29 (по григорианскому счёту) либо 25 (по юлианскому) — **не установлено**. Речь произнесена после решения Компании и до ратификации Советом (л. 181) | *(Раунд 120, §43: по Бюде заседание Компании — 25 июня 1706 г., делегаты выступили позже; из вторников июня после 25-го остаётся только 29-е по григорианскому счёту — `DATE_INFERRED`.)*
+
+Вердикты S1–S5 не меняются. Умысел не утверждается.
+
+## 43. Раунд 120 (2026-11-17): сн. 27, 1706 — решение Компании от 25 июня 1706 г. по регистрам (Бюде 1880); дата речи Турретина; «sans toucher à la doctrine»
+
+**Повод.** В §42 дата речи Турретина осталась неустановленной: «Tuesday, the 2[?]th of June, 1706» — 22, 29 или 25 июня. Второй экземпляр Чандлера (IA `bim_eighteenth-century_the-case-of-subscription_chandler-samuel_1748`, микрофильм, OCR tesseract; л. 177–178) цифру тоже не читает: «Er; in the Council of 8 Tuesday, the…». Он лишь повторяет текст послесловия: «contrary to the Consensus Hel-veticus, or the Confession ef the [G]allican…; pour le [Bien] de la Paix». Порядок событий между июнем и августом 1706 г. в корпусе не прослежен.
+
+### 43.1. Источник
+
+E. de Budé, *Vie de J.-A. Turrettini, théologien genevois, 1671–1737* (G. Bridel, 1880), IA `viedejaturretti00budgoog` (скан Google, Оксфорд). Текст получен через `inside.php`: поле «page» = лист скана. `BookReaderGetTextWrapper` для этого экземпляра отвечает HTTP 500, файла номеров страниц нет, поэтому ссылки даны **по листам**. Бюде цитирует регистры Компании пасторов (класс B; OCR; изображения страниц не открывались). Глава VII: «Turrettini. — Le Consensus. — Projet de réunion…» (л. 137).
+
+### 43.2. Что сказано
+
+| Лист | Текст (OCR) | Что даёт |
+|---|---|---|
+| л. 138 | «Les ministres de Genève obtinrent en 1706 qu'on n'exigeât plus la signature du formulaire connu sous le nom de Consensus, introduit quarante années auparavant. J.-A. Turrettini fut chargé de faire là-dessus une représentation au Grand Conseil» | Общая формула Бюде. Две неточности: «quarante années» — Женева приняла Формулу в 1678/1679 г. (§40), то есть менее чем за 30 лет; «Grand Conseil» расходится с его же подробным рассказом ниже (Conseil d'État, л. 144) и с Чандлером («Council of xxv»). **`INTERNAL_INCONSISTENCY`** у Бюде (мелко) |
+| л. 138–139 | «Une grande séance de la Vénérable Compagnie eut lieu le **25 juin** sous la présidence de J.-A. Turrettini. Plusieurs pasteurs, entre autres Calandrini et B. Pictet… étaient absents. Sur les trente-quatre membres de la Compagnie, douze manquaient à l'appel» | Дата и состав решающего заседания. Защитники Формулы (Каландрини, Пикте) отсутствовали |
+| л. 139 | «Quant à la question même de la signature du Consensus, il fut résolu, sous le bon plaisir du Conseil et **sans toucher à la doctrine contenue dans les règlements de 1649** (articles rédigés à l'occasion de Morus), que cet engagement serait supprimé et que ceux qui seraient reçus… ne seraient obligés à aucune signature, mais qu'ils seraient **exhortés par la bouche du modérateur à ne rien enseigner contre les règlements** afin de conserver la paix et l'union et pour garder l'uniformité dans leurs instructions» | Сама Компания оговорила, что **доктрину не трогает**; отменяется подпись, остаётся увещание. Это прообраз п. 3 формуляра 27.08 (§40) |
+| л. 140, 142 (регистры) | «ayant ôté le sic sentio, c'est-à-dire la nécessité de croire…»; «on ne saurait conserver le sic docebo…»; «neque ore, neque calamo, neque publice neque privatim» — «une espèce d'inquisition très odieuse» | Отменяемое обязательство — «так учу» (sic docebo) в дополнение к уже снятому «так мыслю». Ср. 1669 г. (§41, л. 418) |
+| л. 144 (регистры) | «…on ne signe point à Zurich, ni à Bâle, ni à Schaffhouse, ni à Neuchâtel»; делегаты, назначенные «à la séance précédente», должны были «se présenter devant le **Conseil d'État** et de lui soumettre la décision»; «Turrettini prononça le premier et plus important discours; Sartoris se borna à justifier les pasteurs d'avoir délibéré en l'absence de plusieurs de leurs collègues» | Речь у Чандлера — это выступление делегатов Компании **после** заседания 25 июня. Утверждение о Цюрихе — довод стороны в споре (ср. `27_`: Цюрих и Берн — до 1725–1740 гг.). **`SOURCE_TENSION`**, не разрешено |
+| л. 144 | «la minorité protesta par des mémoires envoyés le **13 août** au Conseil d'État, mais, sur l'intervention conciliatrice du Consistoire, elle se rangea au simple formulaire d'engagement, qui devint l'unique formalité pour la réception au saint ministère» | Промежуточное звено: протест меньшинства 13.08 → посредничество Консистории → формуляр (Компания 27.08, Совет 20.09 — §40) |
+| л. 146 (регистры) | «Le 1er juin [1725]… la Compagnie opinant sur le Formulaire de 1706… l'avis unanime, à une ou deux voix près, a été de ne plus se servir désormais du dit Formulaire, mais de s'en tenir à l'art. 6…» | Совпадает с Боржо (§40, л. 631): 01.06.1725 |
+| л. 80 | «Le 29 septembre 1705, J.-A. Turrettini fut nommé professeur de théologie en remplacement de Louis Tronchin… c'était en effet la coutume que si l'un des trois professeurs en théologie venait à mourir, le professeur d'histoire ecclésiastique le suppléait» | Независимо от Боржо подтверждает §39: преемник **Троншена**, а не отца |
+
+### 43.3. Дата речи
+
+- Заседание Компании — пятница 25 июня 1706 г. (по григорианскому счёту). Делегатов назначили на нём, выступили они **позже** (л. 144).
+- Чандлер: «Tuesday, the 2[?]th of June, 1706». Вторники июня по григорианскому счёту — 22 и 29. Позже 25-го — только **29 июня**. По юлианскому счёту вторник — 25 июня, то есть день самого заседания, что не согласуется с «позже».
+- **Вывод (`DATE_INFERRED`):** речь, скорее всего, произнесена **во вторник 29 июня 1706 г.** Это вывод из двух вторичных источников при условии, что Бюде и Чандлер дают дату в одном стиле. Цифра в обоих сканах Чандлера по-прежнему не читается.
+
+### 43.4. Итог
+
+| Вопрос | Итог |
+|---|---|
+| Сн. 27: «отменена в 1706 г.» | Вердикт **`SIMPLIFIED`** не меняется, опора теперь — постановление Компании (по регистрам у Бюде). Решение от 25.06.1706 принято «**sans toucher à la doctrine contenue dans les règlements de 1649**»: отменена подпись, доктрина оставлена, увещание «à ne rien enseigner contre les règlements» сохранено |
+| Хронология 1706 г. | 25.06 — Компания (12 из 34 отсутствуют, в том числе Каландрини и Пикте) → около 29.06 — речь Турретина перед Малым советом (Чандлер) → 13.08 — протест меньшинства → посредничество Консистории → 27.08 — формуляр Компании → 20.09 — ратификация Советом (Боржо). DeYoung даёт для Совета 06.09 (§40, `DATE_DISCREPANCY` — прежний) |
+| «Преемник на богословской кафедре» (§39) | Бюде (л. 80) независимо подтверждает: преемник Луи Троншена с 29.09.1705. `FACT_ERROR` (мягко) прежний |
+| `27_`: Цюрих | Регистр Компании 1706 г.: «on ne signe point à Zurich» ↔ `27_` (Schaff-Herzog): Цюрих — до 1725–1740 гг. `SOURCE_TENSION`. Возможно, речь о разном: о подписи при посвящении и о действии Формулы как закона. Не разрешено |
 
 Вердикты S1–S5 не меняются. Умысел не утверждается.
