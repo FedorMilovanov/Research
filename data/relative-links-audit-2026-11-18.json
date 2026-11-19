@@ -11,15 +11,26 @@
       "missing": 58,
       "outside": 0,
       "unqualified": 0,
-      "external": 5984,
-      "missing-anchor": 0
+      "external": 5966,
+      "missing-anchor": 0,
+      "fragment": 18,
+      "missing-fragment": 0
     },
     "byKind": {
-      "external": 5984,
+      "external": 5966,
+      "fragment": 18,
       "missing": 58,
       "resolves": 2861
     },
     "defects": 58,
+    "fragments": {
+      "total": 36,
+      "inPage": 18,
+      "crossFile": 18,
+      "resolved": 36,
+      "unresolved": 0,
+      "note": "Links whose target carries a #fragment; in-page anchors are reported, not counted as defects."
+    },
     "filesWithDefects": 4,
     "explained": 58,
     "unexplained": 0

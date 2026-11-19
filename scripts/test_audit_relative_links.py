@@ -73,9 +73,29 @@ class ClassificationTests(unittest.TestCase):
     def test_scheme_links_are_external(self) -> None:
         self.fx.write("docs/page.md", "[a](https://example.org/x) [b](mailto:x@y.z) [c](#anchor)")
         report = self.fx.scan()
-        self.assertEqual(report["totals"]["byState"]["external"], 3)
-        self.assertEqual(report["totals"]["defects"], 0)  # external links never enter findings
+        self.assertEqual(report["totals"]["byState"]["external"], 2)
+        self.assertEqual(report["totals"]["defects"], 0)  # external/aside links never enter findings
         self.assertEqual(report["findings"], [])
+
+    def test_in_page_anchor_is_checked_against_its_own_file(self) -> None:
+        self.fx.write("docs/page.md", "# Top\n\n[a](#top) [b](#nowhere)\n")
+        states = self.fx.scan()["totals"]["byState"]
+        self.assertEqual((states["fragment"], states["missing-fragment"]), (1, 1))
+
+    def test_dead_in_page_anchor_is_reported_but_not_a_defect(self) -> None:
+        # The slug rules here are an approximation; gating on our own approximation would
+        # turn a guess into a verdict, so a dead in-page anchor is reported by state only.
+        self.fx.write("docs/page.md", "# Top\n\n[b](#nowhere)\n")
+        report = self.fx.scan()
+        self.assertEqual(report["totals"]["defects"], 0)
+        self.assertEqual(report["totals"]["byState"]["missing-fragment"], 1)
+
+    def test_fragment_census_counts_both_kinds(self) -> None:
+        self.fx.write("docs/target.md", "# Head\n\n## Part\n")
+        self.fx.write("docs/page.md", "# Top\n\n[a](#top) [b](target.md#part)\n")
+        fragments = self.fx.scan()["totals"]["fragments"]
+        self.assertEqual((fragments["total"], fragments["inPage"], fragments["crossFile"],
+                          fragments["resolved"], fragments["unresolved"]), (2, 1, 1, 2, 0))
 
     def test_bare_host_is_unqualified(self) -> None:
         states = self._states("[pdf](www.example.org/report.pdf)")

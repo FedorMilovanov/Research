@@ -723,6 +723,32 @@
         "LOCATOR_HOLD"
       ],
       "residualReason": "Проверяются относительные ссылки рабочего дерева; внешние адреса не запрашивались, и ни одна ссылка не подтверждает содержимое удалённого объекта."
+    },
+    {
+      "id": "HCR-2026-11-18-19",
+      "title": "Якоря: «36 ссылок с фрагментом» измерены — 18 внутристраничных и 18 межфайловых, все резолвятся",
+      "holdType": "LOCATOR_HOLD",
+      "previousState": "Любой #anchor относился к external и не считался; ссылки файл.md#раздел не выделялись — утверждение §11 «36/36» подтверждалось только самим собой",
+      "closedScope": "Введены состояния fragment/missing-fragment и перепись totals.fragments (total 36 = 18 + 18, resolved 36, unresolved 0); таблица §8 генерируется, утверждение §11 под проверкой",
+      "recordLocations": [
+        "docs/research/HOLDS_REGISTER_2026-11-18.md §23",
+        "data/relative-links-audit-2026-11-18.json",
+        "scripts/audit_relative_links.py"
+      ],
+      "method": "relative-link-audit",
+      "objects": [
+        {
+          "fragmentLinks": 36,
+          "inPage": 18,
+          "crossFile": 18,
+          "resolved": 36,
+          "unresolved": 0
+        }
+      ],
+      "residualHolds": [
+        "LOCATOR_HOLD"
+      ],
+      "residualReason": "Слаги заголовков воспроизводятся приблизительно, поэтому мёртвый внутристраничный якорь — отчёт, а не гейт; компенсация — видимый счётчик в §8."
     }
   ],
   "confirmations": [

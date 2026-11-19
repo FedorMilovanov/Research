@@ -55,7 +55,8 @@ INLINE_CODE_RE = re.compile(r"`[^`\n]*`")
 
 SKIP_DIRS = {".git", "node_modules", ".arena", ".cache", ".local", "__pycache__",
              ".pytest_cache", ".ruff_cache", ".venv", "venv", ".mypy_cache"}
-STATES = ("resolves", "missing", "outside", "unqualified", "external", "missing-anchor")
+STATES = ("resolves", "missing", "outside", "unqualified", "external", "missing-anchor",
+          "fragment", "missing-fragment")
 
 
 def iter_markdown(root: Path) -> list[Path]:
@@ -130,7 +131,18 @@ def classify(raw: str, source: Path, root: Path, anchor_cache: dict[Path, set[st
     if target.startswith("<") and target.endswith(">"):
         target = target[1:-1].strip()
     if target.startswith("#"):
-        return "external", "in-page anchor"
+        # An in-page anchor is checkable against the source file's own headings. It is
+        # reported, but not counted as a defect: the slug rules are approximated here, and
+        # gating on our own approximation would turn a guess into a verdict.
+        cache = anchor_cache if anchor_cache is not None else {}
+        anchors = cache.get(source)
+        if anchors is None:
+            anchors = anchors_of(source)
+            cache[source] = anchors
+        wanted = normalise_anchor(unquote(target[1:]))
+        known = {normalise_anchor(a) for a in anchors}
+        return ("fragment", "in-page anchor resolves") if wanted in known or wanted == "" \
+            else ("missing-fragment", "no such heading in this file")
     if SCHEME_RE.match(target):
         return "external", "scheme"
     path_part = unquote(target.split("#")[0].split("?")[0])
@@ -191,6 +203,10 @@ def scan(root: Path, exceptions: dict[tuple[str, str], str] | None = None) -> di
     by_file: Counter = Counter()
     kinds: Counter = Counter()
     anchor_cache: dict[Path, set[str]] = {}
+    # "Links carrying a #fragment" is a claim the register makes about itself, so it has to
+    # be counted here: in-page anchors and file-relative targets of the form doc.md#heading
+    # are different states but the same kind of locator.
+    fragments: Counter = Counter()
     for path in files:
         rel = path.relative_to(root).as_posix()
         try:
@@ -204,6 +220,11 @@ def scan(root: Path, exceptions: dict[tuple[str, str], str] | None = None) -> di
                 kind = "image" if is_image else "link"
                 by_state[state] += 1
                 kinds[state if kind == "link" else f"image-{state}"] += 1
+                target = match.group(2).strip()
+                if "#" in target and not SCHEME_RE.match(target):
+                    fragments["total"] += 1
+                    fragments["in-page" if target.startswith("#") else "cross-file"] += 1
+                    fragments["resolved" if state in ("fragment", "resolves") else "unresolved"] += 1
                 if state in ("missing", "outside", "unqualified", "missing-anchor"):
                     by_file[rel] += 1
                 if state in ("missing", "outside", "unqualified", "missing-anchor"):
@@ -227,6 +248,14 @@ def scan(root: Path, exceptions: dict[tuple[str, str], str] | None = None) -> di
             "byState": {state: by_state.get(state, 0) for state in STATES},
             "byKind": dict(sorted(kinds.items())),
             "defects": sum(by_state.get(s, 0) for s in ("missing", "outside", "unqualified", "missing-anchor")),
+            "fragments": {
+                "total": fragments.get("total", 0),
+                "inPage": fragments.get("in-page", 0),
+                "crossFile": fragments.get("cross-file", 0),
+                "resolved": fragments.get("resolved", 0),
+                "unresolved": fragments.get("unresolved", 0),
+                "note": "Links whose target carries a #fragment; in-page anchors are reported, not counted as defects.",
+            },
             "filesWithDefects": len(by_file),
             "explained": sum(1 for f in findings if f["explained"]),
             "unexplained": sum(1 for f in findings if not f["explained"]),

@@ -3,12 +3,12 @@
   "authorityId": "REGISTER-CLAIMS-AUDIT-2026-11-18",
   "register": "docs/research/HOLDS_REGISTER_2026-11-18.md",
   "scope": {
-    "declaredClaims": 40,
-    "proseClaims": 8,
-    "numericTableRows": 137
+    "declaredClaims": 41,
+    "proseClaims": 9,
+    "numericTableRows": 144
   },
   "totals": {
-    "match": 38,
+    "match": 39,
     "superseded": 2
   },
   "corpusTable": "match",
@@ -21,7 +21,7 @@
       "field": "totals.filesScanned",
       "claimed": 3114,
       "actual": 3114,
-      "line": 79,
+      "line": 80,
       "state": "match"
     },
     {
@@ -30,7 +30,7 @@
       "field": "totals.filesWithMentions",
       "claimed": 907,
       "actual": 907,
-      "line": 80,
+      "line": 81,
       "state": "match"
     },
     {
@@ -39,7 +39,7 @@
       "field": "totals.mentions.PUBLICATION_HOLD",
       "claimed": 2604,
       "actual": 2604,
-      "line": 81,
+      "line": 82,
       "state": "match"
     },
     {
@@ -48,7 +48,7 @@
       "field": "totals.mentions.LOCATOR_HOLD",
       "claimed": 1976,
       "actual": 1976,
-      "line": 82,
+      "line": 83,
       "state": "match"
     },
     {
@@ -57,7 +57,7 @@
       "field": "totals.mentions.RIGHTS_HOLD",
       "claimed": 1460,
       "actual": 1460,
-      "line": 83,
+      "line": 84,
       "state": "match"
     },
     {
@@ -66,7 +66,7 @@
       "field": "totals.mentions.ARCHIVE_HOLD",
       "claimed": 1416,
       "actual": 1416,
-      "line": 84,
+      "line": 85,
       "state": "match"
     },
     {
@@ -75,7 +75,7 @@
       "field": "totals.mentions.EVIDENCE_HOLD",
       "claimed": 1297,
       "actual": 1297,
-      "line": 85,
+      "line": 86,
       "state": "match"
     },
     {
@@ -84,7 +84,7 @@
       "field": "totals.mentionsByStatus.open",
       "claimed": 2346,
       "actual": 2346,
-      "line": 86,
+      "line": 87,
       "state": "match"
     },
     {
@@ -93,7 +93,7 @@
       "field": "totals.mentionsByStatus.closed",
       "claimed": 821,
       "actual": 821,
-      "line": 87,
+      "line": 88,
       "state": "match"
     },
     {
@@ -102,7 +102,7 @@
       "field": "totals.mentionsByStatus.unmarked",
       "claimed": 5989,
       "actual": 5989,
-      "line": 88,
+      "line": 89,
       "state": "match"
     },
     {
@@ -111,7 +111,7 @@
       "field": "totals.canonicalFlagLineStatesRecordedAsBothOpenAndClosed",
       "claimed": 403,
       "actual": 403,
-      "line": 89,
+      "line": 90,
       "state": "match"
     },
     {
@@ -120,7 +120,7 @@
       "field": "totals.filesWithJsonHolds",
       "claimed": 38,
       "actual": 38,
-      "line": 90,
+      "line": 91,
       "state": "match"
     },
     {
@@ -129,7 +129,7 @@
       "field": "totals.byState.match",
       "claimed": 58,
       "actual": 58,
-      "line": 558,
+      "line": 563,
       "state": "match"
     },
     {
@@ -138,7 +138,7 @@
       "field": "totals.byState.stale",
       "claimed": 27,
       "actual": 27,
-      "line": 559,
+      "line": 564,
       "state": "match"
     },
     {
@@ -147,7 +147,7 @@
       "field": "totals.byState.external",
       "claimed": 258,
       "actual": 258,
-      "line": 560,
+      "line": 565,
       "state": "match"
     },
     {
@@ -156,7 +156,7 @@
       "field": "totals.byState.external-drive",
       "claimed": 920,
       "actual": 920,
-      "line": 561,
+      "line": 566,
       "state": "match"
     },
     {
@@ -165,7 +165,7 @@
       "field": "totals.byState.ambiguous",
       "claimed": 8,
       "actual": 8,
-      "line": 562,
+      "line": 567,
       "state": "match"
     },
     {
@@ -174,7 +174,7 @@
       "field": "totals.byState.unclaimed",
       "claimed": 514,
       "actual": 514,
-      "line": 563,
+      "line": 568,
       "state": "match"
     },
     {
@@ -183,7 +183,7 @@
       "field": "totals.byState.git-object-id",
       "claimed": 789,
       "actual": 789,
-      "line": 564,
+      "line": 569,
       "state": "match"
     },
     {
@@ -192,7 +192,7 @@
       "field": "totals.unclaimedByReason.labelled-no-path",
       "claimed": 205,
       "actual": 205,
-      "line": 790,
+      "line": 795,
       "state": "match"
     },
     {
@@ -201,7 +201,7 @@
       "field": "totals.unclaimedByReason.bare-hash",
       "claimed": 141,
       "actual": 141,
-      "line": 791,
+      "line": 796,
       "state": "match"
     },
     {
@@ -210,7 +210,7 @@
       "field": "totals.unclaimedByReason.short-digest-no-path",
       "claimed": 95,
       "actual": 95,
-      "line": 792,
+      "line": 797,
       "state": "match"
     },
     {
@@ -219,7 +219,7 @@
       "field": "totals.unclaimedByReason.artifact-not-in-tree",
       "claimed": 59,
       "actual": 59,
-      "line": 793,
+      "line": 798,
       "state": "match"
     },
     {
@@ -228,7 +228,7 @@
       "field": "totals.unclaimedByReason.media-segment",
       "claimed": 12,
       "actual": 12,
-      "line": 794,
+      "line": 799,
       "state": "match"
     },
     {
@@ -237,7 +237,7 @@
       "field": "totals.unclaimedByReason.corpus-digest",
       "claimed": 2,
       "actual": 2,
-      "line": 795,
+      "line": 800,
       "state": "match"
     },
     {
@@ -246,7 +246,7 @@
       "field": "totals.byState.identical-text",
       "claimed": 3,
       "actual": 3,
-      "line": 651,
+      "line": 656,
       "state": "match"
     },
     {
@@ -255,7 +255,7 @@
       "field": "totals.byState.near-identical",
       "claimed": 1,
       "actual": 1,
-      "line": 652,
+      "line": 657,
       "state": "match"
     },
     {
@@ -264,7 +264,7 @@
       "field": "totals.byState.shared-text",
       "claimed": 6,
       "actual": 6,
-      "line": 654,
+      "line": 659,
       "state": "match"
     },
     {
@@ -273,7 +273,7 @@
       "field": "totals.byState.superset",
       "claimed": 2,
       "actual": 2,
-      "line": 653,
+      "line": 658,
       "state": "match"
     },
     {
@@ -282,7 +282,7 @@
       "field": "totals.byState.current",
       "claimed": 9,
       "actual": 9,
-      "line": 695,
+      "line": 700,
       "state": "match"
     },
     {
@@ -291,7 +291,7 @@
       "field": "totals.byState.edited-after-stamp",
       "claimed": 6,
       "actual": 6,
-      "line": 696,
+      "line": 701,
       "state": "match"
     },
     {
@@ -300,7 +300,7 @@
       "field": "totals.byState.stamp-ahead-of-history",
       "claimed": 2,
       "actual": 2,
-      "line": 697,
+      "line": 702,
       "state": "match"
     },
     {
@@ -309,7 +309,7 @@
       "field": "scope.distinctDriveIds",
       "claimed": 8,
       "actual": 92,
-      "line": 43,
+      "line": 44,
       "supersededBy": "§19",
       "state": "superseded",
       "label": "drive-sample-in-confirmation"
@@ -320,7 +320,7 @@
       "field": "scope.distinctDriveIds",
       "claimed": 8,
       "actual": 92,
-      "line": 541,
+      "line": 546,
       "supersededBy": "§19",
       "state": "superseded",
       "label": "drive-sample-in-section-11"
@@ -331,7 +331,7 @@
       "field": "scope.documentsCompared",
       "claimed": 2385,
       "actual": 2385,
-      "line": 645,
+      "line": 650,
       "supersededBy": null,
       "state": "match",
       "label": "twins-documents-compared"
@@ -342,10 +342,21 @@
       "field": "scope.markdownFiles",
       "claimed": 2409,
       "actual": 2409,
-      "line": 645,
+      "line": 650,
       "supersededBy": null,
       "state": "match",
       "label": "twins-markdown-files"
+    },
+    {
+      "id": "fragment-links-in-section-11",
+      "artefact": "data/relative-links-audit-2026-11-18.json",
+      "field": "totals.fragments.total",
+      "claimed": 36,
+      "actual": 36,
+      "line": 298,
+      "supersededBy": null,
+      "state": "match",
+      "label": "fragment-links-in-section-11"
     },
     {
       "id": "repairs-applied",
@@ -375,7 +386,7 @@
       "field": "totals.stamped",
       "claimed": 17,
       "actual": 17,
-      "line": 691,
+      "line": 696,
       "supersededBy": null,
       "state": "match",
       "label": "stamps-verified"
@@ -386,7 +397,7 @@
       "field": "scope.markdownFiles",
       "claimed": 2409,
       "actual": 2409,
-      "line": 691,
+      "line": 696,
       "supersededBy": null,
       "state": "match",
       "label": "stamps-markdown-files"
