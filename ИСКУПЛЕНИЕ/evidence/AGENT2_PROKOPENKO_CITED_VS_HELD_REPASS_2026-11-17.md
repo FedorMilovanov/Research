@@ -2016,3 +2016,35 @@ Wayback Machine, страница `www.gracechurch.org/about/doctrinal-statement
 | Предисловие («Salvum… stat fundamentum fidei… Salva unitas corporis mystici») | Есть у Нимейера, p. 729 — цитата `27_` подтверждена по второму изданию |
 
 Вердикты S1–S5 не меняются. Умысел не утверждается.
+
+## 55. Раунд 132 (2026-11-17): Каннингем, *Historical Theology* II — постоянна ли пагинация между изданиями (с. 24, сн. 78, «vol. 2, pp. 379–380»)
+
+**Повод.** В §34.4 остался HOLD: «пагинация изд. Каннингема 1882 г. (SWRB 1991)». Вердикт `LOCATOR_IMPRECISE` (мягко) для pp. 379–380 вынесен по пагинации 1863 г. Если в издании, на которое ссылается статья, страницы другие, вердикт мог бы относиться не к тому тексту.
+
+### 55.1. Источники
+
+- (а) T. & T. Clark, 1863, IA `historicaltheolo02cunnuoft` — `_djvu.txt`, чанк 142 (как в §34).
+- (б) Полнотекстовый индекс archive.org через `openlibrary.org/search/inside.json`. Он покрывает и экземпляры с ограниченным доступом (выдача только фрагментами):
+  - `historicaltheocun02cunn` (Clark, 1863, второй экземпляр);
+  - `workscunn03cunn` (*Works*, т. III = *Historical Theology* II, Clark, 1870);
+  - `historicaltheolo0000unse_x3t3` (Banner of Truth, 1960);
+  - `historicaltheolo0002cunn` (Banner of Truth, 1969).
+- Класс A2: фрагменты OCR с колонтитулами. Сами страницы изданий 1960 и 1969 гг. не открывались (доступ ограничен).
+
+### 55.2. Сверка
+
+| Запрос | Что выдаёт индекс | Итог |
+|---|---|---|
+| «SYNOD OF DORT. 379» | 1870, 1960 и 1969: сноска «Lib. iv., c. iv., Q. 4.», затем колонтитул «Sec. II.] SYNOD OF DORT. 379», затем «stigmatized as a heresy, only when it was…» | Тот же разрыв страниц, что в (а): в издании 1863 г. сноска «Lib. iv., c. iv., Q. 4.» стоит внизу p. 378, а p. 379 начинается словами «stigmatized as a heresy, only when it was carried out so far…» |
+| «Synod of Dort marks one of the most important eras» | Все четыре экземпляра (1863, 1870, 1960, 1969): «Sec. II.—Synod of Dort. The Synod of Dort marks…» | Начало раздела — на p. 379 во всех печатях |
+| «learned and zealous defender of Calvinism» | Все четыре: «colleague, Gomarus, who was a learned and zealous defender of Calvinism. The Church of the United…» | Фраза о Гомаре — та же (в (а) это p. 373) |
+
+### 55.3. Итог
+
+| Вопрос | Итог |
+|---|---|
+| Совпадает ли пагинация т. II в разных печатях | **Да** для четырёх видимых печатей: 1863, 1870 (*Works* III) и репринты Banner of Truth 1960 и 1969 гг. Разрыв pp. 378/379 и колонтитул «SYNOD OF DORT. 379» одинаковы |
+| Сн. 78, «pp. 379–380» | Вердикт `LOCATOR_IMPRECISE` (мягко) теперь не зависит от издания: на pp. 379–380 — общая характеристика Дортского синода. Конкретные факты фразы статьи стоят на pp. 373–374 и 384. `SOURCE_CONTRADICTS_CLAIM` («Арминий и Гомар») — прежний |
+| HOLD «изд. 1882 / SWRB 1991» | **Сужен.** Само издание 1882 г. не видено. Но четыре печати 1863–1969 гг. с одинаковой пагинацией делают иную разбивку маловероятной |
+
+Вердикты S1–S5 не меняются. Умысел не утверждается.

@@ -316,6 +316,10 @@
   - «diram mortem oppetiit»: Августи, p. 450; Шафф I, p. 488. С. 7, сн. 25 (Клаубер, «dreadful death»): ACCURATE прежний. «duram» в `AGENT6` A.10 — `QUOTE_NOT_VERBATIM` (мягко).
   - Нимейер: Формула с p. 729; в скане нет одной страницы (вероятно, p. 731); ключевое предложение XIII не читается. Локатор `fathers/10_` «XIII–XVI, pp. 733–735» — `LOCATOR_IMPRECISE` (мягко).
   - Вердикты S1–S5 не меняются. Документ: REPASS, §54.
+- **раунд 132 (2026-11-17, AGENT 2):** §3 (S230), новый §4.215 (Q211): Каннингем, *Historical Theology* II — пагинация в разных печатях (сн. 78).
+  - Через полнотекстовый индекс archive.org: колонтитул «SYNOD OF DORT. 379» и первые слова p. 379 («stigmatized as a heresy…») одинаковы в печатях 1863, 1870, 1960 и 1969 гг.
+  - `LOCATOR_IMPRECISE` (мягко) для «pp. 379–380» больше не зависит от издания. HOLD «изд. 1882» сужен.
+  - Вердикты S1–S5 не меняются. Документ: REPASS, §55.
 
 **Erratum (раунд 4).** В раунде 3 номера страниц протоколов Ассамблеи (S19) и Шедда II (S22) были выведены из индекса страниц OCR-API archive.org (`BookReaderGetTextWrapper`), который **не совпадает** с номером листа (`leafNum`) скана: для `minutesofsession00west` индекс = лист − 5, для `dogmatictheology02sheduoft` индекс = лист − 1. Сверка по `inside.php` (полнотекстовый поиск, возвращает `leafNum`) и `<id>_page_numbers.json` (лист → печатная страница) дала: **Minutes «pp. 150–155/156» → pp. 155–160/161** (листы 251–257); **Shedd «II.478, 482–483» → II.479, 483–484** (листы 489, 493–494). Все затронутые числа в S19, S22, §4.13, §4.16, §5–§8 исправлены **на месте** с пометкой «(испр. р. 4)»; содержание цитат не менялось. Локаторы раундов 1–2 (Minutes p. lv/lviii/lx/152, Shedd II.464–477, I.441, A. A. Hodge pp. 33–34) перепроверены тем же способом и **верны** (лист 248 = p. 152; лист 457 = I.441; лист 39 = Hodge p. 33).
 **Статус:** `ACTIVE RESEARCH / NO SETTLED VERDICT ON EXTENT / EVIDENCE_HOLD / PUBLICATION_HOLD`
@@ -708,6 +712,7 @@
 | S227 *(раунд 129, 2026-11-17)* | Ph. Schaff, *Creeds of Christendom* I (1877), IA `creedschristendo01scha`: индекс 658 = лист 659 = **p. 635** (`_page_numbers.json`: «635», confidence 100, pageProb 95). «…all the Reformed Confessions (even the Canons of Dort, the Westminster Confession, and the Helvetic Consensus Formula) keep within the limits of infralapsarianism… the most authoritative, as the Helvetic Confession of Bullinger, the Heidelberg Catechism, and the Brandenburg Confessions… They also teach that God's promises and Christ's redemption are general, and that we must abide by the revealed will of God, which sincerely offers the gospel salvation to all who repent and believe». Сноска: II Helv. X «Promissiones Dei sunt universales fidelibus (not electis)»; Heid. 37 «…against the sin of the whole human race». Класс A2/A1, OCR | Лист 659 — `LOCATOR_VERIFIED`; с. 5, сн. 15–16 — `SCHOLARLY_PRECEDENT` (контекст); вердикты не меняются |
 | S228 *(раунд 130, 2026-11-17)* | *Patrologia Latina* 192 (Migne, 1855), IA `patrologiaecurs233unkngoog` (`inside.php` «praedestinatis tantum» → индекс 410; «DISTINCTIO XX.» — индекс 409, третье вхождение = кн. III; колонтитул правой колонки «SOO» = 800 ⇒ формула в кол. **799**). Петр Ломбардский, *Sent.* III, dist. XX, § 3 (PL): «Christus ergo est sacerdos, idemque et hostia, pretium nostrae reconciliationis; qui se in ara crucis non diabolo, sed Trinitati obtulit pro omnibus, quantum ad pretii sufficientiam; sed pro electis tantum quantum ad efficaciam, quia praedestinatis tantum salutem efficit». Там же, *Collectanea* на Евр. 5:3 (индекс 228): «hoc non convenit Christo. Christus enim non nisi pro suis membris obtulit». Класс A1, OCR | С. 36, сн. 36 — `ATTRIBUTION_SHIFT` прежний; `02_` — `QUOTE_NOT_VERBATIM` (мягко); `LOCATOR_EDITION_DEPENDENT`; Евр. 5:3 — `CONTEXT_REQUIRED` |
 | S229 *(раунд 131, 2026-11-17)* | (а) H. A. Niemeyer, *Collectio confessionum* (Lipsiae, 1840), IA `collectioconfes00niemgoog`: `page_numbers.json` — лист 786 = p. 729, лист 795 = p. 739 (8 листов на 9 страниц, одна страница отсутствует); предисловие «per Dei gratiam stat fundamentum fidei… Salva unitas corporis mystici» (л. 786); XIII начинается внизу л. 788, XVI — л. 790, XIX — л. 791; «oppetiit» — 0 попаданий. (б) J. C. W. Augusti, *Corpus librorum symbolicorum*, ed. altera (Lipsiae, 1846), IA `MN41545ucmf_4`: лист 474 = p. 450 (смещение 24), канон XIII «Pro solis quippe electis ex decretorio patris consilio, propria[que intentione] diram mortem oppetiit»; «duram» — 0 попаданий; колонтитул p. 459 на л. 483. (в) Schaff, *Creeds* I, лист 512 = p. 488: «…propriaque intentione diram mortem oppetiit». Класс A1, OCR | С. 7, сн. 25 — ACCURATE прежний; `AGENT6` A.10 — `QUOTE_NOT_VERBATIM` (мягко); `fathers/10_` — `LOCATOR_IMPRECISE` (мягко) |
+| S230 *(раунд 132, 2026-11-17)* | W. Cunningham, *Historical Theology* II: полнотекстовый индекс archive.org (`openlibrary.org/search/inside.json`) по четырём экземплярам — `historicaltheocun02cunn` (Clark, 1863), `workscunn03cunn` (*Works* III, Clark, 1870), `historicaltheolo0000unse_x3t3` (Banner of Truth, 1960), `historicaltheolo0002cunn` (Banner of Truth, 1969). Запросы: «SYNOD OF DORT. 379» → «Lib. iv., c. iv., Q. 4. / Sec. II.] SYNOD OF DORT. 379 / stigmatized as a heresy, only when it was» (1870, 1960, 1969); «Synod of Dort marks one of the most important eras» и «learned and zealous defender of Calvinism» — все четыре. Контроль — `historicaltheolo02cunnuoft` (1863), `_djvu.txt`, чанк 142. Класс A2 (фрагменты OCR) | Сн. 78 — `LOCATOR_IMPRECISE` (мягко) не зависит от издания; `SOURCE_CONTRADICTS_CLAIM` прежний |
 
 **Ответ: П1 исторически неверен; «словом о цене» в английской традиции является *redemption*, а не *atonement*.**
 
@@ -8299,8 +8304,9 @@ hommes** selon ce propos déterminé…*» (с. 183) **есть в источн�
 | 4.212 | Q208 | Шафф I, лист 659 = p. 635 сверено; там же «Christ's redemption [is] general» о Гейдельберге и II Helv. — прецедент чтения с. 5 (р. 129) |
 | 4.213 | Q209 | Ломбард, Sent. III d. XX по PL 192:799: формула «sufficientiam / efficaciam» сверена; локаторы корпуса зависят от издания; Евр. 5:3 — только с контекстом (р. 130) |
 | 4.214 | Q210 | *Formula Consensus Helvetica*, канон XIII: «diram» (Августи p. 450, Шафф p. 488), не «duram»; скан Нимейера с пропуском страницы; локатор `fathers/10_` неточен (р. 131) |
+| 4.215 | Q211 | Каннингем, *Historical Theology* II: пагинация pp. 373–384 одинакова в печатях 1863, 1870, 1960 и 1969 гг.; сн. 78 — вердикт не зависит от издания (р. 132) |
 
-⇒ разделов с `Q` — **207**, разделов §4.x — **209**; пропуски нумерации прежние.
+⇒ разделов с `Q` — **208**, разделов §4.x — **210**; пропуски нумерации прежние.
 
 
 ### 4.139. Q135 — Приёмка раунда 61: связка Сомюра, аудит объёма, готовность к мерджу (раунд 61)
@@ -9882,6 +9888,17 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 2. **`AGENT6` A.10.** «duram» — `QUOTE_NOT_VERBATIM` (мягко). Опечатка «ommino» (XVI). Диапазон «pp. 443–457» короток: документ идёт как минимум до p. 459.
 3. **Нимейер.** Формула начинается на p. 729 (лист 786). В скане Google не хватает одной страницы (листы 787–794 на pp. 730–738), по разрыву текста — p. 731 (каноны V–VIII). По реконструкции: XIII начинается внизу p. 732, XVI — p. 734, XIX — p. 735. Ключевое предложение XIII в OCR не читается. Локатор `fathers/10_` — `LOCATOR_IMPRECISE` (мягко). Провенанс «сверено в Волне 18» не подтверждается.
 4. **Предисловие.** «Salvum… per Dei gratiam stat fundamentum fidei… Salva unitas corporis mystici» есть у Нимейера на p. 729. Цитата `27_` подтверждена по второму изданию.
+
+Вердикты S1–S5 не меняются.
+
+### 4.215. Q211 — Каннингем, *Historical Theology* II: пагинация в разных печатях (раунд 132, 2026-11-17)
+
+**Повод.** REPASS §34.4: вердикт для сн. 78 («vol. 2, pp. 379–380») вынесен по пагинации 1863 г., а пагинация издания 1882 г. (SWRB 1991), на которое ссылается статья, оставалась HOLD. Источник — S230. Таблица — REPASS-документ, §55.
+
+**Ответы.**
+1. **Пагинация.** В печатях 1863, 1870 (*Works* III), 1960 и 1969 гг. (Banner of Truth) сноска «Lib. iv., c. iv., Q. 4.» закрывает p. 378. P. 379 с колонтитулом «Sec. II.] SYNOD OF DORT.» начинается словами «stigmatized as a heresy, only when it was…». Раздел «Synod of Dort» открывается на той же странице. Разбивка одна и та же.
+2. **Для сн. 78.** `LOCATOR_IMPRECISE` (мягко) больше не зависит от издания: на pp. 379–380 стоит общая характеристика синода, а факты фразы статьи — на pp. 373–374 и 384. `SOURCE_CONTRADICTS_CLAIM` («Арминий и Гомар») прежний.
+3. **Граница.** Само издание 1882 г. не видено; HOLD сужен, но не снят. Страницы изданий 1960 и 1969 гг. видны только фрагментами индекса.
 
 Вердикты S1–S5 не меняются.
 
