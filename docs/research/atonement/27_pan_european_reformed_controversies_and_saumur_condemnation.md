@@ -174,6 +174,11 @@
 > **Дополнение 2026-11-17 (AGENT 2, раунд 121; `34_` §4.204, S219; REPASS §44; строки выше не правились).**
 > - **Локатор «Schaff-Herzog V:218» (п. 3 пометки Волны 18):** p. 218 открыт (IA `newschaffherzog38haucgoog`, статья «Helvetic Consensus»). Подтверждено: Базель после 1686 г., затем Шаффхаузен, «later (1706) in Geneva»; 1722 — Пруссия и Англия. **Не подтверждено этим локатором:** «к 1725–1740 гг.». Там сказано «while Zurich and Bern retained it» и «though the formula was never formally abolished, it gradually fell entirely into disuse» — без года (`LOCATOR_DOES_NOT_SUPPORT_DATES`, мягко).
 > - **Шафф, *Creeds* I, p. 486:** «even there it could not maintain itself longer than about half a century» — то есть около 1725 г., приблизительно.
+
+> **Дополнение 2026-11-17 (AGENT 2, раунд 122; `34_` §4.205, S220; REPASS §45; строки выше не правились).**
+> - **Локатор «Schaff I:478 fn. 914» (п. 3 пометки Волны 18):** p. 478 открыт по скану (лист 502). Сноска: «His son, John Alphonsus (1671–1737), Professor of Church History in Geneva, was inclined to Arminianism, and advocated toleration». Это относится **только к Ж.-А. Турретину**. Веренфельс, Остервальд и «раннее Просвещение» этим локатором не подкреплены (`LOCATOR_OVEREXTENDED`, мягко). Номера «914» в печатном издании нет.
+> - **Веренфельс и Остервальд (Э. де Бюде, 1880):** с Турретиным — «le triumvirat» (л. 75). Однако Веренфельс в спорах 1719–1725 гг. считал отмену формуляра «dangereuse» (л. 152), поэтому «активное участие» его в отмене не подтверждено.
+> - **П. 1 (Гернлер, p. 478):** подтверждён по скану.
 > - Предисловие Хайдеггера («venerable brethren in Christ… not condemned as heresies, but simply disapproved») в основном тексте Шаффа стоит на **p. 486** (лист скана 510). Сноска «487 fn. 932» здесь не перечитывалась.
 
 ---
