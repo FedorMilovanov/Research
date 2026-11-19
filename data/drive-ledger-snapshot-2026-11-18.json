@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "drive-ledger-snapshot/1",
+  "retrievedOn": "2026-11-18",
+  "method": "google-drive-connector-get_file",
+  "fields": ["id", "name", "size", "md5Checksum"],
+  "whatWasRead": "Ответ Drive API на get_file по семи id из строк реестра: имя, размер и md5Checksum хранимого объекта на 18.11.2026.",
+  "whatWasNotRead": "Байты объектов не скачивались; остальные 85 id из реестра в этом проходе не запрашивались (по одному вызову на объект, фильтр по id в языке запросов Drive недоступен).",
+  "objects": {
+    "1sV3jfs0slLQh1lX6FawkL-It7tob2X10": {
+      "name": "Стивен Чарнок — 00 Navigation (wave 22, 2026-10-25).md",
+      "size": "89100",
+      "md5": "89ad08d75db678c66b4657afdc7b6717"
+    },
+    "155aLE0bTV1oeE55cjecCnF_KVY7Vx-Oe": {
+      "name": "16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN — wave 24 — 2026-10-25.md",
+      "size": "106429",
+      "md5": "800259dc7427ee50c9936fcab53b9c9d"
+    },
+    "1GtyXB0BrnpGjaYXFPycJCvjCXDhXLqo4": {
+      "name": "00_README_AND_NAVIGATION_wave28_2026-10-25.md",
+      "size": "94999",
+      "md5": "406cedade39b8340c4824b140a359e3b"
+    },
+    "1_-oY1XnSoZ6eBM0YmYTvh2CSBjx8kHMK": {
+      "name": "00_README_AND_NAVIGATION_wave30_2026-10-25.md",
+      "size": "95713",
+      "md5": "226ab97ccb164f99b2eda95843286118"
+    },
+    "1BE-WJOVd8eoVI1Vn6pTJD03rMxt8VdW6": {
+      "name": "17_PROMPT_PARALLEL_AGENT_HISTORICAL_CONTEXT_wave32_2026-10-25.md",
+      "size": "24812",
+      "md5": "3ce88e3cd70e74016708996e56c2e60b"
+    },
+    "1vyuFliPqRPbJLrfUAR8Qfa5GdzoBzEbf": {
+      "name": "03_WORKS_EDITIONS_AND_PUBLICATION_CHRONOLOGY_wave35_2026-10-25.md",
+      "size": "108646",
+      "md5": "7ae8cf12c569bd5343f5f5e69f8d1619"
+    },
+    "1dYyHNYcWjbQ2SDyoix6h_KQxoQacvWtO": {
+      "name": "16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN_wave39_2026-10-26.md",
+      "size": "176170",
+      "md5": "381ca9dc937ac05708c175378d5299f0"
+    }
+  }
+}

@@ -323,6 +323,30 @@
       ],
       "tests": "python3 -B -m unittest discover -s scripts -p 'test_audit_state_stamps.py' → 8 OK"
     }
+
+    ,{
+      "id": "HCR-2026-11-18-13",
+      "axis": "Drive library ledger rows: Drive's answer vs the local file",
+      "method": "drive-ledger-join",
+      "closedOn": "2026-11-18",
+      "state": "closed-with-open-item",
+      "question": "Верны ли строки Drive-реестра, которые одновременно утверждают размер и MD5 объекта в Drive и байты локального файла?",
+      "finding": "92 строки, 92 разных id. Семь объектов перечитаны у Drive — все семь совпали по размеру и md5Checksum. При этом все 13 однозначно разрешённых локальных файлов выросли с момента загрузки (04_CHARACTER 259 911 → 406 668; 16_SERIES 96 664 → 887 094; 03_WORKS 78 099 → 116 999), то есть реестр описывает момент волны, а не текущее состояние.",
+      "evidence": "data/drive-ledger-audit-2026-11-18.json; data/drive-ledger-snapshot-2026-11-18.json (что именно ответил Drive)",
+      "closedScope": "Перепись полная по строкам: 92 строки найдены, у каждой зафиксировано состояние обеих сторон. Drive-сторона проверена на выборке 7 объектов, локальная — целиком там, где имя разрешается однозначно.",
+      "notClosed": "Зеркало «Drive = локальный файл сейчас» не подтверждено и не опровергнуто: 85 id не запрашивались, 4 имени неоднозначны. Закрыть это может только новая загрузка и новый ряд подписей — действие владельца лана.",
+      "limits": [
+        "Байты объектов не скачивались: сверялся md5Checksum из ответа Drive, то есть утверждение сервера.",
+        "Перечитано 7 из 92 id: по одному вызову на объект, фильтр по id язык запросов Drive не принимает.",
+        "Имя, встречающееся в отделе более одного раза, не разрешается — состояние local-ambiguous, выбор по имени был бы догадкой.",
+        "Старые строки реестра — история моментов; переписывать их нельзя, иначе исчезнет след проверенного."
+      ],
+      "commands": [
+        "python3 -B scripts/audit_drive_ledger.py --snapshot data/drive-ledger-snapshot-2026-11-18.json --summary",
+        "python3 -B scripts/audit_drive_ledger.py --snapshot data/drive-ledger-snapshot-2026-11-18.json -o data/drive-ledger-audit-2026-11-18.json"
+      ],
+      "tests": "python3 -B -m unittest discover -s scripts -p 'test_audit_drive_ledger.py' → 7 OK"
+    }
   ],
   "confirmations": [
     {

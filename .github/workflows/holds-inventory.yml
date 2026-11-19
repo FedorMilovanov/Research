@@ -33,6 +33,10 @@ on:
       - 'scripts/audit_state_stamps.py'
       - 'scripts/test_audit_state_stamps.py'
       - 'data/state-stamps-2026-11-18.json'
+      - 'scripts/audit_drive_ledger.py'
+      - 'scripts/test_audit_drive_ledger.py'
+      - 'data/drive-ledger-audit-2026-11-18.json'
+      - 'data/drive-ledger-snapshot-2026-11-18.json'
       - 'data/text-integrity-repairs-2026-11-18.json'
       - 'data/hold-closure-registry-v1.json'
       - 'docs/research/HOLDS_REGISTER_2026-11-18.md'
@@ -69,6 +73,10 @@ on:
       - 'scripts/audit_state_stamps.py'
       - 'scripts/test_audit_state_stamps.py'
       - 'data/state-stamps-2026-11-18.json'
+      - 'scripts/audit_drive_ledger.py'
+      - 'scripts/test_audit_drive_ledger.py'
+      - 'data/drive-ledger-audit-2026-11-18.json'
+      - 'data/drive-ledger-snapshot-2026-11-18.json'
       - 'data/text-integrity-repairs-2026-11-18.json'
       - 'data/hold-closure-registry-v1.json'
       - 'docs/research/HOLDS_REGISTER_2026-11-18.md'
@@ -112,6 +120,7 @@ jobs:
           python3 -B -m unittest discover -s scripts -p 'test_verify_internal_digests.py' -v
           python3 -B -m unittest discover -s scripts -p 'test_audit_document_twins.py' -v
           python3 -B -m unittest discover -s scripts -p 'test_audit_state_stamps.py' -v
+          python3 -B -m unittest discover -s scripts -p 'test_audit_drive_ledger.py' -v
       - name: Scan (must not touch the working tree)
         run: |
           python3 scripts/audit_repository_holds.py -o /tmp/holds-a.json
@@ -139,6 +148,10 @@ jobs:
       # later commit changed the substance. Only an impossible stamp would be a defect.
       - name: Compare self-dating stamps with Git history (report only)
         run: python3 -B scripts/audit_state_stamps.py --summary
+      # Joins the ledger rows with the stored Drive snapshot and the local bytes. No
+      # network: the snapshot is what Drive answered on its date, and it is committed.
+      - name: Reconcile Drive library ledger (report only)
+        run: python3 -B scripts/audit_drive_ledger.py --snapshot data/drive-ledger-snapshot-2026-11-18.json --summary
       - name: Check publication gate queue composition
         run: python3 -B scripts/publication_gate_status.py --check
       - name: Report counts without asserting closure
