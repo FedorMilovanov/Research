@@ -168,6 +168,24 @@ def jsurgical_first(path, block_key, field, new_scalar_text):
                     encoding="utf-8")
 
 
+
+def patch_record(drive_id, old, new, path=None):
+    """Точечная правка поля внутри одной записи индекса: запись ищется по driveId,
+    конец — по закрывающей скобке на отступе записи. Whole-file dump переставил бы
+    форму всему индексу, и ловить пришлось бы формат, а не правило."""
+    path = path or IDX
+    t = path.read_text(encoding="utf-8")
+    anchor = '"driveId": "%s"' % drive_id
+    if t.count(anchor) != 1:
+        raise AssertionError("не проверен: driveId %s встречается %d раз" % (drive_id, t.count(anchor)))
+    i = t.index(anchor)
+    j = t.index("\n  },", i)
+    seg = t[i:j]
+    if seg.count(old) != 1:
+        raise AssertionError("не проверен: %r в записи %s встречается %d раз" % (old, drive_id, seg.count(old)))
+    path.write_text(t[:i] + seg.replace(old, new, 1) + t[j:], encoding="utf-8")
+
+
 # --- случаи ------------------------------------------------------------------------------
 def cases():
     """Каждый случай: (имя, ожидаемый вердикт, ожидаемая подстрока, функция правки).
@@ -586,11 +604,39 @@ def cases():
     add("coverageClaimFakedUpward", "сводка «файловБезКарточки» записана", m_faked_coverage,
         "покрытие приукрасили числом: сверка обязана читать его с дерева, а не с бумаги")
 
+    # 24–26. Зеркала ланов: правило 25 с круга 68 смотрит и на lane-mirror/ledger-mirror,
+    # а доказательством у них служит contentRevision. Три мутации — три способа соврать:
+    # снять лаг, подделать число ревизий, назвать несуществующий коммит.
+    def m_lanelag():
+        patch_record("1Jt96MpLxvFV1_EWgy2sHIwXypvqWZ3h8j-1KnpqRoas",
+                     '"lagBehindGit": true', '"lagBehindGit": false')
+
+    add("laneMirrorLagRemoved", "lagBehindGit не выставлен", m_lanelag,
+        "12_ отстаёт на 16 ревизий, а лаг снят: зеркало снова «молчит»")
+
+    def m_lanrevs():
+        patch_record("1Jt96MpLxvFV1_EWgy2sHIwXypvqWZ3h8j-1KnpqRoas",
+                     '"lagRevisions": 16', '"lagRevisions": 3')
+
+    add("laneMirrorRevisionsFaked", "перестало быть измерением", m_lanrevs,
+        "число ревизий в записи перестало совпадать с git rev-list")
+
+    def m_lansha():
+        patch_record("1v4er6LbmOhEvJh50skuL8dVu3m6U3s06JSZEuxxFhy0",
+                     '"contentRevision": "8a5b6765"', '"contentRevision": "deadbeef"')
+
+    add("laneMirrorRevisionMissing", "не на что опереться", m_lansha,
+        "contentRevision называет коммит, которого в клоне нет")
+
     return out
 
 
-def run(probe=False):
+def run(probe=False, only=None):
     cs = cases()
+    total = len(cs)
+    if only:
+        cs = [c for c in cs if any(o in c[0] for o in only)]
+        print("фильтр %s: %d из %d случаев" % (", ".join(only), len(cs), total))
     backups = {p: p.read_bytes() for p in FILES}
     print("батарея: %d случаев; затронуто файлов: %d" % (len(cs), len(FILES)))
     bad, npass, nfail, notchecked = [], 0, 0, []
@@ -645,4 +691,7 @@ def run(probe=False):
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--probe", action="store_true", help="печатать фактические ошибки гейта по каждому случаю")
-    sys.exit(run(probe="--probe" in sys.argv[1:]))
+    ap.add_argument("--only", action="append", default=None,
+                    help="прогнать только случаи, в имени которых есть подстрока (можно несколько раз)")
+    _ap = ap.parse_args()
+    sys.exit(run(probe=_ap.probe, only=_ap.only))
