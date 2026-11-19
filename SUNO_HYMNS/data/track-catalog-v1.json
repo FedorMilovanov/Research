@@ -681,7 +681,7 @@
       "originalTitleVariants": [
         "Ὕμνος τοῦ Σωτῆρος Χριστοῦ",
         "Στόμιον πώλων ἀδαῶν",
-        "Βασιλεῦ ἁγίων, λόγε πανδαμάτωρ (opening in some editions)",
+        "Βασιλεῦ ἁγίων, λόγε πανδαμάτωρ (HISTORICAL / SUPERSEDED as an independent manuscript incipit: formerly labelled 'opening in some editions'; Chatfield explains an editorial arrangement, not a newly established ancient title/opening. His ninth line is not mapped to Stählin's line 11: CLM-PHOS-CLEM-VARIANT-OPENING)",
         "Hymn to Christ the Savior",
         "Bridle of untamed colts",
         "Shepherd of tender youth"
@@ -691,18 +691,19 @@
         "years": "ок. 150 – ок. 215",
         "role": "author, commonly attributed but not unqualified"
       },
-      "textCategory": "Greek hymn in short anapaestic metre closing the third book of the Paedagogus; 66 lines in most modern accounts, 64 in Wood; openings and line counts differ between editions",
+      "textCategory": "Greek hymn closing the third book of the Paedagogus, described in the saved sources as short anapaestic verse. The working transcription numbers 65 lb-delimited verse segments in the digital Stählin 1905 text. The reported 64 lines of Wood and 66 of van den Hoek concern translations (via Webster); Gordley separately describes a sixty-six-line Greek hymn. These are not three collated Greek editions; their alignment remains open.",
       "sourceChain": [
         "Manuscripts of the Paedagogus: Paris, BnF, MS Grec 451 (913 or 914, scribe Baanes for Arethas), imperfect; lacunae supplied from Modena, Biblioteca Estense, Miscellanea Greca 126 (11th c.) and Florence, Biblioteca Medicea Laurenziana, Plut. 5.24",
-        "Greek text read in this pass at catholiclibrary.org; second accessible Greek text (Apostoliki Diakonia) differs from it in two places",
-        "Critical editions named but not opened: Marcovich (VCS 61, 2002); Stählin/Treu (GCS 12, 3rd ed., 1972), text at pp. 291–292",
+        "HISTORICAL first-stage record: Greek text read in this pass at catholiclibrary.org; second accessible Greek text (Apostoliki Diakonia) differs from it in two places. This refers to earlier readings, not new acquisition or collation in the present metadata pass.",
+        "Critical editions named but not opened: Marcovich (VCS 61, 2002); Stählin/Treu (GCS 12, 3rd ed., 1972), text at pp. 291–292. This remains true for those named editions, not for every Stählin text: the later registered First1KGreek digital transcription is Stählin 1905 (SRC-PHOS-CLEM-FIRST1K-PAED); its header and end of Book III were read as excerpts, not the whole Paedagogus or a printed-page/manuscript collation.",
         "No papyrus witness found for the hymn; the hymn is absent from one of the primary manuscripts"
       ],
-      "tuneDirection": "No historical melody. The metre is quantitative (anapaestic dimeters); no musical notation survives and there is no witness that the hymn was sung in worship in Clement's day.",
+      "tuneDirection": "The original tune is not established in the checked material; this is not proof that no historical melody existed or survives anywhere. Phillips reports anapaestic dimeters through Hymnology Archive; Wilamowitz, in the saved Stählin 1905 OCR excerpt, describes monometers. Their exact relationship has not been reconciled and no new scansion was made. The previously checked XML hymn paragraph encodes no score; one digital paragraph cannot establish global loss. Metre or literary singability does not identify a tune or actual liturgical performance. No tune is selected and no arrangement or production is authorised here (CLM-PHOS-CLEM-METRE; CLM-PHOS-CLEM-METRE-WILAMOWITZ).",
       "structure": {
-        "lines": 66,
-        "note": "66 lines per Gordley and van den Hoek; 64 per Wood. Divisions disagree: Wolbergs 1–32 / 33–66; Gordley seven strophes (1–10, 11–18, 19–28, 29–34, 35–41, 42–53, 54–66); further outlines by Ferguson, Marrou and May. Gordley: «there is no agreement as to the precise structure of the hymn».",
-        "source": "Gordley, Teaching through Song in Antiquity, 371–381, read as a blog excerpt; structure claims verified only there"
+        "lines": 65,
+        "lineUnit": "lb-delimited verse segments in the previously checked First1KGreek digital transcription of Stählin 1905, Paedagogus III.12.101.3; not a universal count for every edition, translation or manuscript",
+        "note": "65 is the working numbering of this digital transcription, with 14 explicit n labels; the page break after segment 24 gives 24 + 41. Saved Webster excerpts report 64 lines in Wood and 66 in van den Hoek, both translations. Gordley separately calls the Greek hymn sixty-six-line; this is not an independently verified count. Reported outlines retain their own 1–66 numbering: Wolbergs 1–32 / 33–66; Gordley seven strophes (1–10, 11–18, 19–28, 29–34, 35–41, 42–53, 54–66), with further outlines by Ferguson, Marrou and May known only through Gordley. These boundaries have not been mapped onto the 65 XML segments or adopted as a performance structure. Alignment remains BACKLOG, not a lost-verse diagnosis or a completed renumbering.",
+        "source": "Existing results, not new acquisition or collation: SRC-PHOS-CLEM-FIRST1K-PAED / CLM-PHOS-CLEM-VERSE-COUNT and CLM-PHOS-CLEM-STRUCTURE-DISPUTED; RESEARCH/DOSSIER_PHOS-007_PART13_FULL_TEXT_AND_FOLIOS.md#verse-count-scope. Gordley, Teaching through Song in Antiquity, pp. 371–381, was read only as a partial author blog excerpt; Webster and other authors remain at their recorded excerpt/reference scope. The XML, originals and translations were not fetched or reread in this metadata pass."
       },
       "productionState": "NOT_STARTED",
       "publicPublicationStatus": "UNKNOWN_NOT_VERIFIED",
@@ -742,13 +743,13 @@
         "CLM-PHOS-CLEM-NEXT-READING-2"
       ],
       "qaStatus": "OPEN",
-      "textChainNote": "The hymn survives inside a prose treatise, not in a liturgical book and not on papyrus. It is titled a hymn in the manuscripts (Ὕμνος τοῦ Σωτῆρος Χριστοῦ) and composed in metre, but no source read in this pass reports it being sung in worship; two sources offer a cautious probability of a communal or school setting.",
+      "textChainNote": "The checked dossier traces literary transmission in the Paedagogus; it does not establish actual liturgical performance of this particular hymn. The manuscript title (Ὕμνος τοῦ Σωτῆρος Χριστοῦ) and metre support a hymn description, not a performance record. Gordley’s reported absence of a witness concerns Clement’s day; his possible communal setting does not itself exclude a liturgical setting. This corrects an evidentiary overstatement, not the admission decision: PHOS-007 remains a research candidate, not accepted into production, and the owner has not approved its title or series framing (CLM-PHOS-CLEM-NOT-LITURGICAL; CLM-PHOS-CLEM-SERIES-RULE).",
       "openChecks": [
-        "Decide whether the candidate enters the series at all: it fails the first half of the Smith 2011 criterion (CLM-PHOS-CLEM-SERIES-RULE).",
+        "Owner to decide admission and framing: the first half of the working Smith 2011 criterion is not sufficiently evidenced on the checked base, not historically disproved (CLM-PHOS-CLEM-SERIES-RULE). The previously recorded LOCATOR_HOLD is not closed; possibility of singing is not evidence of admission.",
         "Read May 1983 and van den Hoek 1997 — neither opened.",
         "Open Cosgrove 2006, 266–268, on the manuscript that lacks the hymn (MUSE serves it only behind a captcha).",
         "Collate the Greek against Marcovich 2002 or Stählin/Treu GCS 12, 291–292; settle ἀρνῶν / ἀμνῶν and the infinitive / participle reading.",
-        "Settle the line count (66 vs 64) and the reference form (Paed. 3.101 vs 3.12.101.4) before any text work."
+        "Align the reported 64 / 66 translation counts and Gordley’s separate sixty-six-line description with the already verified 65 XML segments only when the exact texts and their divisions are available; BACKLOG, not a reason to renumber or invalidate the completed Greek transcription. Paed. 3.101 / 3.12.101.4 and XML III.12.101.3 are reference systems, not by themselves textual variants."
       ]
     },
     {
