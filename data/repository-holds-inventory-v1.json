@@ -98,7 +98,7 @@
       "HOLD_MAJOR": 11,
       "HOLD_RETAINED": 1,
       "LIVE-READBACK-HOLD": 4,
-      "LOCATOR_HOLD": 1966,
+      "LOCATOR_HOLD": 1967,
       "PAGE-IMAGE-HOLD": 14,
       "PUBLICATION_HOLD": 2596,
       "RIGHTS_HOLD": 1453,
@@ -107,7 +107,7 @@
     "mentionsByStatus": {
       "closed": 821,
       "open": 2343,
-      "unmarked": 5955
+      "unmarked": 5956
     },
     "canonicalFlagLineStatesRecordedAsBothOpenAndClosed": 403,
     "filesWithJsonHolds": 38,
@@ -360,14 +360,14 @@
       "mentions": {
         "ARCHIVE_HOLD": 541,
         "EVIDENCE_HOLD": 435,
-        "LOCATOR_HOLD": 331,
+        "LOCATOR_HOLD": 332,
         "PUBLICATION_HOLD": 1037,
         "RIGHTS_HOLD": 563
       },
       "status": {
         "closed": 247,
         "open": 1107,
-        "unmarked": 1699
+        "unmarked": 1700
       }
     },
     "scripts": {
@@ -26321,12 +26321,12 @@
       "mentions": {
         "ARCHIVE_HOLD": 4,
         "EVIDENCE_HOLD": 8,
-        "LOCATOR_HOLD": 16
+        "LOCATOR_HOLD": 17
       },
       "status": {
         "closed": 4,
         "open": 7,
-        "unmarked": 21
+        "unmarked": 22
       }
     },
     {

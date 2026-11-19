@@ -1294,7 +1294,7 @@ class SynthesisEvidenceTests(unittest.TestCase):
 
 
     def _make_synthetic_s40_revision(self):
-        """Test the schema without changing the real historical S40 snapshot."""
+        """Test extra exact revisions without changing existing accepted S40 history."""
         report = deepcopy(self.report)
         row = next(r for r in report["repairs"] if r["id"] == "S40")
         original = (ROOT / row["file"]).read_text(encoding="utf-8")
@@ -1302,17 +1302,26 @@ class SynthesisEvidenceTests(unittest.TestCase):
                     "результат креста, а не заместительная уплата за неизбранных.")
         replacement_text = ("[SYNTHETIC TEST FIXTURE: not a historical or "
                             "scholarly claim]")
-        self.assertEqual(row["removed"].count(old_text), 1)
-        self.assertEqual(original.count(row["removed"]), 1)
-        revised_history = row["removed"].replace(old_text, replacement_text, 1)
-        revised_file = original.replace(row["removed"], revised_history, 1)
-        row["historicalRevisions"] = [{
-            "id": "TEST-S40-EXACT-REVISION",
-            "oldText": old_text,
-            "replacementText": replacement_text,
-            "reason": "In-memory mutation fixture, never a source claim",
-            "basis": {"file": "README.md", "section": "# Research"},
-        }]
+        historical = row["removed"]
+        for accepted in row.get("historicalRevisions", []):
+            self.assertEqual(historical.count(accepted["oldText"]), 1)
+            historical = historical.replace(
+                accepted["oldText"], accepted["replacementText"], 1
+            )
+        self.assertEqual(historical.count(old_text), 1)
+        self.assertEqual(original.count(historical), 1)
+        revised_history = historical.replace(old_text, replacement_text, 1)
+        revised_file = original.replace(historical, revised_history, 1)
+        row["historicalRevisions"] = [
+            *row.get("historicalRevisions", []),
+            {
+                "id": "TEST-S40-EXACT-REVISION",
+                "oldText": old_text,
+                "replacementText": replacement_text,
+                "reason": "In-memory mutation fixture, never a source claim",
+                "basis": {"file": "README.md", "section": "# Research"},
+            },
+        ]
         return report, row, original, revised_file
 
     def test_s40_synthetic_historical_revision_is_accepted_only_with_exact_preimage(self):
@@ -1339,7 +1348,7 @@ class SynthesisEvidenceTests(unittest.TestCase):
         tampered = deepcopy(report)
         next(r for r in tampered["repairs"] if r["id"] == "S40")[
             "historicalRevisions"
-        ][0]["replacementText"] += " [unapproved mutation]"
+        ][-1]["replacementText"] += " [unapproved mutation]"
         errors = check_repairs(ROOT, tampered, {row["file"]: revised})
         self.assertTrue(any(
             "S40: historical retention lost" in error for error in errors
@@ -1351,7 +1360,7 @@ class SynthesisEvidenceTests(unittest.TestCase):
         bad_path = deepcopy(report)
         next(r for r in bad_path["repairs"] if r["id"] == "S40")[
             "historicalRevisions"
-        ][0]["basis"]["file"] = "../README.md"
+        ][-1]["basis"]["file"] = "../README.md"
         errors = check_repairs(ROOT, bad_path, {row["file"]: revised})
         self.assertTrue(any(
             "S40: historical revision evidence path must be repository-relative"
@@ -1361,7 +1370,7 @@ class SynthesisEvidenceTests(unittest.TestCase):
         missing_heading = deepcopy(report)
         next(r for r in missing_heading["repairs"] if r["id"] == "S40")[
             "historicalRevisions"
-        ][0]["basis"]["section"] = "# Not An Existing Research Heading"
+        ][-1]["basis"]["section"] = "# Not An Existing Research Heading"
         errors = check_repairs(ROOT, missing_heading, {row["file"]: revised})
         self.assertTrue(any(
             "S40: historical revision evidence locator is missing or non-unique"
@@ -1370,7 +1379,7 @@ class SynthesisEvidenceTests(unittest.TestCase):
 
         duplicates = deepcopy(report)
         entry = next(r for r in duplicates["repairs"] if r["id"] == "S40")
-        entry["historicalRevisions"].append(deepcopy(entry["historicalRevisions"][0]))
+        entry["historicalRevisions"].append(deepcopy(entry["historicalRevisions"][-1]))
         errors = check_repairs(ROOT, duplicates, {row["file"]: revised})
         self.assertTrue(any(
             "S40: missing/duplicate historical revision id" in error
@@ -1378,6 +1387,18 @@ class SynthesisEvidenceTests(unittest.TestCase):
         ))
 
 
+
+    def test_s40_registered_revision_cannot_be_silently_dropped(self):
+        report, row, _, revised = self._make_synthetic_s40_revision()
+        self.assertGreaterEqual(len(row["historicalRevisions"]), 2)
+        broken = deepcopy(report)
+        target = next(r for r in broken["repairs"] if r["id"] == "S40")
+        target["historicalRevisions"] = target["historicalRevisions"][-1:]
+        errors = check_repairs(ROOT, broken, {row["file"]: revised})
+        self.assertTrue(any(
+            "S40: historical retention lost" in error
+            for error in errors
+        ))
 
 class Wave3ParserTests(unittest.TestCase):
     def test_eli_uses_ids_not_zero_based_list_slices(self):
