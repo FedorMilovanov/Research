@@ -1945,15 +1945,50 @@ if LIB.is_file():
     # единой проверки, и расхождение обнаружил человек, перечитавший список папки, — ровно тот дефект,
     # против которого правило 25 было написано. Не подпадёт под него новый класс зеркал — сгниёт молча.
     _lag = []
+    # Круг 66 оставил здесь предупреждение: «не подпадёт под правило новый класс зеркал — сгниёт молча».
+    # Так и вышло: lane-mirror и ledger-mirror в этот список не входили, и тринадцать зеркал серии
+    # «ИСКУПЛЕНИЕ» прожили полтора месяца без единой проверки (сверка 2026-11-18,
+    # ИСКУПЛЕНИЕ/evidence/DOC_MIRRORS_EXPORT_TAILS_2026-11-18.md). Теперь они входят, а вместо md5
+    # в имени им разрешено другое доказательство — contentRevision: коммит, чей текст внутри.
+    _ROLES25 = ("registry-mirror", "ssot-corpus-snapshot", "lane-mirror", "ledger-mirror")
+    _shallow25 = None
     for _r in _recs:
-        if _r.get("role") not in ("registry-mirror", "ssot-corpus-snapshot") or not _r.get("gitFile"):
+        if _r.get("role") not in _ROLES25 or not _r.get("gitFile"):
             continue
         _gf = ROOT / _r["gitFile"]
         if not _gf.is_file():
             continue
         _m = _LIB25_NAME_MD5.search(str(_r["name"]))
         if not _m:
-            _lag.append(f"{_r['gitFile']}: в имени зеркала нет md5 — сверку «закачано == в дереве» снять нечем")
+            _rev25 = _r.get("contentRevision")
+            if not _rev25:
+                _lag.append(f"{_r['gitFile']}: ни md5 в имени, ни contentRevision — сверку «что лежит "
+                            f"в объекте» снять нечем")
+                continue
+            if _shallow25 is None:
+                import subprocess as _sp25
+                _shallow25 = _sp25.run(["git", "rev-parse", "--is-shallow-repository"], cwd=ROOT,
+                                       capture_output=True, text=True).stdout.strip() == "true"
+            if _shallow25:
+                continue  # в мелком клоне ревизии не проверяются: это свойство клона, а не зеркала
+            import subprocess as _sp25b
+            if _sp25b.run(["git", "rev-parse", "--verify", f"{_rev25}^{{commit}}"], cwd=ROOT,
+                          capture_output=True).returncode != 0:
+                _lag.append(f"{_r['gitFile']}: contentRevision {_rev25} в этом клоне не находится — "
+                            f"паре «объект + коммит» не на что опереться")
+                continue
+            _cnt = _sp25b.run(["git", "rev-list", "--count", f"{_rev25}..HEAD", "--", _r["gitFile"]],
+                              cwd=ROOT, capture_output=True, text=True)
+            _behind = int(_cnt.stdout.strip() or 0) if _cnt.returncode == 0 else None
+            if _behind is None:
+                continue
+            if _behind and not _r.get("lagBehindGit"):
+                _lag.append(f"{_r['gitFile']}: текст зеркала = ревизия {_rev25}, после неё файл менялся "
+                            f"{_behind} раз(а), а lagBehindGit не выставлен — либо переливать, либо "
+                            f"объявлять лаг")
+            elif _behind and _r.get("lagRevisions") not in (None, _behind):
+                _lag.append(f"{_r['gitFile']}: lagRevisions={_r.get('lagRevisions')}, а git видит {_behind} "
+                            f"ревизий после {_rev25} — число в записи перестало быть измерением")
             continue
         _live = __import__("hashlib").md5(_gf.read_bytes()).hexdigest()
         if _m.group(1) != _live and not _r.get("lagBehindGit"):
@@ -1972,6 +2007,13 @@ if LIB.is_file():
     if _lag:
         errors.append("ПРАВИЛО 25: %d зеркал(а) реестра расходятся с деревом (%s) — слепок на Drive обязан "
                       "либо совпадать побайтово, либо быть помечённым как отстающий" % (len(_lag), "; ".join(_lag[:2])))
+    else:
+        _lane25 = [r for r in _recs if r.get("role") in ("lane-mirror", "ledger-mirror") and r.get("gitFile")]
+        if _lane25:
+            _stale25 = sum(1 for r in _lane25 if r.get("lagBehindGit"))
+            _notes25 = sum(1 for r in _lane25 if r.get("contentRevision"))
+            notes.append(f"ПРАВИЛО 25 (зеркала ланов): {len(_lane25)} записей с gitFile, из них с названной "
+                         f"ревизией {_notes25}, с объявленным лагом {_stale25}; расхождений нет")
     # бухгалтерия реестра: объявленные числа обязаны равняться обходу
     _dec = (globals().get("reg") or {}).get("libraryIndex20261023") or {}
     if not _dec:
