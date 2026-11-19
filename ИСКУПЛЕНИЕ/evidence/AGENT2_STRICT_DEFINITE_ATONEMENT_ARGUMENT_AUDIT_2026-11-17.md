@@ -1619,3 +1619,15 @@ HOLD без изменений: CO 49:100, CO 45:706, `PRINT_IMAGE_HOLD`, пра
 | 4 | IFCA Art. IV, 1.3.b | «died on the cross for all mankind as a representative, vicarious, substitutionary sacrifice» — подтверждено (класс B) |
 
 **Вердикты S1–S5 не меняются.**
+
+## 77. Раунд 126 (2026-11-17): вероучение GCC на 2019 г. (сн. 28); дата статьи «Atonement»
+
+Подробности — `34_` §4.209 (Q205), S224; REPASS-документ, §49.
+
+| # | Место | Итог |
+|---|---|---|
+| 1 | С. 8, сн. 28: вероучение GCC не выносит вопрос об объёме в исповедуемые принципы | Wayback 02.11.2019 (`id_`): статьи об объёме нет; «accomplished our redemption». **ACCURATE для 2019 г.**; HOLD снят |
+| 2 | `TIME_BOUND` | Статья «Atonement» («for all those the Father has given to Him») появилась между 02.05.2024 и 01.06.2024 |
+| 3 | `09_` §4, цитата об избрании | `QUOTE_NOT_VERBATIM` прежний: не совпадает ни с одной редакцией 2015–2024 гг. |
+
+**Вердикты S1–S5 не меняются.**
