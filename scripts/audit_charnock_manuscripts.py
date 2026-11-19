@@ -26,6 +26,16 @@ NOTE_DEF = re.compile(r'^\[\^([^\]]+)\]:', re.MULTILINE)
 NOTE_REF = re.compile(r'\[\^([^\]]+)\](?!:)')
 RELATIVE_LINK = re.compile(r'\]\((\.\./[^)]+)\)')
 FLAGS = ('DRAFT', 'RESEARCH_ONLY', 'PUBLICATION_HOLD')
+H2 = re.compile(r'^##[ \t]+(.+?)\s*$', re.MULTILINE)
+
+
+def is_source_section(title):
+    return title.startswith('Источниковые примечания') or title == 'Примечания к первичным и вторичным свидетелям'
+
+
+def is_backstage_section(title):
+    return title.startswith('Редакторская приёмка') or title.startswith('Редакторский контроль')
+
 
 
 def audit(root=ROOT):
@@ -42,6 +52,21 @@ def audit(root=ROOT):
         for flag in FLAGS:
             if flag not in body[:700]:
                 errors.append(f'{name}: missing {flag} in front matter')
+        headings = [(m.group(1).strip(), m.start()) for m in H2.finditer(body)]
+        source = [offset for title, offset in headings if is_source_section(title)]
+        backstage = [offset for title, offset in headings if is_backstage_section(title)]
+        if len(source) != 1:
+            errors.append(f'{name}: expected exactly one sources section (found {len(source)})')
+        if len(backstage) != 1:
+            errors.append(f'{name}: expected exactly one backstage section (found {len(backstage)})')
+        if len(source) == len(backstage) == 1:
+            if source[0] >= backstage[0]:
+                errors.append(f'{name}: sources section must precede backstage')
+            if not headings or headings[-1][1] != backstage[0]:
+                errors.append(f'{name}: backstage must be the final H2 section')
+            for note in NOTE_DEF.finditer(body):
+                if not source[0] < note.start() < backstage[0]:
+                    errors.append(f'{name}: footnote definition outside sources section [^{note.group(1)}]')
         definitions = NOTE_DEF.findall(body)
         references = NOTE_REF.findall(body)
         notes += len(definitions)
