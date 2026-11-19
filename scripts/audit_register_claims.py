@@ -163,6 +163,69 @@ def replace_slice_block(text: str, block: str) -> tuple[str, bool]:
     return text[:start] + block + text[end + len(SLICE_END):], True
 
 
+
+# Numbers that live inside sentences rather than tables: a pattern with one numeric group,
+# the artefact field it must equal, and optionally the section that re-shot it. A claim
+# that was true when written and has since been superseded is not an error to be silently
+# edited away - the register keeps its history - but it must point at the section that
+# carries the current value, and that section must exist below the claim.
+PROSE_CLAIMS: list[dict] = [
+    {"id": "drive-sample-in-confirmation",
+     "pattern": r"Объекты Drive: (?P<n>\d+) из \d+ перечитаны",
+     "artefact": LEDGER, "field": "scope.distinctDriveIds", "supersededBy": "§19"},
+    {"id": "drive-sample-in-section-11",
+     "pattern": r"Проверено (?P<n>\d+) из \d+ объектов",
+     "artefact": LEDGER, "field": "scope.distinctDriveIds", "supersededBy": "§19"},
+    {"id": "twins-documents-compared",
+     "pattern": r"Сравнено \*\*(?P<n>[\d\s\u2009]+)\*\* документов",
+     "artefact": TWINS, "field": "scope.documentsCompared"},
+    {"id": "twins-markdown-files",
+     "pattern": r"документов \(из (?P<n>[\d\s\u2009]+) Markdown",
+     "artefact": TWINS, "field": "scope.markdownFiles"},
+    {"id": "stamps-verified",
+     "pattern": r"Проверено: \*\*(?P<n>\d+)\*\* документов из",
+     "artefact": STAMPS, "field": "totals.stamped"},
+    {"id": "stamps-markdown-files",
+     "pattern": r"документов из (?P<n>[\d\s\u2009]+) ставят дату",
+     "artefact": STAMPS, "field": "scope.markdownFiles"},
+]
+
+
+def prose_audit(text: str, root: Path) -> list[dict]:
+    findings = []
+    for claim in PROSE_CLAIMS:
+        entry = {"id": claim["id"], "artefact": claim["artefact"], "field": claim["field"],
+                 "claimed": None, "actual": None, "line": None,
+                 "supersededBy": claim.get("supersededBy")}
+        actual, error = resolve(root, claim["artefact"], claim["field"])
+        entry["actual"] = actual
+        matches = list(re.finditer(claim["pattern"], text))
+        if error:
+            entry["state"] = "source-missing"
+        elif not matches:
+            entry["state"] = "anchor-missing"
+        elif len(matches) > 1:
+            entry["state"] = "anchor-ambiguous"
+            entry["line"] = text[: matches[0].start()].count("\n") + 1
+        else:
+            match = matches[0]
+            entry["claimed"] = normalize(match.group("n"))
+            entry["line"] = text[: match.start()].count("\n") + 1
+            if entry["claimed"] == actual:
+                entry["state"] = "match"
+            elif claim.get("supersededBy"):
+                heading = "## " + claim["supersededBy"].lstrip("§") + "."
+                position = text.find(heading)
+                if position == -1 or position < match.start():
+                    entry["state"] = "superseded-target-missing"
+                else:
+                    entry["state"] = "superseded"
+            else:
+                entry["state"] = "stale"
+        findings.append(entry)
+    return findings
+
+
 TABLE_ROW = re.compile(r"^\|\s*(?P<label>[^|]+?)\s*\|\s*(?P<value>-?[\d\s\u2009\u00a0]{1,12})\s*\|")
 NUMBER_SPACES = " \u2009\u00a0"
 
@@ -219,6 +282,7 @@ def audit(root: Path, register: Path | None = None) -> dict:
         updated2, found2 = replace_slice_block(text, render_slice_table(inventory))
         slice_state = "match" if found2 and updated2 == text else ("anchor-missing" if not found2 else "stale")
     printed = rows(text)
+    prose = prose_audit(text, root)
     findings = []
     totals: dict[str, int] = {}
     for label, artefact, field in CLAIMS:
@@ -240,11 +304,14 @@ def audit(root: Path, register: Path | None = None) -> dict:
         entry["state"] = state
         totals[state] = totals.get(state, 0) + 1
         findings.append(entry)
+    for entry in prose:
+        totals[entry["state"]] = totals.get(entry["state"], 0) + 1
+        findings.append({**entry, "label": entry["id"]})
     return {
         "schemaVersion": SCHEMA_VERSION,
         "authorityId": AUTHORITY_ID,
         "register": register.relative_to(root).as_posix() if register.is_relative_to(root) else str(register),
-        "scope": {"declaredClaims": len(CLAIMS),
+        "scope": {"declaredClaims": len(CLAIMS) + len(PROSE_CLAIMS), "proseClaims": len(PROSE_CLAIMS),
                   "numericTableRows": sum(len(v) for v in printed.values())},
         "totals": totals,
         "corpusTable": corpus_state,
@@ -260,7 +327,7 @@ def summary(report: dict) -> str:
              f"Таблица §2.1 по корпусам: {report['corpusTable']}",
              f"Таблица §2 (машинный срез): {report['sliceTable']}"]
     for finding in report["findings"]:
-        if finding["state"] == "match":
+        if finding["state"] in ("match", "superseded"):
             continue
         where = f"стр.{finding['line']}" if finding["line"] else "строка не найдена"
         lines.append(f"  {finding['state']:14s} {where:16s} «{finding['label'][:52]}»: "
@@ -288,7 +355,7 @@ def main(argv: list[str] | None = None) -> int:
         print(f"wrote {args.output}", file=sys.stderr)
     if args.summary:
         print(summary(report))
-    bad = [f for f in report["findings"] if f["state"] != "match"]
+    bad = [f for f in report["findings"] if f["state"] not in ("match", "superseded")]
     for state, label in ((report["corpusTable"], "§2.1 таблица по корпусам"),
                          (report["sliceTable"], "§2 машинный срез")):
         if state != "match":

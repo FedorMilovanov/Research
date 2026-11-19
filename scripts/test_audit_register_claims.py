@@ -111,5 +111,58 @@ class ClaimTests(unittest.TestCase):
         self.assertIn("3\u2009112", block)
         self.assertIn("| просканировано текстовых файлов |", block)
 
+class ProseClaimTests(unittest.TestCase):
+    """Numbers inside sentences, and the superseded state that keeps history honest."""
+
+    def setUp(self) -> None:
+        self.fx = Fixture()
+        self.fx.write_json(claims.REGISTRY, {"closures": [{"id": f"c{i}"} for i in range(3)],
+                                             "confirmations": [], "notClosed": []})
+        self.fx.write_json(claims.TWINS, {"scope": {"documentsCompared": 3, "markdownFiles": 4},
+                                          "totals": {"pairs": 1, "byState": {}}})
+        self.fx.write_json(claims.LEDGER, {"scope": {"distinctDriveIds": 92}, "totals": {}})
+
+    def tearDown(self) -> None:
+        self.fx.close()
+
+    def prose(self, text: str) -> dict:
+        self.fx.write_register(text)
+        return {f["id"]: f for f in self.report()["findings"] if "id" in f}
+
+    def report(self) -> dict:
+        return claims.audit(self.fx.root)
+
+    def test_matching_prose_claim(self) -> None:
+        text = "Сравнено **3** документов (из 4 Markdown; отсечены файлы короче 200 слов)."
+        self.assertEqual(self.prose(text)["twins-documents-compared"]["state"], "match")
+
+    def test_stale_prose_claim(self) -> None:
+        text = "Сравнено **9** документов (из 4 Markdown; отсечены файлы короче 200 слов)."
+        entry = self.prose(text)["twins-documents-compared"]
+        self.assertEqual((entry["state"], entry["claimed"], entry["actual"]), ("stale", 9, 3))
+
+    def test_superseded_claim_points_forward(self) -> None:
+        text = ("Объекты Drive: 8 из 24 перечитаны у сервера.\n\n"
+                "## 19. Опрос доведён до конца\n")
+        self.assertEqual(self.prose(text)["drive-sample-in-confirmation"]["state"], "superseded")
+
+    def test_superseded_needs_its_target_section(self) -> None:
+        text = "Объекты Drive: 8 из 24 перечитаны у сервера.\n"
+        self.assertEqual(self.prose(text)["drive-sample-in-confirmation"]["state"],
+                         "superseded-target-missing")
+
+    def test_superseded_target_must_come_after_the_claim(self) -> None:
+        text = ("## 19. Опрос доведён до конца\n\nОбъекты Drive: 8 из 24 перечитаны у сервера.\n")
+        self.assertEqual(self.prose(text)["drive-sample-in-confirmation"]["state"],
+                         "superseded-target-missing")
+
+    def test_matching_claim_is_not_downgraded_to_superseded(self) -> None:
+        text = "Объекты Drive: 92 из 92 перечитаны у сервера.\n"
+        self.assertEqual(self.prose(text)["drive-sample-in-confirmation"]["state"], "match")
+
+    def test_check_fails_on_unsuperseded_drift(self) -> None:
+        self.fx.write_register("Сравнено **9** документов (из 4 Markdown).\n")
+        self.assertEqual(claims.main(["--root", str(self.fx.root), "--check"]), 1)
+
 if __name__ == "__main__":
     unittest.main()
