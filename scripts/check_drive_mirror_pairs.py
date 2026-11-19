@@ -166,7 +166,9 @@ def classify_bytes(entry: dict, rec: dict) -> tuple[str, bool]:
     return f"не опознан (в индексе {declared})", False
 
 
-CURRENCY_FIELD = re.compile(r"(gitBytes|bytesAfter|gitMd5|md5After|driveBytes|driveMd5)", re.I)
+# Только поля, которые обещают число *файла в Git*: drive*Claimed и md5VerifiedFromDrive
+# описывают сам объект на Drive, им с HEAD сходиться не обязательно.
+CURRENCY_FIELD = re.compile(r"(gitBytes|bytesAfter|gitMd5|md5After)", re.I)
 
 
 def check_currency_claims(entry: dict, rec: dict, path: pathlib.Path, verbose: bool) -> int:
@@ -197,6 +199,7 @@ def report_index(entries: list[dict]) -> int:
     print(f"{'зеркало':<8} {'bytes':>8} {'kind':<9} смысл поля bytes")
     contradictions = 0
     stale_claims = 0
+    kind_mismatch = 0
     for entry in entries:
         rec = records.get(entry.get("drive_id") or "")
         tag = entry.get("mirror", "?")
@@ -204,12 +207,24 @@ def report_index(entries: list[dict]) -> int:
             print(f"{tag:<8} {'—':>8} {'—':<9} записи в индексе нет")
             continue
         sense, fits = classify_bytes(entry, rec)
+        declared_kind = rec.get("bytesKind")
+        kind_flag = ""
+        if declared_kind:
+            expect = {
+                "drive_file_bytes": "реальные байты файла",
+                "drive_docs_internal": "внутренний размер Docs",
+                "git_blob_bytes": "размер git-блоба",
+                "git_snapshot_bytes_unverifiable": "размер git-блоба, ревизии с таким размером нет",
+            }.get(declared_kind)
+            kind_flag = " [bytesKind сходится]" if expect == sense else f" [bytesKind {declared_kind} ≠ {sense}]"
+            if expect != sense:
+                kind_mismatch += 1
         kind = str(rec.get("kind") or "?")
         flag = ""
         if str(rec.get("mime") or "") == "application/vnd.google-apps.document" and kind == "file":
             flag = "  ← kind: file у Docs-объекта"
             contradictions += 1
-        print(f"{tag:<8} {str(rec.get('bytes')):>8} {kind:<9} {sense}{'' if fits else '  ← расходится'}{flag}")
+        print(f"{tag:<8} {str(rec.get('bytes')):>8} {kind:<9} {sense}{'' if fits else '  ← расходится'}{flag}{kind_flag}")
         path = ROOT / (entry.get("path") or "")
         if path.exists():
             stale_claims += check_currency_claims(entry, rec, path, verbose=False)
@@ -221,7 +236,9 @@ def report_index(entries: list[dict]) -> int:
         f"\nDocs-объектов с kind: file — в индексе {total_docs_as_file}, из них зеркал {contradictions}"
         " (нормализация — решение владельца, см. DRIVE_INDEX_BYTES_FIELD_2026-11-18.md)"
     )
-    print(f"полей, называющих себя текущими числами и разошедшихся с HEAD: {stale_claims}")
+    print(f"полей, называющих себя текущими числами файла и разошедшихся с HEAD: {stale_claims}")
+    if kind_mismatch:
+        print(f"объявленный bytesKind расходится с содержимым поля: {kind_mismatch}")
     return 0
 
 
