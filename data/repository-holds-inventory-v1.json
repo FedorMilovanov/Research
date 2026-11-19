@@ -100,14 +100,14 @@
       "LIVE-READBACK-HOLD": 4,
       "LOCATOR_HOLD": 1976,
       "PAGE-IMAGE-HOLD": 14,
-      "PUBLICATION_HOLD": 2610,
+      "PUBLICATION_HOLD": 2611,
       "RIGHTS_HOLD": 1460,
       "VERSION-HOLD": 23
     },
     "mentionsByStatus": {
       "closed": 821,
       "open": 2346,
-      "unmarked": 5995
+      "unmarked": 5996
     },
     "canonicalFlagLineStatesRecordedAsBothOpenAndClosed": 403,
     "filesWithJsonHolds": 38,
@@ -395,14 +395,14 @@
         "LIVE-READBACK-HOLD": 1,
         "LOCATOR_HOLD": 23,
         "PAGE-IMAGE-HOLD": 2,
-        "PUBLICATION_HOLD": 112,
+        "PUBLICATION_HOLD": 113,
         "RIGHTS_HOLD": 51,
         "VERSION-HOLD": 4
       },
       "status": {
         "closed": 7,
         "open": 13,
-        "unmarked": 264
+        "unmarked": 265
       }
     },
     "БАПТИСТЫ РОССИИ": {
@@ -27686,10 +27686,10 @@
       "path": "scripts/test_audit_charnock_manuscripts.py",
       "corpus": "scripts",
       "mentions": {
-        "PUBLICATION_HOLD": 3
+        "PUBLICATION_HOLD": 4
       },
       "status": {
-        "unmarked": 3
+        "unmarked": 4
       }
     },
     {
