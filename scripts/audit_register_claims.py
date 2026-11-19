@@ -43,6 +43,7 @@ LEDGER = "data/drive-ledger-audit-2026-11-18.json"
 REGISTRY = "data/hold-closure-registry-v1.json"
 LINKS = "data/relative-links-audit-2026-11-18.json"
 REPAIRS = "data/text-integrity-repairs-2026-11-18.json"
+PROPOSAL = "data/hold-value-mapping-proposal-v1.json"
 
 # label as printed in the register -> (artefact, field). The label is matched literally
 # inside a markdown table row, so a reworded row is reported instead of passing silently.
@@ -187,6 +188,24 @@ PROSE_CLAIMS: list[dict] = [
     {"id": "fragment-links-in-section-11",
      "pattern": r"Ссылок с фрагментом в репозитории \*\*(?P<n>[\d\s\u2009]+)\*\*",
      "artefact": LINKS, "field": "totals.fragments.total"},
+    # The vocabulary numbers were the least checked in the register: four places said the
+    # same thing, nothing verified any of them, and one of them (39 files in the §2 row)
+    # was simply wrong. They now have one home and a field each.
+    {"id": "json-holds-files",
+     "pattern": r"В (?P<n>\d+) JSON-файлах",
+     "artefact": INVENTORY, "field": "totals.filesWithJsonHolds"},
+    {"id": "json-holds-values",
+     "pattern": r"содержат (?P<n>[\d\s\u2009]+) значений",
+     "artefact": INVENTORY, "field": "totals.jsonHoldsTotal"},
+    {"id": "hold-vocabulary-values",
+     "pattern": r"из них \*\*(?P<n>\d+) \(",
+     "artefact": PROPOSAL, "field": "counts.values"},
+    {"id": "hold-vocabulary-spellings",
+     "pattern": r"\((?P<n>\d+) написаний\)",
+     "artefact": PROPOSAL, "field": "counts.spellings"},
+    {"id": "holds-array-files-in-section-2",
+     "pattern": r"Гигиена машинных реестров \| (?P<n>\d+) файлов",
+     "artefact": INVENTORY, "field": "totals.filesWithJsonHolds"},
     {"id": "repairs-applied",
      "pattern": r"(?P<n>\d+) склеек «слово\+число\+слово» восстановлены",
      "artefact": REPAIRS, "field": "totals.repairedTokens"},

@@ -9,7 +9,9 @@ proposals only name canonical flags, and the proposal may never stop being
 """
 from __future__ import annotations
 
+import tempfile
 import unittest
+from pathlib import Path
 
 import check_hold_vocabulary as chv
 
@@ -40,7 +42,7 @@ def entry(value: str, cls: str, target: str, count: int = 1) -> dict:
 def proposal(*entries: dict, status: str = "PROPOSAL_ONLY") -> dict:
     return {
         "status": status,
-        "counts": {"spellings": len(entries)},
+        "counts": {"spellings": len(entries), "byClass": {}},
         "values": list(entries),
     }
 
@@ -141,6 +143,46 @@ class DisciplineTests(unittest.TestCase):
         self.assertIn("`A_HOLD`", table)
         self.assertIn("`B_HOLD`", table)
         self.assertEqual(chv.check(inv, POLICY, prop), [])
+
+
+class RegisterBlockTests(unittest.TestCase):
+    """The register used to retype these two tables by hand; it may not any more."""
+
+    def setUp(self) -> None:
+        self._dir = tempfile.TemporaryDirectory()
+        self.register = Path(self._dir.name) / "register.md"
+        self.prop = proposal(
+            entry("QUOTE_RISK", "canonical", "PUBLICATION_HOLD"),
+            entry("PRIVATE_STUDY_ONLY", "axis", "rightsState=PRIVATE_STUDY_ONLY"),
+        )
+        self.prop["counts"]["byClass"] = {"canonical": 1, "axis": 1}
+        self.register.write_text(
+            "# Реестр\n\n" + chv.CLASS_BEGIN + "\n" + chv.CLASS_END + "\n\n"
+            + chv.VALUES_BEGIN + "\n" + chv.VALUES_END + "\n", encoding="utf-8")
+
+    def tearDown(self) -> None:
+        self._dir.cleanup()
+
+    def test_empty_blocks_are_reported_as_drift_then_written(self) -> None:
+        self.assertTrue(chv.register_problems(self.register, self.prop))
+        self.assertTrue(chv.write_register(self.register, self.prop))
+        self.assertEqual(chv.register_problems(self.register, self.prop), [])
+
+    def test_write_is_idempotent(self) -> None:
+        chv.write_register(self.register, self.prop)
+        self.assertFalse(chv.write_register(self.register, self.prop))
+
+    def test_hand_edited_count_is_a_drift(self) -> None:
+        chv.write_register(self.register, self.prop)
+        text = self.register.read_text(encoding="utf-8").replace("| `canonical` | 1 |", "| `canonical` | 2 |")
+        self.register.write_text(text, encoding="utf-8")
+        problems = chv.register_problems(self.register, self.prop)
+        self.assertTrue(any("hold-classes" in p for p in problems), problems)
+
+    def test_missing_markers_are_reported(self) -> None:
+        self.register.write_text("# Реестр без таблиц\n", encoding="utf-8")
+        problems = chv.register_problems(self.register, self.prop)
+        self.assertEqual(len(problems), 2)
 
 
 if __name__ == "__main__":

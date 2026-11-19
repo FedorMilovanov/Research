@@ -17,7 +17,8 @@ REGISTRY = {
          "method": "internal-digest-rehash", "evidence": "data/b.json"},
     ],
     "confirmations": [{"id": "HCR-2026-11-18-C1", "title": "Подтверждение"}],
-    "notClosed": [{"class": "Права", "reason": "Требуют лицензионного решения. Далее подробности."}],
+    "notClosed": [{"id": "OPEN-RIGHTS", "title": "Права",
+                   "reason": "Требуют лицензионного решения. Далее подробности."}],
 }
 
 
@@ -49,7 +50,17 @@ class RenderTests(unittest.TestCase):
     def test_open_items_are_listed(self) -> None:
         block = summary.render(REGISTRY)
         self.assertIn("Осталось открытым по существу", block)
-        self.assertIn("Права — Требуют лицензионного решения.", block)
+        self.assertIn("`OPEN-RIGHTS` — Права. Требуют лицензионного решения.", block)
+
+    def test_open_item_is_rendered_by_id_not_by_sentence(self) -> None:
+        # The old renderer printed the item's class text as its identity; that text carried
+        # two measurements which then travelled unchecked into the generated map.
+        registry = {"closures": [], "confirmations": [], "notClosed": [
+            {"id": "OPEN-X", "title": "Ось без чисел", "class": "Ось (134 значения)",
+             "reason": "Причина."}]}
+        block = summary.render(registry)
+        self.assertIn("`OPEN-X` — Ось без чисел.", block)
+        self.assertNotIn("134", block)
 
     def test_write_then_check_passes(self) -> None:
         self.assertEqual(self.run_tool("--write"), 0)

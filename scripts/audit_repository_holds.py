@@ -292,6 +292,9 @@ def scan(root: Path) -> dict:
             "canonicalFlagLineStatesRecordedAsBothOpenAndClosed": both_states,
             "filesWithJsonHolds": len({entry["path"] for entry in json_files}),
             "jsonHoldsValues": dict(sorted(json_values.items())),
+            # the sum is what the register quotes; keeping it here means the sentence can be
+            # checked instead of remembered
+            "jsonHoldsTotal": sum(json_values.values()),
         },
         "byCorpus": {
             corpus: {

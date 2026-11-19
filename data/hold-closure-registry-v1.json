@@ -749,6 +749,33 @@
         "LOCATOR_HOLD"
       ],
       "residualReason": "Слаги заголовков воспроизводятся приблизительно, поэтому мёртвый внутристраничный якорь — отчёт, а не гейт; компенсация — видимый счётчик в §8."
+    },
+    {
+      "id": "HCR-2026-11-18-20",
+      "title": "Открытые пункты получили имя, а их числа — поле: карта закрытий больше не печатает непроверенный замер",
+      "holdType": "EVIDENCE_HOLD",
+      "previousState": "notClosed не имел id: class служил и названием, и измерением; §0 повторял «134 значения / 39 написаний», ничего не проверяя, а §2 говорил 39 файлов при 38 в инвентаре",
+      "closedScope": "id + title без чисел (тест), §5 без дубля распределения, обе таблицы §9 генерируются из proposal (--write/--check), 5 новых утверждений и totals.jsonHoldsTotal в инвентаре",
+      "recordLocations": [
+        "docs/research/HOLDS_REGISTER_2026-11-18.md §24",
+        "data/hold-value-mapping-proposal-v1.json",
+        "scripts/check_hold_vocabulary.py"
+      ],
+      "method": "hold-vocabulary-mapping",
+      "objects": [
+        {
+          "openItems": 5,
+          "claims": 46,
+          "generatedTables": [
+            "hold-classes",
+            "hold-values"
+          ]
+        }
+      ],
+      "residualHolds": [
+        "EVIDENCE_HOLD"
+      ],
+      "residualReason": "Сам пункт остаётся открытым и является OPEN-HOLDS-VOCABULARY: переписывать holds в machine-SSOT без владельца корпуса нельзя, предложение остаётся PROPOSAL_ONLY. Закрыта неизмеримость пункта, не пункт."
     }
   ],
   "confirmations": [
@@ -847,7 +874,8 @@
   ],
   "notClosed": [
     {
-      "class": "Неканонические значения `holds` (134 значения / 39 написаний)",
+      "id": "OPEN-HOLDS-VOCABULARY",
+      "title": "Неканонические значения `holds` в machine-SSOT",
       "holds": [
         "EVIDENCE_HOLD",
         "LOCATOR_HOLD",
@@ -859,7 +887,8 @@
       "decisionRequiredFrom": "владелец корпуса"
     },
     {
-      "class": "Внешние первоисточники и точные страницы",
+      "id": "OPEN-PRIMARY-SOURCES",
+      "title": "Внешние первоисточники и точные страницы",
       "holds": [
         "EVIDENCE_HOLD",
         "LOCATOR_HOLD"
@@ -867,7 +896,8 @@
       "reason": "Внешние архивы, сканы и печатные издания в этой волне не открывались; исходящая сеть ограничена, а каталог, аннотация и URL не считаются прочтением объекта."
     },
     {
-      "class": "Права на хранение и публикацию",
+      "id": "OPEN-RIGHTS",
+      "title": "Права на хранение и публикацию",
       "holds": [
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
@@ -877,14 +907,16 @@
       "check": "python3 -B scripts/publication_gate_status.py --check"
     },
     {
-      "class": "Зеркала, отставшие от HEAD",
+      "id": "OPEN-MIRRORS-BEHIND-HEAD",
+      "title": "Зеркала, отставшие от HEAD",
       "holds": [
         "ARCHIVE_HOLD"
       ],
       "reason": "Текущие редакции томов 00/04/16 и досье новее последних проверенных зеркал; закрытие readback исторических снимков не делает их актуальными. Новая загрузка/квитанция в этой волне не выполнялись."
     },
     {
-      "class": "Независимая научная приёмка",
+      "id": "OPEN-INDEPENDENT-REVIEW",
+      "title": "Независимая научная приёмка",
       "holds": [
         "EVIDENCE_HOLD"
       ],

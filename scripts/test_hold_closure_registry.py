@@ -10,6 +10,7 @@ is indistinguishable from an invented one.
 from __future__ import annotations
 
 import json
+import re
 import unittest
 from pathlib import Path
 
@@ -89,6 +90,19 @@ class ClosureTests(unittest.TestCase):
             with self.subTest(entry.get("id")):
                 self.assertTrue(entry.get("evidence") or entry.get("recordLocations"),
                                 "a closure without a locator is a claim")
+
+    def test_open_items_have_stable_identity(self) -> None:
+        ids = [entry.get("id") for entry in self.data.get("notClosed", [])]
+        self.assertTrue(all(ids), "every open item needs an id, not a sentence")
+        self.assertEqual(len(ids), len(set(ids)), "open item ids must be unique")
+
+    def test_open_item_titles_carry_no_measurements(self) -> None:
+        # A number inside a name is a counter with no field: nothing re-measures it, and
+        # when it drifts the name silently lies. Measurements belong in checked prose.
+        for entry in self.data.get("notClosed", []):
+            with self.subTest(entry.get("id")):
+                self.assertIsNone(re.search(r"\d", entry.get("title", "")),
+                                  "open item title must not carry a number")
 
     def test_not_closed_is_not_empty(self) -> None:
         # The registry must keep saying what stays blocked; an empty list would

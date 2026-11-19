@@ -100,14 +100,14 @@
       "LIVE-READBACK-HOLD": 4,
       "LOCATOR_HOLD": 1976,
       "PAGE-IMAGE-HOLD": 14,
-      "PUBLICATION_HOLD": 2609,
+      "PUBLICATION_HOLD": 2610,
       "RIGHTS_HOLD": 1460,
       "VERSION-HOLD": 23
     },
     "mentionsByStatus": {
       "closed": 821,
       "open": 2346,
-      "unmarked": 5994
+      "unmarked": 5995
     },
     "canonicalFlagLineStatesRecordedAsBothOpenAndClosed": 403,
     "filesWithJsonHolds": 38,
@@ -156,7 +156,8 @@
       "RIGHTS_UNCLEAR": 1,
       "RIGHTS_UNKNOWN": 3,
       "TEXT_ACCESS_HOLD": 1
-    }
+    },
+    "jsonHoldsTotal": 6146
   },
   "byCorpus": {
     "1_PETER_BOT": {
@@ -394,14 +395,14 @@
         "LIVE-READBACK-HOLD": 1,
         "LOCATOR_HOLD": 23,
         "PAGE-IMAGE-HOLD": 2,
-        "PUBLICATION_HOLD": 111,
+        "PUBLICATION_HOLD": 112,
         "RIGHTS_HOLD": 51,
         "VERSION-HOLD": 4
       },
       "status": {
         "closed": 7,
         "open": 13,
-        "unmarked": 263
+        "unmarked": 264
       }
     },
     "БАПТИСТЫ РОССИИ": {
@@ -27726,11 +27727,11 @@
         "ARCHIVE_HOLD": 1,
         "EVIDENCE_HOLD": 6,
         "LOCATOR_HOLD": 1,
-        "PUBLICATION_HOLD": 6,
+        "PUBLICATION_HOLD": 7,
         "RIGHTS_HOLD": 1
       },
       "status": {
-        "unmarked": 15
+        "unmarked": 16
       }
     },
     {

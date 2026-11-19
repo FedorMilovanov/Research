@@ -38,6 +38,19 @@ ROOT = Path(__file__).resolve().parents[1]
 INVENTORY = ROOT / "data" / "repository-holds-inventory-v1.json"
 POLICY = ROOT / "data" / "repository-evidence-policy-v2.json"
 PROPOSAL = ROOT / "data" / "hold-value-mapping-proposal-v1.json"
+REGISTER = ROOT / "docs" / "research" / "HOLDS_REGISTER_2026-11-18.md"
+CLASS_BEGIN, CLASS_END = "<!-- hold-classes:begin -->", "<!-- hold-classes:end -->"
+VALUES_BEGIN, VALUES_END = "<!-- hold-values:begin -->", "<!-- hold-values:end -->"
+
+# The register used to carry these two tables retyped by hand. They were the tool's own
+# output, copied - which is the defect this whole file guards against, one level up.
+CLASS_DESCRIPTIONS = {
+    "canonical": "по смыслу это канонический HOLD, записанный своим именем",
+    "axis": "это значение оси policy v2 (`accessState` / `rightsState` / `publicationState` / `locatorState`), а не HOLD",
+    "split": "в одной строке склеены две вещи (флаг + статус, два флага)",
+    "status": "статус записи, а не удержание: `OPEN`, `RESOLVED-BY-TEXT`, `RESEARCH / NOT PRODUCT`",
+    "manual": "из строки не выводится (`HOLD`, `FORBIDDEN`), читает человек",
+}
 
 CLASSES = ("canonical", "axis", "split", "status", "manual")
 AXES = ("accessStates", "locatorStates", "rightsStates", "publicationStates")
@@ -122,6 +135,59 @@ def check(inventory: dict, policy: dict, proposal: dict) -> list[str]:
     return problems
 
 
+def render_classes(proposal: dict) -> str:
+    counts = proposal.get("counts", {}).get("byClass", {})
+    lines = [CLASS_BEGIN, "| Класс | Значений | Что означает |", "|---|---:|---|"]
+    for cls in CLASSES:
+        lines.append(f"| `{cls}` | {counts.get(cls, 0)} | {CLASS_DESCRIPTIONS[cls]} |")
+    lines.append(CLASS_END)
+    return "\n".join(lines)
+
+
+def render_values(proposal: dict) -> str:
+    return "\n".join([VALUES_BEGIN, render(proposal), VALUES_END])
+
+
+def replace_block(text: str, begin: str, end: str, block: str) -> tuple[str, bool]:
+    start, stop = text.find(begin), text.find(end)
+    if start == -1 or stop == -1 or stop < start:
+        return text, False
+    return text[:start] + block + text[stop + len(end):], True
+
+
+def register_problems(register: Path, proposal: dict) -> list[str]:
+    """The register may not retype what this script renders."""
+    if not register.is_file():
+        return [f"register not found: {register}"]
+    text = register.read_text(encoding="utf-8")
+    problems: list[str] = []
+    for begin, end, block, name in (
+        (CLASS_BEGIN, CLASS_END, render_classes(proposal), "hold-classes"),
+        (VALUES_BEGIN, VALUES_END, render_values(proposal), "hold-values"),
+    ):
+        start, stop = text.find(begin), text.find(end)
+        if start == -1 or stop == -1 or stop < start:
+            problems.append(f"register has no {name} block")
+            continue
+        if text[start:stop + len(end)] != block:
+            problems.append(f"register {name} block drifted from the proposal")
+    return problems
+
+
+def write_register(register: Path, proposal: dict) -> bool:
+    text = register.read_text(encoding="utf-8")
+    changed = False
+    for begin, end, block in (
+        (CLASS_BEGIN, CLASS_END, render_classes(proposal)),
+        (VALUES_BEGIN, VALUES_END, render_values(proposal)),
+    ):
+        before = text
+        text, found = replace_block(text, begin, end, block)
+        changed = changed or (found and text != before)
+    register.write_text(text, encoding="utf-8")
+    return changed
+
+
 def render(proposal: dict) -> str:
     lines = [
         "| Написание в `holds` | Значений | Класс | Предлагаемое место |",
@@ -138,6 +204,8 @@ def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Check / render the non-canonical holds mapping proposal")
     parser.add_argument("--check", action="store_true", help="validate coverage, counts and vocabulary")
     parser.add_argument("--render", action="store_true", help="print the Markdown table")
+    parser.add_argument("--write", action="store_true", help="regenerate both register tables")
+    parser.add_argument("--register", default=str(REGISTER))
     parser.add_argument("--inventory", default=str(INVENTORY))
     parser.add_argument("--policy", default=str(POLICY))
     parser.add_argument("--proposal", default=str(PROPOSAL))
@@ -151,9 +219,14 @@ def main(argv: list[str] | None = None) -> int:
         print(f"hold vocabulary: cannot read inputs: {exc}", file=sys.stderr)
         return 2
 
+    if args.write:
+        wrote = write_register(Path(args.register), proposal)
+        print(f"hold vocabulary: {'wrote' if wrote else 'nothing to write in'} {args.register}")
     if args.render:
         print(render(proposal))
     problems = check(inventory, policy, proposal)
+    if not args.render and not args.write:
+        problems += register_problems(Path(args.register), proposal)
     if problems:
         for problem in problems:
             print(f"hold vocabulary: {problem}", file=sys.stderr)

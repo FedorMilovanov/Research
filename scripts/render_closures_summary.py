@@ -44,12 +44,14 @@ METHOD_NAMES = {
     "drive-ledger-join": "реестр против ответа Drive",
     "unclaimed-reason-classification": "классификация строк",
     "relative-link-audit": "проверка относительных ссылок",
+    "hold-vocabulary-mapping": "соответствие неканонических значений `holds`",
     "pinned-github-locator-readback": "перечитывание закреплённых локаторов",
     "text-integrity-repair": "сверка склеек с историей",
     "register-claims-audit": "счётчики против артефактов",
     "server-checksum-readback": "серверная контрольная сумма",
     "read-only-link-audit": "read-only проверка ссылок",
     "relative-link-audit": "проверка относительных ссылок",
+    "hold-vocabulary-mapping": "соответствие неканонических значений `holds`",
     "space-restoration-backed-by-file-history": "пробелы по истории файла",
     "internal-digest-rehash": "пересчёт внутренних подписей",
 }
@@ -91,11 +93,15 @@ def render(registry: dict) -> str:
             f"- `{confirmation.get('id', '')}` — {(confirmation.get('title') or '').strip()}"
         )
     lines += ["", "**Осталось открытым по существу:**"]
+    # An open item's identity is its id, not a sentence. The earlier version rendered the
+    # item's display text, which happened to carry two measurements inside the name; the
+    # generated map then repeated numbers that nothing checked - and one of them was wrong.
     for item in open_items:
-        cls = (item.get("class") or "").strip()
+        ident = (item.get("id") or "").strip()
+        title = (item.get("title") or "").strip()
         reason = (item.get("reason") or "").strip()
         short = reason.split(".")[0][:180]
-        lines.append(f"- {cls} — {short}.")
+        lines.append(f"- `{ident}` — {title}. {short}.")
     lines += [
         "",
         "Строки этой карты не являются проверкой: они перечисляют, где проверка записана.",
