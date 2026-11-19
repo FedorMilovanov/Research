@@ -252,6 +252,10 @@
 - **раунд 115 (2026-11-17, AGENT 2):** §3 (S213), новый §4.198 (Q194): счёт слов WCF (сн. 82) повторён по печатному скану (OCR + визуальная проверка).
   - *redemption* 5, *redeemed* 3, *atone-* 0, *propitiation* 1, *purchased* 4, *satisf-* 7, *reconcil-* 2 — совпадает с S32; *sacrifice* с мн. ч. VII.5 — 6.
   - Вердикты S1–S5 не меняются. Документ: REPASS, §38.
+- **раунд 116 (2026-11-17, AGENT 2):** §3 (S214), новый §4.199 (Q195): «преемник на богословской кафедре» (с. 8, сн. 27) по Боржо (1900).
+  - Кафедру Франсуа Турретина в 1686 г. принял Б. Пикте; Ж.-А. Турретин — профессор церковной истории (1697), с 1705 г. — на кафедре Луи Троншена. `FACT_ERROR` (мягко); HOLD раунда 90 снят.
+  - Попутно: о «не учить вопреки Формуле» в 1706 г. — `SOURCES_CONFLICT` (Чандлер-оппонент ↔ DeYoung/Клаубер); `27_` §4.4 «деизм» — `OVERSTATEMENT` (мягко).
+  - Вердикты S1–S5 не меняются. Документ: REPASS, §39.
 
 **Erratum (раунд 4).** В раунде 3 номера страниц протоколов Ассамблеи (S19) и Шедда II (S22) были выведены из индекса страниц OCR-API archive.org (`BookReaderGetTextWrapper`), который **не совпадает** с номером листа (`leafNum`) скана: для `minutesofsession00west` индекс = лист − 5, для `dogmatictheology02sheduoft` индекс = лист − 1. Сверка по `inside.php` (полнотекстовый поиск, возвращает `leafNum`) и `<id>_page_numbers.json` (лист → печатная страница) дала: **Minutes «pp. 150–155/156» → pp. 155–160/161** (листы 251–257); **Shedd «II.478, 482–483» → II.479, 483–484** (листы 489, 493–494). Все затронутые числа в S19, S22, §4.13, §4.16, §5–§8 исправлены **на месте** с пометкой «(испр. р. 4)»; содержание цитат не менялось. Локаторы раундов 1–2 (Minutes p. lv/lviii/lx/152, Shedd II.464–477, I.441, A. A. Hodge pp. 33–34) перепроверены тем же способом и **верны** (лист 248 = p. 152; лист 457 = I.441; лист 39 = Hodge p. 33).
 **Статус:** `ACTIVE RESEARCH / NO SETTLED VERDICT ON EXTENT / EVIDENCE_HOLD / PUBLICATION_HOLD`
@@ -628,6 +632,7 @@
 | S211 *(раунд 113, 2026-11-17)* | (1) Скан IA `per_early-baptist_a-confession-of-faith-_john-ripon_1689` (микрофильм, 51 л.; титул «PRINTED AT LONDON, 1688», объявление о подписке — вероятно, перепечатка Риппона; `inside.php`): л. 13 — III.3 «others being left to act in their sin to their just condemnation»; л. 19 — VIII.1 «according to the covenant made between them both»; л. 21 — VIII.8 «without any condition foreseen in them, to procure it», VIII.9–10; л. 50 — оглавление с главой «Of the Gospel, and of the Extent of the Grace thereof». (2) Creeds.json (`NonlinearFruit/Creeds.json`, HEAD `2ae21a4`): WCF 1647, 1689 LBCF, Savoy 1658 — пословное сравнение всех 160 параграфов 1689 г. (3) Schaff, *Creeds* III, `creedsofchriste03scha` (`inside.php`): «just condemnation» — только Нью-Гэмпширское исповедание; «condition foreseen» — 0 | A2 (скан перепечатки 1688 г.); W (Creeds.json); A1 (отрицательный поиск в Шаффе) | 160 параграфов: ≥ 0.95 — 32, 0.80–0.95 — 58, 0.50–0.80 — 36, < 0.50 — 34; совпадающих слов 69.6 % (нижняя граница); 49 параграфов ближе к Савойской декларации | дата скана не установлена; WCF III.3 — только по Creeds.json; нормализация орфографии неполная |
 | S212 *(раунд 114, 2026-11-17)* | (1) Google Drive пользователя: «Westminster Confession of Faith (PD copy).pdf» (id `1VSp4vU56X8uuYrp2SERkp2p0BRk-vQq4`, md5 `c992905d7f02a04c8cc33fbf4731529b`, 25 л., без текстового слоя) — Tercentenary Edition, London: Publishing Office of the Presbyterian Church of England (метаданные PDF: 1946); печатная с. = лист + 1; прочитаны визуально pp. 4, 6, 9, 10. (2) Скан изд. 1688 г. (S211 (1)), `inside.php`: л. 20 — VIII.5 «[p]rocured reconciliation». | A2 (оба скана) | WCF III.3 «and others foreordained to everlasting death» (p. 6); II.3 — короткая формула (p. 6); VIII.1 — без «according to a covenant made between them both» (p. 9); VIII.5 «purchased, not only reconciliation, but an everlasting inheritance… for all those whom the Father hath given unto Him» (p. 10); VIII.8 «purchased redemption… unsearchable dispensation.» — конец параграфа; после §VIII — гл. IX (p. 10) | редакция 1946 г. не сверена с изд. 1647 г. постранично; счёт V1 по скану не повторён |
 | S213 *(раунд 115, 2026-11-17)* | Скан S212 (1) (WCF, Tercentenary Edition, 1946; Google Drive `1VSp4vU56X8uuYrp2SERkp2p0BRk-vQq4`), OCR `rapidocr-onnxruntime` (PyPI), 200 dpi, все 25 листов (~69 400 знаков), поиск по подстроке; расхождения проверены по рендеру: XI.3 «full satis-|faction» (p. 12), XVIII.2 «sealed to the day of redemption» (p. 15), XIII.2 «irreconcilable», VII.5 «sacrifices» (p. 9), XXIX.2 «the alone propitiation for all the sins of His elect» (p. 22) | A2 (скан); OCR — вспомогательный инструмент | *redemption* 5; *redeemed* 3; *atone-* 0; *propitiation* 1; *purchased* 4; *satisf-* 7; *reconcil-* 2 (без «irreconcilable»); *sacrific-* 6 (с мн. ч.) | OCR не ловит переносы слов; полнота обеспечена совпадением с независимым цифровым счётом S32 |
+| S214 *(раунд 116, 2026-11-17)* | (1) Ch. Borgeaud, *Histoire de l'Université de Genève*, t. I (Genève, 1900), IA `histoiredelunive01borg` (`ia801502`, `/32/items/`; `inside.php`, страницы по `_page_numbers.json`): л. 749 (с. 641) — список профессоров (Франсуа Турретин 1653–1687; Л. Троншен 1662–1705; Б. Пикте 1686–1724; Ж.-А. Турретин: церк. история 1697–1705, богословие 1705–1737); л. 560 (с. 478) — «François Turrettin [remplacé] par Bénédict Pictet… (1686)»; л. 627 (≈ с. 535) — Ж.-А. Турретин «par droit d'accroissement» получил кафедру догматики после Л. Троншена; л. 582 (с. 500) — ректор до 1711 г.; л. 632, 645 (с. 549) — характеристика его богословия. Класс B (OCR). (2) K. DeYoung, TGC, 12.08.2014, со ссылкой на M. I. Klauber, *Fides et Historia* 24:1 (1992), 57–60: Пикте «succeeded Turretin as professor of theology»; компромисс «not to teach anything against the Formula could not be approved»; новый чин 06.09.1706. Класс C | Сн. 27, «преемник на богословской кафедре»: `FACT_ERROR` (мягко); `SOURCES_CONFLICT` об обещании 1706 г.; `27_` §4.4 — `OVERSTATEMENT` (мягко) |
 
 **Ответ: П1 исторически неверен; «словом о цене» в английской традиции является *redemption*, а не *atonement*.**
 
@@ -8203,8 +8208,9 @@ hommes** selon ce propos déterminé…*» (с. 183) **есть в источн�
 | 4.196 | Q192 | Карта покрытия сн. 1–112 (без упоминаний были 20, 29, 38, 63, 100); сн. 20: Второе Лондонское «почти дословно, кроме баптистских особенностей» — `SIMPLIFIED` (мягко): III.3, VIII.8–10, XVII.1, гл. XV, XX (р. 113) |
 | 4.197 | Q193 | WCF III.3, VIII.1, VIII.5, VIII.8 по печатному скану (изд. 1946 г.): расхождения T-13 и §4.196 подтверждены сканами обеих сторон; вердикты прежние (р. 114) |
 | 4.198 | Q194 | Сн. 82: счёт *redemption/redeemed/atonement* в WCF по печатному скану (OCR + визуальная проверка) — 5/3/0, совпадает с S32 (р. 115) |
+| 4.199 | Q195 | С. 8, сн. 27: Ж.-А. Турретин — «преемник на богословской кафедре»: кафедру отца принял Пикте (1686), сын — кафедру Троншена (1705), по Боржо 1900 — `FACT_ERROR` (мягко); `SOURCES_CONFLICT` об обещании 1706 г.; `27_` §4.4 — `OVERSTATEMENT` (р. 116) |
 
-⇒ разделов с `Q` — **191**, разделов §4.x — **193**; пропуски нумерации прежние.
+⇒ разделов с `Q` — **192**, разделов §4.x — **194**; пропуски нумерации прежние.
 
 
 ### 4.139. Q135 — Приёмка раунда 61: связка Сомюра, аудит объёма, готовность к мерджу (раунд 61)
@@ -9138,7 +9144,7 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 2. **«Как минимум инфралапсарианский».** Канон IV прямо задаёт инфралапсарианский порядок: «create man perfect, in the first place, then permit him to fall, and finally… elect». Шафф пишет, что Формула, как и Дорт и Вестминстер, «keep[s] within the limits of infralapsarianism». Оговорка «как минимум» оставляет открытым супралапсарианство, которое текст исключает. **`IMPRECISE_QUALIFIER`** (мягко). Главная мысль (Христос не предшествует избранию — кан. VI) верна.
 3. **Хайдеггер.** Schaff I, p. 486: давление «extremists… who… desired a formal condemnation» Сомюра; в предисловии — «venerable brethren in Christ», учения «not condemned as heresies, but simply disapproved». **ACCURATE.**
 4. **Местреза и Троншен (сн. 26).** Содержание согласуется с цитатой из Клаубера во вторичной работе («a narrowing of the definition of Reformed orthodoxy beyond the views of Calvin and Beza, and the Second Helvetic Confession»; класс C). Не сказано, что оба сочувствовали Сомюру (класс C). **`CONTEXT_OMITTED`** (мягко); p. 113 — HOLD.
-5. **1706 (сн. 27).** Речь «Mr. Turrettine, Rector of the Academy at Geneva… for abolishing the Subscription to the Formula Consensus», произнесённая в Совете XXV в июне 1706 г. (Chandler 1748, л. 162, 182), подтверждает роль Ж.-А. Турретина и год. Но отменена **подписка в Женеве**, а не Формула в Швейцарии. **`SIMPLIFIED`** (ср. `06_` A046). «Преемник на кафедре» — не проверено.
+5. **1706 (сн. 27).** Речь «Mr. Turrettine, Rector of the Academy at Geneva… for abolishing the Subscription to the Formula Consensus», произнесённая в Совете XXV в июне 1706 г. (Chandler 1748, л. 162, 182), подтверждает роль Ж.-А. Турретина и год. Но отменена **подписка в Женеве**, а не Формула в Швейцарии. **`SIMPLIFIED`** (ср. `06_` A046). «Преемник на кафедре» — не проверено. *(Проверено в раунде 116, §4.199: `FACT_ERROR`, мягко.)*
 6. **Павлов 1906 / Одинцов 1928.** Немецкий текст 1847 г., ст. V: избранные — «die Schafe seiner Herde, für welche er sein Leben lassen wollte». Слов «за всех» и «только» нет.
    - Тезис статьи буквально защитим, но статья умалчивает о частном намерении в ст. V — **`OMITTED_RELEVANT_TEXT`** (мягко).
    - Вывод `13_` §3 «опровергается» сильнее текста — **`OVERSTATED_REFUTATION`** (мягко).
@@ -9152,7 +9158,7 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 
 **Вывод.** Историческая часть с. 7–8 в главном верна. Ошибки — упрощения и оговорки, а не подмена позиций. Единственное существенное для читателя 2026 г.: вероучение GCC теперь прямо исповедует искупление «for all those the Father has given to Him». Наблюдение статьи было верным для старой редакции. Корпус в двух местах пересказывает источники сильнее, чем они говорят (`13_`, `09_`). Умысел не утверждается.
 
-**Чего нет.** Klauber, pp. 113, 118 (печатные страницы); текст GCC на 2019 г.; MSB 1997, pp. 2192–2198; русские тексты 1906/1928 гг.; страница ifca.org; кафедральная преемственность Ж.-А. Турретина.
+**Чего нет.** Klauber, pp. 113, 118 (печатные страницы); текст GCC на 2019 г.; MSB 1997, pp. 2192–2198; русские тексты 1906/1928 гг.; страница ifca.org; кафедральная преемственность Ж.-А. Турретина *(снято в раунде 116, §4.199)*.
 
 Вердикты S1–S5 не меняются.
 
@@ -9583,6 +9589,18 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 1. *redemption* — 5 (VIII.6, VIII.8, XII, XVIII.2, XXXII.1); *redeemed* — 3 (III.6 ×2, VIII.1); *atonement* — 0. Утверждение сн. 82 «8 и 0» **верно и по печатному тексту**.
 2. Совпадают и вспомогательные счёты S32: *propitiation* 1 (XXIX.2 «for all the sins of His elect»), *purchased* 4, *satisf-* 7, *reconcil-* 2. Уточнение: *sacrifice* — 6, если считать VII.5 «sacrifices».
 3. Вывод §4.20 не меняется: счёт верен как арифметика, но не доказывает различения «цена/результат».
+
+Вердикты S1–S5 не меняются.
+
+### 4.199. Q195 — Ж.-А. Турретин: «преемник на богословской кафедре» (с. 8, сн. 27) (раунд 116, 2026-11-17)
+
+**Повод.** Пункт остался открытым в §4.173 (п. 5, «Чего нет»). Источник — S214. Таблица — REPASS-документ, §39.
+
+**Ответы.**
+1. **Кафедра отца.** Франсуа Турретин — профессор богословия 1653–1687. Его место в 1686 г. занял Б. Пикте (Боржо, л. 560 = с. 478; список, л. 749 = с. 641).
+2. **Кафедры сына.** Ж.-А. Турретин — профессор церковной истории 1697–1705. В 1705 г. он «par droit d'accroissement», без избрания Компанией, перешёл на кафедру догматики, освободившуюся после смерти Луи Троншена (л. 627 ≈ с. 535). В июне 1706 г. он ректор (до 1711 г., л. 582 = с. 500) и профессор богословия. Это сходится с Чандлером (§4.173).
+3. **Оценка.** «Его [отца] преемник на богословской кафедре» неверно в прямом смысле: **`FACT_ERROR`** (мягко; на довод о Формуле не влияет). Источник ошибки не установлен: Klauber 1990, pp. 113/118 — HOLD; в статье 1992 г. Клаубер (по DeYoung, класс C) называет преемником Пикте.
+4. **Попутно.** Об обещании «не учить вопреки Формуле» в 1706 г. оппонент Чандлера и DeYoung/Клаубер расходятся — `SOURCES_CONFLICT` (HOLD: протоколы Совета). `27_` §4.4 «в сторону теологического деизма» сильнее Боржо (рационалистический поворот «faisant la part de cette foi et de cette révélation») — `OVERSTATEMENT` (мягко).
 
 Вердикты S1–S5 не меняются.
 
