@@ -56,6 +56,8 @@ python3 -B scripts/audit_hold_coverage_gaps.py --promotion-gaps   # 1 PROMOTE с
 
 Первый запуск требует полного клона: на shallow-клоне гейт целостности корпуса откажется проверять
 `commitTimeChecks`, и это правильно — проверка, которая ничего не сверяет, не должна называться PASS.
+Как отличить это состояние от настоящей поломки и как выйти из него четырьмя командами —
+`docs/research/arena/SANDBOX_SHALLOW_CLONE_RECOVERY_2026-11-18.md`.
 
 ## 4. Чего здесь намеренно нет
 
