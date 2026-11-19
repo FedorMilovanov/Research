@@ -28,11 +28,11 @@
 | 1650 | Вуд сообщает об избрании в New College | Не сам акт колледжа |
 | 1652 | По Вуду, признание кембриджского M.A. в Оксфорде | Incorporation не первый день получения степени |
 | 5 апреля 1654 | Вуд в *Fasti* называет Чарнока среди прокторов | Тот же историк, что в *Athenae*, не второй независимый свидетель |
-| Около 1655–1660 | Ирландское служение, оцениваемое редакторами примерно в четыре-пять лет | Нет точного реестра приходских назначений |
+| Около 1655–1660 | Ирландское служение; Лоренс (т. II, с. 294) перечисляет места проповеди в июле–ноябре 1655 года и сообщает о выплатах | Это компиляция B1; St Patrick's / St Kevin's под вопросом, первичные акты назначений и платёжные ведомости не сверены |
 | После возвращения | Долгое время без постоянного призвания | Не означает полного отсутствия проповеди на пятнадцать лет |
 | Около 1675–1680 | Позднее регулярное служение и проповедь в лондонском Кросби-холле | Последние «примерно пять лет» — округлённая оценка |
 | 27 или 28 июля 1680 | День смерти остаётся в конфликте между Вудом и листком *The Sayings* | Нельзя представить одну версию окончательно доказанной |
-| 30 июля 1680 | Погребение согласно Вуду и титулу *The Sayings* | Приходская регистрационная книга не получена |
+| 30 июля 1680 | Погребение по печатному регистру St Michael Cornhill (изд. Дж. Л. Честера, 1882, с. 265), Вуду и листку *The Sayings* | Рукописный оригинал регистра не осмотрен; запись подтверждает погребение, но не разрешает спор о дне смерти |
 
 Краткая таблица намеренно не превращается в дневник. В ней нет неустановленных дат каждого произнесения проповеди, списка всех путешествий по Франции и Голландии, деталей семейного имущества или восстановленной картины последней болезни. Эти сведения могут быть важны для дальнейших исследований, но отсутствие достаточного доказательства нельзя заменить художественной реконструкцией.[^3]
 
@@ -108,7 +108,7 @@
 
 [^1]: [Research том 16, §21.1, паспорт REFERENCE](../16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md), назначение справочника.
 [^2]: [Research том 02, §10.2](../02_LIFE_CHRONOLOGY_AND_DATE_CONFLICTS.md), 40 BCD decisions, ATTRIBUTED/APPROXIMATE/EXCLUDE/CONFLICT; BCD-37 death-date conflict.
-[^3]: [Research том 02 §10.2](../02_LIFE_CHRONOLOGY_AND_DATE_CONFLICTS.md), BCD-01–40; [том 16, §21.1](../16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md), selected chronology and limit.
+[^3]: [Research том 02 §10.2](../02_LIFE_CHRONOLOGY_AND_DATE_CONFLICTS.md), BCD-01–40; [том 16 §21.1](../16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md), selected chronology and limit. Anne Laurence, *Parliamentary Army Chaplains 1642–51*, vol. II, печатная с. 294 ([Oxford Research Archive](https://ora.ox.ac.uk/objects/uuid%3A136e619f-e86b-4184-a247-1bc6c6a81b64)); это B1-свидетельство о дублинских местах проповеди и выплатах, не самостоятельная проверка приходских регистров и счетов. J. L. Chester, *The Parish Registers of St. Michael, Cornhill, London* (1882), печатная с. 265 ([каталожная запись издания](https://openlibrary.org/books/OL22320654M/The_parish_registers_of_St._Michael_Cornhill_London)); дата погребения `July 30` и граница следующей записи `Aug. 7` разобраны в [независимом аудите](../supplemental-audits/AGENT7_INDEPENDENT_CRITICAL_AUDIT_2026-11-16.md). Опубликованный регистр не равен просмотренному рукописному оригиналу и ничего не доказывает о точном дне смерти.
 [^4]: [Research том 09, John Johnson funeral witness](../09_JOHNSON_FUNERAL_SERMON_1680_PRIMARY_TRANSCRIPTION.md), contemporaneous memorial text and its hagiographic genres.
 [^5]: [Research том 11, Wood primary transcription](../11_WOOD_ATHENAE_OXONIENSES_1691_PRIMARY_TRANSCRIPTION.md), `as I conceive`; Fasti and Athenae are one author.
 [^6]: [Research том 08, Adams/Veal editor testimonies](../08_ADAMS_AND_VEAL_TO_THE_READER_PRIMARY_EPISTLE.md), dependent 1680/1684 prefaces, 1699 source transmission.
