@@ -76,13 +76,13 @@
     ]
   },
   "totals": {
-    "filesScanned": 3112,
-    "filesWithMentions": 906,
+    "filesScanned": 3113,
+    "filesWithMentions": 907,
     "mentions": {
-      "ARCHIVE_HOLD": 1414,
+      "ARCHIVE_HOLD": 1416,
       "BLOCKING-HOLD": 16,
       "BOOK-FULLTEXT-HOLD": 15,
-      "EVIDENCE_HOLD": 1295,
+      "EVIDENCE_HOLD": 1297,
       "HOLD-APPARATUS": 1,
       "HOLD-AS": 3,
       "HOLD-GLOSS": 1,
@@ -98,16 +98,16 @@
       "HOLD_MAJOR": 11,
       "HOLD_RETAINED": 1,
       "LIVE-READBACK-HOLD": 4,
-      "LOCATOR_HOLD": 1974,
+      "LOCATOR_HOLD": 1976,
       "PAGE-IMAGE-HOLD": 14,
-      "PUBLICATION_HOLD": 2600,
-      "RIGHTS_HOLD": 1457,
+      "PUBLICATION_HOLD": 2604,
+      "RIGHTS_HOLD": 1460,
       "VERSION-HOLD": 23
     },
     "mentionsByStatus": {
       "closed": 821,
-      "open": 2343,
-      "unmarked": 5979
+      "open": 2346,
+      "unmarked": 5989
     },
     "canonicalFlagLineStatesRecordedAsBothOpenAndClosed": 403,
     "filesWithJsonHolds": 38,
@@ -340,19 +340,19 @@
       }
     },
     "data": {
-      "files": 22,
+      "files": 23,
       "mentions": {
-        "ARCHIVE_HOLD": 6,
-        "EVIDENCE_HOLD": 9,
+        "ARCHIVE_HOLD": 8,
+        "EVIDENCE_HOLD": 11,
         "HOLD_MAJOR": 3,
-        "LOCATOR_HOLD": 25,
-        "PUBLICATION_HOLD": 27,
-        "RIGHTS_HOLD": 11
+        "LOCATOR_HOLD": 27,
+        "PUBLICATION_HOLD": 29,
+        "RIGHTS_HOLD": 13
       },
       "status": {
         "closed": 10,
         "open": 11,
-        "unmarked": 63
+        "unmarked": 73
       }
     },
     "docs": {
@@ -424,12 +424,12 @@
         "ARCHIVE_HOLD": 299,
         "EVIDENCE_HOLD": 75,
         "LOCATOR_HOLD": 425,
-        "PUBLICATION_HOLD": 350,
-        "RIGHTS_HOLD": 212
+        "PUBLICATION_HOLD": 352,
+        "RIGHTS_HOLD": 213
       },
       "status": {
         "closed": 107,
-        "open": 386,
+        "open": 389,
         "unmarked": 913
       }
     },
@@ -26028,6 +26028,20 @@
       }
     },
     {
+      "path": "data/register-claims-audit-2026-11-18.json",
+      "corpus": "data",
+      "mentions": {
+        "ARCHIVE_HOLD": 2,
+        "EVIDENCE_HOLD": 2,
+        "LOCATOR_HOLD": 2,
+        "PUBLICATION_HOLD": 2,
+        "RIGHTS_HOLD": 2
+      },
+      "status": {
+        "unmarked": 10
+      }
+    },
+    {
       "path": "data/research-stage-closure-2026-08-02.json",
       "corpus": "data",
       "mentions": {
@@ -28478,11 +28492,11 @@
       "path": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED06_THREE_ENGLISH_WITNESS_TRIANGULATION_2026-11-18.md",
       "corpus": "БИОГРАФИИ",
       "mentions": {
-        "PUBLICATION_HOLD": 1,
-        "RIGHTS_HOLD": 1
+        "PUBLICATION_HOLD": 3,
+        "RIGHTS_HOLD": 2
       },
       "status": {
-        "open": 2
+        "open": 5
       }
     },
     {
