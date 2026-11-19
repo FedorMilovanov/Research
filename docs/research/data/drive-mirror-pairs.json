@@ -14,7 +14,8 @@
       "missing_bytes_at_check": 0,
       "size_seen_on_drive": 17773,
       "size_kind": "export_bytes",
-      "note": "конец совпадает с последней ревизией; файл не менялся после перелива"
+      "note": "конец совпадает с последней ревизией; файл не менялся после перелива",
+      "drive_docs_size": 10815
     },
     {
       "mirror": "04_",
@@ -27,7 +28,8 @@
       "missing_bytes_at_check": 13720,
       "size_seen_on_drive": 12042,
       "size_kind": "export_bytes",
-      "note": "объект создан за 31 с до коммита 0caf541c; штамп 2026-10-08 на 31 ч новее текста"
+      "note": "объект создан за 31 с до коммита 0caf541c; штамп 2026-10-08 на 31 ч новее текста",
+      "drive_docs_size": 7798
     },
     {
       "mirror": "05_",
@@ -40,7 +42,10 @@
       "missing_bytes_at_check": 97874,
       "size_seen_on_drive": 46873,
       "size_kind": "export_bytes",
-      "note": "обрыв на строке O13; имя объекта (48 706 B) точно описывает снимок adf42fe4"
+      "note": "обрыв на строке O13; имя объекта (48 706 B) точно описывает снимок adf42fe4",
+      "drive_docs_size": 33612,
+      "git_blob_bytes": 48706,
+      "git_bytes_note": "48 706 B = блоб adf42fe4; это число и напечатано в имени объекта"
     },
     {
       "mirror": "07_",
@@ -53,7 +58,10 @@
       "missing_bytes_at_check": 19057,
       "size_seen_on_drive": 63878,
       "size_kind": "export_bytes",
-      "note": "в Git не попадало ни разу: файл заведён одним коммитом, снимок 67 420 B не существует"
+      "note": "в Git не попадало ни разу: файл заведён одним коммитом, снимок 67 420 B не существует",
+      "drive_docs_size": 38003,
+      "git_claimed_bytes": 67420,
+      "git_claimed_note": "67 420 B — размер снимка рабочего дерева круга 20; ревизии с таким размером в Git нет"
     },
     {
       "mirror": "08_",
@@ -66,7 +74,8 @@
       "missing_bytes_at_check": 0,
       "size_seen_on_drive": 12647,
       "size_kind": "export_bytes",
-      "note": "объект создан за 1 мин 45 с до коммита 26287a42; файл не менялся после"
+      "note": "объект создан за 1 мин 45 с до коммита 26287a42; файл не менялся после",
+      "drive_docs_size": 11134
     },
     {
       "mirror": "09_",
@@ -79,7 +88,8 @@
       "missing_bytes_at_check": 0,
       "size_seen_on_drive": 6230,
       "size_kind": "bytes",
-      "note": "md5 побайтово равен"
+      "note": "md5 побайтово равен",
+      "drive_file_bytes": 6230
     },
     {
       "mirror": "10_",
@@ -92,7 +102,8 @@
       "missing_bytes_at_check": 409,
       "size_seen_on_drive": 13657,
       "size_kind": "bytes",
-      "note": "md5 назвал ревизию bf7637fa"
+      "note": "md5 назвал ревизию bf7637fa",
+      "drive_file_bytes": 13657
     },
     {
       "mirror": "11_",
@@ -105,7 +116,8 @@
       "missing_bytes_at_check": 1751,
       "size_seen_on_drive": 23329,
       "size_kind": "bytes",
-      "note": "md5 назвал ревизию 26287a42"
+      "note": "md5 назвал ревизию 26287a42",
+      "drive_file_bytes": 23329
     },
     {
       "mirror": "12_",
@@ -118,7 +130,8 @@
       "missing_bytes_at_check": 104772,
       "size_seen_on_drive": 55215,
       "size_kind": "export_bytes",
-      "note": "обрыв после «По истории — 13.»; файл вырос на 182 %"
+      "note": "обрыв после «По истории — 13.»; файл вырос на 182 %",
+      "drive_docs_size": 29168
     },
     {
       "mirror": "13_",
@@ -131,7 +144,8 @@
       "missing_bytes_at_check": 11290,
       "size_seen_on_drive": 26873,
       "size_kind": "bytes",
-      "note": "md5 назвал ревизию 9458435b; 12 ревизий позади"
+      "note": "md5 назвал ревизию 9458435b; 12 ревизий позади",
+      "drive_file_bytes": 26873
     },
     {
       "mirror": "14_",
@@ -144,7 +158,8 @@
       "missing_bytes_at_check": 127,
       "size_seen_on_drive": 54269,
       "size_kind": "export_bytes",
-      "note": "конец на месте; отсутствуют две правки в середине (1648)"
+      "note": "конец на месте; отсутствуют две правки в середине (1648)",
+      "drive_docs_size": 29639
     },
     {
       "mirror": "15_",
@@ -157,7 +172,8 @@
       "missing_bytes_at_check": 33116,
       "size_seen_on_drive": 67347,
       "size_kind": "export_bytes",
-      "note": "обрыв после «Вестминстер об объёме»; отсутствуют D.2, D.3, §E"
+      "note": "обрыв после «Вестминстер об объёме»; отсутствуют D.2, D.3, §E",
+      "drive_docs_size": 36420
     },
     {
       "mirror": "16_",
@@ -170,7 +186,8 @@
       "missing_bytes_at_check": 0,
       "size_seen_on_drive": 11326,
       "size_kind": "bytes",
-      "note": "md5 побайтово равен"
+      "note": "md5 побайтово равен",
+      "drive_file_bytes": 11326
     }
   ]
 }

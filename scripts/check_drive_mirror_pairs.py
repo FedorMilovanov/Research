@@ -22,6 +22,12 @@
     python3 -B scripts/check_drive_mirror_pairs.py
     python3 -B scripts/check_drive_mirror_pairs.py --check
     python3 -B scripts/check_drive_mirror_pairs.py --summary   # одна строка
+    python3 -B scripts/check_drive_mirror_pairs.py --index     # что значит поле bytes в индексе
+
+Отдельно `--index` сверяет записи индекса библиотеки с этим реестром и печатает,
+какой из четырёх смыслов лежит в их поле `bytes` (внутренний размер Docs, размер
+git-блоба, реальные байты файла) и где `kind: file` стоит у Docs-объекта;
+подробности — `ИСКУПЛЕНИЕ/evidence/DRIVE_INDEX_BYTES_FIELD_2026-11-18.md`.
 
 `07_` записан без `revision`: его текст не попадал в Git ни разу, и это
 установлено, а не пропущено (`RIGHTS_MIRROR_07_STOP_POINT_2026-11-18.md`).
@@ -37,6 +43,7 @@ import sys
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 REGISTRY = ROOT / "docs" / "research" / "data" / "drive-mirror-pairs.json"
+INDEX = ROOT / "ИСКУПЛЕНИЕ" / "data" / "atonement-library-index.json"
 EXPECTED_MIRRORS = 13
 
 
@@ -129,6 +136,59 @@ def check_entry(entry: dict) -> tuple[list[str], dict]:
     return errors, info
 
 
+def index_records() -> dict[str, dict]:
+    """Записи индекса библиотеки по drive_id — чтобы сверить смысл поля `bytes`."""
+    if not INDEX.exists():
+        return {}
+    data = json.loads(INDEX.read_text(encoding="utf-8"))
+    return {rec["driveId"]: rec for rec in data.get("records", []) if rec.get("driveId")}
+
+
+def classify_bytes(entry: dict, rec: dict) -> tuple[str, bool]:
+    """Какой из четырёх смыслов лежит в поле `bytes` этой записи, и сходится ли он."""
+    declared = rec.get("bytes")
+    mime = str(rec.get("mime") or "")
+    if mime == "text/markdown":
+        expected = entry.get("drive_file_bytes")
+        if declared == expected:
+            return "реальные байты файла", True
+        return f"файл: в индексе {declared}, у объекта {expected}", False
+    docs_size = entry.get("drive_docs_size")
+    if declared == docs_size:
+        return "внутренний размер Docs", True
+    git_bytes = entry.get("git_blob_bytes")
+    if git_bytes and declared == git_bytes:
+        return "размер git-блоба", True
+    claimed = entry.get("git_claimed_bytes")
+    if claimed and declared == claimed:
+        return "размер git-блоба, ревизии с таким размером нет", True
+    return f"не опознан (в индексе {declared})", False
+
+
+def report_index(entries: list[dict]) -> int:
+    records = index_records()
+    if not records:
+        print("индекс библиотеки не найден или пуст", file=sys.stderr)
+        return 1
+    print(f"{'зеркало':<8} {'bytes':>8} {'kind':<9} смысл поля bytes")
+    contradictions = 0
+    for entry in entries:
+        rec = records.get(entry.get("drive_id") or "")
+        tag = entry.get("mirror", "?")
+        if not rec:
+            print(f"{tag:<8} {'—':>8} {'—':<9} записи в индексе нет")
+            continue
+        sense, fits = classify_bytes(entry, rec)
+        kind = str(rec.get("kind") or "?")
+        flag = ""
+        if str(rec.get("mime") or "") == "application/vnd.google-apps.document" and kind == "file":
+            flag = "  ← kind: file у Docs-объекта"
+            contradictions += 1
+        print(f"{tag:<8} {str(rec.get('bytes')):>8} {kind:<9} {sense}{'' if fits else '  ← расходится'}{flag}")
+    print(f"\nпротиворечий kind/mime: {contradictions} (нормализация — решение владельца, см. DRIVE_INDEX_BYTES_FIELD_2026-11-18.md)")
+    return 0
+
+
 def main(argv: list[str]) -> int:
     data, errors = load()
     mode_check = "--check" in argv
@@ -140,6 +200,9 @@ def main(argv: list[str]) -> int:
             entry_errors, info = check_entry(entry)
             errors.extend(entry_errors)
             infos.append(info)
+
+    if "--index" in argv:
+        return report_index(data.get("mirrors", []))
 
     if mode_summary:
         behind = [i["behind"] for i in infos if isinstance(i.get("behind"), int)]
