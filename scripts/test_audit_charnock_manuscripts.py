@@ -95,15 +95,15 @@ class ManuscriptStructureTests(unittest.TestCase):
             audit(self.root)
 
     def test_backstage_must_be_final_section(self):
-        self.modify('\\n## Another chapter\\nMust not follow backstage.\\n')
+        self.modify('\n## Another chapter\nMust not follow backstage.\n')
         with self.assertRaisesRegex(ValueError, 'backstage must be the final'):
             audit(self.root)
 
     def test_note_definition_not_in_backstage(self):
         path = self.manuscripts / MANUSCRIPTS[0]
         content = path.read_text(encoding='utf-8')
-        content = content.replace('[^1]: Source, printed p. 2.\\n', '')
-        path.write_text(content + '\\n[^1]: Source, printed p. 2.\\n', encoding='utf-8')
+        content = content.replace('[^1]: Source, printed p. 2.\n', '')
+        path.write_text(content + '\n[^1]: Source, printed p. 2.\n', encoding='utf-8')
         with self.assertRaisesRegex(ValueError, 'footnote definition outside sources'):
             audit(self.root)
 
@@ -111,8 +111,8 @@ class ManuscriptStructureTests(unittest.TestCase):
         path = self.manuscripts / MANUSCRIPTS[0]
         content = path.read_text(encoding='utf-8').replace(
             '## Источниковые примечания',
-            '## Что действительно подтверждает редакторскую похвалу\\n'
-            'Текст исследования.\\n\\n## Источниковые примечания')
+            '## Что действительно подтверждает редакторскую похвалу\n'
+            'Текст исследования.\n\n## Источниковые примечания')
         path.write_text(content, encoding='utf-8')
         self.assertEqual(audit(self.root)['footnotes'], 10)
 
