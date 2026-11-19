@@ -2197,7 +2197,19 @@
       },
       "reason": "Retain historical source quotations while explicitly withdrawing derivative interpretations before the reader encounters them.",
       "status": "INTEGRATED_SOURCE_CHECKED",
-      "historicalRetained": true
+      "historicalRetained": true,
+      "historicalRevisions": [
+        {
+          "id": "S50-2026-11-19-Strong-III-778-provenance-correction",
+          "oldText": "Значение: источник пастиша Strong III.778 (фраза о Мф. 26:28 приписана 1 Ин. 2:2); статья Прокопенко пастиш не воспроизводит. PD; `EXACT_LOCATOR_VERIFIED`.",
+          "replacementText": "Значение: текстуальные параллели у Ричардса к нескольким местам Кальвина; Стронг III.777 ссылается на Ричардса для исторического тезиса об эволюции взглядов Кальвина, но непосредственный источник составной цитаты III.778 не установлен (`PROVENANCE_OPEN`; научное решение MAX #583). Фразу «источник пастиша Strong III.778» считать `HISTORICAL / SUPERSEDED`, не доказанным путём заимствования. Статья Прокопенко пастиш не воспроизводит. PD; `EXACT_LOCATOR_VERIFIED` характеризует локаторы Ричардса, а не передачу цитаты.",
+          "basis": {
+            "file": "ИСКУПЛЕНИЕ/evidence/MAX_S40_STRONG_RICHARDS_WATTS_PROVENANCE_DECISION_2026-11-18.md",
+            "section": "## 2. Решение по одному спорному историческому утверждению"
+          },
+          "reason": "Narrow MAX #583 source-critical finding: Richards supplies parallels and a Strong p.777 thesis reference, but direct provenance of the p.778 composite quote is unproven; archive old overclaim without weakening S40 retained-preimage checks."
+        }
+      ]
     },
     {
       "id": "S41",
