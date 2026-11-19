@@ -1489,8 +1489,50 @@
 
 **Контекст для читателя (не вердикт).** По DeYoung/Клауберу (класс C), Пикте — фактический преемник Франсуа Турретина — был главным защитником Формулы против Ж.-А. Турретина в 1706 г. Статья называет «преемником» сына, и эта линия в ней не видна. Умысел не утверждается.
 
-**Попутно: расхождение источников о 1706 г.** Оппонент Чандлера (§13, л. 375) пишет, что при отмене подписки сохранялось устное обещание не учить вопреки Формуле. DeYoung (класс C, со ссылкой на Клаубера) пишет обратное: «Even a mediating measure requiring ministerial candidates to agree not to teach anything against the Formula could not be approved». По его словам, 6 сентября 1706 г. Совет принял новый чин рукоположения, который требовал только подписи под Ветхим и Новым Заветом и обещания не учить вопреки исповеданию и катехизису церкви. Оба свидетельства вторичны или полемичны: **`SOURCES_CONFLICT`**, HOLD до протоколов Совета 1706 г. Вердикт `SIMPLIFIED` для слов «отменена… в Швейцарии» (§13) не меняется: спор идёт только о Женеве.
+**Попутно: расхождение источников о 1706 г.** Оппонент Чандлера (§13, л. 375) пишет, что при отмене подписки сохранялось устное обещание не учить вопреки Формуле. DeYoung (класс C, со ссылкой на Клаубера) пишет обратное: «Even a mediating measure requiring ministerial candidates to agree not to teach anything against the Formula could not be approved». По его словам, 6 сентября 1706 г. Совет принял новый чин рукоположения, который требовал только подписи под Ветхим и Новым Заветом и обещания не учить вопреки исповеданию и катехизису церкви. Оба свидетельства вторичны или полемичны: **`SOURCES_CONFLICT`**, HOLD до протоколов Совета 1706 г. Вердикт `SIMPLIFIED` для слов «отменена… в Швейцарии» (§13) не меняется: спор идёт только о Женеве. *(Раунд 117, §40: текст формуляра 1706 г. найден у Боржо; конфликт разрешён частично.)*
 
 **Поправка к корпусу (мягко).** `27_` §4.4: Ж.-А. Турретин шёл «в сторону теологического деизма». Боржо (класс B; его оценка Турретина сочувственная, л. 645) пишет иначе: богословие у него стало наукой, «faisant la part de cette foi et de cette révélation, mais précisant leur domaine et ouvrant… de larges avenues aux procédés d'investigation de la critique rationnelle» (л. 632); «la plus grande évolution que le calvinisme ait accomplie» (л. 645, с. 549). Рационалистический поворот этим подтверждается, «деизм» — нет. Название статьи Клаубера в *SJT* 47:3 («The Triumph of Reason Over Revelation», класс C, только заглавие) говорит о сдвиге сильнее, но и оно не равно деизму. **`OVERSTATEMENT`** (корпус, мягко).
+
+Вердикты S1–S5 не меняются. Умысел не утверждается.
+
+## 40. Раунд 117 (2026-11-17): Женева, 1706 — текст нового формуляра по Боржо; «отменена в 1706 г.» (с. 8, сн. 27) и конфликт источников §39
+
+**Повод.** В §39 осталось `SOURCES_CONFLICT`. Оппонент Чандлера (§13, л. 375) пишет, что в 1706 г. сохранили обещание не учить вопреки Формуле. DeYoung/Клаубер (класс C) пишут, что такой компромисс не прошёл. В `06_` §15 записано: «Полные женевские акты… не получены».
+
+### 40.1. Источник
+
+Ch. Borgeaud, *Histoire de l'Université de Genève* I (1900), IA `histoiredelunive01borg` (тот же, что в §39; класс B). Боржо приводит текст формуляра в сноске по регистрам Компании и Совета. Это **дословная выдержка из акта**, но через издание 1900 г. (OCR; изображения страниц не открывались). Текст страниц получен через `BookReaderGetTextWrapper` (индекс страницы = лист − 1, сверено: индекс 630 → л. 631, индекс 629 → л. 630).
+
+Пагинация:
+- л. 630 = с. 538 (указатель: «Vial de Beaumont, ministre, 538»);
+- л. 631 = с. 539;
+- л. 627 = с. 535 (это уточняет «≈ с. 535» в §39);
+- л. 423 = с. 363 (`_page_numbers.json`).
+
+### 40.2. Что сказано
+
+| Лист (с.) | Текст (OCR; курсивное «Consensus» OCR не читает — восстановлено по контексту в [ ]) | Что даёт |
+|---|---|---|
+| л. 630 (с. 538), основной текст | «Dès 170[6], le [Consensus] subissait sa première défaite au sein de la Compagnie, dont la majorité, guidée par **le jeune successeur de Louis Tronchin**, dispensait le ministre Vial de Beaumont de la signature du [Consensus] réglementaire, puis adoptait un nouveau formulaire, infiniment moins rigide que les anciens, destiné à être lu aux candidats au saint ministère» | В 1706 г. отменена **подпись** под Формулой. Орган — Компания пасторов. Боржо сам называет Ж.-А. Турретина «преемником Луи Троншена» (ср. §39) |
+| л. 630, там же | «…le fils de François Turrettini avait trouvé devant lui, à la tête du parti de la résistance, son collègue Bénédict Pictet» | Класс B подтверждает: Ж.-А. — сын Франсуа; Пикте возглавлял защитников Формулы (ср. §39, класс C) |
+| л. 630, сноска | «Formulaire du 27 août 170[6], ratifié par le Conseil le 20 septembre: 1° Vous protestez et jurez devant Dieu de croire… tout ce qui est contenu dans les Saintes Écritures du Vieux et du Nouveau Testament, qui sont la véritable et unique règle de notre foi. 2° Vous promettez encore de n'enseigner rien qui ne soit conforme à la confession de foi et au catéchisme de cette Église… 3° **Vous êtes enfin exhorté à n'enseigner rien dans l'Église et dans l'Académie contre les canons du Synode de Dordrecht, contre les règlements de la Vénérable Compagnie et contre ceux des Églises de Suisse**; et cela pour le bien de la paix et pour garder l'uniformité dans la manière d'enseigner. — N'est-ce pas ce que vous promettez? — Réponse: Je le promets.» | Новый формуляр: Компания — 27.08.1706, Совет — 20.09.1706. П. 3 — «увещание» с ответом «обещаю»; Формула прямо **не названа**, но названы «règlements… des Églises de Suisse» |
+| л. 631 (с. 539) | «Pictet mourut en 1724. Il eut pour successeur Antoine Maurice. Un an après, la Compagnie, presque unanime, donnait le coup de grâce au [Consensus]: une décision, du 1er juin 1725, supprima tout formulaire» — остаётся только обещание по ст. VI *Ordonnances ecclésiastiques*: «Vous protestez de tenir la doctrine des saints Prophètes et Apôtres… de laquelle doctrine nous avons un sommaire dans notre Catéchisme» | Окончательный отказ Женевы — 01.06.1725 |
+| л. 423 (с. 363) | «Ce formulaire… fut approuvé par Berne, Zurich, Bâle et Schaffhouse, en 1675, et à Genève, après de longs débats, en 1678» | Ср. `27_`: «Женева приняла Формулу лишь в 1679 г.» По DeYoung (класс C): Компания — 1678, Совет — 1679. Расхождение объясняется разными органами |
+
+### 40.3. Итог
+
+| Вопрос | Итог |
+|---|---|
+| Сн. 27: «была отменена в 1706 г.» | Для **Женевы** точнее так. В 1706 г. Компания (27.08) и Совет (20.09) отменили **подпись** под Формулой. Новый формуляр всё же «увещевал» и брал обещание не учить против Дорта и «règlements… des Églises de Suisse». Всякий формуляр отменён 01.06.1725. Вердикт **`SIMPLIFIED`** (§13) не меняется, теперь у него точные акты и даты |
+| Конфликт §39 (обещание 1706 г.) | **Разрешён частично.** Оппонент Чандлера ближе к тексту: обещание было («Je le promets»), но в форме увещания и **без названия Формулы**. Слова DeYoung, что компромисс с прямым упоминанием Формулы не прошёл, тексту не противоречат. Его описание нового чина (только Писание, исповедание и катехизис) опускает п. 3. Новая метка — `SOURCES_CONFLICT` → `RESOLVED_PARTIAL` |
+| Дата решения Совета | Боржо (по регистрам) — 20.09.1706; DeYoung — 06.09.1706. Оба источника вторичные, Боржо ближе к актам. **`DATE_DISCREPANCY`** (мелко; на оценку статьи не влияет) |
+| Сн. 27: «преемник на богословской кафедре» (§39) | Усилено: Боржо прямо называет Ж.-А. Турретина «le jeune successeur de Louis Tronchin» (л. 630). Вердикт `FACT_ERROR` (мягко) прежний |
+
+**Корпус.**
+- `06_` §15: «Полные женевские акты… не получены». Теперь есть текст формуляра 1706 г. (класс B, по регистрам) с органом и датами. Подлинники регистров по-прежнему HOLD.
+- `27_` (пометка Волны 18, п. 3):
+  - «в Женеве обязательная подписка была отменена в 1706 г.» — **подтверждено**;
+  - «формальный отказ… — 1725 г.» — **подтверждено** (01.06.1725, Компания);
+  - «приняла лишь в 1679 г.» — верно для Совета; у Боржо 1678 (по DeYoung, это дата Компании).
 
 Вердикты S1–S5 не меняются. Умысел не утверждается.
