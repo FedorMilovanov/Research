@@ -76,8 +76,8 @@
     ]
   },
   "totals": {
-    "filesScanned": 3114,
-    "filesWithMentions": 907,
+    "filesScanned": 3116,
+    "filesWithMentions": 909,
     "mentions": {
       "ARCHIVE_HOLD": 1416,
       "BLOCKING-HOLD": 16,
@@ -100,14 +100,14 @@
       "LIVE-READBACK-HOLD": 4,
       "LOCATOR_HOLD": 1976,
       "PAGE-IMAGE-HOLD": 14,
-      "PUBLICATION_HOLD": 2604,
+      "PUBLICATION_HOLD": 2609,
       "RIGHTS_HOLD": 1460,
       "VERSION-HOLD": 23
     },
     "mentionsByStatus": {
       "closed": 821,
       "open": 2346,
-      "unmarked": 5989
+      "unmarked": 5994
     },
     "canonicalFlagLineStatesRecordedAsBothOpenAndClosed": 403,
     "filesWithJsonHolds": 38,
@@ -371,7 +371,7 @@
       }
     },
     "scripts": {
-      "files": 45,
+      "files": 47,
       "mentions": {
         "ARCHIVE_HOLD": 42,
         "BLOCKING-HOLD": 4,
@@ -394,14 +394,14 @@
         "LIVE-READBACK-HOLD": 1,
         "LOCATOR_HOLD": 23,
         "PAGE-IMAGE-HOLD": 2,
-        "PUBLICATION_HOLD": 107,
+        "PUBLICATION_HOLD": 111,
         "RIGHTS_HOLD": 51,
         "VERSION-HOLD": 4
       },
       "status": {
         "closed": 7,
         "open": 13,
-        "unmarked": 259
+        "unmarked": 263
       }
     },
     "БАПТИСТЫ РОССИИ": {
@@ -424,13 +424,13 @@
         "ARCHIVE_HOLD": 299,
         "EVIDENCE_HOLD": 75,
         "LOCATOR_HOLD": 425,
-        "PUBLICATION_HOLD": 352,
+        "PUBLICATION_HOLD": 353,
         "RIGHTS_HOLD": 213
       },
       "status": {
         "closed": 107,
         "open": 389,
-        "unmarked": 913
+        "unmarked": 914
       }
     },
     "ИСКУПЛЕНИЕ": {
@@ -27467,6 +27467,16 @@
       }
     },
     {
+      "path": "scripts/audit_charnock_manuscripts.py",
+      "corpus": "scripts",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
       "path": "scripts/audit_charnock_pastoral_contexts.py",
       "corpus": "scripts",
       "mentions": {
@@ -27669,6 +27679,16 @@
       },
       "status": {
         "unmarked": 1
+      }
+    },
+    {
+      "path": "scripts/test_audit_charnock_manuscripts.py",
+      "corpus": "scripts",
+      "mentions": {
+        "PUBLICATION_HOLD": 3
+      },
+      "status": {
+        "unmarked": 3
       }
     },
     {
@@ -28284,10 +28304,11 @@
       "path": "БИОГРАФИИ/Стивен Чарнок/manuscripts/INTRO_MIR_STEPHEN_CHARNOCK_WORKING_DRAFT.md",
       "corpus": "БИОГРАФИИ",
       "mentions": {
-        "PUBLICATION_HOLD": 1
+        "PUBLICATION_HOLD": 2
       },
       "status": {
-        "open": 1
+        "open": 1,
+        "unmarked": 1
       }
     },
     {
