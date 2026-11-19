@@ -44,7 +44,7 @@ jobs:
                   if tag != "equal":
                       changes.append({"i1": i1, "i2": i2, "old": "".join(a[i1:i2]), "new": "".join(b[j1:j2])})
               report[path] = {"old_lines": len(a), "new_lines": len(b), "ops": changes}
-          extra = subprocess.check_output(["git", "diff", "--name-only"]).decode("utf-8").splitlines()
+          extra = subprocess.check_output(["git", "-c", "core.quotePath=false", "diff", "--name-only"]).decode("utf-8").splitlines()
           if sorted(extra) != sorted(paths):
               raise RuntimeError("official generator touched unexpected paths: " + str(extra))
           payload = json.dumps(report, ensure_ascii=True, separators=(",", ":"))
