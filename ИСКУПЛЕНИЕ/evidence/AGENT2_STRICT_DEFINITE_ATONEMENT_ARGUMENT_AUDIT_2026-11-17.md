@@ -1580,3 +1580,16 @@ HOLD без изменений: CO 49:100, CO 45:706, `PRINT_IMAGE_HOLD`, пра
 | 4 | Сн. 27, «преемник» | Шафф: «Professor of Church History» — `FACT_ERROR` (мягко) прежний |
 
 **Вердикты S1–S5 не меняются.**
+
+## 74. Раунд 123 (2026-11-17): Шафф, pp. 486–489 — предисловие, кан. XIII/XVI, инфралапсарианство
+
+Подробности — `34_` §4.206 (Q202), S221; REPASS-документ, §46.
+
+| # | Место | Итог |
+|---|---|---|
+| 1 | С. 7–8: «как минимум инфралапсарианский» | Шафф, p. 487: «This is clearly the Augustinian infralapsarianism». Главная мысль подкреплена; `IMPRECISE_QUALIFIER` (мягко) прежний |
+| 2 | С. 7, сн. 25: кан. XIII | Перевод согласуется с латынью Шаффа (p. 488): «pro solis electis… solos illos… solos». ACCURATE |
+| 3 | `27_`: «487 fn. 932» / «488 fn. 936» / «pp. 487–489» | Сноска к предисловию начинается на p. 486 (`LOCATOR_IMPRECISE`, мелко); остальное подтверждено |
+| 4 | Контекст | Шафф, p. 488: «The infinite value and inherent sufficiency of Christ's satisfaction is not denied, but the divine intention and the practical efficiency are limited» |
+
+**Вердикты S1–S5 не меняются.**
