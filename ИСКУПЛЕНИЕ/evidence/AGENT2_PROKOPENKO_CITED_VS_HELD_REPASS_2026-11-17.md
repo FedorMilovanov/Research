@@ -370,7 +370,7 @@
 **Источники этого раунда** (все открыты в этой сессии; класс указан в каждой строке):
 - (а) Ph. Schaff, *The Creeds of Christendom* I (New York: Harper, 1877), §61. Скан IA `creedschristendo01scha`, поиск `inside.php`. Лист 510 = **p. 486** (колонтитулы: л. 509 — «485», л. 511 — «487»). Класс B (историк о документе; латинское предисловие здесь не перечитывалось).
 - (б) Перевод *Formula Consensus Helvetica* М. Клаубера (*Trinity Journal* 11 [1990]: 103–123), перепечатанный «by permission of the translator» на странице, которую даёт сама сн. 25: `rscottclark.org/2012/09/helvetic-consensus-formula-1675/` (сейчас перенаправляет на heidelblog.net). Класс B (авторизованная перепечатка перевода).
-- (в) S. Chandler, *The Case of Subscription to Explanatory Articles of Faith* (London, 1748), с приложением речи Ж.-А. Турретина. Скан IA `caseofsubscripti00chan`, `inside.php`: л. 5 (титул), л. 162 (заголовок речи), л. 167, л. 182. Класс B (английский перевод XVIII в. с французской рукописи; OCR). В том же томе IA далее переплетён ответ оппонента Чандлера (л. 339 и далее); его автор по титулу не сверен.
+- (в) S. Chandler, *The Case of Subscription to Explanatory Articles of Faith* (London, 1748), с приложением речи Ж.-А. Турретина. Скан IA `caseofsubscripti00chan`, `inside.php`: л. 5 (титул), л. 162 (заголовок речи), л. 167, л. 182. Класс B (английский перевод XVIII в. с французской рукописи; OCR). В том же томе IA далее переплетён ответ оппонента Чандлера (л. 339 и далее); его автор по титулу не сверен. *(Раунд 119, §42: по каталогу IA — Joseph Clarke, *A full and particular reply to Mr. Chandler's Case of subscription…*, London: W. Innys, 1749; титул в скане не открыт.)*
 - (г) *Glaubensbekenntnis und Verfassung der Gemeinden getaufter Christen, gewöhnlich Baptisten genannt* (Hamburg, 1847), ст. IV–VI. Текст по H. Steubing (Hrsg.), *Bekenntnisse der Kirche* (Wuppertal, 1985), pp. 272–282, в перепечатке reformedreader.org (`ccc/germanbaptist.htm`). Класс B. Та же формула ст. V — на theologische-links.de (класс C, подтверждение).
 - (д) Вероучение Grace Community Church:
   - «What We Teach», снимок Wayback **21.05.2015** (`20150521051706`). Класс A2 (архивная копия самой страницы).
@@ -1524,7 +1524,7 @@ Ch. Borgeaud, *Histoire de l'Université de Genève* I (1900), IA `histoiredelun
 | Вопрос | Итог |
 |---|---|
 | Сн. 27: «была отменена в 1706 г.» | Для **Женевы** точнее так. В 1706 г. Компания (27.08) и Совет (20.09) отменили **подпись** под Формулой. Новый формуляр всё же «увещевал» и брал обещание не учить против Дорта и «règlements… des Églises de Suisse». Всякий формуляр отменён 01.06.1725. Вердикт **`SIMPLIFIED`** (§13) не меняется, теперь у него точные акты и даты |
-| Конфликт §39 (обещание 1706 г.) | **Разрешён частично.** Оппонент Чандлера ближе к тексту: обещание было («Je le promets»), но в форме увещания и **без названия Формулы**. Слова DeYoung, что компромисс с прямым упоминанием Формулы не прошёл, тексту не противоречат. Его описание нового чина (только Писание, исповедание и катехизис) опускает п. 3. Новая метка — `SOURCES_CONFLICT` → `RESOLVED_PARTIAL` |
+| Конфликт §39 (обещание 1706 г.) | **Разрешён частично.** Оппонент Чандлера ближе к тексту: обещание было («Je le promets»), но в форме увещания и **без названия Формулы**. Слова DeYoung, что компромисс с прямым упоминанием Формулы не прошёл, тексту не противоречат. Его описание нового чина (только Писание, исповедание и катехизис) опускает п. 3. Новая метка — `SOURCES_CONFLICT` → `RESOLVED_PARTIAL` | *(Раунд 119, §42: оппонент — J. Clarke 1749; его фраза пересказывает собственное послесловие Чандлера, л. 182, — независимым свидетелем она не является.)*
 | Дата решения Совета | Боржо (по регистрам) — 20.09.1706; DeYoung — 06.09.1706. Оба источника вторичные, Боржо ближе к актам. **`DATE_DISCREPANCY`** (мелко; на оценку статьи не влияет) |
 | Сн. 27: «преемник на богословской кафедре» (§39) | Усилено: Боржо прямо называет Ж.-А. Турретина «le jeune successeur de Louis Tronchin» (л. 630). Вердикт `FACT_ERROR` (мягко) прежний |
 
@@ -1570,5 +1570,44 @@ Ch. Borgeaud, *Histoire de l'Université de Genève* I (1900), IA `histoiredelun
 | Чего статья не говорит | **`CONTEXT_OMITTED`** (мягко) — вердикт прежний, опора усилена. Для **Троншена** теперь класс B: ученик Камерона, друг Каппеля, «champion convaincu» либеральных тенденций. Для **Местреза** — класс B лишь в том, что он поддержал Троншена в 1669 г.; слово «амиральдист» по-прежнему держится на классе C (Wikipedia) |
 
 **Оговорка о жанре.** Эпизод 1669 г. Боржо пересказывает по записке из бумаг Ф. Турретина, то есть со слов противной стороны. Связь Троншена с Сомюром (л. 415–416) — собственный вывод Боржо, а не цитата из полемики.
+
+Вердикты S1–S5 не меняются. Умысел не утверждается.
+
+## 42. Раунд 119 (2026-11-17): сн. 27, 1706 — послесловие Чандлера к речи Турретина (л. 182); оппонент Чандлера — J. Clarke 1749 и зависит от Чандлера; дата речи
+
+**Повод.** В §13 (раунд 90) из тома Чандлера прочитаны л. 162, 167 и 182 (только строка с датой) и л. 375 — слова «оппонента Чандлера» об устном обещании не учить вопреки Формуле. В §39–40 эта фраза служила отдельным свидетелем против DeYoung/Клаубера. В §40 записано: «Оппонент Чандлера ближе к тексту». Автор оппонента не установлен, послесловие Чандлера к речи не прочитано.
+
+### 42.1. Источник
+
+S. Chandler, *The Case of Subscription to Explanatory Articles of Faith* (London, 1748), IA `caseofsubscripti00chan` (сервер `ia801403`, dir `/29/items/…`). Текст получен через `BookReaderGetTextWrapper`: индекс = лист − 1, сверено по `inside.php` (страница 182 = индекс 181). Класс B (OCR; изображения страниц не открывались).
+
+Метаданные IA (поле `description`): «With copy 2 is bound: A full and particular reply to Mr. Chandler's Case of subscription to explanatory articles of faith… / by **Joseph Clarke** (London: Printed for W. Innys, **1749**)». Это атрибуция каталога; титул в скане не открыт.
+
+### 42.2. Что сказано
+
+| Лист | Текст (OCR, длинное s нормализовано) | Что даёт |
+|---|---|---|
+| л. 181 (конец речи) | «So that your Lordships see, that they have nothing to object to **the Sentiments of our Society**…»; «**Our Society hath done their Duty.**… The Councils must now act according to their Pleasure»; «when this Affair shall be brought before the sovereign Council of CC…» | Турретин говорит **от имени Компании**, которая уже приняла решение. Речь обращена к Малому совету до передачи дела в Совет Двухсот. Это согласуется с Боржо: дело Виаля де Бомона → формуляр 27.08 → ратификация 20.09 (§40) |
+| л. 182 (дата) | «Pronounced in the Council of xxv, Tuesday, the 2[?]th of June, 1706» | Вторая цифра в OCR по-прежнему не читается. Вторники июня 1706 г. — 22 и 29 по григорианскому счёту; если дата юлианская — 25 июня. **Не установлено** (HOLD: изображение страницы) |
+| л. 182 (послесловие Чандлера) | «The Rector had all the Success he desired, all Subscriptions to human Formularies were abolished by publick Authority, and the Qualifications thenceforward required of all who offered themselves to the Ministry, were only these: 1. To swear solemnly, that they will teach nothing, neither in the Church nor Academy, but what they think is agreeable to the Word of God. 2. To promise, that they will teach nothing in the same, that is **contrary to the Consensus Helveticus, or the Confession of the Gallican Church; pour le Bien de la Paix**, for the Sake of Peace» | **Сам Чандлер — сторонник отмены подписки — сообщает, что обещание не учить вопреки *Consensus Helveticus* сохранилось** |
+| л. 375 (J. Clarke 1749) | «Mr. Chandler, having finished the translation of his French Manuscript, breaks forth… “What now is become of the united verdict of the Protestant world?”»; далее: «…not subscription as subscription, but, as subscription to the Formula Consensus: And at the same time a verbal promise is required, not to teach any doctrine contrary to it» | Кларк разбирает **послесловие Чандлера** (возглас «What now is become…» стоит на л. 182 сразу после двух пунктов). Его «verbal promise» — пересказ п. 2 Чандлера, **а не независимое свидетельство** |
+
+### 42.3. Сверка с формуляром по регистрам (Боржо, §40)
+
+| Чандлер 1748 (2 пункта) | Формуляр 27.08.1706 по Боржо (3 пункта) | Совпадение |
+|---|---|---|
+| 1. Клятва учить лишь согласное со Словом Божьим | 1° Клятва верить всему, что в Писании, «la véritable et unique règle de notre foi» | По смыслу |
+| — | 2° Обещание учить согласно «confession de foi et… catéchisme de cette Église» | У Чандлера отдельного пункта нет |
+| 2. Обещание не учить против «Consensus Helveticus, or the Confession of the Gallican Church; **pour le Bien de la Paix**» | 3° «exhorté» не учить против канонов Дорта, «règlements de la Vénérable Compagnie et… ceux des Églises de Suisse»; «**pour le bien de la paix**» — «Je le promets» | Общая французская формула «pour le bien de la paix» связывает п. 2 Чандлера с п. 3 формуляра. Чандлер передаёт «règlements… des Églises de Suisse» как *Consensus Helveticus*. Это его истолкование; в тексте акта, как его приводит Боржо, Формула не названа. «Confession of the Gallican Church» дословно не соответствует ни одному пункту |
+
+### 42.4. Итог
+
+| Вопрос | Итог |
+|---|---|
+| Кто «оппонент Чандлера» | **Joseph Clarke**, 1749 (по каталогу IA; класс B для атрибуции, титул не открыт) |
+| Независим ли его довод | **Нет.** Фраза Кларка об устном обещании пересказывает послесловие самого Чандлера (л. 182). Поправка к §40: вместо «оппонент Чандлера ближе к тексту» точнее «**Чандлер** (1748) прямо называет *Consensus Helveticus* в остаточном обещании, Кларк (1749) это повторяет» |
+| Конфликт с DeYoung/Клаубером | Метка **`RESOLVED_PARTIAL`** прежняя, теперь уточнена. Текст акта (Боржо) не называет Формулу — это согласуется с DeYoung: компромисс с её прямым названием не прошёл. Чандлер называет её, но это **пересказ**, а не текст акта (`PARAPHRASE_NOT_ACT`). По существу обе передачи сходятся: остаточное обещание «pour le bien de la paix» касалось и швейцарских «règlements» |
+| Сн. 27: «отменена в 1706 г.» | Вердикт **`SIMPLIFIED`** не меняется, опора расширена. Даже сторонник отмены (Чандлер, 1748) сообщает, что после 1706 г. требовалось обещание не учить вопреки *Consensus Helveticus*. Отменена была подписка, а не Формула как норма |
+| Дата речи | «Вторник, 2?-е июня 1706 г.»: 22 или 29 (по григорианскому счёту) либо 25 (по юлианскому) — **не установлено**. Речь произнесена после решения Компании и до ратификации Советом (л. 181) |
 
 Вердикты S1–S5 не меняются. Умысел не утверждается.

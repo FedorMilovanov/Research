@@ -153,7 +153,7 @@
 
 > **Дополнение 2026-11-17 (AGENT 2, раунд 90; `34_` §4.173, S188; строки выше не правились).**
 > - **Первичная опора для 1706 г.:** S. Chandler, *The Case of Subscription* (London, 1748), IA `caseofsubscripti00chan`. Л. 162: «The Speech of Mr. Turrettine, Rector of the Academy at Geneva, made to the Lesser Council for abolishing the Subscription to the Formula Consensus». Л. 182: «Pronounced in the Council of xxv, Tuesday, the 2[?]th of June, 1706» (вторая цифра дня в OCR не читается). Речь называет вопросы Формулы «Things purely indifferent» (л. 167).
-> - Оппонент Чандлера (тот же том, л. 375) утверждает, что при этом требовалось устное обещание не учить вопреки Формуле. По самой речи это не проверено.
+> - Оппонент Чандлера (тот же том, л. 375) утверждает, что при этом требовалось устное обещание не учить вопреки Формуле. По самой речи это не проверено. *(Раунд 119, REPASS §42: это Joseph Clarke, 1749, по каталогу IA. Его фраза пересказывает послесловие самого Чандлера, л. 182: «contrary to the Consensus Helveticus, or the Confession of the Gallican Church; pour le Bien de la Paix».)*
 
 > **Дополнение 2026-11-17 (AGENT 2, раунд 116; `34_` §4.199, S214; REPASS §39; строки выше не правились).**
 > - **Кафедры (Ch. Borgeaud, *Histoire de l'Université de Genève* I, 1900, IA `histoiredelunive01borg`):** Ж.-А. Турретин — профессор церковной истории 1697–1705, богословия 1705–1737 (л. 749 = с. 641). Кафедру отца в 1686 г. принял Б. Пикте (л. 560 = с. 478); сын получил кафедру Луи Троншена (л. 627). Статья (с. 8) называет сына «преемником на богословской кафедре» — `FACT_ERROR` (мягко).
