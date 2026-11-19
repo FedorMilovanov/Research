@@ -4054,7 +4054,7 @@
         "код": "5@13_AUGUSTINE_AND_MEDIEVAL_TURNING_POINT_2026-11-15",
         "лан": "fathers",
         "файл": "ИСКУПЛЕНИЕ/fathers/13_AUGUSTINE_AND_MEDIEVAL_TURNING_POINT_2026-11-15.md",
-        "строка": 132,
+        "строка": 134,
         "срез": "5. Фома Аквинский (*Summa Theologiae* IIIª qq. 46–49, 1272–1273) — `ORIGINAL_TEXT_VERIFIED` (Леонинская латынь, закрывает `F14-06`)",
         "класс": "БЕЗ МАРКЕРА",
         "маркеров": 0,
@@ -4798,9 +4798,9 @@
     ],
     "какЧитать": "покрытоМашинно — сколько кодов строк найдено в машинных списках того же реестра (карточки, молчания, заявки): сверка двух учётов лана, а не похвала сама себе",
     "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check fathers",
-    "measuredAt": "2026-11-19T21:57:11Z",
-    "checkedAt": "2026-11-19T21:57:11Z",
-    "предыдущийСъём": "2026-11-19T20:54:35Z"
+    "measuredAt": "2026-11-19T22:19:56Z",
+    "checkedAt": "2026-11-19T22:19:56Z",
+    "предыдущийСъём": "2026-11-19T22:15:45Z"
   },
   "patristicAndMedievalPrimaryDossierWave10": {
     "recordedAtUtc": "2026-11-15T17:05:00Z",

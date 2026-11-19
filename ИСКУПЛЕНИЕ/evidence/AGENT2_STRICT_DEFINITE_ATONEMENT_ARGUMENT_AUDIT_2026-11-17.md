@@ -1668,3 +1668,16 @@ HOLD без изменений: CO 49:100, CO 45:706, `PRINT_IMAGE_HOLD`, пра
 | 2 | С. 5, сн. 15–16: Гейдельберг, в. 37 и II Helv. как «неограниченное искупление» | Шафф на той же странице: «God's promises and Christ's redemption are general» (со ссылкой на в. 37 и II Helv. X). `SCHOLARLY_PRECEDENT` — контекст в пользу статьи. Наши вердикты (V\*, `OVERGENERALIZATION`, `INTERNAL_TENSION`) не меняются: у Шаффа «general» — в регистре предложения, а Дорт и WCF он ставит в те же рамки |
 
 **Вердикты S1–S5 не меняются.**
+
+## 81. Раунд 130 (2026-11-17): Ломбард, *Sent.* III, dist. XX, PL 192:799
+
+Подробности — `34_` §4.213 (Q209), S228; REPASS-документ, §53.
+
+| # | Место | Итог |
+|---|---|---|
+| 1 | С. 36, сн. 36: формула «sufficienter / efficaciter» как «утверждение Августина» | Дословно — у Ломбарда, PL 192:799 (Sent. III, dist. XX, § 3 по PL). `ATTRIBUTION_SHIFT` прежний |
+| 2 | `02_` п. 12: «cap. 3; PL 192:799» против `fathers/13_` «c. 5» | Нумерация разных изданий — `LOCATOR_EDITION_DEPENDENT` |
+| 3 | `02_` п. 12: «qui pro omnibus oblatus est…» | В PL: «qui se… obtulit pro omnibus…» — `QUOTE_NOT_VERBATIM` (мягко) |
+| 4 | Ломбард на Евр. 5:3: «Christus enim non nisi pro suis membris obtulit» | Противопоставление «за Себя / за других», не довод об объёме — `CONTEXT_REQUIRED` |
+
+**Вердикты S1–S5 не меняются.**
