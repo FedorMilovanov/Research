@@ -296,6 +296,10 @@
   - Сн. 28: на 2019 г. статьи об объёме нет — ACCURATE для своего времени; HOLD снят.
   - `TIME_BOUND` уточнён: статья «Atonement» («for all those the Father has given to Him») появилась между 02.05 и 01.06.2024. `09_` §4 — `QUOTE_NOT_VERBATIM` прежний.
   - Вердикты S1–S5 не меняются. Документ: REPASS, §49.
+- **раунд 127 (2026-11-17, AGENT 2):** §3 (S225), новый §4.210 (Q206): исповедание Одинцова 1928 г. по-русски (две перепечатки, класс C) — ст. IV–VI.
+  - С. 8: ст. V — «как овцы Его стада, за которых Он положит Свою жизнь (Ин. 10:15-16, 26-27)»; «за всех» нет. `OMITTED_RELEVANT_TEXT` (мягко) переносится на 1928 г.; 1906 г. — HOLD.
+  - `13_` §II.2: «страдательно… душу и Своё тело» в текстах 1928 г. нет — `QUOTE_NOT_VERBATIM` (мягко); пометки «[1906: …]» — `UNVERIFIED`.
+  - Вердикты S1–S5 не меняются. Документ: REPASS, §50.
 
 **Erratum (раунд 4).** В раунде 3 номера страниц протоколов Ассамблеи (S19) и Шедда II (S22) были выведены из индекса страниц OCR-API archive.org (`BookReaderGetTextWrapper`), который **не совпадает** с номером листа (`leafNum`) скана: для `minutesofsession00west` индекс = лист − 5, для `dogmatictheology02sheduoft` индекс = лист − 1. Сверка по `inside.php` (полнотекстовый поиск, возвращает `leafNum`) и `<id>_page_numbers.json` (лист → печатная страница) дала: **Minutes «pp. 150–155/156» → pp. 155–160/161** (листы 251–257); **Shedd «II.478, 482–483» → II.479, 483–484** (листы 489, 493–494). Все затронутые числа в S19, S22, §4.13, §4.16, §5–§8 исправлены **на месте** с пометкой «(испр. р. 4)»; содержание цитат не менялось. Локаторы раундов 1–2 (Minutes p. lv/lviii/lx/152, Shedd II.464–477, I.441, A. A. Hodge pp. 33–34) перепроверены тем же способом и **верны** (лист 248 = p. 152; лист 457 = I.441; лист 39 = Hodge p. 33).
 **Статус:** `ACTIVE RESEARCH / NO SETTLED VERDICT ON EXTENT / EVIDENCE_HOLD / PUBLICATION_HOLD`
@@ -683,6 +687,7 @@
 | S222 *(раунд 124, 2026-11-17)* | E. de Budé, *Vie de J.-A. Turrettini* (Lausanne, 1880), IA `viedejaturretti00budgoog`, полнотекстовый поиск `inside.php` (лист = поле «page»): л. 146 — «Voyons son rôle dans les débats de 1725»; л. 148–150 — Турретин со ссылкой на «Davenant dans un écrit adressé à Duræus»: «Pour appliquer ce formulaire de Suisse… il est certain qu'on va exclure quantité d'excellents serviteurs de Dieu… presque tous nos réformateurs, une bonne partie des théologiens réformés de France… ne seraient pas en état de signer ce formulaire»; л. 150–151 — «le 23 mars 1721, Wake dit à Turrettini: …le roi a signé la lettre et elle est maintenant en chemin pour Berne… les deux rois (d'Angleterre et de Prusse)»; л. 152 — «Quant à Werenfels il semble plutôt qu'il soit opportuniste: l'abrogation du formulaire lui paraît dangereuse, et il croit qu'il faut modérer le zèle des pasteurs… „gardez-vous… d'irriter les Confédérés“». Класс B (OCR) | Л. 152 — `VERIFIED` (пересказ Бюде); «1719–1725» — `DATE_INFERRED`; `27_` «1722–1723» против «23 mars 1721» — `DATE_STYLE_PROBABLE` (старый стиль), противоречия нет |
 | S223 *(раунд 125, 2026-11-17)* | (а) J. MacArthur, «Bible Questions and Answers, Part 39», GTY 70-11, 01.04.1990: «a strong case for a general atonement, for a universal atonement… what you could call a limited and unlimited atonement… I don't like to just take the title of believing in a limited atonement or particular redemption that Jesus died only for the elect, because I think that has some exegetical problems»; (б) «The Doctrine of Actual Atonement, Part 2», GTY 90-278, 14.11.2004 (= S183 а): «limited in its extent to those whom God chooses and saves»; (в) «Bible Questions and Answers, Part 54», GTY 70-26, 20.01.2008 — МакАртур зачитывает заметку MSB к 2 Пет. 2:1: «The terms which Peter used here are more analogical than theological, speaking of a human master over a household… the best response to that is that this is analogical»; (г) «Statement of Faith – IFCA International» (`pnwifca.org`): «died on the cross for all mankind as a representative, vicarious, substitutionary sacrifice… (… Hebrews 2:9… 2 Peter 2:1)». Класс B | С. 8 — верно для 2004+ (позиция менялась: 1990); сн. 58 — ACCURATE (с. 1955 — HOLD); §4.168 «другое чтение» — `CORPUS_OVERSTATEMENT` (мягко); формула IFCA подтверждена |
 | S224 *(раунд 126, 2026-11-17)* | Grace Community Church, «What We Teach. The Doctrinal Statement of Grace Community Church», `www.gracechurch.org/about/doctrinal-statement`, «сырые» снимки Wayback: `20191102153431id_` (02.11.2019) — статьи об объёме нет; «our Lord Jesus Christ accomplished our redemption through the shedding of His blood…»; «election is the act of God by which… He chose in Christ those whom He graciously regenerates, saves, and sanctifies»; `20240502013534id_` (02.05.2024) — то же; `20240601140441id_` (01.06.2024) — новая статья «Atonement»: «…has fully satisfied the justice of God…, propitiated the wrath of God…, procured reconciliation…, and purchased an everlasting inheritance in the kingdom of heaven…, for all those the Father has given to Him (John 6:39; 10:14–15, 28–29; 17:2, 9, 24)»; «accomplished the redemption of His people»; «He unconditionally chose». Класс A2 | Сн. 28 — ACCURATE для 2019 г. (HOLD снят); `TIME_BOUND`: перемена между 02.05 и 01.06.2024 |
+| S225 *(раунд 127, 2026-11-17)* | (а) «Баптистское вероисповедание 1928 года», `domblagodati.com/confession-of-faith`; (б) «Исповедание веры христиан-баптистов», `reformed.by` (05.12.1999; «Из архива журнала „В начале“, 1999 год. Н. В. Одинцов»). Ст. IV: «…Он от вечности предопределил [(б): предназначил] в жертву умилостивления Своего Единородного Сына… принесши за нас в жертву Свое тело и Свою душу… понесши гнев Божий и наказание за наши грехи»; ст. V: «…те лица из погибшего рода человеческого, которым в течение времени действительно должно быть усвоено искупление, избраны также Отцом… преданы в руки Искупителя, как Его народ, как овцы Его стада, за которых Он положит Свою жизнь (Ин. 10:15-16, 26-27), как Его наследие, как добыча Его смертной борьбы, и как Его невеста»; ст. VI: «…усвояет [(б): дает] им спасение приобретенное Христом». Класс C (две независимые перепечатки) | С. 8: `OMITTED_RELEVANT_TEXT` (мягко) для 1928 г.; `13_` §II.2 Член IV — `QUOTE_NOT_VERBATIM` (мягко), пометки «[1906]» — `UNVERIFIED`; 1906 — HOLD |
 
 **Ответ: П1 исторически неверен; «словом о цене» в английской традиции является *redemption*, а не *atonement*.**
 
@@ -8269,8 +8274,9 @@ hommes** selon ce propos déterminé…*» (с. 183) **есть в источн�
 | 4.207 | Q203 | Бюде, л. 146–152: Веренфельс «dangereuse» (л. 152) подтверждён дословно; письмо Уэйка 23.03.1721 и письма королей (`27_` «1722–1723» — вероятно, старый стиль); Давенант против «formulaire de Suisse» (р. 124) |
 | 4.208 | Q204 | МакАртур по GTY: 1990 — «limited and unlimited atonement», отказ от ярлыка; 2004 — «limited in its extent»; 2008 — заметка MSB к 2 Пет. 2:1 «more analogical than theological» (сн. 58 точна); формула IFCA (р. 125) |
 | 4.209 | Q205 | Вероучение GCC по Wayback `id_`: 2019 — статьи об объёме нет (сн. 28 точна для своего времени); статья «Atonement» — между 02.05 и 01.06.2024 (р. 126) |
+| 4.210 | Q206 | Одинцов 1928 по-русски: ст. V «за которых Он положит Свою жизнь» — `OMITTED_RELEVANT_TEXT` (мягко) для 1928 г.; `13_` Член IV не дословен; 1906 — HOLD (р. 127) |
 
-⇒ разделов с `Q` — **202**, разделов §4.x — **204**; пропуски нумерации прежние.
+⇒ разделов с `Q` — **203**, разделов §4.x — **205**; пропуски нумерации прежние.
 
 
 ### 4.139. Q135 — Приёмка раунда 61: связка Сомюра, аудит объёма, готовность к мерджу (раунд 61)
@@ -9208,7 +9214,7 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 6. **Павлов 1906 / Одинцов 1928.** Немецкий текст 1847 г., ст. V: избранные — «die Schafe seiner Herde, für welche er sein Leben lassen wollte». Слов «за всех» и «только» нет.
    - Тезис статьи буквально защитим, но статья умалчивает о частном намерении в ст. V — **`OMITTED_RELEVANT_TEXT`** (мягко).
    - Вывод `13_` §3 «опровергается» сильнее текста — **`OVERSTATED_REFUTATION`** (мягко).
-   - Русские тексты не сверены.
+   - Русские тексты не сверены. *(Раунд 127, §4.210: текст 1928 г. сверен по двум перепечаткам (класс C); 1906 г. — HOLD.)*
 7. **GCC (сн. 28).**
    - В редакции 2015 г. (Wayback 21.05.2015) статьи об объёме нет; стоит «accomplished our redemption».
    - В нынешней редакции (последняя правка 06.05.2024) есть статья «Atonement»: «…for all those the Father has given to Him (John 6:39; 10:14–15, 28–29; 17:2, 9, 24)»; стоит «accomplished the redemption of His people».
@@ -9786,6 +9792,19 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 2. **Когда появилась статья «Atonement».** Снимок 02.05.2024 ещё без неё. Снимок 01.06.2024 уже с ней: «…for all those the Father has given to Him (John 6:39; 10:14–15, 28–29; 17:2, 9, 24)». Одновременно «our redemption» → «the redemption of His people», в Election — «unconditionally chose». Это согласуется с пометкой «Last modified on May 6, 2024» (дата — вывод).
 3. **TMS.** Та же формула у TMS появилась между апрелем и июлем 2024 г. (§4.164, раунд 81). Совпадение по времени — наблюдение; общий источник не установлен.
 4. **`09_` §4.** Цитата «Election is the unconditional act of God…» не совпадает ни с одной редакцией 2015–2024 гг. `QUOTE_NOT_VERBATIM` прежний.
+
+Вердикты S1–S5 не меняются.
+
+### 4.210. Q206 — Исповедание Одинцова 1928 г. по-русски: ст. IV–VI (с. 8) (раунд 127, 2026-11-17)
+
+**Повод.** §4.173, п. 6: утверждение с. 8 проверено только по немецкому тексту 1847 г.; русские издания 1906/1928 гг. — HOLD (`06_` A047). `13_` §II.2 приводит русские формулы с пометками об изданиях 1906 и 1928 гг. без сверки. Источник — S225. Таблица — REPASS-документ, §50.
+
+**Ответы.**
+1. **Текст 1928 г.** Две независимые перепечатки (класс C) совпадают в ст. V: «как овцы Его стада, за которых Он положит Свою жизнь (Ин. 10:15-16, 26-27)», «как добыча Его смертной борьбы». Ст. VI: «усвояет им спасение приобретенное Христом» (в (б) — «дает»; немецкое «zueignet» поддерживает (а)). Ни «за всех», ни «только за избранных» нет.
+2. **С. 8 статьи.** Для издания 1928 г. — тот же вывод, что для 1847 г.: формула частного намерения есть, исключительной формулы нет. `OMITTED_RELEVANT_TEXT` (мягко). «Опровергается» в `13_` — `OVERSTATED_REFUTATION` (мягко), прежнее.
+3. **Перевод.** Нем. «für welche er sein Leben lassen wollte» → «за которых Он положит Свою жизнь»: прошедшее волевое передано будущим; смысл намерения сохранён.
+4. **`13_` §II.2.** Член IV («страдательно принесши за нас в жертву Свою душу и Своё тело») в текстах 1928 г. не найден: там «принесши за нас в жертву Свое тело и Свою душу». `QUOTE_NOT_VERBATIM` (мягко). Пометки «[1906: действительное]», «присвоено» — `UNVERIFIED`; «[1928: усвоено]» подтверждено.
+5. **Павлов 1906.** Издание не найдено — HOLD.
 
 Вердикты S1–S5 не меняются.
 
