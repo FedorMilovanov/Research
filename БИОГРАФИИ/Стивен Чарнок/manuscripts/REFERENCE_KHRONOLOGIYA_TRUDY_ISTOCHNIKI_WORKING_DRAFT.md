@@ -3,7 +3,7 @@
 **Серия:** Стивен Чарнок · Справочник  
 **Состояние:** `DRAFT / RESEARCH_ONLY / PUBLICATION_HOLD` — рабочий справочный текст, не утверждённое приложение для печати  
 **Основа:** [Research, том 16, §21.1, REFERENCE](../16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md), [хронология и сорок решений, том 02](../02_LIFE_CHRONOLOGY_AND_DATE_CONFLICTS.md), [издания, том 03](../03_WORKS_EDITIONS_AND_PUBLICATION_CHRONOLOGY.md).  
-**Дата версии:** 18 ноября 2026 года.
+**Дата первого черновика:** 18 ноября 2026 года.
 
 ---
 
