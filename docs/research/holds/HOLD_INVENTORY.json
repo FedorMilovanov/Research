@@ -2,8 +2,8 @@
  "schemaVersion": 1,
  "artifact": "REPO-HOLD-INVENTORY",
  "role": "DERIVED_READ_ONLY_NOT_AUTHORITY",
- "generatedAt": "2026-11-18",
- "testedCommit": "a55c30c32ea04c8b0d91e2f6184b65a375cd68be",
+ "generatedAt": "2026-11-19",
+ "testedCommit": "096aa47fef1b0f6481e7aee11b284e1663dfb123",
  "policy": "data/repository-evidence-policy-v2.json",
  "totals": {
   "json_files_with_holds": 35,
@@ -16,11 +16,11 @@
    "PUBLICATION_HOLD": 1964,
    "RIGHTS_HOLD": 1355
   },
-  "markdown_files_with_typed_tokens": 763,
-  "markdown_typed_tokens": 7179,
+  "markdown_files_with_typed_tokens": 764,
+  "markdown_typed_tokens": 7182,
   "markdown_typed_by_type": {
-   "ARCHIVE_HOLD": 1176,
-   "EVIDENCE_HOLD": 1089,
+   "ARCHIVE_HOLD": 1177,
+   "EVIDENCE_HOLD": 1091,
    "LOCATOR_HOLD": 1586,
    "PUBLICATION_HOLD": 2113,
    "RIGHTS_HOLD": 1215
@@ -90,7 +90,7 @@
   },
   "docs": {
    "json_nodes_with_holds": 219,
-   "markdown_hold_tokens": 2386
+   "markdown_hold_tokens": 2389
   },
   "БАПТИСТЫ РОССИИ": {
    "json_nodes_with_holds": 0,
