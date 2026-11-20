@@ -336,6 +336,10 @@
   - Английский оригинал (1984, pp. 506–507; так же в изданиях 2001 и 2017 гг.): «the two most widely adopted and authoritative of the Reformed statements of faith». Сн. 17 — ACCURATE; страница русского перевода (с. 312) — HOLD.
   - Вывод «оба содержат исповедание неограниченного искупления» — собственный, Шнукеру не приписан.
   - Вердикты S1–S5 не меняются. Документ: REPASS, §59.
+- **раунд 137 (2026-11-17, AGENT 2):** §3 (S235), новый §4.220 (Q216): Лютер, сн. 5 — страницы *LW* 26 через соответствия с WA 40/I.
+  - *LW* 26:277 = WA 433 (Ryken 2005; Schroeder 2016); *LW* 26:285 = WA 444b–445 (*Luther Refracted*, 2015); *LW* 26:281 = WA 439. Локатор «p. 285, 277» — `LOCATOR_VERIFIED` (класс B).
+  - Третья фраза («от первого человека до последнего дня») — по-прежнему `WORDING_NOT_LOCATED` (мягко).
+  - Вердикты S1–S5 не меняются. Документ: REPASS, §60.
 
 **Erratum (раунд 4).** В раунде 3 номера страниц протоколов Ассамблеи (S19) и Шедда II (S22) были выведены из индекса страниц OCR-API archive.org (`BookReaderGetTextWrapper`), который **не совпадает** с номером листа (`leafNum`) скана: для `minutesofsession00west` индекс = лист − 5, для `dogmatictheology02sheduoft` индекс = лист − 1. Сверка по `inside.php` (полнотекстовый поиск, возвращает `leafNum`) и `<id>_page_numbers.json` (лист → печатная страница) дала: **Minutes «pp. 150–155/156» → pp. 155–160/161** (листы 251–257); **Shedd «II.478, 482–483» → II.479, 483–484** (листы 489, 493–494). Все затронутые числа в S19, S22, §4.13, §4.16, §5–§8 исправлены **на месте** с пометкой «(испр. р. 4)»; содержание цитат не менялось. Локаторы раундов 1–2 (Minutes p. lv/lviii/lx/152, Shedd II.464–477, I.441, A. A. Hodge pp. 33–34) перепроверены тем же способом и **верны** (лист 248 = p. 152; лист 457 = I.441; лист 39 = Hodge p. 33).
 **Статус:** `ACTIVE RESEARCH / NO SETTLED VERDICT ON EXTENT / EVIDENCE_HOLD / PUBLICATION_HOLD`
@@ -733,6 +737,7 @@
 | S232 *(раунд 134, 2026-11-17)* | G. R. Lewis, B. A. Demarest, *Integrative Theology*, vol. 2 (Grand Rapids: Zondervan), p. 381: IA `integrativetheol0000dema_t1r1` и однотомник 1996 г. `integrativetheol0000lewi` (оба с ограниченным доступом). Полнотекстовый индекс archive.org (`openlibrary.org/search/inside.json`), цепочка перекрывающихся фраз: «proponents argue that the design of the cross» → «those persons the Father gave to the» → «Son. Christ allegedly died for all» → «Adam sinned for all who were related» → «For high Calvinism the question» → «follows from God's logically prior elective» → «the high Calvinist claims that» → «Christ died solely for those predestined» → «the divine decree assigning people» → «to life or death (chap. III) precedes» (discussion of the work of Christ); «John Owen judges that none of God's intentions» (после «…by the Father.“ (II.8)»). Индекс ищет по книге целиком; `page_num` один на документ. Страница — по указателю (Блёш и Тюрретин, p. 381; S231). Текст статьи — веб-PDF teoblogia, фрагмент 11. Класс A2 | Сн. 83 — `LOCATOR_VERIFIED`; ACCURATE для «эффективности»; «достаточность у ранних авторов» — `SIMPLIFIED` (мягко) |
 | S233 *(раунд 135, 2026-11-17)* | J. R. White, *The Potter's Freedom: A Defense of the Reformation and a Rebuttal of Norman Geisler's Chosen but Free* (Amityville, NY: Calvary Press, 2000): IA `pottersfreedomde0000whit` (ограниченный доступ). Полнотекстовый индекс archive.org (`openlibrary.org/search/inside.json`): «256 THE POTTER'S FREEDOM» → «…twenty-nine page article written by Roger Nicole / 256 THE POTTER'S FREEDOM / titled „John Calvin's View of the Extent…“»; «254 THE POTTER'S FREEDOM» — 0 совпадений (колонтитул не распознан); цепочка: «would have italicized this statement» → «he does not include the reprobate» → [стык не доказан] → «response to Heshusius is especially telling» → «not shed to expiate» → «Calvin's use of terms such as» → «the work of intercession must be» → «considered. CBF does not even» → «attempt a fair review of Calvin on this point» → «The Fall, 1985 issue of the Westminster Theological Journal». Указатель Писания: «1 Timothy 2:4 … 169, 257, 259». Индекс ищет по книге целиком. Текст статьи — веб-PDF teoblogia, фрагмент 1. Класс A2 | Сн. 9 — `LOCATOR_VERIFIED`; ACCURATE; `SOURCE_SAYS_MORE` (мягко) |
 | S234 *(раунд 136, 2026-11-17)* | W. A. Elwell (ed.), *Evangelical Dictionary of Theology* (Grand Rapids: Baker, 1984), статья «Helvetic Confessions», подпись R. V. Schnucker; IA `evangelicaldicti00elwe`; 2-е изд. (2001) `evangelicaldicti0000unse_k3p7`; 3-е изд. (2017) `evangelicaldicti0000unse_m4p4_3edi`. Полнотекстовый индекс archive.org (`openlibrary.org/search/inside.json`): «Second Helvetic Confession are the two most widely» → 1984: «…most widely / 507 / Helvetic Confessions»; «thoritative Reformed» → 2017: «the two most widely adopted and au- thoritative Reformed statements»; «R. V. SCHNUCKER» + «WALTER A. ELWELL, EDITOR» → 1984 и 2001: «[adopted and] authoritative of the Reformed statements of faith. R. V. Schnucker. See also Bullinger, Johann Heinrich»; «fession of 1566, composed by Heinrich Bullinger» → «…with thirty extensive chapters and widely endorsed». Список авторов 2017 г.: «Robert V. Schnucker… Heidelberg Catechism; Helvetic Confessions». Русский перевод 2003 г. не найден. Текст статьи — веб-PDF teoblogia, фрагменты 1–2. Класс A2 | Сн. 17 — ACCURATE; рус. с. 312 — HOLD |
+| S235 *(раунд 137, 2026-11-17)* | Полнотекстовый индекс archive.org (`openlibrary.org/search/inside.json`): (а) P. G. Ryken, *Galatians* (P&R, 2005), IA `galatians0000ryke`: «He has and bears all the sins of all men in His body» + «Luther, Galatians, 26:277. 16. Ibid., 26:284»; (б) *Gift and Promise* (Fortress, 2016), IA `giftpromiseaugsb0000unse`: та же цитата + «LW 26:277»; (в) *Luther Refracted* (Fortress, 2015), IA `lutherrefractedr0000unse`: «LW 26:285; WA 40/I:444b», «LW 26:285; WA 40/I:445», «LW 26:281; WA 40/I:439», «LW 26:292; WA 40/I:454»; (г) WA 40/I, IA `werkekritischege40luthuoft`, `BookReaderGetTextWrapper` лл. 457–458 = pp. 444–445. Класс B (соответствия по вторичным источникам) + A2 (WA) | Сн. 5 — `LOCATOR_VERIFIED` (класс B) |
 
 **Ответ: П1 исторически неверен; «словом о цене» в английской традиции является *redemption*, а не *atonement*.**
 
@@ -8329,8 +8334,9 @@ hommes** selon ce propos déterminé…*» (с. 183) **есть в источн�
 | 4.217 | Q213 | Lewis & Demarest II, p. 381: сн. 83 — «not merely to provide salvation but to secure» подтверждает «эффективность»; пара «достаточность / эффективность» — рамка статьи (р. 134) |
 | 4.218 | Q214 | White, *The Potter's Freedom*, p. 255: сн. 9 — Гессгусен («especially telling») и 1 Ин. 2:2 перед колонтитулом «256»; 1 Тим. 2:4 — с. 257, 259 (р. 135) |
 | 4.219 | Q215 | Шнукер, «Helvetic Confessions» (Элвелл 1984, pp. 506–507): сн. 17 — «two most widely adopted and authoritative» — точно; рус. с. 312 — HOLD (р. 136) |
+| 4.220 | Q216 | Лютер, сн. 5: *LW* 26:277 = WA 40/I, 433; *LW* 26:285 = WA 444b–445 — локатор `LOCATOR_VERIFIED` (класс B) (р. 137) |
 
-⇒ разделов с `Q` — **212**, разделов §4.x — **214**; пропуски нумерации прежние.
+⇒ разделов с `Q` — **213**, разделов §4.x — **215**; пропуски нумерации прежние.
 
 
 ### 4.139. Q135 — Приёмка раунда 61: связка Сомюра, аудит объёма, готовность к мерджу (раунд 61)
@@ -9504,12 +9510,12 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 1. **«Он взял и несет грехи всех людей в Своем теле»** — дословно: WA 40/I, 433, «qui habet et portat omnia omnium peccata in corpore suo. Non quod ipse commiserit ea, sed quod ea a nobis commissa susceperit in corpus».
 2. **«Он понес грехи всего мира»** — WA 40/I, 443, «cum ita gestaret in nostra larva peccatum totius mundi… pro nobis Maledictum factus est»; ср. «mea, tua et totius mundi peccata in sese recepisset».
 3. **«Грехи всего мира, от первого человека и до последнего дня истории, лежат на плечах одного, родившегося от Марии»** — по смыслу: 439, «totius mundi peccata praeterita, praesentia et futura»; 442, «imponere in humeros suos peccata». Буквальная форма в WA 40/I, 432–444 не найдена — `WORDING_NOT_LOCATED` (мягко; возможно, вольная передача или формула *LW*).
-4. **Локатор.** Страницы *LW* не проверены. При обычном соответствии *LW* 26:277 ≈ WA 40/I, 433 ссылка правдоподобна (`PLAUSIBLE`).
+4. **Локатор.** Страницы *LW* не проверены. При обычном соответствии *LW* 26:277 ≈ WA 40/I, 433 ссылка правдоподобна (`PLAUSIBLE`). *(Раунд 137, §4.220: соответствие подтверждено тремя независимыми вторичными источниками — `LOCATOR_VERIFIED`, класс B.)*
 5. **Контекст.** WA 40/I, 444: «sola Fides apprehendit hanc victoriam Christi. Quatenus igitur hoc credis, eatenus habes». Всеобщее несение и обладание по вере — та же схема, что у статьи на с. 31. `CONTEXT_OMITTED` не ставится.
 6. **Граница вывода.** Лютер — свидетель всеобщего языка несения грехов. Вопрос о намерении в смысле позднейших споров (Дорт II.8) он не решает, и статья ему этого не приписывает.
 7. **Green, сн. 56–57.** На IA только экземпляры с ограниченным доступом — HOLD.
 
-**Чего нет.** *LW* 26, pp. 277, 285 (печатные страницы); Green, p. 118.
+**Чего нет.** *LW* 26, pp. 277, 285 (печатные страницы) *(раунд 137: сверены косвенно — §4.220)*; Green, p. 118.
 
 Вердикты S1–S5 не меняются.
 
@@ -9986,6 +9992,22 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 2. **Автор.** Статья подписана «R. V. Schnucker». В списке авторов издания 2017 г. за ним записаны «Heidelberg Catechism; Helvetic Confessions». Атрибуция верна.
 3. **Страница.** Русский перевод (М.: Духовное возрождение, 2003, с. 312) не найден, поэтому номер страницы — HOLD. Русский словарь — перевод английского (изд. 1984), и статья с такой подписью в нём есть, так что сомнений в источнике нет.
 4. **Следующая фраза статьи** («Оба они содержат исповедание неограниченного искупления») сноской 17 не помечена. Она опирается на цитаты из сн. 15–16 (§4.166). В видимых фрагментах статьи Шнукера о масштабе искупления ничего нет. Это собственный вывод статьи, Шнукеру он не приписан.
+
+Вердикты S1–S5 не меняются.
+
+
+### 4.220. Q216 — Лютер, сн. 5: страницы *LW* 26 через соответствия с WA 40/I (раунд 137, 2026-11-17)
+
+**Повод.** В §4.185 (раунд 102) цитата сверена по WA 40/I, а локатор *LW* остался `PLAUSIBLE`. Источник — S235. Таблица — REPASS-документ, §60.
+
+**Вопрос.** Стоят ли места, которые статья цитирует, на *LW* 26, pp. 285 и 277?
+
+**Ответы.**
+1. **p. 277.** Да. Ryken (2005) и Schroeder и др. (2016) независимо цитируют «He has and bears all the sins of all men in His body» с ссылкой «26:277». Это WA 40/I, 433 — вторая фраза статьи.
+2. **p. 285.** Да, по сводке соответствий: *Luther Refracted* (2015) дважды даёт «LW 26:285» = «WA 40/I:444b» и «:445». На WA 445 Лютер пишет, что Отец возложил на Христа «peccata totius mundi» и Он победил их в Своём теле. Это первая фраза статьи («Он понес грехи всего мира»).
+3. **Третья фраза.** Ближайшее по смыслу место — *LW* 26:281 = WA 439 («peccata praeterita, praesentia et futura»). Буквальной формы по-прежнему нет: `WORDING_NOT_LOCATED` (мягко).
+4. **Контекст.** На той же *LW* 26:285 (WA 444) стоит «Quatenus igitur hoc credis, eatenus habes». Вывод §4.185 об отсутствии `CONTEXT_OMITTED` подкреплён.
+5. **Граница.** Изображения страниц *LW* не видены. Класс B: соответствие по вторичным источникам.
 
 Вердикты S1–S5 не меняются.
 

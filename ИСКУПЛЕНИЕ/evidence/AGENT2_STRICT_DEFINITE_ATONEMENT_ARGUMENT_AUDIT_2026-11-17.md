@@ -1760,3 +1760,16 @@ HOLD без изменений: CO 49:100, CO 45:706, `PRINT_IMAGE_HOLD`, пра
 | 4 | «Оба они содержат исповедание неограниченного искупления» | Собственный вывод статьи (сн. 15–16), Шнукеру не приписан |
 
 **Вердикты S1–S5 не меняются.**
+
+## 88. Раунд 137 (2026-11-17): Лютер, сн. 5 — страницы *LW* 26
+
+Подробности — `34_` §4.220 (Q216), S235; REPASS-документ, §60.
+
+| # | Место | Итог |
+|---|---|---|
+| 1 | *LW* 26:277 | = WA 40/I, 433 («qui habet et portat omnia omnium peccata in corpore suo»); Ryken (2005) и Schroeder (2016) дают ту же цитату с «26:277». `LOCATOR_VERIFIED` |
+| 2 | *LW* 26:285 | = WA 40/I, 444b–445 («Luther Refracted», 2015, дважды); WA 445: «Christus in quem Pater coniecit peccata totius mundi». `LOCATOR_VERIFIED` (класс B) |
+| 3 | Третья фраза | Ближайший смысл — *LW* 26:281 = WA 439. `WORDING_NOT_LOCATED` (мягко) — без изменений |
+| 4 | Контекст | «Quatenus credis, eatenus habes» — та же *LW* 26:285; `CONTEXT_OMITTED` не ставится (как в §25) |
+
+**Вердикты S1–S5 не меняются.**
