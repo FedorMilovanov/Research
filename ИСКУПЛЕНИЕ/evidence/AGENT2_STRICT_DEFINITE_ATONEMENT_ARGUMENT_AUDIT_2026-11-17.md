@@ -1706,3 +1706,17 @@ HOLD без изменений: CO 49:100, CO 45:706, `PRINT_IMAGE_HOLD`, пра
 | 3 | «Арминий и Гомар» | `SOURCE_CONTRADICTS_CLAIM` прежний: фраза о Гомаре («learned and zealous defender of Calvinism») во всех четырёх печатях одна и та же |
 
 **Вердикты S1–S5 не меняются.**
+
+## 84. Раунд 133 (2026-11-17): Lewis & Demarest, *Integrative Theology* II, pp. 380–381
+
+Подробности — `34_` §4.216 (Q212), S231; REPASS-документ, §56.
+
+| # | Место | Итог |
+|---|---|---|
+| 1 | С. 5, сн. 18 (Л. и Д. II, p. 381) | «Scholastic Calvinism, however, narrowed the intent of the atonement…». `LOCATOR_VERIFIED`; ACCURATE для слов при сноске («схоластический кальвинизм») |
+| 2 | С. 5: Беза «ввёл» ограниченное искупление вместе с супралапсарианской схемой | Своей сноски нет; в OCR т. 2 слова «Beza» нет. `UNSOURCED_CLAIM` (мягко); прежний `SIMPLIFIED` остаётся |
+| 3 | С. 4, сн. 13 | «In his later commentaries Calvin more clearly postulates an unlimited atonement. With regard to Galatians…» — ACCURATE, `SCHOLARLY_PRECEDENT` |
+| 4 | С. 11, сн. 45 | «Spurgeon, Charles Haddon, 380» в указателе — `LOCATOR_VERIFIED` |
+| 5 | REPASS §2, строка 7 | «через Lewis & Demarest (сн. 18)» — `CORPUS_MISREAD` (мягко) |
+
+**Вердикты S1–S5 не меняются.**

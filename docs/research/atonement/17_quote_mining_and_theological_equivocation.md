@@ -216,6 +216,11 @@
 > - **Винсент (сн. 106).** p. 475, сноска к «All things»: цитата точна («a larger purpose of God in redemption than is commonly conceived»). Опущено начало той же сноски: «Paul's declarations elsewhere as to the ultimate fate of evil men and angels, must certainly be allowed their full weight». «Нач. XIX в.» противоречит собственной дате статьи (т. 3 — 1887): `DATE_ERROR`.
 > - **Винсент и Лайтфут (сн. 102).** τὰ πάντα — «the whole universe, material and spiritual» (Винсент); «universal nature… material as well as spiritual» (Лайтфут, перепечатка изд. 1879, pp. 159–160). Это шире, чем «земное = люди, небесное = ангелы»: `SOURCE_BROADER_THAN_CLAIM`.
 > - **«Мэттью Генри» (сн. 105).** Пересказ точен («all holy creatures, angels as well as men, into one glorious and blessed society»), но в *Exposition* VI (1828) Колоссянам помечено «Completed by Dr. W. Harris» (л. 593): `AUTHORSHIP_NOTE`.
+>
+> **Дополнение (раунд 133, 2026-11-17; `34_` §4.216, S231; REPASS §56) — строка 43 (Льюис и Демарест).**
+> - **Сн. 18 (с. 5).** Т. 2, p. 381: «Scholastic Calvinism, however, narrowed the intent of the atonement…» — точно для слов при сноске. Фраза о Безе своей сноски не имеет; в т. 2 Беза не назван.
+> - **Сн. 13 (с. 4).** «In his later commentaries Calvin more clearly postulates an unlimited atonement. With regard to Galatians…» — тот же пример Гал. 5:12; статья следует ходу мысли Л. и Д.
+> - **Сн. 45 (с. 11).** Сперджен в указателе т. 2 — p. 380; локатор «380–381» верен.
 
 Свежая контрольная сверка Робертсона на 1 Ин. 2:2 подтвердила именно всеобщее обеспечение при примирении с Богом: в данном месте цитата Прокопенко соответствует собственному тексту комментатора. Его нельзя объявить скрытым строгим оппонентом только по месту преподавания. Иэн Х. Мюррей в примечаниях 44–45 — автор *The Forgotten Spurgeon*, а не Джон Мюррей, автор *Redemption Accomplished and Applied*. Посредничество источника указано самой статьёй; русский 2003 и MTP VII, 26 остаются отдельной задачей колляции. [Робертсон, стих 2](https://www.studylight.org/commentaries/eng/rwp/1-john-2.html), [издательская запись Мюррея](https://banneroftruth.org/uk/store/theology/forgotten-spurgeon/).
 

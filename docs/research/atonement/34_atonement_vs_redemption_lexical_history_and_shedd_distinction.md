@@ -144,7 +144,7 @@
   - **Корпус:** `13_` §3 «опровергается» — `OVERSTATED_REFUTATION`; `09_` §4 — `QUOTE_NOT_VERBATIM` и `UNSOURCED_CLAIM`.
   - Вердикты S1–S5 не меняются. Документ: REPASS, §13. (Исправление: в записи раунда 89 указатель «REPASS, §10» следует читать «§12».)
 - **раунд 91 (2026-11-17, AGENT 2):** §3 (S189), новый §4.174 (Q170): сноски 6, 9, 16, 19 и 85 — Аллен (ETS 2017, PDF автора через Wayback) и Шафф III.
-  - **Сн. 19** (Allen, p. 4) — точно. Рядом стоит «введена Безой» (сн. 18), хотя Аллен на той же странице пишет «no one suggested that Beza single-handedly caused such a shift» — `SIMPLIFIED` (мягко).
+  - **Сн. 19** (Allen, p. 4) — точно. Рядом стоит «введена Безой» (сн. 18), хотя Аллен на той же странице пишет «no one suggested that Beza single-handedly caused such a shift» — `SIMPLIFIED` (мягко). *(Раунд 133, §4.216: сн. 18 стоит после слов «схоластическом кальвинизме»; у фразы о Безе своей сноски нет, а в т. 2 Л. и Д. Беза не назван.)*
   - **Сн. 9:** чтение ответа Хесхузию воспроизводит Аллена и Рувендаля (pp. 7–8) — точно. Вывод Рувендаля («do not prove positively that he subscribed to universal atonement») опущен — `CONTEXT_OMITTED`. «Переписка» вместо «трактат» — `IMPRECISE_TERM`.
   - **Сн. 85** (Schaff III, p. 738) — точно, но источник называет и Савойскую декларацию, и добавленную гл. XX «Of the Gospel and the Extent of the Grace thereof» — `SOURCE_SAYS_MORE`.
   - **Сн. 6** (латынь ст. XXXI, p. 507) и **сн. 16** (II Helv. XI.17, p. 258) — сверены, пометки раунда 83 сняты.
@@ -320,6 +320,10 @@
   - Через полнотекстовый индекс archive.org: колонтитул «SYNOD OF DORT. 379» и первые слова p. 379 («stigmatized as a heresy…») одинаковы в печатях 1863, 1870, 1960 и 1969 гг.
   - `LOCATOR_IMPRECISE` (мягко) для «pp. 379–380» больше не зависит от издания. HOLD «изд. 1882» сужен.
   - Вердикты S1–S5 не меняются. Документ: REPASS, §55.
+- **раунд 133 (2026-11-17, AGENT 2):** §3 (S231), новый §4.216 (Q212): Lewis & Demarest, *Integrative Theology* II, pp. 380–381 (сн. 18, 13, 10, 45).
+  - p. 381: «Scholastic Calvinism, however, narrowed the intent of the atonement…» — сн. 18 `LOCATOR_VERIFIED`, ACCURATE для слов при сноске.
+  - В OCR т. 2 слова «Beza» нет. Фраза статьи о Безе без своей сноски — `UNSOURCED_CLAIM` (мягко). Сн. 13 — ACCURATE, `SCHOLARLY_PRECEDENT` (тот же пример Гал. 5:12). Сн. 45 — «Spurgeon, 380» в указателе.
+  - Вердикты S1–S5 не меняются. Документ: REPASS, §56.
 
 **Erratum (раунд 4).** В раунде 3 номера страниц протоколов Ассамблеи (S19) и Шедда II (S22) были выведены из индекса страниц OCR-API archive.org (`BookReaderGetTextWrapper`), который **не совпадает** с номером листа (`leafNum`) скана: для `minutesofsession00west` индекс = лист − 5, для `dogmatictheology02sheduoft` индекс = лист − 1. Сверка по `inside.php` (полнотекстовый поиск, возвращает `leafNum`) и `<id>_page_numbers.json` (лист → печатная страница) дала: **Minutes «pp. 150–155/156» → pp. 155–160/161** (листы 251–257); **Shedd «II.478, 482–483» → II.479, 483–484** (листы 489, 493–494). Все затронутые числа в S19, S22, §4.13, §4.16, §5–§8 исправлены **на месте** с пометкой «(испр. р. 4)»; содержание цитат не менялось. Локаторы раундов 1–2 (Minutes p. lv/lviii/lx/152, Shedd II.464–477, I.441, A. A. Hodge pp. 33–34) перепроверены тем же способом и **верны** (лист 248 = p. 152; лист 457 = I.441; лист 39 = Hodge p. 33).
 **Статус:** `ACTIVE RESEARCH / NO SETTLED VERDICT ON EXTENT / EVIDENCE_HOLD / PUBLICATION_HOLD`
@@ -713,6 +717,7 @@
 | S228 *(раунд 130, 2026-11-17)* | *Patrologia Latina* 192 (Migne, 1855), IA `patrologiaecurs233unkngoog` (`inside.php` «praedestinatis tantum» → индекс 410; «DISTINCTIO XX.» — индекс 409, третье вхождение = кн. III; колонтитул правой колонки «SOO» = 800 ⇒ формула в кол. **799**). Петр Ломбардский, *Sent.* III, dist. XX, § 3 (PL): «Christus ergo est sacerdos, idemque et hostia, pretium nostrae reconciliationis; qui se in ara crucis non diabolo, sed Trinitati obtulit pro omnibus, quantum ad pretii sufficientiam; sed pro electis tantum quantum ad efficaciam, quia praedestinatis tantum salutem efficit». Там же, *Collectanea* на Евр. 5:3 (индекс 228): «hoc non convenit Christo. Christus enim non nisi pro suis membris obtulit». Класс A1, OCR | С. 36, сн. 36 — `ATTRIBUTION_SHIFT` прежний; `02_` — `QUOTE_NOT_VERBATIM` (мягко); `LOCATOR_EDITION_DEPENDENT`; Евр. 5:3 — `CONTEXT_REQUIRED` |
 | S229 *(раунд 131, 2026-11-17)* | (а) H. A. Niemeyer, *Collectio confessionum* (Lipsiae, 1840), IA `collectioconfes00niemgoog`: `page_numbers.json` — лист 786 = p. 729, лист 795 = p. 739 (8 листов на 9 страниц, одна страница отсутствует); предисловие «per Dei gratiam stat fundamentum fidei… Salva unitas corporis mystici» (л. 786); XIII начинается внизу л. 788, XVI — л. 790, XIX — л. 791; «oppetiit» — 0 попаданий. (б) J. C. W. Augusti, *Corpus librorum symbolicorum*, ed. altera (Lipsiae, 1846), IA `MN41545ucmf_4`: лист 474 = p. 450 (смещение 24), канон XIII «Pro solis quippe electis ex decretorio patris consilio, propria[que intentione] diram mortem oppetiit»; «duram» — 0 попаданий; колонтитул p. 459 на л. 483. (в) Schaff, *Creeds* I, лист 512 = p. 488: «…propriaque intentione diram mortem oppetiit». Класс A1, OCR | С. 7, сн. 25 — ACCURATE прежний; `AGENT6` A.10 — `QUOTE_NOT_VERBATIM` (мягко); `fathers/10_` — `LOCATOR_IMPRECISE` (мягко) |
 | S230 *(раунд 132, 2026-11-17)* | W. Cunningham, *Historical Theology* II: полнотекстовый индекс archive.org (`openlibrary.org/search/inside.json`) по четырём экземплярам — `historicaltheocun02cunn` (Clark, 1863), `workscunn03cunn` (*Works* III, Clark, 1870), `historicaltheolo0000unse_x3t3` (Banner of Truth, 1960), `historicaltheolo0002cunn` (Banner of Truth, 1969). Запросы: «SYNOD OF DORT. 379» → «Lib. iv., c. iv., Q. 4. / Sec. II.] SYNOD OF DORT. 379 / stigmatized as a heresy, only when it was» (1870, 1960, 1969); «Synod of Dort marks one of the most important eras» и «learned and zealous defender of Calvinism» — все четыре. Контроль — `historicaltheolo02cunnuoft` (1863), `_djvu.txt`, чанк 142. Класс A2 (фрагменты OCR) | Сн. 78 — `LOCATOR_IMPRECISE` (мягко) не зависит от издания; `SOURCE_CONTRADICTS_CLAIM` прежний |
+| S231 *(раунд 133, 2026-11-17)* | G. R. Lewis, B. A. Demarest, *Integrative Theology*, vol. 2 (Grand Rapids: Zondervan): IA `integrativetheol0000dema_t1r1` (метаданные IA — 1987; том 2 — 1990) и однотомник 1996 г. `integrativetheol0000lewi`; оба с ограниченным доступом. Полнотекстовый индекс archive.org (`openlibrary.org/search/inside.json`): «Other Calvinist authorities» + «scholastic» / «rowed» → «Scholastic Calvinism, however, nar- rowed the intent of the atonement and claimed that Christ died solely for the purpose of saving the elect…»; «Calvinism, however, narrowed» с переносом не ищется — использованы цепочки фраз. Указатель т. 2: «Bloesch, Donald G., 381», «Turrettin, Francis, 381», «Amyraut, 382», «Spurgeon, Charles Haddon, 380». Контроль «Beza»: т. 1 `integrativetheol0000dema` (1987). Текст статьи — веб-PDF teoblogia, фрагменты 1–2. Класс A2 (фрагменты OCR) | Сн. 18 — `LOCATOR_VERIFIED`; фраза о Безе — `UNSOURCED_CLAIM` (мягко); сн. 13 — `SCHOLARLY_PRECEDENT`; сн. 45 — `LOCATOR_VERIFIED` |
 
 **Ответ: П1 исторически неверен; «словом о цене» в английской традиции является *redemption*, а не *atonement*.**
 
@@ -8305,8 +8310,9 @@ hommes** selon ce propos déterminé…*» (с. 183) **есть в источн�
 | 4.213 | Q209 | Ломбард, Sent. III d. XX по PL 192:799: формула «sufficientiam / efficaciam» сверена; локаторы корпуса зависят от издания; Евр. 5:3 — только с контекстом (р. 130) |
 | 4.214 | Q210 | *Formula Consensus Helvetica*, канон XIII: «diram» (Августи p. 450, Шафф p. 488), не «duram»; скан Нимейера с пропуском страницы; локатор `fathers/10_` неточен (р. 131) |
 | 4.215 | Q211 | Каннингем, *Historical Theology* II: пагинация pp. 373–384 одинакова в печатях 1863, 1870, 1960 и 1969 гг.; сн. 78 — вердикт не зависит от издания (р. 132) |
+| 4.216 | Q212 | Lewis & Demarest II: p. 381 «Scholastic Calvinism… narrowed» — сн. 18 точна для слов при ней; в т. 2 слова «Beza» нет, фраза о Безе без сноски; сн. 13 и 45 сверены (р. 133) |
 
-⇒ разделов с `Q` — **208**, разделов §4.x — **210**; пропуски нумерации прежние.
+⇒ разделов с `Q` — **209**, разделов §4.x — **211**; пропуски нумерации прежние.
 
 
 ### 4.139. Q135 — Приёмка раунда 61: связка Сомюра, аудит объёма, готовность к мерджу (раунд 61)
@@ -9901,6 +9907,21 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 3. **Граница.** Само издание 1882 г. не видено; HOLD сужен, но не снят. Страницы изданий 1960 и 1969 гг. видны только фрагментами индекса.
 
 Вердикты S1–S5 не меняются.
+
+### 4.216. Q212 — Lewis & Demarest, *Integrative Theology* II, pp. 380–381: сноски 18, 13, 10, 45 (раунд 133, 2026-11-17)
+
+**Повод.** Л. и Д. стояли в HOLD с раунда 91 (REPASS §14): на IA доступ ограничен. Полнотекстовый индекс archive.org возвращает фрагменты OCR и таких экземпляров. Источник — S231. Таблица — REPASS-документ, §56.
+
+**Ответы.**
+1. **Сн. 18.** На p. 381: «Scholastic Calvinism, however, narrowed the intent of the atonement and claimed that Christ died solely for the purpose of saving the elect…». Дальше — Оуэн и перечень сторонников ограниченного искупления (Эдвардс, Тюрретин, Ч. и А. А. Ходжи, Шедд, Беркхоф…). `LOCATOR_VERIFIED`; для слов «схоластический кальвинизм», при которых стоит сноска, — ACCURATE. Фон «социнианство, арминианство, амиральдианство» даёт сн. 19 (Allen, p. 4), а не Л. и Д.
+2. **Беза.** Фраза статьи о том, что Беза «ввёл» ограниченное искупление «наряду с супралапсарианской схемой», дана без своей сноски. В OCR т. 2 слова «Beza» нет вообще. В т. 1 Беза упомянут в связи с супралапсарианством, но не с объёмом искупления (по видимым фрагментам). `UNSOURCED_CLAIM` (мягко). Прежний `SIMPLIFIED` (Аллен) остаётся.
+3. **Сн. 13 и 10.** «In his later commentaries Calvin more clearly postulates an unlimited atonement. With regard to Galatians…» — у статьи тот же порядок довода и тот же пример (Гал. 5:12). ACCURATE, `SCHOLARLY_PRECEDENT`. Абзац стоит перед Сперджном (указатель: 380); граница страниц по колонтитулу не видна.
+4. **Сн. 45.** «Spurgeon, Charles Haddon, 380» — `LOCATOR_VERIFIED` для «pp. 380–381».
+5. **Корпус.** Слова «через Lewis & Demarest (сн. 18)» о Безе (REPASS §2; журнал раунда 91 выше; `15_` §5; `01_` §2.2) — `CORPUS_MISREAD` (мягко).
+6. **Граница.** Изображения страниц не открывались; печать 1990 г. отдельно не видена. Пагинация т. 2 в однотомнике 1996 г. совпадает с отдельным томом по номерам указателя. Л. и Д. по сн. 83 — HOLD.
+
+Вердикты S1–S5 не меняются.
+
 
 ## 5. Анализ и границы допустимой формулировки
 
