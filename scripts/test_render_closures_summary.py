@@ -30,7 +30,8 @@ class RenderTests(unittest.TestCase):
         self.registry.write_text(json.dumps(REGISTRY, ensure_ascii=False), encoding="utf-8")
         self.register = self.root / "register.md"
         self.register.write_text(
-            "# Реестр\n\n" + summary.BEGIN + "\n" + summary.END + "\n\n## 1. Дальше\n",
+            "# Реестр\n\n" + summary.BEGIN + "\n" + summary.END + "\n\n"
+            + summary.DETAIL_BEGIN + "\n" + summary.DETAIL_END + "\n\n## 1. Дальше\n",
             encoding="utf-8",
         )
 
@@ -46,6 +47,16 @@ class RenderTests(unittest.TestCase):
         self.assertIn("Подтверждений без закрытия: **1**", block)
         self.assertIn("| 01 | Ось один | `ARCHIVE_HOLD`", block)
         self.assertIn("скачивание и пересчёт байтов", block)
+
+    def test_detail_block_lists_every_closure(self) -> None:
+        detail = summary.render_detail(REGISTRY)
+        self.assertIn("| `HCR-2026-11-18-01` |", detail)
+        self.assertIn("| `HCR-2026-11-18-02` |", detail)
+
+    def test_missing_detail_markers_fail_loudly(self) -> None:
+        self.register.write_text("# Реестр\n\n" + summary.BEGIN + "\n" + summary.END + "\n",
+                                 encoding="utf-8")
+        self.assertEqual(self.run_tool("--check"), 1)
 
     def test_open_items_are_listed(self) -> None:
         block = summary.render(REGISTRY)
@@ -99,7 +110,8 @@ class ConfirmationCounterTests(unittest.TestCase):
             json.dumps({"totals": {"locators": 1234, "match": 4}}), encoding="utf-8")
         self.registry = self.root / "registry.json"
         self.register = self.root / "register.md"
-        self.register.write_text("# Реестр\n\n" + summary.BEGIN + "\n" + summary.END + "\n",
+        self.register.write_text("# Реестр\n\n" + summary.BEGIN + "\n" + summary.END + "\n"
+                                 + summary.DETAIL_BEGIN + "\n" + summary.DETAIL_END + "\n",
                                  encoding="utf-8")
 
     def tearDown(self) -> None:

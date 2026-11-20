@@ -903,6 +903,30 @@
         "EVIDENCE_HOLD"
       ],
       "residualReason": "Дубли и отставшие даты остаются как были: пара 13↔24 ждёт решения владельца индекса, шесть документов менялись после своей даты, и даты не перезаписываются. Закрыта копия чисел, не сами удержания."
+    },
+    {
+      "id": "HCR-2026-11-18-26",
+      "title": "§3 генерируется из реестра закрытий: третья копия перечня отставала на семь строк",
+      "holdType": "EVIDENCE_HOLD",
+      "previousState": "Таблица §3 «что закрыто» обновлялась руками и содержала 18 строк при 25 закрытиях в реестре: семь последних в ней отсутствовали",
+      "closedScope": "render_detail() в render_closures_summary.py печатает closedScope/method/recordLocations из реестра в блок closures-detail; --write и --check отвечают за оба блока; отсутствие маркеров — падение; replace_block получает маркеры параметрами и режет по найденному индексу",
+      "recordLocations": [
+        "docs/research/HOLDS_REGISTER_2026-11-18.md §30",
+        "data/hold-closure-registry-v1.json",
+        "scripts/render_closures_summary.py"
+      ],
+      "method": "register-claims-audit",
+      "objects": [
+        {
+          "rowsBefore": 18,
+          "closures": 26,
+          "generatedBlocks": 2
+        }
+      ],
+      "residualHolds": [
+        "EVIDENCE_HOLD"
+      ],
+      "residualReason": "Тексты closedScope в реестре содержат исторические измерения (2 407 файлов у закрытия 07 и т.п.); отличить историческое число от живого пока может читатель, а не проверка — это следующий открытый вопрос."
     }
   ],
   "confirmations": [

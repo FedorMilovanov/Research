@@ -27,11 +27,15 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 from pathlib import Path
 
 BEGIN = "<!-- closures-summary:begin -->"
 END = "<!-- closures-summary:end -->"
+DETAIL_BEGIN = "<!-- closures-detail:begin -->"
+PLACE_RE = re.compile(r"^(?P<path>[^\s,]+?\.(?:md|json|py|txt|ya?ml))(?P<rest>.*)$")
+DETAIL_END = "<!-- closures-detail:end -->"
 DEFAULT_REGISTRY = "data/hold-closure-registry-v1.json"
 DEFAULT_REGISTER = "docs/research/HOLDS_REGISTER_2026-11-18.md"
 METHOD_NAMES = {
@@ -61,6 +65,41 @@ METHOD_NAMES = {
     "space-restoration-backed-by-file-history": "пробелы по истории файла",
     "internal-digest-rehash": "пересчёт внутренних подписей",
 }
+
+
+def _place(entry: str) -> str:
+    """A record location as a link: the path links, the section and prose after it do not."""
+    entry = entry.strip()
+    match = PLACE_RE.match(entry)
+    if not match:
+        return f"`{entry}`"
+    path, rest = match.group("path"), match.group("rest").strip()
+    if not path.startswith(("data/", "docs/", "scripts/", "БИОГРАФИИ/", "ИСКУПЛЕНИЕ/", "СЕРИЯ", "STEVE_LAWSON/", "history/")):
+        return f"`{entry}`"
+    # the register lives in docs/research/, so a repository path needs two levels up
+    link = f"[`{path}`](../../{path})"
+    if rest.startswith("§"):
+        return f"{link} {rest}"
+    return f"{link}{' ' + rest if rest else ''}"
+
+
+def render_detail(registry: dict) -> str:
+    """Per-closure detail, generated: the hand-kept version of this table had lost rows.
+
+    §3 listed eighteen closures while the registry held twenty-five. It was a third copy -
+    after §0 and the registry itself - and the only one nobody regenerated.
+    """
+    closures = registry.get("closures", [])
+    lines = [DETAIL_BEGIN, "| Запись | Что закрыто | Метод | Где отражено |", "|---|---|---|---|"]
+    for closure in closures:
+        ident = f"`{closure.get('id', '')}`"
+        scope = (closure.get("closedScope") or closure.get("title") or "").replace("|", "\\|")
+        method = closure.get("method", "")
+        places = closure.get("recordLocations") or []
+        where = ", ".join(_place(p) for p in places[:2]) or "—"
+        lines.append(f"| {ident} | {scope} | {METHOD_NAMES.get(method, method)} | {where} |")
+    lines.append(DETAIL_END)
+    return "\n".join(lines)
 
 
 class CounterError(Exception):
@@ -154,12 +193,14 @@ def render(registry: dict, root: Path | None = None) -> str:
     return "\n".join(lines)
 
 
-def replace_block(text: str, block: str) -> tuple[str, bool]:
-    start = text.find(BEGIN)
-    end = text.find(END)
-    if start == -1 or end == -1 or end < start:
+def replace_block(text: str, block: str, begin: str = BEGIN, end: str = END) -> tuple[str, bool]:
+    # The markers are parameters: the first version read the module globals, so a second
+    # call replaced the first block with the second block's content. The slice must use the
+    # found index, not the marker string - which is how one newline went missing here.
+    start, stop = text.find(begin), text.find(end)
+    if start == -1 or stop == -1 or stop < start:
         return text, False
-    return text[:start] + block + text[end + len(END):], True
+    return text[:start] + block + text[stop + len(end):], True
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -180,7 +221,10 @@ def main(argv: list[str] | None = None) -> int:
         return 2
     register_path = Path(args.register)
     text = register_path.read_text(encoding="utf-8")
-    updated, found = replace_block(text, block)
+    detail = render_detail(registry)
+    updated, found = replace_block(text, block, BEGIN, END)
+    updated, detail_found = replace_block(updated, detail, DETAIL_BEGIN, DETAIL_END)
+    found = found and detail_found
 
     if args.print_only or not (args.write or args.check):
         print(block)
