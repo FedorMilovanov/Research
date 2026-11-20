@@ -87,7 +87,7 @@ Dates below are event dates where established; filing/publication/archive dates 
 
 ## 2026 — Buck dossier and second leadership crisis
 
-- **2026-02-06:** official G3 content again describes Buck Braswell as a member of the G3 Ministries Board of Directors. This extends the individual late-board primary anchor into 2026 but does not establish the full board roster. PASS3 `G3-S058` candidate.
+- **2026-02-06:** official G3 content again describes Buck Braswell as a member of the G3 Ministries Board of Directors. This extends the individual late-board primary anchor into 2026 but does not establish the full board roster. [PASS3 `G3-S058`](EVIDENCE_BATCH_2026-09-07_PASS3.md) is a staging lead, not a promoted canonical source row.
 - **2026-03-27:** according to first-person testimony by Phil Johnson, Tom Buck sends him the accusation packet; FBC Lindale elders contact Johnson the same day. `G3-S012`.
 - **Spring 2026:** FBC Lindale investigates and consults externally. Available evidence supports real attribution problems in some Buck sermons, while not establishing that he systematically preached others’ complete sermons. `G3-S012`, FBC statement materials.
 - **2026:** a dossier reviews 17 sermons and alleges numerous instances of plagiarism using a broad methodology. All 17 now have dedicated item-level forensic work in Research, but **item coverage is not proof count**; original-audio/source/attribution gates remain open per item. `G3-S014`.
