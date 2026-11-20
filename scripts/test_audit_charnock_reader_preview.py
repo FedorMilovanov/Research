@@ -57,7 +57,7 @@ class CharnockReaderProofTests(unittest.TestCase):
             self.assertFalse(DEFINITION.search(reader), section.group(1))
 
     def test_no_editor_backstage_or_internal_section_headers(self):
-        self.assertNotRegex(self.body, r'^#{2,6} (?:Редакторская приёмка|Редакторский контроль)')
+        self.assertNotRegex(self.body, r'(?m)^#{2,6} (?:Редакторская приёмка|Редакторский контроль)')
         self.assertEqual(len(SOURCE.findall(self.body)), 10)
 
     def test_research_links_survive_path_preserving_move(self):
