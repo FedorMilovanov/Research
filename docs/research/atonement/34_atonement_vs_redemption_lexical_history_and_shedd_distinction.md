@@ -332,6 +332,10 @@
   - Перед колонтитулом «256 THE POTTER'S FREEDOM»: Уайт разбирает 1 Ин. 2:2 и называет ответ Гессгусену «especially telling». Сн. 9 — `LOCATOR_VERIFIED`, ACCURATE.
   - 1 Тим. 2:4 у Уайта — на с. 257 и 259 (по указателю). Его дальнейшие доводы (термины, ходатайство, Николь) статья не передаёт — `SOURCE_SAYS_MORE` (мягко).
   - Вердикты S1–S5 не меняются. Документ: REPASS, §58.
+- **раунд 136 (2026-11-17, AGENT 2):** §3 (S234), новый §4.219 (Q215): Шнукер, «Helvetic Confessions», в словаре Элвелла (сн. 17).
+  - Английский оригинал (1984, pp. 506–507; так же в изданиях 2001 и 2017 гг.): «the two most widely adopted and authoritative of the Reformed statements of faith». Сн. 17 — ACCURATE; страница русского перевода (с. 312) — HOLD.
+  - Вывод «оба содержат исповедание неограниченного искупления» — собственный, Шнукеру не приписан.
+  - Вердикты S1–S5 не меняются. Документ: REPASS, §59.
 
 **Erratum (раунд 4).** В раунде 3 номера страниц протоколов Ассамблеи (S19) и Шедда II (S22) были выведены из индекса страниц OCR-API archive.org (`BookReaderGetTextWrapper`), который **не совпадает** с номером листа (`leafNum`) скана: для `minutesofsession00west` индекс = лист − 5, для `dogmatictheology02sheduoft` индекс = лист − 1. Сверка по `inside.php` (полнотекстовый поиск, возвращает `leafNum`) и `<id>_page_numbers.json` (лист → печатная страница) дала: **Minutes «pp. 150–155/156» → pp. 155–160/161** (листы 251–257); **Shedd «II.478, 482–483» → II.479, 483–484** (листы 489, 493–494). Все затронутые числа в S19, S22, §4.13, §4.16, §5–§8 исправлены **на месте** с пометкой «(испр. р. 4)»; содержание цитат не менялось. Локаторы раундов 1–2 (Minutes p. lv/lviii/lx/152, Shedd II.464–477, I.441, A. A. Hodge pp. 33–34) перепроверены тем же способом и **верны** (лист 248 = p. 152; лист 457 = I.441; лист 39 = Hodge p. 33).
 **Статус:** `ACTIVE RESEARCH / NO SETTLED VERDICT ON EXTENT / EVIDENCE_HOLD / PUBLICATION_HOLD`
@@ -728,6 +732,7 @@
 | S231 *(раунд 133, 2026-11-17)* | G. R. Lewis, B. A. Demarest, *Integrative Theology*, vol. 2 (Grand Rapids: Zondervan): IA `integrativetheol0000dema_t1r1` (метаданные IA — 1987; том 2 — 1990) и однотомник 1996 г. `integrativetheol0000lewi`; оба с ограниченным доступом. Полнотекстовый индекс archive.org (`openlibrary.org/search/inside.json`): «Other Calvinist authorities» + «scholastic» / «rowed» → «Scholastic Calvinism, however, nar- rowed the intent of the atonement and claimed that Christ died solely for the purpose of saving the elect…»; «Calvinism, however, narrowed» с переносом не ищется — использованы цепочки фраз. Указатель т. 2: «Bloesch, Donald G., 381», «Turrettin, Francis, 381», «Amyraut, 382», «Spurgeon, Charles Haddon, 380». Контроль «Beza»: т. 1 `integrativetheol0000dema` (1987). Текст статьи — веб-PDF teoblogia, фрагменты 1–2. Класс A2 (фрагменты OCR) | Сн. 18 — `LOCATOR_VERIFIED`; фраза о Безе — `UNSOURCED_CLAIM` (мягко); сн. 13 — `SCHOLARLY_PRECEDENT`; сн. 45 — `LOCATOR_VERIFIED` |
 | S232 *(раунд 134, 2026-11-17)* | G. R. Lewis, B. A. Demarest, *Integrative Theology*, vol. 2 (Grand Rapids: Zondervan), p. 381: IA `integrativetheol0000dema_t1r1` и однотомник 1996 г. `integrativetheol0000lewi` (оба с ограниченным доступом). Полнотекстовый индекс archive.org (`openlibrary.org/search/inside.json`), цепочка перекрывающихся фраз: «proponents argue that the design of the cross» → «those persons the Father gave to the» → «Son. Christ allegedly died for all» → «Adam sinned for all who were related» → «For high Calvinism the question» → «follows from God's logically prior elective» → «the high Calvinist claims that» → «Christ died solely for those predestined» → «the divine decree assigning people» → «to life or death (chap. III) precedes» (discussion of the work of Christ); «John Owen judges that none of God's intentions» (после «…by the Father.“ (II.8)»). Индекс ищет по книге целиком; `page_num` один на документ. Страница — по указателю (Блёш и Тюрретин, p. 381; S231). Текст статьи — веб-PDF teoblogia, фрагмент 11. Класс A2 | Сн. 83 — `LOCATOR_VERIFIED`; ACCURATE для «эффективности»; «достаточность у ранних авторов» — `SIMPLIFIED` (мягко) |
 | S233 *(раунд 135, 2026-11-17)* | J. R. White, *The Potter's Freedom: A Defense of the Reformation and a Rebuttal of Norman Geisler's Chosen but Free* (Amityville, NY: Calvary Press, 2000): IA `pottersfreedomde0000whit` (ограниченный доступ). Полнотекстовый индекс archive.org (`openlibrary.org/search/inside.json`): «256 THE POTTER'S FREEDOM» → «…twenty-nine page article written by Roger Nicole / 256 THE POTTER'S FREEDOM / titled „John Calvin's View of the Extent…“»; «254 THE POTTER'S FREEDOM» — 0 совпадений (колонтитул не распознан); цепочка: «would have italicized this statement» → «he does not include the reprobate» → [стык не доказан] → «response to Heshusius is especially telling» → «not shed to expiate» → «Calvin's use of terms such as» → «the work of intercession must be» → «considered. CBF does not even» → «attempt a fair review of Calvin on this point» → «The Fall, 1985 issue of the Westminster Theological Journal». Указатель Писания: «1 Timothy 2:4 … 169, 257, 259». Индекс ищет по книге целиком. Текст статьи — веб-PDF teoblogia, фрагмент 1. Класс A2 | Сн. 9 — `LOCATOR_VERIFIED`; ACCURATE; `SOURCE_SAYS_MORE` (мягко) |
+| S234 *(раунд 136, 2026-11-17)* | W. A. Elwell (ed.), *Evangelical Dictionary of Theology* (Grand Rapids: Baker, 1984), статья «Helvetic Confessions», подпись R. V. Schnucker; IA `evangelicaldicti00elwe`; 2-е изд. (2001) `evangelicaldicti0000unse_k3p7`; 3-е изд. (2017) `evangelicaldicti0000unse_m4p4_3edi`. Полнотекстовый индекс archive.org (`openlibrary.org/search/inside.json`): «Second Helvetic Confession are the two most widely» → 1984: «…most widely / 507 / Helvetic Confessions»; «thoritative Reformed» → 2017: «the two most widely adopted and au- thoritative Reformed statements»; «R. V. SCHNUCKER» + «WALTER A. ELWELL, EDITOR» → 1984 и 2001: «[adopted and] authoritative of the Reformed statements of faith. R. V. Schnucker. See also Bullinger, Johann Heinrich»; «fession of 1566, composed by Heinrich Bullinger» → «…with thirty extensive chapters and widely endorsed». Список авторов 2017 г.: «Robert V. Schnucker… Heidelberg Catechism; Helvetic Confessions». Русский перевод 2003 г. не найден. Текст статьи — веб-PDF teoblogia, фрагменты 1–2. Класс A2 | Сн. 17 — ACCURATE; рус. с. 312 — HOLD |
 
 **Ответ: П1 исторически неверен; «словом о цене» в английской традиции является *redemption*, а не *atonement*.**
 
@@ -8323,8 +8328,9 @@ hommes** selon ce propos déterminé…*» (с. 183) **есть в источн�
 | 4.216 | Q212 | Lewis & Demarest II: p. 381 «Scholastic Calvinism… narrowed» — сн. 18 точна для слов при ней; в т. 2 слова «Beza» нет, фраза о Безе без сноски; сн. 13 и 45 сверены (р. 133) |
 | 4.217 | Q213 | Lewis & Demarest II, p. 381: сн. 83 — «not merely to provide salvation but to secure» подтверждает «эффективность»; пара «достаточность / эффективность» — рамка статьи (р. 134) |
 | 4.218 | Q214 | White, *The Potter's Freedom*, p. 255: сн. 9 — Гессгусен («especially telling») и 1 Ин. 2:2 перед колонтитулом «256»; 1 Тим. 2:4 — с. 257, 259 (р. 135) |
+| 4.219 | Q215 | Шнукер, «Helvetic Confessions» (Элвелл 1984, pp. 506–507): сн. 17 — «two most widely adopted and authoritative» — точно; рус. с. 312 — HOLD (р. 136) |
 
-⇒ разделов с `Q` — **211**, разделов §4.x — **213**; пропуски нумерации прежние.
+⇒ разделов с `Q` — **212**, разделов §4.x — **214**; пропуски нумерации прежние.
 
 
 ### 4.139. Q135 — Приёмка раунда 61: связка Сомюра, аудит объёма, готовность к мерджу (раунд 61)
@@ -9293,7 +9299,7 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 
 **Вывод.** В исторической части с. 3–5 и 26–27 локаторы статьи точны, а вторичные источники переданы верно. Слабые места — не в цитатах, а в том, что опущено: оговорка Аллена о Безе, осторожный вывод Рувендаля, Савойская декларация как второй образец. Умысел не утверждается.
 
-**Чего нет.** Lewis & Demarest II, pp. 380–381; White, *The Potter's Freedom*, p. 255 *(раунд 135: сверено по тексту — §4.218)*; Шнукер (словарь Элвелла, рус. пер., с. 312); печать Гейдельбергского катехизиса 1563 г.; гл. XX самого Второго Лондонского исповедания (о совпадении с Савойской декларацией — только по Шаффу).
+**Чего нет.** Lewis & Demarest II, pp. 380–381; White, *The Potter's Freedom*, p. 255 *(раунд 135: сверено по тексту — §4.218)*; Шнукер (словарь Элвелла, рус. пер., с. 312) *(раунд 136: английский оригинал сверен — §4.219)*; печать Гейдельбергского катехизиса 1563 г.; гл. XX самого Второго Лондонского исповедания (о совпадении с Савойской декларацией — только по Шаффу).
 
 Вердикты S1–S5 не меняются.
 
@@ -9317,7 +9323,7 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 
 **Вывод.** Фактические ошибки статьи в этом проходе — локаторные (сн. 12, Деян. 17 вместо 14) и одна лексическая (ἀγοράζω, сн. 57). Основные слабости — логические: переход от достаточности к намерению (с. 4, 25), смена смысла «неограниченного искупления» (с. 5 ↔ 26), переход от временного к вечному (с. 21–23). Сильные стороны: счёт и метод в 1 Ин., полное цитирование Дорта II.8, верная передача контекста 4.14.7. Умысел не утверждается.
 
-**Чего нет.** Lewis & Demarest II, pp. 380–381; White, p. 255 *(раунд 135 — §4.218)*; Шнукер, с. 312; Green, p. 118; Berkhof, p. 125; латынь Урсина; лист II Helv. XI.15. Описание супралапсарианства на с. 29–30 проверено только по памяти: что проверить — Беза, *Tabula praedestinationis*; Твисс; Berkhof, p. 125.
+**Чего нет.** Lewis & Demarest II, pp. 380–381; White, p. 255 *(раунд 135 — §4.218)*; Шнукер, с. 312 *(раунд 136 — §4.219)*; Green, p. 118; Berkhof, p. 125; латынь Урсина; лист II Helv. XI.15. Описание супралапсарианства на с. 29–30 проверено только по памяти: что проверить — Беза, *Tabula praedestinationis*; Твисс; Berkhof, p. 125.
 
 Вердикты S1–S5 не меняются.
 
@@ -9965,6 +9971,21 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 4. **1 Тим. 2:4.** В указателе Писания — с. 169, 257, 259. На p. 255 по видимым фрагментам этого места нет. Сноска говорит «см., напр.», поэтому пометки нет.
 5. **Полнота.** Уайт добавляет слова «reconciliation», «redemption», «propitiation», учение об избрании, мёртвость человека в грехе и ходатайство Христа. За полным разбором он отсылает к Николю. `SOURCE_SAYS_MORE` (мягко): сноска-пример берёт у Уайта лишь часть доводов. Позицию Уайта она не искажает.
 6. **Граница.** Печать 2005 г., на которую ссылается статья, и изображения страниц не видены. `IMPRECISE_TERM` («переписка» вместо трактата, §4.174) остаётся.
+
+Вердикты S1–S5 не меняются.
+
+
+### 4.219. Q215 — Шнукер, «Helvetic Confessions» в словаре Элвелла: сноска 17 (раунд 136, 2026-11-17)
+
+**Повод.** Шнукер стоял в HOLD с раунда 91 (§4.174 «Чего нет»; §4.175, п. 1; REPASS §14). Источник — S234. Таблица — REPASS-документ, §59.
+
+**Вопрос.** Говорит ли Шнукер, что Гейдельбергский катехизис и Второе гельветическое исповедание — «общепризнанные и наиболее авторитетные реформатские вероучительные документы»?
+
+**Ответы.**
+1. **Текст.** Да. Конец статьи «Helvetic Confessions» (Элвелл, 1984, pp. 506–507): «The Heidelberg Catechism and the Second Helvetic Confession are the two most widely adopted and authoritative of the Reformed statements of faith». В изданиях 2001 и 2017 гг. — та же фраза. ACCURATE.
+2. **Автор.** Статья подписана «R. V. Schnucker». В списке авторов издания 2017 г. за ним записаны «Heidelberg Catechism; Helvetic Confessions». Атрибуция верна.
+3. **Страница.** Русский перевод (М.: Духовное возрождение, 2003, с. 312) не найден, поэтому номер страницы — HOLD. Русский словарь — перевод английского (изд. 1984), и статья с такой подписью в нём есть, так что сомнений в источнике нет.
+4. **Следующая фраза статьи** («Оба они содержат исповедание неограниченного искупления») сноской 17 не помечена. Она опирается на цитаты из сн. 15–16 (§4.166). В видимых фрагментах статьи Шнукера о масштабе искупления ничего нет. Это собственный вывод статьи, Шнукеру он не приписан.
 
 Вердикты S1–S5 не меняются.
 
