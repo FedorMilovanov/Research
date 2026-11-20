@@ -44,6 +44,7 @@ REGISTRY = "data/hold-closure-registry-v1.json"
 LINKS = "data/relative-links-audit-2026-11-18.json"
 REPAIRS = "data/text-integrity-repairs-2026-11-18.json"
 PROPOSAL = "data/hold-value-mapping-proposal-v1.json"
+PINNED = "data/pinned-github-locators-verified-2026-11-18.json"
 
 # label as printed in the register -> (artefact, field). The label is matched literally
 # inside a markdown table row, so a reworded row is reported instead of passing silently.
@@ -295,6 +296,41 @@ def render_links_table(links: dict) -> str:
     return "\n".join(lines)
 
 
+PINNED_BEGIN = "<!-- pinned-locators:begin -->"
+PINNED_END = "<!-- pinned-locators:end -->"
+PINNED_ROWS = [
+    ("локаторов", "totals.locators"),
+    ("заявленных SHA-256 совпало", "totals.match"),
+    ("расхождений", "totals.mismatch"),
+    ("без заявки", "totals.unclaimed"),
+    ("недоступных", "totals.unavailable"),
+    # one verified object can be cited in several documents; the first version of this
+    # report kept only the first site, so the register's "7 files" had no field at all
+    ("цитирований (мест)", "totals.citations"),
+    ("файлов с цитированием", "totals.citationFiles"),
+]
+
+
+def render_pinned_table(pinned: dict) -> str:
+    lines = [PINNED_BEGIN, "| Показатель | Значение |", "|---|---:|"]
+    for label, field in PINNED_ROWS:
+        value = _pick(pinned, field)
+        if isinstance(value, int):
+            lines.append(f"| {label} | {fmt(value)} |")
+    lines += ["", "| Репозиторий | Коммит | Путь | Заявка | Байт (факт) | SHA-256 (факт) | Состояние |",
+              "|---|---|---|---|---:|---|---|"]
+    for item in pinned.get("locators", []):
+        claim = "да" if (item.get("claimedSha256") or item.get("claimedBytes") is not None) else "—"
+        digest = item.get("fetchedSha256") or "—"
+        short = digest[:16] + "…" if digest != "—" else digest
+        lines.append(
+            f"| `{item.get('repo', '')}` | `{str(item.get('commit', ''))[:8]}` "
+            f"| `{item.get('path', '')}` | {claim} | {item.get('fetchedBytes') or '—'} "
+            f"| `{short}` | {item.get('state', '')} |")
+    lines.append(PINNED_END)
+    return "\n".join(lines)
+
+
 def replace_between(text: str, begin: str, end: str, block: str) -> tuple[str, bool]:
     start, stop = text.find(begin), text.find(end)
     if start == -1 or stop == -1 or stop < start:
@@ -308,6 +344,17 @@ SLICES = {
     "inventory": ((SLICE_BEGIN, SLICE_END), INVENTORY, render_slice_table),
     "corpus": ((CORPUS_BEGIN, CORPUS_END), INVENTORY, render_corpus_table),
     "links": ((LINKS_BEGIN, LINKS_END), LINKS, render_links_table),
+    "pinned": ((PINNED_BEGIN, PINNED_END), PINNED, render_pinned_table),
+}
+
+
+# Where each generated block lives in the register, for messages and reports. The gate
+# iterates SLICES rather than this map, so adding a block cannot silently escape it.
+SLICE_LABELS = {
+    "inventory": "§2 машинный срез",
+    "corpus": "§2.1 таблица по корпусам",
+    "links": "§8 таблица ссылок",
+    "pinned": "§11 таблица локаторов",
 }
 
 
@@ -373,7 +420,6 @@ def audit(root: Path, register: Path | None = None) -> dict:
     text = register.read_text(encoding="utf-8")
     inventory_path = root / INVENTORY
     states = slice_states(text, root)
-    corpus_state, slice_state, links_state = states["corpus"], states["inventory"], states["links"]
     printed = rows(text)
     prose = prose_audit(text, root)
     findings = []
@@ -407,9 +453,7 @@ def audit(root: Path, register: Path | None = None) -> dict:
         "scope": {"declaredClaims": len(CLAIMS) + len(PROSE_CLAIMS), "proseClaims": len(PROSE_CLAIMS),
                   "numericTableRows": sum(len(v) for v in printed.values())},
         "totals": totals,
-        "corpusTable": corpus_state,
-        "sliceTable": slice_state,
-        "linksTable": links_state,
+        "sliceStates": states,
         "findings": findings,
     }
 
@@ -418,9 +462,8 @@ def summary(report: dict) -> str:
     totals = report["totals"]
     lines = [f"Заявленных счётчиков: {report['scope']['declaredClaims']} — " +
              ", ".join(f"{k}={v}" for k, v in sorted(totals.items())),
-             f"Таблица §2.1 по корпусам: {report['corpusTable']}",
-             f"Таблица §2 (машинный срез): {report['sliceTable']}",
-             f"Таблица §8 (ссылки): {report['linksTable']}"]
+             *[f"Таблица {SLICE_LABELS.get(name, name)}: {state}"
+               for name, state in report["sliceStates"].items()]]
     for finding in report["findings"]:
         if finding["state"] in ("match", "superseded"):
             continue
@@ -440,6 +483,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--write-corpus-table", action="store_true")
     parser.add_argument("--write-slice-table", action="store_true")
     parser.add_argument("--write-links-table", action="store_true")
+    parser.add_argument("--write-pinned-table", action="store_true")
     parser.add_argument("--write-all", action="store_true")
     args = parser.parse_args(argv)
 
@@ -453,18 +497,19 @@ def main(argv: list[str] | None = None) -> int:
     if args.summary:
         print(summary(report))
     bad = [f for f in report["findings"] if f["state"] not in ("match", "superseded")]
-    for state, label in ((report["corpusTable"], "§2.1 таблица по корпусам"),
-                         (report["sliceTable"], "§2 машинный срез"),
-                         (report["linksTable"], "§8 таблица ссылок")):
+    for name, state in report["sliceStates"].items():
         if state != "match":
-            bad = bad + [{"state": state, "label": label, "claimed": None, "actual": None, "line": None}]
+            bad = bad + [{"state": state, "label": SLICE_LABELS.get(name, name),
+                          "claimed": None, "actual": None, "line": None}]
     writes = []
-    if args.write_all or args.write_corpus_table or args.write_slice_table or args.write_links_table:
+    if args.write_all or args.write_corpus_table or args.write_slice_table or args.write_links_table \
+            or args.write_pinned_table:
         target = Path(args.register) if args.register else root / REGISTER
         text = target.read_text(encoding="utf-8")
         wanted = [name for name, flag in (("corpus", args.write_corpus_table),
                                           ("inventory", args.write_slice_table),
-                                          ("links", args.write_links_table)) if flag]
+                                          ("links", args.write_links_table),
+                                          ("pinned", args.write_pinned_table)) if flag]
         if args.write_all:
             wanted = list(SLICES)
         for name in wanted:

@@ -38,7 +38,7 @@ from pathlib import Path
 from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parents[1]
-SCHEMA_VERSION = 1
+SCHEMA_VERSION = 2  # 2: every citation site is kept, plus totals.citations / citationFiles
 AUTHORITY_ID = "RESEARCH-PINNED-GITHUB-LOCATORS-VERIFICATION-V1"
 SNAPSHOT_DATE = "2026-11-18"
 
@@ -68,8 +68,13 @@ def claims_on_line(line: str) -> tuple[str | None, int | None]:
 
 
 def collect(root: Path) -> list[dict]:
+    """One entry per unique locator, with **every** site that cites it.
+
+    A locator verified once can be cited in several documents. Keeping only the first
+    site loses the other citations: remove or change one of them and nothing notices.
+    """
     found: list[dict] = []
-    seen: set[tuple[str, str, str, str]] = set()
+    by_key: dict[tuple[str, str, str, str], dict] = {}
     for path in iter_markdown(root):
         rel = path.relative_to(root).as_posix()
         try:
@@ -81,11 +86,11 @@ def collect(root: Path) -> list[dict]:
                 owner, repo, sha, target = match.group(1), match.group(2), match.group(3), match.group(4)
                 target = unquote(target)
                 key = (owner, repo, sha, target)
-                if key in seen:
+                if key in by_key:
+                    by_key[key]["citations"].append({"file": rel, "line": lineno})
                     continue
-                seen.add(key)
                 claimed_sha, claimed_size = claims_on_line(line)
-                found.append({
+                entry = {
                     "file": rel,
                     "line": lineno,
                     "repo": f"{owner}/{repo}",
@@ -94,7 +99,10 @@ def collect(root: Path) -> list[dict]:
                     "url": match.group(0),
                     "claimedSha256": claimed_sha,
                     "claimedBytes": claimed_size,
-                })
+                    "citations": [{"file": rel, "line": lineno}],
+                }
+                by_key[key] = entry
+                found.append(entry)
     return found
 
 
@@ -156,15 +164,51 @@ def summarise(results: list[dict]) -> str:
     return "\n".join(lines)
 
 
+def structure_drift(committed: dict, offline: list[dict]) -> list[str]:
+    """What can be checked without network: the set of locators and where they are cited.
+
+    Bytes need the pinned objects, so CI cannot re-fetch them; but CI can tell whether the
+    committed report still describes the tree - a locator added, removed or cited elsewhere.
+    """
+    problems: list[str] = []
+    old = {(x["repo"], x["commit"], x["path"]): x for x in committed.get("locators", [])}
+    new = {(x["repo"], x["commit"], x["path"]): x for x in offline}
+    for key in sorted(set(new) - set(old)):
+        problems.append(f"locator cited in the tree but absent from the report: {key[0]}@{key[1][:8]} {key[2]}")
+    for key in sorted(set(old) - set(new)):
+        problems.append(f"locator in the report but no longer cited: {key[0]}@{key[1][:8]} {key[2]}")
+    for key in sorted(set(old) & set(new)):
+        old_sites = {(c["file"], c["line"]) for c in old[key].get("citations", [])}
+        new_sites = {(c["file"], c["line"]) for c in new[key]["citations"]}
+        if old_sites != new_sites:
+            problems.append(f"citation sites changed for {key[0]}@{key[1][:8]} {key[2]}: "
+                            f"{sorted(old_sites ^ new_sites)}")
+    return problems
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Verify pinned GitHub locators cited in Markdown")
     parser.add_argument("-o", "--output", help="write the verification report as JSON")
     parser.add_argument("--summary", action="store_true")
     parser.add_argument("--offline", action="store_true", help="collect claims without fetching")
+    parser.add_argument("--check-report", metavar="PATH",
+                        help="compare a committed report with a fresh offline scan (no network)")
     parser.add_argument("--root", default=str(ROOT))
     args = parser.parse_args(argv)
 
     root = Path(args.root).resolve()
+    if args.check_report:
+        committed = json.loads(Path(args.check_report).read_text(encoding="utf-8"))
+        problems = structure_drift(committed, collect(root))
+        for problem in problems:
+            print(f"pinned locators: {problem}", file=sys.stderr)
+        if problems:
+            return 1
+        print(f"pinned locators: PASS — the committed report still describes the tree "
+              f"({len(committed.get('locators', []))} locators, "
+              f"{committed.get('totals', {}).get('citations', 0)} citations); "
+              f"bytes need network and are not re-fetched here")
+        return 0
     entries = collect(root)
     results = verify(entries, offline=args.offline)
     report = {
@@ -181,6 +225,9 @@ def main(argv: list[str] | None = None) -> int:
             "unclaimed": sum(1 for r in results if r["state"] == "unclaimed"),
             "unavailable": sum(1 for r in results if r["state"] == "unavailable"),
             "notChecked": sum(1 for r in results if r["state"] == "not-checked"),
+            # sites, not locators: one verified object can be cited in several documents
+            "citations": sum(len(r.get("citations", [])) for r in results),
+            "citationFiles": len({c["file"] for r in results for c in r.get("citations", [])}),
         },
         "limits": [
             "Совпадение хеша доказывает байты объекта на закреплённом коммите, а не прочтение содержания.",

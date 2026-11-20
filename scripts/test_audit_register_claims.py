@@ -80,18 +80,18 @@ class ClaimTests(unittest.TestCase):
 
     def test_corpus_table_drift_is_detected(self) -> None:
         self.fx.write_register(claims.CORPUS_BEGIN + "\n| stale |\n" + claims.CORPUS_END + "\n")
-        self.assertEqual(self.report()["corpusTable"], "stale")
+        self.assertEqual(self.report()["sliceStates"]["corpus"], "stale")
 
     def test_corpus_table_without_markers_is_reported(self) -> None:
         self.fx.write_register("## 2.1 без таблицы\n")
-        self.assertEqual(self.report()["corpusTable"], "anchor-missing")
+        self.assertEqual(self.report()["sliceStates"]["corpus"], "anchor-missing")
 
     def test_write_corpus_table_makes_the_block_match(self) -> None:
         self.fx.write_register("## 2.1\n" + claims.CORPUS_BEGIN + "\n" + claims.CORPUS_END + "\n")
         self.assertEqual(claims.main(["--root", str(self.fx.root), "--write-corpus-table"]), 0)
         text = self.fx.register.read_text(encoding="utf-8")
         self.assertIn("| `docs/` | 3 | 4 |", text)
-        self.assertEqual(self.report()["corpusTable"], "match")
+        self.assertEqual(self.report()["sliceStates"]["corpus"], "match")
 
 
     def test_slice_table_is_generated_from_the_inventory(self) -> None:
@@ -99,11 +99,11 @@ class ClaimTests(unittest.TestCase):
         self.assertEqual(claims.main(["--root", str(self.fx.root), "--write-slice-table"]), 0)
         text = self.fx.register.read_text(encoding="utf-8")
         self.assertIn("| просканировано текстовых файлов | 10 |", text)
-        self.assertEqual(self.report()["sliceTable"], "match")
+        self.assertEqual(self.report()["sliceStates"]["inventory"], "match")
 
     def test_slice_drift_is_detected(self) -> None:
         self.fx.write_register(claims.SLICE_BEGIN + "\n| 3 110 |\n" + claims.SLICE_END + "\n")
-        self.assertEqual(self.report()["sliceTable"], "stale")
+        self.assertEqual(self.report()["sliceStates"]["inventory"], "stale")
 
     def test_thin_space_separator_does_not_touch_label_text(self) -> None:
         self.fx.write_json(claims.INVENTORY, {"totals": {"filesScanned": 3112}, "byCorpus": {}})
@@ -172,6 +172,13 @@ class SliceRegistryTests(unittest.TestCase):
         self.fx.write_json(claims.LINKS, {"scope": {"markdownFiles": 7},
                                           "totals": {"byState": {"resolves": 5, "external": 2, "missing": 1},
                                                      "explained": 1, "unexplained": 0}})
+        self.fx.write_json(claims.PINNED, {"totals": {"locators": 1, "match": 1, "mismatch": 0,
+                                                      "unclaimed": 0, "unavailable": 0,
+                                                      "citations": 1, "citationFiles": 1},
+                                           "locators": [{"repo": "o/r", "commit": "a" * 40, "path": "A.xml",
+                                                         "claimedSha256": "b" * 64, "claimedBytes": 10,
+                                                         "fetchedBytes": 10, "fetchedSha256": "b" * 64,
+                                                         "state": "match", "citations": [{"file": "a.md", "line": 1}]}]})
 
     def tearDown(self) -> None:
         self.fx.close()
@@ -183,22 +190,28 @@ class SliceRegistryTests(unittest.TestCase):
 
     def test_links_slice_drift_is_detected(self) -> None:
         self.fx.write_register(claims.LINKS_BEGIN + "\n| ссылок `resolves` | 99 |\n" + claims.LINKS_END + "\n")
-        self.assertEqual(self.report()["linksTable"], "stale")
+        self.assertEqual(self.report()["sliceStates"]["links"], "stale")
 
     def test_write_all_fills_every_declared_slice(self) -> None:
-        self.fx.write_register("\n".join([
-            claims.SLICE_BEGIN, claims.SLICE_END,
-            claims.CORPUS_BEGIN, claims.CORPUS_END,
-            claims.LINKS_BEGIN, claims.LINKS_END, ""]))
+        # Built from SLICES, not from a hand-written list: a new block must not be able to
+        # be declared and then forgotten by the test that is supposed to cover it.
+        markers = "\n".join(line for (begin, end), _a, _r in claims.SLICES.values()
+                            for line in (begin, end))
+        self.fx.write_register(markers + "\n")
         self.assertEqual(claims.main(["--root", str(self.fx.root), "--write-all"]), 0)
-        states = self.report()
-        self.assertEqual([states["sliceTable"], states["corpusTable"], states["linksTable"]],
-                         ["match", "match", "match"])
+        states = self.report()["sliceStates"]
+        self.assertEqual(sorted(states), sorted(claims.SLICES))
+        self.assertEqual({name: state for name, state in states.items() if state != "match"}, {})
+
+    def test_pinned_slice_renders_the_report(self) -> None:
+        block = claims.render_pinned_table(json.loads((self.fx.root / claims.PINNED).read_text(encoding="utf-8")))
+        self.assertIn("| локаторов | 1 |", block)
+        self.assertIn("| `o/r` | `aaaaaaaa` | `A.xml` | да | 10 |", block)
 
     def test_missing_artefact_makes_the_slice_source_missing(self) -> None:
         (self.fx.root / claims.LINKS).unlink()
         self.fx.write_register(claims.LINKS_BEGIN + "\n" + claims.LINKS_END + "\n")
-        self.assertEqual(self.report()["linksTable"], "source-missing")
+        self.assertEqual(self.report()["sliceStates"]["links"], "source-missing")
 
     def report(self) -> dict:
         return claims.audit(self.fx.root)

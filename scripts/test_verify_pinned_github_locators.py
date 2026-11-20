@@ -66,6 +66,15 @@ class CollectTests(unittest.TestCase):
         self.fx.write("b.md", url + "\n")
         self.assertEqual(len(vp.collect(self.fx.root)), 1)
 
+    def test_duplicate_locator_keeps_every_citation_site(self) -> None:
+        # One verified object, two documents: the first version recorded only the first
+        # site, so the second citation could disappear without anything noticing.
+        url = f"https://github.com/o/r/blob/{'a'*40}/A1.xml"
+        self.fx.write("a.md", url + "\n")
+        self.fx.write("b.md", "\n" + url + "\n")
+        entry = vp.collect(self.fx.root)[0]
+        self.assertEqual([(c["file"], c["line"]) for c in entry["citations"]], [("a.md", 1), ("b.md", 2)])
+
 
 class VerifyTests(unittest.TestCase):
     def setUp(self) -> None:
@@ -141,6 +150,46 @@ class OutputTests(unittest.TestCase):
             self.assertEqual(code, 1)
         finally:
             fx.close()
+
+
+if __name__ == "__main__":
+    unittest.main()
+
+
+class ReportDriftTests(unittest.TestCase):
+    """The bytes need network; the shape of the report does not."""
+
+    def setUp(self) -> None:
+        self.fx = Fixture()
+        self.url = f"https://github.com/o/r/blob/{'a' * 40}/A1.xml"
+        self.fx.write("a.md", self.url + "\n")
+
+    def tearDown(self) -> None:
+        self.fx.close()
+
+    def committed(self) -> dict:
+        return {"locators": vp.collect(self.fx.root)}
+
+    def test_unchanged_tree_passes(self) -> None:
+        self.assertEqual(vp.structure_drift(self.committed(), vp.collect(self.fx.root)), [])
+
+    def test_new_citation_is_reported(self) -> None:
+        report = self.committed()
+        self.fx.write("b.md", self.url + "\n")
+        problems = vp.structure_drift(report, vp.collect(self.fx.root))
+        self.assertTrue(any("citation sites changed" in p for p in problems), problems)
+
+    def test_removed_locator_is_reported(self) -> None:
+        report = self.committed()
+        self.fx.write("a.md", "nothing here\n")
+        problems = vp.structure_drift(report, vp.collect(self.fx.root))
+        self.assertTrue(any("no longer cited" in p for p in problems), problems)
+
+    def test_locator_outside_the_report_is_reported(self) -> None:
+        report = self.committed()
+        self.fx.write("c.md", f"https://github.com/o/r/blob/{'b' * 40}/B2.xml\n")
+        problems = vp.structure_drift(report, vp.collect(self.fx.root))
+        self.assertTrue(any("absent from the report" in p for p in problems), problems)
 
 
 if __name__ == "__main__":

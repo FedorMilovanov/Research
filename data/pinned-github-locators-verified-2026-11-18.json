@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "authorityId": "RESEARCH-PINNED-GITHUB-LOCATORS-VERIFICATION-V1",
   "snapshotDate": "2026-11-18",
   "method": "gh api contents?ref=<commit> with raw media type; size and SHA-256 recomputed locally; claims read from the same line only",
@@ -10,7 +10,9 @@
     "mismatch": 0,
     "unclaimed": 13,
     "unavailable": 0,
-    "notChecked": 0
+    "notChecked": 0,
+    "citations": 19,
+    "citationFiles": 7
   },
   "limits": [
     "Совпадение хеша доказывает байты объекта на закреплённом коммите, а не прочтение содержания.",
@@ -27,6 +29,12 @@
       "url": "https://github.com/FedorMilovanov/gb-is-my-strength/blob/bc8f63dda4b6bcf1513f879c43afa58193f62038/docs/LAWSON-SOURCE-RECHECK-2026-11-15.md",
       "claimedSha256": null,
       "claimedBytes": null,
+      "citations": [
+        {
+          "file": "STEVE_LAWSON/87_NOV2026_ELDERS_LETTER_SOURCE_DEPENDENCY_AND_RESTORATION_SCOPE_2026-11-13.md",
+          "line": 226
+        }
+      ],
       "state": "unclaimed",
       "fetchedBytes": 18517,
       "fetchedSha256": "c51a1654dc04ef2a4a11a9672d120c7147744ad640f1069e6251ef5671551c4e"
@@ -40,6 +48,12 @@
       "url": "https://github.com/FedorMilovanov/Research/blob/26c5531cedff3af2fa74b01fabf3aa0056d6492f/%D0%98%D0%A1%D0%9A%D0%A3%D0%9F%D0%9B%D0%95%D0%9D%D0%98%D0%95/evidence/AGENT2_JOHANNINE_ATONEMENT_EXEGESIS_HANDOFF_2026-11-15.md",
       "claimedSha256": null,
       "claimedBytes": null,
+      "citations": [
+        {
+          "file": "docs/research/arena/AGENT4_DOGMATICS_SYNTHESIS_WAVES_1_7_2026-11-15.md",
+          "line": 27
+        }
+      ],
       "state": "unclaimed",
       "fetchedBytes": 115085,
       "fetchedSha256": "0eaca9d9d1f493704d74bee0da4e331eb80792a2db58068143fa081065308998"
@@ -53,6 +67,12 @@
       "url": "https://github.com/textcreationpartnership/A46911/blob/32dc300bd4ca63015021850f38a214a53a0a67e3/A46911.xml",
       "claimedSha256": "e2bea34fb919b90d21c076895c0cb09c4630505f020f3608f72ddf72d3f5b64b",
       "claimedBytes": 163974,
+      "citations": [
+        {
+          "file": "БИОГРАФИИ/Стивен Чарнок/02_LIFE_CHRONOLOGY_AND_DATE_CONFLICTS.md",
+          "line": 529
+        }
+      ],
       "state": "match",
       "fetchedBytes": 163974,
       "fetchedSha256": "e2bea34fb919b90d21c076895c0cb09c4630505f020f3608f72ddf72d3f5b64b"
@@ -66,6 +86,12 @@
       "url": "https://github.com/textcreationpartnership/A71277/blob/97f473a5d46036ac46b5fe7c2d3be603d3946d9a/A71277.xml",
       "claimedSha256": "beaa62b9b406cbc3bcb589143266da53f714ccfb344408e38c3f953f0c4881d2",
       "claimedBytes": 6035109,
+      "citations": [
+        {
+          "file": "БИОГРАФИИ/Стивен Чарнок/02_LIFE_CHRONOLOGY_AND_DATE_CONFLICTS.md",
+          "line": 530
+        }
+      ],
       "state": "match",
       "fetchedBytes": 6035109,
       "fetchedSha256": "beaa62b9b406cbc3bcb589143266da53f714ccfb344408e38c3f953f0c4881d2"
@@ -79,6 +105,12 @@
       "url": "https://github.com/textcreationpartnership/A32726/blob/460e9c2a90b1b67ba77febbfa0c009860cfe7367/A32726.xml",
       "claimedSha256": "1268a63fa8eebeac66291887e30d655df8cc3a2d1c7a9508c3dba7ceafc1a497",
       "claimedBytes": 603576,
+      "citations": [
+        {
+          "file": "БИОГРАФИИ/Стивен Чарнок/02_LIFE_CHRONOLOGY_AND_DATE_CONFLICTS.md",
+          "line": 531
+        }
+      ],
       "state": "match",
       "fetchedBytes": 603576,
       "fetchedSha256": "1268a63fa8eebeac66291887e30d655df8cc3a2d1c7a9508c3dba7ceafc1a497"
@@ -92,6 +124,12 @@
       "url": "https://github.com/textcreationpartnership/A79420/blob/492c601345cecd8310428cc2607d12ff87461a8e/A79420.xml",
       "claimedSha256": "5f07206177dcffc80dde89ec85d0df9394acc6c6ddb8a8c7e319f5285b6ea5ac",
       "claimedBytes": 598792,
+      "citations": [
+        {
+          "file": "БИОГРАФИИ/Стивен Чарнок/02_LIFE_CHRONOLOGY_AND_DATE_CONFLICTS.md",
+          "line": 532
+        }
+      ],
       "state": "match",
       "fetchedBytes": 598792,
       "fetchedSha256": "5f07206177dcffc80dde89ec85d0df9394acc6c6ddb8a8c7e319f5285b6ea5ac"
@@ -105,6 +143,16 @@
       "url": "https://github.com/textcreationpartnership/A41722/blob/7f99242e02209df54d651fa69b8cff9805e97813/A41722.xml",
       "claimedSha256": null,
       "claimedBytes": null,
+      "citations": [
+        {
+          "file": "БИОГРАФИИ/Стивен Чарнок/02_LIFE_CHRONOLOGY_AND_DATE_CONFLICTS.md",
+          "line": 737
+        },
+        {
+          "file": "БИОГРАФИИ/Стивен Чарнок/manuscripts/INTRO_MIR_STEPHEN_CHARNOCK_WORKING_DRAFT.md",
+          "line": 91
+        }
+      ],
       "state": "unclaimed",
       "fetchedBytes": 76048,
       "fetchedSha256": "ed2038ae64d1e5bb05f90eb5fdf10d6b67c3023b83903cdbe55204f4afc7b5a7"
@@ -118,6 +166,12 @@
       "url": "https://github.com/textcreationpartnership/B02133/blob/41dc7ea99a57ee1fe114fc0dd0e66269a2a1aca9/B02133.xml",
       "claimedSha256": null,
       "claimedBytes": null,
+      "citations": [
+        {
+          "file": "БИОГРАФИИ/Стивен Чарнок/02_LIFE_CHRONOLOGY_AND_DATE_CONFLICTS.md",
+          "line": 851
+        }
+      ],
       "state": "unclaimed",
       "fetchedBytes": 17702,
       "fetchedSha256": "505f653df483ce85f615b02e67dd454e7963b68fd16e2c008a724e480def1748"
@@ -131,6 +185,12 @@
       "url": "https://github.com/textcreationpartnership/A32722/blob/5c9d910f917515db18e20d7bfdcf4af0eaf01808/A32722.xml",
       "claimedSha256": null,
       "claimedBytes": null,
+      "citations": [
+        {
+          "file": "БИОГРАФИИ/Стивен Чарнок/03_WORKS_EDITIONS_AND_PUBLICATION_CHRONOLOGY.md",
+          "line": 939
+        }
+      ],
       "state": "unclaimed",
       "fetchedBytes": 54754,
       "fetchedSha256": "b25bad732f769d06e49315e201b2ce6004fa5a5d6ffb360c8a435b090fcb11c1"
@@ -144,6 +204,12 @@
       "url": "https://github.com/textcreationpartnership/B20167/blob/11049eba01d8278999e8bc74b0b1c0e26e79a7f9/B20167.xml",
       "claimedSha256": null,
       "claimedBytes": null,
+      "citations": [
+        {
+          "file": "БИОГРАФИИ/Стивен Чарнок/03_WORKS_EDITIONS_AND_PUBLICATION_CHRONOLOGY.md",
+          "line": 947
+        }
+      ],
       "state": "unclaimed",
       "fetchedBytes": 538534,
       "fetchedSha256": "4708c9c4b5e3036c4ed477852b5b1b4372d5a27aa294c930000df19a5073508c"
@@ -157,6 +223,12 @@
       "url": "https://github.com/textcreationpartnership/A25478/blob/ea0aef19c6eebce83324da532a62769d8469b742/A25478.xml",
       "claimedSha256": null,
       "claimedBytes": null,
+      "citations": [
+        {
+          "file": "БИОГРАФИИ/Стивен Чарнок/03_WORKS_EDITIONS_AND_PUBLICATION_CHRONOLOGY.md",
+          "line": 1043
+        }
+      ],
       "state": "unclaimed",
       "fetchedBytes": 3485491,
       "fetchedSha256": "dd3588d681fe1ff35f067625504d275f31764b668476efbdb3eadfd0655f1cee"
@@ -170,6 +242,16 @@
       "url": "https://github.com/textcreationpartnership/A32723/blob/caa75dffdc96aa353a6424679877f41e15b8c73e/A32723.xml",
       "claimedSha256": null,
       "claimedBytes": null,
+      "citations": [
+        {
+          "file": "БИОГРАФИИ/Стивен Чарнок/04_CHARACTER_MINISTRY_AND_THEOLOGY.md",
+          "line": 2268
+        },
+        {
+          "file": "БИОГРАФИИ/Стивен Чарнок/04_CHARACTER_MINISTRY_AND_THEOLOGY.md",
+          "line": 2353
+        }
+      ],
       "state": "unclaimed",
       "fetchedBytes": 4622240,
       "fetchedSha256": "d6205c4062867acf7f01c963ca06395ed07bb4f00774a071fcc8f903d22e6376"
@@ -183,6 +265,12 @@
       "url": "https://github.com/textcreationpartnership/A32724/blob/aa97893297d0bd0db63318afd4957ac38d53dd05/A32724.xml",
       "claimedSha256": null,
       "claimedBytes": null,
+      "citations": [
+        {
+          "file": "БИОГРАФИИ/Стивен Чарнок/04_CHARACTER_MINISTRY_AND_THEOLOGY.md",
+          "line": 2354
+        }
+      ],
       "state": "unclaimed",
       "fetchedBytes": 1146488,
       "fetchedSha256": "efaf653b7c9d058927dc546382d3a9771fbffdc6e15b50d08a7941bd0aafa007"
@@ -196,6 +284,12 @@
       "url": "https://github.com/textcreationpartnership/A35345/blob/81cb68885c517252d3f7acccf5c1d52ab77c1e6c/A35345.xml",
       "claimedSha256": null,
       "claimedBytes": null,
+      "citations": [
+        {
+          "file": "БИОГРАФИИ/Стивен Чарнок/04_CHARACTER_MINISTRY_AND_THEOLOGY.md",
+          "line": 2355
+        }
+      ],
       "state": "unclaimed",
       "fetchedBytes": 4535033,
       "fetchedSha256": "5ef15afca7c22866b6f1ce5a4c1286e88b898b1ab9ebd9ec0fb628043ac159c8"
@@ -209,6 +303,12 @@
       "url": "https://github.com/textcreationpartnership/B15418/blob/44913a361736f12a1071297684ad4c3a5877c219/B15418.xml",
       "claimedSha256": null,
       "claimedBytes": null,
+      "citations": [
+        {
+          "file": "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md",
+          "line": 537
+        }
+      ],
       "state": "unclaimed",
       "fetchedBytes": 1704145,
       "fetchedSha256": "1b0ec102e0e3ef827d485c659c11c207c6cdb8ff2dc77f17f8b47fd67a304999"
@@ -222,6 +322,12 @@
       "url": "https://github.com/GITenberg/Selections-from-the-Principles-of-Philosophy_4391/blob/fe5d92458506b5cb4db135aced80046deeaf8ca2/4391.txt",
       "claimedSha256": null,
       "claimedBytes": null,
+      "citations": [
+        {
+          "file": "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md",
+          "line": 7070
+        }
+      ],
       "state": "unclaimed",
       "fetchedBytes": 195080,
       "fetchedSha256": "be132739f8ca66897dbe1c19a5d6e5db1c15ae1fd447b84613b43ab541150475"
@@ -235,6 +341,12 @@
       "url": "https://github.com/textcreationpartnership/A52424/blob/7859df5a4fdc4a339e62c7fcb8d5d066dc17551b/A52424.xml",
       "claimedSha256": null,
       "claimedBytes": null,
+      "citations": [
+        {
+          "file": "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md",
+          "line": 7071
+        }
+      ],
       "state": "unclaimed",
       "fetchedBytes": 352981,
       "fetchedSha256": "3680ed708035808b41fd88a7da7367369a2d1c54cd0de4dd118f0c5657226066"

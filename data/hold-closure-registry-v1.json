@@ -801,6 +801,33 @@
         "LOCATOR_HOLD"
       ],
       "residualReason": "Транзитивные входы объявлены, а не выведены (общий обход подтянул бы 2 416 наблюдаемых файлов), и правка корпуса вне триггерных путей по-прежнему не запускает гейт — см. §22.2."
+    },
+    {
+      "id": "HCR-2026-11-18-22",
+      "title": "Таблица §11 генерируется из отчёта, а отчёт перестал терять второе цитирование локатора",
+      "holdType": "EVIDENCE_HOLD",
+      "previousState": "Таблица §11 из 17 строк переписывалась руками из отчёта; отчёт хранил одно место цитирования на локатор, поэтому «в 7 файлах» не подтверждалось (в отчёте было 6), второе цитирование было невидимым",
+      "closedScope": "Отчёт schema 2: citations по каждому локатору, totals.citations=19 и citationFiles=7; перезамер с сетью (байты всех 17 совпали); таблица §11 генерируется (--write-pinned-table); --check-report сверяет отчёт с деревом без сети и стоит в CI; гейт таблиц идёт по SLICES, а не по списку имён",
+      "recordLocations": [
+        "docs/research/HOLDS_REGISTER_2026-11-18.md §26",
+        "data/pinned-github-locators-verified-2026-11-18.json",
+        "scripts/verify_pinned_github_locators.py"
+      ],
+      "method": "pinned-github-locator-readback",
+      "objects": [
+        {
+          "locators": 17,
+          "citations": 19,
+          "citationFiles": 7,
+          "match": 4,
+          "mismatch": 0
+        }
+      ],
+      "residualHolds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD"
+      ],
+      "residualReason": "Совпадение хеша удостоверяет байты закреплённого объекта, а не прочтение, не выбор издания и не права; ARCHIVE_HOLD на сканы и PUBLICATION_HOLD не снимаются. Байты можно перепроверить только с сетью — в CI сверяется форма отчёта, и это названо."
     }
   ],
   "confirmations": [
