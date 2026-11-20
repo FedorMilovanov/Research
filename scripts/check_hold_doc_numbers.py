@@ -360,7 +360,7 @@ CLAIMS: list[dict] = [
     {
         "id": "readme.no_holds_field",
         "doc": "README.md",
-        "anchor": "# 52 без поля holds",
+        "anchor": "без поля holds",
         "pattern": r"#\s*(\d+) без поля holds",
         "expected": lambda: audit_summary()["no_field"],
         "source": "audit_hold_coverage_gaps.py --no-holds-field",
@@ -764,6 +764,15 @@ def main(argv: list[str]) -> int:
         print(f"  {state:16} {claim['id']:30} документ={printed} источник={expected}")
         if state != "match":
             print(f"                   {claim['doc']}: {claim['source']}")
+
+    # Якорь, содержащий само проверяемое число, — известная ловушка: подмена числа в
+    # документе тогда даёт не `stale`, а `anchor-missing`, и проверка выглядит сломанной
+    # вместо того, чтобы выглядеть поймавшей. Считаются только точные совпадения.
+    traps = [r[0]["id"] for r in results
+             if r[1] == "match" and normalise(str(r[2])) and normalise(str(r[2])) in normalise(r[0]["anchor"])]
+    if traps:
+        print(f"  внимание: якорь содержит проверяемое число в {len(traps)} {plural(len(traps), 'утверждении', 'утверждениях', 'утверждениях')} — такая пара "
+              f"даст anchor-missing вместо stale: {', '.join(traps)}")
 
     missing_unsourced = [u for u in unsourced if u[1] != "unsourced-present"]
     if missing_unsourced:
