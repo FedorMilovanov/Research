@@ -78,6 +78,12 @@ def audit(root=ROOT):
             errors.append(f'{name}: undefined footnote [^{key}]')
         for key in sorted(defined - referenced):
             errors.append(f'{name}: unused footnote [^{key}]')
+        # A reference in the sources/backstage section must not disguise a citation
+        # lost from the reader-facing prose.
+        if len(source) == 1:
+            reader_references = set(NOTE_REF.findall(body[:source[0]]))
+            for key in sorted(defined - reader_references):
+                errors.append(f'{name}: footnote not cited by reader text [^{key}]')
         for link in RELATIVE_LINK.findall(body):
             resolved = (path.parent / unquote(link.split('#', 1)[0].strip())).resolve()
             if not resolved.is_relative_to(root) or not resolved.is_file():
