@@ -677,7 +677,7 @@
       "title": "Счётчики в прозе: «закрыта одна ось» — число убрано из фразы, а не обновлено",
       "holdType": "EVIDENCE_HOLD",
       "previousState": "§1 и §3 утверждали масштаб работы словами («одна ось»), что не ловилось проверкой таблиц; §11 и C4 несли число 8 из 24, переснятое в §19",
-      "closedScope": "6 утверждений в прозе под проверкой; введено состояние superseded, требующее существующего раздела ниже по файлу; число закрытий в §1/§3 заменено ссылкой на генерируемый §0",
+      "closedScope": "введены утверждения в прозе под проверкой; введено состояние superseded, требующее существующего раздела ниже по файлу; число закрытий в §1/§3 заменено ссылкой на генерируемый §0",
       "recordLocations": [
         "docs/research/HOLDS_REGISTER_2026-11-18.md §21",
         "scripts/audit_register_claims.py",
@@ -764,8 +764,6 @@
       "method": "hold-vocabulary-mapping",
       "objects": [
         {
-          "openItems": 5,
-          "claims": 46,
           "generatedTables": [
             "hold-classes",
             "hold-values"
@@ -791,7 +789,6 @@
       "method": "ci-trigger-dependency-audit",
       "objects": [
         {
-          "triggerPaths": 49,
           "duplicates": 0,
           "asymmetry": 0,
           "inputsAdded": 9
@@ -869,7 +866,6 @@
       "method": "confirmation-counter-audit",
       "objects": [
         {
-          "confirmations": 4,
           "staleTitles": 3,
           "derivedCounters": 6
         }
@@ -919,7 +915,6 @@
       "objects": [
         {
           "rowsBefore": 18,
-          "closures": 26,
           "generatedBlocks": 2
         }
       ],
@@ -927,6 +922,29 @@
         "EVIDENCE_HOLD"
       ],
       "residualReason": "Тексты closedScope в реестре содержат исторические измерения (2 407 файлов у закрытия 07 и т.п.); отличить историческое число от живого пока может читатель, а не проверка — это следующий открытый вопрос."
+    },
+    {
+      "id": "HCR-2026-11-18-27",
+      "title": "Само-счётчики удалены из реестра и из прозы: два из пяти уже разошлись",
+      "holdType": "EVIDENCE_HOLD",
+      "previousState": "Записи реестра и текст регистра цитировали счёт собственных инструментов: claims 46 при 52, triggerPaths 49 при 50, закрытий 26 по построению, плюс три числа утверждений в прозе",
+      "closedScope": "Само-счётчики (closures, confirmations, openItems, claims, triggerPaths) удалены из objects и заменены отсылкой к инструменту; число утверждений убрано из прозы §21.2, §24 и записи 17; добавлены два теста — на ключи в objects и на конструкцию «N утверждени…» в регистре",
+      "recordLocations": [
+        "docs/research/HOLDS_REGISTER_2026-11-18.md §31",
+        "data/hold-closure-registry-v1.json",
+        "scripts/test_hold_closure_registry.py"
+      ],
+      "method": "register-claims-audit",
+      "objects": [
+        {
+          "removedSelfCounts": 5,
+          "staleOfThem": 2
+        }
+      ],
+      "residualHolds": [
+        "EVIDENCE_HOLD"
+      ],
+      "residualReason": "Внешние измерения в записях (2 407 файлов у 07, 541 склейка у 08) остаются снимками закрытия; механической разницы между снимком и живым числом в формате записи нет — только дата среза файла."
     }
   ],
   "confirmations": [

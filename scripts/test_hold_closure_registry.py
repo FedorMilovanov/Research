@@ -80,6 +80,11 @@ class RegistryShapeTests(unittest.TestCase):
                 self.assertIn(entry["id"], text)
 
 
+# Numbers that count the register itself, or a set that grows with every commit. They are
+# printed live by the tools that own them; a copy inside a closure record is wrong the next
+# time anything is added - which is exactly what happened (claims 46 -> 52, paths 49 -> 50).
+SELF_COUNTS = {"closures", "confirmations", "openItems", "claims", "triggerPaths"}
+
 # A standalone number (or ratio) in prose, but not a version, an algorithm or a section id.
 MEASUREMENT = re.compile(r"(?<![\w§-])\d[\d\s\u2009]*(?![\w-])")
 
@@ -107,6 +112,15 @@ class ClosureTests(unittest.TestCase):
             with self.subTest(entry.get("id")):
                 self.assertIsNone(re.search(r"\d", entry.get("title", "")),
                                   "open item title must not carry a number")
+
+    def test_closures_do_not_quote_the_register_size(self) -> None:
+        for entry in self.data.get("closures", []):
+            for obj in entry.get("objects") or []:
+                if not isinstance(obj, dict):
+                    continue
+                with self.subTest(entry.get("id")):
+                    self.assertFalse(SELF_COUNTS & set(obj),
+                                     f"self-count leaked into a closure record: {SELF_COUNTS & set(obj)}")
 
     def test_confirmation_titles_carry_no_measurements(self) -> None:
         # Same rule as the open items: a number inside a name has no field behind it.

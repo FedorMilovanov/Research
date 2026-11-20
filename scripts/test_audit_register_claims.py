@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import re
 import tempfile
 import unittest
 from pathlib import Path
@@ -244,3 +245,21 @@ class SliceRegistryTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class RegisterSelfCountTests(unittest.TestCase):
+    """The register may not quote the claims tool's own tally.
+
+    Two copies of it (38 claims, then 46) sat in the prose while the tool reported 52. The number
+    is printed by --summary; anything typed here is wrong by the next closure.
+    """
+
+    def setUp(self) -> None:
+        self.text = (Path(__file__).resolve().parents[1] / claims.REGISTER).read_text(encoding="utf-8")
+
+    def test_register_does_not_quote_the_number_of_claims(self) -> None:
+        self.assertIsNone(re.search(r"\d+\s+утверждени", self.text),
+                          "the claim count belongs to --summary, not to the document")
+
+    def test_register_does_not_quote_the_tool_banner(self) -> None:
+        self.assertNotIn("Заявленных счётчиков: ", self.text)
