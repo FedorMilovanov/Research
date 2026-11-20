@@ -678,6 +678,22 @@ def cases():
     return out
 
 
+def holes():
+    """Напечатать PASS-дыры: случаи, где гейт ловить НЕ обязан.
+
+    Это не список дефектов и не заявка на их закрытие. Это граница проверки,
+    названная поимённо: случай портит дерево ожидаемым способом, гейт остаётся
+    зелёным, и так и должно быть — но читателю надо знать, где именно кончается
+    покрытие. Печатается из самого списка случаев, поэтому не может разойтись
+    с прогоном: разойдётся — значит случай переписали.
+    """
+    cs = [c for c in cases() if c[1] is None]
+    print("PASS-дыры (гейт не обязан ловить): %d" % len(cs))
+    for name, _expect, _fn, note in cs:
+        print("  %-34s %s" % (name, note))
+    return 0
+
+
 def run(probe=False, only=None):
     cs = cases()
     total = len(cs)
@@ -740,5 +756,9 @@ if __name__ == "__main__":
     ap.add_argument("--probe", action="store_true", help="печатать фактические ошибки гейта по каждому случаю")
     ap.add_argument("--only", action="append", default=None,
                     help="прогнать только случаи, в имени которых есть подстрока (можно несколько раз)")
+    ap.add_argument("--holes", action="store_true",
+                    help="напечатать PASS-дыры (где гейт не обязан ловить) и не запускать прогон")
     _ap = ap.parse_args()
+    if _ap.holes:
+        sys.exit(holes())
     sys.exit(run(probe=_ap.probe, only=_ap.only))
