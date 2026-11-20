@@ -110,11 +110,6 @@ class ManuscriptStructureTests(unittest.TestCase):
     def test_backstage_citation_does_not_count_as_reader_usage(self):
         path = self.manuscripts / MANUSCRIPTS[0]
         content = path.read_text(encoding='utf-8').replace('Claim.[^1]', 'Claim.')
-        content = content.replace(
-            'DRAFT / RESEARCH_ONLY / PUBLICATION_HOLD\n',
-            'DRAFT / RESEARCH_ONLY / PUBLICATION_HOLD\n',
-            1
-        )
         content += '\nEditorial reference only.[^1]\n'
         path.write_text(content, encoding='utf-8')
         with self.assertRaisesRegex(ValueError, 'not cited by reader text'):
