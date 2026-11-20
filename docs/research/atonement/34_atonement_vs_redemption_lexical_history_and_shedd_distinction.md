@@ -385,6 +385,10 @@
   - Сн. 71: форма довода с вечным наказанием («demanding double payment») у Грудема дословно; «Ср.» уместно. `STRAWMAN` (мягко) и `MISIDENTIFIED_TARGET` (п. 88, §4.178) подкреплены.
   - Сн. 77: атрибуция верна; Грудем выводит из различения смыслов «for» частное искупление — `SOURCE_SAYS_MORE` (мягко).
   - Русские с. 672 и 680 — HOLD. Вердикты S1–S5 не меняются. Документ: REPASS, §70.
+- **раунд 148 (2026-11-17, AGENT 2):** §3 (S246), новый §4.231 (Q227): Хукема, *Образ Божий* — сн. 100 (с. 360).
+  - Опорная фраза установлена по PDF статьи (с. 33): связь освобождения творения (Рим. 8:19–23) с жертвой Христа; пометка «Ср.».
+  - Выходные данные (Минск, 2019, 400 с.) совпадают с карточкой книги. Тезис бесспорен и на объём искупления не влияет.
+  - Содержание с. 360 — HOLD. Вердикты S1–S5 не меняются. Документ: REPASS, §71.
 
 **Erratum (раунд 4).** В раунде 3 номера страниц протоколов Ассамблеи (S19) и Шедда II (S22) были выведены из индекса страниц OCR-API archive.org (`BookReaderGetTextWrapper`), который **не совпадает** с номером листа (`leafNum`) скана: для `minutesofsession00west` индекс = лист − 5, для `dogmatictheology02sheduoft` индекс = лист − 1. Сверка по `inside.php` (полнотекстовый поиск, возвращает `leafNum`) и `<id>_page_numbers.json` (лист → печатная страница) дала: **Minutes «pp. 150–155/156» → pp. 155–160/161** (листы 251–257); **Shedd «II.478, 482–483» → II.479, 483–484** (листы 489, 493–494). Все затронутые числа в S19, S22, §4.13, §4.16, §5–§8 исправлены **на месте** с пометкой «(испр. р. 4)»; содержание цитат не менялось. Локаторы раундов 1–2 (Minutes p. lv/lviii/lx/152, Shedd II.464–477, I.441, A. A. Hodge pp. 33–34) перепроверены тем же способом и **верны** (лист 248 = p. 152; лист 457 = I.441; лист 39 = Hodge p. 33).
 **Статус:** `ACTIVE RESEARCH / NO SETTLED VERDICT ON EXTENT / EVIDENCE_HOLD / PUBLICATION_HOLD`
@@ -793,6 +797,7 @@
 | S243 *(раунд 145, 2026-11-17)* | (а) A. T. Robertson, *Word Pictures in the New Testament*, vol. VI (Nashville: Broadman, © 1933), IA `generalepistlesr0000arch` (открытый доступ, полный текст): толкование 1 Ин. 2:2 — pp. 209–210; на p. 210: «At any rate, the propitiation by Christ provides for salvation for all (Heb. 2:9) if they will only be reconciled with God (II Cor. 5:19-21)». (б) R. P. Lightner, *The Death Christ Died* (1967), IA `deathchristdiedc0000ligh`: та же фраза в кавычках. Класс A (печатный том), B (вторичная цитата) | Цитата сн. 68 подтверждена (т. VI, p. 210); перевод точен; в сноске нет тома и страницы |
 | S244 *(раунд 146, 2026-11-17)* | Полнотекстовый индекс Open Library (OCR IA, доступ к книгам ограничен): (а) *The MacArthur Study Bible*, NKJV (Nashville: Word Bibles, 1997), IA `macarthurstudybi0000unse_n6a5`: «God has mitigated His wrath on sinners tem- porarily, by letting them live and enjoy earthly life (see note on 1 Tim. 4-10)»; (б) NASB (Nelson, 2006) `macarthurstudybi0000unse`, ESV (Crossway, 2010) `macarthurstudybi0000unse_g9h5`, Personal Size (2008) `macarthurstudybi0000john`: «…(see note on 1 Tim. 4:10). In that sense, Christ has provided a brief, temporal propitiation for the whole world. But He actually satisfied fully…». Класс B (OCR-фрагменты печатных изданий) | Многоточие сн. 69 заменяет только отсылку к 1 Тим. 4:10; цитата точна; печатная с. 1965 не видна |
 | S245 *(раунд 147, 2026-11-17)* | W. Grudem, *Systematic Theology* (Leicester: IVP; Grand Rapids: Zondervan, 1994), IA `systematictheolo00grud_0` — полнотекстовый индекс Open Library (доступ к книге ограничен): «Reformed people argue that if Christ’s death actually paid…»; «…to eternal punishment anyone whose sins are already paid for: that would be demanding double payment, and it would therefore…»; «…the Holy Spirit will certainly apply the benefits of Christ’s redemptive work…»; «…various senses that can be given to the word “for” in these two statements»; «…“Christ died to actually pay the penalty for all the sins of his people only.”». Связный текст — транскрипция на Scribd (класс C); английские pp. 594–603 — по вторичным ссылкам. Класс B (OCR-фрагменты печатного издания) | Сн. 71: форма с вечным наказанием — у Грудема; сн. 77: атрибуция верна, вывод Грудема противоположен; русские с. 672, 680 не видны |
+| S246 *(раунд 148, 2026-11-17)* | А. Хукема, *Образ Божий*, пер. А. В. Вязовской (Минск: Полиграфкомбинат им. Я. Коласа, 2019), 400 с., ISBN 978-985-7101-27-6 — книжные карточки esxatos.com, mirt.ru, epbook.by (оглавление, выходные данные; класс C). Оригинал: A. A. Hoekema, *Created in God’s Image* (Eerdmans, 1986), IA `createdingodsima0000hoek` (доступ ограничен; пробы полнотекстового индекса книгу не выдали). Текст с. 360 не виден. Локатор статьи — Drive-PDF, с. 33 (класс A1) | REPASS §71; §4.231 |
 
 **Ответ: П1 исторически неверен; «словом о цене» в английской традиции является *redemption*, а не *atonement*.**
 
@@ -8400,8 +8405,9 @@ hommes** selon ce propos déterminé…*» (с. 183) **есть в источн�
 | 4.228 | Q224 | Робертсон, *Word Pictures*, т. VI (1933), p. 210 (сн. 68): цитата подтверждена по печатному тому (класс A), перевод точен; в сноске нет тома и страницы — `BIBLIOGRAPHY_INCOMPLETE` (мягко); HOLD `21_` J-14 снят (р. 145) |
 | 4.229 | Q225 | Мак-Артур, MSB 1997, с. 1965 (сн. 69): многоточие заменяет только «(see note on 1 Tim. 4:10)» (OCR 1997 и 2006–2010, класс B); цитата точна; вопрос REPASS §8.3 снят; с. 1965 — HOLD (р. 146) |
 | 4.230 | Q226 | Грудем, сн. 71 (с. 672) и 77 (с. 680) по OCR изд. 1994 г.: форма довода с вечным наказанием — у Грудема дословно; `STRAWMAN` (мягко) и `MISIDENTIFIED_TARGET` подкреплены; сн. 77 — ACCURATE + `SOURCE_SAYS_MORE` (мягко); рус. страницы — HOLD (р. 147) |
+| 4.231 | Q227 | Хукема, сн. 100 (с. 360): опорная фраза (PDF, с. 33) и выходные данные установлены; «Ср.» к бесспорному тезису о восстановлении творения; на объём искупления не влияет; с. 360 — HOLD (р. 148) |
 
-⇒ разделов с `Q` — **223**, разделов §4.x — **225**; пропуски нумерации прежние.
+⇒ разделов с `Q` — **224**, разделов §4.x — **226**; пропуски нумерации прежние.
 
 
 ### 4.139. Q135 — Приёмка раунда 61: связка Сомюра, аудит объёма, готовность к мерджу (раунд 61)
@@ -9754,7 +9760,7 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
    Это вероучительные, а не баптистские изменения — `SIMPLIFIED` (мягко).
 4. **Направление изменений** — к частности (III.3, VIII.8, XV.1 «Such of the Elect», XX.1 «the means of calling the Elect»). Это дополняет `12_` T-13 и REPASS §14.
 
-**Чего нет.** Датированный экземпляр 1677 или 1689 г. (скан — перепечатка издания 1688 г.); WCF III.3 по скану 1647 г.; Хиберт с. 97; Хукема с. 360.
+**Чего нет.** Датированный экземпляр 1677 или 1689 г. (скан — перепечатка издания 1688 г.); WCF III.3 по скану 1647 г.; Хиберт с. 97; Хукема с. 360 *(раунд 148, §4.231: локатор и выходные данные установлены; содержание с. 360 — HOLD)*.
 
 Вердикты S1–S5 не меняются.
 
@@ -10238,6 +10244,22 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 3. **Неизбежное применение.** Следом Грудем: тем же людям Дух «will certainly apply the benefits of Christ’s redemptive work, even awakening their faith». Ответ статьи через вменение этой связки не касается. `MISIDENTIFIED_TARGET` распространён на сн. 71.
 4. **Сн. 77.** «The statements “Christ died for his people only” and “Christ died for all people” are both true in some senses, and too often the argument over this issue has been confused because of various senses that can be given to the word “for” in these two statements. The statement “Christ died for his people only” can be understood to mean that “Christ died to actually pay the penalty for all the sins of his people only.”» Атрибуция верна. Но пара смыслов у Грудема другая («actually pay the penalty» / «make salvation available»), и вывод — частное искупление. `SOURCE_SAYS_MORE` (мягко); ошибкой цитирования это не является.
 5. **Страницы.** Английские pp. 594–603 — по вторичным ссылкам; русские с. 672 и 680 не видны (HOLD). Их порядок совпадает с порядком мест в разделе D.
+
+Вердикты S1–S5 не меняются.
+
+### 4.231. Q227 — Хукема, *Образ Божий*: сноска 100 (с. 360) (раунд 148, 2026-11-17)
+
+**Повод.** В карте покрытия (§4.196, раунд 113) сн. 100 значилась как HOLD без разбора. Источник — S246. Таблица — REPASS-документ, §71.
+
+**Вопрос.** К какому утверждению статьи относится сн. 100, верны ли её выходные данные и влияет ли она на спор об объёме искупления?
+
+**Ответы.**
+1. **Опорная фраза.** PDF статьи, с. 33, третья цель («Для всей земли – восстановительная»): «Во всем этом тексте Павел последовательно связывает нашу надежду на искупление материального тела с надеждой всего творения на освобождение от рабства тлению. Тем самым он увязывает освобождение материального творения от смерти с тем искуплением, которое совершено через жертву Христову» — и сн. 100: «Ср. Хукема Э. Образ Божий. Мн.: Полиграфкомбинат им. Я. Коласа, 2019. С. 360.» (класс A1). HTML-издание (S180) сносок не содержит.
+2. **Выходные данные.** Минск, Полиграфкомбинат им. Я. Коласа, 2019, 400 с. — совпадают с книжной карточкой (класс C). С. 360 приходится на последнюю десятую часть тома; что на ней, не утверждается.
+3. **Довод.** «Ср.» — слабая пометка, Хукема не цитируется. Тезис о восстановлении творения через дело Христа бесспорен и для сторонников частного искупления (`20_` C32.05, C33.01). На вопрос, за кого Христос понёс наказание, он не влияет; сама статья ограничивает заместительную цель избранными.
+4. **Оригинал.** *Created in God’s Image* (1986) на IA закрыт; пробы полнотекстового индекса книгу не выдали.
+
+**Чего нет.** Текст с. 360 и соответствующее место английского издания.
 
 Вердикты S1–S5 не меняются.
 
