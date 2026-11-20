@@ -359,6 +359,11 @@
   - p. 870 — `LOCATOR_CONSISTENT` (Swindoll 1990: p. 869 = 2 Пет. 1:21); перевод сн. 55 — ACCURATE (класс C).
   - Три варианта статьи — это (1)–(3) Гангела с его опровержениями; «seems to read into» → «слишком много вчитывает» — `HEDGE_DROPPED` (мягко). Вывод Шрайнера ближе к отвергнутому (3) — усиление `CONTEXT_OMITTED`.
   - Вердикты S1–S5 не меняются. Документ: REPASS, §64.
+- **раунд 142 (2026-11-17, AGENT 2):** §3 (S240), новый §4.225 (Q221): Грин, TNTC, p. 118 — сн. 56 и 57 (исход и 2 Цар. 7:23).
+  - Полный текст сн. 56 записан по PDF. В цитате нет утверждения о греческом слове; 2 Цар. 7:23 употреблено верно («народ для Себя»).
+  - Лексическое утверждение — собственная фраза статьи со сноской «Там же»; `FACT_ERROR` из REPASS §15 в силе. Чья ошибка — HOLD.
+  - Поправка к REPASS §15: «агоразо» → «агорадзо», как в статье.
+  - Вердикты S1–S5 не меняются. Документ: REPASS, §65.
 
 **Erratum (раунд 4).** В раунде 3 номера страниц протоколов Ассамблеи (S19) и Шедда II (S22) были выведены из индекса страниц OCR-API archive.org (`BookReaderGetTextWrapper`), который **не совпадает** с номером листа (`leafNum`) скана: для `minutesofsession00west` индекс = лист − 5, для `dogmatictheology02sheduoft` индекс = лист − 1. Сверка по `inside.php` (полнотекстовый поиск, возвращает `leafNum`) и `<id>_page_numbers.json` (лист → печатная страница) дала: **Minutes «pp. 150–155/156» → pp. 155–160/161** (листы 251–257); **Shedd «II.478, 482–483» → II.479, 483–484** (листы 489, 493–494). Все затронутые числа в S19, S22, §4.13, §4.16, §5–§8 исправлены **на месте** с пометкой «(испр. р. 4)»; содержание цитат не менялось. Локаторы раундов 1–2 (Minutes p. lv/lviii/lx/152, Shedd II.464–477, I.441, A. A. Hodge pp. 33–34) перепроверены тем же способом и **верны** (лист 248 = p. 152; лист 457 = I.441; лист 39 = Hodge p. 33).
 **Статус:** `ACTIVE RESEARCH / NO SETTLED VERDICT ON EXTENT / EVIDENCE_HOLD / PUBLICATION_HOLD`
@@ -761,6 +766,7 @@
 | S237 *(раунд 139, 2026-11-17)* | Полнотекстовый индекс archive.org (`openlibrary.org/search/inside.json`), ограниченные копии: (а) D. F. Watson, *First and Second Peter* (Paideia, 2012), IA `firstsecondpeter0000wats`: «…warnings, such as given by Justin, Dial. 35.3 (Bauckham 1983, 240)» — к 2 Пет. 2:1; (б) G. L. Shultz, *A Multi-Intentioned View of the Extent of the Atonement* (2013), IA `multiintentioned0000shul`: nn. 105 («240–41»), 109 («240; Blum, 2 Peter, 276; Chang… 53–54; Davids… 221»), 119 («Views advanced by Bauckham… 240; and Kennard… 403–05»); (в) T. R. Schreiner, NAC 37 (2003), IA `12peterjude0000schr`: «So Bauckham, Jude, 2 Peter, 239»; (г) R. Bauckham, *Jude, 2 Peter* (Word Biblical Themes, 1990), IA `jude2peter0000bauc`: перевод из WBC 50, «copyrighted 1983». Класс B (локатор); собственный текст WBC 50 не найден | Сн. 52 — `LOCATOR_VERIFIED` (класс B); содержание и BDAG p. 14 — HOLD |
 | S238 *(раунд 140, 2026-11-17)* | (а) Полнотекстовый индекс archive.org (`openlibrary.org/search/inside.json`), ограниченная копия T. R. Schreiner, *1, 2 Peter, Jude* (NAC 37; B&H, 2003), IA `12peterjude0000schr`: обзорный абзац к 2 Пет. 2:1 — «…they denied the Lord Jesus Christ by both their behavior and teaching, despite the fact that as their master he bought them and made them his servants. When Peter thought of denying the Lord, he considered the penalty that comes from such denial—swift destruction»; разбор — «The NIV captures precisely the meaning of kai… The Greek word despotēs is not the usual one for “Lord,” and again the NIV’s rendering is» (конец страницы). Следующие страницы в индексе отсутствуют. (б) S. Escobedo III, «2 Peter 2:1 and Universal Redemption» (Alpha & Omega Ministries, 2002, ред. 2004), прим. 39: дословная цитата NAC «pages 331-332» — «I would suggest that Peter used phenomenological language… did not truly belong to God, even though they professed faith… bought by Jesus Christ, in the sense that they gave every indication initially of genuine faith». Класс B1 (фраза 1) и B (pp. 331–332) | Сн. 54 — `LOCATOR_PLAUSIBLE` (класс C); фраза 1 — `WORDING_PARTIAL`; фразы 2–4 — `WORDING_NOT_LOCATED` (мягко); `CONTEXT_OMITTED` (класс B) |
 | S239 *(раунд 141, 2026-11-17)* | (а) S. Escobedo III, «2 Peter 2:1 and Universal Redemption» (Alpha & Omega Ministries, 2002, ред. 2004), дословная цитата BKC к 2 Пет. 2:1 (прим. 13: «provided from a secondary source»): «Several suggestions have been offered: (1) They were saved but lost their salvation. But this contradicts many other Scriptures (e.g., John 3:16; 5:24; 10:28-29). (2) “Bought” means the Lord created them… But this stretches the meaning of agorazo (“redeem”). (3) The false prophets merely said they were “bought” by Christ. This, however, seems to read into the verse. (4) They were “redeemed” in the sense that Christ paid the redemptive price… This is a strong argument for unlimited atonement… against limited atonement…». (б) C. R. Swindoll, *Conquering through Conflict* (1990), открытая копия IA `conqueringthroug00char`, p. 24, n. 3: «Kenneth O. Gangel, “2 Peter,” in The Bible Knowledge Commentary, New Testament ed. … 1983, p. 869» — к 2 Пет. 1:21. Класс C (текст), класс B (соседняя страница) | Сн. 51/55 — `LOCATOR_CONSISTENT`; перевод сн. 55 — ACCURATE; перечень 1–3 — от Гангела; `HEDGE_DROPPED` (мягко) |
+| S240 *(раунд 142, 2026-11-17)* | (а) PDF статьи (teoblogia.ru), с. 13–14: вводная фраза, цитата сн. 56 («На кресте, как и в исходе, мы видим Божье личное заступничество за Его народ, не только чтобы избавить их от рабства и смерти, но и чтобы сделать их “народом для Себя”, как сказано во 2 Цар. 7:23»), фраза сн. 57 и библиография Green 1987, p. 118. (б) Полнотекстовый индекс Open Library, девять запросов по характерным оборотам (REPASS §65.3): книга Грина не найдена; совпадения только у других изданий IVP (NBD, Motyer *Isaiah*). Класс A1 (текст статьи); источник Грина не открыт | В цитате нет утверждения о греческом слове; лексическая фраза принадлежит статье; кто ошибся — HOLD |
 
 **Ответ: П1 исторически неверен; «словом о цене» в английской традиции является *redemption*, а не *atonement*.**
 
@@ -8362,8 +8368,9 @@ hommes** selon ce propos déterminé…*» (с. 183) **есть в источн�
 | 4.222 | Q218 | Бокэм, WBC 50, p. 240 (сн. 52): локатор `LOCATOR_VERIFIED` (класс B); слова Бокэма не видны — содержание HOLD; BDAG p. 14 — HOLD (р. 139) |
 | 4.223 | Q219 | Шрайнер, NAC 37, p. 329 (сн. 54): ядро фразы 1 в OCR; локатор `LOCATOR_PLAUSIBLE` (класс C); фразы 2–4 — пробел OCR; вывод pp. 331–332 — `CONTEXT_OMITTED` (класс B) (р. 140) |
 | 4.224 | Q220 | Гангел, BKC II, p. 870 (сн. 51, 55): `LOCATOR_CONSISTENT` (p. 869 = 1:21); перевод ACCURATE (класс C); три варианта — от Гангела, `HEDGE_DROPPED` (мягко); поправка к §4.223 (р. 141) |
+| 4.225 | Q221 | Грин, TNTC, p. 118 (сн. 56–57): в цитате нет утверждения о греческом слове, 2 Цар. 7:23 употреблено верно; `FACT_ERROR` — во фразе статьи («Там же»); кто ошибся — HOLD; поправка «агоразо» → «агорадзо» в REPASS §15 (р. 142) |
 
-⇒ разделов с `Q` — **217**, разделов §4.x — **219**; пропуски нумерации прежние.
+⇒ разделов с `Q` — **218**, разделов §4.x — **220**; пропуски нумерации прежние.
 
 
 ### 4.139. Q135 — Приёмка раунда 61: связка Сомюра, аудит объёма, готовность к мерджу (раунд 61)
@@ -10103,6 +10110,24 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 2. **Перевод сн. 55.** Совпадает с текстом BKC в цитате Эскобедо. Кавычки Гангела у “redeemed”, “sufficient”, “efficient” сняты, но оговорка «в том смысле, что» сохранена. ACCURATE (класс C).
 3. **Сн. 51.** Три варианта статьи вместе с опровержениями — это варианты (1)–(3) Гангела; его вариант (4) статья принимает как «наиболее вероятный». Атрибуция дана сноской — ACCURATE. В варианте 3 гангеловское «seems to read into the verse» передано категорично («слишком много “вчитывает”») — `HEDGE_DROPPED` (мягко).
 4. **Шрайнер в этой схеме.** Он приведён в поддержку варианта (4). Его собственный феноменологический вывод (pp. 331–332, §4.223) ближе к варианту (3), хотя и в другой форме: не «заявляли», а «выглядели» в описании Петра. Статья отвергает (3) как «вчитывание» и не упоминает, что вывод цитируемого близок к нему. Это усиливает `CONTEXT_OMITTED`; нового вердикта нет.
+
+Вердикты S1–S5 не меняются.
+
+
+### 4.225. Q221 — Грин, TNTC, p. 118: сноски 56 и 57 (исход, 2 Цар. 7:23) (раунд 142, 2026-11-17)
+
+**Повод.** С раунда 92 за сн. 57 числится `FACT_ERROR`: ἀγοράζω в LXX нигде не говорит об исходе, а во 2 Цар. 7:23 стоит λυτρόω (REPASS §15). Кто ошибся — Грин или статья, — оставалось HOLD, потому что книга закрыта. Полный текст сн. 56 в корпус не записывался. Источник — S240. Таблица — REPASS-документ, §65.
+
+**Вопрос.** Что именно статья приписывает Грину и где стоит лексическое утверждение?
+
+**Ответы.**
+1. **Цитата сн. 56.** «На кресте, как и в исходе, мы видим Божье личное заступничество за Его народ, не только чтобы избавить их от рабства и смерти, но и чтобы сделать их “народом для Себя”, как сказано во 2 Цар. 7:23». Это тематическая параллель. Утверждения о греческом слове в цитате нет. Стих употреблён верно: в нём Бог «пошёл искупить Себе народ» (LXX: τοῦ λυτρώσασθαι αὐτῷ λαόν).
+2. **Фраза со сн. 57.** «В греческом переводе ВЗ по отношению к исходу употребляется тот же самый термин агорадзо, что и во 2 Пет. 2:1 (ср. 2 Цар. 7:23)». Она стоит без кавычек, сноска — «Там же», отсылка — к тому же стиху. `FACT_ERROR` в силе.
+3. **Кто ошибся.** HOLD. Правдоподобнее, что статья превратила тематическую параллель Грина в лексическую: в цитате стих приведён ради «народа для Себя». Но p. 118 может содержать и больше процитированного. Ошибка Грину не приписывается.
+4. **Следующий довод статьи** («избавлены все израильтяне… итог различен») идёт без кавычек и без сноски. За слова Грина он не выдан; цитата его не подкрепляет, её акцент — цель избавления.
+5. **Поправка.** В REPASS §15 фраза статьи была процитирована со словом «агоразо»; в статье — «агорадзо». Исправлено, пометка рядом.
+
+**Чего нет.** Текст p. 118: девять запросов к полнотекстовому индексу Open Library книгу не нашли (REPASS §65.3); ноль попаданий не доказывает отсутствия текста.
 
 Вердикты S1–S5 не меняются.
 
