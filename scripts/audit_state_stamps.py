@@ -186,12 +186,17 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--summary", action="store_true")
     parser.add_argument("--check", action="store_true", help="fail on an impossible stamp")
     parser.add_argument("--head", type=int, default=15)
+    # The report records the date it was taken as scope.today, so it can only be reproduced
+    # with that date given: without this flag the committed artefact stops matching on the
+    # next calendar day, and a report nobody can regenerate is not evidence.
+    parser.add_argument("--today", default=None, help="the date to judge against (default: today)")
     parser.add_argument("--only", choices=("current", "edited-after-stamp", "stamp-ahead-of-history",
                                            "stamp-in-future"))
     args = parser.parse_args(argv)
 
     root = Path(args.root).resolve()
-    report = audit(root, head=args.head)
+    report = audit(root, head=args.head,
+                   today=datetime.date.fromisoformat(args.today) if args.today else None)
     if args.only:
         report["findings"] = [f for f in report["findings"] if f["state"] == args.only]
     if args.output:

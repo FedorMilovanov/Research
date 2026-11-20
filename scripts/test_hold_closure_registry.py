@@ -171,3 +171,36 @@ class ClosureTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class HoldTypeDeclarationTests(unittest.TestCase):
+    """A HOLD type the evidence policy does not know must be declared before it is used.
+
+    Record 08 carried `TEXT_INTEGRITY_HOLD`, which no other file in the repository mentions:
+    the register that documents non-canonical `holds` had invented one and printed it in §0
+    among the flags from the policy. It is now declared in `localAxes` with a reason, and this
+    test refuses both an undeclared type and a declaration that duplicates the policy.
+    """
+
+    @classmethod
+    def setUpClass(cls) -> None:
+        cls.data = json.loads(REGISTRY.read_text(encoding="utf-8"))
+        policy = json.loads((ROOT / "data" / "repository-evidence-policy-v2.json").read_text(encoding="utf-8"))
+        cls.canonical = {h for h in policy.get("holds", []) if isinstance(h, str)}
+        cls.local = {axis.get("value") for axis in cls.data.get("localAxes", []) if isinstance(axis, dict)}
+
+    def test_every_hold_type_is_known(self) -> None:
+        for entry in self.data.get("closures", []) + self.data.get("confirmations", []):
+            with self.subTest(entry.get("id")):
+                self.assertIn(entry.get("holdType"), self.canonical | self.local,
+                              "a HOLD type must be declared by the policy or by localAxes")
+
+    def test_local_axes_state_a_reason(self) -> None:
+        for axis in self.data.get("localAxes", []):
+            with self.subTest(axis.get("value")):
+                self.assertTrue(axis.get("value"))
+                self.assertGreater(len(axis.get("reason") or ""), 40, "a deviation needs its reason")
+
+    def test_local_axes_do_not_duplicate_the_policy(self) -> None:
+        self.assertEqual(sorted(self.local & self.canonical), [],
+                         "an axis declared local is not local if the policy already names it")

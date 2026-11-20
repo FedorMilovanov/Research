@@ -100,3 +100,31 @@ class StampTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class CommittedStampReportTests(unittest.TestCase):
+    """The committed report records the date it judges against, so it can be reproduced.
+
+    It could not be reproduced before: the tool took today's date, wrote it into scope.today,
+    and a report regenerated on the next calendar day differed only by that field. A report
+    that changes when nothing in the tree changes is not evidence of anything.
+    """
+
+    def test_report_reappears_with_its_own_date(self) -> None:
+        root = Path(__file__).resolve().parents[1]
+        committed = json.loads((root / "data" / "state-stamps-2026-11-18.json").read_text(encoding="utf-8"))
+        recorded = committed["scope"]["today"]
+        fresh = stamps.audit(root, today=datetime.date.fromisoformat(recorded))
+        self.assertEqual(fresh, committed, "regenerate with --today " + recorded)
+
+    def test_the_command_line_honours_today(self) -> None:
+        # The two tests above call audit() directly, so they would stay green if main()
+        # dropped the flag on the floor. This one goes through the parser.
+        root = Path(__file__).resolve().parents[1]
+        out = Path(tempfile.mkdtemp()) / "stamps.json"
+        self.assertEqual(stamps.main(["--root", str(root), "--today", "2020-01-01", "-o", str(out)]), 0)
+        self.assertEqual(json.loads(out.read_text(encoding="utf-8"))["scope"]["today"], "2020-01-01")
+
+    def test_today_is_taken_from_the_flag(self) -> None:
+        report = stamps.audit(Path(__file__).resolve().parents[1], today=datetime.date(2020, 1, 1))
+        self.assertEqual(report["scope"]["today"], "2020-01-01")

@@ -11,9 +11,9 @@
 <!-- closures-summary:begin -->
 ## 0. Карта закрытий (генерируется; не редактировать руками)
 
-Закрытий: **28**. Подтверждений без закрытия: **4**. Открытых пунктов по существу: **5**.
+Закрытий: **29**. Подтверждений без закрытия: **4**. Открытых пунктов по существу: **5**.
 
-По типу HOLD: `ARCHIVE_HOLD` — 8, `EVIDENCE_HOLD` — 15, `LOCATOR_HOLD` — 4, `TEXT_INTEGRITY_HOLD` — 1.
+Типы HOLD: `ARCHIVE_HOLD` — 8, `EVIDENCE_HOLD` — 16, `LOCATOR_HOLD` — 4, `TEXT_INTEGRITY_HOLD` — 1 (ось реестра, не флаг политики).
 
 | № | Ось | HOLD | Чем проверено | Где запись |
 |---|---|---|---|---|
@@ -23,28 +23,29 @@
 | 04 | Зеркала отдела Чарнока, волна 24 (3 файла) — обратная SHA-256 сверка | `ARCHIVE_HOLD` | серверная контрольная сумма | `БИОГРАФИИ/08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md, блок волны 24` |
 | 05 | Зеркала отдела Чарнока, волна 25 (6 файлов) — обратный SHA-256 readback | `ARCHIVE_HOLD` | серверная контрольная сумма | `БИОГРАФИИ/08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md, блок волны 25` |
 | 06 | Искупление — четыре PD-копии: parity копия/источник по серверной SHA-256 | `ARCHIVE_HOLD` | серверная контрольная сумма | `ИСКУПЛЕНИЕ/07_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md §2` |
-| 07 | Локаторная ось Markdown: 58 мёртвых относительных ссылок классифицированы, 3 дефекта починены, остальное объяснено точечно | `LOCATOR_HOLD` | read-only проверка ссылок | `scripts/audit_relative_links.py`, `scripts/test_audit_relative_links.py` |
-| 08 | Повреждённый текст: 95 склеек «слово+число+слово» восстановлены по истории самих файлов; 446 остаются под квитанциями | `TEXT_INTEGRITY_HOLD` | пробелы по истории файла | `data/text-integrity-repairs-2026-11-18.json`, `scripts/audit_text_integrity.py` |
-| 09 | Подписи SHA-256 в Markdown: 1 537 подписей разобраны, 58 совпали с байтами, 0 просроченных в живых документах | `EVIDENCE_HOLD` | пересчёт внутренних подписей | `data/internal-digests-verified-2026-11-18.json`, `scripts/verify_internal_digests.py` |
+| 07 | Локаторная ось Markdown: 58 мёртвых относительных ссылок классифицированы, 3 дефекта починены, остальное объяснено точечно | `LOCATOR_HOLD` | read-only проверка ссылок | `scripts/audit_relative_links.py`, `scripts/test_audit_relative_links.py` и ещё 6 |
+| 08 | Повреждённый текст: 95 склеек «слово+число+слово» восстановлены по истории самих файлов; 446 остаются под квитанциями | `TEXT_INTEGRITY_HOLD` | пробелы по истории файла | `data/text-integrity-repairs-2026-11-18.json`, `scripts/audit_text_integrity.py` и ещё 2 |
+| 09 | Подписи SHA-256 в Markdown: 1 537 подписей разобраны, 58 совпали с байтами, 0 просроченных в живых документах | `EVIDENCE_HOLD` | пересчёт внутренних подписей | `data/internal-digests-verified-2026-11-18.json`, `scripts/verify_internal_digests.py` и ещё 2 |
 | 10 | Короткие хеши: SHA-1 и MD5 рядом с именами файлов | `EVIDENCE_HOLD` | разметка коротких подписей | `data/internal-digests-verified-2026-11-18.json (schema internal-digests-verified/2, totals.byAlgorithm, состояния git-object-id и unlabelled-partial)` |
 | 11 | Дубли-близнецы: один документ под двумя именами | `EVIDENCE_HOLD` | сравнение текстов | `data/document-twins-2026-11-18.json (schema document-twins/1)` |
 | 12 | Самодатировка: дата в заголовке против истории Git | `EVIDENCE_HOLD` | дата в заголовке против Git | `data/state-stamps-2026-11-18.json (schema state-stamps/1)` |
 | 13 | Строки Drive-реестра: ответ Drive против локального файла | `ARCHIVE_HOLD` | реестр против ответа Drive | `data/drive-ledger-audit-2026-11-18.json; data/drive-ledger-snapshot-2026-11-18.json (что именно ответил Drive)` |
 | 14 | Хеши без имени файла: 514 строк разобраны по причине | `EVIDENCE_HOLD` | классификация строк | `data/internal-digests-verified-2026-11-18.json, totals.unclaimedByReason и unclaimedDigestClaimedElsewhere` |
-| 15 | Drive-реестр: 92 из 92 id подтверждены; две собственные ошибки сняты в тот же день | `ARCHIVE_HOLD` | реестр против ответа Drive | `docs/research/HOLDS_REGISTER_2026-11-18.md §19`, `data/drive-ledger-audit-2026-11-18.json` |
-| 16 | Регистр проверен на собственные счётчики: 8 просроченных чисел и таблица по корпусам, ставшая генерируемой | `EVIDENCE_HOLD` | счётчики против артефактов | `docs/research/HOLDS_REGISTER_2026-11-18.md §20`, `scripts/audit_register_claims.py` |
-| 17 | Счётчики в прозе: «закрыта одна ось» — число убрано из фразы, а не обновлено | `EVIDENCE_HOLD` | счётчики против артефактов | `docs/research/HOLDS_REGISTER_2026-11-18.md §21`, `scripts/audit_register_claims.py` |
-| 18 | Ссылки: отчёт стал закоммиченным артефактом, таблица §8 генерируется, отчёт сверяется в CI | `LOCATOR_HOLD` | проверка относительных ссылок | `docs/research/HOLDS_REGISTER_2026-11-18.md §22`, `data/relative-links-audit-2026-11-18.json` |
-| 19 | Якоря: «36 ссылок с фрагментом» измерены — 18 внутристраничных и 18 межфайловых, все резолвятся | `LOCATOR_HOLD` | проверка относительных ссылок | `docs/research/HOLDS_REGISTER_2026-11-18.md §23`, `data/relative-links-audit-2026-11-18.json` |
-| 20 | Открытые пункты получили имя, а их числа — поле: карта закрытий больше не печатает непроверенный замер | `EVIDENCE_HOLD` | соответствие неканонических значений `holds` | `docs/research/HOLDS_REGISTER_2026-11-18.md §24`, `data/hold-value-mapping-proposal-v1.json` |
-| 21 | Список триггеров CI сверен с зависимостями: найдены дубли, асимметрия pr/push и пять невидимых входов гейта публикации | `LOCATOR_HOLD` | сверка триггеров CI с зависимостями гейтов | `docs/research/HOLDS_REGISTER_2026-11-18.md §25`, `scripts/audit_ci_triggers.py` |
-| 22 | Таблица §11 генерируется из отчёта, а отчёт перестал терять второе цитирование локатора | `EVIDENCE_HOLD` | перечитывание закреплённых локаторов | `docs/research/HOLDS_REGISTER_2026-11-18.md §26`, `data/pinned-github-locators-verified-2026-11-18.json` |
-| 23 | Снимок очереди читал сам себя: исключения индекса выводятся из композиции, ссылочное поле воспроизводимо | `EVIDENCE_HOLD` | регрессия на самоподтверждение | `docs/research/HOLDS_REGISTER_2026-11-18.md §27`, `data/publication-gate-queue-v1.json` |
-| 24 | Подтверждения: числа в заголовках заменены счётчиками из артефактов; три из четырёх заголовков были просрочены | `EVIDENCE_HOLD` | счётчики подтверждений против артефактов | `docs/research/HOLDS_REGISTER_2026-11-18.md §28`, `data/hold-closure-registry-v1.json` |
-| 25 | Таблицы §15 и §16 генерируются из отчётов; §16 печатает темы коммитов дословно, §15 называет пары поименно | `EVIDENCE_HOLD` | счётчики против артефактов | `docs/research/HOLDS_REGISTER_2026-11-18.md §29`, `data/document-twins-2026-11-18.json` |
-| 26 | §3 генерируется из реестра закрытий: третья копия перечня отставала на семь строк | `EVIDENCE_HOLD` | счётчики против артефактов | `docs/research/HOLDS_REGISTER_2026-11-18.md §30`, `data/hold-closure-registry-v1.json` |
-| 27 | Само-счётчики удалены из реестра и из прозы: два из пяти уже разошлись | `EVIDENCE_HOLD` | счётчики против артефактов | `docs/research/HOLDS_REGISTER_2026-11-18.md §31`, `data/hold-closure-registry-v1.json` |
-| 28 | Правило «число тестов — тоже счётчик» применялось к одному предложению; три из шести цитат разошлись | `EVIDENCE_HOLD` | счётчики против артефактов | `docs/research/HOLDS_REGISTER_2026-11-18.md §32`, `scripts/test_audit_register_claims.py` |
+| 15 | Drive-реестр: 92 из 92 id подтверждены; две собственные ошибки сняты в тот же день | `ARCHIVE_HOLD` | реестр против ответа Drive | `docs/research/HOLDS_REGISTER_2026-11-18.md §19`, `data/drive-ledger-audit-2026-11-18.json` и ещё 1 |
+| 16 | Регистр проверен на собственные счётчики: 8 просроченных чисел и таблица по корпусам, ставшая генерируемой | `EVIDENCE_HOLD` | счётчики против артефактов | `docs/research/HOLDS_REGISTER_2026-11-18.md §20`, `scripts/audit_register_claims.py` и ещё 1 |
+| 17 | Счётчики в прозе: «закрыта одна ось» — число убрано из фразы, а не обновлено | `EVIDENCE_HOLD` | счётчики против артефактов | `docs/research/HOLDS_REGISTER_2026-11-18.md §21`, `scripts/audit_register_claims.py` и ещё 1 |
+| 18 | Ссылки: отчёт стал закоммиченным артефактом, таблица §8 генерируется, отчёт сверяется в CI | `LOCATOR_HOLD` | проверка относительных ссылок | `docs/research/HOLDS_REGISTER_2026-11-18.md §22`, `data/relative-links-audit-2026-11-18.json` и ещё 1 |
+| 19 | Якоря: «36 ссылок с фрагментом» измерены — 18 внутристраничных и 18 межфайловых, все резолвятся | `LOCATOR_HOLD` | проверка относительных ссылок | `docs/research/HOLDS_REGISTER_2026-11-18.md §23`, `data/relative-links-audit-2026-11-18.json` и ещё 1 |
+| 20 | Открытые пункты получили имя, а их числа — поле: карта закрытий больше не печатает непроверенный замер | `EVIDENCE_HOLD` | соответствие неканонических значений `holds` | `docs/research/HOLDS_REGISTER_2026-11-18.md §24`, `data/hold-value-mapping-proposal-v1.json` и ещё 1 |
+| 21 | Список триггеров CI сверен с зависимостями: найдены дубли, асимметрия pr/push и пять невидимых входов гейта публикации | `LOCATOR_HOLD` | сверка триггеров CI с зависимостями гейтов | `docs/research/HOLDS_REGISTER_2026-11-18.md §25`, `scripts/audit_ci_triggers.py` и ещё 1 |
+| 22 | Таблица §11 генерируется из отчёта, а отчёт перестал терять второе цитирование локатора | `EVIDENCE_HOLD` | перечитывание закреплённых локаторов | `docs/research/HOLDS_REGISTER_2026-11-18.md §26`, `data/pinned-github-locators-verified-2026-11-18.json` и ещё 1 |
+| 23 | Снимок очереди читал сам себя: исключения индекса выводятся из композиции, ссылочное поле воспроизводимо | `EVIDENCE_HOLD` | регрессия на самоподтверждение | `docs/research/HOLDS_REGISTER_2026-11-18.md §27`, `data/publication-gate-queue-v1.json` и ещё 1 |
+| 24 | Подтверждения: числа в заголовках заменены счётчиками из артефактов; три из четырёх заголовков были просрочены | `EVIDENCE_HOLD` | счётчики подтверждений против артефактов | `docs/research/HOLDS_REGISTER_2026-11-18.md §28`, `data/hold-closure-registry-v1.json` и ещё 1 |
+| 25 | Таблицы §15 и §16 генерируются из отчётов; §16 печатает темы коммитов дословно, §15 называет пары поименно | `EVIDENCE_HOLD` | счётчики против артефактов | `docs/research/HOLDS_REGISTER_2026-11-18.md §29`, `data/document-twins-2026-11-18.json` и ещё 1 |
+| 26 | §3 генерируется из реестра закрытий: третья копия перечня отставала на семь строк | `EVIDENCE_HOLD` | счётчики против артефактов | `docs/research/HOLDS_REGISTER_2026-11-18.md §30`, `data/hold-closure-registry-v1.json` и ещё 1 |
+| 27 | Само-счётчики удалены из реестра и из прозы: два из пяти уже разошлись | `EVIDENCE_HOLD` | счётчики против артефактов | `docs/research/HOLDS_REGISTER_2026-11-18.md §31`, `data/hold-closure-registry-v1.json` и ещё 1 |
+| 28 | Правило «число тестов — тоже счётчик» применялось к одному предложению; три из шести цитат разошлись | `EVIDENCE_HOLD` | счётчики против артефактов | `docs/research/HOLDS_REGISTER_2026-11-18.md §32`, `scripts/test_audit_register_claims.py` и ещё 1 |
+| 29 | Аудит собственной работы: мутации нашли три проверки, которые ничего не проверяли | `EVIDENCE_HOLD` | счётчики против артефактов | `docs/research/HOLDS_REGISTER_2026-11-18.md §33`, `scripts/render_closures_summary.py` и ещё 3 |
 
 **Подтверждения (не закрытия):**
 - `HCR-2026-11-18-C1` — Charnock custody v3 ZIP — независимое подтверждение квитанции
@@ -91,11 +92,11 @@
 | канонические упоминания `PUBLICATION_HOLD` | 2 611 |
 | канонические упоминания `LOCATOR_HOLD` | 1 976 |
 | канонические упоминания `RIGHTS_HOLD` | 1 460 |
-| канонические упоминания `ARCHIVE_HOLD` | 1 416 |
+| канонические упоминания `ARCHIVE_HOLD` | 1 424 |
 | канонические упоминания `EVIDENCE_HOLD` | 1 297 |
 | строки, где флаг зафиксирован как действующий (`open`) | 2 346 |
 | строки, где флаг зафиксирован как снятый (`closed`) | 821 |
-| строки без явного состояния (`unmarked`) | 5 996 |
+| строки без явного состояния (`unmarked`) | 6 004 |
 | строки, где одновременно записаны и снятие, и сохранение (`mixed`) | 403 |
 | JSON-файлов с массивом `holds` | 38 |
 <!-- inventory-slice:end -->
@@ -122,7 +123,7 @@
 | `ИСКУПЛЕНИЕ/` | 153 | 2 522 |
 | `БИОГРАФИИ/` | 55 | 1 365 |
 | `SUNO_HYMNS/` | 65 | 712 |
-| `scripts/` | 47 | 309 |
+| `scripts/` | 47 | 317 |
 | `1КОРИНФЯНАМ_11_ПОКРЫВАЛО/` | 124 | 293 |
 | `apostasy/` | 116 | 183 |
 | `G3_HISTORY/` | 87 | 147 |
@@ -161,28 +162,29 @@ Google Drive не выполнялась; перечень всех закрыт
 | `HCR-2026-11-18-04` | Серверные байты трёх объектов совпадают с SHA-256 локального снимка. | серверная контрольная сумма | [`БИОГРАФИИ/08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md`](../../БИОГРАФИИ/08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md) , блок волны 24 |
 | `HCR-2026-11-18-05` | Серверные байты шести объектов совпадают с SHA-256 локального снимка. | серверная контрольная сумма | [`БИОГРАФИИ/08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md`](../../БИОГРАФИИ/08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md) , блок волны 25 |
 | `HCR-2026-11-18-06` | Байты каждой копии равны байтам её исходного объекта (серверные SHA-256 и размеры совпадают). | серверная контрольная сумма | [`ИСКУПЛЕНИЕ/07_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md`](../../ИСКУПЛЕНИЕ/07_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md) §2 |
-| `HCR-2026-11-18-07` | Не «все LOCATOR_HOLD корпуса», а локаторная ось Markdown: 2 407 файлов, 8 712 ссылок измерены, 58 дефектов разобраны по классам; 3 дефекта исправлены проверяемым способом (указание на коммит вместо мёртвого пути; добавление схемы https://), остальные 55 записаны в data/relative-link-exceptions-v1.json парами (файл, ссылка) с причиной. Ни одна ссылка не переписана «на глаз». | read-only проверка ссылок | [`scripts/audit_relative_links.py`](../../scripts/audit_relative_links.py), [`scripts/test_audit_relative_links.py`](../../scripts/test_audit_relative_links.py) |
-| `HCR-2026-11-18-08` | Не «весь текст корпуса», а измеримый класс: 541 склейка в 19 файлах. 95 починены там, где в истории того же файла уже существовало окно ±25 символов с теми же словами и пробелами (проверка нечувствительна к пробелам: «10будущих» = «10 будущих» ≠ «11 будущих»). 446 в 9 файлах не тронуты: их текущие байты названы SHA-256 внутри корпуса (квитанции, `dossierSha256`), и правка сломала бы квитанцию молча — такие файлы помечаются `receipt-blocked`, `--repair` их пропускает, `--check` падает только на чинимой склейке. Для всех изменённых файлов выполнено «текст без пробелов совпадает до и после», все изменённые .json остаются валидным JSON. Четыре склейки в «Искуплении» починены с последующим штатным пересъёмом байтовой описи лана (`atonement_reshoot_state.py --write` → `--check: PASS`); дальнейшие правки в этом лане инструмент помечает `lane-blocked` и не делает. | пробелы по истории файла | [`data/text-integrity-repairs-2026-11-18.json`](../../data/text-integrity-repairs-2026-11-18.json), [`scripts/audit_text_integrity.py`](../../scripts/audit_text_integrity.py) |
-| `HCR-2026-11-18-09` | Не «все хеши в репозитории», а измеримая ось: 1 537 подписей в 2 416 Markdown-файлах разобраны по состояниям. 58 подписей впервые сверены с байтами рабочего дерева и совпали. Просроченных 27, и все они в документах, которые фиксируют момент: 21 в манифестах раундов V68–V70 (включая три самоподписи, которые не могут совпасть никогда) и 6 в хендофф-таблице, которая сама сообщает о расхождении квитанции с файлом. Просроченных подписей в живых документах — 0. | пересчёт внутренних подписей | [`data/internal-digests-verified-2026-11-18.json`](../../data/internal-digests-verified-2026-11-18.json), [`scripts/verify_internal_digests.py`](../../scripts/verify_internal_digests.py) |
+| `HCR-2026-11-18-07` | Не «все LOCATOR_HOLD корпуса», а локаторная ось Markdown: 2 407 файлов, 8 712 ссылок измерены, 58 дефектов разобраны по классам; 3 дефекта исправлены проверяемым способом (указание на коммит вместо мёртвого пути; добавление схемы https://), остальные 55 записаны в data/relative-link-exceptions-v1.json парами (файл, ссылка) с причиной. Ни одна ссылка не переписана «на глаз». | read-only проверка ссылок | [`scripts/audit_relative_links.py`](../../scripts/audit_relative_links.py), [`scripts/test_audit_relative_links.py`](../../scripts/test_audit_relative_links.py), [`data/relative-link-exceptions-v1.json`](../../data/relative-link-exceptions-v1.json), [`docs/research/HOLDS_REGISTER_2026-11-18.md`](../../docs/research/HOLDS_REGISTER_2026-11-18.md) §8, [`STEVE_LAWSON/README.md`](../../STEVE_LAWSON/README.md) п.4, п.6, [`history/README_CORPUS_INDEX_2026-08-17.md`](../../history/README_CORPUS_INDEX_2026-08-17.md) (шапка), `incoming/arena-auditor/2026-07-09/pr2-lossless-snapshots/README_SNAPSHOT_FIDELITY.md`, `ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/29_EXTERNAL_LINKS_REGISTRY_30_PLUS.md (строка 1)` |
+| `HCR-2026-11-18-08` | Не «весь текст корпуса», а измеримый класс: 541 склейка в 19 файлах. 95 починены там, где в истории того же файла уже существовало окно ±25 символов с теми же словами и пробелами (проверка нечувствительна к пробелам: «10будущих» = «10 будущих» ≠ «11 будущих»). 446 в 9 файлах не тронуты: их текущие байты названы SHA-256 внутри корпуса (квитанции, `dossierSha256`), и правка сломала бы квитанцию молча — такие файлы помечаются `receipt-blocked`, `--repair` их пропускает, `--check` падает только на чинимой склейке. Для всех изменённых файлов выполнено «текст без пробелов совпадает до и после», все изменённые .json остаются валидным JSON. Четыре склейки в «Искуплении» починены с последующим штатным пересъёмом байтовой описи лана (`atonement_reshoot_state.py --write` → `--check: PASS`); дальнейшие правки в этом лане инструмент помечает `lane-blocked` и не делает. | пробелы по истории файла | [`data/text-integrity-repairs-2026-11-18.json`](../../data/text-integrity-repairs-2026-11-18.json), [`scripts/audit_text_integrity.py`](../../scripts/audit_text_integrity.py), [`scripts/test_audit_text_integrity.py`](../../scripts/test_audit_text_integrity.py), [`docs/research/HOLDS_REGISTER_2026-11-18.md`](../../docs/research/HOLDS_REGISTER_2026-11-18.md) §12 |
+| `HCR-2026-11-18-09` | Не «все хеши в репозитории», а измеримая ось: 1 537 подписей в 2 416 Markdown-файлах разобраны по состояниям. 58 подписей впервые сверены с байтами рабочего дерева и совпали. Просроченных 27, и все они в документах, которые фиксируют момент: 21 в манифестах раундов V68–V70 (включая три самоподписи, которые не могут совпасть никогда) и 6 в хендофф-таблице, которая сама сообщает о расхождении квитанции с файлом. Просроченных подписей в живых документах — 0. | пересчёт внутренних подписей | [`data/internal-digests-verified-2026-11-18.json`](../../data/internal-digests-verified-2026-11-18.json), [`scripts/verify_internal_digests.py`](../../scripts/verify_internal_digests.py), [`scripts/test_verify_internal_digests.py`](../../scripts/test_verify_internal_digests.py), [`docs/research/HOLDS_REGISTER_2026-11-18.md`](../../docs/research/HOLDS_REGISTER_2026-11-18.md) §14 |
 | `HCR-2026-11-18-10` | Хеш считается подписью байтов только при словесной разметке (sha1, sha-1, md5, checksum, контрольная) и отсутствии commit/коммит/blob/main=/at/after. Размеченных коротких подписей 10 (sha1 3, md5 7), и все десять указывают на объекты вне рабочего дерева — локально сверять нечего. Совпадений с файлами дерева и просроченных среди них нет. | разметка коротких подписей | — |
 | `HCR-2026-11-18-11` | Скрытого дублирования между корпусами на сходстве >= 0.5 нет: все 12 пар лежат в 1 Кор. 11, «Обратной стороне кафедры» и STEVE_LAWSON. Пары-надмножества (04⊂30, 10⊂29, v0_5⊂v0_6) объявлены как supplement или поколения. | сравнение текстов | — |
 | `HCR-2026-11-18-12` | Перепись полная: каждая самодатировка в шапке документа найдена и сверена с датой последнего коммита. Даты не переписывались — инструмент печатает дату, коммит и его тему. | дата в заголовке против Git | — |
 | `HCR-2026-11-18-13` | Перепись полная по строкам: 92 строки найдены, у каждой зафиксировано состояние обеих сторон. Drive-сторона проверена на выборке 7 объектов, локальная — целиком там, где имя разрешается однозначно. | реестр против ответа Drive | — |
 | `HCR-2026-11-18-14` | Разобраны все 514. Проверена и отклонена гипотеза «взять путь из предыдущей строки»: подходящих строк 18, и выборка показала обрывки URL и ссылки на внешние файлы — правило дало бы подписи, которых документ не делал. | классификация строк | — |
-| `HCR-2026-11-18-15` | Drive-сторона реестра: 92 из 92 объектов подтверждены — 88 по размеру и md5Checksum, 4 по размеру и sha256Checksum; расхождений 0. | реестр против ответа Drive | [`docs/research/HOLDS_REGISTER_2026-11-18.md`](../../docs/research/HOLDS_REGISTER_2026-11-18.md) §19, [`data/drive-ledger-audit-2026-11-18.json`](../../data/drive-ledger-audit-2026-11-18.json) |
-| `HCR-2026-11-18-16` | 32 объявленных счётчика сверяются с полями артефактов; таблица §2.1 генерируется из byCorpus; оба механизма под гейтом CI | счётчики против артефактов | [`docs/research/HOLDS_REGISTER_2026-11-18.md`](../../docs/research/HOLDS_REGISTER_2026-11-18.md) §20, [`scripts/audit_register_claims.py`](../../scripts/audit_register_claims.py) |
-| `HCR-2026-11-18-17` | введены утверждения в прозе под проверкой; введено состояние superseded, требующее существующего раздела ниже по файлу; число закрытий в §1/§3 заменено ссылкой на генерируемый §0 | счётчики против артефактов | [`docs/research/HOLDS_REGISTER_2026-11-18.md`](../../docs/research/HOLDS_REGISTER_2026-11-18.md) §21, [`scripts/audit_register_claims.py`](../../scripts/audit_register_claims.py) |
-| `HCR-2026-11-18-18` | Отчёт data/relative-links-audit-2026-11-18.json закоммичен, §8 генерируется из него, CI сверяет отчёт с новым прогоном: resolves 2 861, external 5 984, missing 58 | проверка относительных ссылок | [`docs/research/HOLDS_REGISTER_2026-11-18.md`](../../docs/research/HOLDS_REGISTER_2026-11-18.md) §22, [`data/relative-links-audit-2026-11-18.json`](../../data/relative-links-audit-2026-11-18.json) |
-| `HCR-2026-11-18-19` | Введены состояния fragment/missing-fragment и перепись totals.fragments (total 36 = 18 + 18, resolved 36, unresolved 0); таблица §8 генерируется, утверждение §11 под проверкой | проверка относительных ссылок | [`docs/research/HOLDS_REGISTER_2026-11-18.md`](../../docs/research/HOLDS_REGISTER_2026-11-18.md) §23, [`data/relative-links-audit-2026-11-18.json`](../../data/relative-links-audit-2026-11-18.json) |
-| `HCR-2026-11-18-20` | id + title без чисел (тест), §5 без дубля распределения, обе таблицы §9 генерируются из proposal (--write/--check), 5 новых утверждений и totals.jsonHoldsTotal в инвентаре | соответствие неканонических значений `holds` | [`docs/research/HOLDS_REGISTER_2026-11-18.md`](../../docs/research/HOLDS_REGISTER_2026-11-18.md) §24, [`data/hold-value-mapping-proposal-v1.json`](../../data/hold-value-mapping-proposal-v1.json) |
-| `HCR-2026-11-18-21` | scripts/audit_ci_triggers.py --check: дубли, симметрия pull_request/push, покрытие исполняемых скриптов, файлы из констант и литералов, объявленные транзитивные входы; списки приведены к одному набору из 49 путей, шаг добавлен в CI | сверка триггеров CI с зависимостями гейтов | [`docs/research/HOLDS_REGISTER_2026-11-18.md`](../../docs/research/HOLDS_REGISTER_2026-11-18.md) §25, [`scripts/audit_ci_triggers.py`](../../scripts/audit_ci_triggers.py) |
-| `HCR-2026-11-18-22` | Отчёт schema 2: citations по каждому локатору, totals.citations=19 и citationFiles=7; перезамер с сетью (байты всех 17 совпали); таблица §11 генерируется (--write-pinned-table); --check-report сверяет отчёт с деревом без сети и стоит в CI; гейт таблиц идёт по SLICES, а не по списку имён | перечитывание закреплённых локаторов | [`docs/research/HOLDS_REGISTER_2026-11-18.md`](../../docs/research/HOLDS_REGISTER_2026-11-18.md) §26, [`data/pinned-github-locators-verified-2026-11-18.json`](../../data/pinned-github-locators-verified-2026-11-18.json) |
-| `HCR-2026-11-18-23` | pipeline_files() выводит исключения из overlaysApplied + снимок; indexExcluded в отчёте (schema 2); composedCounts с нулями по объявленным состояниям и total; регрессия на два построения и три контроля, проверенная в обе стороны; шесть чисел §10 подключены к снимку | регрессия на самоподтверждение | [`docs/research/HOLDS_REGISTER_2026-11-18.md`](../../docs/research/HOLDS_REGISTER_2026-11-18.md) §27, [`data/publication-gate-queue-v1.json`](../../data/publication-gate-queue-v1.json) |
-| `HCR-2026-11-18-24` | counters (label/artefact/field) у подтверждений, значения читаются из отчётов; неразрешимый счётчик валит --check кодом 2; title и verification.expect без измерений (тест различает идентификаторы и измерения); C4 помечен supersededBy §19 | счётчики подтверждений против артефактов | [`docs/research/HOLDS_REGISTER_2026-11-18.md`](../../docs/research/HOLDS_REGISTER_2026-11-18.md) §28, [`data/hold-closure-registry-v1.json`](../../data/hold-closure-registry-v1.json) |
-| `HCR-2026-11-18-25` | Срезы twins и stamps в audit_register_claims.py (--write-twins-table/--write-stamps-table): таблица состояний, поименные пары с перекрытием, сумма «Пар выше порога» под утверждением, дословные темы коммитов и полный список документов | счётчики против артефактов | [`docs/research/HOLDS_REGISTER_2026-11-18.md`](../../docs/research/HOLDS_REGISTER_2026-11-18.md) §29, [`data/document-twins-2026-11-18.json`](../../data/document-twins-2026-11-18.json) |
-| `HCR-2026-11-18-26` | render_detail() в render_closures_summary.py печатает closedScope/method/recordLocations из реестра в блок closures-detail; --write и --check отвечают за оба блока; отсутствие маркеров — падение; replace_block получает маркеры параметрами и режет по найденному индексу | счётчики против артефактов | [`docs/research/HOLDS_REGISTER_2026-11-18.md`](../../docs/research/HOLDS_REGISTER_2026-11-18.md) §30, [`data/hold-closure-registry-v1.json`](../../data/hold-closure-registry-v1.json) |
-| `HCR-2026-11-18-27` | Само-счётчики (closures, confirmations, openItems, claims, triggerPaths) удалены из objects и заменены отсылкой к инструменту; число утверждений убрано из прозы §21.2, §24 и записи 17; добавлены два теста — на ключи в objects и на конструкцию «N утверждени…» в регистре | счётчики против артефактов | [`docs/research/HOLDS_REGISTER_2026-11-18.md`](../../docs/research/HOLDS_REGISTER_2026-11-18.md) §31, [`data/hold-closure-registry-v1.json`](../../data/hold-closure-registry-v1.json) |
-| `HCR-2026-11-18-28` | Размер набора удалён, а не обновлён; в §8 осталось проверяемое имя CI-шага; добавлены четыре теста — на конструкцию «число + тест» в прозе, на существование цитируемого имени шага среди шагов workflow и на те же счётчики в полях записи (previousState исключён как пересказ прошлой формулировки); свежесть закоммиченного отчёта о ссылках переехала из шага workflow в тест — первый коммит главы упал в CI именно на ней | счётчики против артефактов | [`docs/research/HOLDS_REGISTER_2026-11-18.md`](../../docs/research/HOLDS_REGISTER_2026-11-18.md) §32, [`scripts/test_audit_register_claims.py`](../../scripts/test_audit_register_claims.py) |
+| `HCR-2026-11-18-15` | Drive-сторона реестра: 92 из 92 объектов подтверждены — 88 по размеру и md5Checksum, 4 по размеру и sha256Checksum; расхождений 0. | реестр против ответа Drive | [`docs/research/HOLDS_REGISTER_2026-11-18.md`](../../docs/research/HOLDS_REGISTER_2026-11-18.md) §19, [`data/drive-ledger-audit-2026-11-18.json`](../../data/drive-ledger-audit-2026-11-18.json), [`data/drive-ledger-snapshot-2026-11-18.json`](../../data/drive-ledger-snapshot-2026-11-18.json) |
+| `HCR-2026-11-18-16` | 32 объявленных счётчика сверяются с полями артефактов; таблица §2.1 генерируется из byCorpus; оба механизма под гейтом CI | счётчики против артефактов | [`docs/research/HOLDS_REGISTER_2026-11-18.md`](../../docs/research/HOLDS_REGISTER_2026-11-18.md) §20, [`scripts/audit_register_claims.py`](../../scripts/audit_register_claims.py), [`scripts/test_audit_register_claims.py`](../../scripts/test_audit_register_claims.py) |
+| `HCR-2026-11-18-17` | введены утверждения в прозе под проверкой; введено состояние superseded, требующее существующего раздела ниже по файлу; число закрытий в §1/§3 заменено ссылкой на генерируемый §0 | счётчики против артефактов | [`docs/research/HOLDS_REGISTER_2026-11-18.md`](../../docs/research/HOLDS_REGISTER_2026-11-18.md) §21, [`scripts/audit_register_claims.py`](../../scripts/audit_register_claims.py), [`scripts/test_audit_register_claims.py`](../../scripts/test_audit_register_claims.py) |
+| `HCR-2026-11-18-18` | Отчёт data/relative-links-audit-2026-11-18.json закоммичен, §8 генерируется из него, CI сверяет отчёт с новым прогоном: resolves 2 861, external 5 984, missing 58 | проверка относительных ссылок | [`docs/research/HOLDS_REGISTER_2026-11-18.md`](../../docs/research/HOLDS_REGISTER_2026-11-18.md) §22, [`data/relative-links-audit-2026-11-18.json`](../../data/relative-links-audit-2026-11-18.json), [`scripts/audit_register_claims.py`](../../scripts/audit_register_claims.py) |
+| `HCR-2026-11-18-19` | Введены состояния fragment/missing-fragment и перепись totals.fragments (total 36 = 18 + 18, resolved 36, unresolved 0); таблица §8 генерируется, утверждение §11 под проверкой | проверка относительных ссылок | [`docs/research/HOLDS_REGISTER_2026-11-18.md`](../../docs/research/HOLDS_REGISTER_2026-11-18.md) §23, [`data/relative-links-audit-2026-11-18.json`](../../data/relative-links-audit-2026-11-18.json), [`scripts/audit_relative_links.py`](../../scripts/audit_relative_links.py) |
+| `HCR-2026-11-18-20` | id + title без чисел (тест), §5 без дубля распределения, обе таблицы §9 генерируются из proposal (--write/--check), 5 новых утверждений и totals.jsonHoldsTotal в инвентаре | соответствие неканонических значений `holds` | [`docs/research/HOLDS_REGISTER_2026-11-18.md`](../../docs/research/HOLDS_REGISTER_2026-11-18.md) §24, [`data/hold-value-mapping-proposal-v1.json`](../../data/hold-value-mapping-proposal-v1.json), [`scripts/check_hold_vocabulary.py`](../../scripts/check_hold_vocabulary.py) |
+| `HCR-2026-11-18-21` | scripts/audit_ci_triggers.py --check: дубли, симметрия pull_request/push, покрытие исполняемых скриптов, файлы из констант и литералов, объявленные транзитивные входы; списки приведены к одному набору из 49 путей, шаг добавлен в CI | сверка триггеров CI с зависимостями гейтов | [`docs/research/HOLDS_REGISTER_2026-11-18.md`](../../docs/research/HOLDS_REGISTER_2026-11-18.md) §25, [`scripts/audit_ci_triggers.py`](../../scripts/audit_ci_triggers.py), `.github/workflows/holds-inventory.yml` |
+| `HCR-2026-11-18-22` | Отчёт schema 2: citations по каждому локатору, totals.citations=19 и citationFiles=7; перезамер с сетью (байты всех 17 совпали); таблица §11 генерируется (--write-pinned-table); --check-report сверяет отчёт с деревом без сети и стоит в CI; гейт таблиц идёт по SLICES, а не по списку имён | перечитывание закреплённых локаторов | [`docs/research/HOLDS_REGISTER_2026-11-18.md`](../../docs/research/HOLDS_REGISTER_2026-11-18.md) §26, [`data/pinned-github-locators-verified-2026-11-18.json`](../../data/pinned-github-locators-verified-2026-11-18.json), [`scripts/verify_pinned_github_locators.py`](../../scripts/verify_pinned_github_locators.py) |
+| `HCR-2026-11-18-23` | pipeline_files() выводит исключения из overlaysApplied + снимок; indexExcluded в отчёте (schema 2); composedCounts с нулями по объявленным состояниям и total; регрессия на два построения и три контроля, проверенная в обе стороны; шесть чисел §10 подключены к снимку | регрессия на самоподтверждение | [`docs/research/HOLDS_REGISTER_2026-11-18.md`](../../docs/research/HOLDS_REGISTER_2026-11-18.md) §27, [`data/publication-gate-queue-v1.json`](../../data/publication-gate-queue-v1.json), [`scripts/publication_gate_status.py`](../../scripts/publication_gate_status.py) |
+| `HCR-2026-11-18-24` | counters (label/artefact/field) у подтверждений, значения читаются из отчётов; неразрешимый счётчик валит --check кодом 2; title и verification.expect без измерений (тест различает идентификаторы и измерения); C4 помечен supersededBy §19 | счётчики подтверждений против артефактов | [`docs/research/HOLDS_REGISTER_2026-11-18.md`](../../docs/research/HOLDS_REGISTER_2026-11-18.md) §28, [`data/hold-closure-registry-v1.json`](../../data/hold-closure-registry-v1.json), [`scripts/render_closures_summary.py`](../../scripts/render_closures_summary.py) |
+| `HCR-2026-11-18-25` | Срезы twins и stamps в audit_register_claims.py (--write-twins-table/--write-stamps-table): таблица состояний, поименные пары с перекрытием, сумма «Пар выше порога» под утверждением, дословные темы коммитов и полный список документов | счётчики против артефактов | [`docs/research/HOLDS_REGISTER_2026-11-18.md`](../../docs/research/HOLDS_REGISTER_2026-11-18.md) §29, [`data/document-twins-2026-11-18.json`](../../data/document-twins-2026-11-18.json), [`data/state-stamps-2026-11-18.json`](../../data/state-stamps-2026-11-18.json) |
+| `HCR-2026-11-18-26` | render_detail() в render_closures_summary.py печатает closedScope/method/recordLocations из реестра в блок closures-detail; --write и --check отвечают за оба блока; отсутствие маркеров — падение; replace_block получает маркеры параметрами и режет по найденному индексу | счётчики против артефактов | [`docs/research/HOLDS_REGISTER_2026-11-18.md`](../../docs/research/HOLDS_REGISTER_2026-11-18.md) §30, [`data/hold-closure-registry-v1.json`](../../data/hold-closure-registry-v1.json), [`scripts/render_closures_summary.py`](../../scripts/render_closures_summary.py) |
+| `HCR-2026-11-18-27` | Само-счётчики (closures, confirmations, openItems, claims, triggerPaths) удалены из objects и заменены отсылкой к инструменту; число утверждений убрано из прозы §21.2, §24 и записи 17; добавлены два теста — на ключи в objects и на конструкцию «N утверждени…» в регистре | счётчики против артефактов | [`docs/research/HOLDS_REGISTER_2026-11-18.md`](../../docs/research/HOLDS_REGISTER_2026-11-18.md) §31, [`data/hold-closure-registry-v1.json`](../../data/hold-closure-registry-v1.json), [`scripts/test_hold_closure_registry.py`](../../scripts/test_hold_closure_registry.py) |
+| `HCR-2026-11-18-28` | Размер набора удалён, а не обновлён; в §8 осталось проверяемое имя CI-шага; добавлены четыре теста — на конструкцию «число + тест» в прозе, на существование цитируемого имени шага среди шагов workflow и на те же счётчики в полях записи (previousState исключён как пересказ прошлой формулировки); свежесть закоммиченного отчёта о ссылках переехала из шага workflow в тест — первый коммит главы упал в CI именно на ней | счётчики против артефактов | [`docs/research/HOLDS_REGISTER_2026-11-18.md`](../../docs/research/HOLDS_REGISTER_2026-11-18.md) §32, [`scripts/test_audit_register_claims.py`](../../scripts/test_audit_register_claims.py), [`scripts/test_hold_closure_registry.py`](../../scripts/test_hold_closure_registry.py) |
+| `HCR-2026-11-18-29` | Восемь дефектов исправлены: §3 печатает все локаторы, §0 — первые два и «и ещё N»; неканонический флаг объявлен в localAxes и помечен в §0; добавлены имена трёх методов, тест падает на методе без имени; словарь имён методов дедуплицирован; обрыв причины открытого пункта помечается «…»; правило двусмысленности приведено к одному (сравниваются значения, тесты в обе стороны); у самодатировки появился --today, и закоммиченный отчёт воспроизводится со своей датой. Сверх правок: тринадцать внесённых поломок — три не были пойманы до правок и ловятся после; инвентарь §2 цитировал артефакт, разошедшийся с деревом, потому что CI сравнивал два прогона между собой, — артефакт перегенерирован и получил тест свежести | счётчики против артефактов | [`docs/research/HOLDS_REGISTER_2026-11-18.md`](../../docs/research/HOLDS_REGISTER_2026-11-18.md) §33, [`scripts/render_closures_summary.py`](../../scripts/render_closures_summary.py), [`scripts/audit_register_claims.py`](../../scripts/audit_register_claims.py), [`scripts/audit_state_stamps.py`](../../scripts/audit_state_stamps.py), [`scripts/test_render_closures_summary.py`](../../scripts/test_render_closures_summary.py) |
 <!-- closures-detail:end -->
 **Важная граница.** Readback говорит только «байты копии равны байтам источника / байты на Drive
 равны записанному снимку». Он **не** говорит, что в PDF есть нужная печатная страница, что локатор
@@ -273,7 +275,7 @@ HOLD-флаги считались, а мёртвые относительные
 | Показатель ссылок | Значение |
 |---|---:|
 | Markdown-файлов | 2 416 |
-| ссылок `resolves` | 2 887 |
+| ссылок `resolves` | 2 913 |
 | ссылок `external` | 5 966 |
 | ссылок `missing` | 58 |
 | ссылок `outside` | 0 |
@@ -1568,3 +1570,83 @@ workflow: `cmp /tmp/links-a.json data/relative-links-audit-2026-11-18.json`. Л�
 Вывод, который я записываю, потому что он дороже этой главы: **проверка, живущая только в
 workflow, — это проверка, которую автор не запускает.** Пока она там, «все гейты зелёные» в
 отчёте значит «все гейты, которые я вспомнил».
+
+## 33. Аудит собственной работы: восемь дефектов, три из них — в проверках
+
+Владелец корпуса попросил проверить всё, что сделано в этом регистре, прежде чем это мержить.
+Проверка шла не «перечитал и вроде нормально», а двумя способами, которые оставляют след.
+
+**Первый — инварианты.** Все гейты заново, все отчёты воспроизведены из дерева, реестр проверен
+на форму (уникальность id, отсутствие пропусков, канонические типы, существование каждого
+локатора), §3 сверен с реестром построчно, утверждения — с артефактами.
+
+**Второй — мутации.** В код по одной вносились заведомые поломки, и смотрелось, покраснеет ли
+набор. Это единственный способ узнать, что тест проверяет, а не просто существует. Внесено
+тринадцать поломок; сначала поймано десять. Три непойманных — это дыры в проверках, а не в
+работающем коде: они означали, что такой дефект мог бы пройти незамеченным.
+
+### 33.1. Исправлено
+
+| Дефект | Что было не так | Чем закрыт |
+|---|---|---|
+| §3 показывал не все локаторы | в таблице стояли первые два, остальные исчезали молча | §3 печатает все; §0 — первые два и «и ещё N» |
+| Флаг, которого нет в политике | `TEXT_INTEGRITY_HOLD` (запись 08) не объявлен ни одним файлом корпуса, но печатался в §0 среди флагов | объявлен в `localAxes` с причиной, §0 помечает его как ось реестра |
+| Три метода без русского имени | в русской строке §0 и §3 стояли сырые слаги трёх подтверждений | добавлены имена, тест падает на любом методе без имени |
+| Шесть повторяющихся ключей в `METHOD_NAMES` | мусор от правки: один и тот же метод был объявлен дважды | словарь дедуплицирован |
+| Обрыв причины открытого пункта | текст резался по 180 знакам без многоточия — короткое не отличить от обрезанного | обрыв помечается «…» |
+| Два правила двусмысленности | таблица считала двусмысленностью только разные числа, проза — любое второе вхождение | одно правило: сравниваются значения; тесты в обе стороны |
+| Машинный срез §2 цитировал устаревший артефакт | инвентарь не сверялся с деревом: CI гонял инструмент дважды и сравнивал прогоны между собой, а не с закоммиченным файлом; упоминания флагов, появившиеся в скриптах позже, в артефакт не попали | артефакт перегенерирован, добавлен тест свежести |
+| Отчёт самодатировки не воспроизводился | инструмент писал в отчёт сегодняшнюю дату, поэтому на следующий день отчёт отличался одной строкой | флаг `--today`; закоммиченный отчёт воспроизводится со своей датой побайтово |
+
+**Самый дорогой из восьми — первый в этом списке, и он же последний, который я нашёл.**
+Машинный срез §2 и таблица по корпусам построены на `data/repository-holds-inventory-v1.json`.
+Шаг CI запускал инвентаризацию дважды и сравнивал два прогона — это доказывало
+детерминированность, а не актуальность. Артефакт отставал от дерева на несколько упоминаний
+флагов, и все утверждения §2 «совпадали» — с устаревшим файлом. Проверка, которая сравнивает
+инструмент с самим собой, не видит, что он описывает прошлое дерево.
+
+Про отчёт о самодатировке: его **нельзя было сверить** — его собственное
+поле `scope.today` делало его другим назавтра, даже если в дереве не изменился ни один байт. Шаг CI
+для него потому и был отчётным, а не гейтовым. Теперь его можно воспроизвести — и тогда гейт
+становится возможным; включать его или нет, решает владелец, потому что он покраснеет на любой
+правке в любом документе корпуса, а не только в этом.
+
+### 33.2. Что не нашлось
+
+Это тоже результат, и его стоит записать:
+
+- ни одного расхождения в утверждениях — все совпали, кроме одного, перекрытого более поздним
+  разделом, — и ни одного в генерируемых таблицах; число утверждений здесь не приводится: оно
+  считается инструментом, а не переписывается (§31);
+- ни одной пропущенной строки: §3 совпадает с реестром построчно, id идут без пропусков;
+- **ни одного удалённого утверждения за всю работу**: таблица утверждений не менялась, а из
+  прозовых исчезло одно — то, чьё число убрали из заголовка подтверждения в §28;
+- исторические числа, выборочно сверенные по истории Git, верны: «18 строк против 25 записей» в
+  §30 и «46 против 52, 49 против 50» в §31 воспроизводятся из коммитов, на которые ссылаются;
+- слияние с `main` проходит без конфликтов; в workflow только добавления — ни одна проверка не
+  удалена и не ослаблена;
+- ни одной зависимости от времени или случайности, кроме найденной в самодатировке;
+- ни одного артефакта-сироты: у каждого файла в `data/`, добавленного этой работой, есть
+  потребитель — инструмент, запись реестра или тест.
+
+### 33.3. Что осталось и почему
+
+- **Утверждения проверяют текст против артефакта, а не артефакт против дерева.** Это две разные
+  проверки, и вторая нужна отдельно для каждого артефакта: сегодня её имеют ссылки, закреплённые
+  локаторы и — с этого раздела — инвентарь и самодатировка. Дубли-близнецы остаются без неё.
+- **Три шага CI — отчётные** (дубли-близнецы, самодатировка, сверка Drive). Причины записаны в
+  самом workflow: гейт на дублях заставил бы инструмент править чужой мастер-индекс, а «изменён
+  после своей даты» требует человеческого суждения. Но следствие надо назвать: §15 и §16 цитируют
+  отчёты, свежесть которых не гейтится. Отчёт о дублях я сверил сегодня вручную — он совпал
+  побайтово; проверки, которая это повторяет, нет.
+- **`previousState` цитирует исторические числа** и из запрета на числа в записях исключён
+  намеренно: запись 24 приводит «27 (их 30)» как доказательство того дрейфа, который закрывала.
+- **Проверки ловят цифры, не слова.** «Четыре из них падают» пройдёт мимо запрета.
+- **Открытые зацепки не изменились**: независимая научная приёмка, приводы Drive, права, шесть
+  документов, изменённых после своего штампа, неканонические `holds`.
+
+### 33.4. Правило, которое я забираю из этой проверки
+
+Аудит, который только перечитывает, находит опечатки. Аудит, который **ломает код и смотрит, кто
+закричит**, находит тесты, которые ничего не проверяют. Три дыры из тринадцати — это не мало: если
+бы я не внёс поломки, «все гейты зелёные» звучало бы так же уверенно, как звучало до §32.6.

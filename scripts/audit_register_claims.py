@@ -257,7 +257,10 @@ def prose_audit(text: str, root: Path) -> list[dict]:
             entry["state"] = "source-missing"
         elif not matches:
             entry["state"] = "anchor-missing"
-        elif len(matches) > 1:
+        elif len({normalize(m.group("n")) for m in matches}) > 1:
+            # Two copies of the sentence with two different numbers: which one is the claim?
+            # The same number repeated is one claim stated twice, and the table path has
+            # always read it that way - the two paths disagreed.
             entry["state"] = "anchor-ambiguous"
             entry["line"] = text[: matches[0].start()].count("\n") + 1
         else:

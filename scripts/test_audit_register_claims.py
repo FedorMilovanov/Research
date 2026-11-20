@@ -299,3 +299,34 @@ class RegisterSuiteSizeTests(unittest.TestCase):
                     names.add(found.group(1).split("#")[0].strip().strip("'\""))
         self.assertEqual(sorted(quoted - names), [],
                          "a quoted gate name must exist as a workflow step name")
+
+
+class ProseAmbiguityTests(unittest.TestCase):
+    """Two copies of a sentence are one claim; two different numbers are not a claim at all.
+
+    The table path has always read ambiguity this way, and the prose path did not: it called
+    any second occurrence ambiguous, even when both copies printed the same number.
+    """
+
+    def setUp(self) -> None:
+        self.fx = Fixture()
+        self.fx.write_json(claims.INVENTORY, {"totals": {"filesWithJsonHolds": 7}})
+        self.claim = {"id": "json-holds-files", "pattern": r"В (?P<n>\d+) JSON-файлах",
+                      "artefact": claims.INVENTORY, "field": "totals.filesWithJsonHolds"}
+
+    def tearDown(self) -> None:
+        self.fx.close()
+
+    def states(self, text: str) -> list[str]:
+        original = claims.PROSE_CLAIMS
+        claims.PROSE_CLAIMS = [self.claim]
+        try:
+            return [entry["state"] for entry in claims.prose_audit(text, self.fx.root)]
+        finally:
+            claims.PROSE_CLAIMS = original
+
+    def test_the_same_number_twice_is_one_claim(self) -> None:
+        self.assertEqual(self.states("В 7 JSON-файлах ... снова В 7 JSON-файлах"), ["match"])
+
+    def test_two_different_numbers_are_ambiguous(self) -> None:
+        self.assertEqual(self.states("В 7 JSON-файлах ... и ещё В 8 JSON-файлах"), ["anchor-ambiguous"])

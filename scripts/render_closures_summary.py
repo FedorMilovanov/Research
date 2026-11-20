@@ -57,13 +57,13 @@ METHOD_NAMES = {
     "register-claims-audit": "счётчики против артефактов",
     "server-checksum-readback": "серверная контрольная сумма",
     "read-only-link-audit": "read-only проверка ссылок",
-    "relative-link-audit": "проверка относительных ссылок",
-    "hold-vocabulary-mapping": "соответствие неканонических значений `holds`",
-    "ci-trigger-dependency-audit": "сверка триггеров CI с зависимостями гейтов",
-    "self-confirmation-regression": "регрессия на самоподтверждение",
-    "confirmation-counter-audit": "счётчики подтверждений против артефактов",
     "space-restoration-backed-by-file-history": "пробелы по истории файла",
-    "internal-digest-rehash": "пересчёт внутренних подписей",
+    # Three confirmations carried methods with no label, so the map printed the raw slug
+    # in a Russian sentence - the kind of omission a reader reads as a missing translation
+    # rather than a missing fact. A test now fails when a method has no name.
+    "pinned-commit-raw-fetch-and-rehash": "скачивание закреплённого коммита и пересчёт байтов",
+    "section-anchor-slug-check": "сверка якорей по заголовкам раздела",
+    "google-drive-server-metadata-read": "чтение серверных метаданных Drive",
 }
 
 
@@ -96,7 +96,7 @@ def render_detail(registry: dict) -> str:
         scope = (closure.get("closedScope") or closure.get("title") or "").replace("|", "\\|")
         method = closure.get("method", "")
         places = closure.get("recordLocations") or []
-        where = ", ".join(_place(p) for p in places[:2]) or "—"
+        where = ", ".join(_place(p) for p in places) or "—"
         lines.append(f"| {ident} | {scope} | {METHOD_NAMES.get(method, method)} | {where} |")
     lines.append(DETAIL_END)
     return "\n".join(lines)
@@ -130,11 +130,24 @@ def render_counter(counter: dict, root: Path) -> str:
     return f"{label}: {f'{value:,}'.replace(',', chr(0x2009))}"
 
 
+POLICY = "data/repository-evidence-policy-v2.json"
+
+
+def canonical_holds(root: Path) -> set[str]:
+    """The HOLD flags the evidence policy declares. Empty when the policy is not readable."""
+    path = root / POLICY
+    if not path.is_file():
+        return set()
+    holds = json.loads(path.read_text(encoding="utf-8")).get("holds")
+    return {h for h in holds if isinstance(h, str)} if isinstance(holds, list) else set()
+
+
 def render(registry: dict, root: Path | None = None) -> str:
     root = root or Path(".")
     closures = registry.get("closures", [])
     confirmations = registry.get("confirmations", [])
     open_items = registry.get("notClosed", [])
+    canonical = canonical_holds(root)
     by_type: dict[str, int] = {}
     for closure in closures:
         key = closure.get("holdType") or "не указан"
@@ -146,7 +159,9 @@ def render(registry: dict, root: Path | None = None) -> str:
         f"Закрытий: **{len(closures)}**. Подтверждений без закрытия: **{len(confirmations)}**."
         f" Открытых пунктов по существу: **{len(open_items)}**.",
         "",
-        "По типу HOLD: " + ", ".join(f"`{k}` — {v}" for k, v in sorted(by_type.items())) + ".",
+        "Типы HOLD: " + ", ".join(
+            f"`{k}` — {v}" + ("" if k in canonical or not canonical else " (ось реестра, не флаг политики)")
+            for k, v in sorted(by_type.items())) + ".",
         "",
         "| № | Ось | HOLD | Чем проверено | Где запись |",
         "|---|---|---|---|---|",
@@ -157,6 +172,10 @@ def render(registry: dict, root: Path | None = None) -> str:
         method = closure.get("method", "")
         places = closure.get("recordLocations") or ([closure["evidence"]] if closure.get("evidence") else [])
         where = ", ".join(f"`{p}`" for p in places[:2]) or "—"
+        # The detail table carries every location; this summary says how many it left out
+        # instead of ending the cell silently, which is how §3 fell seven closures behind.
+        if len(places) > 2:
+            where += f" и ещё {len(places) - 2}"
         lines.append(
             f"| {number} | {title} | `{closure.get('holdType', '—')}`"
             f" | {METHOD_NAMES.get(method, method)} | {where} |"
@@ -181,7 +200,8 @@ def render(registry: dict, root: Path | None = None) -> str:
         ident = (item.get("id") or "").strip()
         title = (item.get("title") or "").strip()
         reason = (item.get("reason") or "").strip()
-        short = reason.split(".")[0][:180]
+        first_sentence = reason.split(".")[0]
+        short = first_sentence if len(first_sentence) <= 180 else first_sentence[:180].rstrip() + "…"
         lines.append(f"- `{ident}` — {title}. {short}.")
     lines += [
         "",
