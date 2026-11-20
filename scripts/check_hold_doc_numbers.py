@@ -24,6 +24,19 @@
     anchor-ambiguous   якорь встречается дважды: непонятно, какое число сверять;
     source-missing     источник не отдал величину (нет файла, упал скрипт).
 
+Три вида источника, и они ловят разное — поэтому перепутать их нельзя:
+
+    external   машинный артефакт или вывод скрипта; он и есть истина, документ
+               обязан ему соответствовать. Ловит дрейф документа.
+    cross      другой документ (README против таблицы квитанций). Ловит дрейф
+               одного из двух — но не обоих сразу.
+    internal   проза против таблицы (или против числа хешей) внутри одного
+               документа. Ловит расхождение слов с собственной таблицей и не
+               ловит неверную таблицу: она не источник.
+
+Печатается и разбивка по видам, чтобы «26 совпало» не читалось как «26 раз
+проверено против независимых данных».
+
 Отдельно печатается список величин, у которых источника нет вовсе. Они не
 проверяются — но и не выдают себя за проверенные: у каждой названа причина,
 почему её нельзя пересчитать из репозитория (размер объекта, снятый запросом к
@@ -136,6 +149,18 @@ def inventory_totals() -> dict[str, int]:
     data = json.loads((ROOT / "docs" / "research" / "holds" / "HOLD_INVENTORY.json").read_text(encoding="utf-8"))
     totals = data["totals"]
     return {"nodes": totals["json_nodes_with_holds"], "entries": totals["json_hold_entries"]}
+
+
+def mirror_summary() -> dict[str, int]:
+    """Строка сведения о зеркалах — из самого скрипта, а не из цитаты в записке."""
+    out = _run(["python3", "-B", "scripts/check_drive_mirror_pairs.py", "--summary"])
+    found = re.search(
+        r"DRIVE MIRROR PAIRS: (\d+) записей, названных коммитов (\d+), отстают (\d+) "
+        r"\(максимум (\d+) ревизий\), без ревизии (\d+)", out)
+    if not found:
+        raise RuntimeError("check_drive_mirror_pairs.py --summary не назвал ожидаемых чисел")
+    names = ("records", "revisions", "lagging", "max_behind", "no_revision")
+    return {name: int(found.group(i + 1)) for i, name in enumerate(names)}
 
 
 def peter_registry() -> dict[str, int]:
@@ -339,6 +364,54 @@ CLAIMS: list[dict] = [
         "source": "HOLD_INVENTORY.json → totals.json_hold_entries",
     },
     {
+        "id": "mirror_note.records",
+        "doc": "ИСКУПЛЕНИЕ/evidence/DOC_MIRRORS_EXPORT_TAILS_2026-11-18.md",
+        "outside_holds": True,
+        "anchor": "Текущий вывод (дословно",
+        "pattern": r"(\d+) записей, названных коммитов (\d+), отстают (\d+) \(максимум (\d+) ревизий\), без ревизии (\d+)",
+        "group": 1,
+        "kind": "cross",
+        "kindNote": "перекрёстная: цитата в записке против вывода скрипта",
+        "expected": lambda: mirror_summary()["records"],
+        "source": "check_drive_mirror_pairs.py --summary, первое число",
+    },
+    {
+        "id": "mirror_note.revisions",
+        "doc": "ИСКУПЛЕНИЕ/evidence/DOC_MIRRORS_EXPORT_TAILS_2026-11-18.md",
+        "outside_holds": True,
+        "anchor": "Текущий вывод (дословно",
+        "pattern": r"(\d+) записей, названных коммитов (\d+), отстают (\d+) \(максимум (\d+) ревизий\), без ревизии (\d+)",
+        "group": 2,
+        "kind": "cross",
+        "kindNote": "перекрёстная: цитата в записке против вывода скрипта",
+        "expected": lambda: mirror_summary()["revisions"],
+        "source": "check_drive_mirror_pairs.py --summary, второе число",
+    },
+    {
+        "id": "mirror_note.lagging",
+        "doc": "ИСКУПЛЕНИЕ/evidence/DOC_MIRRORS_EXPORT_TAILS_2026-11-18.md",
+        "outside_holds": True,
+        "anchor": "Текущий вывод (дословно",
+        "pattern": r"(\d+) записей, названных коммитов (\d+), отстают (\d+) \(максимум (\d+) ревизий\), без ревизии (\d+)",
+        "group": 3,
+        "kind": "cross",
+        "kindNote": "перекрёстная: цитата в записке против вывода скрипта",
+        "expected": lambda: mirror_summary()["lagging"],
+        "source": "check_drive_mirror_pairs.py --summary, третье число",
+    },
+    {
+        "id": "mirror_note.no_revision",
+        "doc": "ИСКУПЛЕНИЕ/evidence/DOC_MIRRORS_EXPORT_TAILS_2026-11-18.md",
+        "outside_holds": True,
+        "anchor": "Текущий вывод (дословно",
+        "pattern": r"(\d+) записей, названных коммитов (\d+), отстают (\d+) \(максимум (\d+) ревизий\), без ревизии (\d+)",
+        "group": 5,
+        "kind": "cross",
+        "kindNote": "перекрёстная: цитата в записке против вывода скрипта",
+        "expected": lambda: mirror_summary()["no_revision"],
+        "source": "check_drive_mirror_pairs.py --summary, последнее число",
+    },
+    {
         "id": "triage.records",
         "doc": "UNDER_ACQUIRED_WITHOUT_HOLD_TRIAGE_2026-11-18.md",
         "anchor": "| Записей | **",
@@ -372,6 +445,8 @@ CLAIMS: list[dict] = [
     },
     {
         "id": "readme.catalog_rows",
+        "kind": "cross",
+        "kindNote": "перекрёстная: README против таблицы §13 квитанций — ловит дрейф одного из двух, не обоих",
         "doc": "README.md",
         "anchor": "с Drive по SHA-256 — сверено",
         "pattern": r"сверено (\d+) строк",
@@ -380,6 +455,8 @@ CLAIMS: list[dict] = [
     },
     {
         "id": "receipts.catalog_rows",
+        "kind": "internal",
+        "kindNote": "внутренняя: проза того же документа против его таблицы §13",
         "doc": "CORPUS_CUSTODY_RECEIPTS_2026-11-18.md",
         "anchor": "честная формулировка такая:",
         "pattern": r"сверено (\d+) строк",
@@ -388,6 +465,8 @@ CLAIMS: list[dict] = [
     },
     {
         "id": "receipts.catalog_full_matches",
+        "kind": "internal",
+        "kindNote": "внутренняя: проза того же документа против столбца «Совпало»",
         "doc": "CORPUS_CUSTODY_RECEIPTS_2026-11-18.md",
         "anchor": "**Итог одного блока:**",
         "pattern": r"\*\*(\d+) совпали по полному",
@@ -436,6 +515,8 @@ CLAIMS: list[dict] = [
     },
     {
         "id": "matrix.objects_vs_table",
+        "kind": "internal",
+        "kindNote": "внутренняя: проза §2 против таблицы категорий того же документа",
         "doc": "RIGHTS_DETERMINATION_MATRIX_2026-11-18.md",
         "anchor": "Всего объектов: **",
         "pattern": r"Всего объектов: \*\*(\d+)\*\*",
@@ -469,6 +550,8 @@ CLAIMS: list[dict] = [
     },
     {
         "id": "crosscheck.full_hashes",
+        "kind": "internal",
+        "kindNote": "внутренняя: заявленное число против числа полных хешей в том же документе",
         "doc": "DRIVE_SHA256_READBACK_CROSSCHECK_2026-11-18.md",
         "anchor": "Зачем:** проверить снаружи",
         "pattern": r"Проверено (\d+) значений",
@@ -532,7 +615,7 @@ def normalise(value: str) -> str:
 
 def check(claim: dict, verbose: bool) -> tuple[str, str, str]:
     """Вернуть (состояние, что в документе, что в источнике)."""
-    path = HOLDS / claim["doc"]
+    path = (ROOT / claim["doc"]) if claim.get("outside_holds") else (HOLDS / claim["doc"])
     if not path.exists():
         return "source-missing", "—", f"нет файла {claim['doc']}"
     lines = path.read_text(encoding="utf-8").splitlines()
@@ -578,7 +661,12 @@ def main(argv: list[str]) -> int:
 
     unsourced = unsourced_report()
     bad = [r for r in results if r[1] not in ("match",)]
-    print(f"ЧИСЛА В ДОКУМЕНТАХ HOLD-КЛАСТЕРА: {len(results)} утверждений, "
+    kinds = {"internal": 0, "cross": 0, "external": 0}
+    for r in results:
+        kinds[r[0].get("kind", "external")] += 1
+    print(f"ЧИСЛА В ДОКУМЕНТАХ HOLD-КЛАСТЕРА: {len(results)} утверждений "
+          f"(внешний источник {kinds['external']}, перекрёстная {kinds['cross']}, "
+          f"внутри одного документа {kinds['internal']}), "
           f"совпало {sum(1 for r in results if r[1] == 'match')}, разошлось {len(bad)}")
     print(f"  вне проверки (источника нет, причина названа): {len(unsourced)} величин — "
           + "; ".join(f"{u[2]} ({u[1]})" for u in unsourced))
