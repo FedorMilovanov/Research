@@ -1733,3 +1733,17 @@ HOLD без изменений: CO 49:100, CO 45:706, `PRINT_IMAGE_HOLD`, пра
 | 4 | Связь с WCF | Л. и Д. сами ссылаются на WCF гл. III (декрет раньше дела Христа). Лексический довод статьи (*redemption*) — её собственный |
 
 **Вердикты S1–S5 не меняются.**
+
+## 86. Раунд 135 (2026-11-17): White, *The Potter's Freedom*, p. 255 — сноска 9
+
+Подробности — `34_` §4.218 (Q214), S233; REPASS-документ, §58.
+
+| # | Место | Итог |
+|---|---|---|
+| 1 | Сн. 9 — локатор p. 255 | Отрывок о Гессгусене и 1 Ин. 2:2 стоит перед колонтитулом «256 THE POTTER'S FREEDOM». `LOCATOR_VERIFIED` (печать 2000 г.) |
+| 2 | Ответ Гессгусену | «Calvin's statement in response to Heshusius is especially telling: „I should like to know how the wicked can eat the flesh of Christ which was not crucified for them…“» — ACCURATE |
+| 3 | 1 Ин. 2:2 | «under the world ‚all‘ [in 1 John 2:2] he does not include the reprobate…» — ACCURATE |
+| 4 | 1 Тим. 2:4 | По указателю Писания — с. 169, 257, 259; на p. 255 не видно. «Напр.» смягчает |
+| 5 | «Основные доводы» | Уайт добавляет термины («reconciliation», «redemption», «propitiation»), избрание, мёртвость в грехе, ходатайство и отсылает к Николю (*WTJ* 1985). `SOURCE_SAYS_MORE` (мягко) |
+
+**Вердикты S1–S5 не меняются.**

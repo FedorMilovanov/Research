@@ -328,6 +328,10 @@
   - «the design of the cross was not merely to provide salvation but to secure the salvation of those persons the Father gave to the Son» — сн. 83 `LOCATOR_VERIFIED`, ACCURATE для «эффективности».
   - Пара «достаточность (ранние авторы) / эффективность (схоласты)» — рамка статьи. У Л. и Д. контраст сильнее: «unlimited atonement» у Кальвина и «narrowed the intent» у схоластов. `SIMPLIFIED` (мягко).
   - Вердикты S1–S5 не меняются. Документ: REPASS, §57.
+- **раунд 135 (2026-11-17, AGENT 2):** §3 (S233), новый §4.218 (Q214): White, *The Potter's Freedom*, p. 255 (сн. 9).
+  - Перед колонтитулом «256 THE POTTER'S FREEDOM»: Уайт разбирает 1 Ин. 2:2 и называет ответ Гессгусену «especially telling». Сн. 9 — `LOCATOR_VERIFIED`, ACCURATE.
+  - 1 Тим. 2:4 у Уайта — на с. 257 и 259 (по указателю). Его дальнейшие доводы (термины, ходатайство, Николь) статья не передаёт — `SOURCE_SAYS_MORE` (мягко).
+  - Вердикты S1–S5 не меняются. Документ: REPASS, §58.
 
 **Erratum (раунд 4).** В раунде 3 номера страниц протоколов Ассамблеи (S19) и Шедда II (S22) были выведены из индекса страниц OCR-API archive.org (`BookReaderGetTextWrapper`), который **не совпадает** с номером листа (`leafNum`) скана: для `minutesofsession00west` индекс = лист − 5, для `dogmatictheology02sheduoft` индекс = лист − 1. Сверка по `inside.php` (полнотекстовый поиск, возвращает `leafNum`) и `<id>_page_numbers.json` (лист → печатная страница) дала: **Minutes «pp. 150–155/156» → pp. 155–160/161** (листы 251–257); **Shedd «II.478, 482–483» → II.479, 483–484** (листы 489, 493–494). Все затронутые числа в S19, S22, §4.13, §4.16, §5–§8 исправлены **на месте** с пометкой «(испр. р. 4)»; содержание цитат не менялось. Локаторы раундов 1–2 (Minutes p. lv/lviii/lx/152, Shedd II.464–477, I.441, A. A. Hodge pp. 33–34) перепроверены тем же способом и **верны** (лист 248 = p. 152; лист 457 = I.441; лист 39 = Hodge p. 33).
 **Статус:** `ACTIVE RESEARCH / NO SETTLED VERDICT ON EXTENT / EVIDENCE_HOLD / PUBLICATION_HOLD`
@@ -723,6 +727,7 @@
 | S230 *(раунд 132, 2026-11-17)* | W. Cunningham, *Historical Theology* II: полнотекстовый индекс archive.org (`openlibrary.org/search/inside.json`) по четырём экземплярам — `historicaltheocun02cunn` (Clark, 1863), `workscunn03cunn` (*Works* III, Clark, 1870), `historicaltheolo0000unse_x3t3` (Banner of Truth, 1960), `historicaltheolo0002cunn` (Banner of Truth, 1969). Запросы: «SYNOD OF DORT. 379» → «Lib. iv., c. iv., Q. 4. / Sec. II.] SYNOD OF DORT. 379 / stigmatized as a heresy, only when it was» (1870, 1960, 1969); «Synod of Dort marks one of the most important eras» и «learned and zealous defender of Calvinism» — все четыре. Контроль — `historicaltheolo02cunnuoft` (1863), `_djvu.txt`, чанк 142. Класс A2 (фрагменты OCR) | Сн. 78 — `LOCATOR_IMPRECISE` (мягко) не зависит от издания; `SOURCE_CONTRADICTS_CLAIM` прежний |
 | S231 *(раунд 133, 2026-11-17)* | G. R. Lewis, B. A. Demarest, *Integrative Theology*, vol. 2 (Grand Rapids: Zondervan): IA `integrativetheol0000dema_t1r1` (метаданные IA — 1987; том 2 — 1990) и однотомник 1996 г. `integrativetheol0000lewi`; оба с ограниченным доступом. Полнотекстовый индекс archive.org (`openlibrary.org/search/inside.json`): «Other Calvinist authorities» + «scholastic» / «rowed» → «Scholastic Calvinism, however, nar- rowed the intent of the atonement and claimed that Christ died solely for the purpose of saving the elect…»; «Calvinism, however, narrowed» с переносом не ищется — использованы цепочки фраз. Указатель т. 2: «Bloesch, Donald G., 381», «Turrettin, Francis, 381», «Amyraut, 382», «Spurgeon, Charles Haddon, 380». Контроль «Beza»: т. 1 `integrativetheol0000dema` (1987). Текст статьи — веб-PDF teoblogia, фрагменты 1–2. Класс A2 (фрагменты OCR) | Сн. 18 — `LOCATOR_VERIFIED`; фраза о Безе — `UNSOURCED_CLAIM` (мягко); сн. 13 — `SCHOLARLY_PRECEDENT`; сн. 45 — `LOCATOR_VERIFIED` |
 | S232 *(раунд 134, 2026-11-17)* | G. R. Lewis, B. A. Demarest, *Integrative Theology*, vol. 2 (Grand Rapids: Zondervan), p. 381: IA `integrativetheol0000dema_t1r1` и однотомник 1996 г. `integrativetheol0000lewi` (оба с ограниченным доступом). Полнотекстовый индекс archive.org (`openlibrary.org/search/inside.json`), цепочка перекрывающихся фраз: «proponents argue that the design of the cross» → «those persons the Father gave to the» → «Son. Christ allegedly died for all» → «Adam sinned for all who were related» → «For high Calvinism the question» → «follows from God's logically prior elective» → «the high Calvinist claims that» → «Christ died solely for those predestined» → «the divine decree assigning people» → «to life or death (chap. III) precedes» (discussion of the work of Christ); «John Owen judges that none of God's intentions» (после «…by the Father.“ (II.8)»). Индекс ищет по книге целиком; `page_num` один на документ. Страница — по указателю (Блёш и Тюрретин, p. 381; S231). Текст статьи — веб-PDF teoblogia, фрагмент 11. Класс A2 | Сн. 83 — `LOCATOR_VERIFIED`; ACCURATE для «эффективности»; «достаточность у ранних авторов» — `SIMPLIFIED` (мягко) |
+| S233 *(раунд 135, 2026-11-17)* | J. R. White, *The Potter's Freedom: A Defense of the Reformation and a Rebuttal of Norman Geisler's Chosen but Free* (Amityville, NY: Calvary Press, 2000): IA `pottersfreedomde0000whit` (ограниченный доступ). Полнотекстовый индекс archive.org (`openlibrary.org/search/inside.json`): «256 THE POTTER'S FREEDOM» → «…twenty-nine page article written by Roger Nicole / 256 THE POTTER'S FREEDOM / titled „John Calvin's View of the Extent…“»; «254 THE POTTER'S FREEDOM» — 0 совпадений (колонтитул не распознан); цепочка: «would have italicized this statement» → «he does not include the reprobate» → [стык не доказан] → «response to Heshusius is especially telling» → «not shed to expiate» → «Calvin's use of terms such as» → «the work of intercession must be» → «considered. CBF does not even» → «attempt a fair review of Calvin on this point» → «The Fall, 1985 issue of the Westminster Theological Journal». Указатель Писания: «1 Timothy 2:4 … 169, 257, 259». Индекс ищет по книге целиком. Текст статьи — веб-PDF teoblogia, фрагмент 1. Класс A2 | Сн. 9 — `LOCATOR_VERIFIED`; ACCURATE; `SOURCE_SAYS_MORE` (мягко) |
 
 **Ответ: П1 исторически неверен; «словом о цене» в английской традиции является *redemption*, а не *atonement*.**
 
@@ -8317,8 +8322,9 @@ hommes** selon ce propos déterminé…*» (с. 183) **есть в источн�
 | 4.215 | Q211 | Каннингем, *Historical Theology* II: пагинация pp. 373–384 одинакова в печатях 1863, 1870, 1960 и 1969 гг.; сн. 78 — вердикт не зависит от издания (р. 132) |
 | 4.216 | Q212 | Lewis & Demarest II: p. 381 «Scholastic Calvinism… narrowed» — сн. 18 точна для слов при ней; в т. 2 слова «Beza» нет, фраза о Безе без сноски; сн. 13 и 45 сверены (р. 133) |
 | 4.217 | Q213 | Lewis & Demarest II, p. 381: сн. 83 — «not merely to provide salvation but to secure» подтверждает «эффективность»; пара «достаточность / эффективность» — рамка статьи (р. 134) |
+| 4.218 | Q214 | White, *The Potter's Freedom*, p. 255: сн. 9 — Гессгусен («especially telling») и 1 Ин. 2:2 перед колонтитулом «256»; 1 Тим. 2:4 — с. 257, 259 (р. 135) |
 
-⇒ разделов с `Q` — **210**, разделов §4.x — **212**; пропуски нумерации прежние.
+⇒ разделов с `Q` — **211**, разделов §4.x — **213**; пропуски нумерации прежние.
 
 
 ### 4.139. Q135 — Приёмка раунда 61: связка Сомюра, аудит объёма, готовность к мерджу (раунд 61)
@@ -9287,7 +9293,7 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 
 **Вывод.** В исторической части с. 3–5 и 26–27 локаторы статьи точны, а вторичные источники переданы верно. Слабые места — не в цитатах, а в том, что опущено: оговорка Аллена о Безе, осторожный вывод Рувендаля, Савойская декларация как второй образец. Умысел не утверждается.
 
-**Чего нет.** Lewis & Demarest II, pp. 380–381; White, *The Potter's Freedom*, p. 255; Шнукер (словарь Элвелла, рус. пер., с. 312); печать Гейдельбергского катехизиса 1563 г.; гл. XX самого Второго Лондонского исповедания (о совпадении с Савойской декларацией — только по Шаффу).
+**Чего нет.** Lewis & Demarest II, pp. 380–381; White, *The Potter's Freedom*, p. 255 *(раунд 135: сверено по тексту — §4.218)*; Шнукер (словарь Элвелла, рус. пер., с. 312); печать Гейдельбергского катехизиса 1563 г.; гл. XX самого Второго Лондонского исповедания (о совпадении с Савойской декларацией — только по Шаффу).
 
 Вердикты S1–S5 не меняются.
 
@@ -9311,7 +9317,7 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 
 **Вывод.** Фактические ошибки статьи в этом проходе — локаторные (сн. 12, Деян. 17 вместо 14) и одна лексическая (ἀγοράζω, сн. 57). Основные слабости — логические: переход от достаточности к намерению (с. 4, 25), смена смысла «неограниченного искупления» (с. 5 ↔ 26), переход от временного к вечному (с. 21–23). Сильные стороны: счёт и метод в 1 Ин., полное цитирование Дорта II.8, верная передача контекста 4.14.7. Умысел не утверждается.
 
-**Чего нет.** Lewis & Demarest II, pp. 380–381; White, p. 255; Шнукер, с. 312; Green, p. 118; Berkhof, p. 125; латынь Урсина; лист II Helv. XI.15. Описание супралапсарианства на с. 29–30 проверено только по памяти: что проверить — Беза, *Tabula praedestinationis*; Твисс; Berkhof, p. 125.
+**Чего нет.** Lewis & Demarest II, pp. 380–381; White, p. 255 *(раунд 135 — §4.218)*; Шнукер, с. 312; Green, p. 118; Berkhof, p. 125; латынь Урсина; лист II Helv. XI.15. Описание супралапсарианства на с. 29–30 проверено только по памяти: что проверить — Беза, *Tabula praedestinationis*; Твисс; Berkhof, p. 125.
 
 Вердикты S1–S5 не меняются.
 
@@ -9942,6 +9948,23 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 4. **Связь с WCF.** Л. и Д. сами пишут: «In the Westminster Confession the divine decree assigning people to life or death (chap. III) precedes discussion of the work of Christ». Опора для «хорошо согласуется» есть, но довод у них — о порядке декретов, а не о слове *redemption* (сн. 82 — довод самой статьи).
 5. **Тон.** У Л. и Д. — «proponents argue», «allegedly», «narrowed»; возражения — на p. 382 (Амиро). Статья передаёт мысль от себя и без оценки. Искажения смысла нет. Без пометки.
 6. **Итог по Л. и Д. II.** Все пять сносок (10, 13, 18, 45, 83) сверены по тексту (A2). Изображения страниц и печать 1990 г. не видены.
+
+Вердикты S1–S5 не меняются.
+
+
+### 4.218. Q214 — White, *The Potter's Freedom*, p. 255: сноска 9 (раунд 135, 2026-11-17)
+
+**Повод.** White, p. 255 стоял в HOLD с раунда 91 (§4.174 «Чего нет»; REPASS §14). Источник — S233. Таблица — REPASS-документ, §58.
+
+**Вопрос.** Есть ли на p. 255 у Уайта три довода, которые называет сн. 9: комментарии Кальвина на 1 Тим. 2:4 и 1 Ин. 2:2 и фраза из ответа Гессгусену?
+
+**Ответы.**
+1. **Страница.** Колонтитул «256 THE POTTER'S FREEDOM» стоит внутри фразы о статье Николя в *WTJ* (осень 1985 г.). Всё, что идёт перед этим, — конец p. 255. Колонтитул «254» не распознан, поэтому начало p. 255 не видно.
+2. **Гессгусен.** «Calvin's statement in response to Heshusius is especially telling: „I should like to know how the wicked can eat the flesh of Christ which was not crucified for them, and how they can drink the blood which was not shed to expiate [their sins]“». ACCURATE.
+3. **1 Ин. 2:2.** Уайт упрекает Гейслера, что тот не выделил главное в цитате Кальвина: «Therefore, under the world ‚all‘ [in 1 John 2:2] he does not include the reprobate, but refers to all who would believe…». ACCURATE. Что этот разбор стоит на той же странице, — вывод (`INFERRED`): стык с абзацем о Гессгусене прямым перекрытием фрагментов не доказан.
+4. **1 Тим. 2:4.** В указателе Писания — с. 169, 257, 259. На p. 255 по видимым фрагментам этого места нет. Сноска говорит «см., напр.», поэтому пометки нет.
+5. **Полнота.** Уайт добавляет слова «reconciliation», «redemption», «propitiation», учение об избрании, мёртвость человека в грехе и ходатайство Христа. За полным разбором он отсылает к Николю. `SOURCE_SAYS_MORE` (мягко): сноска-пример берёт у Уайта лишь часть доводов. Позицию Уайта она не искажает.
+6. **Граница.** Печать 2005 г., на которую ссылается статья, и изображения страниц не видены. `IMPRECISE_TERM` («переписка» вместо трактата, §4.174) остаётся.
 
 Вердикты S1–S5 не меняются.
 

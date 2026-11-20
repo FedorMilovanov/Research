@@ -450,7 +450,7 @@
 - **Для корпуса:** не переносить формулу Аллена «Amyraldianism… early in the seventeenth century» (хронологически неточна).
 - **HOLD:**
   - Льюис и Демарест II, pp. 380–381 (сн. 10, 13, 18; IA — только выдача);
-  - White, *The Potter's Freedom*, p. 255 (сн. 9; IA — только выдача);
+  - White, *The Potter's Freedom*, p. 255 (сн. 9; IA — только выдача); *(раунд 135: снято в части текста — §58)*
   - Шнукер в словаре Элвелла (сн. 17; IA — только выдача);
   - печать Гейдельбергского катехизиса 1563 г.
     > **Снято (раунд 105, 2026-11-17; §28).** Текст 1563 г. (textus receptus Пфальцского церковного устава, ноябрь 1563 г.) по двум критическим изданиям — Lang 1907 (л. 137) и E. F. K. Müller 1903 (л. 770): «den zorn Gottes wider die sünde des gantzen menschlichen geschlechts getragen hat». Немецкие слова сн. 15 — **ACCURATE** (орфография модернизирована). Сама печать 1563 г. не открывалась (класс A2).
@@ -2110,6 +2110,48 @@ Wayback Machine, страница `www.gracechurch.org/about/doctrinal-statement
 - **Снято:** HOLD по сн. 83, в части текста (A2).
 - **Новое:** сн. 83 — `LOCATOR_VERIFIED`; «эффективность / не просто возможным» — ACCURATE; «ранние авторы — достаточность» — `SIMPLIFIED` (мягко).
 - **Теперь все пять сносок на Л. и Д. II (10, 13, 18, 45, 83) сверены по тексту.**
-- **HOLD без изменений:** печать 1990 г. и изображения страниц; Шнукер (сн. 17); White, p. 255 (сн. 9).
+- **HOLD без изменений:** печать 1990 г. и изображения страниц; Шнукер (сн. 17); White, p. 255 (сн. 9) *(снят в части текста в раунде 135 — §58)*.
+
+Вердикты S1–S5 не меняются. Умысел не утверждается.
+
+## 58. Раунд 135 (2026-11-17): White, *The Potter's Freedom*, p. 255 — сноска 9 (доводы за ограниченное искупление у Кальвина)
+
+**Повод.** White, p. 255 (сн. 9) стоял в HOLD с раунда 91 (§14): экземпляр на IA с ограниченным доступом. Метод — как в §56–§57: полнотекстовый индекс archive.org (`openlibrary.org/search/inside.json`) и цепочки перекрывающихся фраз.
+
+**Источники этого раунда:**
+- (а) J. R. White, *The Potter's Freedom: A Defense of the Reformation and a Rebuttal of Norman Geisler's Chosen but Free* (Amityville, NY: Calvary Press, 2000); IA `pottersfreedomde0000whit`, ISBN 1879737434. Доступ ограничен; текст — фрагменты OCR. Класс A2. Статья ссылается на печать 2005 г. того же издательства; совпадает ли пагинация, не проверено.
+- (б) Текст статьи: веб-PDF teoblogia, фрагмент 1 (с. 3–4, сн. 9).
+
+**Что в статье (сн. 9).** «Основные доводы в пользу того, что Кальвин верил в ограниченное искупление, связаны с его комментариями на 1 Тим. 2:4 и 1 Иоан. 2:2, а также с одной фразой в его переписке с лютеранским богословом Тилеманном Гессгусеном (см., напр., White… P. 255)». Дальше статья объясняет, что фраза из ответа Гессгусену — о Евхаристии, и отсылает к Аллену (§14).
+
+**Страница.** На чётных страницах OCR сохранил колонтитул «NNN THE POTTER'S FREEDOM». Запрос «256 THE POTTER'S FREEDOM» даёт: «…the Westminster Theological Journal contained a twenty-nine page article written by Roger Nicole / 256 THE POTTER'S FREEDOM / titled „John Calvin's View of the Extent [of the Atonement]“». Значит, абзац о статье Николя кончает p. 255. Колонтитул «254» OCR не распознал, поэтому где начинается p. 255, не видно.
+
+**Что у Уайта перед колонтитулом «256» (цепочка фрагментов):**
+1. Разбор того, как Гейслер (CBF) цитирует комментарий Кальвина на 1 Ин. 2:2: «…he would have italicized this statement: „Therefore, under the world [sic] ‚all‘ [in 1 John 2:2] he does not include the reprobate, but refers to all who would believe…“». Перед этим — та же цитата целиком: «…was only to make this blessing common to the whole Church».
+2. «…interpretation. Calvin's statement in response to Heshusius is especially telling: „I should like to know how the wicked can eat the flesh of Christ which was not crucified for them, and how they can drink the blood which was not shed to expiate [their sins]“» (конец цитаты в OCR искажён).
+3. «Calvin's use of terms such as „reconciliation,“ „redemption,“ and „propitiation“… [the] deadness of man in sin, and the work of intercession must be considered. CBF does not even attempt a fair review of Calvin on this point.»
+4. «The Fall, 1985 issue of the Westminster Theological Journal contained a twenty-nine page article written by Roger Nicole» → p. 256.
+
+*Стыки проверены.* Пункты 2→3→4 сомкнуты перекрывающимися фрагментами: «…not shed to expiate [OCR: Beit cing] / Calvin's use of terms such as…»; «…consistency of Calvin's theology. What Calvin believed about election, the deadness of man in sin, and the work of intercession must be considered. CBF does not even attempt a fair review of Calvin on this point. / The Fall, 1985 issue…». Стык пункта 1 с пунктом 2 («…interpretation. Calvin's statement in response to Heshusius») прямым перекрытием не доказан. Поэтому разбор 1 Ин. 2:2 отнесён к p. 255 вероятно (`INFERRED`), а отрывок о Гессгусене — твёрдо.
+
+**1 Тим. 2:4.** В указателе мест Писания (OCR частично испорчен): «1 Timothy 2:4 … 169, 257, 259»; «1 Timothy 2:4-6 … 265». Числа 255 там нет. Отдельный разбор 1 Тим. 2:4 у Уайта есть («We turn now to the second. 1 Timothy 2:4 The key to this passage, again, is the context…»), но к какой странице он относится, по фрагменту не видно.
+
+| Часть сн. 9 | Что у Уайта | Вердикт |
+|---|---|---|
+| Ответ Гессгусену как довод за ограниченное искупление у Кальвина | «Calvin's statement in response to Heshusius is especially telling: „I should like to know how the wicked can eat the flesh of Christ which was not crucified for them…“» — перед колонтитулом «256» | **ACCURATE.** Уайт — пример противоположного прочтения, и статья подаёт его именно так («см., напр.») |
+| Комментарий на 1 Ин. 2:2 | «under the world ‚all‘ [in 1 John 2:2] he does not include the reprobate…» — в том же разделе, непосредственно перед «…interpretation. Calvin's statement in response to Heshusius» (стык не доказан) | **ACCURATE**; страница — p. 255 или p. 254 (`INFERRED`) |
+| Комментарий на 1 Тим. 2:4 | В указателе Писания: с. 169, 257, 259, а не 255 | Довод у Уайта есть, но на соседних страницах. «Напр.» смягчает; пометки нет |
+| Локатор «P. 255» | Отрывок о Гессгусене и 1 Ин. 2:2 стоит перед колонтитулом «256» | **`LOCATOR_VERIFIED`** для печати 2000 г. (граница 254/255 не видна) |
+| «Основные доводы… связаны с» тремя местами | Уайт добавляет и другие доводы: употребление Кальвином слов «reconciliation», «redemption», «propitiation», учение об избрании, мёртвость человека в грехе, ходатайство Христа. За более полным обзором он отсылает к статье Николя (*WTJ* 47, 1985) | **`SOURCE_SAYS_MORE`** (мягко). Для сноски-примера это допустимо: статья отсылает к Аллену за подробным разбором |
+| «Переписка» с Гессгусеном | У Уайта — «statement in response to Heshusius», без жанра | Пометка `IMPRECISE_TERM` из §14 (это трактат *Dilucida explicatio*, 1561) остаётся. Уайт её не снимает и не усиливает |
+
+**Поправки к корпусу.**
+1. HOLD «White, p. 255 (сн. 9)» (§14, §56–§57; `34_` §4.174 и §4.175 «Чего нет») снят в части текста.
+2. `06_` §9: то, что статья связывает 1 Ин. 2:2, 1 Тим. 2:4 и ответ Гессгусену в один пучок доводов, подтверждено для Уайта как представителя другой стороны. Два из трёх мест — на p. 255 или рядом с ней. Оценка `06_` §9 по существу (смысл фразы из ответа Гессгусену) не меняется.
+
+**Сводка §58.**
+- **Снято:** HOLD по сн. 9 (White, p. 255), в части текста (A2, печать 2000 г.).
+- **Новое:** сн. 9 — `LOCATOR_VERIFIED`; передача доводов Уайта — ACCURATE; полнота — `SOURCE_SAYS_MORE` (мягко).
+- **HOLD без изменений:** печать 2005 г. и изображения страниц; Шнукер (сн. 17; рус. пер. словаря Элвелла, с. 312 — на IA нет); печать 1990 г. Л. и Д.
 
 Вердикты S1–S5 не меняются. Умысел не утверждается.
