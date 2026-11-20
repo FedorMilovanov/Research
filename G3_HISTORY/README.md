@@ -76,7 +76,7 @@ Current analytical authority:
 
 ### Institutional history / finances
 
-- An archived invitation announces January 2013; its attributed Aug. 10, 2011 publication date is not visible in the two rendered captures; the first conference occurred in 2013; Georgia nonprofit incorporation occurred in 2019.
+- G3’s [feed captured in September 2011](https://web.archive.org/web/20110927042330id_/http://www.g3conference.com:80/?feed=rss2) dates Buice’s invitation to Aug. 10, 2011; the first conference occurred in 2013; Georgia nonprofit incorporation occurred in 2019.
 - G3 deliberately expanded from conference ministry into publishing, streaming/media, a journal and a church network.
 - The financial reversal begins in FY2023, before the 2025/2026 scandals. Raw IRS Part IX reconciles the FY2022→FY2023 expense increase of **$1,061,800**, dominated by conferences/meetings **+$817,283** and advertising **+$246,511**.
 - FY2024/FY2025 Schedule L directly disclose salary to `KARIS L BUICE`, relationship `Daughter of Board Member`, at **$30,409** and **$31,880**. This is a disclosure fact, not a fraud/self-dealing finding; the filings do not name the parent.

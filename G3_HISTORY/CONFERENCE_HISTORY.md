@@ -6,9 +6,11 @@ This file reconstructs the G3 Conference as a distinct institution before and du
 
 ## From announcement to first meeting
 
-The [archived announcement](https://web.archive.org/web/20230924211613/https://g3min.org/hello-world/) is a short invitation signed by Pastor Josh Buice, not a retrospective foundation story. In the first paragraph he invites pastors, evangelists, missionaries **and laypeople** to metro Atlanta in January 2013; in the second he says registration details will follow. It does not name a building, report attendance or spell out G3. Nor does the signature date the moment when Buice first had the idea. The [second capture](https://web.archive.org/web/20240418210604id_/https://g3min.org/hello-world/) carries the same text. Neither rendered body displays the publication date previously given here as **10 August 2011** (`G3-S003`, date on hold). The live route now serves Lumena.
+The earliest invitation identified here survives not just as a later copy but in the [conference’s own RSS feed captured on 27 September 2011](https://web.archive.org/web/20110927042330id_/http://www.g3conference.com:80/?feed=rss2). Its second item, *Conference Announcement* (`?p=1`), carries the publisher’s date **10 August 2011**. The account is “G3 Team”; the invitation itself is signed by Pastor Josh Buice. He invites pastors, evangelists, missionaries and laypeople to metro Atlanta in January 2013 and promises registration details later. The archive establishes that the invitation was public by September. Neither the publisher’s timestamp nor the capture dates Buice’s private decision to organize it.
 
-It is G3’s later [institutional history](https://web.archive.org/web/20230407084022id_/https://g3min.org/about/history/), paragraphs 1–3, that expands the initials as *Gospel, Grace, Glory* and locates the first conference in 2013 on the campus of Pray’s Mill Baptist Church in Douglasville, Georgia. [Tim Challies](https://www.challies.com/articles/you-me-and-g3/), writing on 23 May 2025, recalls not just a venue but a host: members of the congregation received the guests. The theological conference, the church that hosted it and the Georgia corporation formed on 6 June 2019 (filing 17370469) were not interchangeable institutions.
+By the [23 September announcement about Steve Lawson](https://web.archive.org/web/20110928165117id_/http://www.g3conference.com/?p=99), the organizers could give the dates (24–26 January 2013), two planned messages and a Friday panel. Registration, they said, was **not yet open**. The [March 2012 capture of the theme page](https://web.archive.org/web/20120318150142id_/http://www.g3conference.com/?page_id=2) explains why the organizers paired *message* with *mission*: they wanted doctrinal teaching to lead to missionary work, not remain an exercise for pastors alone. Its three pillars were **Gospel** (what Christians proclaim), **Grace** (the source of salvation and perseverance) and **Glory** (the end of worship and mission). That explanation was public before the first conference; it need not be inferred from a later institutional history.
+
+G3’s [later account](https://web.archive.org/web/20230407084022id_/https://g3min.org/about/history/) locates the first meeting on the Pray’s Mill Baptist Church campus in Douglasville, Georgia. [Tim Challies](https://www.challies.com/articles/you-me-and-g3/), writing on 23 May 2025, recalls not just a venue but a host: members of the congregation received the guests. The theological conference, the church that hosted it and the Georgia corporation formed on 6 June 2019 (filing 17370469) were not interchangeable institutions.
 
 ## Confirmed / strongly corroborated growth markers
 
@@ -18,7 +20,7 @@ It is G3’s later [institutional history](https://web.archive.org/web/202304070
 | 2017 | 1,300+ for major Horn–White debate | PARTIAL | Debate audience, not necessarily whole-conference attendance. Do not use as total conference figure. |
 | 2020 | 5,600, reported by G3 | Filer statement | [FY2020 Form 990, p. 2, III.4a](https://projects.propublica.org/nonprofits/organizations/842403597/202110919349301551/full). The website repeats the filer’s figure; neither supplies a counting method. |
 | 2021 | ~6,500 | VERIFIED_PRIMARY + CORROBORATED | FY2021 Form 990 program description says conference attendance increased to 6,500; Crotts estimated about 6,500 on his first visit, without giving a count method. |
-| 2023 | 8,300 (G3); 8,200 (Prata) | Different reports | See FY2023 III.4a below. Registrations before the event are a third measure. |
+| 2023 | 8,300 (G3); 8,200 then more than 8,200 (Prata) | Different reports | See FY2023 III.4a below. Registrations before the event are a third measure. |
 
 ## Phase 1 — 2013–2017: the annual conference outgrows the church campus
 
@@ -40,7 +42,7 @@ This is unusually useful participant evidence for both date and host-church char
 
 A [schedule circulated on 25 January 2013](https://missionalevangelists.blogspot.com/2013/01/g3-conference.html) lists 24–26 January: David Miller opens, Tim Challies is listed for Friday on mission in a changing world, and Paul Washer closes Saturday on prayer. It is an unsigned relay of the programme, not a witness to each delivery.
 
-A surviving third-party media catalog also preserves a coherent 2013 G3 conference recording set, including sessions by Paul Washer, Donald Whitney, Voddie Baucham and Joel Beeke. It is useful corroboration for session identity but is not treated as the source of truth where the official G3 archive exists.
+The [recording catalogue](https://www.gnli.com/titles/2013-G3-Conference-or-G3-Ministries/2908) lists Challies’s [*Mission in a Changing World*](https://www.gnli.com/videos/Mission-in-a-Changing-World-or-Tim-Challies/337172) at 37:07. The programme gave this main session a 75-minute slot and listed a different talk about the family at noon. The slot is not a duration of speech, and the catalogue is not a transcript. Likewise, the [organizer’s speaker page captured on 4 April 2013](https://web.archive.org/web/20130404165821id_/http://www.g3conference.com/?page_id=30) already advertises **2014** speakers; it is not a roll of the people who preached in January 2013.
 
 ### 2014 — Doctrine of the Church
 
@@ -97,6 +99,8 @@ The strongest evidence for **actual use** of the new venue comes from someone wo
 Official session pages label the conference **`Knowing God`**, while contemporary promotional material gives the fuller theme **`Knowing God: A Biblical Understanding of Discipleship`**.
 
 An [exhibitor’s account](https://www.missionsfirstlove.org/united-states-blog/g3-conference-in-atlanta-georgia), published 30 January, distinguishes the Spanish-language gathering on Wednesday from the main meeting of **18–20 January 2018**. FirstLove describes moving its table from the registration foyer into the exhibition hall and using a six-minute presentation slot to introduce its work. It was describing its own discount and access, not G3’s terms for every exhibitor. This is one way the convention center connected ministries beyond the main-stage addresses.
+
+One actual address can be identified more precisely than the programme title. In his [post-conference note](https://www.challies.com/vlog/from-every-tribe-and-language-and-people-and-nation/), Tim Challies names his talk *Discipleship in Diversity*. He describes ending it with members of Grace Fellowship Church reading Revelation 5 in several languages. The linked clip was the conclusion, not the complete address or a response to a statement that had not yet been published.
 
 The June Dallas meeting was not another national conference. In [*History and Formation*](https://web.archive.org/web/20180907001508id_/https://statementonsocialjustice.com/), ¶¶1–3, Tom Ascol distinguishes fourteen men at the meeting on 19 June from later readers who suggested edits. He attributes the first draft to himself, initial edits to Buice, and dates publication to 4 September. The separate *Initial Signers* list is not a roll call. The preamble disclaims ecclesiastical authority. That intention can coexist with Challies’s later account that signing mattered to **his** invitation; neither document establishes a rule for every speaker, let alone a cause of the later crises.
 
@@ -164,10 +168,10 @@ This matters historically: political theology had become an explicit conference 
 Contemporary sources report:
 
 - 8,000+ registered shortly before the conference;
-- Elizabeth Prata, attending and photographing the event, reports **8,200 attendees**;
+- Elizabeth Prata describes Walker welcoming **8,200** in her [21 September caption](https://the-end-time.org/2023/09/21/g3-conference-2023-day-1/); on [22 September, after the James Coates session](https://the-end-time.org/2023/09/22/g3-conference-2023-day-2/), she writes **more than 8,200**;
 - another exhibitor/participant report gives a figure above 8,000.
 
-G3 itself subsequently reported **8,300** in its [FY2023 Form 990](https://projects.propublica.org/nonprofits/organizations/842403597/202411429349300611/full), signed 21 May 2024, p. 2, Part III.4a. That supersedes the earlier conclusion here that no organizer number was available. Prata’s 8,200 remains her report; no entry-count reconciliation supports choosing either as an audited total.
+G3 itself subsequently reported **8,300** in its [FY2023 Form 990](https://projects.propublica.org/nonprofits/organizations/842403597/202411429349300611/full), signed 21 May 2024, p. 2, Part III.4a. That supersedes the earlier conclusion here that no organizer number was available. Prata’s caption is not a quotation from Walker, and her second-day lower bound is compatible with 8,300. No source here explains how anyone counted entrants.
 
 That same line puts the meeting in perspective. G3 reported four pastors’ workshops, the launch of G3 Plus, twelve books, one music recording and a network that had grown to 211 churches. Compare [Aniol’s announcement of 1 September 2021](https://religiousaffections.org/update/important-announcement/), first paragraph and paragraph beginning *With my move*: he had accepted an editorial and executive role, but described books, curricula and a journal as work ahead. He mentioned possibly moving some Religious Affections titles to G3 Press, not transferring a complete catalogue. The later return is evidence of reported output, not of title-by-title rights, book sales or the number of active subscribers.
 
@@ -209,7 +213,7 @@ The thematic record demonstrates a primarily theological/ecclesial national-conf
 
 The local-church principle clearly predates the later crises:
 
-- the undated archived announcement addresses pastors, missionaries, evangelists and lay church members;
+- the invitation dated 10 August 2011 in the organizer’s feed addresses pastors, missionaries, evangelists and lay church members;
 - 2014 explicitly rejects church-growth technique as the answer and centers Scripture;
 - early events were physically hosted in/by Pray’s Mill according to a long-term participant;
 - later G3 material repeatedly describes its aim as equipping local churches.
@@ -224,7 +228,7 @@ Secondary histories often say G3 `became` or was `formed as` a 501(c)(3) ministr
 
 Article wording must therefore distinguish:
 
-- the invitation to January 2013 (publication date unresolved);
+- the invitation to January 2013 (publisher’s date: 10 August 2011);
 - 2013 first conference;
 - 2019 legal nonprofit incorporation;
 - 2020-era operational/institutional transition often remembered by participants/secondary histories.
