@@ -377,6 +377,10 @@
   - Печатный том открыт (IA, класс A): цитата — последняя фраза толкования 2:2 на p. 210. Перевод точен.
   - В сноске нет тома и страницы — `BIBLIOGRAPHY_INCOMPLETE` (мягко). HOLD «точный том и контекст» (`21_` J-14) снят.
   - Вердикты S1–S5 не меняются. Документ: REPASS, §68.
+- **раунд 146 (2026-11-17, AGENT 2):** §3 (S244), новый §4.229 (Q225): Мак-Артур, *MacArthur Study Bible* (1997), с. 1965 — сн. 69 (1 Ин. 2:2).
+  - По OCR издания NKJV 1997 г. и изданий 2006–2010 гг. (класс B): многоточие заменяет только отсылку «(see note on 1 Tim. 4:10)». Цитата точна; открытый вопрос REPASS §8.3 снят.
+  - `FRAMING` (соседние фразы отрицают уплату за неверующих) — без изменений. Печатная с. 1965 — HOLD.
+  - Вердикты S1–S5 не меняются. Документ: REPASS, §69.
 
 **Erratum (раунд 4).** В раунде 3 номера страниц протоколов Ассамблеи (S19) и Шедда II (S22) были выведены из индекса страниц OCR-API archive.org (`BookReaderGetTextWrapper`), который **не совпадает** с номером листа (`leafNum`) скана: для `minutesofsession00west` индекс = лист − 5, для `dogmatictheology02sheduoft` индекс = лист − 1. Сверка по `inside.php` (полнотекстовый поиск, возвращает `leafNum`) и `<id>_page_numbers.json` (лист → печатная страница) дала: **Minutes «pp. 150–155/156» → pp. 155–160/161** (листы 251–257); **Shedd «II.478, 482–483» → II.479, 483–484** (листы 489, 493–494). Все затронутые числа в S19, S22, §4.13, §4.16, §5–§8 исправлены **на месте** с пометкой «(испр. р. 4)»; содержание цитат не менялось. Локаторы раундов 1–2 (Minutes p. lv/lviii/lx/152, Shedd II.464–477, I.441, A. A. Hodge pp. 33–34) перепроверены тем же способом и **верны** (лист 248 = p. 152; лист 457 = I.441; лист 39 = Hodge p. 33).
 **Статус:** `ACTIVE RESEARCH / NO SETTLED VERDICT ON EXTENT / EVIDENCE_HOLD / PUBLICATION_HOLD`
@@ -783,6 +787,7 @@
 | S241 *(раунд 143, 2026-11-17)* | (а) J. A. Bengel, *Gnomon Novi Testamenti* (Tübingen, 1742), на 1 Ин. 2:2, OCR IA `gnomonnovitestam00beng`: «…nunc, totius expresso, quis restringere audet? c. V. 19. Quam late patet peccatum, tam late propitiatio» (p. 1043 по соседним колонтитулам). (б) Английский перевод: *Gnomon of the New Testament*, vol. V (T&T Clark, 1859), pp. 115–116, IA `gnomonofnewtesta05beng`: «The propitiation is as widely extended as sin». (в) Полнотекстовый индекс Open Library: Хутер, Хольцман, Пламмер, Лайас, Хаупт, EGT, Фаррар цитируют изречение с пометой «Bengel»; Бриггс (1895) и Вуэст (1954) — в форме «The propitiation is as wide as the sin». Класс A (первоисточник) и B (вторичные цитаты) | Внутренняя цитата сн. 63 — изречение Бенгеля; передача точна; атрибуционной ошибки нет |
 | S242 *(раунд 144, 2026-11-17)* | (а) Z. C. Hodges, «1 John», *The Bible Knowledge Commentary*, NT ed. (Victor, 1983), толкование 1 Ин. 1:8–2:2 — перепечатка в блоге Christian Articles (C. Blaylock, 2020), https://christianarticlesblog.wordpress.com/2020/07/28/confession-of-sin/: «In saying this, John was clearly affirming the view that Christ genuinely died for everyone (cf. 2 Cor. 5:14–15, 19; Heb. 2:9). This does not mean, of course, that everyone will be saved. It means rather that anyone who hears the gospel *can* be saved if he so desires (Rev. 22:17)…»; «The Cross has indeed propitiated (satisfied) God…». (б) Sharing Bread, https://www.sharing-bread.com/commentary/john-1-29: первые две фразы, дословно. (в) K. G. Hanna, *From Gospels to Glory* (2015), IA `fromgospelstoglo0000kenn`: введение Ходжеса — p. 882. Класс C (текст), B (страница) | Сн. 66 и 67 переведены точно; p. 887 правдоподобна; опущена фраза о главной мысли стиха — мягко |
 | S243 *(раунд 145, 2026-11-17)* | (а) A. T. Robertson, *Word Pictures in the New Testament*, vol. VI (Nashville: Broadman, © 1933), IA `generalepistlesr0000arch` (открытый доступ, полный текст): толкование 1 Ин. 2:2 — pp. 209–210; на p. 210: «At any rate, the propitiation by Christ provides for salvation for all (Heb. 2:9) if they will only be reconciled with God (II Cor. 5:19-21)». (б) R. P. Lightner, *The Death Christ Died* (1967), IA `deathchristdiedc0000ligh`: та же фраза в кавычках. Класс A (печатный том), B (вторичная цитата) | Цитата сн. 68 подтверждена (т. VI, p. 210); перевод точен; в сноске нет тома и страницы |
+| S244 *(раунд 146, 2026-11-17)* | Полнотекстовый индекс Open Library (OCR IA, доступ к книгам ограничен): (а) *The MacArthur Study Bible*, NKJV (Nashville: Word Bibles, 1997), IA `macarthurstudybi0000unse_n6a5`: «God has mitigated His wrath on sinners tem- porarily, by letting them live and enjoy earthly life (see note on 1 Tim. 4-10)»; (б) NASB (Nelson, 2006) `macarthurstudybi0000unse`, ESV (Crossway, 2010) `macarthurstudybi0000unse_g9h5`, Personal Size (2008) `macarthurstudybi0000john`: «…(see note on 1 Tim. 4:10). In that sense, Christ has provided a brief, temporal propitiation for the whole world. But He actually satisfied fully…». Класс B (OCR-фрагменты печатных изданий) | Многоточие сн. 69 заменяет только отсылку к 1 Тим. 4:10; цитата точна; печатная с. 1965 не видна |
 
 **Ответ: П1 исторически неверен; «словом о цене» в английской традиции является *redemption*, а не *atonement*.**
 
@@ -8388,8 +8393,9 @@ hommes** selon ce propos déterminé…*» (с. 183) **есть в источн�
 | 4.226 | Q222 | Хиберт, сн. 63 (рус. изд. 2014, с. 97): «Умилостивление настолько же широко, насколько широк грех» — изречение Бенгеля (*Gnomon*, 1742, на 1 Ин. 2:2); передача точна, статья фразу никому не приписывает; p. 97 и то, называет ли Хиберт Бенгеля, — HOLD (р. 143) |
 | 4.227 | Q223 | Ходжес, BKC II, p. 887 (сн. 66–67): текст найден через посредников (класс C); обе цитаты переведены точно; опущена фраза о главной мысли стиха — мягко; сн. 67 взята через абзац, «И еще:» разрыв показывает; p. 887 — `LOCATOR_PLAUSIBLE` (р. 144) |
 | 4.228 | Q224 | Робертсон, *Word Pictures*, т. VI (1933), p. 210 (сн. 68): цитата подтверждена по печатному тому (класс A), перевод точен; в сноске нет тома и страницы — `BIBLIOGRAPHY_INCOMPLETE` (мягко); HOLD `21_` J-14 снят (р. 145) |
+| 4.229 | Q225 | Мак-Артур, MSB 1997, с. 1965 (сн. 69): многоточие заменяет только «(see note on 1 Tim. 4:10)» (OCR 1997 и 2006–2010, класс B); цитата точна; вопрос REPASS §8.3 снят; с. 1965 — HOLD (р. 146) |
 
-⇒ разделов с `Q` — **221**, разделов §4.x — **223**; пропуски нумерации прежние.
+⇒ разделов с `Q` — **222**, разделов §4.x — **224**; пропуски нумерации прежние.
 
 
 ### 4.139. Q135 — Приёмка раунда 61: связка Сомюра, аудит объёма, готовность к мерджу (раунд 61)
@@ -10197,6 +10203,20 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 3. **Контекст.** Перед цитатой Робертсон читает «весь мир» как «массу греха» (5:19). Статья этот вариант не приводит («В любом случае»); тезис о всеобщем обеспечении от этого не меняется.
 4. **Сноска.** Год верен; тома (VI) и страницы (210) нет — `BIBLIOGRAPHY_INCOMPLETE` (мягко).
 5. **Вторичная цитата.** Лайтнер (*The Death Christ Died*, 1967) приводит ту же фразу в защиту неограниченного искупления — Робертсон читается как свидетель широкого обеспечения и в этой традиции.
+
+Вердикты S1–S5 не меняются.
+
+### 4.229. Q225 — Мак-Артур, *MacArthur Study Bible* (1997), с. 1965: сноска 69 — что на месте многоточия (раунд 146, 2026-11-17)
+
+**Повод.** С раунда 85 перевод цитаты сн. 69 признан точным по транскрипциям (класс C), но место многоточия оставалось несверенным (REPASS §8.3). Источник — S244. Таблица — REPASS-документ, §69.
+
+**Вопрос.** Что опущено на месте многоточия и не меняет ли пропуск смысла?
+
+**Ответы.**
+1. **Многоточие.** В издании NKJV 1997 г. (OCR, класс B) после слов «by letting them live and enjoy earthly life» стоит только отсылка «(see note on 1 Tim. 4:10)». Её и заменяет многоточие статьи. Содержательных слов не опущено.
+2. **Продолжение.** Издания 2006–2010 гг. (OCR) дают дальше: «In that sense, Christ has provided a brief, temporal propitiation for the whole world. But He actually satisfied fully the wrath of God eternally only for the elect who believe». Перевод точен; «actually satisfied fully» передано страдательным оборотом без «actually» — смысл сохранён.
+3. **Подача.** Соседние фразы заметки («Christ actually paid the penalty only for those who would repent and believe»; «Most of the world will be eternally condemned… so they could not have been paid for by Christ») статья не приводит. `FRAMING` из REPASS §8 в силе.
+4. **Страница.** Индекс даёт только общее число страниц скана; печатная с. 1965 — HOLD.
 
 Вердикты S1–S5 не меняются.
 
