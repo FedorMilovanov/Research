@@ -24,6 +24,12 @@
     anchor-ambiguous   якорь встречается дважды: непонятно, какое число сверять;
     source-missing     источник не отдал величину (нет файла, упал скрипт).
 
+Отдельно печатается список величин, у которых источника нет вовсе. Они не
+проверяются — но и не выдают себя за проверенные: у каждой названа причина,
+почему её нельзя пересчитать из репозитория (размер объекта, снятый запросом к
+Drive; число из имени файла, а не из подсчёта строк). Проверяется только то,
+что фраза с таким числом на месте: исчезнувшее число — тоже дефект.
+
 Скрипт ничего не правит. Он не решает, какое число верно: он показывает, где
 число в прозе перестало быть измерением.
 
@@ -472,6 +478,54 @@ CLAIMS: list[dict] = [
 ]
 
 
+# --- величины, у которых источника нет: названы, а не спрятаны -----------------
+#
+# Число без источника в этом скрипте не проверяется — и не должно притворяться
+# проверенным. Но и молчать о нём нельзя: читатель вправе знать, какие цифры
+# раздела держатся на одном прочтении. Здесь перечислены те, что остались вне
+# проверки, с причиной, по которой источника нет. Проверяется только одно:
+# фраза с таким числом всё ещё на месте — исчезнувшее число тоже дефект.
+
+UNSOURCED = [
+    {
+        "doc": "CORPUS_CUSTODY_RECEIPTS_2026-11-18.md",
+        "anchor": "| Размер | 1 285 100 997 B |",
+        "number": "1 285 100 997 B",
+        "why": "размер объекта Drive снят get_file в момент сверки и в JSON квитанций не переносился; "
+               "повторить его можно только запросом к Drive",
+    },
+    {
+        "doc": "CORPUS_CUSTODY_RECEIPTS_2026-11-18.md",
+        "anchor": "число 5 941 взято из имени файла, а не из подсчёта строк",
+        "number": "5 941",
+        "why": "взято из имени каталога `SINICHKIN — MASTER FILE CATALOG — 5941 FILES.csv`, "
+               "а не подсчётом строк: сам каталог прочитан на 9 000 символов из 1 469 442",
+    },
+    {
+        "doc": "README.md",
+        "anchor": "38 строк каталога из 5 941 (0,64 %)",
+        "number": "0,64 %",
+        "why": "доля посчитана от 38 и 5 941; оба слагаемых названы, но 5 941 — из имени файла (см. выше)",
+    },
+]
+
+
+def unsourced_report() -> list[tuple[str, str, str]]:
+    """(id, состояние, пояснение) для каждой величины без источника."""
+    out = []
+    for item in UNSOURCED:
+        path = HOLDS / item["doc"]
+        text = path.read_text(encoding="utf-8") if path.exists() else ""
+        hits = text.count(item["anchor"])
+        if hits == 1:
+            out.append((item["doc"], "unsourced-present", item["number"]))
+        elif hits == 0:
+            out.append((item["doc"], "unsourced-missing", item["number"]))
+        else:
+            out.append((item["doc"], "unsourced-ambiguous", item["number"]))
+    return out
+
+
 def normalise(value: str) -> str:
     return re.sub(r"[\s\u00a0]", "", value)
 
@@ -522,15 +576,24 @@ def main(argv: list[str]) -> int:
         state, printed, expected = check(claim, verbose)
         results.append((claim, state, printed, expected))
 
+    unsourced = unsourced_report()
     bad = [r for r in results if r[1] not in ("match",)]
     print(f"ЧИСЛА В ДОКУМЕНТАХ HOLD-КЛАСТЕРА: {len(results)} утверждений, "
           f"совпало {sum(1 for r in results if r[1] == 'match')}, разошлось {len(bad)}")
+    print(f"  вне проверки (источника нет, причина названа): {len(unsourced)} величин — "
+          + "; ".join(f"{u[2]} ({u[1]})" for u in unsourced))
     for claim, state, printed, expected in results:
         if state == "match" and not verbose:
             continue
         print(f"  {state:16} {claim['id']:30} документ={printed} источник={expected}")
         if state != "match":
             print(f"                   {claim['doc']}: {claim['source']}")
+
+    missing_unsourced = [u for u in unsourced if u[1] != "unsourced-present"]
+    if missing_unsourced:
+        for doc, state, number in missing_unsourced:
+            print(f"  {state:16} {number:20} {doc}: фраза с числом без источника исчезла или размножилась")
+        return 1
 
     if bad:
         print("\nЧисло в прозе перестало быть измерением. Либо пересчитать его источником, "
