@@ -79,6 +79,7 @@ def audit_summary() -> dict[str, int]:
         "declared": r"сами называют объём осмотра[^:]*: (\d+)",
         "silent": r"молчат о нём совсем: (\d+)",
         "no_field": r"записей без поля holds вовсе — (\d+)",
+        "files": r"Файлов с такими записями: (\d+)",
     }
     for key, pattern in patterns.items():
         found = re.search(pattern, out)
@@ -412,6 +413,14 @@ CLAIMS: list[dict] = [
         "source": "check_drive_mirror_pairs.py --summary, последнее число",
     },
     {
+        "id": "triage.files",
+        "doc": "UNDER_ACQUIRED_WITHOUT_HOLD_TRIAGE_2026-11-18.md",
+        "anchor": "| Файлов |",
+        "pattern": r"\| Файлов \| (\d+) \|",
+        "expected": lambda: audit_summary()["files"],
+        "source": "audit_hold_coverage_gaps.py --summary, строка «Файлов с такими записями»",
+    },
+    {
         "id": "triage.records",
         "doc": "UNDER_ACQUIRED_WITHOUT_HOLD_TRIAGE_2026-11-18.md",
         "anchor": "| Записей | **",
@@ -609,6 +618,16 @@ def unsourced_report() -> list[tuple[str, str, str]]:
     return out
 
 
+
+def plural(n: int, one: str, few: str, many: str) -> str:
+    """Русская форма числительного: 1 утверждение, 2 утверждения, 31 утверждение, 11 утверждений."""
+    if n % 10 == 1 and n % 100 != 11:
+        return one
+    if 2 <= n % 10 <= 4 and not 12 <= n % 100 <= 14:
+        return few
+    return many
+
+
 def normalise(value: str) -> str:
     return re.sub(r"[\s\u00a0]", "", value)
 
@@ -664,11 +683,11 @@ def main(argv: list[str]) -> int:
     kinds = {"internal": 0, "cross": 0, "external": 0}
     for r in results:
         kinds[r[0].get("kind", "external")] += 1
-    print(f"ЧИСЛА В ДОКУМЕНТАХ HOLD-КЛАСТЕРА: {len(results)} утверждений "
+    print(f"ЧИСЛА В ДОКУМЕНТАХ HOLD-КЛАСТЕРА: {len(results)} {plural(len(results), 'утверждение', 'утверждения', 'утверждений')} "
           f"(внешний источник {kinds['external']}, перекрёстная {kinds['cross']}, "
           f"внутри одного документа {kinds['internal']}), "
           f"совпало {sum(1 for r in results if r[1] == 'match')}, разошлось {len(bad)}")
-    print(f"  вне проверки (источника нет, причина названа): {len(unsourced)} величин — "
+    print(f"  вне проверки (источника нет, причина названа): {len(unsourced)} {plural(len(unsourced), 'величина', 'величины', 'величин')} — "
           + "; ".join(f"{u[2]} ({u[1]})" for u in unsourced))
     for claim, state, printed, expected in results:
         if state == "match" and not verbose:
