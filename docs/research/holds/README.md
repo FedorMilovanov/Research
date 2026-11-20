@@ -48,12 +48,21 @@
 ## 3. Как это проверяется
 
 ```bash
-python3 -B scripts/run_research_gates.py            # 5 гейтов + 4 информационных счётчика
+python3 -B scripts/run_research_gates.py            # 6 гейтов + 4 информационных счётчика
+python3 -B scripts/check_hold_doc_numbers.py --verbose       # 13 чисел с их источниками
 python3 -B scripts/audit_hold_coverage_gaps.py --summary     # 51 и их раскладка
 python3 -B scripts/audit_hold_coverage_gaps.py --no-holds-field  # 52 без поля holds
 python3 -B scripts/audit_prose_holds.py --summary            # 83 с HOLD в прозе
 python3 -B scripts/audit_hold_coverage_gaps.py --promotion-gaps   # 1 PROMOTE с пробелом
 ```
+
+**Число и его источник стоят рядом.** Один день дал три случая одного дефекта: «44 записи 1 Петра»
+(такой развёртки не было ни в одном режиме аудита), «сделано 6 сравнений из 5 941» (в квитанциях уже
+38) и суммы `official core`, сверенные по восьмизначному префиксу вместо полной суммы. Поэтому
+`scripts/check_hold_doc_numbers.py` объявляет 13 величин вместе с источником и пересчитывает каждую:
+`match` / `stale` / `anchor-missing` / `anchor-ambiguous` / `source-missing`. Он ничего не правит и не
+решает, какое число верно, — он показывает, где число в прозе перестало быть измерением. Оба
+исторических случая проверены обратным ходом: подмена 38 на 6 и 40 на 44 даёт `stale`, а не молчание.
 
 Первый запуск требует полного клона: на shallow-клоне гейт целостности корпуса откажется проверять
 `commitTimeChecks`, и это правильно — проверка, которая ничего не сверяет, не должна называться PASS.
