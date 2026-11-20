@@ -107,6 +107,22 @@ class ManuscriptStructureTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'footnote definition outside sources'):
             audit(self.root)
 
+    def test_backstage_citation_does_not_count_as_reader_usage(self):
+        path = self.manuscripts / MANUSCRIPTS[0]
+        content = path.read_text(encoding='utf-8').replace('Claim.[^1]', 'Claim.')
+        content += '\nEditorial reference only.[^1]\n'
+        path.write_text(content, encoding='utf-8')
+        with self.assertRaisesRegex(ValueError, 'not cited by reader text'):
+            audit(self.root)
+
+    def test_source_only_citation_does_not_count_as_reader_usage(self):
+        path = self.manuscripts / MANUSCRIPTS[0]
+        content = path.read_text(encoding='utf-8').replace('Claim.[^1]', 'Claim.')
+        content = content.replace('[^1]: Source, printed p. 2.', 'See [^1].\n[^1]: Source, printed p. 2.')
+        path.write_text(content, encoding='utf-8')
+        with self.assertRaisesRegex(ValueError, 'not cited by reader text'):
+            audit(self.root)
+
     def test_editorial_word_in_reader_heading_is_not_backstage(self):
         path = self.manuscripts / MANUSCRIPTS[0]
         content = path.read_text(encoding='utf-8').replace(
