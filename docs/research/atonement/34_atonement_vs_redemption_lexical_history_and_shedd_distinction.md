@@ -349,6 +349,11 @@
   - Локатор p. 240 — `LOCATOR_VERIFIED` (класс B: Watson 2012, Shultz 2013); пагинация «1998» = печать 1983.
   - Содержание (лексический тезис) — HOLD: собственный текст WBC 50 не найден; BDAG p. 14 — алфавитно правдоподобно, HOLD.
   - Вердикты S1–S5 не меняются. Документ: REPASS, §62.
+- **раунд 140 (2026-11-17, AGENT 2):** §3 (S238), новый §4.223 (Q219): Шрайнер, NAC 37, p. 329 — сн. 54 (2 Пет. 2:1).
+  - В OCR NAC 2003 найдено ядро первой фразы: «as their master he bought them and made them his servants»; локатор — `LOCATOR_PLAUSIBLE` (класс C), фраза 1 — `WORDING_PARTIAL`.
+  - Фразы 2–4 — `WORDING_NOT_LOCATED` (мягко): страницы после разбора despotēs в индекс не попали.
+  - Вывод pp. 331–332 («phenomenological language… did not truly belong to God») — по Эскобедо (2002/2004), класс B; `CONTEXT_OMITTED` для NAC 2003. Автор разбора на aomin.org уточнён (не Уайт).
+  - Вердикты S1–S5 не меняются. Документ: REPASS, §63.
 
 **Erratum (раунд 4).** В раунде 3 номера страниц протоколов Ассамблеи (S19) и Шедда II (S22) были выведены из индекса страниц OCR-API archive.org (`BookReaderGetTextWrapper`), который **не совпадает** с номером листа (`leafNum`) скана: для `minutesofsession00west` индекс = лист − 5, для `dogmatictheology02sheduoft` индекс = лист − 1. Сверка по `inside.php` (полнотекстовый поиск, возвращает `leafNum`) и `<id>_page_numbers.json` (лист → печатная страница) дала: **Minutes «pp. 150–155/156» → pp. 155–160/161** (листы 251–257); **Shedd «II.478, 482–483» → II.479, 483–484** (листы 489, 493–494). Все затронутые числа в S19, S22, §4.13, §4.16, §5–§8 исправлены **на месте** с пометкой «(испр. р. 4)»; содержание цитат не менялось. Локаторы раундов 1–2 (Minutes p. lv/lviii/lx/152, Shedd II.464–477, I.441, A. A. Hodge pp. 33–34) перепроверены тем же способом и **верны** (лист 248 = p. 152; лист 457 = I.441; лист 39 = Hodge p. 33).
 **Статус:** `ACTIVE RESEARCH / NO SETTLED VERDICT ON EXTENT / EVIDENCE_HOLD / PUBLICATION_HOLD`
@@ -749,6 +754,7 @@
 | S235 *(раунд 137, 2026-11-17)* | Полнотекстовый индекс archive.org (`openlibrary.org/search/inside.json`): (а) P. G. Ryken, *Galatians* (P&R, 2005), IA `galatians0000ryke`: «He has and bears all the sins of all men in His body» + «Luther, Galatians, 26:277. 16. Ibid., 26:284»; (б) *Gift and Promise* (Fortress, 2016), IA `giftpromiseaugsb0000unse`: та же цитата + «LW 26:277»; (в) *Luther Refracted* (Fortress, 2015), IA `lutherrefractedr0000unse`: «LW 26:285; WA 40/I:444b», «LW 26:285; WA 40/I:445», «LW 26:281; WA 40/I:439», «LW 26:292; WA 40/I:454»; (г) WA 40/I, IA `werkekritischege40luthuoft`, `BookReaderGetTextWrapper` лл. 457–458 = pp. 444–445. Класс B (соответствия по вторичным источникам) + A2 (WA) | Сн. 5 — `LOCATOR_VERIFIED` (класс B) |
 | S236 *(раунд 138, 2026-11-17)* | Полнотекстовый индекс archive.org (`openlibrary.org/search/inside.json`): (а) S. S. Smalley, *1, 2, 3 John* (WBC 51; Waco: Word Books, 1984), IA `123john0051smal` (ограниченный доступ), фрагменты OCR к 1 Ин. 2:2: «not just for “our” sins (those of John’s immediate circle) alone; it embraces the sins of the whole world»; «the sins of the world are the concern of the “atoning sacrifice” made by Jesus, rather than “the world” in general (against Westcott, 45)»; (б) G. L. Shultz, *A Multi-Intentioned View of the Extent of the Atonement* (2013), IA `multiintentioned0000shul`: та же фраза + «Smalley, 1, 2, 3 John, 40»; «38–40»; (в) R. A. Peterson, *Salvation Accomplished by the Son* (2012), IA `salvationaccompl0000pete`: «Smalley, 1, 2, 3 John, 40»; библиография «Waco, TX: Word, 1984»; (г) W. W. Klein, *The New Chosen People* (2015), IA `newchosenpeoplec0000klei_s2s6`: «Dallas: Word, 1989». Класс A2 (фрагменты) + B (локатор) | Сн. 62 — `LOCATOR_VERIFIED` (класс B); ACCURATE; `SOURCE_TENSION` (мягко) |
 | S237 *(раунд 139, 2026-11-17)* | Полнотекстовый индекс archive.org (`openlibrary.org/search/inside.json`), ограниченные копии: (а) D. F. Watson, *First and Second Peter* (Paideia, 2012), IA `firstsecondpeter0000wats`: «…warnings, such as given by Justin, Dial. 35.3 (Bauckham 1983, 240)» — к 2 Пет. 2:1; (б) G. L. Shultz, *A Multi-Intentioned View of the Extent of the Atonement* (2013), IA `multiintentioned0000shul`: nn. 105 («240–41»), 109 («240; Blum, 2 Peter, 276; Chang… 53–54; Davids… 221»), 119 («Views advanced by Bauckham… 240; and Kennard… 403–05»); (в) T. R. Schreiner, NAC 37 (2003), IA `12peterjude0000schr`: «So Bauckham, Jude, 2 Peter, 239»; (г) R. Bauckham, *Jude, 2 Peter* (Word Biblical Themes, 1990), IA `jude2peter0000bauc`: перевод из WBC 50, «copyrighted 1983». Класс B (локатор); собственный текст WBC 50 не найден | Сн. 52 — `LOCATOR_VERIFIED` (класс B); содержание и BDAG p. 14 — HOLD |
+| S238 *(раунд 140, 2026-11-17)* | (а) Полнотекстовый индекс archive.org (`openlibrary.org/search/inside.json`), ограниченная копия T. R. Schreiner, *1, 2 Peter, Jude* (NAC 37; B&H, 2003), IA `12peterjude0000schr`: обзорный абзац к 2 Пет. 2:1 — «…they denied the Lord Jesus Christ by both their behavior and teaching, despite the fact that as their master he bought them and made them his servants. When Peter thought of denying the Lord, he considered the penalty that comes from such denial—swift destruction»; разбор — «The NIV captures precisely the meaning of kai… The Greek word despotēs is not the usual one for “Lord,” and again the NIV’s rendering is» (конец страницы). Следующие страницы в индексе отсутствуют. (б) S. Escobedo III, «2 Peter 2:1 and Universal Redemption» (Alpha & Omega Ministries, 2002, ред. 2004), прим. 39: дословная цитата NAC «pages 331-332» — «I would suggest that Peter used phenomenological language… did not truly belong to God, even though they professed faith… bought by Jesus Christ, in the sense that they gave every indication initially of genuine faith». Класс B1 (фраза 1) и B (pp. 331–332) | Сн. 54 — `LOCATOR_PLAUSIBLE` (класс C); фраза 1 — `WORDING_PARTIAL`; фразы 2–4 — `WORDING_NOT_LOCATED` (мягко); `CONTEXT_OMITTED` (класс B) |
 
 **Ответ: П1 исторически неверен; «словом о цене» в английской традиции является *redemption*, а не *atonement*.**
 
@@ -8348,8 +8354,9 @@ hommes** selon ce propos déterminé…*» (с. 183) **есть в источн�
 | 4.220 | Q216 | Лютер, сн. 5: *LW* 26:277 = WA 40/I, 433; *LW* 26:285 = WA 444b–445 — локатор `LOCATOR_VERIFIED` (класс B) (р. 137) |
 | 4.221 | Q217 | Смолли, WBC 51, p. 40 (сн. 62): локатор `LOCATOR_VERIFIED` (класс B); масштаб ACCURATE; «наши» у Смолли = круг Иоанна — `SOURCE_TENSION` (мягко) (р. 138) |
 | 4.222 | Q218 | Бокэм, WBC 50, p. 240 (сн. 52): локатор `LOCATOR_VERIFIED` (класс B); слова Бокэма не видны — содержание HOLD; BDAG p. 14 — HOLD (р. 139) |
+| 4.223 | Q219 | Шрайнер, NAC 37, p. 329 (сн. 54): ядро фразы 1 в OCR; локатор `LOCATOR_PLAUSIBLE` (класс C); фразы 2–4 — пробел OCR; вывод pp. 331–332 — `CONTEXT_OMITTED` (класс B) (р. 140) |
 
-⇒ разделов с `Q` — **215**, разделов §4.x — **217**; пропуски нумерации прежние.
+⇒ разделов с `Q` — **216**, разделов §4.x — **218**; пропуски нумерации прежние.
 
 
 ### 4.139. Q135 — Приёмка раунда 61: связка Сомюра, аудит объёма, готовность к мерджу (раунд 61)
@@ -9683,7 +9690,7 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 5. **Сн. 75 ↔ 76.** *Expiation* — «удаление вины» (сн. 75) и «компенсация» (сн. 76, перевод Коллинза). `INTERNAL_INCONSISTENCY` (мягко); подтверждает §4.194 п. 4.
 6. **Сн. 99** — авторское отступление без источника, вне предмета статьи; не оценивается.
 
-**Чего нет.** Бокэм p. 240 *(раунд 139: локатор снят — §4.222)*; BDAG p. 14; Бюксель pp. 125–126; Шрайнер p. 329; Смолли p. 40 *(раунд 138: снято — §4.221)*; Дэниел pp. 37–38, 55 — в открытом доступе нет. Совпадение страниц Logos с печатью не проверено *(для Смолли подтверждено — §4.221)*.
+**Чего нет.** Бокэм p. 240 *(раунд 139: локатор снят — §4.222)*; BDAG p. 14; Бюксель pp. 125–126; Шрайнер p. 329 *(раунд 140: частично — §4.223)*; Смолли p. 40 *(раунд 138: снято — §4.221)*; Дэниел pp. 37–38, 55 — в открытом доступе нет. Совпадение страниц Logos с печатью не проверено *(для Смолли подтверждено — §4.221)*.
 
 Вердикты S1–S5 не меняются.
 
@@ -10056,6 +10063,23 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 3. **Содержание.** Не проверено. Собственный текст WBC 50 в индексе не найден. Shultz ставит Бокэма в один ряд со сторонниками сотериологического прочтения «купил» (n. 109: Blum, Chang, Davids), но по фрагментам не видно, к какой фразе относится эта сноска. Вердикта о точности передачи нет — HOLD.
 4. **BDAG, p. 14.** Статьи на ἀγν-/ἀγορ- в BDAG стоят на pp. 13–14 (Watson ссылается на «BDAG 14» для соседнего ἄγνοια). Страница алфавитно правдоподобна (класс C), но статья ἀγοράζω не открыта — HOLD.
 5. **Граница.** Сноска 52 подкрепляет лексический тезис, а не объём искупления. Даже при полном подтверждении она не решает спора о том, чья это покупка и какова её цена (`06_` §22).
+
+Вердикты S1–S5 не меняются.
+
+
+### 4.223. Q219 — Шрайнер, NAC 37, p. 329: сноска 54 к 2 Пет. 2:1 (раунд 140, 2026-11-17)
+
+**Повод.** Шрайнер p. 329 — в HOLD с раунда 112 (§4.195, «Чего нет»). Источник — S238. Таблица — REPASS-документ, §63.
+
+**Вопрос.** Есть ли в NAC 2003 четыре фразы, которые статья (с. 13–14) приводит со ссылкой на p. 329, и не опущен ли собственный вывод Шрайнера?
+
+**Ответы.**
+1. **Фраза 1.** «Иисус как Господин купил их Себе в рабы…» — ядро есть в обзорном абзаце к 2:1: «as their master he bought them and made them his servants». Вторая половина («заплатил… цену искупительной смерти на кресте») не найдена. `WORDING_PARTIAL`.
+2. **Фразы 2–4** (не язычники; часть церкви, исповедовали веру; когда-то верные слуги, Господь пролил за них кровь) не найдены. Это не довод против: страницы после разбора despotēs в индекс не попали — пять выражений из дословной цитаты pp. 331–332 тоже дают 0. `WORDING_NOT_LOCATED` (мягко).
+3. **Страница.** Фрагменты идут в порядке «перевод → обзорный абзац → kai/despotēs → конец страницы», вывод — на pp. 331–332. p. 329 с этим согласуется, но печатный номер не виден. `LOCATOR_PLAUSIBLE` (класс C).
+4. **Контекст.** По дословной цитате у Эскобедо (2002/2004; до главы 2013 г.) вывод NAC на pp. 331–332 таков: язык Петра «феноменологический»; лжеучители «did not truly belong to God, even though they professed faith»; «bought… in the sense that they gave every indication initially of genuine faith». Статья этого вывода не упоминает. `CONTEXT_OMITTED` — теперь класс B для самого комментария 2003 г.
+5. **Открытый вопрос.** Во фразе 3 статьи многоточие («частью церкви…, что они исповедовали веру»). В цитате pp. 331–332 между этими словами стоит «…did not truly belong to God, even though…». Одно ли это место — неизвестно; не утверждается.
+6. **Попутно.** «A plain reading… Jesus Christ paid the price to redeem even the false teachers… slave owner» в том же разборе — слова A. D. Chang (pp. 54–55), не Шрайнера. Автор разбора на aomin.org — С. Эскобедо III, а не Дж. Уайт (`17_` §8.3 исправлен пометкой).
 
 Вердикты S1–S5 не меняются.
 
