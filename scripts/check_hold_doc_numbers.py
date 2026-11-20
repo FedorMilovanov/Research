@@ -137,6 +137,20 @@ def peter_registry() -> dict[str, int]:
     return {"empty_holds": empty, "no_field": no_field}
 
 
+def receipts_totals() -> dict:
+    """Числа квитанций хранения — из их JSON, а не из таблицы в прозе."""
+    data = json.loads(
+        (ROOT / "data" / "corpus-custody-receipts-2026-11-18.json").read_text(encoding="utf-8")
+    )
+    posting = data["sharingPosture"]["ancestors"]["totals"]
+    return {
+        "grand_total": posting["grandTotal"],
+        "family_objects": posting["familyObjects"],
+        "sections": data["corpusSectionsNotInLedger"]["corpus"]["childFolders"],
+        "commons_bytes": data["corpora"][0]["aggregate"]["bytes"],
+    }
+
+
 def matrix_numbers() -> dict[str, int]:
     """Объекты и категории матрицы прав — из JSON и из её собственной таблицы."""
     data = json.loads(
@@ -273,6 +287,38 @@ CLAIMS: list[dict] = [
         "pattern": r"\*\*(\d+) записей 1 Петра",
         "expected": lambda: peter_registry()["empty_holds"],
         "source": "обход 1_PETER_BOT/**/*.json: четыре состояния, поле holds есть и пусто",
+    },
+    {
+        "id": "readme.sharing_grand_total",
+        "doc": "README.md",
+        "anchor": "доступ проверен у",
+        "pattern": r"доступ проверен у (\d+)",
+        "expected": lambda: receipts_totals()["grand_total"],
+        "source": "data/corpus-custody-receipts JSON → sharingPosture.ancestors.totals.grandTotal",
+    },
+    {
+        "id": "readme.sharing_family_objects",
+        "doc": "README.md",
+        "anchor": "объекта квитанций;",
+        "pattern": r"(\d+) объекта квитанций",
+        "expected": lambda: receipts_totals()["family_objects"],
+        "source": "data/corpus-custody-receipts JSON → sharingPosture.ancestors.totals.familyObjects",
+    },
+    {
+        "id": "readme.corpus_sections",
+        "doc": "README.md",
+        "anchor": "разделов корпуса",
+        "pattern": r"(\d+) разделов корпуса",
+        "expected": lambda: receipts_totals()["sections"],
+        "source": "data/corpus-custody-receipts JSON → corpusSectionsNotInLedger.corpus.childFolders",
+    },
+    {
+        "id": "receipts.commons_shard_bytes",
+        "doc": "CORPUS_CUSTODY_RECEIPTS_2026-11-18.md",
+        "anchor": "| **Итого** | 9 объектов |",
+        "pattern": r"\*\*(\d[\d\s]*\d)\*\*",
+        "expected": lambda: receipts_totals()["commons_bytes"],
+        "source": "data/corpus-custody-receipts JSON → corpora[0].aggregate.bytes (сумма девяти шардов)",
     },
     {
         "id": "matrix.objects_vs_table",
