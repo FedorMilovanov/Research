@@ -364,6 +364,10 @@
   - Лексическое утверждение — собственная фраза статьи со сноской «Там же»; `FACT_ERROR` из REPASS §15 в силе. Чья ошибка — HOLD.
   - Поправка к REPASS §15: «агоразо» → «агорадзо», как в статье.
   - Вердикты S1–S5 не меняются. Документ: REPASS, §65.
+- **раунд 143 (2026-11-17, AGENT 2):** §3 (S241), новый §4.226 (Q222): Хиберт, сн. 63 (рус. изд. 2014, с. 97) — цитата внутри цитаты.
+  - «Умилостивление настолько же широко, насколько широк грех» — изречение Бенгеля (*Gnomon*, 1742, на 1 Ин. 2:2: «Quam late patet peccatum, tam late propitiatio»).
+  - Русская передача точна; статья фразу никому не приписывает — ошибки нет. Называет ли Бенгеля сам Хиберт и текст p. 97 — HOLD.
+  - Вердикты S1–S5 не меняются. Документ: REPASS, §66.
 
 **Erratum (раунд 4).** В раунде 3 номера страниц протоколов Ассамблеи (S19) и Шедда II (S22) были выведены из индекса страниц OCR-API archive.org (`BookReaderGetTextWrapper`), который **не совпадает** с номером листа (`leafNum`) скана: для `minutesofsession00west` индекс = лист − 5, для `dogmatictheology02sheduoft` индекс = лист − 1. Сверка по `inside.php` (полнотекстовый поиск, возвращает `leafNum`) и `<id>_page_numbers.json` (лист → печатная страница) дала: **Minutes «pp. 150–155/156» → pp. 155–160/161** (листы 251–257); **Shedd «II.478, 482–483» → II.479, 483–484** (листы 489, 493–494). Все затронутые числа в S19, S22, §4.13, §4.16, §5–§8 исправлены **на месте** с пометкой «(испр. р. 4)»; содержание цитат не менялось. Локаторы раундов 1–2 (Minutes p. lv/lviii/lx/152, Shedd II.464–477, I.441, A. A. Hodge pp. 33–34) перепроверены тем же способом и **верны** (лист 248 = p. 152; лист 457 = I.441; лист 39 = Hodge p. 33).
 **Статус:** `ACTIVE RESEARCH / NO SETTLED VERDICT ON EXTENT / EVIDENCE_HOLD / PUBLICATION_HOLD`
@@ -767,6 +771,7 @@
 | S238 *(раунд 140, 2026-11-17)* | (а) Полнотекстовый индекс archive.org (`openlibrary.org/search/inside.json`), ограниченная копия T. R. Schreiner, *1, 2 Peter, Jude* (NAC 37; B&H, 2003), IA `12peterjude0000schr`: обзорный абзац к 2 Пет. 2:1 — «…they denied the Lord Jesus Christ by both their behavior and teaching, despite the fact that as their master he bought them and made them his servants. When Peter thought of denying the Lord, he considered the penalty that comes from such denial—swift destruction»; разбор — «The NIV captures precisely the meaning of kai… The Greek word despotēs is not the usual one for “Lord,” and again the NIV’s rendering is» (конец страницы). Следующие страницы в индексе отсутствуют. (б) S. Escobedo III, «2 Peter 2:1 and Universal Redemption» (Alpha & Omega Ministries, 2002, ред. 2004), прим. 39: дословная цитата NAC «pages 331-332» — «I would suggest that Peter used phenomenological language… did not truly belong to God, even though they professed faith… bought by Jesus Christ, in the sense that they gave every indication initially of genuine faith». Класс B1 (фраза 1) и B (pp. 331–332) | Сн. 54 — `LOCATOR_PLAUSIBLE` (класс C); фраза 1 — `WORDING_PARTIAL`; фразы 2–4 — `WORDING_NOT_LOCATED` (мягко); `CONTEXT_OMITTED` (класс B) |
 | S239 *(раунд 141, 2026-11-17)* | (а) S. Escobedo III, «2 Peter 2:1 and Universal Redemption» (Alpha & Omega Ministries, 2002, ред. 2004), дословная цитата BKC к 2 Пет. 2:1 (прим. 13: «provided from a secondary source»): «Several suggestions have been offered: (1) They were saved but lost their salvation. But this contradicts many other Scriptures (e.g., John 3:16; 5:24; 10:28-29). (2) “Bought” means the Lord created them… But this stretches the meaning of agorazo (“redeem”). (3) The false prophets merely said they were “bought” by Christ. This, however, seems to read into the verse. (4) They were “redeemed” in the sense that Christ paid the redemptive price… This is a strong argument for unlimited atonement… against limited atonement…». (б) C. R. Swindoll, *Conquering through Conflict* (1990), открытая копия IA `conqueringthroug00char`, p. 24, n. 3: «Kenneth O. Gangel, “2 Peter,” in The Bible Knowledge Commentary, New Testament ed. … 1983, p. 869» — к 2 Пет. 1:21. Класс C (текст), класс B (соседняя страница) | Сн. 51/55 — `LOCATOR_CONSISTENT`; перевод сн. 55 — ACCURATE; перечень 1–3 — от Гангела; `HEDGE_DROPPED` (мягко) |
 | S240 *(раунд 142, 2026-11-17)* | (а) PDF статьи (teoblogia.ru), с. 13–14: вводная фраза, цитата сн. 56 («На кресте, как и в исходе, мы видим Божье личное заступничество за Его народ, не только чтобы избавить их от рабства и смерти, но и чтобы сделать их “народом для Себя”, как сказано во 2 Цар. 7:23»), фраза сн. 57 и библиография Green 1987, p. 118. (б) Полнотекстовый индекс Open Library, девять запросов по характерным оборотам (REPASS §65.3): книга Грина не найдена; совпадения только у других изданий IVP (NBD, Motyer *Isaiah*). Класс A1 (текст статьи); источник Грина не открыт | В цитате нет утверждения о греческом слове; лексическая фраза принадлежит статье; кто ошибся — HOLD |
+| S241 *(раунд 143, 2026-11-17)* | (а) J. A. Bengel, *Gnomon Novi Testamenti* (Tübingen, 1742), на 1 Ин. 2:2, OCR IA `gnomonnovitestam00beng`: «…nunc, totius expresso, quis restringere audet? c. V. 19. Quam late patet peccatum, tam late propitiatio» (p. 1043 по соседним колонтитулам). (б) Английский перевод: *Gnomon of the New Testament*, vol. V (T&T Clark, 1859), pp. 115–116, IA `gnomonofnewtesta05beng`: «The propitiation is as widely extended as sin». (в) Полнотекстовый индекс Open Library: Хутер, Хольцман, Пламмер, Лайас, Хаупт, EGT, Фаррар цитируют изречение с пометой «Bengel»; Бриггс (1895) и Вуэст (1954) — в форме «The propitiation is as wide as the sin». Класс A (первоисточник) и B (вторичные цитаты) | Внутренняя цитата сн. 63 — изречение Бенгеля; передача точна; атрибуционной ошибки нет |
 
 **Ответ: П1 исторически неверен; «словом о цене» в английской традиции является *redemption*, а не *atonement*.**
 
@@ -8369,8 +8374,9 @@ hommes** selon ce propos déterminé…*» (с. 183) **есть в источн�
 | 4.223 | Q219 | Шрайнер, NAC 37, p. 329 (сн. 54): ядро фразы 1 в OCR; локатор `LOCATOR_PLAUSIBLE` (класс C); фразы 2–4 — пробел OCR; вывод pp. 331–332 — `CONTEXT_OMITTED` (класс B) (р. 140) |
 | 4.224 | Q220 | Гангел, BKC II, p. 870 (сн. 51, 55): `LOCATOR_CONSISTENT` (p. 869 = 1:21); перевод ACCURATE (класс C); три варианта — от Гангела, `HEDGE_DROPPED` (мягко); поправка к §4.223 (р. 141) |
 | 4.225 | Q221 | Грин, TNTC, p. 118 (сн. 56–57): в цитате нет утверждения о греческом слове, 2 Цар. 7:23 употреблено верно; `FACT_ERROR` — во фразе статьи («Там же»); кто ошибся — HOLD; поправка «агоразо» → «агорадзо» в REPASS §15 (р. 142) |
+| 4.226 | Q222 | Хиберт, сн. 63 (рус. изд. 2014, с. 97): «Умилостивление настолько же широко, насколько широк грех» — изречение Бенгеля (*Gnomon*, 1742, на 1 Ин. 2:2); передача точна, статья фразу никому не приписывает; p. 97 и то, называет ли Хиберт Бенгеля, — HOLD (р. 143) |
 
-⇒ разделов с `Q` — **218**, разделов §4.x — **220**; пропуски нумерации прежние.
+⇒ разделов с `Q` — **219**, разделов §4.x — **221**; пропуски нумерации прежние.
 
 
 ### 4.139. Q135 — Приёмка раунда 61: связка Сомюра, аудит объёма, готовность к мерджу (раунд 61)
@@ -10131,6 +10137,23 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 
 Вердикты S1–S5 не меняются.
 
+
+### 4.226. Q222 — Хиберт, сн. 63: цитата внутри цитаты — изречение Бенгеля (раунд 143, 2026-11-17)
+
+**Повод.** Цитата сн. 63 (Хиберт, *Послания Иоанна*, рус. изд. 2014, с. 97) содержит фразу во внутренних кавычках: «Умилостивление настолько же широко, насколько широк грех». Чья она, в корпусе не выяснялось. Источник — S241. Таблица — REPASS-документ, §66.
+
+**Вопрос.** Кому принадлежит фраза и верно ли статья её передаёт?
+
+**Ответы.**
+1. **Источник.** Это изречение Бенгеля на 1 Ин. 2:2 (*Gnomon Novi Testamenti*, 1742): «Si tantum *mundi* dixisset… nunc, *totius* expresso, quis restringere audet? c. V. 19. Quam late patet peccatum, tam late propitiatio». Английский перевод 1859 г. (vol. V, pp. 115–116): «The propitiation is as widely extended as sin».
+2. **Традиция цитирования.** Хутер, Хольцман, Пламмер, Лайас («every commentator here quotes Bengel»), Хаупт, EGT и Фаррар приводят изречение по-латыни с пометой «Bengel». Бриггс (1895) и Вуэст (1954) — по-английски: «The propitiation is as wide as the sin». Русский текст статьи этой форме дословно соответствует.
+3. **Атрибуция.** Статья оставляет фразу во внутренних кавычках и никому её не приписывает. Ошибки нет.
+4. **Справка о традиции.** Бенгель — лютеранский пиетист. Изречение не реформатское и ярлык «кальвинист» для Хиберта (`AFFILIATION_ERROR`, раунд 84) не подкрепляет.
+5. **Что фраза доказывает.** Она говорит об объёме умилостивления, а не о механизме вменения. Спор `impetratio`/`applicatio` (`21_` §17, J-11) ею не решается.
+
+**Чего нет.** Текст p. 97 (рус. изд.) и английский оригинал Хиберта: называет ли он Бенгеля, не проверено. Номер страницы *Gnomon* 1742 (p. 1043) выведен из соседних колонтитулов.
+
+Вердикты S1–S5 не меняются.
 
 ## 5. Анализ и границы допустимой формулировки
 
