@@ -345,6 +345,10 @@
   - Масштаб — ACCURATE; посылка статьи «мы = все верующие» у Смолли не разделяется («наши» = ближайший круг Иоанна) — `SOURCE_TENSION` (мягко).
   - Попутно: устаревшие пометки о II Helv. XI.15 в REPASS §15 отосланы к §16.3.
   - Вердикты S1–S5 не меняются. Документ: REPASS, §61.
+- **раунд 139 (2026-11-17, AGENT 2):** §3 (S237), новый §4.222 (Q218): Бокэм, WBC 50, p. 240 — сн. 52 (2 Пет. 2:1, ἀγοράζω).
+  - Локатор p. 240 — `LOCATOR_VERIFIED` (класс B: Watson 2012, Shultz 2013); пагинация «1998» = печать 1983.
+  - Содержание (лексический тезис) — HOLD: собственный текст WBC 50 не найден; BDAG p. 14 — алфавитно правдоподобно, HOLD.
+  - Вердикты S1–S5 не меняются. Документ: REPASS, §62.
 
 **Erratum (раунд 4).** В раунде 3 номера страниц протоколов Ассамблеи (S19) и Шедда II (S22) были выведены из индекса страниц OCR-API archive.org (`BookReaderGetTextWrapper`), который **не совпадает** с номером листа (`leafNum`) скана: для `minutesofsession00west` индекс = лист − 5, для `dogmatictheology02sheduoft` индекс = лист − 1. Сверка по `inside.php` (полнотекстовый поиск, возвращает `leafNum`) и `<id>_page_numbers.json` (лист → печатная страница) дала: **Minutes «pp. 150–155/156» → pp. 155–160/161** (листы 251–257); **Shedd «II.478, 482–483» → II.479, 483–484** (листы 489, 493–494). Все затронутые числа в S19, S22, §4.13, §4.16, §5–§8 исправлены **на месте** с пометкой «(испр. р. 4)»; содержание цитат не менялось. Локаторы раундов 1–2 (Minutes p. lv/lviii/lx/152, Shedd II.464–477, I.441, A. A. Hodge pp. 33–34) перепроверены тем же способом и **верны** (лист 248 = p. 152; лист 457 = I.441; лист 39 = Hodge p. 33).
 **Статус:** `ACTIVE RESEARCH / NO SETTLED VERDICT ON EXTENT / EVIDENCE_HOLD / PUBLICATION_HOLD`
@@ -744,6 +748,7 @@
 | S234 *(раунд 136, 2026-11-17)* | W. A. Elwell (ed.), *Evangelical Dictionary of Theology* (Grand Rapids: Baker, 1984), статья «Helvetic Confessions», подпись R. V. Schnucker; IA `evangelicaldicti00elwe`; 2-е изд. (2001) `evangelicaldicti0000unse_k3p7`; 3-е изд. (2017) `evangelicaldicti0000unse_m4p4_3edi`. Полнотекстовый индекс archive.org (`openlibrary.org/search/inside.json`): «Second Helvetic Confession are the two most widely» → 1984: «…most widely / 507 / Helvetic Confessions»; «thoritative Reformed» → 2017: «the two most widely adopted and au- thoritative Reformed statements»; «R. V. SCHNUCKER» + «WALTER A. ELWELL, EDITOR» → 1984 и 2001: «[adopted and] authoritative of the Reformed statements of faith. R. V. Schnucker. See also Bullinger, Johann Heinrich»; «fession of 1566, composed by Heinrich Bullinger» → «…with thirty extensive chapters and widely endorsed». Список авторов 2017 г.: «Robert V. Schnucker… Heidelberg Catechism; Helvetic Confessions». Русский перевод 2003 г. не найден. Текст статьи — веб-PDF teoblogia, фрагменты 1–2. Класс A2 | Сн. 17 — ACCURATE; рус. с. 312 — HOLD |
 | S235 *(раунд 137, 2026-11-17)* | Полнотекстовый индекс archive.org (`openlibrary.org/search/inside.json`): (а) P. G. Ryken, *Galatians* (P&R, 2005), IA `galatians0000ryke`: «He has and bears all the sins of all men in His body» + «Luther, Galatians, 26:277. 16. Ibid., 26:284»; (б) *Gift and Promise* (Fortress, 2016), IA `giftpromiseaugsb0000unse`: та же цитата + «LW 26:277»; (в) *Luther Refracted* (Fortress, 2015), IA `lutherrefractedr0000unse`: «LW 26:285; WA 40/I:444b», «LW 26:285; WA 40/I:445», «LW 26:281; WA 40/I:439», «LW 26:292; WA 40/I:454»; (г) WA 40/I, IA `werkekritischege40luthuoft`, `BookReaderGetTextWrapper` лл. 457–458 = pp. 444–445. Класс B (соответствия по вторичным источникам) + A2 (WA) | Сн. 5 — `LOCATOR_VERIFIED` (класс B) |
 | S236 *(раунд 138, 2026-11-17)* | Полнотекстовый индекс archive.org (`openlibrary.org/search/inside.json`): (а) S. S. Smalley, *1, 2, 3 John* (WBC 51; Waco: Word Books, 1984), IA `123john0051smal` (ограниченный доступ), фрагменты OCR к 1 Ин. 2:2: «not just for “our” sins (those of John’s immediate circle) alone; it embraces the sins of the whole world»; «the sins of the world are the concern of the “atoning sacrifice” made by Jesus, rather than “the world” in general (against Westcott, 45)»; (б) G. L. Shultz, *A Multi-Intentioned View of the Extent of the Atonement* (2013), IA `multiintentioned0000shul`: та же фраза + «Smalley, 1, 2, 3 John, 40»; «38–40»; (в) R. A. Peterson, *Salvation Accomplished by the Son* (2012), IA `salvationaccompl0000pete`: «Smalley, 1, 2, 3 John, 40»; библиография «Waco, TX: Word, 1984»; (г) W. W. Klein, *The New Chosen People* (2015), IA `newchosenpeoplec0000klei_s2s6`: «Dallas: Word, 1989». Класс A2 (фрагменты) + B (локатор) | Сн. 62 — `LOCATOR_VERIFIED` (класс B); ACCURATE; `SOURCE_TENSION` (мягко) |
+| S237 *(раунд 139, 2026-11-17)* | Полнотекстовый индекс archive.org (`openlibrary.org/search/inside.json`), ограниченные копии: (а) D. F. Watson, *First and Second Peter* (Paideia, 2012), IA `firstsecondpeter0000wats`: «…warnings, such as given by Justin, Dial. 35.3 (Bauckham 1983, 240)» — к 2 Пет. 2:1; (б) G. L. Shultz, *A Multi-Intentioned View of the Extent of the Atonement* (2013), IA `multiintentioned0000shul`: nn. 105 («240–41»), 109 («240; Blum, 2 Peter, 276; Chang… 53–54; Davids… 221»), 119 («Views advanced by Bauckham… 240; and Kennard… 403–05»); (в) T. R. Schreiner, NAC 37 (2003), IA `12peterjude0000schr`: «So Bauckham, Jude, 2 Peter, 239»; (г) R. Bauckham, *Jude, 2 Peter* (Word Biblical Themes, 1990), IA `jude2peter0000bauc`: перевод из WBC 50, «copyrighted 1983». Класс B (локатор); собственный текст WBC 50 не найден | Сн. 52 — `LOCATOR_VERIFIED` (класс B); содержание и BDAG p. 14 — HOLD |
 
 **Ответ: П1 исторически неверен; «словом о цене» в английской традиции является *redemption*, а не *atonement*.**
 
@@ -8342,8 +8347,9 @@ hommes** selon ce propos déterminé…*» (с. 183) **есть в источн�
 | 4.219 | Q215 | Шнукер, «Helvetic Confessions» (Элвелл 1984, pp. 506–507): сн. 17 — «two most widely adopted and authoritative» — точно; рус. с. 312 — HOLD (р. 136) |
 | 4.220 | Q216 | Лютер, сн. 5: *LW* 26:277 = WA 40/I, 433; *LW* 26:285 = WA 444b–445 — локатор `LOCATOR_VERIFIED` (класс B) (р. 137) |
 | 4.221 | Q217 | Смолли, WBC 51, p. 40 (сн. 62): локатор `LOCATOR_VERIFIED` (класс B); масштаб ACCURATE; «наши» у Смолли = круг Иоанна — `SOURCE_TENSION` (мягко) (р. 138) |
+| 4.222 | Q218 | Бокэм, WBC 50, p. 240 (сн. 52): локатор `LOCATOR_VERIFIED` (класс B); слова Бокэма не видны — содержание HOLD; BDAG p. 14 — HOLD (р. 139) |
 
-⇒ разделов с `Q` — **214**, разделов §4.x — **216**; пропуски нумерации прежние.
+⇒ разделов с `Q` — **215**, разделов §4.x — **217**; пропуски нумерации прежние.
 
 
 ### 4.139. Q135 — Приёмка раунда 61: связка Сомюра, аудит объёма, готовность к мерджу (раунд 61)
@@ -9677,7 +9683,7 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 5. **Сн. 75 ↔ 76.** *Expiation* — «удаление вины» (сн. 75) и «компенсация» (сн. 76, перевод Коллинза). `INTERNAL_INCONSISTENCY` (мягко); подтверждает §4.194 п. 4.
 6. **Сн. 99** — авторское отступление без источника, вне предмета статьи; не оценивается.
 
-**Чего нет.** Бокэм p. 240; BDAG p. 14; Бюксель pp. 125–126; Шрайнер p. 329; Смолли p. 40 *(раунд 138: снято — §4.221)*; Дэниел pp. 37–38, 55 — в открытом доступе нет. Совпадение страниц Logos с печатью не проверено *(для Смолли подтверждено — §4.221)*.
+**Чего нет.** Бокэм p. 240 *(раунд 139: локатор снят — §4.222)*; BDAG p. 14; Бюксель pp. 125–126; Шрайнер p. 329; Смолли p. 40 *(раунд 138: снято — §4.221)*; Дэниел pp. 37–38, 55 — в открытом доступе нет. Совпадение страниц Logos с печатью не проверено *(для Смолли подтверждено — §4.221)*.
 
 Вердикты S1–S5 не меняются.
 
@@ -10034,6 +10040,22 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 6. **Граница.** Страницы скана не видны; текст — фрагменты OCR ограниченной копии. p. 41 не проверена.
 
 **Попутно.** Устаревшие пометки REPASS §15 о «неоткрытом» листе II Helv. XI.15 отосланы к §16.3 (раунд 93: Schaff III, p. 257).
+
+Вердикты S1–S5 не меняются.
+
+
+### 4.222. Q218 — Бокэм, WBC 50, p. 240: сноска 52 к 2 Пет. 2:1 (раунд 139, 2026-11-17)
+
+**Повод.** Бокэм p. 240 — в HOLD с раунда 112 (§4.195, «Чего нет»). Источник — S237. Таблица — REPASS-документ, §62.
+
+**Вопрос.** Относится ли WBC 50, p. 240 к 2 Пет. 2:1, и подтверждает ли Бокэм тезис статьи, что ἀγοράζω значит «покупать, выкупать» и принадлежит к группе слов выкупа или избавления?
+
+**Ответы.**
+1. **Страница.** Да. Watson (2012) по печатному изданию 1983 г. ссылается на «Bauckham 1983, 240» в толковании 2 Пет. 2:1; Shultz (2013) трижды ссылается на p. 240 (240–41) в разборе «Master who bought them»; Schreiner (2003) — на соседнюю p. 239 там же. `LOCATOR_VERIFIED` (класс B).
+2. **Пагинация.** Статья («Dallas: Word, 1998») и печатное изд. 1983 г. дают для стиха одну страницу. Для Бокэма оговорка §4.195 о несверенной пагинации снята; `ELECTRONIC_EDITION_UNMARKED` остаётся мягким.
+3. **Содержание.** Не проверено. Собственный текст WBC 50 в индексе не найден. Shultz ставит Бокэма в один ряд со сторонниками сотериологического прочтения «купил» (n. 109: Blum, Chang, Davids), но по фрагментам не видно, к какой фразе относится эта сноска. Вердикта о точности передачи нет — HOLD.
+4. **BDAG, p. 14.** Статьи на ἀγν-/ἀγορ- в BDAG стоят на pp. 13–14 (Watson ссылается на «BDAG 14» для соседнего ἄγνοια). Страница алфавитно правдоподобна (класс C), но статья ἀγοράζω не открыта — HOLD.
+5. **Граница.** Сноска 52 подкрепляет лексический тезис, а не объём искупления. Даже при полном подтверждении она не решает спора о том, чья это покупка и какова её цена (`06_` §22).
 
 Вердикты S1–S5 не меняются.
 
