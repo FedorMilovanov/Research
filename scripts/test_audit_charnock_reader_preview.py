@@ -63,23 +63,11 @@ class CharnockReaderProofTests(unittest.TestCase):
         self.assertEqual(len(SOURCE.findall(self.body)), 10)
 
     def test_reader_prose_and_all_notes_match_current_ten_manuscripts(self):
-        """Catch a stale book proof even when all 180 footnote IDs still exist."""
+        """Catch any stale prose or footnote even when all 180 IDs still exist."""
         self.assertEqual(len(self.sections), len(MANUSCRIPTS))
         for index, name in enumerate(MANUSCRIPTS):
             original = (ROOT / MANUSCRIPT_DIR / name).read_text(encoding='utf-8')
-            front = re.search(r'^---\s*
-        links = LINK.findall(self.body)
-        self.assertGreaterEqual(len(links), 230)
-        for link in links:
-            path_part = unquote(link.split('#', 1)[0].strip())
-            resolved = (PREVIEW.parent / path_part).resolve()
-            self.assertTrue(resolved.is_relative_to(ROOT), link)
-            self.assertTrue(resolved.exists(), link)
-
-
-if __name__ == '__main__':
-    unittest.main()
-, original, re.MULTILINE)
+            front = re.search(r'^---\s*$', original, re.MULTILINE)
             backstage = re.search(
                 r'^## (?:Редакторская приёмка|Редакторский контроль)',
                 original, re.MULTILINE,
@@ -89,19 +77,7 @@ if __name__ == '__main__':
             self.assertLess(front.end(), backstage.start(), name)
             reader_section = original[front.end():backstage.start()].strip()
             reader_section = re.sub(
-                r'^(#{2,5}) (.+)
-        links = LINK.findall(self.body)
-        self.assertGreaterEqual(len(links), 230)
-        for link in links:
-            path_part = unquote(link.split('#', 1)[0].strip())
-            resolved = (PREVIEW.parent / path_part).resolve()
-            self.assertTrue(resolved.is_relative_to(ROOT), link)
-            self.assertTrue(resolved.exists(), link)
-
-
-if __name__ == '__main__':
-    unittest.main()
-,
+                r'^(#{2,5}) (.+)$',
                 lambda match: '#' + match.group(1) + ' ' + match.group(2),
                 reader_section, flags=re.MULTILINE,
             )
@@ -116,19 +92,7 @@ if __name__ == '__main__':
             self.assertEqual(printed_section, reader_section, name)
 
     def test_no_duplicate_horizontal_rules_between_chapters(self):
-        self.assertNotRegex(self.body, r'(?m)^---[ \\t]*\\n\\s*---[ \\t]*
-        links = LINK.findall(self.body)
-        self.assertGreaterEqual(len(links), 230)
-        for link in links:
-            path_part = unquote(link.split('#', 1)[0].strip())
-            resolved = (PREVIEW.parent / path_part).resolve()
-            self.assertTrue(resolved.is_relative_to(ROOT), link)
-            self.assertTrue(resolved.exists(), link)
-
-
-if __name__ == '__main__':
-    unittest.main()
-)
+        self.assertNotRegex(self.body, r'(?m)^---[ \t]*\n\s*---[ \t]*$')
 
     def test_research_links_survive_path_preserving_move(self):
         links = LINK.findall(self.body)
