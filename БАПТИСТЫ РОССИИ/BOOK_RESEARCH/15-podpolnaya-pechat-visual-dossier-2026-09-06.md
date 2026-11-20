@@ -83,7 +83,12 @@ Research inventory names control PDFs:
 
 Preferred visual: one title/contents page from an early 1972 issue and one later offset-era page to demonstrate the material evolution.
 
-Status: **BYTE RECEIPT NOT YET RECONFIRMED**. Do not create fake facsimile from retyped text.
+> **HISTORICAL — исходный статус от 06.09.2026, ниже уточнён по объёму:**
+> Status: **BYTE RECEIPT NOT YET RECONFIRMED**. Do not create fake facsimile from retyped text.
+
+**Текущий объём проверки.** В [записи досье 14 от 18.11.2026](14-podpolnaya-pechat-golden-chapter-source-to-claim-2026-09-06.md#визуальная-проверка-контрольных-pdf) уже зафиксированы сверка байтов пяти контрольных PDF с ведомостью переноса и чтение выбранных изображений; для № 44 титул и страница о «Христианине» — PDF **1 и 7**. Эта редакционная сверка не означает повторного получения файлов или нового просмотра страниц. Ограничения № 44 и нерешённая связь **87 страниц рабочего PDF / 88 страниц каталоговых экземпляров** — в [досье 16](16-podpolnaya-pechat-bulletin-44-pdf-verification-2026-09-06.md#working-pdf-scope).
+
+**FIG-02 остаётся открытой.** Просмотренные страницы — современная вёрстка, не удостоверенное факсимиле исторических листов; они не показывают эволюцию способов самиздатной печати. Нужны снимок идентифицированного исторического экземпляра, происхождение, права и подпись. `FACSIMILE VERIFIED`, готовность иллюстрации и публикационный допуск не заявлены; подделывать факсимиле из перенабранного текста по-прежнему нельзя.
 
 ### FIG-03 — `Вестник спасения` → `Вестник истины`
 
@@ -226,7 +231,12 @@ quote_ready
 - [x] visual gaps explicitly recorded instead of filled with placeholders;
 - [x] facsimile targets defined;
 - [ ] original photo bytes retrieved;
-- [ ] Bulletin PDFs re-received / hashed / pages checked;
+
+> **HISTORICAL / SUPERSEDED по объёму — прежний совмещённый пункт:**
+> - [ ] Bulletin PDFs re-received / hashed / pages checked;
+
+- [x] По записи 18.11.2026: байты пяти контрольных PDF сверены, выбранные изображения прочитаны в [точно перечисленном объёме](14-podpolnaya-pechat-golden-chapter-source-to-claim-2026-09-06.md#визуальная-проверка-контрольных-pdf); не новое получение и не полное чтение;
+- [ ] FIG-02: идентифицированное историческое факсимиле, происхождение, права и подпись; рабочая вёрстка его не заменяет;
 - [ ] `Вестник спасения` / `Вестник истины` facsimiles selected;
 - [ ] rights/attribution pass;
 - [ ] derivatives and media manifest;
