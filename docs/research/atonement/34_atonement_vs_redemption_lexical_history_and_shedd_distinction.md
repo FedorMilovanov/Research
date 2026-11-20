@@ -340,6 +340,11 @@
   - *LW* 26:277 = WA 433 (Ryken 2005; Schroeder 2016); *LW* 26:285 = WA 444b–445 (*Luther Refracted*, 2015); *LW* 26:281 = WA 439. Локатор «p. 285, 277» — `LOCATOR_VERIFIED` (класс B).
   - Третья фраза («от первого человека до последнего дня») — по-прежнему `WORDING_NOT_LOCATED` (мягко).
   - Вердикты S1–S5 не меняются. Документ: REPASS, §60.
+- **раунд 138 (2026-11-17, AGENT 2):** §3 (S236), новый §4.221 (Q217): Смолли, WBC 51, p. 40 — сн. 62 (1 Ин. 2:2).
+  - Локатор p. 40 — `LOCATOR_VERIFIED` (класс B: Shultz 2013, Peterson 2012); пагинация «1989» = печать 1984.
+  - Масштаб — ACCURATE; посылка статьи «мы = все верующие» у Смолли не разделяется («наши» = ближайший круг Иоанна) — `SOURCE_TENSION` (мягко).
+  - Попутно: устаревшие пометки о II Helv. XI.15 в REPASS §15 отосланы к §16.3.
+  - Вердикты S1–S5 не меняются. Документ: REPASS, §61.
 
 **Erratum (раунд 4).** В раунде 3 номера страниц протоколов Ассамблеи (S19) и Шедда II (S22) были выведены из индекса страниц OCR-API archive.org (`BookReaderGetTextWrapper`), который **не совпадает** с номером листа (`leafNum`) скана: для `minutesofsession00west` индекс = лист − 5, для `dogmatictheology02sheduoft` индекс = лист − 1. Сверка по `inside.php` (полнотекстовый поиск, возвращает `leafNum`) и `<id>_page_numbers.json` (лист → печатная страница) дала: **Minutes «pp. 150–155/156» → pp. 155–160/161** (листы 251–257); **Shedd «II.478, 482–483» → II.479, 483–484** (листы 489, 493–494). Все затронутые числа в S19, S22, §4.13, §4.16, §5–§8 исправлены **на месте** с пометкой «(испр. р. 4)»; содержание цитат не менялось. Локаторы раундов 1–2 (Minutes p. lv/lviii/lx/152, Shedd II.464–477, I.441, A. A. Hodge pp. 33–34) перепроверены тем же способом и **верны** (лист 248 = p. 152; лист 457 = I.441; лист 39 = Hodge p. 33).
 **Статус:** `ACTIVE RESEARCH / NO SETTLED VERDICT ON EXTENT / EVIDENCE_HOLD / PUBLICATION_HOLD`
@@ -738,6 +743,7 @@
 | S233 *(раунд 135, 2026-11-17)* | J. R. White, *The Potter's Freedom: A Defense of the Reformation and a Rebuttal of Norman Geisler's Chosen but Free* (Amityville, NY: Calvary Press, 2000): IA `pottersfreedomde0000whit` (ограниченный доступ). Полнотекстовый индекс archive.org (`openlibrary.org/search/inside.json`): «256 THE POTTER'S FREEDOM» → «…twenty-nine page article written by Roger Nicole / 256 THE POTTER'S FREEDOM / titled „John Calvin's View of the Extent…“»; «254 THE POTTER'S FREEDOM» — 0 совпадений (колонтитул не распознан); цепочка: «would have italicized this statement» → «he does not include the reprobate» → [стык не доказан] → «response to Heshusius is especially telling» → «not shed to expiate» → «Calvin's use of terms such as» → «the work of intercession must be» → «considered. CBF does not even» → «attempt a fair review of Calvin on this point» → «The Fall, 1985 issue of the Westminster Theological Journal». Указатель Писания: «1 Timothy 2:4 … 169, 257, 259». Индекс ищет по книге целиком. Текст статьи — веб-PDF teoblogia, фрагмент 1. Класс A2 | Сн. 9 — `LOCATOR_VERIFIED`; ACCURATE; `SOURCE_SAYS_MORE` (мягко) |
 | S234 *(раунд 136, 2026-11-17)* | W. A. Elwell (ed.), *Evangelical Dictionary of Theology* (Grand Rapids: Baker, 1984), статья «Helvetic Confessions», подпись R. V. Schnucker; IA `evangelicaldicti00elwe`; 2-е изд. (2001) `evangelicaldicti0000unse_k3p7`; 3-е изд. (2017) `evangelicaldicti0000unse_m4p4_3edi`. Полнотекстовый индекс archive.org (`openlibrary.org/search/inside.json`): «Second Helvetic Confession are the two most widely» → 1984: «…most widely / 507 / Helvetic Confessions»; «thoritative Reformed» → 2017: «the two most widely adopted and au- thoritative Reformed statements»; «R. V. SCHNUCKER» + «WALTER A. ELWELL, EDITOR» → 1984 и 2001: «[adopted and] authoritative of the Reformed statements of faith. R. V. Schnucker. See also Bullinger, Johann Heinrich»; «fession of 1566, composed by Heinrich Bullinger» → «…with thirty extensive chapters and widely endorsed». Список авторов 2017 г.: «Robert V. Schnucker… Heidelberg Catechism; Helvetic Confessions». Русский перевод 2003 г. не найден. Текст статьи — веб-PDF teoblogia, фрагменты 1–2. Класс A2 | Сн. 17 — ACCURATE; рус. с. 312 — HOLD |
 | S235 *(раунд 137, 2026-11-17)* | Полнотекстовый индекс archive.org (`openlibrary.org/search/inside.json`): (а) P. G. Ryken, *Galatians* (P&R, 2005), IA `galatians0000ryke`: «He has and bears all the sins of all men in His body» + «Luther, Galatians, 26:277. 16. Ibid., 26:284»; (б) *Gift and Promise* (Fortress, 2016), IA `giftpromiseaugsb0000unse`: та же цитата + «LW 26:277»; (в) *Luther Refracted* (Fortress, 2015), IA `lutherrefractedr0000unse`: «LW 26:285; WA 40/I:444b», «LW 26:285; WA 40/I:445», «LW 26:281; WA 40/I:439», «LW 26:292; WA 40/I:454»; (г) WA 40/I, IA `werkekritischege40luthuoft`, `BookReaderGetTextWrapper` лл. 457–458 = pp. 444–445. Класс B (соответствия по вторичным источникам) + A2 (WA) | Сн. 5 — `LOCATOR_VERIFIED` (класс B) |
+| S236 *(раунд 138, 2026-11-17)* | Полнотекстовый индекс archive.org (`openlibrary.org/search/inside.json`): (а) S. S. Smalley, *1, 2, 3 John* (WBC 51; Waco: Word Books, 1984), IA `123john0051smal` (ограниченный доступ), фрагменты OCR к 1 Ин. 2:2: «not just for “our” sins (those of John’s immediate circle) alone; it embraces the sins of the whole world»; «the sins of the world are the concern of the “atoning sacrifice” made by Jesus, rather than “the world” in general (against Westcott, 45)»; (б) G. L. Shultz, *A Multi-Intentioned View of the Extent of the Atonement* (2013), IA `multiintentioned0000shul`: та же фраза + «Smalley, 1, 2, 3 John, 40»; «38–40»; (в) R. A. Peterson, *Salvation Accomplished by the Son* (2012), IA `salvationaccompl0000pete`: «Smalley, 1, 2, 3 John, 40»; библиография «Waco, TX: Word, 1984»; (г) W. W. Klein, *The New Chosen People* (2015), IA `newchosenpeoplec0000klei_s2s6`: «Dallas: Word, 1989». Класс A2 (фрагменты) + B (локатор) | Сн. 62 — `LOCATOR_VERIFIED` (класс B); ACCURATE; `SOURCE_TENSION` (мягко) |
 
 **Ответ: П1 исторически неверен; «словом о цене» в английской традиции является *redemption*, а не *atonement*.**
 
@@ -8335,8 +8341,9 @@ hommes** selon ce propos déterminé…*» (с. 183) **есть в источн�
 | 4.218 | Q214 | White, *The Potter's Freedom*, p. 255: сн. 9 — Гессгусен («especially telling») и 1 Ин. 2:2 перед колонтитулом «256»; 1 Тим. 2:4 — с. 257, 259 (р. 135) |
 | 4.219 | Q215 | Шнукер, «Helvetic Confessions» (Элвелл 1984, pp. 506–507): сн. 17 — «two most widely adopted and authoritative» — точно; рус. с. 312 — HOLD (р. 136) |
 | 4.220 | Q216 | Лютер, сн. 5: *LW* 26:277 = WA 40/I, 433; *LW* 26:285 = WA 444b–445 — локатор `LOCATOR_VERIFIED` (класс B) (р. 137) |
+| 4.221 | Q217 | Смолли, WBC 51, p. 40 (сн. 62): локатор `LOCATOR_VERIFIED` (класс B); масштаб ACCURATE; «наши» у Смолли = круг Иоанна — `SOURCE_TENSION` (мягко) (р. 138) |
 
-⇒ разделов с `Q` — **213**, разделов §4.x — **215**; пропуски нумерации прежние.
+⇒ разделов с `Q` — **214**, разделов §4.x — **216**; пропуски нумерации прежние.
 
 
 ### 4.139. Q135 — Приёмка раунда 61: связка Сомюра, аудит объёма, готовность к мерджу (раунд 61)
@@ -9670,7 +9677,7 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 5. **Сн. 75 ↔ 76.** *Expiation* — «удаление вины» (сн. 75) и «компенсация» (сн. 76, перевод Коллинза). `INTERNAL_INCONSISTENCY` (мягко); подтверждает §4.194 п. 4.
 6. **Сн. 99** — авторское отступление без источника, вне предмета статьи; не оценивается.
 
-**Чего нет.** Бокэм p. 240; BDAG p. 14; Бюксель pp. 125–126; Шрайнер p. 329; Смолли p. 40; Дэниел pp. 37–38, 55 — в открытом доступе нет. Совпадение страниц Logos с печатью не проверено.
+**Чего нет.** Бокэм p. 240; BDAG p. 14; Бюксель pp. 125–126; Шрайнер p. 329; Смолли p. 40 *(раунд 138: снято — §4.221)*; Дэниел pp. 37–38, 55 — в открытом доступе нет. Совпадение страниц Logos с печатью не проверено *(для Смолли подтверждено — §4.221)*.
 
 Вердикты S1–S5 не меняются.
 
@@ -10008,6 +10015,25 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 3. **Третья фраза.** Ближайшее по смыслу место — *LW* 26:281 = WA 439 («peccata praeterita, praesentia et futura»). Буквальной формы по-прежнему нет: `WORDING_NOT_LOCATED` (мягко).
 4. **Контекст.** На той же *LW* 26:285 (WA 444) стоит «Quatenus igitur hoc credis, eatenus habes». Вывод §4.185 об отсутствии `CONTEXT_OMITTED` подкреплён.
 5. **Граница.** Изображения страниц *LW* не видены. Класс B: соответствие по вторичным источникам.
+
+Вердикты S1–S5 не меняются.
+
+
+### 4.221. Q217 — Смолли, WBC 51, p. 40: сноска 62 к 1 Ин. 2:2 (раунд 138, 2026-11-17)
+
+**Повод.** Смолли p. 40 — в HOLD с раунда 112 (§4.195, «Чего нет»). Источник — S236. Таблица — REPASS-документ, §61.
+
+**Вопрос.** Стоит ли на WBC 51, p. 40 то, ради чего статья ссылается на Смолли: «не только за наши, но и за грехи всего мира» — это умилостивление за всех людей?
+
+**Ответы.**
+1. **Страница.** Да. Shultz (2013) приводит дословную фразу Смолли о «грехах мира» с локатором «40», Peterson (2012) по печатному изданию 1984 г. — тоже p. 40. Толкование стиха — pp. 38–40. `LOCATOR_VERIFIED` (класс B).
+2. **Пагинация.** Статья («Dallas: Word, 1989») и печатное изд. 1984 г. дают для одного места одну страницу. Для Смолли оговорка §4.195 о несверенной пагинации снята. Адрес «Dallas: Word, 1989» встречается и в печатной библиографии (Klein 2015), так что пометка `ELECTRONIC_EDITION_UNMARKED` остаётся мягкой и вероятностной.
+3. **Масштаб.** Смолли: жертва Христа действенна «not just for “our” sins… alone; it embraces the sins of the whole world»; «whole» — усилительное. Вывод статьи о масштабе — ACCURATE.
+4. **Посылка.** Статья строит вывод на том, что «мы» в 1 Ин. 1:6–2:3 — все верующие, а более узкое понимание называет «нелогичным». Смолли понимает «наши» именно уже: «those of John’s immediate circle». Сноска стоит при выводе, а не при посылке, поэтому ложной атрибуции нет. Но источник приходит к тому же масштабу другим путём: `SOURCE_TENSION` (мягко).
+5. **«Мир».** По Смолли, повторённое περί показывает, что предмет жертвы — «грехи мира», «rather than “the world” in general» (против Уэсткотта). Толкования κόσμος как «неверующего мира» (с. 15–16 статьи) здесь нет; слова «в том числе неверующих» — вывод самой статьи.
+6. **Граница.** Страницы скана не видны; текст — фрагменты OCR ограниченной копии. p. 41 не проверена.
+
+**Попутно.** Устаревшие пометки REPASS §15 о «неоткрытом» листе II Helv. XI.15 отосланы к §16.3 (раунд 93: Schaff III, p. 257).
 
 Вердикты S1–S5 не меняются.
 
