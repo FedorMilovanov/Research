@@ -98,6 +98,40 @@ def receipts_catalog() -> dict[str, int]:
     return {"rows": total, "full": full}
 
 
+def prose_holds() -> int:
+    """Записи, называющие HOLD прозой при пустом или отсутствующем `holds`."""
+    out = _run(["python3", "-B", "scripts/audit_prose_holds.py", "--summary"])
+    found = re.search(r"называющих HOLD в прозе[^:]*: (\d+)", out)
+    if not found:
+        raise RuntimeError("audit_prose_holds.py --summary не назвал число")
+    return int(found.group(1))
+
+
+def promotion_gaps() -> int:
+    """Записи PROMOTE с объявленным пробелом в доказательствах."""
+    out = _run(["python3", "-B", "scripts/audit_hold_coverage_gaps.py", "--promotion-gaps"])
+    found = re.search(r"Записей PROMOTE с объявленным пробелом[^:]*: (\d+)", out)
+    if not found:
+        raise RuntimeError("--promotion-gaps не назвал число")
+    return int(found.group(1))
+
+
+def gate_counts() -> dict[str, int]:
+    """Сколько гейтов и информационных счётчиков объявляет сам раннер."""
+    import importlib.util as _iu
+    spec = _iu.spec_from_file_location("_rg", ROOT / "scripts" / "run_research_gates.py")
+    module = _iu.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return {"gates": len(module.GATES), "informational": len(module.INFORMATIONAL)}
+
+
+def inventory_totals() -> dict[str, int]:
+    """Итоги инвентаря — из сгенерированного JSON, а не из таблицы README."""
+    data = json.loads((ROOT / "docs" / "research" / "holds" / "HOLD_INVENTORY.json").read_text(encoding="utf-8"))
+    totals = data["totals"]
+    return {"nodes": totals["json_nodes_with_holds"], "entries": totals["json_hold_entries"]}
+
+
 def peter_registry() -> dict[str, int]:
     """Записи 1 Петра «объект не приобретён»: с пустым `holds` и без поля вовсе.
 
@@ -224,6 +258,80 @@ def crosscheck_hashes() -> int:
 # --- утверждения --------------------------------------------------------------
 
 CLAIMS: list[dict] = [
+    {
+        "id": "readme.gates_count",
+        "doc": "README.md",
+        "anchor": "гейтов +",
+        "pattern": r"#\s*(\d+) гейтов \+ (\d+) информационных",
+        "group": 1,
+        "expected": lambda: gate_counts()["gates"],
+        "source": "len(GATES) в scripts/run_research_gates.py",
+    },
+    {
+        "id": "readme.informational_count",
+        "doc": "README.md",
+        "anchor": "гейтов +",
+        "pattern": r"#\s*(\d+) гейтов \+ (\d+) информационных",
+        "group": 2,
+        "expected": lambda: gate_counts()["informational"],
+        "source": "len(INFORMATIONAL) в scripts/run_research_gates.py",
+    },
+    {
+        "id": "readme.claims_count",
+        "doc": "README.md",
+        "anchor": "чисел с их источниками",
+        "pattern": r"#\s*(\d+) чисел с их источниками",
+        "expected": lambda: len(CLAIMS),
+        "source": "len(CLAIMS) в этом же скрипте — число, которое нельзя завысить",
+    },
+    {
+        "id": "readme.summary_records",
+        "doc": "README.md",
+        "anchor": "и их раскладка",
+        "pattern": r"#\s*(\d+) и их раскладка",
+        "expected": lambda: audit_summary()["records"],
+        "source": "audit_hold_coverage_gaps.py --summary",
+    },
+    {
+        "id": "readme.no_holds_field",
+        "doc": "README.md",
+        "anchor": "# 52 без поля holds",
+        "pattern": r"#\s*(\d+) без поля holds",
+        "expected": lambda: audit_summary()["no_field"],
+        "source": "audit_hold_coverage_gaps.py --no-holds-field",
+    },
+    {
+        "id": "readme.prose_holds",
+        "doc": "README.md",
+        "anchor": "с HOLD в прозе",
+        "pattern": r"#\s*(\d+) с HOLD в прозе",
+        "expected": prose_holds,
+        "source": "audit_prose_holds.py --summary",
+    },
+    {
+        "id": "readme.promotion_gaps",
+        "doc": "README.md",
+        "anchor": "PROMOTE с пробелом",
+        "pattern": r"#\s*(\d+) PROMOTE с пробелом",
+        "expected": promotion_gaps,
+        "source": "audit_hold_coverage_gaps.py --promotion-gaps",
+    },
+    {
+        "id": "readme.inventory_nodes",
+        "doc": "README.md",
+        "anchor": "| `HOLD_INVENTORY.md` / `.json` |",
+        "pattern": r"(\d[\d ]*) записей /",
+        "expected": lambda: inventory_totals()["nodes"],
+        "source": "HOLD_INVENTORY.json → totals.json_nodes_with_holds",
+    },
+    {
+        "id": "readme.inventory_entries",
+        "doc": "README.md",
+        "anchor": "| `HOLD_INVENTORY.md` / `.json` |",
+        "pattern": r"/ (\d[\d ]*) вхождений",
+        "expected": lambda: inventory_totals()["entries"],
+        "source": "HOLD_INVENTORY.json → totals.json_hold_entries",
+    },
     {
         "id": "triage.records",
         "doc": "UNDER_ACQUIRED_WITHOUT_HOLD_TRIAGE_2026-11-18.md",
@@ -400,7 +508,7 @@ def check(claim: dict, verbose: bool) -> tuple[str, str, str]:
         found = re.search(claim["pattern"], hits[0])
         if not found:
             return "anchor-missing", "—", "в строке-якоре нет числа"
-        printed = found.group(1)
+        printed = found.group(claim.get("group", 1))
 
     if normalise(str(printed)) == normalise(str(expected)):
         return "match", str(printed), str(expected)
