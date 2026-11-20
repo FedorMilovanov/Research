@@ -158,7 +158,11 @@ This prevents another retrospective distortion: the appearance of explicit polit
 
 ### Official 2023 pre-conference program
 
-The [G3 ticket listing](https://www.tickettailor.com/events/g3ministries/878305), *Pre-Conference Schedule*, and [GBTS course page](https://web.archive.org/web/20231003133702id_/https://gbtseminary.org/g3/), *Pre-Conference Description*, concern the same 20 September event. The ticket names the Georgia International Convention Center; the seminary listing still says “Location TBA”. Neither is a transcript. The advertised afternoon sessions were:
+The [G3 ticket listing](https://www.tickettailor.com/events/g3ministries/878305), *Pre-Conference Schedule*, and [GBTS course page](https://web.archive.org/web/20231003133702id_/https://gbtseminary.org/g3/), *Pre-Conference Description*, concern the same 20 September event. The ticket names the Georgia International Convention Center; the seminary listing still says “Location TBA”. Neither is a transcript.
+
+A later [catalogue description of the panel](https://lumenamedia.com/tabs/none/videos/12222) names Strachan as moderator and Johnson, Moore, Coates, Aniol and White as guests. Unlike the ticket it does not name Buice. That difference is not proof he was absent. The card requires a subscription; its 2 October date is not the event date, nor its duration a locator for anyone’s remarks.
+
+Advertised sessions:
 
 - James White — non-compliance / civil authority questions;
 - Owen Strachan — evaluating Christian Nationalism;

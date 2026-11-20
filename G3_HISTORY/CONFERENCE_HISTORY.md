@@ -48,6 +48,8 @@ The former G3 paths `g3min.org/2014-g3-conference/` and `g3min.org/archives/?con
 
 A contemporary Founders Journal advertisement places the Jan. 23–25 conference at Pray's Mill Baptist Church and gives the theme as `The Church: From a Biblical Perspective`, consistent with the [Southern Equip advance notice](https://equip.sbts.edu/article/g3-conference-on-the-church/). These establish what was advertised, not independent observation of each appearance.
 
+The [January 29 session and song list](https://web.archive.org/web/20160609231550id_/http://www.g3conference.com/g3-2014-song-list/) fixes the sequence; [Reid’s Sunday service](https://www.sermonaudio.com/sermons/126141332501/a) shows one listener turning Thursday’s second sermon into an appeal about hospitality back in Iowa. It does not record Challies on stage or the congregation’s subsequent practice.
+
 ### 2015 — The Bible is the Word of God
 
 The organizer’s [archived blog index](https://web.archive.org/web/20160209061811id_/http://www.g3conference.com:80/category/g3-blog/) retains the entry *2015 G3 Conference Review* dated 30 January. The [recording catalogue](https://www.gnli.com/titles/2015-G3-Conference-or-G3-Ministries/2910) identifies sessions on inerrancy and exposition. The old `g3min.org/2015-g3-conference-review/` is not here treated as a retrieved full review.
