@@ -828,6 +828,32 @@
         "ARCHIVE_HOLD"
       ],
       "residualReason": "Совпадение хеша удостоверяет байты закреплённого объекта, а не прочтение, не выбор издания и не права; ARCHIVE_HOLD на сканы и PUBLICATION_HOLD не снимаются. Байты можно перепроверить только с сетью — в CI сверяется форма отчёта, и это названо."
+    },
+    {
+      "id": "HCR-2026-11-18-23",
+      "title": "Снимок очереди читал сам себя: исключения индекса выводятся из композиции, ссылочное поле воспроизводимо",
+      "holdType": "EVIDENCE_HOLD",
+      "previousState": "identifier_index исключал только базу очереди и current-authority: оверлеи и собственный предыдущий отчёт служили свидетелями, поэтому recordedInRepository переворачивалось false→true на втором построении с теми же входами",
+      "closedScope": "pipeline_files() выводит исключения из overlaysApplied + снимок; indexExcluded в отчёте (schema 2); composedCounts с нулями по объявленным состояниям и total; регрессия на два построения и три контроля, проверенная в обе стороны; шесть чисел §10 подключены к снимку",
+      "recordLocations": [
+        "docs/research/HOLDS_REGISTER_2026-11-18.md §27",
+        "data/publication-gate-queue-v1.json",
+        "scripts/publication_gate_status.py"
+      ],
+      "method": "self-confirmation-regression",
+      "objects": [
+        {
+          "records": 10,
+          "PROMOTE": 0,
+          "rightsIdsNotRecorded": 0,
+          "indexExcluded": 4
+        }
+      ],
+      "residualHolds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "residualReason": "Воспроизводимость справочного поля не даёт прав и не разрешает публикацию: PROMOTE по-прежнему 0, у трёх записей нет записи в реестре прав. Дефект касался ссылочного поля, а не допуска."
     }
   ],
   "confirmations": [

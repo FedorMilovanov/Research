@@ -18,7 +18,8 @@ import publication_gate_status as pg
 
 
 def record(rid: str, disposition: str = "BLOCKED", holds: tuple[str, ...] = ("PUBLICATION_HOLD",),
-           authority: str = "authority.md", next_action: str = "do the bounded thing") -> dict:
+           authority: str = "authority.md", next_action: str = "do the bounded thing",
+           rights_ids: tuple[str, ...] = ("DRV-TEST",)) -> dict:
     return {
         "id": rid,
         "corpus": rid.upper(),
@@ -26,7 +27,7 @@ def record(rid: str, disposition: str = "BLOCKED", holds: tuple[str, ...] = ("PU
         "researchStatus": "TEST",
         "sourceAuthorities": [authority],
         "holds": list(holds),
-        "rightsLedgerIds": ["DRV-TEST"],
+        "rightsLedgerIds": list(rights_ids),
         "nextAction": next_action,
     }
 
@@ -59,6 +60,10 @@ class Repo:
         path.write_text(text, encoding="utf-8")
         return path
 
+    def set_base_records(self, records: list[dict]) -> None:
+        self.write("data/public-projection-queue-2026-08-01.json", json.dumps({
+            "authorityId": "BASE", "records": records}))
+
     def set_current(self, **overrides) -> None:
         path = self.root / "data" / "public-projection-current-2026-08-02.json"
         data = json.loads(path.read_text(encoding="utf-8"))
@@ -82,7 +87,9 @@ class CompositionTests(unittest.TestCase):
     def test_base_alone_is_not_current(self) -> None:
         composed = pg.load_composed(self.repo.root)
         self.assertEqual(composed["currentAuthority"], "CURRENT")
-        self.assertEqual(composed["composedCounts"], {"BLOCKED": 2})
+        # every declared state is present, zeros included: "PROMOTE=0" is a count
+        self.assertEqual(composed["composedCounts"],
+                         {"PROMOTE": 0, "REFERENCE": 0, "SUPERSEDED": 0, "BLOCKED": 2, "total": 2})
 
     def test_overlay_replaces_the_record(self) -> None:
         self.repo.write("data/overlay.json", json.dumps({
@@ -98,7 +105,8 @@ class CompositionTests(unittest.TestCase):
         self.assertEqual(by_id["alpha"]["disposition"], "REFERENCE")
         self.assertEqual(by_id["alpha"]["previousDisposition"], "BLOCKED")
         self.assertEqual(by_id["alpha"]["supersededBy"], "OVL-1")
-        self.assertEqual(snapshot["composedCounts"], {"BLOCKED": 1, "REFERENCE": 1})
+        self.assertEqual(snapshot["composedCounts"],
+                         {"PROMOTE": 0, "REFERENCE": 1, "SUPERSEDED": 0, "BLOCKED": 1, "total": 2})
 
     def test_overlay_naming_unknown_record_raises(self) -> None:
         self.repo.write("data/overlay.json", json.dumps({
@@ -228,6 +236,82 @@ class AugmentTests(unittest.TestCase):
         self.assertIn("alpha", text)
         self.assertIn("beta", text)
         self.assertIn("PROMOTE 0", text)
+
+
+if __name__ == "__main__":
+    unittest.main()
+
+
+class SelfConfirmationTests(unittest.TestCase):
+    """A file cannot witness an id that exists only because the queue named it.
+
+    Reported on the PR: a control id with no external mentions had
+    ``recordedInRepository=false`` on the first build; after the built report was saved
+    as the standard snapshot, a second build with the same inputs said ``true`` - the
+    index had read its own previous output.
+    """
+
+    def setUp(self) -> None:
+        self.repo = Repo()
+
+    def tearDown(self) -> None:
+        self.repo.close()
+
+    def ghost(self) -> None:
+        self.repo.set_base_records([record("alpha", rights_ids=("DRV-GHOST",))])
+
+    def recorded(self, snapshot: dict) -> bool:
+        rec = {r["id"]: r for r in snapshot["records"]}["alpha"]
+        return rec["rightsLedgerIds"][0]["recordedInRepository"]
+
+    def test_unrecorded_id_stays_unrecorded_after_the_report_is_saved(self) -> None:
+        self.ghost()
+        first = self.repo.snapshot()
+        self.assertFalse(self.recorded(first))
+        self.repo.write("data/publication-gate-queue-v1.json", json.dumps(first))
+        second = self.repo.snapshot()
+        self.assertFalse(self.recorded(second), "the tool read its own previous report")
+        self.assertEqual(first["checks"], second["checks"])
+
+    def test_two_consecutive_builds_are_identical(self) -> None:
+        self.ghost()
+        first = self.repo.snapshot()
+        self.repo.write("data/publication-gate-queue-v1.json", json.dumps(first))
+        second = self.repo.snapshot()
+        self.assertEqual(first["records"], second["records"])
+
+    def test_overlay_only_id_is_not_a_witness(self) -> None:
+        self.repo.write("data/overlay.json", json.dumps({
+            "authority_id": "OVL-1",
+            "supersedes_queue_record_id": "alpha",
+            "effective_record": record("alpha", disposition="REFERENCE", rights_ids=("DRV-OVERLAY-ONLY",)),
+        }))
+        self.repo.set_current(overlays=["data/overlay.json"],
+                              effectiveCounts={"PROMOTE": 0, "REFERENCE": 1, "SUPERSEDED": 0,
+                                               "BLOCKED": 1, "total": 2})
+        snapshot = self.repo.snapshot()
+        self.assertFalse(self.recorded(snapshot), "the overlay naming the id counted as a record of it")
+        self.assertIn("data/overlay.json", snapshot["indexExcluded"])
+
+    def test_external_document_is_a_witness(self) -> None:
+        # Positive control: an id written in a document outside the pipeline is recorded.
+        self.ghost()
+        self.repo.write("docs/note.md", "Ledger id DRV-GHOST, page 12.\n")
+        self.assertTrue(self.recorded(self.repo.snapshot()))
+
+    def test_pipeline_and_output_are_declared_as_excluded(self) -> None:
+        self.repo.write("data/overlay.json", json.dumps({
+            "authority_id": "OVL-1",
+            "supersedes_queue_record_id": "alpha",
+            "effective_record": record("alpha", disposition="REFERENCE"),
+        }))
+        self.repo.set_current(overlays=["data/overlay.json"],
+                              effectiveCounts={"PROMOTE": 0, "REFERENCE": 1, "SUPERSEDED": 0,
+                                               "BLOCKED": 1, "total": 2})
+        excluded = self.repo.snapshot()["indexExcluded"]
+        self.assertIn("data/public-projection-queue-2026-08-01.json", excluded)
+        self.assertIn("data/public-projection-current-2026-08-02.json", excluded)
+        self.assertIn("data/publication-gate-queue-v1.json", excluded)
 
 
 if __name__ == "__main__":

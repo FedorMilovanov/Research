@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "authorityId": "RESEARCH-PUBLICATION-GATE-QUEUE-V1",
   "snapshotDate": "2026-11-18",
   "currentAuthority": "RESEARCH-PUBLIC-PROJECTION-CURRENT-2026-08-02",
@@ -21,7 +21,10 @@
   },
   "composedCounts": {
     "BLOCKED": 6,
-    "REFERENCE": 4
+    "PROMOTE": 0,
+    "REFERENCE": 4,
+    "SUPERSEDED": 0,
+    "total": 10
   },
   "overlaysApplied": [
     {
@@ -31,6 +34,12 @@
       "previousDisposition": "BLOCKED",
       "effectiveDisposition": "REFERENCE"
     }
+  ],
+  "indexExcluded": [
+    "data/public-projection-current-2026-08-02.json",
+    "data/public-projection-osk-wave6-overlay-2026-08-01.json",
+    "data/public-projection-queue-2026-08-01.json",
+    "data/publication-gate-queue-v1.json"
   ],
   "records": [
     {

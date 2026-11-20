@@ -45,6 +45,7 @@ LINKS = "data/relative-links-audit-2026-11-18.json"
 REPAIRS = "data/text-integrity-repairs-2026-11-18.json"
 PROPOSAL = "data/hold-value-mapping-proposal-v1.json"
 PINNED = "data/pinned-github-locators-verified-2026-11-18.json"
+QUEUE = "data/publication-gate-queue-v1.json"
 
 # label as printed in the register -> (artefact, field). The label is matched literally
 # inside a markdown table row, so a reworded row is reported instead of passing silently.
@@ -207,6 +208,25 @@ PROSE_CLAIMS: list[dict] = [
     {"id": "holds-array-files-in-section-2",
      "pattern": r"Гигиена машинных реестров \| (?P<n>\d+) файлов",
      "artefact": INVENTORY, "field": "totals.filesWithJsonHolds"},
+    # §10 quoted the gate's counts by hand; each now has a field in the queue snapshot.
+    {"id": "gate-records",
+     "pattern": r"Сейчас: (?P<n>\d+) записей",
+     "artefact": QUEUE, "field": "len:records"},
+    {"id": "gate-blocked",
+     "pattern": r"`BLOCKED=(?P<n>\d+)`",
+     "artefact": QUEUE, "field": "composedCounts.BLOCKED"},
+    {"id": "gate-reference",
+     "pattern": r"`REFERENCE=(?P<n>\d+)`",
+     "artefact": QUEUE, "field": "composedCounts.REFERENCE"},
+    {"id": "gate-promote",
+     "pattern": r"`PROMOTE=(?P<n>\d+)`",
+     "artefact": QUEUE, "field": "composedCounts.PROMOTE"},
+    {"id": "gate-rights-ids-not-recorded",
+     "pattern": r"\((?P<n>\d+)\s+потерянных",
+     "artefact": QUEUE, "field": "checks.rightsIdsNotRecorded"},
+    {"id": "gate-missing-authorities",
+     "pattern": r"\((?P<n>\d+)\s+отсутствующих",
+     "artefact": QUEUE, "field": "checks.recordsWithMissingAuthorityFile"},
     {"id": "repairs-applied",
      "pattern": r"(?P<n>\d+) склеек «слово\+число\+слово» восстановлены",
      "artefact": REPAIRS, "field": "totals.repairedTokens"},

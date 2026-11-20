@@ -31,7 +31,7 @@ ROOT = Path(__file__).resolve().parents[1]
 CURRENT = ROOT / "data" / "public-projection-current-2026-08-02.json"
 RIGHTS_LEDGER = ROOT / "data" / "physical-rights-ledger-2026-08-01.json"
 SNAPSHOT = ROOT / "data" / "publication-gate-queue-v1.json"
-SCHEMA_VERSION = 1
+SCHEMA_VERSION = 2  # 2: indexExcluded - what the identifier index deliberately did not read
 AUTHORITY_ID = "RESEARCH-PUBLICATION-GATE-QUEUE-V1"
 
 SCAN_SUFFIXES = {".md", ".json", ".txt", ".yaml", ".yml"}
@@ -72,9 +72,13 @@ def load_composed(root: Path = ROOT) -> dict:
             "effectiveDisposition": effective.get("disposition"),
         })
 
-    counts = {}
+    # Seed every state the authority declares with a zero: "PROMOTE=0" is a count, and an
+    # absent key is not the same statement - it is silence that reads like agreement.
+    counts = {state: 0 for state in (current.get("effectiveCounts") or {}) if state != "total"}
     for rec in records.values():
-        counts[rec.get("disposition", "UNKNOWN")] = counts.get(rec.get("disposition", "UNKNOWN"), 0) + 1
+        state = rec.get("disposition", "UNKNOWN")
+        counts[state] = counts.get(state, 0) + 1
+    counts["total"] = len(records)
     return {
         "currentAuthority": current["authorityId"],
         "baseQueue": current["baseQueue"],
@@ -143,11 +147,26 @@ def rights_ledger_index(root: Path) -> dict[str, dict]:
     return out
 
 
+def pipeline_files(composed: dict) -> set[str]:
+    """Files that exist *because* the queue names these ids.
+
+    The base queue, the current authority and every overlay all quote the record ids and
+    their rights ids, so none of them can witness that an id is recorded elsewhere. The
+    same holds for this tool's own output: it quotes every id it reports, so a second
+    build would "find" the first build and flip ``recordedInRepository`` from false to
+    true without anything in the corpus changing. That was a real defect - reported on
+    the PR, reproduced on 20a635e9, and the reason this set is now derived from the
+    composition rather than remembered.
+    """
+    files = {composed["baseQueue"], "data/public-projection-current-2026-08-02.json"}
+    files |= {applied["overlay"] for applied in composed.get("overlaysApplied", [])}
+    return files
+
+
 def augment(composed: dict, root: Path = ROOT) -> dict:
-    # The queue files name the ids they carry, so scanning them would "find" any
-    # id the queue mentions. A rights id must be recorded somewhere *other* than
-    # the queue that lists it.
-    exclude = {composed["baseQueue"], "data/public-projection-current-2026-08-02.json"}
+    exclude = pipeline_files(composed)
+    # the committed snapshot is this tool's own output; it cannot serve as a record
+    exclude.add(SNAPSHOT.relative_to(ROOT).as_posix())
     index = identifier_index(root, exclude)
     ledger = rights_ledger_index(root)
     records = []
@@ -192,6 +211,7 @@ def augment(composed: dict, root: Path = ROOT) -> dict:
         "declaredCounts": composed["declaredCounts"],
         "composedCounts": composed["composedCounts"],
         "overlaysApplied": composed["overlaysApplied"],
+        "indexExcluded": sorted(exclude),
         "records": records,
         "checks": {
             "recordsWithMissingAuthorityFile": sum(
