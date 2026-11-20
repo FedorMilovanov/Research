@@ -322,10 +322,15 @@ def main(argv: list[str]) -> int:
     if mode_summary:
         behind = [i["behind"] for i in infos if isinstance(i.get("behind"), int)]
         stale = sum(1 for i in infos if isinstance(i.get("behind"), int) and i["behind"] > 0)
+        # «Отстают 8» при девяти объявленных лагах — не расхождение, а разница между
+        # измеримым и объявленным: у зеркала-документа нет ревизии, и сравнивать его не с чем.
+        # Строка обязана называть оба числа, иначе два инструмента выглядят противоречащими.
+        without = sum(1 for i in infos if i["revision"] == "—")
         print(
             f"DRIVE MIRROR PAIRS: {len(infos)} записей, названных коммитов "
             f"{sum(1 for i in infos if i['revision'] != '—')}, "
             f"отстают {stale} (максимум {max(behind) if behind else 0} ревизий), "
+            f"без ревизии {without} — сравнить не с чем, "
             f"структурных ошибок {len(errors)}"
         )
         return 1 if errors else 0
