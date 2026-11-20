@@ -117,8 +117,6 @@
 
 ---
 
----
-
 ## Часть I. Человек между университетом, Дублином и Лондоном
 
 ### Биография с незаполненными страницами
@@ -256,8 +254,6 @@
 
 ---
 
----
-
 ## Часть II. Учёный и проповедник
 
 ### Учёность, которая должна была дойти до слушателя
@@ -384,8 +380,6 @@
 [^ch2-16]: Charnock A32723, *God's Patience*, TEI pp.789–790, `VOICE-PATIENCE`; [Research том 16 §21.25](../16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md). Воображаемая реплика слушателя не является сохранившимся протоколом реального разговора.
 [^ch2-17]: [Research том 08 §3](../08_ADAMS_AND_VEAL_TO_THE_READER_PRIMARY_EPISTLE.md) и [том 01 §2.2](../01_BIOGRAPHICAL_WITNESSES_AND_EVIDENCE_HIERARCHY.md), редакторская характеристика библиотеки; [том 02 §10.2](../02_LIFE_CHRONOLOGY_AND_DATE_CONFLICTS.md), BCD-34 исключает недоказанные оценки имущества.
 [^ch2-18]: [Research том 04 §§0Y, 0Z, 0AB](../04_CHARACTER_MINISTRY_AND_THEOLOGY.md); [ED-02 supplemental](../supplemental-audits/ED02_LINGENDES_84_87_TO_CHARNOCK_621_ALIGNMENT_2026-11-18.md), включая verified BSB images; [Research том 16 §21.26](../16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md). Внешняя филологическая/архивная/правовая рецензия ED-02 остаётся HOLD.
-
----
 
 ---
 
@@ -537,8 +531,6 @@
 
 ---
 
----
-
 ## Часть IV. Богословский портрет
 
 ### Не система, сложенная из четырёх фраз
@@ -673,8 +665,6 @@
 [^ch4-16]: [Research том 16 §§21.44–21.45](../16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md), подтверждённый дополнительный фрагмент 528–560, включая `NO_DISPENSATION`, `OUTWARD_RESTRAINT`, `MODERATE_CENSURE`, `PARTIAL_CONSENT`. Исследовательские русские пояснения не являются правовой лицензией на перевод.
 [^ch4-17]: [Research том 16 §§21.1 и 21.6](../16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md), четырехосевая editorial matrix. Связь является ограниченным синтезом, не отдельным авторским сочинением.
 [^ch4-18]: [Research том 16 §21.1, паспорт VIII](../16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md), критическая рецепция в своей части, не самостоятельный свидетель XVII века.
-
----
 
 ---
 
@@ -818,8 +808,6 @@
 [^ch5-19]: [Research, том 03 §12.3](../03_WORKS_EDITIONS_AND_PUBLICATION_CHRONOLOGY.md), Ashton собирает разрозненные бумаги, Veel утверждает ограниченную сверку с ними; первый разбор 1 Тим. 1:15 не найден, время/место Enmity неизвестны, `Ashes` не пожарная регистрационная запись.
 [^ch5-20]: [Research, том 03 §§4–5, 12.1–12.4](../03_WORKS_EDITIONS_AND_PUBLICATION_CHRONOLOGY.md), состав поздних Nichol/Parsons/FAM-03–05 не объявлен независимо полностью collated. Не утверждается новая лицензия на факсимиле/переводы.
 [^ch5-21]: [Research, том 16 §21.13](../16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md) и [том 03 §§13–14](../03_WORKS_EDITIONS_AND_PUBLICATION_CHRONOLOGY.md): 12 единиц = 7 проверенных печатных объектов + 5 семейств; REQ-ME-FIRST и REQ-WORKS-II — `DRAFT_NOT_SENT`, receipt null, архивные и публикационные HOLD открыты.
-
----
 
 ---
 
@@ -997,8 +985,6 @@
 
 ---
 
----
-
 ## Часть VII. За пределами главной книги
 
 ### Не всё, что написал Чарнок, помещается в главный фолиант
@@ -1144,8 +1130,6 @@
 
 ---
 
----
-
 ## Часть VIII. Чарнок после Чарнока
 
 ### Что значит быть прочитанным после смерти
@@ -1263,8 +1247,6 @@
 [^ch8-17]: [Research том 16 §§21.18, 21.121–21.122, 21.131–21.133](../16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md), dependencies and limited selected witnesses.
 [^ch8-18]: [Research том 16 §21.1, VIII→REFERENCE](../16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md), open conflicts/reviews/rights carried into reader reference.
 [^ch8-19]: University of Stirling, *Books and Borrowing 1750–1830*, St Andrews University Library, *Library Receipt Book 1768–1772* (UYLY207-1). **Page 156:** [register 167, entry 42860](https://borrowing.stir.ac.uk/library/st-andrews/registers/167/42860/image-and-text), record **173922**, John Buddo, 19–25 March 1770, original returned text `Charnock works Vol 2d`, classmark `O2.19` (заголовок `Charnock Works Vol 1st 2d`, иной уровень передачи). Следующий record **173928** — Cudworth, не Charnock. **Page 157:** [register 167, entry 42863](https://borrowing.stir.ac.uk/library/st-andrews/registers/167/42863), record **173982**, John Gordon, 24 March–20 April 1770, `Charnock Ser: Vol 2d`, classmark `O2.18`; на этой же странице record **174060**, John Gordon, 2–9 February 1771, `Charnock Diss.`, classmark `O2.18`. **Page 39:** [register 167, entry 42509](https://borrowing.stir.ac.uk/library/st-andrews/registers/167/42509/image-and-text), record **163278**, James Litster, 27 January–1 April 1772, `Sharnocks Works`, classmark `O2.19`. **Четыре записи, три именованных заёмщика** в одном библиотечном массиве; совпадения с ESTC `R12522`/`R11740` — библиографические привязки платформы, не независимо полученные и визуально сверенные оригинальные экземпляры. Рукописные страницы и фактический объём чтения отдельно не исследованы; выдача не доказывает согласие с Чарноком, покупку по рекламе 1699 года или массовый круг читателей.
-
----
 
 ---
 
