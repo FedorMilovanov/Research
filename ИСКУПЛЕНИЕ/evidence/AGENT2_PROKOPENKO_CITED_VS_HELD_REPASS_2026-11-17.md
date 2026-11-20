@@ -2504,3 +2504,40 @@ S. Escobedo III, «2 Peter 2:1 and Universal Redemption» (сайт Alpha & Omeg
 - **HOLD:** Хиберт p. 97 (рус. изд.) и то, называет ли он Бенгеля; Грин p. 118 (чья ошибка); Бокэм p. 240; BDAG p. 14; Бюксель pp. 125–126; печатная страница Шрайнера и его фразы 2–4; Дэниел (сн. 2, 7, 10); Смолли p. 41; печатный текст BKC p. 870.
 
 Вердикты S1–S5 не меняются. Умысел не утверждается.
+
+## 67. Раунд 144 (2026-11-17): Ходжес, BKC II, p. 887 — сноски 66 и 67 (1 Ин. 2:2); текст Ходжеса найден через посредников
+
+### 67.1. Что напечатано в статье (с. 18, класс A1)
+
+Текст взят из PDF статьи (teoblogia.ru, фрагменты 7–8).
+
+- Вводная фраза: «Зэйн Ходжес, бывший профессором кальвинистской Далласской богословской семинарии, так комментирует этот стих:».
+- Цитата со сн. 66: «Сказав это, Иоанн ясно подтверждает тот взгляд, что Христос действительно умер за каждого (ср. 2 Кор. 5:14–15, 19; Евр. 2:9). Конечно, это не означает, что все спасутся. Это означает лишь то, что любой, кто слышит Евангелие, *может* спастись, если пожелает (Откр. 22:17)».
+- Далее «И еще:» и цитата со сн. 67: «Крест действительно умилостивил Бога и удовлетворил Его праведные требования в такой мере, что Его благодать и милость доступны в изобилии как для спасенных, так и для неспасенных».
+- Сн. 66: «Hodges Z. 1 John // *The Bible Knowledge Commentary: An Exposition of the Scriptures* : 2 vols. / Ed. John F. Walvoord and Roy B. Zuck, Dallas Theological Seminary. Wheaton, IL: Victor Books, 1985. Vol. 2. P. 887». Сн. 67: «Hodges. 1 John. P. 887».
+
+### 67.2. Источники (класс C — через посредников; книга не открыта)
+
+- (а) Блог Christian Articles (C. Blaylock, 2020), «Confession of Sin», [https://christianarticlesblog.wordpress.com/2020/07/28/confession-of-sin/](https://christianarticlesblog.wordpress.com/2020/07/28/confession-of-sin/). Там под заголовком «The Bible Knowledge Commentary – 1 John 1:8-2:2» перепечатано всё толкование 1:8–2:2. Абзац «2:2» кончается так: «So adequate is Jesus Christ as God’s atoning Sacrifice that the efficacy of His work extends not merely to the sins of Christians themselves, but also to the sins of the whole world. In saying this, John was clearly affirming the view that Christ genuinely died for everyone (cf. 2 Cor. 5:14–15, 19; Heb. 2:9). This does not mean, of course, that everyone will be saved. It means rather that anyone who hears the gospel *can* be saved if he so desires (Rev. 22:17). In context, however, John’s point is to remind his readers of the magnificent scope of Christ’s “atoning sacrifice” in order to assure them that His advocacy as the Righteous One on their behalf is fully consistent with God’s holiness.» Через абзац о *hilasmos* (ссылка на Morris, *The Apostolic Preaching of the Cross*, pp. 125–85) идёт фраза: «The Cross has indeed propitiated (satisfied) God and has met His righteous demands so thoroughly that His grace and mercy are abundantly available to both saved and unsaved alike.»
+- (б) Sharing Bread, «John 1:29», [https://www.sharing-bread.com/commentary/john-1-29](https://www.sharing-bread.com/commentary/john-1-29): первые две фразы абзаца (до «Heb. 2:9») с пометой «Bible Knowledge Commentary». Совпадает с (а) дословно.
+- (в) Страница. K. G. Hanna, *From Gospels to Glory* (WestBow, 2015), IA `fromgospelstoglo0000kenn` (полнотекстовый индекс Open Library): «(Zane C. Hodges, “1 John,” in The Bible Knowledge Commentary, 882)» — о датировке послания, то есть во введении. Класс B. Толкование 2:2 через пять страниц после введения правдоподобно; сама p. 887 не видна.
+- Поиск по индексу Open Library оборотов «can be saved if he wishes» и «genuinely died for everyone» дал ноль: OCR самого BKC, по-видимому, не проиндексирован (как и для Гангела, §64).
+
+### 67.3. Сверка
+
+| Вопрос | Что найдено | Вердикт |
+|---|---|---|
+| Сн. 66: перевод | Три фразы статьи — 2-я, 3-я и 4-я фразы абзаца (а). «genuinely» → «действительно», «if he so desires» → «если пожелает»; курсив *can* сохранён как *может*; ссылки (2 Кор. 5:14–15, 19; Евр. 2:9; Откр. 22:17) совпадают | ACCURATE (класс C) |
+| Сн. 66: границы цитаты | Опущена следующая фраза: «In context, however, John’s point is to remind his readers of the magnificent scope… to assure them that His advocacy… is fully consistent with God’s holiness». Ходжес говорит, что в контексте главная мысль стиха — уверенность верующих в ходатайстве. Позицию «умер за каждого» эта фраза не отменяет | Ошибки нет. Отмечается мягко: опущено, как сам Ходжес определяет главную мысль стиха |
+| Сн. 67: перевод | «propitiated (satisfied) God and has met His righteous demands» → «умилостивил Бога и удовлетворил Его праведные требования»: пояснение в скобках слито с соседним глаголом. «abundantly available to both saved and unsaved alike» → «доступны в изобилии как для спасенных, так и для неспасенных» | ACCURATE (класс C) |
+| Сн. 67: место | Фраза отделена от цитаты сн. 66 абзацем о значении *hilasmos* (умилостивление, а не только очищение; Morris). Статья показывает разрыв словами «И еще:» и отдельной сноской | Склейки нет; атрибуция верна |
+| Страница p. 887 | Введение — p. 882 (в); толкование 1:8–2:2 идёт после введения и толкования 1:1–7 | `LOCATOR_PLAUSIBLE` (класс B для соседней страницы) |
+| Выходные данные «2 vols., 1985, vol. 2» | Новозаветный том BKC вышел в 1983 г. (см. §64.4: Swindoll ссылается на «New Testament ed., 1983»). Двухтомник 1985 г. включает его как т. 2 | Та же мягкая оговорка, что в §64.4; ошибкой не считать |
+| «Кальвинистская Далласская семинария» | Уже разобрано: `06_` §29, `21_` J-13. Ходжес — представитель Free Grace; цитата — свидетельство школы Далласа, а не уступка пятипунктного кальвинизма (§3.2) | Без изменений |
+
+### 67.4. Сводка §67
+
+- **Новое:** текст Ходжеса к 1 Ин. 2:2 (BKC) найден через двух независимых посредников. Обе цитаты (сн. 66 и 67) переведены точно, ссылки на стихи совпадают, курсив сохранён. Опущена следующая фраза о главной мысли стиха в контексте (уверенность верующих) — ошибкой не считается. p. 887 — `LOCATOR_PLAUSIBLE` (введение на p. 882).
+- **HOLD:** печатная p. 887 (книга не открыта; текст известен только через посредников); Хиберт p. 97; Грин p. 118 (чья ошибка); Бокэм p. 240; BDAG p. 14; Бюксель pp. 125–126; печатная страница Шрайнера и его фразы 2–4; Дэниел (сн. 2, 7, 10); Смолли p. 41; печатный текст BKC p. 870.
+
+Вердикты S1–S5 не меняются. Умысел не утверждается.

@@ -368,6 +368,11 @@
   - «Умилостивление настолько же широко, насколько широк грех» — изречение Бенгеля (*Gnomon*, 1742, на 1 Ин. 2:2: «Quam late patet peccatum, tam late propitiatio»).
   - Русская передача точна; статья фразу никому не приписывает — ошибки нет. Называет ли Бенгеля сам Хиберт и текст p. 97 — HOLD.
   - Вердикты S1–S5 не меняются. Документ: REPASS, §66.
+- **раунд 144 (2026-11-17, AGENT 2):** §3 (S242), новый §4.227 (Q223): Ходжес, BKC II, p. 887 — сн. 66 и 67 (1 Ин. 2:2).
+  - Текст BKC найден через двух посредников (класс C); обе цитаты переведены точно, курсив *can* → *может* сохранён.
+  - Опущена следующая фраза Ходжеса о главной мысли стиха (уверенность верующих) — ошибкой не считается. Сн. 67 взята через абзац; «И еще:» разрыв показывает.
+  - p. 887 — `LOCATOR_PLAUSIBLE` (введение — p. 882, Hanna 2015).
+  - Вердикты S1–S5 не меняются. Документ: REPASS, §67.
 
 **Erratum (раунд 4).** В раунде 3 номера страниц протоколов Ассамблеи (S19) и Шедда II (S22) были выведены из индекса страниц OCR-API archive.org (`BookReaderGetTextWrapper`), который **не совпадает** с номером листа (`leafNum`) скана: для `minutesofsession00west` индекс = лист − 5, для `dogmatictheology02sheduoft` индекс = лист − 1. Сверка по `inside.php` (полнотекстовый поиск, возвращает `leafNum`) и `<id>_page_numbers.json` (лист → печатная страница) дала: **Minutes «pp. 150–155/156» → pp. 155–160/161** (листы 251–257); **Shedd «II.478, 482–483» → II.479, 483–484** (листы 489, 493–494). Все затронутые числа в S19, S22, §4.13, §4.16, §5–§8 исправлены **на месте** с пометкой «(испр. р. 4)»; содержание цитат не менялось. Локаторы раундов 1–2 (Minutes p. lv/lviii/lx/152, Shedd II.464–477, I.441, A. A. Hodge pp. 33–34) перепроверены тем же способом и **верны** (лист 248 = p. 152; лист 457 = I.441; лист 39 = Hodge p. 33).
 **Статус:** `ACTIVE RESEARCH / NO SETTLED VERDICT ON EXTENT / EVIDENCE_HOLD / PUBLICATION_HOLD`
@@ -772,6 +777,7 @@
 | S239 *(раунд 141, 2026-11-17)* | (а) S. Escobedo III, «2 Peter 2:1 and Universal Redemption» (Alpha & Omega Ministries, 2002, ред. 2004), дословная цитата BKC к 2 Пет. 2:1 (прим. 13: «provided from a secondary source»): «Several suggestions have been offered: (1) They were saved but lost their salvation. But this contradicts many other Scriptures (e.g., John 3:16; 5:24; 10:28-29). (2) “Bought” means the Lord created them… But this stretches the meaning of agorazo (“redeem”). (3) The false prophets merely said they were “bought” by Christ. This, however, seems to read into the verse. (4) They were “redeemed” in the sense that Christ paid the redemptive price… This is a strong argument for unlimited atonement… against limited atonement…». (б) C. R. Swindoll, *Conquering through Conflict* (1990), открытая копия IA `conqueringthroug00char`, p. 24, n. 3: «Kenneth O. Gangel, “2 Peter,” in The Bible Knowledge Commentary, New Testament ed. … 1983, p. 869» — к 2 Пет. 1:21. Класс C (текст), класс B (соседняя страница) | Сн. 51/55 — `LOCATOR_CONSISTENT`; перевод сн. 55 — ACCURATE; перечень 1–3 — от Гангела; `HEDGE_DROPPED` (мягко) |
 | S240 *(раунд 142, 2026-11-17)* | (а) PDF статьи (teoblogia.ru), с. 13–14: вводная фраза, цитата сн. 56 («На кресте, как и в исходе, мы видим Божье личное заступничество за Его народ, не только чтобы избавить их от рабства и смерти, но и чтобы сделать их “народом для Себя”, как сказано во 2 Цар. 7:23»), фраза сн. 57 и библиография Green 1987, p. 118. (б) Полнотекстовый индекс Open Library, девять запросов по характерным оборотам (REPASS §65.3): книга Грина не найдена; совпадения только у других изданий IVP (NBD, Motyer *Isaiah*). Класс A1 (текст статьи); источник Грина не открыт | В цитате нет утверждения о греческом слове; лексическая фраза принадлежит статье; кто ошибся — HOLD |
 | S241 *(раунд 143, 2026-11-17)* | (а) J. A. Bengel, *Gnomon Novi Testamenti* (Tübingen, 1742), на 1 Ин. 2:2, OCR IA `gnomonnovitestam00beng`: «…nunc, totius expresso, quis restringere audet? c. V. 19. Quam late patet peccatum, tam late propitiatio» (p. 1043 по соседним колонтитулам). (б) Английский перевод: *Gnomon of the New Testament*, vol. V (T&T Clark, 1859), pp. 115–116, IA `gnomonofnewtesta05beng`: «The propitiation is as widely extended as sin». (в) Полнотекстовый индекс Open Library: Хутер, Хольцман, Пламмер, Лайас, Хаупт, EGT, Фаррар цитируют изречение с пометой «Bengel»; Бриггс (1895) и Вуэст (1954) — в форме «The propitiation is as wide as the sin». Класс A (первоисточник) и B (вторичные цитаты) | Внутренняя цитата сн. 63 — изречение Бенгеля; передача точна; атрибуционной ошибки нет |
+| S242 *(раунд 144, 2026-11-17)* | (а) Z. C. Hodges, «1 John», *The Bible Knowledge Commentary*, NT ed. (Victor, 1983), толкование 1 Ин. 1:8–2:2 — перепечатка в блоге Christian Articles (C. Blaylock, 2020), https://christianarticlesblog.wordpress.com/2020/07/28/confession-of-sin/: «In saying this, John was clearly affirming the view that Christ genuinely died for everyone (cf. 2 Cor. 5:14–15, 19; Heb. 2:9). This does not mean, of course, that everyone will be saved. It means rather that anyone who hears the gospel *can* be saved if he so desires (Rev. 22:17)…»; «The Cross has indeed propitiated (satisfied) God…». (б) Sharing Bread, https://www.sharing-bread.com/commentary/john-1-29: первые две фразы, дословно. (в) K. G. Hanna, *From Gospels to Glory* (2015), IA `fromgospelstoglo0000kenn`: введение Ходжеса — p. 882. Класс C (текст), B (страница) | Сн. 66 и 67 переведены точно; p. 887 правдоподобна; опущена фраза о главной мысли стиха — мягко |
 
 **Ответ: П1 исторически неверен; «словом о цене» в английской традиции является *redemption*, а не *atonement*.**
 
@@ -8375,8 +8381,9 @@ hommes** selon ce propos déterminé…*» (с. 183) **есть в источн�
 | 4.224 | Q220 | Гангел, BKC II, p. 870 (сн. 51, 55): `LOCATOR_CONSISTENT` (p. 869 = 1:21); перевод ACCURATE (класс C); три варианта — от Гангела, `HEDGE_DROPPED` (мягко); поправка к §4.223 (р. 141) |
 | 4.225 | Q221 | Грин, TNTC, p. 118 (сн. 56–57): в цитате нет утверждения о греческом слове, 2 Цар. 7:23 употреблено верно; `FACT_ERROR` — во фразе статьи («Там же»); кто ошибся — HOLD; поправка «агоразо» → «агорадзо» в REPASS §15 (р. 142) |
 | 4.226 | Q222 | Хиберт, сн. 63 (рус. изд. 2014, с. 97): «Умилостивление настолько же широко, насколько широк грех» — изречение Бенгеля (*Gnomon*, 1742, на 1 Ин. 2:2); передача точна, статья фразу никому не приписывает; p. 97 и то, называет ли Хиберт Бенгеля, — HOLD (р. 143) |
+| 4.227 | Q223 | Ходжес, BKC II, p. 887 (сн. 66–67): текст найден через посредников (класс C); обе цитаты переведены точно; опущена фраза о главной мысли стиха — мягко; сн. 67 взята через абзац, «И еще:» разрыв показывает; p. 887 — `LOCATOR_PLAUSIBLE` (р. 144) |
 
-⇒ разделов с `Q` — **219**, разделов §4.x — **221**; пропуски нумерации прежние.
+⇒ разделов с `Q` — **220**, разделов §4.x — **222**; пропуски нумерации прежние.
 
 
 ### 4.139. Q135 — Приёмка раунда 61: связка Сомюра, аудит объёма, готовность к мерджу (раунд 61)
@@ -10152,6 +10159,23 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 5. **Что фраза доказывает.** Она говорит об объёме умилостивления, а не о механизме вменения. Спор `impetratio`/`applicatio` (`21_` §17, J-11) ею не решается.
 
 **Чего нет.** Текст p. 97 (рус. изд.) и английский оригинал Хиберта: называет ли он Бенгеля, не проверено. Номер страницы *Gnomon* 1742 (p. 1043) выведен из соседних колонтитулов.
+
+Вердикты S1–S5 не меняются.
+
+### 4.227. Q223 — Ходжес, BKC II, p. 887: сноски 66 и 67 (1 Ин. 2:2) (раунд 144, 2026-11-17)
+
+**Повод.** Цитаты Ходжеса (с. 18) до сих пор числились «по цитатам статьи»; печатная страница и английский текст не сверялись (`21_` §17.3). Источник — S242. Таблица — REPASS-документ, §67.
+
+**Вопрос.** Верно ли статья передаёт Ходжеса и не склеены ли две цитаты?
+
+**Ответы.**
+1. **Сн. 66.** Три фразы статьи — это 2-я, 3-я и 4-я фразы абзаца Ходжеса к 2:2: «…Christ genuinely died for everyone (cf. 2 Cor. 5:14–15, 19; Heb. 2:9). This does not mean, of course, that everyone will be saved. It means rather that anyone who hears the gospel *can* be saved if he so desires (Rev. 22:17)». Перевод точен, курсив сохранён.
+2. **Опущенная фраза.** Сразу за цитатой у Ходжеса стоит: «In context, however, John’s point is to remind his readers of the magnificent scope of Christ’s “atoning sacrifice” in order to assure them that His advocacy… is fully consistent with God’s holiness». Главная мысль стиха, по Ходжесу, — уверенность верующих. Тезис «умер за каждого» она не отменяет. Ошибкой не считается.
+3. **Сн. 67.** «The Cross has indeed propitiated (satisfied) God and has met His righteous demands so thoroughly that His grace and mercy are abundantly available to both saved and unsaved alike» — через абзац о *hilasmos*. Перевод точен. Статья показывает разрыв словами «И еще:» и отдельной сноской.
+4. **Страница.** Введение Ходжеса — p. 882 (Hanna 2015). p. 887 для 1 Ин. 2:2 — `LOCATOR_PLAUSIBLE`.
+5. **Выходные данные.** «2 vols., 1985, vol. 2»: новозаветный том вышел в 1983 г. Та же мягкая оговорка, что для Гангела (§4.224).
+
+**Чего нет.** Печатная p. 887: OCR BKC в индексе Open Library не найден; текст известен через двух посредников, которые совпадают дословно.
 
 Вердикты S1–S5 не меняются.
 
