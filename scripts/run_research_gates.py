@@ -51,6 +51,14 @@ GATES = [
     ),
     ("Research root authority", ROOT, ["python3", "-B", "scripts/validate_research_root_authority.py"]),
     ("Числа в документах кластера", ROOT, ["python3", "-B", "scripts/check_hold_doc_numbers.py"]),
+    # Одно и то же зеркало названо в трёх местах: корпус (SSOT ID), индекс, реестр пар.
+    # Пока это был информационный счётчик, расхождение печаталось и никого не
+    # останавливало; расхождение здесь — факт, а не наблюдение.
+    (
+        "Зеркала: корпус, индекс и реестр называют одно и то же",
+        ROOT,
+        ["python3", "-B", "scripts/check_drive_mirror_pairs.py", "--cross"],
+    ),
 ]
 
 INFORMATIONAL = [
@@ -97,10 +105,13 @@ def main(argv: list[str]) -> int:
         elif verbose:
             print("       " + " ".join(out.strip().splitlines()[-1:]))
 
-    for name, cwd, cmd in INFORMATIONAL:
+    for entry in INFORMATIONAL:
+        name, cwd, cmd = entry[0], entry[1], entry[2]
+        tail = len(entry) > 3 and entry[3] == "tail"
         code, out = run(cwd, cmd)
-        first = out.strip().splitlines()[0] if out.strip() else "(пусто)"
-        print(f"[INFO] {name}: {first}")
+        lines = out.strip().splitlines()
+        shown = (lines[-1] if tail else lines[0]) if lines else "(пусто)"
+        print(f"[INFO] {name}: {shown}")
         if code != 0:
             print(f"       гейт вернул {code}; это сведения, а не приговор")
 

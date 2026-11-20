@@ -35,7 +35,6 @@ from __future__ import annotations
 import argparse
 import collections
 import datetime
-import hashlib
 import json
 import pathlib
 import re
@@ -59,8 +58,6 @@ SKIP_DIRS = {
     "build",
     "dist",
 }
-
-TEXT_SUFFIXES = {".md", ".json", ".yml", ".yaml", ".py", ".csv", ".txt"}
 
 HOLD_TYPES = (
     "EVIDENCE_HOLD",
@@ -107,8 +104,6 @@ BARE_STATUS_RE = re.compile(
     r"(?i)^(?:\*\*)?(?:status|статус)(?:\*\*)?\s*[:=]\s*\**\s*`?HOLD`?\s*$"
 )
 BARE_LINE_RE = re.compile(r"^HOLD$")
-
-JSON_SHA_RE = re.compile(r"^[0-9a-f]{64}$")
 
 
 def rel(path: pathlib.Path) -> str:

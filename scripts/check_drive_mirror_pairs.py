@@ -172,25 +172,37 @@ def classify_bytes(entry: dict, rec: dict) -> tuple[str, bool]:
 # описывают сам объект на Drive, им с HEAD сходиться не обязательно.
 CURRENCY_FIELD = re.compile(r"(gitBytes|bytesAfter|gitMd5|md5After)", re.I)
 
+# …и только те из них, которые обещают число *сейчас*. Поле с названным кругом
+# (`gitBytesAfterRound24`) честно датировано: оно про состояние после круга 24, а не про
+# HEAD, и расхождение с HEAD у него — норма, а не ложь. Считать его «отставшим» значит
+# объявлять дефектом саму датировку; записка об этом поле говорит ровно это.
+DATED_FIELD = re.compile(r"(?:after|before|после|до)round\d+|round\d+$", re.I)
 
-def check_currency_claims(entry: dict, rec: dict, path: pathlib.Path, verbose: bool) -> int:
-    """Поля записи, которые называют себя текущими числами файла: сколько из них отстало."""
+
+def check_currency_claims(rec: dict, path: pathlib.Path, verbose: bool) -> tuple[int, int]:
+    """Поля записи: (сколько «текущих» разошлось с HEAD, сколько датировано кругом)."""
     claims = {k: v for k, v in rec.items() if CURRENCY_FIELD.search(k)}
     if not claims:
-        return 0
+        return 0, 0
     data = path.read_bytes()
     size, md5 = len(data), hashlib.md5(data).hexdigest()
-    stale = 0
+    stale = dated = 0
     for key, value in claims.items():
+        is_dated = bool(DATED_FIELD.search(key))
         is_md5 = "md5" in key.lower()
         actual = md5 if is_md5 else size
         ok = str(value).lower() == str(actual).lower()
+        if is_dated:
+            dated += 1
+            if verbose:
+                print(f"         {key} = {value} — датировано кругом, с HEAD не сверяется")
+            continue
         if not ok:
             stale += 1
         if verbose or not ok:
             delta = "" if is_md5 else f" (расхождение {size - int(value)} B)"
             print(f"         {key} = {value} — {'совпадает' if ok else 'не совпадает, сейчас ' + str(actual) + delta}")
-    return stale
+    return stale, dated
 
 
 def report_index(entries: list[dict]) -> int:
@@ -201,6 +213,7 @@ def report_index(entries: list[dict]) -> int:
     print(f"{'зеркало':<8} {'bytes':>8} {'kind':<9} смысл поля bytes")
     contradictions = 0
     stale_claims = 0
+    dated_claims = 0
     kind_mismatch = 0
     for entry in entries:
         rec = records.get(entry.get("drive_id") or "")
@@ -229,7 +242,9 @@ def report_index(entries: list[dict]) -> int:
         print(f"{tag:<8} {str(rec.get('bytes')):>8} {kind:<9} {sense}{'' if fits else '  ← расходится'}{flag}{kind_flag}")
         path = ROOT / (entry.get("path") or "")
         if path.exists():
-            stale_claims += check_currency_claims(entry, rec, path, verbose=False)
+            stale_now, dated_now = check_currency_claims(rec, path, verbose=False)
+            stale_claims += stale_now
+            dated_claims += dated_now
     total_docs_as_file = sum(
         1 for rec in records.values()
         if str(rec.get("mime") or "") == "application/vnd.google-apps.document" and rec.get("kind") == "file"
@@ -238,7 +253,8 @@ def report_index(entries: list[dict]) -> int:
         f"\nDocs-объектов с kind: file — в индексе {total_docs_as_file}, из них зеркал {contradictions}"
         " (нормализация — решение владельца, см. DRIVE_INDEX_BYTES_FIELD_2026-11-18.md)"
     )
-    print(f"полей, называющих себя текущими числами файла и разошедшихся с HEAD: {stale_claims}")
+    print(f"полей, называющих себя текущими числами файла и разошедшихся с HEAD: {stale_claims}; "
+          f"полей с названным кругом (с HEAD не сверяются): {dated_claims}")
     if kind_mismatch:
         print(f"объявленный bytesKind расходится с содержимым поля: {kind_mismatch}")
     return 0

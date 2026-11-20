@@ -382,6 +382,21 @@ def artifact_custody() -> dict:
     return out
 
 
+def index_currency() -> dict[str, int]:
+    """Сколько полей индекса называют себя текущими (и разошлись), и сколько датировано.
+
+    Числа печатает `check_drive_mirror_pairs.py --index`; записка о поле `bytes`
+    цитирует их дословно, и до сих пор цитату никто не сверял.
+    """
+    out = _run(["python3", "-B", "scripts/check_drive_mirror_pairs.py", "--index"])
+    found = re.search(
+        r"называющих себя текущими числами файла и разошедшихся с HEAD: (\d+); "
+        r"полей с названным кругом \(с HEAD не сверяются\): (\d+)", out)
+    if not found:
+        raise RuntimeError("--index не напечатал строку о полях")
+    return {"stale": int(found.group(1)), "dated": int(found.group(2))}
+
+
 def crosscheck_hashes() -> int:
     """Полные 64-значные суммы, реально присутствующие в документе."""
     text = (HOLDS / "DRIVE_SHA256_READBACK_CROSSCHECK_2026-11-18.md").read_text(encoding="utf-8")
@@ -406,7 +421,7 @@ def _memoize(fn):
 for _name in ("holes_count", "audit_summary", "prose_holds", "promotion_gaps", "gate_counts", "inventory_totals",
               "receipts_totals", "matrix_numbers", "official_core_bytes", "official_core_matched",
               "crosscheck_hashes", "peter_registry", "mirror_summary", "rule25_note",
-              "official_core_items", "artifact_custody"):
+              "official_core_items", "artifact_custody", "index_currency"):
     globals()[_name] = _memoize(globals()[_name])
 
 
@@ -792,6 +807,25 @@ CLAIMS: list[dict] = [
         "expected": crosscheck_hashes,
         "source": "число полных 64-значных хешей в самом документе",
     },
+    # --- поле bytes в индексе: две цитаты против вывода --index ---------------
+    {
+        "id": "bytes_field.current_stale",
+        "doc": "ИСКУПЛЕНИЕ/evidence/DRIVE_INDEX_BYTES_FIELD_2026-11-18.md",
+        "outside_holds": True,
+        "anchor": "Скрипт эти два класса различает",
+        "pattern": r"разошедшихся с HEAD: (\d+)",
+        "expected": lambda: index_currency()["stale"],
+        "source": "check_drive_mirror_pairs.py --index, итоговая строка о полях",
+    },
+    {
+        "id": "bytes_field.dated",
+        "doc": "ИСКУПЛЕНИЕ/evidence/DRIVE_INDEX_BYTES_FIELD_2026-11-18.md",
+        "outside_holds": True,
+        "anchor": "Скрипт эти два класса различает",
+        "pattern": r"с HEAD не сверяются\): (\d+)",
+        "expected": lambda: index_currency()["dated"],
+        "source": "check_drive_mirror_pairs.py --index, итоговая строка о полях",
+    },
     # --- снимок артефактов CI: до этого числа не проверял никто ---------------
     {
         "id": "artifact_snapshot.artifacts",
@@ -970,7 +1004,7 @@ def normalise(value: str) -> str:
     return re.sub(r"[\s\u00a0]", "", value)
 
 
-def check(claim: dict, verbose: bool) -> tuple[str, str, str]:
+def check(claim: dict) -> tuple[str, str, str]:
     """Вернуть (состояние, что в документе, что в источнике)."""
     path = (ROOT / claim["doc"]) if claim.get("outside_holds") else (HOLDS / claim["doc"])
     if not path.exists():
@@ -1024,7 +1058,7 @@ def main(argv: list[str]) -> int:
     verbose = "--verbose" in argv
     results = []
     for claim in CLAIMS:
-        state, printed, expected = check(claim, verbose)
+        state, printed, expected = check(claim)
         results.append((claim, state, printed, expected))
 
     unsourced = unsourced_report()
