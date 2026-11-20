@@ -164,6 +164,18 @@ def mirror_summary() -> dict[str, int]:
     return {name: int(found.group(i + 1)) for i, name in enumerate(names)}
 
 
+def rule25_note() -> dict[str, int]:
+    """Строка правила 25 — из валидатора, а не из цитаты в записке."""
+    out = _run(["python3", "-B", "scripts/validate_atonement_corpus_integrity.py"])
+    found = re.search(
+        r"ПРАВИЛО 25 \(зеркала ланов\): (\d+) записей с gitFile, из них с названной ревизией "
+        r"(\d+), с объявленным лагом (\d+)", out)
+    if not found:
+        raise RuntimeError("валидатор не напечатал строку «зеркала ланов»")
+    return {"records": int(found.group(1)), "with_revision": int(found.group(2)),
+            "lagging": int(found.group(3))}
+
+
 def peter_registry() -> dict[str, int]:
     """Записи 1 Петра «объект не приобретён»: с пустым `holds` и без поля вовсе.
 
@@ -287,6 +299,27 @@ def crosscheck_hashes() -> int:
     return len(re.findall(r"`[0-9a-f]{64}`", text))
 
 
+
+# Источники дорогие: валидатор корпуса идёт ~15 с, а `rule25_note` спрашивают три
+# утверждения. Считаем один раз на прогон: иначе гейт платит за каждую цитату из
+# одной и той же строки.
+_CACHE: dict[str, object] = {}
+
+
+def _memoize(fn):
+    def wrapper(*args, **kwargs):
+        if fn.__name__ not in _CACHE:
+            _CACHE[fn.__name__] = fn(*args, **kwargs)
+        return _CACHE[fn.__name__]
+    return wrapper
+
+
+for _name in ("audit_summary", "prose_holds", "promotion_gaps", "gate_counts", "inventory_totals",
+              "receipts_totals", "matrix_numbers", "official_core_bytes", "official_core_matched",
+              "crosscheck_hashes", "peter_registry", "mirror_summary", "rule25_note"):
+    globals()[_name] = _memoize(globals()[_name])
+
+
 # --- утверждения --------------------------------------------------------------
 
 CLAIMS: list[dict] = [
@@ -311,8 +344,8 @@ CLAIMS: list[dict] = [
     {
         "id": "readme.claims_count",
         "doc": "README.md",
-        "anchor": "чисел с их источниками",
-        "pattern": r"#\s*(\d+) чисел с их источниками",
+        "anchor": "с их источниками",
+        "pattern": r"#\s*(\d+) (?:чисел|числа|число) с их источниками",
         "expected": lambda: len(CLAIMS),
         "source": "len(CLAIMS) в этом же скрипте — число, которое нельзя завысить",
     },
@@ -363,6 +396,42 @@ CLAIMS: list[dict] = [
         "pattern": r"/ (\d[\d ]*) вхождений",
         "expected": lambda: inventory_totals()["entries"],
         "source": "HOLD_INVENTORY.json → totals.json_hold_entries",
+    },
+    {
+        "id": "mirror_note.lane_mirror_records",
+        "doc": "ИСКУПЛЕНИЕ/evidence/DOC_MIRRORS_EXPORT_TAILS_2026-11-18.md",
+        "outside_holds": True,
+        "anchor": "ПРАВИЛО 25 (зеркала ланов):",
+        "pattern": r"ланов\): (\d+) записей с gitFile, из них с названной ревизией (\d+), с объявленным лагом (\d+)",
+        "group": 1,
+        "kind": "cross",
+        "kindNote": "перекрёстная: цитата в записке против вывода валидатора",
+        "expected": lambda: rule25_note()["records"],
+        "source": "validate_atonement_corpus_integrity.py, строка «зеркала ланов», первое число",
+    },
+    {
+        "id": "mirror_note.lane_mirror_with_revision",
+        "doc": "ИСКУПЛЕНИЕ/evidence/DOC_MIRRORS_EXPORT_TAILS_2026-11-18.md",
+        "outside_holds": True,
+        "anchor": "ПРАВИЛО 25 (зеркала ланов):",
+        "pattern": r"ланов\): (\d+) записей с gitFile, из них с названной ревизией (\d+), с объявленным лагом (\d+)",
+        "group": 2,
+        "kind": "cross",
+        "kindNote": "перекрёстная: цитата в записке против вывода валидатора",
+        "expected": lambda: rule25_note()["with_revision"],
+        "source": "validate_atonement_corpus_integrity.py, строка «зеркала ланов», второе число",
+    },
+    {
+        "id": "mirror_note.lane_mirror_lagging",
+        "doc": "ИСКУПЛЕНИЕ/evidence/DOC_MIRRORS_EXPORT_TAILS_2026-11-18.md",
+        "outside_holds": True,
+        "anchor": "ПРАВИЛО 25 (зеркала ланов):",
+        "pattern": r"ланов\): (\d+) записей с gitFile, из них с названной ревизией (\d+), с объявленным лагом (\d+)",
+        "group": 3,
+        "kind": "cross",
+        "kindNote": "перекрёстная: цитата в записке против вывода валидатора",
+        "expected": lambda: rule25_note()["lagging"],
+        "source": "validate_atonement_corpus_integrity.py, строка «зеркала ланов», третье число",
     },
     {
         "id": "mirror_note.records",
