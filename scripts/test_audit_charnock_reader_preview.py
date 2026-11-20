@@ -8,6 +8,8 @@ import unittest
 from pathlib import Path
 from urllib.parse import unquote
 
+from audit_charnock_manuscripts import MANUSCRIPT_DIR, MANUSCRIPTS
+
 ROOT = Path(__file__).resolve().parents[1]
 PREVIEW = ROOT / 'БИОГРАФИИ/Стивен Чарнок/reader-preview/CHARNOCK_FULL_BOOK_EDITORIAL_READER_2026-11-21.md'
 CHAPTERS = re.compile(r'^## (Введение\. .+|Часть [IVX]+\. .+|Справочник\. .+)$', re.MULTILINE)
@@ -28,7 +30,7 @@ class CharnockReaderProofTests(unittest.TestCase):
     def test_status_is_research_only_and_pinned_to_source_snapshot(self):
         opening = self.body[:1800]
         self.assertIn('DRAFT / RESEARCH_ONLY / PUBLICATION_HOLD', opening)
-        self.assertIn('ccbf4eca45d307564702454a454fc6ab838b2c31', opening)
+        self.assertIn('443d6aa94ee9685f7534deace0351931cd2d3c20', opening)
         for hold in ('ED-02', 'ED-06', 'ED-08'):
             self.assertIn(hold, opening)
         self.assertIn('не разрешение на публикацию', opening)
@@ -59,6 +61,60 @@ class CharnockReaderProofTests(unittest.TestCase):
     def test_no_editor_backstage_or_internal_section_headers(self):
         self.assertNotRegex(self.body, r'(?m)^#{2,6} (?:Редакторская приёмка|Редакторский контроль)')
         self.assertEqual(len(SOURCE.findall(self.body)), 10)
+
+    def test_reader_prose_and_all_notes_match_current_ten_manuscripts(self):
+        """Catch a stale book proof even when all 180 footnote IDs still exist."""
+        self.assertEqual(len(self.sections), len(MANUSCRIPTS))
+        for index, name in enumerate(MANUSCRIPTS):
+            original = (ROOT / MANUSCRIPT_DIR / name).read_text(encoding='utf-8')
+            front = re.search(r'^---\s*
+        links = LINK.findall(self.body)
+        self.assertGreaterEqual(len(links), 230)
+        for link in links:
+            path_part = unquote(link.split('#', 1)[0].strip())
+            resolved = (PREVIEW.parent / path_part).resolve()
+            self.assertTrue(resolved.is_relative_to(ROOT), link)
+            self.assertTrue(resolved.exists(), link)
+
+
+if __name__ == '__main__':
+    unittest.main()
+, original, re.MULTILINE)
+            backstage = re.search(
+                r'^## (?:Редакторская приёмка|Редакторский контроль)',
+                original, re.MULTILINE,
+            )
+            self.assertIsNotNone(front, name)
+            self.assertIsNotNone(backstage, name)
+            self.assertLess(front.end(), backstage.start(), name)
+            reader_section = original[front.end():backstage.start()].strip()
+            reader_section = re.sub(
+                r'^(#{2,5}) (.+)
+        links = LINK.findall(self.body)
+        self.assertGreaterEqual(len(links), 230)
+        for link in links:
+            path_part = unquote(link.split('#', 1)[0].strip())
+            resolved = (PREVIEW.parent / path_part).resolve()
+            self.assertTrue(resolved.is_relative_to(ROOT), link)
+            self.assertTrue(resolved.exists(), link)
+
+
+if __name__ == '__main__':
+    unittest.main()
+,
+                lambda match: '#' + match.group(1) + ' ' + match.group(2),
+                reader_section, flags=re.MULTILINE,
+            )
+            reader_section = re.sub(
+                r'\[\^([^\]]+)\]',
+                lambda match: f'[^{EXPECTED_PREFIXES[index]}-{match.group(1)}]',
+                reader_section,
+            )
+            after = self.sections[index + 1].start() if index + 1 < len(self.sections) else len(self.body)
+            printed_section = self.body[self.sections[index].end():after].strip()
+            self.assertTrue(printed_section.endswith('---'), name)
+            printed_section = printed_section[:-3].strip()
+            self.assertEqual(printed_section, reader_section, name)
 
     def test_research_links_survive_path_preserving_move(self):
         links = LINK.findall(self.body)
