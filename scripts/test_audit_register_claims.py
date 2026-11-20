@@ -263,3 +263,39 @@ class RegisterSelfCountTests(unittest.TestCase):
 
     def test_register_does_not_quote_the_tool_banner(self) -> None:
         self.assertNotIn("Заявленных счётчиков: ", self.text)
+
+
+class RegisterSuiteSizeTests(unittest.TestCase):
+    """§27 wrote the rule - the number of tests is a counter too - and applied it to one sentence.
+
+    Six more sites kept quoting it. Three had already drifted: the link audit was written as 27
+    while the suite runs 30, the drive ledger as 18 while it runs 16, ChecksumColumnTests as 6
+    while it runs 9. Two of those were quoted *inside a closure record that had just documented
+    the same drift* - the record said "27 (actually 30)" while §8 still said 27.
+
+    The suite prints its own size. A document that copies the total is wrong by the next test,
+    and it cannot tell you which total it meant.
+    """
+
+    def setUp(self) -> None:
+        self.root = Path(__file__).resolve().parents[1]
+        self.text = (self.root / claims.REGISTER).read_text(encoding="utf-8")
+
+    def test_prose_does_not_quote_the_suite_size(self) -> None:
+        offline = re.findall(r"\d+\s+(?:офлайн-)?тест", self.text)
+        self.assertEqual(offline, [], "run the suite instead of copying its size: %r" % (offline,))
+
+    def test_quoted_ci_step_names_are_step_names(self) -> None:
+        # A sentence of the form "CI-шаг «X»" is a claim about the workflow. It is checkable,
+        # so it is checked: X must be a step name that exists there. Spelled-out numbers escape
+        # the guard above; a wrong step name does not escape this one.
+        quoted = set(re.findall(r"CI-шаг «([^»]+)»", self.text))
+        self.assertTrue(quoted, "the register names at least one CI step")
+        names: set[str] = set()
+        for workflow in (self.root / ".github" / "workflows").glob("*.yml"):
+            for line in workflow.read_text(encoding="utf-8").splitlines():
+                found = re.match(r"\s*-\s*name:\s*(.+?)\s*$", line)
+                if found:
+                    names.add(found.group(1).split("#")[0].strip().strip("'\""))
+        self.assertEqual(sorted(quoted - names), [],
+                         "a quoted gate name must exist as a workflow step name")

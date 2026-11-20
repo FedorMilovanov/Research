@@ -122,6 +122,17 @@ class ClosureTests(unittest.TestCase):
                     self.assertFalse(SELF_COUNTS & set(obj),
                                      f"self-count leaked into a closure record: {SELF_COUNTS & set(obj)}")
 
+    def test_records_do_not_quote_the_suite_size(self) -> None:
+        # previousState is exempt on purpose: it quotes what the earlier wording said, and
+        # records 24 quotes "27 tests (they are 30)" as the evidence of the drift it closed.
+        # Every other field states the present, where a copied total is a stale total.
+        for entry in self.data.get("closures", []):
+            for field in ("title", "closedScope", "method", "objects"):
+                blob = json.dumps(entry.get(field), ensure_ascii=False)
+                with self.subTest(f"{entry.get('id')} {field}"):
+                    self.assertIsNone(re.search(r"\d+\s+(?:офлайн-)?тест", blob),
+                                      "the suite prints its own size")
+
     def test_confirmation_titles_carry_no_measurements(self) -> None:
         # Same rule as the open items: a number inside a name has no field behind it.
         # Identifiers are not measurements: "v3", "SHA-256" and "§19" stay allowed, while
