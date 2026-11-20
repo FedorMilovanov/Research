@@ -113,8 +113,22 @@ if __name__ == '__main__':
             after = self.sections[index + 1].start() if index + 1 < len(self.sections) else len(self.body)
             printed_section = self.body[self.sections[index].end():after].strip()
             self.assertTrue(printed_section.endswith('---'), name)
-            printed_section = printed_section[:-3].strip()
             self.assertEqual(printed_section, reader_section, name)
+
+    def test_no_duplicate_horizontal_rules_between_chapters(self):
+        self.assertNotRegex(self.body, r'(?m)^---[ \\t]*\\n\\s*---[ \\t]*
+        links = LINK.findall(self.body)
+        self.assertGreaterEqual(len(links), 230)
+        for link in links:
+            path_part = unquote(link.split('#', 1)[0].strip())
+            resolved = (PREVIEW.parent / path_part).resolve()
+            self.assertTrue(resolved.is_relative_to(ROOT), link)
+            self.assertTrue(resolved.exists(), link)
+
+
+if __name__ == '__main__':
+    unittest.main()
+)
 
     def test_research_links_survive_path_preserving_move(self):
         links = LINK.findall(self.body)
