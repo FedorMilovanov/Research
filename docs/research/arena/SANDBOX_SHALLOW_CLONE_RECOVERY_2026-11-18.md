@@ -21,8 +21,8 @@
 ## 3. Лечение
 
 ```bash
-git diff > /tmp/workspace-before-reset.patch      # страховка: 7 тысяч строк дешевле, чем сомнение
-git fetch --unshallow origin                      # история: 3698 коммитов вместо одного
+git diff > /tmp/workspace-before-reset.patch      # страховка: патч целиком дешевле, чем сомнение
+git fetch --unshallow origin                      # история целиком; сколько именно — покажет git rev-list --count HEAD
 git fetch origin arena/<ветка>                    # верхушка ветки в origin/<ветка>
 git reset --mixed origin/arena/<ветка>            # указатель на верхушку, рабочее дерево НЕ трогается
 ```

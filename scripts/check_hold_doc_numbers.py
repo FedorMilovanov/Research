@@ -317,22 +317,14 @@ def matrix_numbers() -> dict[str, int]:
 
 
 def official_core_bytes() -> int:
-    data = json.loads(
-        (ROOT / "data" / "official-core-datasets-reproducibility-2026-11-18.json").read_text(
-            encoding="utf-8"
-        )
-    )
-    return int(data["result"]["bytesTotal"])
+    """Сумма трёх наборов — из того же разбора, что и поштучные размеры."""
+    return official_core_items()["total"]
 
 
 def official_core_matched() -> str:
-    data = json.loads(
-        (ROOT / "data" / "official-core-datasets-reproducibility-2026-11-18.json").read_text(
-            encoding="utf-8"
-        )
-    )
-    result = data["result"]
-    return f"{result['matched']}/{result['total']}"
+    """«3/3» — из того же файла; читается один раз на прогон через official_core_items."""
+    items = official_core_items()
+    return f"{items['matched']}/{items['matchedTotal']}"
 
 
 def official_core_items() -> dict[str, int]:
@@ -355,6 +347,8 @@ def official_core_items() -> dict[str, int]:
     out["total"] = int(data["result"]["bytesTotal"])
     if out["total"] != sum(v for k, v in out.items() if k != "total"):
         raise RuntimeError("bytesTotal не равен сумме трёх наборов")
+    out["matched"] = int(data["result"]["matched"])
+    out["matchedTotal"] = int(data["result"]["total"])
     return out
 
 
