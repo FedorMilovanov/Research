@@ -49,7 +49,7 @@
 
 ```bash
 python3 -B scripts/run_research_gates.py            # 6 гейтов + 5 информационных счётчиков
-python3 -B scripts/check_hold_doc_numbers.py --verbose       # 34 числа с их источниками
+python3 -B scripts/check_hold_doc_numbers.py --verbose       # 41 число с их источниками
 python3 -B scripts/audit_hold_coverage_gaps.py --summary     # 51 и их раскладка
 python3 -B scripts/audit_hold_coverage_gaps.py --no-holds-field  # 52 без поля holds
 python3 -B scripts/audit_prose_holds.py --summary            # 83 с HOLD в прозе
@@ -59,7 +59,7 @@ python3 -B scripts/audit_hold_coverage_gaps.py --promotion-gaps   # 1 PROMOTE с
 **Число и его источник стоят рядом.** Один день дал три случая одного дефекта: «44 записи 1 Петра»
 (такой развёртки не было ни в одном режиме аудита), «сделано 6 сравнений из 5 941» (в квитанциях уже
 38) и суммы `official core`, сверенные по восьмизначному префиксу вместо полной суммы. Поэтому
-`scripts/check_hold_doc_numbers.py` объявляет 34 величины вместе с источником и пересчитывает каждую:
+`scripts/check_hold_doc_numbers.py` объявляет 41 величину вместе с источником и пересчитывает каждую:
 `match` / `stale` / `anchor-missing` / `anchor-ambiguous` / `source-missing`. Он ничего не правит и не
 решает, какое число верно, — он показывает, где число в прозе перестало быть измерением. Оба
 исторических случая проверены обратным ходом: подмена 38 на 6 и 40 на 44 даёт `stale`, а не молчание.
@@ -83,7 +83,7 @@ python3 -B scripts/audit_hold_coverage_gaps.py --promotion-gaps   # 1 PROMOTE с
 29, подтверждённых PASS-дыр 5, непопаданий 0, не проверено 0**, откат побайтовый, контрольный прогон
 PASS.
 
-Пять PASS-дыр — не недоработка, а названные места, где гейт ловить не обязан. Их список печатает сам скрипт:
+5 PASS-дыр — не недоработка, а названные места, где гейт ловить не обязан. Их список печатает сам скрипт:
 `python3 scripts/run_atonement_mutation_battery.py --holes` — он берётся из того же списка случаев, что и
 прогон, поэтому не может с ним разойтись. Одна из них найдена при
 починке самой батареи и стоит того, чтобы её знали: если поднять одну строку реестра `A2 → A1` и

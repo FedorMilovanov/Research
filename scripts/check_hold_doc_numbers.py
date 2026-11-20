@@ -22,7 +22,8 @@
     stale              число разошлось с источником — это дефект;
     anchor-missing     строки-якоря нет: документ переписали, проверять нечего;
     anchor-ambiguous   якорь встречается дважды: непонятно, какое число сверять;
-    source-missing     источник не отдал величину (нет файла, упал скрипт).
+    source-missing     источник не отдал величину (нет файла, упал скрипт);
+    claim-broken       сломано само объявление: в шаблоне нет обещанной группы.
 
 Три вида источника, и они ловят разное — поэтому перепутать их нельзя:
 
@@ -181,6 +182,42 @@ def rule25_note() -> dict[str, int]:
             "lagging": int(found.group(3))}
 
 
+def lag_split() -> dict[str, int]:
+    """Сколько записей несут `lagBehindGit` и сколько из них объявляют лаг.
+
+    Две величины, которые легко сложить в одну и потом читать неверно: поле есть у
+    всех, кого касается вопрос, а «отстаёт» — только у части. Считается по индексу,
+    а не по прозе записки.
+    """
+    data = json.loads((ROOT / "ИСКУПЛЕНИЕ" / "data" / "atonement-library-index.json").read_text(encoding="utf-8"))
+    live_roles = {"lane-mirror", "ledger-mirror", "registry-mirror", "ssot-corpus-snapshot"}
+    old_roles = {"registry-mirror-superseded", "superseded-mirror"}
+    records = [r for r in data["records"] if "lagBehindGit" in r]
+    live = [r for r in records if r.get("role") in live_roles]
+    old = [r for r in records if r.get("role") in old_roles]
+    return {
+        "field_total": len(records),
+        "live_field": len(live),
+        "live_true": sum(1 for r in live if r["lagBehindGit"]),
+        "old_field": len(old),
+        "old_true": sum(1 for r in old if r["lagBehindGit"]),
+    }
+
+
+def holes_count() -> int:
+    """Сколько случаев объявлены PASS-дырами — из самого скрипта батареи.
+
+    Это дёшево (`--holes` не запускает прогон), поэтому число проверяемое. Числа
+    самого прогона (поймано/непопаданий) — нет: он идёт восемь минут, и держать их
+    в гейте значит платить восемью минутами за каждую правку документа.
+    """
+    out = _run(["python3", "-B", "scripts/run_atonement_mutation_battery.py", "--holes"])
+    found = re.search(r"гейт не обязан ловить\): (\d+)", out)
+    if not found:
+        raise RuntimeError("--holes не назвал число")
+    return int(found.group(1))
+
+
 def peter_registry() -> dict[str, int]:
     """Записи 1 Петра «объект не приобретён»: с пустым `holds` и без поля вовсе.
 
@@ -319,7 +356,7 @@ def _memoize(fn):
     return wrapper
 
 
-for _name in ("audit_summary", "prose_holds", "promotion_gaps", "gate_counts", "inventory_totals",
+for _name in ("holes_count", "audit_summary", "prose_holds", "promotion_gaps", "gate_counts", "inventory_totals",
               "receipts_totals", "matrix_numbers", "official_core_bytes", "official_core_matched",
               "crosscheck_hashes", "peter_registry", "mirror_summary", "rule25_note"):
     globals()[_name] = _memoize(globals()[_name])
@@ -439,6 +476,55 @@ CLAIMS: list[dict] = [
         "source": "validate_atonement_corpus_integrity.py, строка «зеркала ланов», третье число",
     },
     {
+        "id": "mirror_note.lag_field_total",
+        "doc": "ИСКУПЛЕНИЕ/evidence/DOC_MIRRORS_EXPORT_TAILS_2026-11-18.md",
+        "outside_holds": True,
+        "anchor": "Проверяя, сколько записей вообще объявляют лаг",
+        "pattern": r"получил \*\*(\d+)\*\*",
+        "expected": lambda: lag_split()["field_total"],
+        "source": "индекс библиотеки: записей с полем lagBehindGit",
+    },
+    {
+        "id": "mirror_note.lag_live_field",
+        "doc": "ИСКУПЛЕНИЕ/evidence/DOC_MIRRORS_EXPORT_TAILS_2026-11-18.md",
+        "outside_holds": True,
+        "anchor": "| «Зеркало отстаёт от дерева сейчас» |",
+        "pattern": r"\| \*\*(\d+)\*\* \| \*\*(\d+)\*\* \|",
+        "group": 1,
+        "expected": lambda: lag_split()["live_field"],
+        "source": "индекс: роли зеркал с полем lagBehindGit",
+    },
+    {
+        "id": "mirror_note.lag_live_true",
+        "doc": "ИСКУПЛЕНИЕ/evidence/DOC_MIRRORS_EXPORT_TAILS_2026-11-18.md",
+        "outside_holds": True,
+        "anchor": "| «Зеркало отстаёт от дерева сейчас» |",
+        "pattern": r"\| \*\*(\d+)\*\* \| \*\*(\d+)\*\* \|",
+        "group": 2,
+        "expected": lambda: lag_split()["live_true"],
+        "source": "индекс: из них lagBehindGit = true",
+    },
+    {
+        "id": "mirror_note.lag_old_field",
+        "doc": "ИСКУПЛЕНИЕ/evidence/DOC_MIRRORS_EXPORT_TAILS_2026-11-18.md",
+        "outside_holds": True,
+        "anchor": "| «Слепок отставал в момент заливки» |",
+        "pattern": r"\| \*\*(\d+)\*\* \| \*\*(\d+)\*\* \|",
+        "group": 1,
+        "expected": lambda: lag_split()["old_field"],
+        "source": "индекс: роли снятых слепков с полем lagBehindGit",
+    },
+    {
+        "id": "mirror_note.lag_old_true",
+        "doc": "ИСКУПЛЕНИЕ/evidence/DOC_MIRRORS_EXPORT_TAILS_2026-11-18.md",
+        "outside_holds": True,
+        "anchor": "| «Слепок отставал в момент заливки» |",
+        "pattern": r"\| \*\*(\d+)\*\* \| \*\*(\d+)\*\* \|",
+        "group": 2,
+        "expected": lambda: lag_split()["old_true"],
+        "source": "индекс: из них lagBehindGit = true",
+    },
+    {
         "id": "mirror_note.records",
         "doc": "ИСКУПЛЕНИЕ/evidence/DOC_MIRRORS_EXPORT_TAILS_2026-11-18.md",
         "outside_holds": True,
@@ -493,6 +579,23 @@ CLAIMS: list[dict] = [
         "pattern": r"\| Файлов \| (\d+) \|",
         "expected": lambda: audit_summary()["files"],
         "source": "audit_hold_coverage_gaps.py --summary, строка «Файлов с такими записями»",
+    },
+    {
+        "id": "readme.pass_holes",
+        "doc": "README.md",
+        "anchor": "не недоработка, а названные места",
+        "pattern": r"(\d+) PASS-дыр — не недоработка",
+        "expected": holes_count,
+        "source": "run_atonement_mutation_battery.py --holes, строка «гейт не обязан ловить»",
+    },
+    {
+        "id": "mirror_note.pass_holes",
+        "doc": "ИСКУПЛЕНИЕ/evidence/DOC_MIRRORS_EXPORT_TAILS_2026-11-18.md",
+        "outside_holds": True,
+        "anchor": "PASS-дыр в прогоне",
+        "pattern": r"(\d+) PASS-дыр в прогоне",
+        "expected": holes_count,
+        "source": "run_atonement_mutation_battery.py --holes, строка «гейт не обязан ловить»",
     },
     {
         "id": "triage.records",
@@ -733,12 +836,23 @@ def check(claim: dict, verbose: bool) -> tuple[str, str, str]:
                 rows += 1
             elif inside and rows and not line.startswith("|"):
                 break
+        if rows == 0:
+            # Ноль строк значит, что таблица не найдена или сменила заголовок.
+            # Сравнивать этот ноль с ожидаемым числом — значит объявлять дефект
+            # документа там, где сломался якорь.
+            return "anchor-missing", "—", "таблица под якорем не найдена"
         printed = rows
     else:
         found = re.search(claim["pattern"], hits[0])
         if not found:
             return "anchor-missing", "—", "в строке-якоре нет числа"
-        printed = found.group(claim.get("group", 1))
+        try:
+            printed = found.group(claim.get("group", 1))
+        except IndexError:
+            # Объявление обещает группу, которой в регулярке нет. Это дефект
+            # объявления, а не документа, и он обязан быть назван, а не уронить
+            # прогон трейсбеком: иначе гейт падает «непонятно почему».
+            return "claim-broken", "—", f"в шаблоне нет группы {claim.get('group', 1)}"
 
     if normalise(str(printed)) == normalise(str(expected)):
         return "match", str(printed), str(expected)
@@ -773,8 +887,12 @@ def main(argv: list[str]) -> int:
     # Якорь, содержащий само проверяемое число, — известная ловушка: подмена числа в
     # документе тогда даёт не `stale`, а `anchor-missing`, и проверка выглядит сломанной
     # вместо того, чтобы выглядеть поймавшей. Считаются только точные совпадения.
+    def _in_anchor(value: str, anchor: str) -> bool:
+        # Подстрокой проверять нельзя: «6» найдётся внутри «256». Нужны границы цифр.
+        return bool(re.search(r"(?<!\d)" + re.escape(normalise(value)) + r"(?!\d)", normalise(anchor)))
+
     traps = [r[0]["id"] for r in results
-             if r[1] == "match" and normalise(str(r[2])) and normalise(str(r[2])) in normalise(r[0]["anchor"])]
+             if r[1] == "match" and normalise(str(r[2])) and _in_anchor(str(r[2]), r[0]["anchor"])]
     if traps:
         print(f"  внимание: якорь содержит проверяемое число в {len(traps)} {plural(len(traps), 'утверждении', 'утверждениях', 'утверждениях')} — такая пара "
               f"даст anchor-missing вместо stale: {', '.join(traps)}")
