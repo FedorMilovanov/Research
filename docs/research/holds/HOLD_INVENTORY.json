@@ -3,7 +3,7 @@
  "artifact": "REPO-HOLD-INVENTORY",
  "role": "DERIVED_READ_ONLY_NOT_AUTHORITY",
  "generatedAt": "2026-11-20",
- "testedCommit": "4b6630c8f1911fc777b36d08487cebbd03cd6881",
+ "testedCommit": "8a8e46c84eebbfbaeceac77899272005b78a0b47",
  "policy": "data/repository-evidence-policy-v2.json",
  "totals": {
   "json_files_with_holds": 35,
@@ -16,11 +16,11 @@
    "PUBLICATION_HOLD": 1964,
    "RIGHTS_HOLD": 1355
   },
-  "markdown_files_with_typed_tokens": 764,
-  "markdown_typed_tokens": 7182,
+  "markdown_files_with_typed_tokens": 765,
+  "markdown_typed_tokens": 7183,
   "markdown_typed_by_type": {
    "ARCHIVE_HOLD": 1177,
-   "EVIDENCE_HOLD": 1091,
+   "EVIDENCE_HOLD": 1092,
    "LOCATOR_HOLD": 1586,
    "PUBLICATION_HOLD": 2113,
    "RIGHTS_HOLD": 1215
@@ -102,7 +102,7 @@
   },
   "ИСКУПЛЕНИЕ": {
    "json_nodes_with_holds": 526,
-   "markdown_hold_tokens": 1977
+   "markdown_hold_tokens": 1978
   },
   "ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ": {
    "json_nodes_with_holds": 0,

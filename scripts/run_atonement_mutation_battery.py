@@ -101,6 +101,30 @@ def anchors():
     }
 
 
+
+def live_registry_mirror(raw):
+    """Зеркало реестра, которое правило 25 действительно сверяет с деревом.
+
+    До круга 68 три случая искали запись с предикатом «роль registry-mirror и
+    НЕ lagBehindGit» — и перестали находить что-либо, когда лаг объявили у всех
+    зеркал: якорь описал прошлое состояние дерева. Теперь берётся запись,
+    которую правило увидит по роли и имени, а «живой» её делает сам случай —
+    снятием лага, потому что сравнение md5 и байтов правило включает только
+    для зеркал без объявленного лага.
+    """
+    cand = [r for r in raw["records"]
+            if r.get("role") == "registry-mirror"
+            and "35_four_point" in str(r.get("gitFile", ""))
+            and "УСТАРЕЛО" not in str(r.get("name", ""))
+            and re.search(r"md5 ([0-9a-f]{32})", str(r.get("name")))]
+    if len(cand) != 1:
+        raise AssertionError("не проверен: зеркал реестра, видимых правилу 25, найдено %d, ожидалось одно"
+                             % len(cand))
+    rec = cand[0]
+    rec["lagBehindGit"] = False  # случай сначала делает зеркало «живым», иначе сверка md5 не включается
+    return rec
+
+
 def md_row_sample(text):
     m = re.search(r"^\|\s*FP-\d+\s*\|[^\n]*$", text, re.M)
     if not m:
@@ -219,7 +243,25 @@ def cases():
         new = "|".join(" `A1` " if c.strip().strip("`").strip("*") == "A2" else c for c in cells)
         REG_MD.write_text(sub(t, line, new, "реестр"), encoding="utf-8")
 
-    add("registryClassPromoted", "классы достоверности разошлись", m_class, "A2 поднят до A1 без печатного носителя")
+    add("registryClassPromoted", "исторические коды разошлись", m_class,
+        "A2 поднят до A1 без печатного носителя; ловится счётчиком «заявлено против обхода», а не "
+        "построчной сверкой класса с основанием — это и есть разница, которую показывает следующий случай")
+
+    # 2а. Тот же подъём, но уравновешенный: одна строка A2 → A1 и одна A1 → A2. Итоги классов
+    # сходятся, и гейт зеленеет: значит счётчик защищает суммы, а не отдельную строку. Это
+    # открытое место, и оно проверяется как PASS-дыра, чтобы не выглядело закрытым.
+    def m_class_swap():
+        t = REG_MD.read_text(encoding="utf-8")
+        up, up_cells = md_row_with_class(t, "A2")
+        down, down_cells = md_row_with_class(t, "A1")
+        up_new = "|".join(" `A1` " if c.strip().strip("`").strip("*") == "A2" else c for c in up_cells)
+        down_new = "|".join(" `A2` " if c.strip().strip("`").strip("*") == "A1" else c for c in down_cells)
+        t = sub(t, up, up_new, "реестр")
+        t = sub(t, down, down_new, "реестр")
+        REG_MD.write_text(t, encoding="utf-8")
+
+    add("registryClassSwapBalanced", None, m_class_swap,
+        "классы двух строк обменяны: итоги сходятся, и построчной сверки класса с основанием нет")
 
     # 3. Живой счётчик строк реестра в JSON (снимается обходом, литералов нет).
     def m_reglines():
@@ -301,24 +343,31 @@ def cases():
     add("doc17LinesClaim", "reconciliationDocument20261022", m_doc17, "число строк `17_` в сводке завышено")
 
     # 11. Имя живого зеркала: байты в имени не равны git-файлу.
+    #
+    # С круга 68 этот случай переписан, а не починен. Предикат «живое зеркало» перестал
+    # что-либо находить: лаг объявлен у всех зеркал с md5 в имени, а правило включает
+    # сравнение md5 и байтов только для зеркал БЕЗ лага. Хуже того, у всех таких записей
+    # md5 в имени уже расходится с деревом, и первым сработает он, замаскировав проверку
+    # байтов. Поэтому случай сначала делает зеркало правдивым (снимает лаг, подставляет
+    # настоящие md5 и размер), а потом сдвигает размер в имени на байт: проверяется ровно
+    # то сравнение, которое заявлено в названии.
     def m_mirrorname():
+        import hashlib as _h
         raw = json.loads(IDX.read_text(encoding="utf-8"))
-        # живым зеркалом считается единственная запись без пометки в имени и без роли superseded:
-        # с круга 53 в индексе появился второй способ помечать снятое (role …-superseded при
-        # ненарушенном имени), и старый предикат по одному имени находил два живых
-        rec = [r for r in raw["records"] if "35_four_point_authors_mass_registry" in str(r.get("name", ""))
-               and "УСТАРЕЛО" not in str(r.get("name", ""))
-               and "superseded" not in str(r.get("role", ""))]
-        if len(rec) != 1:
-            raise AssertionError("не проверен: живых записей о зеркале реестра %d, ожидалась одна" % len(rec))
-        rec = rec[0]
-        fld = "driveBytesClaimed" if "driveBytesClaimed" in rec else "bytes"
-        if int(rec[fld]) != int(A["liveBytes"]):
-            raise AssertionError("не проверен: в записи %s = %s, в якорях %s" % (fld, rec[fld], A["liveBytes"]))
-        rec[fld] = int(rec[fld]) + 1
+        rec = live_registry_mirror(raw)
+        gf = ROOT / rec["gitFile"]
+        live_md5 = _h.md5(gf.read_bytes()).hexdigest()
+        live_size = gf.stat().st_size
+        name = re.sub(r"md5 [0-9a-f]{32}", "md5 " + live_md5, str(rec["name"]))
+        name = re.sub(r"\d[\d ]* B", "%d B" % live_size, name, count=1)
+        m = re.search(r"(\d[\d ]*) B", name)
+        if not m:
+            raise AssertionError("не проверен: в имени зеркала нет размера в байтах — подложить ложь некуда")
+        rec["name"] = name[:m.start(1)] + str(int(m.group(1).replace(" ", "")) + 1) + name[m.end(1):]
         IDX.write_text(json.dumps(raw, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
-    add("mirrorBytesClaimed", None, m_mirrorname, "размер в записи индекса о живом зеркале сдвинут на 1 байт")
+    add("mirrorBytesClaimed", "обещает", m_mirrorname,
+        "имя живого зеркала обещает на 1 байт больше, чем весит git-файл")
 
     # 12. Пустая группа мутаций (гейт обязан не дать спрятать расхождение).
     def m_group():
@@ -374,12 +423,7 @@ def cases():
     # сверка обязана краснеть. Поймано кругом 30 (до перестановки роли молчало).
     def m_mirrorname_md5():
         raw = json.loads(IDX.read_text(encoding="utf-8"))
-        live = [r for r in raw["records"] if r.get("role") == "registry-mirror" and not r.get("lagBehindGit")
-                and "35_four_point" in str(r.get("gitFile", ""))]
-        if len(live) != 1:
-            raise AssertionError("не проверен: живых зеркал с ролью registry-mirror найдено %d, ожидалось одно"
-                                 % len(live))
-        rec = live[0]
+        rec = live_registry_mirror(raw)
         m = re.search(r"md5 ([0-9a-f]{32})", str(rec["name"]))
         if not m:
             raise AssertionError("не проверен: в имени зеркала нет md5 — подложить ложь некуда")
@@ -395,11 +439,7 @@ def cases():
     # «я завела запись с нужной ролью». Случай обязан дать PASS.
     def m_mirror_role_stripped():
         raw = json.loads(IDX.read_text(encoding="utf-8"))
-        live = [r for r in raw["records"] if r.get("role") == "registry-mirror" and not r.get("lagBehindGit")
-                and "35_four_point" in str(r.get("gitFile", ""))]
-        if len(live) != 1:
-            raise AssertionError("не проверен: живых зеркал с ролью registry-mirror найдено %d" % len(live))
-        rec = live[0]
+        rec = live_registry_mirror(raw)
         m = re.search(r"md5 ([0-9a-f]{32})", str(rec["name"]))
         if not m:
             raise AssertionError("не проверен: в имени зеркала нет md5")
@@ -558,12 +598,19 @@ def cases():
         start = raw.find('"cards": [')
         if start == -1:
             raise AssertionError("не проверен: в ot-корпусе нет списка cards")
-        i = raw.find('"holds": ["EVIDENCE_HOLD"', start)
+        # С круга 68 ищем не «holds, начинающийся с EVIDENCE_HOLD» (в карточке первым может
+        # стоять другой флаг), а любой однострочный массив holds: случай проверяет, что
+        # удержание, которого проза не знает, роняет сверку двух учётов, и ему всё равно,
+        # какой флаг стоит первым.
+        i = raw.find('"holds": [', start)
         if i == -1:
-            raise AssertionError("не проверен: у первой карточки нет однострочного holds")
+            raise AssertionError("не проверен: у первой карточки нет поля holds")
+        j = i + len('"holds": [')
+        close = raw.find("]", j)
+        if close == -1:
+            raise AssertionError("не проверен: у holds первой карточки нет закрывающей скобки")
         if "ZZZ_UNSEEN_HOLD" in raw:
             raise AssertionError("не проверен: маркер уже в файле")
-        j = i + len('"holds": [')
         LANE_REG["ot"].write_text(raw[:j] + '"ZZZ_UNSEEN_HOLD", ' + raw[j:], encoding="utf-8")
 
     add("cardStateWithoutRegisterReshoot", "сверка с машинными карточками разошлась", m_card_state_without_reshoot,
