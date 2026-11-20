@@ -175,9 +175,6 @@ def replace_slice_block(text: str, block: str) -> tuple[str, bool]:
 # edited away - the register keeps its history - but it must point at the section that
 # carries the current value, and that section must exist below the claim.
 PROSE_CLAIMS: list[dict] = [
-    {"id": "drive-sample-in-confirmation",
-     "pattern": r"Объекты Drive: (?P<n>\d+) из \d+ перечитаны",
-     "artefact": LEDGER, "field": "scope.distinctDriveIds", "supersededBy": "§19"},
     {"id": "drive-sample-in-section-11",
      "pattern": r"Проверено (?P<n>\d+) из \d+ объектов",
      "artefact": LEDGER, "field": "scope.distinctDriveIds", "supersededBy": "§19"},

@@ -47,6 +47,7 @@ METHOD_NAMES = {
     "hold-vocabulary-mapping": "соответствие неканонических значений `holds`",
     "ci-trigger-dependency-audit": "сверка триггеров CI с зависимостями гейтов",
     "self-confirmation-regression": "регрессия на самоподтверждение",
+    "confirmation-counter-audit": "счётчики подтверждений против артефактов",
     "pinned-github-locator-readback": "перечитывание закреплённых локаторов",
     "text-integrity-repair": "сверка склеек с историей",
     "register-claims-audit": "счётчики против артефактов",
@@ -56,12 +57,42 @@ METHOD_NAMES = {
     "hold-vocabulary-mapping": "соответствие неканонических значений `holds`",
     "ci-trigger-dependency-audit": "сверка триггеров CI с зависимостями гейтов",
     "self-confirmation-regression": "регрессия на самоподтверждение",
+    "confirmation-counter-audit": "счётчики подтверждений против артефактов",
     "space-restoration-backed-by-file-history": "пробелы по истории файла",
     "internal-digest-rehash": "пересчёт внутренних подписей",
 }
 
 
-def render(registry: dict) -> str:
+class CounterError(Exception):
+    """A confirmation counter that cannot be resolved is a broken promise, not a blank."""
+
+
+def _pick(data: dict, field: str):
+    node = data
+    for part in field.split("."):
+        if not isinstance(node, dict) or part not in node:
+            return None
+        node = node[part]
+    return node
+
+
+def render_counter(counter: dict, root: Path) -> str:
+    """``label`` + a value read from an artefact; never from the registry's memory."""
+    artefact, field = counter.get("artefact"), counter.get("field")
+    if not artefact or not field:
+        raise CounterError(f"counter without artefact/field: {counter!r}")
+    path = root / artefact
+    if not path.is_file():
+        raise CounterError(f"counter artefact missing: {artefact}")
+    value = _pick(json.loads(path.read_text(encoding="utf-8")), field)
+    if not isinstance(value, int):
+        raise CounterError(f"counter field is not a number: {artefact} {field}")
+    label = counter.get("label") or field
+    return f"{label}: {f'{value:,}'.replace(',', chr(0x2009))}"
+
+
+def render(registry: dict, root: Path | None = None) -> str:
+    root = root or Path(".")
     closures = registry.get("closures", [])
     confirmations = registry.get("confirmations", [])
     open_items = registry.get("notClosed", [])
@@ -92,10 +123,17 @@ def render(registry: dict) -> str:
             f" | {METHOD_NAMES.get(method, method)} | {where} |"
         )
     lines += ["", "**Подтверждения (не закрытия):**"]
+    # A confirmation used to print its own title, and the titles carried measurements
+    # ("17 объектов", "36/36", "8 из 24"). Nothing checked them: by now three of the four
+    # were stale. Numbers come from artefacts; the title carries none.
     for confirmation in confirmations:
-        lines.append(
-            f"- `{confirmation.get('id', '')}` — {(confirmation.get('title') or '').strip()}"
-        )
+        ident = (confirmation.get("id") or "").strip()
+        title = (confirmation.get("title") or "").strip()
+        counters = [render_counter(c, root) for c in confirmation.get("counters", [])]
+        detail = f" ({'; '.join(counters)})" if counters else ""
+        superseded = (confirmation.get("supersededBy") or "").strip()
+        note = f" — значения пересняты в {superseded}" if superseded else ""
+        lines.append(f"- `{ident}` — {title}{detail}{note}")
     lines += ["", "**Осталось открытым по существу:**"]
     # An open item's identity is its id, not a sentence. The earlier version rendered the
     # item's display text, which happened to carry two measurements inside the name; the
@@ -131,10 +169,15 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--write", action="store_true")
     parser.add_argument("--check", action="store_true")
     parser.add_argument("--print", dest="print_only", action="store_true")
+    parser.add_argument("--root", default=".", help="where artefacts live (counters are read from there)")
     args = parser.parse_args(argv)
 
     registry = json.loads(Path(args.registry).read_text(encoding="utf-8"))
-    block = render(registry)
+    try:
+        block = render(registry, Path(args.root))
+    except CounterError as exc:
+        print(f"closure summary: {exc}", file=sys.stderr)
+        return 2
     register_path = Path(args.register)
     text = register_path.read_text(encoding="utf-8")
     updated, found = replace_block(text, block)

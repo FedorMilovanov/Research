@@ -80,6 +80,10 @@ class RegistryShapeTests(unittest.TestCase):
                 self.assertIn(entry["id"], text)
 
 
+# A standalone number (or ratio) in prose, but not a version, an algorithm or a section id.
+MEASUREMENT = re.compile(r"(?<![\w§-])\d[\d\s\u2009]*(?![\w-])")
+
+
 class ClosureTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
@@ -103,6 +107,36 @@ class ClosureTests(unittest.TestCase):
             with self.subTest(entry.get("id")):
                 self.assertIsNone(re.search(r"\d", entry.get("title", "")),
                                   "open item title must not carry a number")
+
+    def test_confirmation_titles_carry_no_measurements(self) -> None:
+        # Same rule as the open items: a number inside a name has no field behind it.
+        # Identifiers are not measurements: "v3", "SHA-256" and "§19" stay allowed, while
+        # "17 объектов", "36/36" and "8 из 24" do not.
+        for entry in self.data.get("confirmations", []):
+            with self.subTest(entry.get("id")):
+                self.assertIsNone(MEASUREMENT.search(entry.get("title", "")),
+                                  "confirmation title must not carry a measurement")
+
+    def test_confirmation_expectations_carry_no_measurements(self) -> None:
+        # The registry's own verification.expect strings had drifted: they still quoted
+        # resolves=2 856, external=5 974 and 27 tests after the artefacts moved on.
+        for entry in self.data.get("confirmations", []):
+            expect = (entry.get("verification") or {}).get("expect", "")
+            with self.subTest(entry.get("id")):
+                self.assertIsNone(MEASUREMENT.search(expect),
+                                  "expectations must point at counters, not repeat measurements")
+
+    def test_confirmation_counters_resolve(self) -> None:
+        root = REGISTRY.parents[1] if REGISTRY.parent.name == "data" else REGISTRY.parent
+        for entry in self.data.get("confirmations", []):
+            for counter in entry.get("counters", []):
+                with self.subTest(f"{entry.get('id')} {counter.get('label')}"):
+                    path = root / counter["artefact"]
+                    self.assertTrue(path.is_file(), f"missing artefact {counter['artefact']}")
+                    node = json.loads(path.read_text(encoding="utf-8"))
+                    for part in counter["field"].split("."):
+                        node = node[part]
+                    self.assertIsInstance(node, int)
 
     def test_not_closed_is_not_empty(self) -> None:
         # The registry must keep saying what stays blocked; an empty list would

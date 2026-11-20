@@ -854,6 +854,30 @@
         "PUBLICATION_HOLD"
       ],
       "residualReason": "Воспроизводимость справочного поля не даёт прав и не разрешает публикацию: PROMOTE по-прежнему 0, у трёх записей нет записи в реестре прав. Дефект касался ссылочного поля, а не допуска."
+    },
+    {
+      "id": "HCR-2026-11-18-24",
+      "title": "Подтверждения: числа в заголовках заменены счётчиками из артефактов; три из четырёх заголовков были просрочены",
+      "holdType": "EVIDENCE_HOLD",
+      "previousState": "Заголовки подтверждений и verification.expect носили измерения, печатавшиеся в §0 из реестра: C3 указывал resolves=2 856 и external=5 974 (в артефакте 2 861 и 5 966) и 27 тестов (их 30), C2 — 13 тестов (их 18), C4 — 8 из 24 при полном опросе в §19",
+      "closedScope": "counters (label/artefact/field) у подтверждений, значения читаются из отчётов; неразрешимый счётчик валит --check кодом 2; title и verification.expect без измерений (тест различает идентификаторы и измерения); C4 помечен supersededBy §19",
+      "recordLocations": [
+        "docs/research/HOLDS_REGISTER_2026-11-18.md §28",
+        "data/hold-closure-registry-v1.json",
+        "scripts/render_closures_summary.py"
+      ],
+      "method": "confirmation-counter-audit",
+      "objects": [
+        {
+          "confirmations": 4,
+          "staleTitles": 3,
+          "derivedCounters": 6
+        }
+      ],
+      "residualHolds": [
+        "EVIDENCE_HOLD"
+      ],
+      "residualReason": "Подтверждения остаются подтверждениями: ни одно не снимает удержаний, и C4 переснято в §19. Закрыта просроченность их чисел, не сами удержания."
     }
   ],
   "confirmations": [
@@ -877,11 +901,12 @@
         "Совпадение хешей удостоверяет байты архива, а не право на их публикацию: RIGHTS_HOLD/PUBLICATION_HOLD не снимаются.",
         "Совпадение с `destinationSha256ReadBack` подтверждает уже заявленный readback; независимость ограничена тем, что оба значения записаны одной стороной.",
         "Хеш не доказывает, что содержимое архива прочитано и что в нём именно заявленный текст."
-      ]
+      ],
+      "counters": []
     },
     {
       "id": "HCR-2026-11-18-C2",
-      "title": "Закреплённые GitHub-локаторы: 17 объектов перепроверены независимо, 4 из 4 заявленных SHA-256 совпали",
+      "title": "Закреплённые GitHub-локаторы перепроверены независимо; заявленные SHA-256 совпали",
       "holdType": "LOCATOR_HOLD",
       "status": "CONFIRMATION_NOT_CLOSURE",
       "closedScope": "Снято не удержание, а сомнение в заявке: 17 локаторов `github.com/…/blob/<commit>/<path>` существуют на своих коммитах (0 недоступных); у 4 заявлен SHA-256 и размер — 4/4 совпали побайтово после независимого скачивания. У 13 заявки нет: байты и хеши измерены и записаны, но закрывать нечего, пока корпус не заявил, что искал.",
@@ -893,7 +918,7 @@
       "method": "pinned-commit-raw-fetch-and-rehash",
       "verification": {
         "command": "python3 -B scripts/verify_pinned_github_locators.py --summary",
-        "expect": "17 локаторов, match=4, mismatch=0, unavailable=0, unclaimed=13",
+        "expect": "значения — counters карты §0 (читаются из отчёта); сеть нужна только для перезамера байтов",
         "tests": "python3 -B -m unittest discover -s scripts -p 'test_verify_pinned_github_locators.py' → 13 OK",
         "note": "нужна сеть: обращение к api.github.com через gh; в CI не включено, чтобы не ломать сборку без сети"
       },
@@ -901,11 +926,28 @@
         "Совпадение хеша удостоверяет байты объекта на коммите, а не факт чтения содержания и не тождество издания.",
         "ARCHIVE_HOLD на сканы и RIGHTS_HOLD/PUBLICATION_HOLD этим не снимаются.",
         "URL без закреплённого коммита не проверяются: у них нет версии, к которой можно привязать байты."
+      ],
+      "counters": [
+        {
+          "label": "локаторов",
+          "artefact": "data/pinned-github-locators-verified-2026-11-18.json",
+          "field": "totals.locators"
+        },
+        {
+          "label": "совпавших SHA-256",
+          "artefact": "data/pinned-github-locators-verified-2026-11-18.json",
+          "field": "totals.match"
+        },
+        {
+          "label": "расхождений",
+          "artefact": "data/pinned-github-locators-verified-2026-11-18.json",
+          "field": "totals.mismatch"
+        }
       ]
     },
     {
       "id": "HCR-2026-11-18-C3",
-      "title": "Якоря разделов: 36 ссылок с #fragment, 36/36 указывают на существующий заголовок; 2 мёртвых якоря найдено, 1 исправлен",
+      "title": "Якоря разделов разрешаются по заголовкам цели",
       "holdType": "LOCATOR_HOLD",
       "status": "CONFIRMATION_NOT_CLOSURE",
       "closedScope": "Снято сомнение в адресности ссылок вида `файл.md#раздел`: до правки аудит читал только путь, якорь не проверялся. Добавлена проверка фрагмента по заголовкам цели; 36/36 ссылок с фрагментом резолвятся. Два мёртвых якоря: в `docs/research/reformation/README.md` исправлено `пр`→`pr` (заголовок «…после PR #496–499»), в `ИСКУПЛЕНИЕ/18_SERIES_AUDIT_AND_ARCS_2026-10-26.md` ссылка верна — тире в диапазоне `6–7` в slug исчезает, поэтому сравнение нормализует дефисные формы.",
@@ -917,18 +959,35 @@
       "method": "section-anchor-slug-check",
       "verification": {
         "command": "python3 -B scripts/audit_relative_links.py --summary",
-        "expect": "2 416 файлов; resolves=2 856, missing=58, missing-anchor=0, external=5 974; --strict → 0 необъяснённых",
+        "expect": "значения — counters карты §0 (из отчёта ссылок); отдельно `--strict` требует, чтобы необъяснённых дефектов не осталось",
         "tests": "python3 -B -m unittest discover -s scripts -p 'test_audit_relative_links.py' → 27 OK"
       },
       "limits": [
         "Существование заголовка не доказывает, что раздел прочитан и что в нём сказано именно это.",
         "Якоря `#L12` и фрагменты не-markdown целей не проверяются: заголовков у них нет.",
         "Slug считается по правилам GitHub приближённо: экзотические символы в заголовке могут дать ложный дефект, поэтому дефисные формы нормализуются."
+      ],
+      "counters": [
+        {
+          "label": "ссылок с фрагментом",
+          "artefact": "data/relative-links-audit-2026-11-18.json",
+          "field": "totals.fragments.total"
+        },
+        {
+          "label": "резолвится",
+          "artefact": "data/relative-links-audit-2026-11-18.json",
+          "field": "totals.fragments.resolved"
+        },
+        {
+          "label": "не резолвится",
+          "artefact": "data/relative-links-audit-2026-11-18.json",
+          "field": "totals.fragments.unresolved"
+        }
       ]
     },
     {
       "id": "HCR-2026-11-18-C4",
-      "title": "Объекты Drive: 8 из 24 перечитаны у сервера, 8/8 совпали по размеру и SHA-256 с заявленными в реестре",
+      "title": "Объекты Drive перечитаны у сервера; размер и SHA-256 совпали с заявленными в реестре",
       "holdType": "ARCHIVE_HOLD",
       "status": "CONFIRMATION_NOT_CLOSURE",
       "closedScope": "Снято сомнение в том, что объекты, на которые ссылаются замыкания HCR-2026-11-18-01 и -02, всё ещё существуют и что их серверный `sha256Checksum` не изменился. Прочитаны метаданные восьми объектов (`files.get`, fields=id,name,size,sha256Checksum,mimeType): 8/8 совпали по размеру и хешу, 0 отсутствующих, 0 расхождений. Байты не скачивались — независимый пересчёт содержимого сделан только для объекта из HCR-C1.",
@@ -939,7 +998,7 @@
       "method": "google-drive-server-metadata-read",
       "verification": {
         "command": "google_drive.get_file (соединитель) по восьми driveFileId из реестра; сверка size и sha256Checksum с заявленными",
-        "expect": "8/8 match, 0 mismatch, 0 not-found; 24 различных объекта в реестре, проверено 8",
+        "expect": "выборка первых объектов замыканий первого и второго закрытия; полный опрос доведён в §19, значения — counters карты §0",
         "tests": "сетевой проход, в CI не включён: соединитель Drive недоступен в сборке"
       },
       "limits": [
@@ -947,7 +1006,9 @@
         "Проверено 8 из 24 объектов; остальные 16 не проверялись.",
         "Выборка не случайная: первые по порядку объекты замыканий 01 и 02.",
         "Совпадение хеша не даёт прав на публикацию и не доказывает, что текст прочитан: RIGHTS_HOLD/PUBLICATION_HOLD остаются."
-      ]
+      ],
+      "counters": [],
+      "supersededBy": "§19"
     }
   ],
   "notClosed": [

@@ -86,3 +86,73 @@ class RenderTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class ConfirmationCounterTests(unittest.TestCase):
+    """A confirmation's numbers must come from an artefact, not from its own title."""
+
+    def setUp(self) -> None:
+        self._dir = tempfile.TemporaryDirectory()
+        self.root = Path(self._dir.name)
+        (self.root / "data").mkdir()
+        (self.root / "data" / "report.json").write_text(
+            json.dumps({"totals": {"locators": 1234, "match": 4}}), encoding="utf-8")
+        self.registry = self.root / "registry.json"
+        self.register = self.root / "register.md"
+        self.register.write_text("# Реестр\n\n" + summary.BEGIN + "\n" + summary.END + "\n",
+                                 encoding="utf-8")
+
+    def tearDown(self) -> None:
+        self._dir.cleanup()
+
+    def registry_with(self, counters: list[dict]) -> dict:
+        return {"closures": [], "notClosed": [], "confirmations": [
+            {"id": "HCR-C9", "title": "Подтверждение без чисел", "counters": counters}]}
+
+    def run_tool(self, *args: str) -> int:
+        return summary.main(["--registry", str(self.registry), "--register", str(self.register),
+                             "--root", str(self.root), *args])
+
+    def test_counter_is_read_from_the_artefact(self) -> None:
+        registry = self.registry_with([{"label": "локаторов", "artefact": "data/report.json",
+                                        "field": "totals.locators"}])
+        block = summary.render(registry, self.root)
+        self.assertIn("(локаторов: 1\u2009234)", block)
+
+    def test_write_and_check_agree_with_counters(self) -> None:
+        self.registry.write_text(json.dumps(self.registry_with([
+            {"label": "локаторов", "artefact": "data/report.json", "field": "totals.locators"}])),
+            encoding="utf-8")
+        self.assertEqual(self.run_tool("--write"), 0)
+        self.assertEqual(self.run_tool("--check"), 0)
+
+    def test_artifact_change_makes_the_block_stale(self) -> None:
+        self.registry.write_text(json.dumps(self.registry_with([
+            {"label": "локаторов", "artefact": "data/report.json", "field": "totals.locators"}])),
+            encoding="utf-8")
+        self.assertEqual(self.run_tool("--write"), 0)
+        (self.root / "data" / "report.json").write_text(
+            json.dumps({"totals": {"locators": 9, "match": 4}}), encoding="utf-8")
+        self.assertEqual(self.run_tool("--check"), 1)
+
+    def test_missing_artefact_fails_loudly(self) -> None:
+        self.registry.write_text(json.dumps(self.registry_with([
+            {"label": "локаторов", "artefact": "data/absent.json", "field": "totals.locators"}])),
+            encoding="utf-8")
+        self.assertEqual(self.run_tool("--check"), 2)
+
+    def test_counter_without_a_field_fails_loudly(self) -> None:
+        self.registry.write_text(json.dumps(self.registry_with([{"label": "локаторов"}])), encoding="utf-8")
+        self.assertEqual(self.run_tool("--check"), 2)
+
+    def test_non_numeric_field_fails_loudly(self) -> None:
+        (self.root / "data" / "report.json").write_text(
+            json.dumps({"totals": {"locators": "много"}}), encoding="utf-8")
+        self.registry.write_text(json.dumps(self.registry_with([
+            {"label": "локаторов", "artefact": "data/report.json", "field": "totals.locators"}])),
+            encoding="utf-8")
+        self.assertEqual(self.run_tool("--check"), 2)
+
+
+if __name__ == "__main__":
+    unittest.main()

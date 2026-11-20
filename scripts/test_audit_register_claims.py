@@ -142,23 +142,23 @@ class ProseClaimTests(unittest.TestCase):
         self.assertEqual((entry["state"], entry["claimed"], entry["actual"]), ("stale", 9, 3))
 
     def test_superseded_claim_points_forward(self) -> None:
-        text = ("Объекты Drive: 8 из 24 перечитаны у сервера.\n\n"
+        text = ("Проверено 8 из 24 объектов.\n\n"
                 "## 19. Опрос доведён до конца\n")
-        self.assertEqual(self.prose(text)["drive-sample-in-confirmation"]["state"], "superseded")
+        self.assertEqual(self.prose(text)["drive-sample-in-section-11"]["state"], "superseded")
 
     def test_superseded_needs_its_target_section(self) -> None:
-        text = "Объекты Drive: 8 из 24 перечитаны у сервера.\n"
-        self.assertEqual(self.prose(text)["drive-sample-in-confirmation"]["state"],
+        text = "Проверено 8 из 24 объектов.\n"
+        self.assertEqual(self.prose(text)["drive-sample-in-section-11"]["state"],
                          "superseded-target-missing")
 
     def test_superseded_target_must_come_after_the_claim(self) -> None:
-        text = ("## 19. Опрос доведён до конца\n\nОбъекты Drive: 8 из 24 перечитаны у сервера.\n")
-        self.assertEqual(self.prose(text)["drive-sample-in-confirmation"]["state"],
+        text = "## 19. Опрос доведён до конца\n\nПроверено 8 из 24 объектов.\n"
+        self.assertEqual(self.prose(text)["drive-sample-in-section-11"]["state"],
                          "superseded-target-missing")
 
     def test_matching_claim_is_not_downgraded_to_superseded(self) -> None:
-        text = "Объекты Drive: 92 из 92 перечитаны у сервера.\n"
-        self.assertEqual(self.prose(text)["drive-sample-in-confirmation"]["state"], "match")
+        text = "Проверено 92 из 92 объектов.\n"
+        self.assertEqual(self.prose(text)["drive-sample-in-section-11"]["state"], "match")
 
     def test_check_fails_on_unsuperseded_drift(self) -> None:
         self.fx.write_register("Сравнено **9** документов (из 4 Markdown).\n")
