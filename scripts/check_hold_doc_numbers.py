@@ -335,6 +335,53 @@ def official_core_matched() -> str:
     return f"{result['matched']}/{result['total']}"
 
 
+def official_core_items() -> dict[str, int]:
+    """Байты каждого из трёх наборов и их сумма — из JSON воспроизводимости.
+
+    Заявленные байты лежат в документе статуса 2026-07-30; здесь важно, что
+    проверенный размер (`bytes`) совпал с заявленным (`recordedBytes`), иначе
+    цитата в записке и измерение расходятся.
+    """
+    data = json.loads(
+        (ROOT / "data" / "official-core-datasets-reproducibility-2026-11-18.json").read_text(
+            encoding="utf-8"
+        )
+    )
+    out: dict[str, int] = {}
+    for item in data["items"]:
+        if item["bytes"] != item["recordedBytes"]:
+            raise RuntimeError(f"{item['name']}: измерено {item['bytes']} ≠ заявлено {item['recordedBytes']}")
+        out[item["repository"]] = int(item["bytes"])
+    out["total"] = int(data["result"]["bytesTotal"])
+    if out["total"] != sum(v for k, v in out.items() if k != "total"):
+        raise RuntimeError("bytesTotal не равен сумме трёх наборов")
+    return out
+
+
+def artifact_custody() -> dict:
+    """Снимок артефактов CI: итоги и раскладка по классам — из JSON, не из таблицы.
+
+    Проверяет заодно две вещи, которые в документе только заявлены: число семей
+    в итогах равно числу перечисленных семей, а сумма классов равна числу
+    артефактов.
+    """
+    data = json.loads((ROOT / "data" / "artifact-custody-snapshot-2026-11-18.json").read_text(encoding="utf-8"))
+    totals = data["totals"]
+    if totals["families"] != len(data["families"]):
+        raise RuntimeError(f"итог семей {totals['families']} ≠ перечислено {len(data['families'])}")
+    if sum(totals["byClass"].values()) != totals["artifacts"]:
+        raise RuntimeError(f"сумма классов {sum(totals['byClass'].values())} ≠ артефактов {totals['artifacts']}")
+    out: dict = {
+        "artifacts": totals["artifacts"],
+        "families": len(data["families"]),
+        "expired": totals["expired"],
+        "gigabytes": f"{totals['bytes'] / 1e9:.2f}",
+    }
+    for cls, count in totals["byClass"].items():
+        out["class:" + cls] = count
+    return out
+
+
 def crosscheck_hashes() -> int:
     """Полные 64-значные суммы, реально присутствующие в документе."""
     text = (HOLDS / "DRIVE_SHA256_READBACK_CROSSCHECK_2026-11-18.md").read_text(encoding="utf-8")
@@ -358,7 +405,8 @@ def _memoize(fn):
 
 for _name in ("holes_count", "audit_summary", "prose_holds", "promotion_gaps", "gate_counts", "inventory_totals",
               "receipts_totals", "matrix_numbers", "official_core_bytes", "official_core_matched",
-              "crosscheck_hashes", "peter_registry", "mirror_summary", "rule25_note"):
+              "crosscheck_hashes", "peter_registry", "mirror_summary", "rule25_note",
+              "official_core_items", "artifact_custody"):
     globals()[_name] = _memoize(globals()[_name])
 
 
@@ -744,6 +792,96 @@ CLAIMS: list[dict] = [
         "expected": crosscheck_hashes,
         "source": "число полных 64-значных хешей в самом документе",
     },
+    # --- снимок артефактов CI: до этого числа не проверял никто ---------------
+    {
+        "id": "artifact_snapshot.artifacts",
+        "doc": "ARTIFACT_CUSTODY_SNAPSHOT_2026-11-18.md",
+        "anchor": "Живых артефактов (без отчётов сканера)",
+        "pattern": r"\*\*(\d+)\*\* в",
+        "expected": lambda: artifact_custody()["artifacts"],
+        "source": "data/artifact-custody-snapshot JSON → totals.artifacts",
+    },
+    {
+        "id": "artifact_snapshot.families",
+        "doc": "ARTIFACT_CUSTODY_SNAPSHOT_2026-11-18.md",
+        "anchor": "Живых артефактов (без отчётов сканера)",
+        "pattern": r"\*\*(\d+)\*\* семьях",
+        "expected": lambda: artifact_custody()["families"],
+        "source": "data/artifact-custody-snapshot JSON → len(families), сверено с totals.families",
+    },
+    {
+        "id": "artifact_snapshot.gigabytes",
+        "doc": "ARTIFACT_CUSTODY_SNAPSHOT_2026-11-18.md",
+        "anchor": "Живых артефактов (без отчётов сканера)",
+        "pattern": r"суммарно \*\*([\d.]+) ГБ\*\*",
+        "expected": lambda: artifact_custody()["gigabytes"],
+        "source": "data/artifact-custody-snapshot JSON → totals.bytes / 1e9, два знака",
+    },
+    {
+        "id": "artifact_snapshot.expired",
+        "doc": "ARTIFACT_CUSTODY_SNAPSHOT_2026-11-18.md",
+        "anchor": "Ноль здесь читается узко",
+        "pattern": r"Просроченных: \*\*(\d+)\*\*",
+        "expected": lambda: artifact_custody()["expired"],
+        "source": "data/artifact-custody-snapshot JSON → totals.expired",
+    },
+    {
+        "id": "artifact_snapshot.class_durable_on_drive",
+        "doc": "ARTIFACT_CUSTODY_SNAPSHOT_2026-11-18.md",
+        "anchor": "байты на Drive есть, квитанция записана",
+        "pattern": r"\| `DURABLE_ON_DRIVE_RECEIPTED` \| (\d+) \|",
+        "expected": lambda: artifact_custody()["class:DURABLE_ON_DRIVE_RECEIPTED"],
+        "source": "data/artifact-custody-snapshot JSON → totals.byClass",
+    },
+    {
+        "id": "artifact_snapshot.class_no_durable_destination",
+        "doc": "ARTIFACT_CUSTODY_SNAPSHOT_2026-11-18.md",
+        "anchor": "на Drive только манифест, объекты живут лишь в артефакте",
+        "pattern": r"\| `NO_DURABLE_DESTINATION` \| (\d+) \|",
+        "expected": lambda: artifact_custody()["class:NO_DURABLE_DESTINATION"],
+        "source": "data/artifact-custody-snapshot JSON → totals.byClass",
+    },
+    {
+        "id": "artifact_snapshot.class_regenerable_audit",
+        "doc": "ARTIFACT_CUSTODY_SNAPSHOT_2026-11-18.md",
+        "anchor": "пересобирается; потеря артефакта не теряет доказательство",
+        "pattern": r"\| `REGENERABLE_AUDIT` \| (\d+) \|",
+        "expected": lambda: artifact_custody()["class:REGENERABLE_AUDIT"],
+        "source": "data/artifact-custody-snapshot JSON → totals.byClass",
+    },
+    # --- официальные наборы: заявленные байты и их сумма ---------------------
+    {
+        "id": "official_gaps.stepbible_bytes",
+        "doc": "OFFICIAL_CORE_59_AND_LEDGER_GAPS_2026-11-18.md",
+        "anchor": "| STEPBible Data snapshot |",
+        "pattern": r"(\d[\d ]*) Б",
+        "expected": lambda: official_core_items()["STEPBible/STEPBible-Data"],
+        "source": "data/official-core-datasets-reproducibility JSON → items[0].bytes",
+    },
+    {
+        "id": "official_gaps.morphhb_bytes",
+        "doc": "OFFICIAL_CORE_59_AND_LEDGER_GAPS_2026-11-18.md",
+        "anchor": "| Open Scriptures `morphhb` snapshot |",
+        "pattern": r"(\d[\d ]*) Б",
+        "expected": lambda: official_core_items()["openscriptures/morphhb"],
+        "source": "data/official-core-datasets-reproducibility JSON → items[1].bytes",
+    },
+    {
+        "id": "official_gaps.sblgnt_bytes",
+        "doc": "OFFICIAL_CORE_59_AND_LEDGER_GAPS_2026-11-18.md",
+        "anchor": "| Faithlife SBLGNT snapshot |",
+        "pattern": r"(\d[\d ]*) Б",
+        "expected": lambda: official_core_items()["Faithlife/SBLGNT"],
+        "source": "data/official-core-datasets-reproducibility JSON → items[2].bytes",
+    },
+    {
+        "id": "official_gaps.declared_total",
+        "doc": "OFFICIAL_CORE_59_AND_LEDGER_GAPS_2026-11-18.md",
+        "anchor": "| **Итого заявлено** |",
+        "pattern": r"\*\*(\d[\d ]*) Б\*\*",
+        "expected": lambda: official_core_items()["total"],
+        "source": "data/official-core-datasets-reproducibility JSON → result.bytesTotal, сверено с суммой трёх",
+    },
 ]
 
 
@@ -775,6 +913,29 @@ UNSOURCED = [
         "anchor": "38 строк каталога из 5 941 (0,64 %)",
         "number": "0,64 %",
         "why": "доля посчитана от 38 и 5 941; оба слагаемых названы, но 5 941 — из имени файла (см. выше)",
+    },
+    {
+        "doc": "OFFICIAL_CORE_59_AND_LEDGER_GAPS_2026-11-18.md",
+        "anchor": "| 123 193 373 | 2026-11-17T06:17:53Z",
+        "number": "123 193 373",
+        "why": "размер одного артефакта снят gh api в момент сверки, а снапшот хранит только сумму "
+               "по семье; повторено вручную 2026-11-20 — артефакт на месте и число совпало, но "
+               "командой в репозитории эта величина не закреплена, а семья с 2026-11-19 уже другая",
+    },
+    {
+        "doc": "OFFICIAL_CORE_59_AND_LEDGER_GAPS_2026-11-18.md",
+        "anchor": "| 899 703 400 | 2026-11-17T06:36:43Z",
+        "number": "899 703 400",
+        "why": "то же: размер отдельного артефакта из gh api, в снапшоте только сумма по семье; "
+               "вручную 2026-11-20 совпало",
+    },
+    {
+        "doc": "OFFICIAL_CORE_59_AND_LEDGER_GAPS_2026-11-18.md",
+        "anchor": "разница 12 174 Б",
+        "number": "12 174",
+        "why": "разность между размером артефакта (без источника, см. выше) и заявленной суммой "
+               "трёх наборов (та самая сумма проверяема); считается на месте, источника нет у "
+               "уменьшаемого",
     },
 ]
 
@@ -870,7 +1031,13 @@ def main(argv: list[str]) -> int:
     bad = [r for r in results if r[1] not in ("match",)]
     kinds = {"internal": 0, "cross": 0, "external": 0}
     for r in results:
-        kinds[r[0].get("kind", "external")] += 1
+        # Опечатка в `kind` не должна ронять счёт целиком: имя класса проверяется
+        # так же, как числа, — иначе счётчик становится местом, где прячется дефект.
+        kind = r[0].get("kind", "external")
+        if kind not in kinds:
+            print(f"  claim-broken     {r[0]['id']:30} неизвестный kind={kind!r}")
+            return 1
+        kinds[kind] += 1
     print(f"ЧИСЛА В ДОКУМЕНТАХ HOLD-КЛАСТЕРА: {len(results)} {plural(len(results), 'утверждение', 'утверждения', 'утверждений')} "
           f"(внешний источник {kinds['external']}, перекрёстная {kinds['cross']}, "
           f"внутри одного документа {kinds['internal']}), "
