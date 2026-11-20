@@ -76,8 +76,8 @@
     ]
   },
   "totals": {
-    "filesScanned": 3118,
-    "filesWithMentions": 909,
+    "filesScanned": 3120,
+    "filesWithMentions": 911,
     "mentions": {
       "ARCHIVE_HOLD": 1424,
       "BLOCKING-HOLD": 16,
@@ -98,16 +98,16 @@
       "HOLD_MAJOR": 11,
       "HOLD_RETAINED": 1,
       "LIVE-READBACK-HOLD": 4,
-      "LOCATOR_HOLD": 1976,
+      "LOCATOR_HOLD": 1977,
       "PAGE-IMAGE-HOLD": 14,
-      "PUBLICATION_HOLD": 2611,
+      "PUBLICATION_HOLD": 2615,
       "RIGHTS_HOLD": 1460,
       "VERSION-HOLD": 23
     },
     "mentionsByStatus": {
       "closed": 821,
-      "open": 2346,
-      "unmarked": 6004
+      "open": 2348,
+      "unmarked": 6007
     },
     "canonicalFlagLineStatesRecordedAsBothOpenAndClosed": 403,
     "filesWithJsonHolds": 38,
@@ -372,7 +372,7 @@
       }
     },
     "scripts": {
-      "files": 47,
+      "files": 48,
       "mentions": {
         "ARCHIVE_HOLD": 50,
         "BLOCKING-HOLD": 4,
@@ -395,13 +395,13 @@
         "LIVE-READBACK-HOLD": 1,
         "LOCATOR_HOLD": 23,
         "PAGE-IMAGE-HOLD": 2,
-        "PUBLICATION_HOLD": 113,
+        "PUBLICATION_HOLD": 114,
         "RIGHTS_HOLD": 51,
         "VERSION-HOLD": 4
       },
       "status": {
         "closed": 7,
-        "open": 13,
+        "open": 14,
         "unmarked": 273
       }
     },
@@ -420,18 +420,18 @@
       }
     },
     "БИОГРАФИИ": {
-      "files": 55,
+      "files": 56,
       "mentions": {
         "ARCHIVE_HOLD": 299,
         "EVIDENCE_HOLD": 75,
-        "LOCATOR_HOLD": 425,
-        "PUBLICATION_HOLD": 353,
+        "LOCATOR_HOLD": 426,
+        "PUBLICATION_HOLD": 356,
         "RIGHTS_HOLD": 213
       },
       "status": {
         "closed": 107,
-        "open": 389,
-        "unmarked": 914
+        "open": 390,
+        "unmarked": 917
       }
     },
     "ИСКУПЛЕНИЕ": {
@@ -27693,6 +27693,16 @@
       }
     },
     {
+      "path": "scripts/test_audit_charnock_reader_preview.py",
+      "corpus": "scripts",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "open": 1
+      }
+    },
+    {
       "path": "scripts/test_audit_register_claims.py",
       "corpus": "scripts",
       "mentions": {
@@ -28382,6 +28392,18 @@
       "status": {
         "open": 1,
         "unmarked": 2
+      }
+    },
+    {
+      "path": "БИОГРАФИИ/Стивен Чарнок/reader-preview/CHARNOCK_FULL_BOOK_EDITORIAL_READER_2026-11-21.md",
+      "corpus": "БИОГРАФИИ",
+      "mentions": {
+        "LOCATOR_HOLD": 1,
+        "PUBLICATION_HOLD": 3
+      },
+      "status": {
+        "open": 1,
+        "unmarked": 3
       }
     },
     {
