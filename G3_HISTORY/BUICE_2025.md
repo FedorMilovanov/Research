@@ -6,7 +6,7 @@ This file isolates the 2025 founder crisis from the 2026 Tom Buck controversy. S
 
 ## Primary institutional facts
 
-According to the May 12, 2025 G3/Pray’s Mill statement:
+According to the [May 12, 2025 G3 board statement](https://web.archive.org/web/20250512232856id_/https://g3min.org/statement-regarding-josh-buice/), which links a separate statement by Pray’s Mill:
 
 - PMBC elders uncovered `irrefutable evidence` that Josh Buice had, for roughly three years, operated at least:
   - four anonymous social-media accounts;
@@ -16,7 +16,7 @@ According to the May 12, 2025 G3/Pray’s Mill statement:
 - Buice had been asked multiple times over roughly two years whether he had connections to anonymous accounts and denied knowledge;
 - on May 4, 2025, after confrontation with evidence, he initially denied involvement and later admitted it;
 - on May 8, after some G3 board members encouraged resignation, the board unanimously accepted his resignation as president;
-- G3 cancelled the 2025 national conference and all 2025 workshops and promised refunds.
+- G3 announced cancellation of the upcoming national conference and all 2025 workshops and promised full registration-fee refunds. This records a decision at that date, not the result for the whole year.
 
 This remains the core factual baseline.
 
@@ -66,12 +66,14 @@ Current evidence supports treating this as a real chronological concern, not as 
 ### Actions G3 took
 
 - board accepted founder’s resignation;
-- conference/workshops cancelled;
+- national conference cancelled; cancellation of workshops announced in May;
 - refunds promised;
 - after initially saying legacy Buice content would remain, G3 reversed course and removed his material because of the public/egregious nature of the sin;
 - post-crisis communications emphasized local church, anti-celebrity ministry and non-platform-centered resources.
 
 These are real corrective actions and should be acknowledged.
+
+**Workshop status after May (Research addendum candidate).** By 1 August, a [G3 registration page](https://web.archive.org/web/20250801164730id_/https://events.g3min.org/worship-workshop) advertised a new opportunity to register for 4–5 November in Clinton, South Carolina. It scheduled work on 2 Corinthians and two model services. Separately, [FY2025 Form 990](https://projects.propublica.org/nonprofits/organizations/842403597/202641339349303874/full) (Part II, signed 15 May 2026; III.4a) reports one expository preaching workshop and one worship workshop at local churches during the year. It names neither church nor date. These sources rule out reading the board’s statement as proof of a year without workshops. They do not show that the board reinstated the original calendar, that the November meeting actually took place, when either reported workshop was held, or that every promised refund cleared. G3-PUB-005 authorizes the national conference cancellation; no change to the signed claim or Product.
 
 ### Questions that remain
 
