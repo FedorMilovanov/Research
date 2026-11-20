@@ -776,6 +776,31 @@
         "EVIDENCE_HOLD"
       ],
       "residualReason": "Сам пункт остаётся открытым и является OPEN-HOLDS-VOCABULARY: переписывать holds в machine-SSOT без владельца корпуса нельзя, предложение остаётся PROPOSAL_ONLY. Закрыта неизмеримость пункта, не пункт."
+    },
+    {
+      "id": "HCR-2026-11-18-21",
+      "title": "Список триггеров CI сверен с зависимостями: найдены дубли, асимметрия pr/push и пять невидимых входов гейта публикации",
+      "holdType": "LOCATOR_HOLD",
+      "previousState": "paths: в holds-inventory.yml поддерживался руками: 5 дублей, отчёт ссылок был триггером только для PR, а публикационный гейт читал три файла, правка которых его не запускала",
+      "closedScope": "scripts/audit_ci_triggers.py --check: дубли, симметрия pull_request/push, покрытие исполняемых скриптов, файлы из констант и литералов, объявленные транзитивные входы; списки приведены к одному набору из 49 путей, шаг добавлен в CI",
+      "recordLocations": [
+        "docs/research/HOLDS_REGISTER_2026-11-18.md §25",
+        "scripts/audit_ci_triggers.py",
+        ".github/workflows/holds-inventory.yml"
+      ],
+      "method": "ci-trigger-dependency-audit",
+      "objects": [
+        {
+          "triggerPaths": 49,
+          "duplicates": 0,
+          "asymmetry": 0,
+          "inputsAdded": 9
+        }
+      ],
+      "residualHolds": [
+        "LOCATOR_HOLD"
+      ],
+      "residualReason": "Транзитивные входы объявлены, а не выведены (общий обход подтянул бы 2 416 наблюдаемых файлов), и правка корпуса вне триггерных путей по-прежнему не запускает гейт — см. §22.2."
     }
   ],
   "confirmations": [

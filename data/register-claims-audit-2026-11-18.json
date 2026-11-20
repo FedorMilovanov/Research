@@ -19,9 +19,9 @@
       "label": "просканировано текстовых файлов",
       "artefact": "data/repository-holds-inventory-v1.json",
       "field": "totals.filesScanned",
-      "claimed": 3116,
-      "actual": 3116,
-      "line": 81,
+      "claimed": 3118,
+      "actual": 3118,
+      "line": 82,
       "state": "match"
     },
     {
@@ -30,16 +30,16 @@
       "field": "totals.filesWithMentions",
       "claimed": 909,
       "actual": 909,
-      "line": 82,
+      "line": 83,
       "state": "match"
     },
     {
       "label": "канонические упоминания `PUBLICATION_HOLD`",
       "artefact": "data/repository-holds-inventory-v1.json",
       "field": "totals.mentions.PUBLICATION_HOLD",
-      "claimed": 2610,
-      "actual": 2610,
-      "line": 83,
+      "claimed": 2611,
+      "actual": 2611,
+      "line": 84,
       "state": "match"
     },
     {
@@ -48,7 +48,7 @@
       "field": "totals.mentions.LOCATOR_HOLD",
       "claimed": 1976,
       "actual": 1976,
-      "line": 84,
+      "line": 85,
       "state": "match"
     },
     {
@@ -57,7 +57,7 @@
       "field": "totals.mentions.RIGHTS_HOLD",
       "claimed": 1460,
       "actual": 1460,
-      "line": 85,
+      "line": 86,
       "state": "match"
     },
     {
@@ -66,7 +66,7 @@
       "field": "totals.mentions.ARCHIVE_HOLD",
       "claimed": 1416,
       "actual": 1416,
-      "line": 86,
+      "line": 87,
       "state": "match"
     },
     {
@@ -75,7 +75,7 @@
       "field": "totals.mentions.EVIDENCE_HOLD",
       "claimed": 1297,
       "actual": 1297,
-      "line": 87,
+      "line": 88,
       "state": "match"
     },
     {
@@ -84,7 +84,7 @@
       "field": "totals.mentionsByStatus.open",
       "claimed": 2346,
       "actual": 2346,
-      "line": 88,
+      "line": 89,
       "state": "match"
     },
     {
@@ -93,16 +93,16 @@
       "field": "totals.mentionsByStatus.closed",
       "claimed": 821,
       "actual": 821,
-      "line": 89,
+      "line": 90,
       "state": "match"
     },
     {
       "label": "строки без явного состояния (`unmarked`)",
       "artefact": "data/repository-holds-inventory-v1.json",
       "field": "totals.mentionsByStatus.unmarked",
-      "claimed": 5995,
-      "actual": 5995,
-      "line": 90,
+      "claimed": 5996,
+      "actual": 5996,
+      "line": 91,
       "state": "match"
     },
     {
@@ -111,7 +111,7 @@
       "field": "totals.canonicalFlagLineStatesRecordedAsBothOpenAndClosed",
       "claimed": 403,
       "actual": 403,
-      "line": 91,
+      "line": 92,
       "state": "match"
     },
     {
@@ -120,7 +120,7 @@
       "field": "totals.filesWithJsonHolds",
       "claimed": 38,
       "actual": 38,
-      "line": 92,
+      "line": 93,
       "state": "match"
     },
     {
@@ -129,7 +129,7 @@
       "field": "totals.byState.match",
       "claimed": 58,
       "actual": 58,
-      "line": 573,
+      "line": 574,
       "state": "match"
     },
     {
@@ -138,7 +138,7 @@
       "field": "totals.byState.stale",
       "claimed": 27,
       "actual": 27,
-      "line": 574,
+      "line": 575,
       "state": "match"
     },
     {
@@ -147,7 +147,7 @@
       "field": "totals.byState.external",
       "claimed": 258,
       "actual": 258,
-      "line": 575,
+      "line": 576,
       "state": "match"
     },
     {
@@ -156,7 +156,7 @@
       "field": "totals.byState.external-drive",
       "claimed": 920,
       "actual": 920,
-      "line": 576,
+      "line": 577,
       "state": "match"
     },
     {
@@ -165,7 +165,7 @@
       "field": "totals.byState.ambiguous",
       "claimed": 8,
       "actual": 8,
-      "line": 577,
+      "line": 578,
       "state": "match"
     },
     {
@@ -174,7 +174,7 @@
       "field": "totals.byState.unclaimed",
       "claimed": 514,
       "actual": 514,
-      "line": 578,
+      "line": 579,
       "state": "match"
     },
     {
@@ -183,7 +183,7 @@
       "field": "totals.byState.git-object-id",
       "claimed": 789,
       "actual": 789,
-      "line": 579,
+      "line": 580,
       "state": "match"
     },
     {
@@ -192,7 +192,7 @@
       "field": "totals.unclaimedByReason.labelled-no-path",
       "claimed": 205,
       "actual": 205,
-      "line": 805,
+      "line": 806,
       "state": "match"
     },
     {
@@ -201,7 +201,7 @@
       "field": "totals.unclaimedByReason.bare-hash",
       "claimed": 141,
       "actual": 141,
-      "line": 806,
+      "line": 807,
       "state": "match"
     },
     {
@@ -210,7 +210,7 @@
       "field": "totals.unclaimedByReason.short-digest-no-path",
       "claimed": 95,
       "actual": 95,
-      "line": 807,
+      "line": 808,
       "state": "match"
     },
     {
@@ -219,7 +219,7 @@
       "field": "totals.unclaimedByReason.artifact-not-in-tree",
       "claimed": 59,
       "actual": 59,
-      "line": 808,
+      "line": 809,
       "state": "match"
     },
     {
@@ -228,7 +228,7 @@
       "field": "totals.unclaimedByReason.media-segment",
       "claimed": 12,
       "actual": 12,
-      "line": 809,
+      "line": 810,
       "state": "match"
     },
     {
@@ -237,7 +237,7 @@
       "field": "totals.unclaimedByReason.corpus-digest",
       "claimed": 2,
       "actual": 2,
-      "line": 810,
+      "line": 811,
       "state": "match"
     },
     {
@@ -246,7 +246,7 @@
       "field": "totals.byState.identical-text",
       "claimed": 3,
       "actual": 3,
-      "line": 666,
+      "line": 667,
       "state": "match"
     },
     {
@@ -255,7 +255,7 @@
       "field": "totals.byState.near-identical",
       "claimed": 1,
       "actual": 1,
-      "line": 667,
+      "line": 668,
       "state": "match"
     },
     {
@@ -264,7 +264,7 @@
       "field": "totals.byState.shared-text",
       "claimed": 6,
       "actual": 6,
-      "line": 669,
+      "line": 670,
       "state": "match"
     },
     {
@@ -273,7 +273,7 @@
       "field": "totals.byState.superset",
       "claimed": 2,
       "actual": 2,
-      "line": 668,
+      "line": 669,
       "state": "match"
     },
     {
@@ -282,7 +282,7 @@
       "field": "totals.byState.current",
       "claimed": 9,
       "actual": 9,
-      "line": 710,
+      "line": 711,
       "state": "match"
     },
     {
@@ -291,7 +291,7 @@
       "field": "totals.byState.edited-after-stamp",
       "claimed": 6,
       "actual": 6,
-      "line": 711,
+      "line": 712,
       "state": "match"
     },
     {
@@ -300,7 +300,7 @@
       "field": "totals.byState.stamp-ahead-of-history",
       "claimed": 2,
       "actual": 2,
-      "line": 712,
+      "line": 713,
       "state": "match"
     },
     {
@@ -309,7 +309,7 @@
       "field": "scope.distinctDriveIds",
       "claimed": 8,
       "actual": 92,
-      "line": 45,
+      "line": 46,
       "supersededBy": "§19",
       "state": "superseded",
       "label": "drive-sample-in-confirmation"
@@ -320,7 +320,7 @@
       "field": "scope.distinctDriveIds",
       "claimed": 8,
       "actual": 92,
-      "line": 556,
+      "line": 557,
       "supersededBy": "§19",
       "state": "superseded",
       "label": "drive-sample-in-section-11"
@@ -331,7 +331,7 @@
       "field": "scope.documentsCompared",
       "claimed": 2385,
       "actual": 2385,
-      "line": 660,
+      "line": 661,
       "supersededBy": null,
       "state": "match",
       "label": "twins-documents-compared"
@@ -342,7 +342,7 @@
       "field": "scope.markdownFiles",
       "claimed": 2409,
       "actual": 2409,
-      "line": 660,
+      "line": 661,
       "supersededBy": null,
       "state": "match",
       "label": "twins-markdown-files"
@@ -353,7 +353,7 @@
       "field": "totals.fragments.total",
       "claimed": 36,
       "actual": 36,
-      "line": 303,
+      "line": 304,
       "supersededBy": null,
       "state": "match",
       "label": "fragment-links-in-section-11"
@@ -364,7 +364,7 @@
       "field": "totals.filesWithJsonHolds",
       "claimed": 38,
       "actual": 38,
-      "line": 319,
+      "line": 320,
       "supersededBy": null,
       "state": "match",
       "label": "json-holds-files"
@@ -375,7 +375,7 @@
       "field": "totals.jsonHoldsTotal",
       "claimed": 6146,
       "actual": 6146,
-      "line": 319,
+      "line": 320,
       "supersededBy": null,
       "state": "match",
       "label": "json-holds-values"
@@ -386,7 +386,7 @@
       "field": "counts.values",
       "claimed": 134,
       "actual": 134,
-      "line": 319,
+      "line": 320,
       "supersededBy": null,
       "state": "match",
       "label": "hold-vocabulary-values"
@@ -397,7 +397,7 @@
       "field": "counts.spellings",
       "claimed": 39,
       "actual": 39,
-      "line": 319,
+      "line": 320,
       "supersededBy": null,
       "state": "match",
       "label": "hold-vocabulary-spellings"
@@ -408,7 +408,7 @@
       "field": "totals.filesWithJsonHolds",
       "claimed": 38,
       "actual": 38,
-      "line": 184,
+      "line": 185,
       "supersededBy": null,
       "state": "match",
       "label": "holds-array-files-in-section-2"
@@ -441,7 +441,7 @@
       "field": "totals.stamped",
       "claimed": 17,
       "actual": 17,
-      "line": 706,
+      "line": 707,
       "supersededBy": null,
       "state": "match",
       "label": "stamps-verified"
@@ -452,7 +452,7 @@
       "field": "scope.markdownFiles",
       "claimed": 2409,
       "actual": 2409,
-      "line": 706,
+      "line": 707,
       "supersededBy": null,
       "state": "match",
       "label": "stamps-markdown-files"

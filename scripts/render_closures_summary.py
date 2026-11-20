@@ -45,6 +45,7 @@ METHOD_NAMES = {
     "unclaimed-reason-classification": "классификация строк",
     "relative-link-audit": "проверка относительных ссылок",
     "hold-vocabulary-mapping": "соответствие неканонических значений `holds`",
+    "ci-trigger-dependency-audit": "сверка триггеров CI с зависимостями гейтов",
     "pinned-github-locator-readback": "перечитывание закреплённых локаторов",
     "text-integrity-repair": "сверка склеек с историей",
     "register-claims-audit": "счётчики против артефактов",
@@ -52,6 +53,7 @@ METHOD_NAMES = {
     "read-only-link-audit": "read-only проверка ссылок",
     "relative-link-audit": "проверка относительных ссылок",
     "hold-vocabulary-mapping": "соответствие неканонических значений `holds`",
+    "ci-trigger-dependency-audit": "сверка триггеров CI с зависимостями гейтов",
     "space-restoration-backed-by-file-history": "пробелы по истории файла",
     "internal-digest-rehash": "пересчёт внутренних подписей",
 }
