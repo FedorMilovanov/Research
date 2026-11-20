@@ -10,7 +10,7 @@ This is not a claim that G3 occupied a politically neutral center. It is a claim
 
 ## 2011–2017 — theological conference before later coalition battles
 
-The official 2011 announcement frames the future G3 Conference around God, gospel, sound doctrine and God’s glory for pastors, evangelists, missionaries and laypeople. The early national-conference themes are likewise overwhelmingly theological/ecclesial:
+The official invitation to the January 2013 meeting (publication date unresolved; G3-S003) frames the future G3 Conference around God, gospel, sound doctrine and God’s glory for pastors, evangelists, missionaries and laypeople. The early national-conference themes are likewise overwhelmingly theological/ecclesial:
 
 - 2013 — `The Gospel: Message and Mission`;
 - 2014 — `The Doctrine of the Church`;

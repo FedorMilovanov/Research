@@ -4,29 +4,23 @@
 
 This file reconstructs the G3 Conference as a distinct institution before and during the G3 Ministries era. Attendance numbers are separated by source quality; registration and actual attendance must not be silently conflated.
 
-## Prehistory — the project is publicly visible in 2011
+## From announcement to first meeting
 
-An official G3 page dated **2011-08-10**, `https://g3min.org/hello-world/`, is now directly retrievable in search/crawl. Josh Buice announces a G3 Conference for January 2013, aimed at pastors, evangelists, missionaries and laypeople, and frames the purpose around God, gospel, sound doctrine and God's glory.
+The [archived announcement](https://web.archive.org/web/20230924211613/https://g3min.org/hello-world/) is a short invitation signed by Pastor Josh Buice, not a retrospective foundation story. In the first paragraph he invites pastors, evangelists, missionaries **and laypeople** to metro Atlanta in January 2013; in the second he says registration details will follow. It does not name a building, report attendance or spell out G3. Nor does the signature date the moment when Buice first had the idea. The [second capture](https://web.archive.org/web/20240418210604id_/https://g3min.org/hello-world/) carries the same text. Neither rendered body displays the publication date previously given here as **10 August 2011** (`G3-S003`, date on hold). The live route now serves Lumena.
 
-This closes an important chronology point:
-
-- public conception/announcement: **2011**;
-- first conference: **2013**;
-- Georgia nonprofit incorporation: **2019**.
-
-These are three different dates and must not be collapsed into a single `founded in 2013/2020` sentence without qualification.
+It is G3’s later [institutional history](https://web.archive.org/web/20230407084022id_/https://g3min.org/about/history/), paragraphs 1–3, that expands the initials as *Gospel, Grace, Glory* and locates the first conference in 2013 on the campus of Pray’s Mill Baptist Church in Douglasville, Georgia. [Tim Challies](https://www.challies.com/articles/you-me-and-g3/), writing on 23 May 2025, recalls not just a venue but a host: members of the congregation received the guests. The theological conference, the church that hosted it and the Georgia corporation formed on 6 June 2019 (filing 17370469) were not interchangeable institutions.
 
 ## Confirmed / strongly corroborated growth markers
 
 | Year | Approx. attendance | Evidence status | Notes |
 |---|---:|---|---|
-| 2013 | ~750 | CORROBORATED | Multiple participant/retrospective sources. Tim Challies says he spoke at the debut event and that the first couple were hosted in/by Pray’s Mill; later contemporary histories report ~750. Exact registration ledger still not acquired. |
+| 2013 | 750, retrospective | Organizer figure | [G3, History ¶3](https://web.archive.org/web/20230407084022id_/https://g3min.org/about/history/); [Jeff Crotts, opening paragraph](https://anchoragegrace.org/gospel-grace-and-glory/) repeats 750 but explicitly says **2021** was his first visit. The source of his 2013 number is unknown. Challies confirms the event, not this number. |
 | 2017 | 1,300+ for major Horn–White debate | PARTIAL | Debate audience, not necessarily whole-conference attendance. Do not use as total conference figure. |
-| 2020 | ~5,000–5,600 | CORROBORATED | Contemporary participant accounts place it around 5,000; later G3-linked histories give 5,600. Treat as range until original official attendance statement is pinned. |
-| 2021 | ~6,500 | VERIFIED_PRIMARY + CORROBORATED | FY2021 Form 990 program description says conference attendance increased to 6,500; independent participant histories agree. |
-| 2023 | ~8,200; reports range above 8,000 | CORROBORATED | Contemporaneous attendee Elizabeth Prata reports 8,200; other participant/exhibitor reports exceed 8,000. Exact official final attendance remains to be pinned. |
+| 2020 | 5,600, reported by G3 | Filer statement | [FY2020 Form 990, p. 2, III.4a](https://projects.propublica.org/nonprofits/organizations/842403597/202110919349301551/full). The website repeats the filer’s figure; neither supplies a counting method. |
+| 2021 | ~6,500 | VERIFIED_PRIMARY + CORROBORATED | FY2021 Form 990 program description says conference attendance increased to 6,500; Crotts estimated about 6,500 on his first visit, without giving a count method. |
+| 2023 | 8,300 (G3); 8,200 (Prata) | Different reports | See FY2023 III.4a below. Registrations before the event are a third measure. |
 
-## Phase 1 — 2013–2017: church-hosted annual conference
+## Phase 1 — 2013–2017: the annual conference outgrows the church campus
 
 ### 2013 — Gospel / message and mission
 
@@ -43,6 +37,8 @@ Tim Challies’ 2025 first-person retrospective says:
 - the first couple of conferences were hosted **in and by Pray’s Mill Baptist Church**.
 
 This is unusually useful participant evidence for both date and host-church character.
+
+A [schedule circulated on 25 January 2013](https://missionalevangelists.blogspot.com/2013/01/g3-conference.html) lists 24–26 January: David Miller opens, Tim Challies is listed for Friday on mission in a changing world, and Paul Washer closes Saturday on prayer. It is an unsigned relay of the programme, not a witness to each delivery.
 
 A surviving third-party media catalog also preserves a coherent 2013 G3 conference recording set, including sessions by Paul Washer, Donald Whitney, Voddie Baucham and Joel Beeke. It is useful corroboration for session identity but is not treated as the source of truth where the official G3 archive exists.
 
@@ -66,7 +62,7 @@ Official session archive:
 
 contains preaching on church, discipleship, ecclesiology, worship, mission and biblical preaching.
 
-A contemporary 2014 Founders Journal advertisement independently places the Jan. 23–25 conference at Pray's Mill Baptist Church and gives the theme as `The Church: From a Biblical Perspective`, providing a useful contemporaneous cross-check of host, dates and ecclesiological focus.
+A contemporary Founders Journal advertisement places the Jan. 23–25 conference at Pray's Mill Baptist Church and gives the theme as `The Church: From a Biblical Perspective`, consistent with the [Southern Equip advance notice](https://equip.sbts.edu/article/g3-conference-on-the-church/). These establish what was advertised, not independent observation of each appearance.
 
 ### 2015 — The Bible is the Word of God
 
@@ -76,17 +72,23 @@ Official review:
 
 The page explicitly says the year’s theme was **`The Bible is the Word of God`** and frames the conference around confidence in Scripture.
 
-### 2016 — Trinity
+#### From the 2014 pulpit to a church-planting appeal
 
-Official announcement:
+The Southern Equip notice advertises Conrad Mbewe; G3’s later [Project Africa appeal](https://web.archive.org/web/20160130071448id_/http://www.g3conference.com/?page_id=1960), opening paragraphs, actually recalls his preaching in 2014 and a subsequent visit to Kabwata Baptist Church in Lusaka. The appeal named Lackson Mudenda as the church planter in Sesheke. Mudenda’s [own account published in April 2014](https://sola5.org/testimonies-from-our-2014-pastoral-interns-kabwata-baptist-church/) describes his internship at Kabwata. His local pastoral work did not begin with the American fundraising campaign.
 
-`https://g3min.org/g3-2016/`
+The appeal distinguished three roles. Checks were to be made payable to **Pray’s Mill Baptist Church**. G3 said it would work with Mbewe and HeartCry to support the project. **Kabwata**, not the conference, was named as the church that ordained and sent Mudenda on 22 March 2015 and retained pastoral oversight. The estimate was $40,000 over eight years, through March 2023; the progress report in the January 2016 capture displayed 20%. These are a target and a fundraiser’s report, not receipts. The appeal predates the Georgia corporation: assigning the promised funds to its later Form 990 accounts would misidentify the payee. No recipient statement of disbursements or project closeout was located.
 
-explicitly says the 2016 conference concerns **the doctrine of the Trinity**. The official session archive likewise preserves sessions on Trinity in salvation, worship, missions, sanctification and apologetics.
+### 2016 — teaching the Trinity at Pray’s Mill
 
-### 2017 — Reformation 500
+The [ticket page](https://web.archive.org/web/20151125102857id_/http://www.g3conference.com/?espresso_events=g3-conference-2016) gives 21–23 January and the Douglasville address. On 25 January, [Josh Buice](https://web.archive.org/web/20160129072313id_/http://www.deliveredbygrace.com:80/reflections-on-the-2016-g3/) described what the congregation had hosted: thirteen sessions in three days, or sixteen over five days **if** the Wednesday preconference and the Sunday sessions were included. His account puts his own address on the Great Commission first and Tim Challies’s overview of the Trinity second. The point, as Buice explained it, was to bring a doctrine often associated with seminary study into preaching, worship and congregational life. [H.B. Charles Jr.](https://hbcharlesjr.com/resource-library/articles/saturday-shout-outs-g3-_____-ministry-links/) wrote on 23 January that he himself had spoken. His testimony confirms his participation; his link to Buice does not independently confirm Buice’s session or livestream totals.
 
-Official archive labels surviving sessions as **`Reformation 500`**. The exact full official schedule still needs a single pinned route, but archive sessions strongly establish the theme.
+There is no defensible attendance total here. In the November 2015 ticket capture, *Total Tickets Sold* reads 437 even in the row for an **additional meal plan**. On the [18 January 2016 homepage](https://web.archive.org/web/20160118114654id_/http://www.g3conference.com/) the top link says registration is full while the lower panel says open. Neither a ticket-system field before the event nor contrary labels on one page tell us how many people came.
+
+### 2017 — Reformation 500 at the convention center
+
+In 2016 the [organizer’s page](https://web.archive.org/web/20160118114654id_/http://www.g3conference.com/) named Pray’s Mill as the venue. For 19–21 January 2017 its [next registration page](https://web.archive.org/web/20161202212832id_/http://www.g3conference.com:80/?) named the Georgia International Convention Center. Both versions stated the same three-part mission; the change of building did not imply a new charter. The prospectus offered a theological bookstore and meetings with other ministries. A November 2016 [AFA Journal notice](https://afajournal.org/past-issues/2016/november/g3-conference-to-celebrate-reformation/) advertised the Reformation anniversary programme. Neither notice proves that every announced speaker appeared.
+
+The strongest evidence for **actual use** of the new venue comes from someone working there: in its [notes posted 31 January](https://ironsharpensironradio.com/2017/01/31/january-30-2017-show-with-interviews-from-the-2017-g3-conference-part-1-todd-friel-rich-pierce-and-doug-mcmasters/), Iron Sharpens Iron Radio identifies its booth in the center’s exhibition hall as the place where it interviewed Todd Friel, Rich Pierce and Doug McMasters for the 30 January programme. They are interviewees, not thereby three plenary speakers. The station described nearly 3,000 people; it gave no count method. This contemporary location evidence supports Buice’s later recollection of a 2017 move without depending on the [2025 interview transcript](https://thechristianworldview.org/wp-content/uploads/2025/01/2025-0118-Why-Jimmy-Carters-Faith-is-Lauded-While-the-Faith-of-Others-is-Loathed.pdf). Neither the reasons and terms of the venue booking nor an audio timecode for that recollection are established here.
 
 ## Phase 2 — 2018–2020: venue expansion and national scale
 
@@ -94,7 +96,9 @@ Official archive labels surviving sessions as **`Reformation 500`**. The exact f
 
 Official session pages label the conference **`Knowing God`**, while contemporary promotional material gives the fuller theme **`Knowing God: A Biblical Understanding of Discipleship`**.
 
-This is also the period in which G3's coalition begins to encounter the social-justice/CRT fault line; that ideological development should not be read backward into the 2013–2017 themes.
+An [exhibitor’s account](https://www.missionsfirstlove.org/united-states-blog/g3-conference-in-atlanta-georgia), published 30 January, distinguishes the Spanish-language gathering on Wednesday from the main meeting of **18–20 January 2018**. FirstLove describes moving its table from the registration foyer into the exhibition hall and using a six-minute presentation slot to introduce its work. It was describing its own discount and access, not G3’s terms for every exhibitor. This is one way the convention center connected ministries beyond the main-stage addresses.
+
+The June Dallas meeting was not another national conference. In [*History and Formation*](https://web.archive.org/web/20180907001508id_/https://statementonsocialjustice.com/), ¶¶1–3, Tom Ascol distinguishes fourteen men at the meeting on 19 June from later readers who suggested edits. He attributes the first draft to himself, initial edits to Buice, and dates publication to 4 September. The separate *Initial Signers* list is not a roll call. The preamble disclaims ecclesiastical authority. That intention can coexist with Challies’s later account that signing mattered to **his** invitation; neither document establishes a rule for every speaker, let alone a cause of the later crises.
 
 ### 2019 — The Mission of God
 
@@ -116,7 +120,7 @@ labels the conference `Worship` and includes sessions from John MacArthur, Voddi
 
 Tim Challies’ Jan. 20, 2020 first-person report says he had just spoken at the annual G3 Conference in Atlanta and participated in a Q&A with MacArthur, Washer, Baucham, Lawson and Buice. This is a useful independent contemporary anchor for the broad conservative-Reformed coalition at that point.
 
-By 2020, participant accounts put attendance around 5,000; later G3-linked historical material says 5,600. **Publication wording: roughly 5,000–5,600** until the original official attendance record is acquired.
+The distinction between conference and ministry was already visible in the return signed on 1 April 2021. In [Part III, lines 1 and 4a](https://projects.propublica.org/nonprofits/organizations/842403597/202110919349301551/full), G3 describes education through conferences **and online resources**, then reports online expansion alongside 5,600 attendees in January 2020. Earlier estimates around 5,000 are not a measured lower bound.
 
 A concrete 2020 wide-audience photograph is now source-pinned in `MEDIA_LEDGER.md` to a contemporaneous Church Works Media report, but remains `PERMISSION_REQUIRED`.
 
@@ -163,7 +167,9 @@ Contemporary sources report:
 - Elizabeth Prata, attending and photographing the event, reports **8,200 attendees**;
 - another exhibitor/participant report gives a figure above 8,000.
 
-Exact G3 final attendance remains `COARSE_LOCATOR_ONLY` until a primary event record is acquired. The prudent publication formulation is **roughly 8,200 / more than 8,000**, attributed to contemporaneous attendee reporting rather than to G3's own final count.
+G3 itself subsequently reported **8,300** in its [FY2023 Form 990](https://projects.propublica.org/nonprofits/organizations/842403597/202411429349300611/full), signed 21 May 2024, p. 2, Part III.4a. That supersedes the earlier conclusion here that no organizer number was available. Prata’s 8,200 remains her report; no entry-count reconciliation supports choosing either as an audited total.
+
+That same line puts the meeting in perspective. G3 reported four pastors’ workshops, the launch of G3 Plus, twelve books, one music recording and a network that had grown to 211 churches. Compare [Aniol’s announcement of 1 September 2021](https://religiousaffections.org/update/important-announcement/), first paragraph and paragraph beginning *With my move*: he had accepted an editorial and executive role, but described books, curricula and a journal as work ahead. He mentioned possibly moving some Religious Affections titles to G3 Press, not transferring a complete catalogue. The later return is evidence of reported output, not of title-by-title rights, book sales or the number of active subscribers.
 
 ### Political-theology dispute
 
@@ -177,6 +183,12 @@ An official G3 pre-conference schedule is especially important for ideological h
 This is evidence that by 2023 political theology had become an explicit G3 conference subject. Combined with Aniol’s published opposition to Christian Nationalism/theonomic prescriptions, it also blocks the opposite caricature that G3 simply became a Christian-nationalist institution.
 
 The resulting historical picture is not `theological conference → political conference`. A better model is **theological core + increasingly explicit culture/political boundary disputes layered around it**.
+
+## After the national meeting: continuity and limits, 2024–2026
+
+In 2024 the ticket desk was advertising different kinds of meetings. The [May registration](https://www.tickettailor.com/events/g3ministries/1010697) names a regional Reformation conference at Countryside Bible Church, 9–11 May. The [October publisher listing](https://www.tickettailor.com/events/g3ministries/1270768) offered exhibitors four passes at First Baptist Church of Mustang, Oklahoma, 3–5 October. These are organizer listings, not gate returns. In his [15 January 2025 newsletter](https://justinpeters.org/jpm-newsletter-2024/), under *Domestic Travels*, Justin Peters describes speaking at the Cessationist Conference. He supplies firsthand evidence of participation, not the reason for the Oklahoma venue. Neither meeting should extend the national-conference attendance series.
+
+The cancellation of the 2025 national conference was not the end of all G3 activity. The board accepted Buice’s resignation on 8 May; its 12 May statement announced the cancellation. In June G3 announced a renewed emphasis on the local church, and in July appointed Scott Aniol president. Only in August 2026, in the separate dispute over intervention in the discipline process at FBC Lindale, did the Church Network announce its dissolution and the ministry announce a wind-down. The [timeline](TIMELINE.md) distinguishes the participants’ reproduced 25 August statement from later reports. The [subscriber letter](PRIMARY_SOURCE_G3PLUS_SUBSCRIBER_EMAIL_2026-08-27.md) described a transition still in progress. The [Georgia register](Q005_Q006_GEORGIA_FILING_DELTA_2026-11-15.md) later recorded a change of name effective 28 October, not a filing dissolving the corporation or an instrument conveying the publishing rights. In [*Our leadership*](https://lumenaministries.com/about/), read 20 November, Lumena identifies its president as Laramie Minga, formerly G3’s director of operations. The endorsements on that page anticipate carrying content forward. Neither the biography nor the endorsements identify a counterparty, catalogue of assets, or closing terms.
 
 ## Theme sequence — official/primary anchors now substantially stronger
 
@@ -197,7 +209,7 @@ The thematic record demonstrates a primarily theological/ecclesial national-conf
 
 The local-church principle clearly predates the later crises:
 
-- the 2011 announcement addresses pastors, missionaries, evangelists and lay church members;
+- the undated archived announcement addresses pastors, missionaries, evangelists and lay church members;
 - 2014 explicitly rejects church-growth technique as the answer and centers Scripture;
 - early events were physically hosted in/by Pray’s Mill according to a long-term participant;
 - later G3 material repeatedly describes its aim as equipping local churches.
@@ -212,7 +224,7 @@ Secondary histories often say G3 `became` or was `formed as` a 501(c)(3) ministr
 
 Article wording must therefore distinguish:
 
-- 2011 public conference conception;
+- the invitation to January 2013 (publication date unresolved);
 - 2013 first conference;
 - 2019 legal nonprofit incorporation;
 - 2020-era operational/institutional transition often remembered by participants/secondary histories.
@@ -226,5 +238,5 @@ Do not replace the government filing date with the simplified 2020 retrospective
 3. Marketing phrases such as `one of the largest` are context, not independently ranked claims.
 4. Conference growth must not be treated as proof of theological correctness or institutional health.
 5. Later scandal must not be projected backward as proof that early conference ministry was fraudulent.
-6. Official G3 pages currently visible through search/crawl may be stale post-shutdown snapshots; use them as dated historical objects, not evidence of current operations.
+6. The old domain can serve Lumena. Use an identified capture or attributed contemporary document; neither a successful response nor a snippet authenticates an old programme.
 7. A predominantly theological national-conference program does not prove the wider G3 media ecosystem was politically neutral.

@@ -5,21 +5,23 @@ Dates below are event dates where established; filing/publication/archive dates 
 
 ## 2011–2012 — conception
 
-- **2011-08-10 (working date):** Josh Buice publicly announces/plans what becomes the G3 Conference for January 2013. Early framing centers pastors, missionaries, evangelists, church members, sound doctrine and the gospel. `G3-S003`.
-- **2012:** conference promotion develops around speakers including Paul Washer. Attendance capacity was advertised around 1,000. `G3-S003` / early G3 pages.
+- **Undated invitation (2011-08-10 is a working attribution):** [archived text](https://web.archive.org/web/20230924211613/https://g3min.org/hello-world/) signed by Josh Buice announces January 2013. Capture is from 2023, not 2011. Early framing centers pastors, missionaries, evangelists, church members, sound doctrine and the gospel. `G3-S003`.
+- **2012:** conference promotion develops around speakers including Paul Washer. An advertised limit of around 1,000 is a separate promotional lead, not a figure in `G3-S003` or an attendance count; original registration object needed.
 - **2012-era media:** G3’s site already carries explicit cultural/political commentary touching presidential voting, abortion, marriage and Christian political conviction. Later surviving G3 pieces from 2015–2016 continue direct discussion of race/social justice and presidential politics. This is an important control: **the early conference program was strongly theological, but the broader G3 media surface was not apolitical before 2018**.
 
 ## 2013–2017 — early conference era
 
-- **2013:** first G3 Conference. Theme: `The Gospel: Message and Mission`. Early speaker ecosystem includes major conservative/Reformed evangelical figures. `G3-S004`.
-- **2014-01-23 to 2014-01-25:** conference at Pray’s Mill emphasizes the church from a biblical perspective: preaching, discipleship, discipline, polity and mission. Official G3 material rejects dependence on the `latest church growth techniques`; a contemporaneous Founders Journal advertisement independently confirms Pray’s Mill, dates and ecclesiological theme. `G3-S004`.
+- **2013-01-24 to 2013-01-26 (circulated schedule):** [programme relayed on 25 January](https://missionalevangelists.blogspot.com/2013/01/g3-conference.html); the first meeting itself is attested by G3 and Challies. Theme: `The Gospel: Message and Mission`. Early speaker ecosystem includes major conservative/Reformed evangelical figures. `G3-S004`.
+- **2014-01-23 to 2014-01-25:** conference at Pray’s Mill emphasizes the church from a biblical perspective: preaching, discipleship, discipline, polity and mission. Official G3 material rejects dependence on the `latest church growth techniques`; a contemporaneous Founders Journal advertisement names the venue, dates and theme. Like the Southern Equip notice, it records a programme, not each actual appearance. `G3-S004`.
 - **2015:** `The Bible is the Word of God`; strong Scripture/inerrancy/sufficiency emphasis. `G3-S004`.
+- **2015-03-22 (as reported by G3):** the [Project Africa appeal](https://web.archive.org/web/20160130071448id_/http://www.g3conference.com/?page_id=1960) names Kabwata as sending church for Lackson Mudenda in Sesheke, and Pray’s Mill as check payee. Eight-year funding target, not an audited transfer.
 - **2015–2016 media:** G3 hosts explicit race/social-justice and presidential-politics commentary alongside its theological conference corpus. These articles are evidence of the broader media ecosystem, not evidence that the national conference theme itself had become political.
-- **2016:** Trinity conference. `G3-S004`.
-- **2017:** `Reformation 500`; strong local-church and ordinary-pastor emphasis. Voddie Baucham and Paul Washer warnings against conference-celebrity displacement of the local church are important later context. Secondary exact-locator work still needed before quoting.
+- **2016-01-21 to 2016-01-23:** [ticket dates](https://web.archive.org/web/20151125102857id_/http://www.g3conference.com/?espresso_events=g3-conference-2016) for the main Trinity meeting on the Pray’s Mill campus. The [host’s account, published 25 January](https://web.archive.org/web/20160129072313id_/http://www.deliveredbygrace.com:80/reflections-on-the-2016-g3/), distinguishes the three main days from Wednesday and Sunday sessions.
+- **2017-01-19 to 2017-01-21:** `Reformation 500` scheduled at the Georgia International Convention Center; [on-site broadcaster’s account](https://ironsharpensironradio.com/2017/01/31/january-30-2017-show-with-interviews-from-the-2017-g3-conference-part-1-todd-friel-rich-pierce-and-doug-mcmasters/) confirms the exhibition hall was used; strong local-church and ordinary-pastor emphasis. Voddie Baucham and Paul Washer warnings against conference-celebrity displacement of the local church are important later context. Secondary exact-locator work still needed before quoting.
 
 ## 2018–2020 — social-justice boundary formation + institutionalization
 
+- **2018-01-17 / 18–20:** [FirstLove’s report published 30 January](https://www.missionsfirstlove.org/united-states-blog/g3-conference-in-atlanta-georgia) distinguishes the Wednesday Spanish-language gathering from the Thursday–Saturday main event at the same center.
 - **2018-06-19:** official Statement history says **14 men** meet at Herb’s House in Dallas. Josh Buice organizes the meeting; Michael O’Fallon and Phil Johnson help facilitate it; the group decides to formulate a theological statement concerning developments under the `Social Justice` banner. `G3-S005` / PASS4 candidate.
 - **2018-08-31:** a contemporaneous *Iron Sharpens Iron* program identifies Buice as Pray’s Mill pastor and founder/director of the G3 Conference while interviewing him on `What Is Social Justice?`. Participant chronology only; not by itself an institutional policy document.
 - **2018-09-04:** Statement on Social Justice and the Gospel is published. It becomes increasingly important within the G3 coalition. `G3-S005`.
@@ -28,7 +30,7 @@ Dates below are event dates where established; filing/publication/archive dates 
 - **2019-08:** IRS tax-exempt recognition year/month recorded by IRS-derived data. `G3-S002`.
 - **2019–2020:** early corporate officer records are founder-centric; Josh Buice appears as CEO/CFO in state registration material. Exact annual registration ledger to be completed.
 - **2019:** national conference centers `The Mission of God`. `G3-S004`.
-- **2020:** national conference centers `Worship`; contemporary participant evidence places the event around 5,000 attendees while later G3-linked history gives about 5,600. Publication wording remains a range pending an official final count. `G3-S004`.
+- **2020-01:** national conference on worship. G3 reported 5,600 attendees in its [FY2020 return, III.4a](https://projects.propublica.org/nonprofits/organizations/842403597/202110919349301551/full), submitted 2021-04-01; not a registration audit. `G3-S004`, `G3-S158`.
 
 ## 2021–2022 — ecosystem buildout + regional/local-church layer
 
@@ -50,6 +52,7 @@ Dates below are event dates where established; filing/publication/archive dates 
 - **2023-06:** Michael O’Fallon resigns from the G3 board during the wider conservative-right conflict over Christian nationalism. His own reproduced statement describes the departure as his resignation; exact internal causation remains unresolved.
 - **FY2023 financial reversal:** revenue **$1,705,689** remains near FY2022, while expenses rise to **$2,071,986**, producing a **$366,297 deficit**. Raw Part IX reconciles the **+$1,061,800** expense increase exactly: conferences/meetings **+$817,283**, advertising **+$246,511**, wages only **+$3,664**, payroll taxes **+$41,728**. Both FY2022 and FY2023 classify all functional expenses as program services and report zero management/general and fundraising. `G3-S002`.
 - **FY2023 property disposition:** the raw return reports an `Other` asset sale with **$550,000 gross proceeds**, **$590,000 basis** and **$40,000 loss**; the prior $590,000 land/building accounting object disappears while remaining equipment persists. A new **$416,227 notes/loans receivable** appears. The sale is primary-closed at filing/accounting-object level; buyer, parcel and receivable/note linkage remain open. `G3-S002`.
+- **2024-05-09/11 and 2024-10-03/05:** Reformation regional registration and Cessationist publisher listing, respectively; see [conference history](CONFERENCE_HISTORY.md#after-the-national-meeting-continuity-and-limits-20242026) for the separate participant testimony.
 - **FY2024:** revenue **$1,212,253**; expenses **$1,401,429**; deficit **$189,176**; net assets **$854,674**. `G3-S002`.
 - **FY2024 Schedule L:** raw filing discloses `KARIS L BUICE`, relationship `Daughter of Board Member`, transaction `SALARY`, amount **$30,409**, revenue sharing false. The filing reports `EngagedInExcessBenefitTransInd=false`. This is a disclosure fact, not proof of self-dealing or wrongdoing. `G3-S002`.
 - **2024:** filing describes substantial ongoing activity: workshops, conferences, publishing and Church Network activity. Financial weakening therefore should not be described as institutional inactivity.
@@ -97,6 +100,8 @@ Dates below are event dates where established; filing/publication/archive dates 
 - **2026-10-30 and 2026-11-05:** two Amended Annual Registrations are filed on the same record (`32260917`, `32269080`). Contents not acquired. `G3-S144`.
 - **2026-11-15 registry observation:** the filing history lists eight filings and no dissolution-type filing. The record shows the rename and no dissolution-type row on this date; the official current status field was not re-read, so this is not a reading of the entity's present status. `G3-S144`.
 - **2026-11-15 asset state:** the G3 root notice states that G3 Plus and G3 Press `are continuing in a new form, under new leadership` with details to follow once the transition is complete (`G3-S142`). App-store seller/developer identity, G3+ Terms of Service and the G3 Press storefront still carry G3 identity. No acquired object names a transferee, a closing or terms, and nothing acquired connects the name `Lumena Ministries` to G3 Plus or G3 Press. A pre-launch placeholder titled `Lumena Ministries` exists at `lumenaministries.com`; its operator is unidentified and its link to the Georgia corporation is unverified (`G3-S143`).
+
+- **2026-11-20 observation:** The two Georgia index tables still show the same name-change row and eight filings. Lumena’s undated [leadership biography](https://lumenaministries.com/about/) identifies Laramie Minga as president and dates his earlier G3 operations role to 2024. This updates the web observation, not Q006 asset title.
 
 ## Historical interpretation — HOLD
 

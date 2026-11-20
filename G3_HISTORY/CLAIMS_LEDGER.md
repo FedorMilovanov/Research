@@ -6,8 +6,8 @@
 
 | ID | Claim | State | Best evidence | Publication note |
 |---|---|---|---|---|
-| G3-C001 | Public planning for G3 predates the 2013 first conference and is documented in Aug. 2011. | VERIFIED_PRIMARY | G3-S003 | Safe once exact page date/url pinned. |
-| G3-C002 | The first G3 Conference took place in 2013 at/through Pray’s Mill Baptist Church. | CORROBORATED | G3-S004 + contemporary/participant sources | Strong. |
+| G3-C001 | Buice announced a conference planned for January 2013; the attribution to August 2011 remains unverified. | PARTIALLY_VERIFIED | G3-S003 | Supersedes VERIFIED_PRIMARY for the compound claim: exact text locator, no visible original publication date. LOCATOR_HOLD on date; PUBLICATION_HOLD. |
+| G3-C002 | The first G3 Conference took place in 2013 at/through Pray’s Mill Baptist Church. | CORROBORATED | G3-S006 (participant) + G3-S156 (institutional retrospective) | Both describe the church venue; neither is an attendance ledger. |
 | G3-C003 | Early conference programming was primarily theological/ecclesial rather than principally partisan-political. | CORROBORATED | G3-S004 conference archives | Interpretive but strongly grounded in program content. |
 | G3-C004 | Culture/political polemics were nevertheless present on G3’s media site as early as 2012. | PARTIALLY_VERIFIED | archived/current G3 article pages | Need article-by-article ledger before broad quantification. |
 | G3-C005 | G3’s legal nonprofit corporation was formed in Georgia on 2019-06-06. | VERIFIED_PRIMARY | G3-S001 | Quote-safe with exact government locator. |
@@ -90,6 +90,18 @@ To avoid collision with PASS3–PASS15 provisional claim IDs, the following new 
 - 2026-11-15, G3 root notice (G3-S142): G3's own text states that G3 Plus and G3 Press `are continuing in a new form, under new leadership` — **VERIFIED_PRIMARY** as a first-party representation only, not as proof of transferee, closing or terms.
 
 The financial/property facts are canonical in `FINANCIAL_FORENSICS_2023.md` and `OPEN_QUESTIONS.md` Q006A. The Living Heritage separation/transferee split is canonical in `ASSET_TRANSFER_FORENSICS.md`, `OPEN_QUESTIONS.md` Q006 and `SOURCE_LEDGER.md`. The Nov. 15 registry and root-notice facts are canonical in `Q005_Q006_GEORGIA_FILING_DELTA_2026-11-15.md`. These remain unnumbered here pending the next non-colliding claim-ID allocation pass.
+
+## Conference chronology: contested readings (20 November 2026)
+
+| Question | Competing readings and source limits | Working decision pending independent review |
+|---|---|---|
+| `G3-C001`: what does the archive actually date? | Earlier ledger: 10 Aug 2011. S003, captures in 2023 and 2024: signed prospective text, January 2013 target, no visible dateline. Neither date of capture is the publication date. | Preserve 2011 as a lead, not a verified day or date of first conception. STOP_DISCOVERY on these two replays; reopen on contemporaneous dated copy or verifiable original metadata. |
+| How many people came? | S156 retrospective versus the apparent corroboration of S157 (not present in 2013); S158 filing versus later repetition by the same institution. For 2023 the attendee’s 8,200 differs from the filer’s 8,300. Registrations before the meeting measure something else. | Attribute by speaker and year. No measured range, independently audited total or explanation of the 100-person difference. Reopen on count method and dated gate record. |
+| Was signing Dallas a rule for all speakers? | S005 preamble disclaims ecclesiastical authority; S006 describes one speaker’s invitation. The strongest alternative to a universal rule is a discretionary decision about this speaker; the statement is neither a conference policy nor a denial that the exchange took place. | Report the remembered condition for Challies only. Require a dated policy or invitation correspondence for any wider conclusion. |
+| Was the 2016 Trinity conference sold out? | The [18 January homepage](https://web.archive.org/web/20160118114654id_/http://www.g3conference.com/) says both full and open. The [25 November ticket object](https://web.archive.org/web/20151125102857id_/http://www.g3conference.com/?espresso_events=g3-conference-2016) shows 437 under *Total Tickets Sold*, repeated across ticket types, even a meal add-on. | Neither a final registration ledger nor a gate count. EVIDENCE_HOLD on sold-out status, capacity and actual attendance. This conflict concerns 2016, not Buice’s recollection of 2013. |
+| Did G3 send the Sesheke pastor or pay $40,000? | G3 calls this its project, but the [appeal](https://web.archive.org/web/20160130071448id_/http://www.g3conference.com/?page_id=1960) names Kabwata as sending church, Pray’s Mill as check payee and $40,000 as an estimate. [Mudenda’s 2014 account](https://sola5.org/testimonies-from-our-2014-pastoral-interns-kabwata-baptist-church/) concerns training, not later transfers. | Describe a fundraising partnership. Two targeted partner/recipient searches found no disbursement or closeout record. STOP_DISCOVERY on those routes; recipient report or account reconciliation required for payment/completion. |
+
+[Requests to media and investigative reviewers; response to the earlier objections](https://github.com/FedorMilovanov/Research/pull/582#issuecomment-7052013731). Pending, not countersigned. All G3-HIST-PUB-01…09 remain on PUBLICATION_HOLD; no change to the signed crisis set.
 
 ## Rule for the future article
 
