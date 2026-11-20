@@ -280,6 +280,6 @@ class CommittedReportTests(unittest.TestCase):
         fresh = arl.scan(root, exceptions)
         self.assertEqual(json.loads(report.read_text(encoding="utf-8")), fresh,
                          "data/relative-links-audit-2026-11-18.json no longer describes this tree; "
-                         "re-run the audit to -o and regenerate §8")
+                         "re-run the audit to -o and regenerate §8 (если дерево уехало — merge main и переснимите; см. §33.5)")
 if __name__ == "__main__":
     unittest.main()

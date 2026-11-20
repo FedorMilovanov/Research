@@ -154,4 +154,4 @@ class CommittedInventoryTests(unittest.TestCase):
         committed = json.loads((root / "data" / "repository-holds-inventory-v1.json").read_text(encoding="utf-8"))
         self.assertEqual(scan(root), committed,
                          "re-run python3 -B scripts/audit_repository_holds.py -o "
-                         "data/repository-holds-inventory-v1.json and regenerate §2/§2.1")
+                         "data/repository-holds-inventory-v1.json and regenerate §2/§2.1 (если дерево уехало — merge main и переснимите; см. §33.5)")

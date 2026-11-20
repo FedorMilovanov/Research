@@ -76,8 +76,8 @@
     ]
   },
   "totals": {
-    "filesScanned": 3120,
-    "filesWithMentions": 911,
+    "filesScanned": 3121,
+    "filesWithMentions": 912,
     "mentions": {
       "ARCHIVE_HOLD": 1424,
       "BLOCKING-HOLD": 16,
@@ -100,14 +100,14 @@
       "LIVE-READBACK-HOLD": 4,
       "LOCATOR_HOLD": 1977,
       "PAGE-IMAGE-HOLD": 14,
-      "PUBLICATION_HOLD": 2615,
+      "PUBLICATION_HOLD": 2616,
       "RIGHTS_HOLD": 1460,
       "VERSION-HOLD": 23
     },
     "mentionsByStatus": {
       "closed": 821,
       "open": 2348,
-      "unmarked": 6007
+      "unmarked": 6008
     },
     "canonicalFlagLineStatesRecordedAsBothOpenAndClosed": 403,
     "filesWithJsonHolds": 38,
@@ -420,18 +420,18 @@
       }
     },
     "БИОГРАФИИ": {
-      "files": 56,
+      "files": 57,
       "mentions": {
         "ARCHIVE_HOLD": 299,
         "EVIDENCE_HOLD": 75,
         "LOCATOR_HOLD": 426,
-        "PUBLICATION_HOLD": 356,
+        "PUBLICATION_HOLD": 357,
         "RIGHTS_HOLD": 213
       },
       "status": {
         "closed": 107,
         "open": 390,
-        "unmarked": 917
+        "unmarked": 918
       }
     },
     "ИСКУПЛЕНИЕ": {
@@ -28404,6 +28404,16 @@
       "status": {
         "open": 1,
         "unmarked": 3
+      }
+    },
+    {
+      "path": "БИОГРАФИИ/Стивен Чарнок/reader-preview/README.md",
+      "corpus": "БИОГРАФИИ",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
       }
     },
     {

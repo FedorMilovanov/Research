@@ -133,13 +133,23 @@ class ProseClaimTests(unittest.TestCase):
     def report(self) -> dict:
         return claims.audit(self.fx.root)
 
+    def install(self, claim: dict) -> None:
+        self._saved = claims.PROSE_CLAIMS
+        claims.PROSE_CLAIMS = [claim]
+
     def test_matching_prose_claim(self) -> None:
-        text = "Сравнено **3** документов (из 4 Markdown; отсечены файлы короче 200 слов)."
-        self.assertEqual(self.prose(text)["twins-documents-compared"]["state"], "match")
+        self.install({"id": "probe", "pattern": r"Сравнено \*\*(?P<n>[\d\s\u2009]+)\*\* документов",
+                      "artefact": claims.TWINS, "field": "scope.documentsCompared"})
+        self.addCleanup(setattr, claims, "PROSE_CLAIMS", self._saved)
+        text = "Сравнено **3** документов."
+        self.assertEqual(self.prose(text)["probe"]["state"], "match")
 
     def test_stale_prose_claim(self) -> None:
-        text = "Сравнено **9** документов (из 4 Markdown; отсечены файлы короче 200 слов)."
-        entry = self.prose(text)["twins-documents-compared"]
+        self.install({"id": "probe", "pattern": r"Сравнено \*\*(?P<n>[\d\s\u2009]+)\*\* документов",
+                      "artefact": claims.TWINS, "field": "scope.documentsCompared"})
+        self.addCleanup(setattr, claims, "PROSE_CLAIMS", self._saved)
+        text = "Сравнено **9** документов."
+        entry = self.prose(text)["probe"]
         self.assertEqual((entry["state"], entry["claimed"], entry["actual"]), ("stale", 9, 3))
 
     def test_superseded_claim_points_forward(self) -> None:

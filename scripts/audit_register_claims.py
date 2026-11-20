@@ -90,6 +90,11 @@ CLAIMS: list[tuple[str, str, str]] = [
     ("`edited-after-stamp` — файл менялся после своей даты", STAMPS, "totals.byState.edited-after-stamp"),
     ("`stamp-ahead-of-history` — дата позже любого коммита", STAMPS,
      "totals.byState.stamp-ahead-of-history"),
+    # Scopes that used to live in prose and had to be re-typed at every merge: they are
+    # table rows now, generated from the reports like every other number here.
+    ("сравнено документов", TWINS, "scope.documentsCompared"),
+    ("документов в корпусе", TWINS, "scope.markdownFiles"),
+    ("документов со своей датой", STAMPS, "totals.stamped"),
 ]
 
 # Three or more cells: the register also has tables where the number sits in the
@@ -179,12 +184,6 @@ PROSE_CLAIMS: list[dict] = [
     {"id": "drive-sample-in-section-11",
      "pattern": r"Проверено (?P<n>\d+) из \d+ объектов",
      "artefact": LEDGER, "field": "scope.distinctDriveIds", "supersededBy": "§19"},
-    {"id": "twins-documents-compared",
-     "pattern": r"Сравнено \*\*(?P<n>[\d\s\u2009]+)\*\* документов",
-     "artefact": TWINS, "field": "scope.documentsCompared"},
-    {"id": "twins-markdown-files",
-     "pattern": r"документов \(из (?P<n>[\d\s\u2009]+) Markdown",
-     "artefact": TWINS, "field": "scope.markdownFiles"},
     {"id": "fragment-links-in-section-11",
      "pattern": r"Ссылок с фрагментом в репозитории \*\*(?P<n>[\d\s\u2009]+)\*\*",
      "artefact": LINKS, "field": "totals.fragments.total"},
@@ -235,12 +234,6 @@ PROSE_CLAIMS: list[dict] = [
     {"id": "repairs-blocked",
      "pattern": r"(?P<n>\d+) остаются под квитанциями",
      "artefact": REPAIRS, "field": "totals.blockedTokens"},
-    {"id": "stamps-verified",
-     "pattern": r"Проверено: \*\*(?P<n>\d+)\*\* документов из",
-     "artefact": STAMPS, "field": "totals.stamped"},
-    {"id": "stamps-markdown-files",
-     "pattern": r"документов из (?P<n>[\d\s\u2009]+) ставят дату",
-     "artefact": STAMPS, "field": "scope.markdownFiles"},
 ]
 
 
@@ -333,7 +326,13 @@ TWINS_STATES = [
 
 def render_twins_table(twins: dict) -> str:
     by_state = _pick(twins, "totals.byState") or {}
-    lines = [TWINS_BEGIN, "| Состояние | Пар | Что это |", "|---|---:|---|"]
+    lines = [TWINS_BEGIN, "| Показатель | Значение |", "|---|---:|"]
+    for label, field in (("сравнено документов", "scope.documentsCompared"),
+                         ("документов в корпусе", "scope.markdownFiles")):
+        value = _pick(twins, field)
+        if isinstance(value, int):
+            lines.append(f"| {label} | {fmt(value)} |")
+    lines += ["", "| Состояние | Пар | Что это |", "|---|---:|---|"]
     for state, description in TWINS_STATES:
         if state in by_state:
             lines.append(f"| `{state}` | {fmt(by_state[state])} | {description} |")
@@ -366,7 +365,13 @@ STAMPS_STATES = [
 def render_stamps_table(stamps: dict) -> str:
     """States and the documents behind the interesting one, both read from the report."""
     by_state = _pick(stamps, "totals.byState") or {}
-    lines = [STAMPS_BEGIN, "| Состояние | Документов |", "|---|---:|"]
+    lines = [STAMPS_BEGIN, "| Показатель | Значение |", "|---|---:|"]
+    for label, field in (("документов со своей датой", "totals.stamped"),
+                         ("документов в корпусе", "scope.markdownFiles")):
+        value = _pick(stamps, field)
+        if isinstance(value, int):
+            lines.append(f"| {label} | {fmt(value)} |")
+    lines += ["", "| Состояние | Документов |", "|---|---:|"]
     for state, description in STAMPS_STATES:
         lines.append(f"| {description} | {fmt(by_state.get(state, 0))} |")
     rows = [f for f in stamps.get("findings", []) if f.get("state") == "edited-after-stamp"]

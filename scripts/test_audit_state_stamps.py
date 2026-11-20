@@ -115,7 +115,8 @@ class CommittedStampReportTests(unittest.TestCase):
         committed = json.loads((root / "data" / "state-stamps-2026-11-18.json").read_text(encoding="utf-8"))
         recorded = committed["scope"]["today"]
         fresh = stamps.audit(root, today=datetime.date.fromisoformat(recorded))
-        self.assertEqual(fresh, committed, "regenerate with --today " + recorded)
+        self.assertEqual(fresh, committed,
+                         "regenerate with --today " + recorded + " (если дерево уехало — merge main и переснимите; см. §33.5)")
 
     def test_the_command_line_honours_today(self) -> None:
         # The two tests above call audit() directly, so they would stay green if main()
