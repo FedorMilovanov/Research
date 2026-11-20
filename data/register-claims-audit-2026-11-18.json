@@ -3,19 +3,21 @@
   "authorityId": "REGISTER-CLAIMS-AUDIT-2026-11-18",
   "register": "docs/research/HOLDS_REGISTER_2026-11-18.md",
   "scope": {
-    "declaredClaims": 51,
-    "proseClaims": 19,
+    "declaredClaims": 52,
+    "proseClaims": 20,
     "numericTableRows": 151
   },
   "totals": {
-    "match": 50,
+    "match": 51,
     "superseded": 1
   },
   "sliceStates": {
     "inventory": "match",
     "corpus": "match",
     "links": "match",
-    "pinned": "match"
+    "pinned": "match",
+    "twins": "match",
+    "stamps": "match"
   },
   "findings": [
     {
@@ -24,7 +26,7 @@
       "field": "totals.filesScanned",
       "claimed": 3118,
       "actual": 3118,
-      "line": 85,
+      "line": 86,
       "state": "match"
     },
     {
@@ -33,7 +35,7 @@
       "field": "totals.filesWithMentions",
       "claimed": 909,
       "actual": 909,
-      "line": 86,
+      "line": 87,
       "state": "match"
     },
     {
@@ -42,7 +44,7 @@
       "field": "totals.mentions.PUBLICATION_HOLD",
       "claimed": 2611,
       "actual": 2611,
-      "line": 87,
+      "line": 88,
       "state": "match"
     },
     {
@@ -51,7 +53,7 @@
       "field": "totals.mentions.LOCATOR_HOLD",
       "claimed": 1976,
       "actual": 1976,
-      "line": 88,
+      "line": 89,
       "state": "match"
     },
     {
@@ -60,7 +62,7 @@
       "field": "totals.mentions.RIGHTS_HOLD",
       "claimed": 1460,
       "actual": 1460,
-      "line": 89,
+      "line": 90,
       "state": "match"
     },
     {
@@ -69,7 +71,7 @@
       "field": "totals.mentions.ARCHIVE_HOLD",
       "claimed": 1416,
       "actual": 1416,
-      "line": 90,
+      "line": 91,
       "state": "match"
     },
     {
@@ -78,7 +80,7 @@
       "field": "totals.mentions.EVIDENCE_HOLD",
       "claimed": 1297,
       "actual": 1297,
-      "line": 91,
+      "line": 92,
       "state": "match"
     },
     {
@@ -87,7 +89,7 @@
       "field": "totals.mentionsByStatus.open",
       "claimed": 2346,
       "actual": 2346,
-      "line": 92,
+      "line": 93,
       "state": "match"
     },
     {
@@ -96,7 +98,7 @@
       "field": "totals.mentionsByStatus.closed",
       "claimed": 821,
       "actual": 821,
-      "line": 93,
+      "line": 94,
       "state": "match"
     },
     {
@@ -105,7 +107,7 @@
       "field": "totals.mentionsByStatus.unmarked",
       "claimed": 5996,
       "actual": 5996,
-      "line": 94,
+      "line": 95,
       "state": "match"
     },
     {
@@ -114,7 +116,7 @@
       "field": "totals.canonicalFlagLineStatesRecordedAsBothOpenAndClosed",
       "claimed": 403,
       "actual": 403,
-      "line": 95,
+      "line": 96,
       "state": "match"
     },
     {
@@ -123,7 +125,7 @@
       "field": "totals.filesWithJsonHolds",
       "claimed": 38,
       "actual": 38,
-      "line": 96,
+      "line": 97,
       "state": "match"
     },
     {
@@ -132,7 +134,7 @@
       "field": "totals.byState.match",
       "claimed": 58,
       "actual": 58,
-      "line": 591,
+      "line": 592,
       "state": "match"
     },
     {
@@ -141,7 +143,7 @@
       "field": "totals.byState.stale",
       "claimed": 27,
       "actual": 27,
-      "line": 592,
+      "line": 593,
       "state": "match"
     },
     {
@@ -150,7 +152,7 @@
       "field": "totals.byState.external",
       "claimed": 258,
       "actual": 258,
-      "line": 593,
+      "line": 594,
       "state": "match"
     },
     {
@@ -159,7 +161,7 @@
       "field": "totals.byState.external-drive",
       "claimed": 920,
       "actual": 920,
-      "line": 594,
+      "line": 595,
       "state": "match"
     },
     {
@@ -168,7 +170,7 @@
       "field": "totals.byState.ambiguous",
       "claimed": 8,
       "actual": 8,
-      "line": 595,
+      "line": 596,
       "state": "match"
     },
     {
@@ -177,7 +179,7 @@
       "field": "totals.byState.unclaimed",
       "claimed": 514,
       "actual": 514,
-      "line": 596,
+      "line": 597,
       "state": "match"
     },
     {
@@ -186,7 +188,7 @@
       "field": "totals.byState.git-object-id",
       "claimed": 789,
       "actual": 789,
-      "line": 597,
+      "line": 598,
       "state": "match"
     },
     {
@@ -195,7 +197,7 @@
       "field": "totals.unclaimedByReason.labelled-no-path",
       "claimed": 205,
       "actual": 205,
-      "line": 823,
+      "line": 840,
       "state": "match"
     },
     {
@@ -204,7 +206,7 @@
       "field": "totals.unclaimedByReason.bare-hash",
       "claimed": 141,
       "actual": 141,
-      "line": 824,
+      "line": 841,
       "state": "match"
     },
     {
@@ -213,7 +215,7 @@
       "field": "totals.unclaimedByReason.short-digest-no-path",
       "claimed": 95,
       "actual": 95,
-      "line": 825,
+      "line": 842,
       "state": "match"
     },
     {
@@ -222,7 +224,7 @@
       "field": "totals.unclaimedByReason.artifact-not-in-tree",
       "claimed": 59,
       "actual": 59,
-      "line": 826,
+      "line": 843,
       "state": "match"
     },
     {
@@ -231,7 +233,7 @@
       "field": "totals.unclaimedByReason.media-segment",
       "claimed": 12,
       "actual": 12,
-      "line": 827,
+      "line": 844,
       "state": "match"
     },
     {
@@ -240,7 +242,7 @@
       "field": "totals.unclaimedByReason.corpus-digest",
       "claimed": 2,
       "actual": 2,
-      "line": 828,
+      "line": 845,
       "state": "match"
     },
     {
@@ -249,7 +251,7 @@
       "field": "totals.byState.identical-text",
       "claimed": 3,
       "actual": 3,
-      "line": 684,
+      "line": 687,
       "state": "match"
     },
     {
@@ -258,7 +260,7 @@
       "field": "totals.byState.near-identical",
       "claimed": 1,
       "actual": 1,
-      "line": 685,
+      "line": 688,
       "state": "match"
     },
     {
@@ -267,7 +269,7 @@
       "field": "totals.byState.shared-text",
       "claimed": 6,
       "actual": 6,
-      "line": 687,
+      "line": 690,
       "state": "match"
     },
     {
@@ -276,7 +278,7 @@
       "field": "totals.byState.superset",
       "claimed": 2,
       "actual": 2,
-      "line": 686,
+      "line": 689,
       "state": "match"
     },
     {
@@ -285,7 +287,7 @@
       "field": "totals.byState.current",
       "claimed": 9,
       "actual": 9,
-      "line": 728,
+      "line": 744,
       "state": "match"
     },
     {
@@ -294,7 +296,7 @@
       "field": "totals.byState.edited-after-stamp",
       "claimed": 6,
       "actual": 6,
-      "line": 729,
+      "line": 745,
       "state": "match"
     },
     {
@@ -303,7 +305,7 @@
       "field": "totals.byState.stamp-ahead-of-history",
       "claimed": 2,
       "actual": 2,
-      "line": 730,
+      "line": 746,
       "state": "match"
     },
     {
@@ -312,7 +314,7 @@
       "field": "scope.distinctDriveIds",
       "claimed": 8,
       "actual": 92,
-      "line": 574,
+      "line": 575,
       "supersededBy": "§19",
       "state": "superseded",
       "label": "drive-sample-in-section-11"
@@ -323,7 +325,7 @@
       "field": "scope.documentsCompared",
       "claimed": 2385,
       "actual": 2385,
-      "line": 678,
+      "line": 679,
       "supersededBy": null,
       "state": "match",
       "label": "twins-documents-compared"
@@ -334,7 +336,7 @@
       "field": "scope.markdownFiles",
       "claimed": 2409,
       "actual": 2409,
-      "line": 678,
+      "line": 679,
       "supersededBy": null,
       "state": "match",
       "label": "twins-markdown-files"
@@ -345,7 +347,7 @@
       "field": "totals.fragments.total",
       "claimed": 36,
       "actual": 36,
-      "line": 307,
+      "line": 308,
       "supersededBy": null,
       "state": "match",
       "label": "fragment-links-in-section-11"
@@ -356,7 +358,7 @@
       "field": "totals.filesWithJsonHolds",
       "claimed": 38,
       "actual": 38,
-      "line": 323,
+      "line": 324,
       "supersededBy": null,
       "state": "match",
       "label": "json-holds-files"
@@ -367,7 +369,7 @@
       "field": "totals.jsonHoldsTotal",
       "claimed": 6146,
       "actual": 6146,
-      "line": 323,
+      "line": 324,
       "supersededBy": null,
       "state": "match",
       "label": "json-holds-values"
@@ -378,7 +380,7 @@
       "field": "counts.values",
       "claimed": 134,
       "actual": 134,
-      "line": 323,
+      "line": 324,
       "supersededBy": null,
       "state": "match",
       "label": "hold-vocabulary-values"
@@ -389,7 +391,7 @@
       "field": "counts.spellings",
       "claimed": 39,
       "actual": 39,
-      "line": 323,
+      "line": 324,
       "supersededBy": null,
       "state": "match",
       "label": "hold-vocabulary-spellings"
@@ -400,7 +402,7 @@
       "field": "totals.filesWithJsonHolds",
       "claimed": 38,
       "actual": 38,
-      "line": 188,
+      "line": 189,
       "supersededBy": null,
       "state": "match",
       "label": "holds-array-files-in-section-2"
@@ -411,7 +413,7 @@
       "field": "len:records",
       "claimed": 10,
       "actual": 10,
-      "line": 407,
+      "line": 408,
       "supersededBy": null,
       "state": "match",
       "label": "gate-records"
@@ -422,7 +424,7 @@
       "field": "composedCounts.BLOCKED",
       "claimed": 6,
       "actual": 6,
-      "line": 408,
+      "line": 409,
       "supersededBy": null,
       "state": "match",
       "label": "gate-blocked"
@@ -433,7 +435,7 @@
       "field": "composedCounts.REFERENCE",
       "claimed": 4,
       "actual": 4,
-      "line": 408,
+      "line": 409,
       "supersededBy": null,
       "state": "match",
       "label": "gate-reference"
@@ -444,7 +446,7 @@
       "field": "composedCounts.PROMOTE",
       "claimed": 0,
       "actual": 0,
-      "line": 408,
+      "line": 409,
       "supersededBy": null,
       "state": "match",
       "label": "gate-promote"
@@ -455,7 +457,7 @@
       "field": "checks.rightsIdsNotRecorded",
       "claimed": 0,
       "actual": 0,
-      "line": 411,
+      "line": 412,
       "supersededBy": null,
       "state": "match",
       "label": "gate-rights-ids-not-recorded"
@@ -466,10 +468,21 @@
       "field": "checks.recordsWithMissingAuthorityFile",
       "claimed": 0,
       "actual": 0,
-      "line": 409,
+      "line": 410,
       "supersededBy": null,
       "state": "match",
       "label": "gate-missing-authorities"
+    },
+    {
+      "id": "twins-pairs-above-threshold",
+      "artefact": "data/document-twins-2026-11-18.json",
+      "field": "totals.pairs",
+      "claimed": 12,
+      "actual": 12,
+      "line": 701,
+      "supersededBy": null,
+      "state": "match",
+      "label": "twins-pairs-above-threshold"
     },
     {
       "id": "repairs-applied",
@@ -499,7 +512,7 @@
       "field": "totals.stamped",
       "claimed": 17,
       "actual": 17,
-      "line": 724,
+      "line": 739,
       "supersededBy": null,
       "state": "match",
       "label": "stamps-verified"
@@ -510,7 +523,7 @@
       "field": "scope.markdownFiles",
       "claimed": 2409,
       "actual": 2409,
-      "line": 724,
+      "line": 739,
       "supersededBy": null,
       "state": "match",
       "label": "stamps-markdown-files"

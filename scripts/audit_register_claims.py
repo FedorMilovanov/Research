@@ -46,6 +46,7 @@ REPAIRS = "data/text-integrity-repairs-2026-11-18.json"
 PROPOSAL = "data/hold-value-mapping-proposal-v1.json"
 PINNED = "data/pinned-github-locators-verified-2026-11-18.json"
 QUEUE = "data/publication-gate-queue-v1.json"
+# TWINS and STAMPS already exist as claim artefacts; these are their generated tables.
 
 # label as printed in the register -> (artefact, field). The label is matched literally
 # inside a markdown table row, so a reworded row is reported instead of passing silently.
@@ -224,6 +225,10 @@ PROSE_CLAIMS: list[dict] = [
     {"id": "gate-missing-authorities",
      "pattern": r"\((?P<n>\d+)\s+отсутствующих",
      "artefact": QUEUE, "field": "checks.recordsWithMissingAuthorityFile"},
+    # printed by the generated §15 block, so the number has a home and a field
+    {"id": "twins-pairs-above-threshold",
+     "pattern": r"Пар выше порога: \*\*(?P<n>[\d\s\u2009]+)\*\*",
+     "artefact": TWINS, "field": "totals.pairs"},
     {"id": "repairs-applied",
      "pattern": r"(?P<n>\d+) склеек «слово\+число\+слово» восстановлены",
      "artefact": REPAIRS, "field": "totals.repairedTokens"},
@@ -313,6 +318,67 @@ def render_links_table(links: dict) -> str:
     return "\n".join(lines)
 
 
+TWINS_BEGIN = "<!-- twins-states:begin -->"
+TWINS_END = "<!-- twins-states:end -->"
+TWINS_STATES = [
+    ("identical-text", "дословно один текст (байты тоже совпадают)"),
+    ("near-identical", "почти дословно: один текст вложен в другой"),
+    ("superset", "надмножество: дополнение сохранило базу"),
+    ("shared-text", "общие блоки и линии версий, не копии"),
+]
+
+
+def render_twins_table(twins: dict) -> str:
+    by_state = _pick(twins, "totals.byState") or {}
+    lines = [TWINS_BEGIN, "| Состояние | Пар | Что это |", "|---|---:|---|"]
+    for state, description in TWINS_STATES:
+        if state in by_state:
+            lines.append(f"| `{state}` | {fmt(by_state[state])} | {description} |")
+    for state in sorted(set(by_state) - {s for s, _ in TWINS_STATES}):
+        lines.append(f"| `{state}` | {fmt(by_state[state])} | — |")
+    # The pairs that are not merely shared text are named, with the measured overlap:
+    # the earlier hand-written table carried one of these details and lost the rest.
+    named = [f for f in twins.get("findings", []) if f.get("state") != "shared-text"]
+    if named:
+        lines += ["", "| Пара | Состояние | Перекрытие |", "|---|---|---:|"]
+        for item in sorted(named, key=lambda f: (f.get("state", ""), f.get("a", ""))):
+            overlap = item.get("overlap")
+            shown = f"{overlap:.3f}" if isinstance(overlap, (int, float)) else "—"
+            lines.append(f"| `{item.get('a', '')}` ↔ `{item.get('b', '')}` | `{item.get('state', '')}` | {shown} |")
+    lines += ["", f"Пар выше порога: **{fmt(_pick(twins, 'totals.pairs') or 0)}**."]
+    lines.append(TWINS_END)
+    return "\n".join(lines)
+
+
+STAMPS_BEGIN = "<!-- stamps-states:begin -->"
+STAMPS_END = "<!-- stamps-states:end -->"
+STAMPS_STATES = [
+    ("current", "`current` — последний коммит в тот же день"),
+    ("edited-after-stamp", "`edited-after-stamp` — файл менялся после своей даты"),
+    ("stamp-ahead-of-history", "`stamp-ahead-of-history` — дата позже любого коммита"),
+    ("stamp-in-future", "`stamp-in-future` — дата позже сегодняшней (невозможна)"),
+]
+
+
+def render_stamps_table(stamps: dict) -> str:
+    """States and the documents behind the interesting one, both read from the report."""
+    by_state = _pick(stamps, "totals.byState") or {}
+    lines = [STAMPS_BEGIN, "| Состояние | Документов |", "|---|---:|"]
+    for state, description in STAMPS_STATES:
+        lines.append(f"| {description} | {fmt(by_state.get(state, 0))} |")
+    rows = [f for f in stamps.get("findings", []) if f.get("state") == "edited-after-stamp"]
+    lines += ["", "**Отредактированы после своей даты** (с темой последнего коммита как уликой):",
+              "", "| Документ | Дата в тексте | Последний коммит | Что пришло позже |",
+              "|---|---|---|---|"]
+    for item in sorted(rows, key=lambda f: f.get("file", "")):
+        subject = (item.get("lastSubject") or "").strip()
+        lines.append(
+            f"| `{item.get('file', '')}` | {item.get('stamp', '')} | {item.get('lastCommit', '')} "
+            f"| *{subject}* |")
+    lines.append(STAMPS_END)
+    return "\n".join(lines)
+
+
 PINNED_BEGIN = "<!-- pinned-locators:begin -->"
 PINNED_END = "<!-- pinned-locators:end -->"
 PINNED_ROWS = [
@@ -362,6 +428,8 @@ SLICES = {
     "corpus": ((CORPUS_BEGIN, CORPUS_END), INVENTORY, render_corpus_table),
     "links": ((LINKS_BEGIN, LINKS_END), LINKS, render_links_table),
     "pinned": ((PINNED_BEGIN, PINNED_END), PINNED, render_pinned_table),
+    "twins": ((TWINS_BEGIN, TWINS_END), TWINS, render_twins_table),
+    "stamps": ((STAMPS_BEGIN, STAMPS_END), STAMPS, render_stamps_table),
 }
 
 
@@ -372,6 +440,8 @@ SLICE_LABELS = {
     "corpus": "§2.1 таблица по корпусам",
     "links": "§8 таблица ссылок",
     "pinned": "§11 таблица локаторов",
+    "twins": "§15 таблица состояний дублей",
+    "stamps": "§16 таблица состояний дат",
 }
 
 
@@ -501,6 +571,8 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--write-slice-table", action="store_true")
     parser.add_argument("--write-links-table", action="store_true")
     parser.add_argument("--write-pinned-table", action="store_true")
+    parser.add_argument("--write-twins-table", action="store_true")
+    parser.add_argument("--write-stamps-table", action="store_true")
     parser.add_argument("--write-all", action="store_true")
     args = parser.parse_args(argv)
 
@@ -520,13 +592,15 @@ def main(argv: list[str] | None = None) -> int:
                           "claimed": None, "actual": None, "line": None}]
     writes = []
     if args.write_all or args.write_corpus_table or args.write_slice_table or args.write_links_table \
-            or args.write_pinned_table:
+            or args.write_pinned_table or args.write_twins_table or args.write_stamps_table:
         target = Path(args.register) if args.register else root / REGISTER
         text = target.read_text(encoding="utf-8")
         wanted = [name for name, flag in (("corpus", args.write_corpus_table),
                                           ("inventory", args.write_slice_table),
                                           ("links", args.write_links_table),
-                                          ("pinned", args.write_pinned_table)) if flag]
+                                          ("pinned", args.write_pinned_table),
+                                          ("twins", args.write_twins_table),
+                                          ("stamps", args.write_stamps_table)) if flag]
         if args.write_all:
             wanted = list(SLICES)
         for name in wanted:

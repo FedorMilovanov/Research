@@ -172,6 +172,10 @@ class SliceRegistryTests(unittest.TestCase):
         self.fx.write_json(claims.LINKS, {"scope": {"markdownFiles": 7},
                                           "totals": {"byState": {"resolves": 5, "external": 2, "missing": 1},
                                                      "explained": 1, "unexplained": 0}})
+        self.fx.write_json(claims.TWINS, {"scope": {"documentsCompared": 3, "markdownFiles": 4},
+                                          "totals": {"pairs": 0, "byState": {}}, "findings": []})
+        self.fx.write_json(claims.STAMPS, {"scope": {"stamped": 0}, "totals": {"byState": {}},
+                                           "findings": []})
         self.fx.write_json(claims.PINNED, {"totals": {"locators": 1, "match": 1, "mismatch": 0,
                                                       "unclaimed": 0, "unavailable": 0,
                                                       "citations": 1, "citationFiles": 1},
@@ -202,6 +206,28 @@ class SliceRegistryTests(unittest.TestCase):
         states = self.report()["sliceStates"]
         self.assertEqual(sorted(states), sorted(claims.SLICES))
         self.assertEqual({name: state for name, state in states.items() if state != "match"}, {})
+
+    def test_twins_slice_renders_states_and_named_pairs(self) -> None:
+        payload = {"totals": {"pairs": 2, "byState": {"identical-text": 1, "shared-text": 1}},
+                   "findings": [
+                       {"a": "x/a.md", "b": "x/b.md", "overlap": 1.0, "state": "identical-text"},
+                       {"a": "y/c.md", "b": "y/d.md", "overlap": 0.6, "state": "shared-text"}]}
+        block = claims.render_twins_table(payload)
+        self.assertIn("| `identical-text` | 1 |", block)
+        self.assertIn("Пар выше порога: **2**", block)
+        self.assertIn("`x/a.md` ↔ `x/b.md`", block)
+        self.assertNotIn("y/c.md", block, "shared text is counted, not enumerated")
+
+    def test_stamps_slice_renders_states_and_the_edited_documents(self) -> None:
+        payload = {"totals": {"byState": {"current": 1, "edited-after-stamp": 1}},
+                   "findings": [
+                       {"file": "a.md", "stamp": "2026-01-01", "state": "current"},
+                       {"file": "b.md", "stamp": "2026-02-02", "state": "edited-after-stamp",
+                        "lastCommit": "2026-03-03", "lastSubject": "fix: something"}]}
+        block = claims.render_stamps_table(payload)
+        self.assertIn("`current` — последний коммит в тот же день | 1 |", block)
+        self.assertIn("| `b.md` | 2026-02-02 | 2026-03-03 | *fix: something* |", block)
+        self.assertNotIn("`a.md`", block)
 
     def test_pinned_slice_renders_the_report(self) -> None:
         block = claims.render_pinned_table(json.loads((self.fx.root / claims.PINNED).read_text(encoding="utf-8")))
