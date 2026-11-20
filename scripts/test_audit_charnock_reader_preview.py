@@ -1,0 +1,74 @@
+"""Fail-closed structural checks for the dated, editorial-only Charnock reader proof.
+
+This validates the assembled reading copy, not historical claims or release rights.
+No files are written.
+"""
+import re
+import unittest
+from pathlib import Path
+from urllib.parse import unquote
+
+ROOT = Path(__file__).resolve().parents[1]
+PREVIEW = ROOT / 'БИОГРАФИИ/Стивен Чарнок/reader-preview/CHARNOCK_FULL_BOOK_EDITORIAL_READER_2026-11-21.md'
+CHAPTERS = re.compile(r'^## (Введение\. .+|Часть [IVX]+\. .+|Справочник\. .+)$', re.MULTILINE)
+SOURCE = re.compile(r'^### (?:Источниковые примечания|Примечания к первичным)', re.MULTILINE)
+DEFINITION = re.compile(r'^\[\^([^\]]+)\]:', re.MULTILINE)
+REFERENCE = re.compile(r'\[\^([^\]]+)\](?!:)')
+LINK = re.compile(r'\]\((\.\./[^)]+)\)')
+EXPECTED_NOTES = (13, 20, 18, 17, 18, 21, 20, 20, 19, 14)
+EXPECTED_PREFIXES = ('intro', 'ch1', 'ch2', 'ch3', 'ch4', 'ch5', 'ch6', 'ch7', 'ch8', 'ref')
+
+
+class CharnockReaderProofTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.body = PREVIEW.read_text(encoding='utf-8')
+        cls.sections = list(CHAPTERS.finditer(cls.body))
+
+    def test_status_is_research_only_and_pinned_to_source_snapshot(self):
+        opening = self.body[:1800]
+        self.assertIn('DRAFT / RESEARCH_ONLY / PUBLICATION_HOLD', opening)
+        self.assertIn('ac3825b6ef0700a793d52f8cef9d12587ee75567', opening)
+        for hold in ('ED-02', 'ED-06', 'ED-08'):
+            self.assertIn(hold, opening)
+        self.assertIn('не разрешение на публикацию', opening)
+
+    def test_ten_reader_sections_and_linked_contents(self):
+        self.assertEqual(len(self.sections), 10)
+        self.assertTrue(self.sections[0].group(1).startswith('Введение.'))
+        self.assertTrue(self.sections[-1].group(1).startswith('Справочник.'))
+        toc = self.body.split('## Содержание\n\n', 1)[1].split('\n\n---', 1)[0]
+        self.assertEqual(len(re.findall(r'^\d+\. \[', toc, re.MULTILINE)), 10)
+
+    def test_notes_are_unique_and_cited_from_each_readers_text(self):
+        all_definitions = DEFINITION.findall(self.body)
+        self.assertEqual(len(all_definitions), 180)
+        self.assertEqual(len(set(all_definitions)), 180)
+        for index, section in enumerate(self.sections):
+            after = self.sections[index + 1].start() if index + 1 < len(self.sections) else len(self.body)
+            chunk = self.body[section.end():after]
+            source = SOURCE.search(chunk)
+            self.assertIsNotNone(source, section.group(1))
+            reader, notes = chunk[:source.start()], chunk[source.end():]
+            definitions = DEFINITION.findall(notes)
+            self.assertEqual(len(definitions), EXPECTED_NOTES[index], section.group(1))
+            self.assertEqual(set(REFERENCE.findall(reader)), set(definitions), section.group(1))
+            self.assertTrue(all(x.startswith(EXPECTED_PREFIXES[index] + '-') for x in definitions))
+            self.assertFalse(DEFINITION.search(reader), section.group(1))
+
+    def test_no_editor_backstage_or_internal_section_headers(self):
+        self.assertNotRegex(self.body, r'^#{2,6} (?:Редакторская приёмка|Редакторский контроль)')
+        self.assertEqual(len(SOURCE.findall(self.body)), 10)
+
+    def test_research_links_survive_path_preserving_move(self):
+        links = LINK.findall(self.body)
+        self.assertGreaterEqual(len(links), 230)
+        for link in links:
+            path_part = unquote(link.split('#', 1)[0].strip())
+            resolved = (PREVIEW.parent / path_part).resolve()
+            self.assertTrue(resolved.is_relative_to(ROOT), link)
+            self.assertTrue(resolved.exists(), link)
+
+
+if __name__ == '__main__':
+    unittest.main()
