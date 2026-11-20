@@ -28,7 +28,7 @@ class CharnockReaderProofTests(unittest.TestCase):
     def test_status_is_research_only_and_pinned_to_source_snapshot(self):
         opening = self.body[:1800]
         self.assertIn('DRAFT / RESEARCH_ONLY / PUBLICATION_HOLD', opening)
-        self.assertIn('ac3825b6ef0700a793d52f8cef9d12587ee75567', opening)
+        self.assertIn('ccbf4eca45d307564702454a454fc6ab838b2c31', opening)
         for hold in ('ED-02', 'ED-06', 'ED-08'):
             self.assertIn(hold, opening)
         self.assertIn('не разрешение на публикацию', opening)
