@@ -96,6 +96,8 @@ The [2020 recording catalogue](https://www.gnli.com/titles/2020-G3-Conference-or
 
 Tim Challies’ Jan. 20, 2020 first-person report says he had just spoken at the annual G3 Conference in Atlanta and participated in a Q&A with MacArthur, Washer, Baucham, Lawson and Buice. This is a useful independent contemporary anchor for the broad conservative-Reformed coalition at that point.
 
+[Elizabeth Prata’s Jan. 18 account](https://web.archive.org/web/20200918131906id_/https://the-end-time.org/2020/01/18/last-impressions-of-g3-conclusion/) names Derek Thomas among those she heard. His [Jan. 16 entry](https://subsplash.com/u/g3min/media/d/4q4pkdh-worshipping-our-triune-god) points to a board statement rather than presenting the sermon. On [Feb. 21](https://web.archive.org/web/20200223033728id_/https://g3conference.com/articles/statement-derek-thomas/) the board and president declined to publish this particular exposition of Luke 9:28–36 while explicitly declining to call it heresy. Their report of Thomas’s position is not a public reply from him.
+
 The distinction between conference and ministry was already visible in the return signed on 1 April 2021. In [Part III, lines 1 and 4a](https://projects.propublica.org/nonprofits/organizations/842403597/202110919349301551/full), G3 describes education through conferences **and online resources**, then reports online expansion alongside 5,600 attendees in January 2020. Earlier estimates around 5,000 are not a measured lower bound.
 
 A concrete 2020 wide-audience photograph is now source-pinned in `MEDIA_LEDGER.md` to a contemporaneous Church Works Media report, but remains `PERMISSION_REQUIRED`.
