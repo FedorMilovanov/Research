@@ -48,7 +48,7 @@
 ## 3. Как это проверяется
 
 ```bash
-python3 -B scripts/run_research_gates.py            # 6 гейтов + 5 информационных счётчиков
+python3 -B scripts/run_research_gates.py            # 6 гейтов + 6 информационных счётчиков
 python3 -B scripts/check_hold_doc_numbers.py --verbose       # 52 числа с их источниками
 python3 -B scripts/audit_hold_coverage_gaps.py --summary     # 51 и их раскладка
 python3 -B scripts/audit_hold_coverage_gaps.py --no-holds-field  # 52 без поля holds

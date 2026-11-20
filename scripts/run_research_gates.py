@@ -71,6 +71,11 @@ INFORMATIONAL = [
         ROOT,
         ["python3", "-B", "scripts/check_drive_mirror_pairs.py", "--summary"],
     ),
+    (
+        "Инвентарь: насколько отстал проверенный коммит",
+        ROOT,
+        ["python3", "-B", "scripts/render_hold_inventory.py", "--lag"],
+    ),
 ]
 
 

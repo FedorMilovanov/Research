@@ -1481,7 +1481,26 @@ def main():
         action="store_true",
         help="не писать файлы, а сравнить фактическую структуру отчёта с новой сборкой",
     )
+    parser.add_argument(
+        "--lag",
+        action="store_true",
+        help="напечатать, на сколько коммитов собранный инвентарь отстал от HEAD",
+    )
     args = parser.parse_args()
+
+    if args.lag:
+        # Поле `testedCommit` в отчёте — единственное, чего не проверяет `--check`:
+        # оно устаревает самим фактом коммита. Молча это терпеть нельзя — иначе
+        # документ называет коммит, на котором его давно никто не сверял.
+        tested = str(json.loads(OUT_JSON.read_text(encoding="utf-8")).get("testedCommit") or "")
+        head = subprocess.run(["git", "rev-parse", "--short", "HEAD"], cwd=ROOT,
+                              capture_output=True, text=True).stdout.strip()
+        counted = subprocess.run(["git", "rev-list", "--count", f"{tested}..HEAD"], cwd=ROOT,
+                                 capture_output=True, text=True)
+        behind = counted.stdout.strip() if counted.returncode == 0 else "?"
+        print(f"HOLD INVENTORY LAG: собран на {tested[:7] or '—'}, HEAD {head or '?'}, "
+              f"отстаёт на {behind} коммит(ов)")
+        return 0
 
     report = build()
     markdown = render_markdown(report)
