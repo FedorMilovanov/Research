@@ -263,5 +263,23 @@ class InterfaceTests(unittest.TestCase):
         self.assertEqual(code, 0)
 
 
+class CommittedReportTests(unittest.TestCase):
+    """The committed report is what §8's table is generated from, so it has to describe this tree.
+
+    Its freshness was checked in CI only - a ``cmp`` between a fresh run and the committed file.
+    That step caught a stale report in the §32 commit while the whole local suite was green:
+    two recordLocations of the new closure added two resolvable locators, the report still said
+    2 885, and nothing here compared the two. A check that exists only in the workflow is not a
+    check the author runs.
+    """
+
+    def test_committed_report_matches_a_fresh_run(self) -> None:
+        root = Path(__file__).resolve().parents[1]
+        report = root / "data" / "relative-links-audit-2026-11-18.json"
+        exceptions = arl.load_exceptions(root / "data" / "relative-link-exceptions-v1.json")
+        fresh = arl.scan(root, exceptions)
+        self.assertEqual(json.loads(report.read_text(encoding="utf-8")), fresh,
+                         "data/relative-links-audit-2026-11-18.json no longer describes this tree; "
+                         "re-run the audit to -o and regenerate §8")
 if __name__ == "__main__":
     unittest.main()
