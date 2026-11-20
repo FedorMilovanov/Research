@@ -324,6 +324,10 @@
   - p. 381: «Scholastic Calvinism, however, narrowed the intent of the atonement…» — сн. 18 `LOCATOR_VERIFIED`, ACCURATE для слов при сноске.
   - В OCR т. 2 слова «Beza» нет. Фраза статьи о Безе без своей сноски — `UNSOURCED_CLAIM` (мягко). Сн. 13 — ACCURATE, `SCHOLARLY_PRECEDENT` (тот же пример Гал. 5:12). Сн. 45 — «Spurgeon, 380» в указателе.
   - Вердикты S1–S5 не меняются. Документ: REPASS, §56.
+- **раунд 134 (2026-11-17, AGENT 2):** §3 (S232), новый §4.217 (Q213): Lewis & Demarest, *Integrative Theology* II, p. 381 (сн. 83).
+  - «the design of the cross was not merely to provide salvation but to secure the salvation of those persons the Father gave to the Son» — сн. 83 `LOCATOR_VERIFIED`, ACCURATE для «эффективности».
+  - Пара «достаточность (ранние авторы) / эффективность (схоласты)» — рамка статьи. У Л. и Д. контраст сильнее: «unlimited atonement» у Кальвина и «narrowed the intent» у схоластов. `SIMPLIFIED` (мягко).
+  - Вердикты S1–S5 не меняются. Документ: REPASS, §57.
 
 **Erratum (раунд 4).** В раунде 3 номера страниц протоколов Ассамблеи (S19) и Шедда II (S22) были выведены из индекса страниц OCR-API archive.org (`BookReaderGetTextWrapper`), который **не совпадает** с номером листа (`leafNum`) скана: для `minutesofsession00west` индекс = лист − 5, для `dogmatictheology02sheduoft` индекс = лист − 1. Сверка по `inside.php` (полнотекстовый поиск, возвращает `leafNum`) и `<id>_page_numbers.json` (лист → печатная страница) дала: **Minutes «pp. 150–155/156» → pp. 155–160/161** (листы 251–257); **Shedd «II.478, 482–483» → II.479, 483–484** (листы 489, 493–494). Все затронутые числа в S19, S22, §4.13, §4.16, §5–§8 исправлены **на месте** с пометкой «(испр. р. 4)»; содержание цитат не менялось. Локаторы раундов 1–2 (Minutes p. lv/lviii/lx/152, Shedd II.464–477, I.441, A. A. Hodge pp. 33–34) перепроверены тем же способом и **верны** (лист 248 = p. 152; лист 457 = I.441; лист 39 = Hodge p. 33).
 **Статус:** `ACTIVE RESEARCH / NO SETTLED VERDICT ON EXTENT / EVIDENCE_HOLD / PUBLICATION_HOLD`
@@ -718,6 +722,7 @@
 | S229 *(раунд 131, 2026-11-17)* | (а) H. A. Niemeyer, *Collectio confessionum* (Lipsiae, 1840), IA `collectioconfes00niemgoog`: `page_numbers.json` — лист 786 = p. 729, лист 795 = p. 739 (8 листов на 9 страниц, одна страница отсутствует); предисловие «per Dei gratiam stat fundamentum fidei… Salva unitas corporis mystici» (л. 786); XIII начинается внизу л. 788, XVI — л. 790, XIX — л. 791; «oppetiit» — 0 попаданий. (б) J. C. W. Augusti, *Corpus librorum symbolicorum*, ed. altera (Lipsiae, 1846), IA `MN41545ucmf_4`: лист 474 = p. 450 (смещение 24), канон XIII «Pro solis quippe electis ex decretorio patris consilio, propria[que intentione] diram mortem oppetiit»; «duram» — 0 попаданий; колонтитул p. 459 на л. 483. (в) Schaff, *Creeds* I, лист 512 = p. 488: «…propriaque intentione diram mortem oppetiit». Класс A1, OCR | С. 7, сн. 25 — ACCURATE прежний; `AGENT6` A.10 — `QUOTE_NOT_VERBATIM` (мягко); `fathers/10_` — `LOCATOR_IMPRECISE` (мягко) |
 | S230 *(раунд 132, 2026-11-17)* | W. Cunningham, *Historical Theology* II: полнотекстовый индекс archive.org (`openlibrary.org/search/inside.json`) по четырём экземплярам — `historicaltheocun02cunn` (Clark, 1863), `workscunn03cunn` (*Works* III, Clark, 1870), `historicaltheolo0000unse_x3t3` (Banner of Truth, 1960), `historicaltheolo0002cunn` (Banner of Truth, 1969). Запросы: «SYNOD OF DORT. 379» → «Lib. iv., c. iv., Q. 4. / Sec. II.] SYNOD OF DORT. 379 / stigmatized as a heresy, only when it was» (1870, 1960, 1969); «Synod of Dort marks one of the most important eras» и «learned and zealous defender of Calvinism» — все четыре. Контроль — `historicaltheolo02cunnuoft` (1863), `_djvu.txt`, чанк 142. Класс A2 (фрагменты OCR) | Сн. 78 — `LOCATOR_IMPRECISE` (мягко) не зависит от издания; `SOURCE_CONTRADICTS_CLAIM` прежний |
 | S231 *(раунд 133, 2026-11-17)* | G. R. Lewis, B. A. Demarest, *Integrative Theology*, vol. 2 (Grand Rapids: Zondervan): IA `integrativetheol0000dema_t1r1` (метаданные IA — 1987; том 2 — 1990) и однотомник 1996 г. `integrativetheol0000lewi`; оба с ограниченным доступом. Полнотекстовый индекс archive.org (`openlibrary.org/search/inside.json`): «Other Calvinist authorities» + «scholastic» / «rowed» → «Scholastic Calvinism, however, nar- rowed the intent of the atonement and claimed that Christ died solely for the purpose of saving the elect…»; «Calvinism, however, narrowed» с переносом не ищется — использованы цепочки фраз. Указатель т. 2: «Bloesch, Donald G., 381», «Turrettin, Francis, 381», «Amyraut, 382», «Spurgeon, Charles Haddon, 380». Контроль «Beza»: т. 1 `integrativetheol0000dema` (1987). Текст статьи — веб-PDF teoblogia, фрагменты 1–2. Класс A2 (фрагменты OCR) | Сн. 18 — `LOCATOR_VERIFIED`; фраза о Безе — `UNSOURCED_CLAIM` (мягко); сн. 13 — `SCHOLARLY_PRECEDENT`; сн. 45 — `LOCATOR_VERIFIED` |
+| S232 *(раунд 134, 2026-11-17)* | G. R. Lewis, B. A. Demarest, *Integrative Theology*, vol. 2 (Grand Rapids: Zondervan), p. 381: IA `integrativetheol0000dema_t1r1` и однотомник 1996 г. `integrativetheol0000lewi` (оба с ограниченным доступом). Полнотекстовый индекс archive.org (`openlibrary.org/search/inside.json`), цепочка перекрывающихся фраз: «proponents argue that the design of the cross» → «those persons the Father gave to the» → «Son. Christ allegedly died for all» → «Adam sinned for all who were related» → «For high Calvinism the question» → «follows from God's logically prior elective» → «the high Calvinist claims that» → «Christ died solely for those predestined» → «the divine decree assigning people» → «to life or death (chap. III) precedes» (discussion of the work of Christ); «John Owen judges that none of God's intentions» (после «…by the Father.“ (II.8)»). Индекс ищет по книге целиком; `page_num` один на документ. Страница — по указателю (Блёш и Тюрретин, p. 381; S231). Текст статьи — веб-PDF teoblogia, фрагмент 11. Класс A2 | Сн. 83 — `LOCATOR_VERIFIED`; ACCURATE для «эффективности»; «достаточность у ранних авторов» — `SIMPLIFIED` (мягко) |
 
 **Ответ: П1 исторически неверен; «словом о цене» в английской традиции является *redemption*, а не *atonement*.**
 
@@ -8311,8 +8316,9 @@ hommes** selon ce propos déterminé…*» (с. 183) **есть в источн�
 | 4.214 | Q210 | *Formula Consensus Helvetica*, канон XIII: «diram» (Августи p. 450, Шафф p. 488), не «duram»; скан Нимейера с пропуском страницы; локатор `fathers/10_` неточен (р. 131) |
 | 4.215 | Q211 | Каннингем, *Historical Theology* II: пагинация pp. 373–384 одинакова в печатях 1863, 1870, 1960 и 1969 гг.; сн. 78 — вердикт не зависит от издания (р. 132) |
 | 4.216 | Q212 | Lewis & Demarest II: p. 381 «Scholastic Calvinism… narrowed» — сн. 18 точна для слов при ней; в т. 2 слова «Beza» нет, фраза о Безе без сноски; сн. 13 и 45 сверены (р. 133) |
+| 4.217 | Q213 | Lewis & Demarest II, p. 381: сн. 83 — «not merely to provide salvation but to secure» подтверждает «эффективность»; пара «достаточность / эффективность» — рамка статьи (р. 134) |
 
-⇒ разделов с `Q` — **209**, разделов §4.x — **211**; пропуски нумерации прежние.
+⇒ разделов с `Q` — **210**, разделов §4.x — **212**; пропуски нумерации прежние.
 
 
 ### 4.139. Q135 — Приёмка раунда 61: связка Сомюра, аудит объёма, готовность к мерджу (раунд 61)
@@ -9474,7 +9480,7 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 7. **Сильная сторона статьи.** Осторожность Стюарта («самый ранний **известный**»; предостережения Беттнера 1932 г.) передана точно.
 8. **CO 1, «accepit».** Части 1–2 выдачи (листы 380–635) не содержат «a nobis accepit». Вывод раунда 98 (§4.181) подтверждён для всей выдачи (в пределах распознанного текста).
 
-**Чего нет.** MacArthur & Mayhue, *Biblical Doctrine*, p. 544 (сн. 91, «ср.»); Lewis & Demarest, II, p. 381 (сн. 83).
+**Чего нет.** MacArthur & Mayhue, *Biblical Doctrine*, p. 544 (сн. 91, «ср.»); Lewis & Demarest, II, p. 381 (сн. 83). *(Раунд 134: сн. 83 сверена по тексту — §4.217, Q213. Догадку статьи о «результате» (п. 6 выше) Л. и Д. на p. 381 поддерживают лишь частично: у них «secure», а не *redemption*.)*
 
 Вердикты S1–S5 не меняются.
 
@@ -9918,7 +9924,24 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 3. **Сн. 13 и 10.** «In his later commentaries Calvin more clearly postulates an unlimited atonement. With regard to Galatians…» — у статьи тот же порядок довода и тот же пример (Гал. 5:12). ACCURATE, `SCHOLARLY_PRECEDENT`. Абзац стоит перед Сперджном (указатель: 380); граница страниц по колонтитулу не видна.
 4. **Сн. 45.** «Spurgeon, Charles Haddon, 380» — `LOCATOR_VERIFIED` для «pp. 380–381».
 5. **Корпус.** Слова «через Lewis & Demarest (сн. 18)» о Безе (REPASS §2; журнал раунда 91 выше; `15_` §5; `01_` §2.2) — `CORPUS_MISREAD` (мягко).
-6. **Граница.** Изображения страниц не открывались; печать 1990 г. отдельно не видена. Пагинация т. 2 в однотомнике 1996 г. совпадает с отдельным томом по номерам указателя. Л. и Д. по сн. 83 — HOLD.
+6. **Граница.** Изображения страниц не открывались; печать 1990 г. отдельно не видена. Пагинация т. 2 в однотомнике 1996 г. совпадает с отдельным томом по номерам указателя. Л. и Д. по сн. 83 — HOLD *(снят в части текста в раунде 134 — §4.217)*.
+
+Вердикты S1–S5 не меняются.
+
+
+### 4.217. Q213 — Lewis & Demarest, *Integrative Theology* II, p. 381: сноска 83 (раунд 134, 2026-11-17)
+
+**Повод.** Сн. 83 — последняя сноска на Л. и Д., остававшаяся в HOLD (§4.216 п. 6; §4.184 «Чего нет»). Источник — S232. Таблица — REPASS-документ, §57.
+
+**Вопрос.** Подтверждает ли p. 381 фразу статьи (с. 26): «в отличие от более ранних кальвинистских авторов, фокусировавшихся на достаточности… схоластический кальвинизм XVII-го века в качестве парадигмы… взял *эффективность* смерти Христа»?
+
+**Ответы.**
+1. **Локатор.** Отрывок о «scholastic / high Calvinism» лежит между Блёшем и Тюрретином, а оба в указателе т. 2 — на p. 381. `LOCATOR_VERIFIED`.
+2. **«Эффективность».** «Thus proponents argue that the design of the cross was not merely to provide salvation but to secure the salvation of those persons the Father gave to the Son». Следующая фраза статьи («не просто возможным… действительным и надежным») — близкий пересказ. ACCURATE по существу; слово «efficacy» в отрывке не стоит.
+3. **«Достаточность у ранних авторов».** В восстановленном отрывке слова «sufficiency» нет. Контраст у Л. и Д. — по *замыслу* и объёму: Кальвин в поздних комментариях «more clearly postulates an unlimited atonement» (p. 380); схоласты «narrowed the intent of the atonement», Христос умер «solely» за избранных (p. 381). Статья заменяет его парой «достаточность / эффективность». Эта пара ближе к её собственному тезису «неограниченное искупление с ограниченным применением». `SIMPLIFIED` (мягко). Индекс ищет по книге целиком, поэтому отсутствие слова доказано только для восстановленного отрывка.
+4. **Связь с WCF.** Л. и Д. сами пишут: «In the Westminster Confession the divine decree assigning people to life or death (chap. III) precedes discussion of the work of Christ». Опора для «хорошо согласуется» есть, но довод у них — о порядке декретов, а не о слове *redemption* (сн. 82 — довод самой статьи).
+5. **Тон.** У Л. и Д. — «proponents argue», «allegedly», «narrowed»; возражения — на p. 382 (Амиро). Статья передаёт мысль от себя и без оценки. Искажения смысла нет. Без пометки.
+6. **Итог по Л. и Д. II.** Все пять сносок (10, 13, 18, 45, 83) сверены по тексту (A2). Изображения страниц и печать 1990 г. не видены.
 
 Вердикты S1–S5 не меняются.
 

@@ -1720,3 +1720,16 @@ HOLD без изменений: CO 49:100, CO 45:706, `PRINT_IMAGE_HOLD`, пра
 | 5 | REPASS §2, строка 7 | «через Lewis & Demarest (сн. 18)» — `CORPUS_MISREAD` (мягко) |
 
 **Вердикты S1–S5 не меняются.**
+
+## 85. Раунд 134 (2026-11-17): Lewis & Demarest, *Integrative Theology* II, p. 381 — сноска 83
+
+Подробности — `34_` §4.217 (Q213), S232; REPASS-документ, §57.
+
+| # | Место | Итог |
+|---|---|---|
+| 1 | С. 26, сн. 83 — локатор | Отрывок о «scholastic / high Calvinism» — p. 381 (между Блёшем и Тюрретином по указателю). `LOCATOR_VERIFIED` |
+| 2 | «Эффективность» как парадигма; «не просто возможным – действительным и надежным» | «the design of the cross was not merely to provide salvation but to secure the salvation of those persons the Father gave to the Son». ACCURATE по существу |
+| 3 | «Ранние авторы фокусировались на достаточности» | В отрывке нет «sufficiency». У Л. и Д. ранний Кальвин — «unlimited atonement» (p. 380), схоласты — «narrowed the intent». `SIMPLIFIED` (мягко): контраст источника смягчён |
+| 4 | Связь с WCF | Л. и Д. сами ссылаются на WCF гл. III (декрет раньше дела Христа). Лексический довод статьи (*redemption*) — её собственный |
+
+**Вердикты S1–S5 не меняются.**

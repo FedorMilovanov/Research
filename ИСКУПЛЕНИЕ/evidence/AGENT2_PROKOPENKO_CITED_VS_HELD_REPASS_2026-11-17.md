@@ -947,7 +947,7 @@
   - догадка о «результате» (с. 28) не согласуется с причиной, которую называет сам Стюарт.
 - **Сильная сторона статьи:** передача осторожности Стюарта о Беттнере («самый ранний **известный**») и его же предостережений точна.
 - **Хвост раунда 98 закрыт:** во всей выдаче «accepit» по CO 1 «a nobis accepit» нет (§21.1(г) подтверждён).
-- **HOLD:** Lewis & Demarest (сн. 83 и др.); MacArthur & Mayhue, *Biblical Doctrine*, p. 544 (сн. 91, «ср.»); Green, p. 118; White; Шнукер; Грудем, с. 672.
+- **HOLD:** Lewis & Demarest (сн. 83 и др.) *(раунд 134: сн. 83 сверена по тексту — §57; сн. 10, 13, 18, 45 — §56)*; MacArthur & Mayhue, *Biblical Doctrine*, p. 544 (сн. 91, «ср.»); Green, p. 118; White; Шнукер; Грудем, с. 672.
 
 Вердикты S1–S5 не меняются. Умысел не утверждается.
 
@@ -2074,6 +2074,42 @@ Wayback Machine, страница `www.gracechurch.org/about/doctrinal-statement
 **Сводка §56.**
 - **Снято:** HOLD «Льюис и Демарест II, pp. 380–381» для сн. 10, 13, 18 и 45, в части текста (класс A2, фрагменты OCR). Изображения страниц не открывались.
 - **Новое:** сн. 18 — `LOCATOR_VERIFIED`; фраза о Безе — `UNSOURCED_CLAIM` (мягко); сн. 13 — `SCHOLARLY_PRECEDENT`; §2, строка 7 — `CORPUS_MISREAD` (мягко).
-- **HOLD без изменений:** Л. и Д. по сн. 83; печать 1990 г. и изображения страниц; Шнукер (сн. 17); White, p. 255 (сн. 9).
+- **HOLD без изменений:** Л. и Д. по сн. 83 *(снят в части текста в раунде 134 — §57)*; печать 1990 г. и изображения страниц; Шнукер (сн. 17); White, p. 255 (сн. 9).
+
+Вердикты S1–S5 не меняются. Умысел не утверждается.
+
+## 57. Раунд 134 (2026-11-17): Lewis & Demarest, *Integrative Theology* II, p. 381 — сноска 83 («эффективность» как парадигма схоластического кальвинизма)
+
+**Повод.** Сн. 83 оставалась последней сноской на Л. и Д. в HOLD (§56, сводка). Метод тот же, что в §56: полнотекстовый индекс archive.org (`openlibrary.org/search/inside.json`) по ограниченным экземплярам. Абзац восстановлен цепочкой перекрывающихся фраз.
+
+**Источники этого раунда:**
+- (а) G. R. Lewis, B. A. Demarest, *Integrative Theology*, vol. 2 (Grand Rapids: Zondervan); IA `integrativetheol0000dema_t1r1` (метаданные IA — 1987). Класс A2 (фрагменты OCR).
+- (б) Однотомник 1996 г., IA `integrativetheol0000lewi`. Все фрагменты ниже совпадают с (а) дословно.
+- (в) Текст статьи: веб-PDF teoblogia, фрагмент 11 (с. 26, сн. 79–83).
+
+**Что в статье (с. 26).** После довода о WCF («redemption» — 8 раз, «atonement» — ни разу, сн. 82): «Данный факт хорошо согласуется с наблюдением, что, в отличие от более ранних кальвинистских авторов, фокусировавшихся на достаточности искупительной жертвы Христа, схоластический кальвинизм XVII-го века в качестве парадигмы для рассмотрения масштабов искупления взял *эффективность* смерти Христа [83]. Жертва Христова делает спасение не просто возможным – она делает его действительным и надежным».
+
+**Что в источнике (p. 381; цепочка фрагментов (а) и (б)).** «Scholastic Calvinism, however, narrowed the intent of the atonement and claimed that Christ died solely for the purpose of saving the elect, the exact number of whom are actually brought to salvation. Thus proponents argue that the design of the cross was not merely to provide salvation but to secure the salvation of those persons the Father gave to the Son. Christ allegedly died for all who were related to him, just as Adam sinned for all who were related to him. For high Calvinism the question „For whom did Christ die?“ follows from God's logically prior elective decree. Since antecedent to his decree to create humanity God purposed to save some persons and to condemn others, the high Calvinist claims that Christ died solely for those predestined to life. In the Westminster Confession the divine decree assigning people to life or death (chap. III) precedes discussion of the work of Christ…». Дальше в том же разделе — цитата Дорта II.8 («…given to Him by the Father» (II.8)), затем «John Owen judges that none of God's intentions or purposes fail to eventuate…», цитата Оуэна («…proper object of the death of Christ», прим. 63) и «Other Calvinist authorities…».
+
+**Страница.** В указателе т. 2 Блёш (абзац перед «Scholastic Calvinism») и Тюрретин (перечень после Оуэна) — оба на p. 381 (§56). Весь отрывок лежит между ними. Поле `page_num` индекса здесь не помогает: оно одно на весь документ.
+
+| Часть фразы статьи | Что у Л. и Д. на p. 381 | Вердикт |
+|---|---|---|
+| Локатор «Vol. 2. P. 381» | Отрывок о «scholastic / high Calvinism» стоит на p. 381 | **`LOCATOR_VERIFIED`** |
+| Схоластический кальвинизм взял за парадигму *эффективность* смерти Христа; жертва делает спасение «не просто возможным», а «действительным и надежным» | «the design of the cross was not merely to provide salvation but to secure the salvation of those persons the Father gave to the Son» | **ACCURATE** по существу. Вторая фраза статьи — близкий пересказ «not merely to provide… but to secure». Слова «эффективность» / «efficacy» в восстановленном отрывке нет: это обобщение статьи, и оно верное |
+| «В отличие от более ранних кальвинистских авторов, фокусировавшихся на достаточности» | В восстановленном отрывке слова «sufficiency» нет. Контраст у Л. и Д. другой: на p. 380 Кальвин в поздних комментариях «more clearly postulates an unlimited atonement» (§56, сн. 13); на p. 381 схоластики «narrowed the intent of the atonement», Христос умер «solely» за избранных | **`SIMPLIFIED`** (мягко). У Л. и Д. ранняя позиция — неограниченное искупление по *замыслу* (intent), а не только «достаточность». Пара «достаточность / эффективность» — рамка самой статьи. Она смягчает контраст источника. Индекс ищет по всей книге, а не по странице. Поэтому отсутствие слова «sufficiency» на p. 381 доказано только для восстановленного отрывка |
+| «XVII-го века» | Хронологии в отрывке нет. Из названных — Оуэн (XVII в.); перечень «Other Calvinist authorities» доходит до Беркхофа (XX в.) | Датировка — от статьи. Для Оуэна, Дорта и WCF она верна. Без пометки |
+| Тон | У Л. и Д. — «proponents argue», «allegedly», «narrowed»: позиция излагается со стороны, с оценкой. На p. 382 приводятся возражения (Амиро, §56) | Статья передаёт мысль от себя, как пояснение к WCF, без оценочного «narrowed». Искажения нет: статья тоже описывает позицию WCF, а не защищает её. Без пометки |
+| Связь с WCF («хорошо согласуется») | Л. и Д. сами связывают «high Calvinism» с WCF: декрет (гл. III) идёт раньше учения о деле Христа | Опора есть, но частичная. У Л. и Д. довод — о *порядке* декретов. Лексический довод статьи (*redemption* ×8, сн. 82) — её собственный |
+
+**Поправки к корпусу.**
+1. HOLD «Л. и Д. по сн. 83» (§24 сводка, §56 сводка; `34_` §4.184 «Чего нет», §4.216 п. 6) снят в части текста. Изображения страниц не открывались.
+2. `34_` §4.184 п. 6: догадка статьи, почему старые авторы предпочитали *particular redemption* («акцент на результате»), у Л. и Д. на p. 381 опирается на «secure». Слова *redemption* в восстановленном отрывке нет. Вывод п. 6 (расхождение со Стюартом) не меняется.
+
+**Сводка §57.**
+- **Снято:** HOLD по сн. 83, в части текста (A2).
+- **Новое:** сн. 83 — `LOCATOR_VERIFIED`; «эффективность / не просто возможным» — ACCURATE; «ранние авторы — достаточность» — `SIMPLIFIED` (мягко).
+- **Теперь все пять сносок на Л. и Д. II (10, 13, 18, 45, 83) сверены по тексту.**
+- **HOLD без изменений:** печать 1990 г. и изображения страниц; Шнукер (сн. 17); White, p. 255 (сн. 9).
 
 Вердикты S1–S5 не меняются. Умысел не утверждается.
