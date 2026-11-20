@@ -103,7 +103,7 @@ The best current chronology is therefore not simply `after 2018 G3 became anti-C
 
 ## 2021–2022 — a self-conscious conservative institutional ecosystem
 
-The Church Network required close confessional alignment, historically including the Second London Baptist Confession of 1689 and the Dallas Statement with specified requirements/exceptions. G3 simultaneously expanded beyond the annual conference into publishing, G3+, a theological journal, workshops and a church network.
+The [2021 network form](https://web.archive.org/web/20210802180311id_/https://g3min.org/g3-church-network/) asked pastors for affirmation of the 1689 confession or qualifications, and for willingness to sign the Dallas Statement or an explanation. Agreement without signature was a selectable answer. An application procedure is neither an automatic exemption nor evidence that every admitted pastor signed. These are church membership criteria, not a conference-wide speaker rule. G3 simultaneously expanded beyond the annual conference into publishing, G3+, a theological journal, workshops and a church network.
 
 Its media and program ecosystem increasingly addressed:
 

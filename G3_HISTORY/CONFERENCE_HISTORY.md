@@ -112,7 +112,7 @@ Official archive:
 
 preserves a heavily missions-centered program: mission, church planting, contextualization, suffering church, Islam, election and missions, and missionary theology.
 
-G3’s own later `The Mission of God Study` explicitly says its curriculum was based on sermons preached at the **2019 G3 National Conference**.
+Those sermons had a second life outside the auditorium. In the [2024 *Mission of God* study](https://web.archive.org/web/20240715000817id_/https://g3min.org/wp-content/uploads/2024/06/G3-The-Mission-of-God-Curriculum.pdf), editor Scott Aniol arranged material from seven contributors into ten lessons for Sunday schools, small groups and families (title page; contents, p. i; preface, p. ii). The first lesson, credited to Buice, asks readers of 2 Corinthians 5:17–6:2 what part a congregation plays in sending missionaries. The second, credited to Paul Washer, asks how the church should prepare a person before sending them (lessons 1–2, pp. 1–6). The questions and teaching outlines are evidence of editorial adaptation, not verbatim words from the 2019 stage. No record of how many churches taught the course was obtained.
 
 ### 2020 — Worship
 
@@ -147,17 +147,21 @@ This is stronger than blog estimates because it is the organization’s own fede
 
 Tim Challies adds a different kind of primary evidence: before the 2021 event, Buice told him he was no longer sufficiently aligned with G3 and that renewed invitation would require signing the Dallas Statement and ceasing promotion/quotation of certain Christians. Challies declined. This is direct participant evidence of coalition narrowing after the broad first-eight-year era; it does not by itself adjudicate whether the boundary was theologically justified.
 
+### The church network: what a congregation was being asked to join
+
+By **2 August 2021**, the [G3 Church Network application](https://web.archive.org/web/20210802180311id_/https://g3min.org/g3-church-network/) was public. G3 addressed a problem a conference alone could not solve: pastors could attend a national gathering and still go home isolated. It offered ongoing fellowship, access to resources and optional joint projects. It explicitly allowed churches to keep another denominational affiliation. In return it asked for doctrinal commitments and at least **$500 a year** from each member church. G3 said the gifts would support the production of teaching resources; it intended to distribute twelve-week studies without charge and give members discounts on books and commentaries. This was a funding proposal, not a statement of receipts.
+
+The form shows how endorsement of the Dallas Statement worked differently for a church applying to the network than for a speaker invited to a conference. Pastors were asked to affirm the 1689 London Baptist Confession, even if it was not their congregation’s formal confession, and could explain reservations. G3 asked for willingness to sign the Dallas Statement or an explanation of a conscientious objection; the form distinguished agreement without a signature from having signed. Neither the form nor the [October 2025 version](https://web.archive.org/web/20251005142539id_/https://g3min.org/network/) identifies who was admitted with reservations. Questions about plural elders and church discipline also allowed applicants to say a practice was a goal rather than a current fact.
+
+One congregation explained what the offer meant to it. On [9 February 2022](https://gardenchurchnb.com/the-g3-church-network/), Randy Benson wrote that The Garden Church, a non-denominational church plant in New Braunfels, had decided to join earlier that year. He described a desire for fellowship and training **and** alignment on contested questions such as social justice and pastoral office. He understood his church to retain its own governance. His account documents one church’s decision, not the motives or signatures of the whole membership.
+
 ## Phase 4 — 2023: attendance peak, sovereignty theme and a new right-flank dispute
 
 ### Main conference theme now primary-anchored
 
 The main 2023 G3 National Conference theme is now directly anchored as **`The Sovereignty of God`** rather than merely inferred from associated content.
 
-Official G3 study page:
-
-`https://g3min.org/library-resources/the-sovereignty-of-god-study/`
-
-states that the curriculum was based on sermons preached at the **2023 G3 National Conference** and points readers to `The Sovereignty of God: The 2023 G3 National Conference` presentations.
+G3’s [study description captured on 14 July 2024](https://web.archive.org/web/20240714222403id_/https://g3min.org/library-resources/the-sovereignty-of-god-study/) identifies the 2023 national sermons as the basis for a twelve-week course on sovereignty. This establishes what G3 offered to teachers, not the attendance at individual sessions or uptake in churches. The description was read; the linked study PDF was not obtained.
 
 A contemporaneous official G3 article published immediately before the conference likewise states that attendees would gather under the thematic banner of **God's sovereignty**, with **13 main sessions and 15 breakout sessions**.
 

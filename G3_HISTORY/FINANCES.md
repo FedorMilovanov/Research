@@ -188,7 +188,9 @@ FY2023 raw Part III reports, among other activity:
 - twelve books and one music recording;
 - church-network growth to 211 churches.
 
-FY2024 filing material reports continued workshops/conferences and publishing/network activity.
+In Part III.4a G3 reported a network of **211 churches** in [FY2023](https://projects.propublica.org/nonprofits/organizations/842403597/202411429349300611/full), **223** in [FY2024](https://projects.propublica.org/nonprofits/organizations/842403597/202541359349304489/full) and **210** in [FY2025](https://projects.propublica.org/nonprofits/organizations/842403597/202641339349303874/full). These are the filer’s annual descriptions, not three dated, reconciled membership rolls. The last difference is not proof that thirteen named churches left after the founder’s resignation.
+
+The FY2024 return also separates **$196,202** of *Press Income* from **$667,283** of *Service Income* (p. 9, VIII.2a–b). Line VIII.1b, *Membership dues*, has no amount displayed. None of those rows identifies a network collections total: a blank on 1b is not evidence that no member paid, and multiplying the application’s $500 minimum by 223 would not establish receipts. The return reports twelve new books and one music release, four pastors’ workshops and two large conferences; III.4a does not allocate attendance or revenue to either conference by name.
 
 The FY2025 raw `IRS990/Desc` program-history narrative also states that G3 separated **Living Heritage Homeschool as an independent entity from G3 Ministries during 2025**, alongside continued G3 Press/G3+ activity and the year’s leadership/program changes.
 

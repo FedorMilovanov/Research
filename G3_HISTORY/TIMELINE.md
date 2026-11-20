@@ -36,11 +36,12 @@ Dates below are event dates where established; filing/publication/archive dates 
 
 ## 2021–2022 — ecosystem buildout + regional/local-church layer
 
-- **2021:** G3 Church Network is launched/developed as a voluntary network rather than denomination, with strong confessional/ecclesiological requirements. `G3-S021`.
+- **By 2021-08-02:** [network application](https://web.archive.org/web/20210802180311id_/https://g3min.org/g3-church-network/) already public: non-exclusive affiliation, confessional review and minimum $500 annual commitment; not necessarily the first application or admission date. `G3-S021`.
 - **2021 conference:** `Christ`; FY2021 Form 990 reports attendance increased to **6,500** and that G3 hired an Executive Director of Operations and Executive Vice President while expanding online resources. `G3-S002`.
 - **pre-2021 conference partnership boundary:** Tim Challies later recounts first-person that Buice regarded him as insufficiently aligned and that renewed invitation would require Dallas Statement alignment and ceasing promotion/quotation of specified Christians. This is direct participant evidence that the social-justice dispute had moved from public argument to practical platform boundary.
 - **2021-09-01:** Scott Aniol announces move into G3 as Executive Vice President / Editor-in-Chief and describes planned expansion into books, curricula, journal and online resources. `G3-S007`.
 - **2022-01-01:** Pray’s Mill Baptist Church leaves the Southern Baptist Convention. Reasons publicly associated with complementarianism, accountability, social-justice/CRT concerns, pragmatism and perceived theological drift. `G3-S025`.
+- **2022-02-09 (publication):** [The Garden Church](https://gardenchurchnb.com/the-g3-church-network/) says it decided to join earlier that year, while retaining its own governance.
 - **2022-02:** G3 holds its **first Regional Conference** at Pray’s Mill. An official Matt Sikes article dated Feb. 18 says roughly **700 people** were packed into the church auditorium. This proves that regional/local-church-scale programming continued alongside the much larger national conference model.
 - **2022:** first volume/launch period of `Gloria Deo Journal of Theology`. `G3-S022`.
 - **FY2022:** G3 reaches strongest financial year in current record: revenue **$1,735,978**, expenses **$1,010,186**, surplus **$725,792**, net assets **$1,318,931**. The amended raw return also reports one **$590,000 commercial-real-estate contribution**, valuation method `BROKER ESTIMATION`, with land $354,000 + buildings $236,000. `G3-S002`.
@@ -57,7 +58,8 @@ Dates below are event dates where established; filing/publication/archive dates 
 - **2024-05-09/11 and 2024-10-03/05:** Reformation regional registration and Cessationist publisher listing, respectively; see [conference history](CONFERENCE_HISTORY.md#after-the-national-meeting-continuity-and-limits-20242026) for the separate participant testimony.
 - **FY2024:** revenue **$1,212,253**; expenses **$1,401,429**; deficit **$189,176**; net assets **$854,674**. `G3-S002`.
 - **FY2024 Schedule L:** raw filing discloses `KARIS L BUICE`, relationship `Daughter of Board Member`, transaction `SALARY`, amount **$30,409**, revenue sharing false. The filing reports `EngagedInExcessBenefitTransInd=false`. This is a disclosure fact, not proof of self-dealing or wrongdoing. `G3-S002`.
-- **2024:** filing describes substantial ongoing activity: workshops, conferences, publishing and Church Network activity. Financial weakening therefore should not be described as institutional inactivity.
+- **By July 2024:** the [mission study PDF](https://web.archive.org/web/20240715000817id_/https://g3min.org/wp-content/uploads/2024/06/G3-The-Mission-of-God-Curriculum.pdf) and [sovereignty study description](https://web.archive.org/web/20240714222403id_/https://g3min.org/library-resources/the-sovereignty-of-god-study/) turn the 2019 and 2023 national programmes respectively into courses; capture dates do not establish first release.
+- **FY2024:** G3 reported a network of 223 churches, four pastors’ workshops, two large conferences, twelve new books and one music release ([Form 990, III.4a](https://projects.propublica.org/nonprofits/organizations/842403597/202541359349304489/full), signed 2025-05-15).
 
 ## 2025 — founder crisis and attempted reset
 
@@ -73,6 +75,7 @@ Dates below are event dates where established; filing/publication/archive dates 
 - **2025-12-22:** official G3 Buck Braswell author material identifies him as a G3 board member. `G3-S045`.
 - **FY2025:** revenue collapses to **$399,645** while expenses remain **$950,642**; deficit **$550,997**; net assets **$304,459**. Raw Schedule L again reports `KARIS L BUICE` / `Daughter of Board Member` / `SALARY`, now **$31,880**, with excess-benefit indicator false. `G3-S002`.
 - **FY2025 program-history narrative:** raw `IRS990/Desc` states that G3 separated **Living Heritage Homeschool as an independent entity from G3 Ministries during 2025**. This is `VERIFIED_PRIMARY` for the separation; it does not identify Living Heritage as any later 2026 G3+/Press successor. `G3-S002`.
+- **FY2025:** [Form 990, III.4a](https://projects.propublica.org/nonprofits/organizations/842403597/202641339349303874/full), signed 2026-05-15, reports a network of 210 member churches and one workshop each on expository preaching and biblical worship. This is a fiscal-year report, not a crisis-day roster.
 - **FY2025 receivable:** the continuing notes/loans receivable ends the filing at **$153,000**, after carrying from FY2023 $416,227 through FY2024 $251,197. Exact debtor and transaction linkage remain open. `G3-S002`.
 
 ## 2026 — Buck dossier and second leadership crisis
