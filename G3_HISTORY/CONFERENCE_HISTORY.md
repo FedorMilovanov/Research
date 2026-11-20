@@ -26,11 +26,9 @@ G3’s [later account](https://web.archive.org/web/20230407084022id_/https://g3m
 
 ### 2013 — Gospel / message and mission
 
-Official G3 conference archive route:
+G3’s [recordings index](https://web.archive.org/web/20140201124351id_/http://www.g3conference.com:80/?page_id=639), captured **1 February 2014**, is explicitly headed *2013 G3 Conference — The Gospel: Message & Mission*. It lists nine numbered main sessions **plus** a separate Q&A. The organizer identifies Pray’s Mill pastor Josh Buice as the moderator. These are credits and audio links, not ten recordings heard.
 
-`https://g3min.org/archives/?conf=2013`
-
-The surviving official archive labels the conference **`The Gospel: Message and Mission`** and preserves sessions on prayer, mission, the gospel, penal substitution and related theological themes.
+The [notes posted by Berean Wife on 30 January](https://web.archive.org/web/20130722032238id_/http://www.bereanwife.net/2013/01/g3-2013-conference-notes/) identify their author as her husband. Under Thursday, 24 January, he describes Steven Lawson expounding Galatians 1:6–10 against adding works to grace. Under Friday, 25 January, he records a different question from Tim Challies: if the Great Commission still stands, what can digital communication help Christians do, and what is lost when it replaces face-to-face contact? The [Q&A notes](https://web.archive.org/web/20130722013610id_/http://www.bereanwife.net/2013/01/qa-panel-discussion/), item 7, independently of the organizer refer back to Lawson’s exposition the night before. Both posts belong to the same blog, not two independent witnesses; neither is a transcript.
 
 Tim Challies’ 2025 first-person retrospective says:
 
@@ -46,33 +44,13 @@ The [recording catalogue](https://www.gnli.com/titles/2013-G3-Conference-or-G3-M
 
 ### 2014 — Doctrine of the Church
 
-Official page, dated 2013-11-13:
-
-`https://g3min.org/2014-g3-conference/`
-
-The page gives:
-
-- dates: Jan. 23–25;
-- theme: **`The Doctrine of the Church`**;
-- stated goal: learn about the church from Scripture rather than `latest church growth techniques`.
-
-This directly supports the historical claim that the anti-pragmatism / Scripture / local-church emphasis was early, not a post-scandal invention.
-
-Official session archive:
-
-`https://g3min.org/archives/?conf=2014`
-
-contains preaching on church, discipleship, ecclesiology, worship, mission and biblical preaching.
+The former G3 paths `g3min.org/2014-g3-conference/` and `g3min.org/archives/?conf=2014` identify historical resources; they are not live evidence of what was said. The [2014 session catalogue](https://www.gnli.com/titles/2014-G3-Conference-or-G3-Ministries/2909) is a separate source for recorded titles, not a transcript.
 
 A contemporary Founders Journal advertisement places the Jan. 23–25 conference at Pray's Mill Baptist Church and gives the theme as `The Church: From a Biblical Perspective`, consistent with the [Southern Equip advance notice](https://equip.sbts.edu/article/g3-conference-on-the-church/). These establish what was advertised, not independent observation of each appearance.
 
 ### 2015 — The Bible is the Word of God
 
-Official review:
-
-`https://g3min.org/2015-g3-conference-review/`
-
-The page explicitly says the year’s theme was **`The Bible is the Word of God`** and frames the conference around confidence in Scripture.
+The organizer’s [archived blog index](https://web.archive.org/web/20160209061811id_/http://www.g3conference.com:80/category/g3-blog/) retains the entry *2015 G3 Conference Review* dated 30 January. The [recording catalogue](https://www.gnli.com/titles/2015-G3-Conference-or-G3-Ministries/2910) identifies sessions on inerrancy and exposition. The old `g3min.org/2015-g3-conference-review/` is not here treated as a retrieved full review.
 
 #### From the 2014 pulpit to a church-planting appeal
 
@@ -106,21 +84,13 @@ The June Dallas meeting was not another national conference. In [*History and Fo
 
 ### 2019 — The Mission of God
 
-Official archive:
-
-`https://g3min.org/archives/?conf=2019`
-
-preserves a heavily missions-centered program: mission, church planting, contextualization, suffering church, Islam, election and missions, and missionary theology.
+The historical G3 route was `g3min.org/archives/?conf=2019`. The evidence below for the programme’s afterlife is the archived curriculum itself, not a present-day visit to that path.
 
 Those sermons had a second life outside the auditorium. In the [2024 *Mission of God* study](https://web.archive.org/web/20240715000817id_/https://g3min.org/wp-content/uploads/2024/06/G3-The-Mission-of-God-Curriculum.pdf), editor Scott Aniol arranged material from seven contributors into ten lessons for Sunday schools, small groups and families (title page; contents, p. i; preface, p. ii). The first lesson, credited to Buice, asks readers of 2 Corinthians 5:17–6:2 what part a congregation plays in sending missionaries. The second, credited to Paul Washer, asks how the church should prepare a person before sending them (lessons 1–2, pp. 1–6). The questions and teaching outlines are evidence of editorial adaptation, not verbatim words from the 2019 stage. No record of how many churches taught the course was obtained.
 
 ### 2020 — Worship
 
-Official archive:
-
-`https://g3min.org/archives/?conf=worship`
-
-labels the conference `Worship` and includes sessions from John MacArthur, Voddie Baucham, James White, Joel Beeke, Phil Johnson, Paul Washer, Costi Hinn and others.
+The [2020 recording catalogue](https://www.gnli.com/titles/2020-G3-Conference-or-G3-Ministries/2905) lists sermons on worship by John MacArthur, Phil Johnson, Paul Washer and Joel Beeke. Titles identify the subject; they do not establish the words spoken.
 
 Tim Challies’ Jan. 20, 2020 first-person report says he had just spoken at the annual G3 Conference in Atlanta and participated in a Q&A with MacArthur, Washer, Baucham, Lawson and Buice. This is a useful independent contemporary anchor for the broad conservative-Reformed coalition at that point.
 
@@ -130,11 +100,7 @@ A concrete 2020 wide-audience photograph is now source-pinned in `MEDIA_LEDGER.m
 
 ## Phase 3 — 2021: 6,500 and formal institutional scale
 
-Official archive:
-
-`https://g3min.org/archives/christ/`
-
-labels the 2021 conference **`Christ`** and preserves a predominantly Christological/theological main-session program. It also includes a session on Black Liberation Theology, demonstrating that culture/ideology disputes existed inside an otherwise strongly theological program.
+G3’s historical conference index identified this edition as *Christ* (`g3min.org/archives/christ/`). This is a historical route, not a verified live programme. The filing establishes scale, not the content of individual sermons.
 
 FY2021 Form 990 program text states that G3:
 
@@ -196,19 +162,19 @@ The resulting historical picture is not `theological conference → political co
 
 In 2024 the ticket desk was advertising different kinds of meetings. The [May registration](https://www.tickettailor.com/events/g3ministries/1010697) names a regional Reformation conference at Countryside Bible Church, 9–11 May. The [October publisher listing](https://www.tickettailor.com/events/g3ministries/1270768) offered exhibitors four passes at First Baptist Church of Mustang, Oklahoma, 3–5 October. These are organizer listings, not gate returns. In his [15 January 2025 newsletter](https://justinpeters.org/jpm-newsletter-2024/), under *Domestic Travels*, Justin Peters describes speaking at the Cessationist Conference. He supplies firsthand evidence of participation, not the reason for the Oklahoma venue. Neither meeting should extend the national-conference attendance series.
 
-The cancellation of the 2025 national conference was not the end of all G3 activity. The board accepted Buice’s resignation on 8 May; its 12 May statement announced the cancellation. In June G3 announced a renewed emphasis on the local church, and in July appointed Scott Aniol president. Only in August 2026, in the separate dispute over intervention in the discipline process at FBC Lindale, did the Church Network announce its dissolution and the ministry announce a wind-down. The [timeline](TIMELINE.md) distinguishes the participants’ reproduced 25 August statement from later reports. The [subscriber letter](PRIMARY_SOURCE_G3PLUS_SUBSCRIBER_EMAIL_2026-08-27.md) described a transition still in progress. The [Georgia register](Q005_Q006_GEORGIA_FILING_DELTA_2026-11-15.md) later recorded a change of name effective 28 October, not a filing dissolving the corporation or an instrument conveying the publishing rights. In [*Our leadership*](https://lumenaministries.com/about/), read 20 November, Lumena identifies its president as Laramie Minga, formerly G3’s director of operations. The endorsements on that page anticipate carrying content forward. Neither the biography nor the endorsements identify a counterparty, catalogue of assets, or closing terms.
+The cancellation of the 2025 national conference was not the end of all G3 activity. The board accepted Buice’s resignation on 8 May; its 12 May statement announced the cancellation. In June G3 announced a renewed emphasis on the local church, and in July appointed Scott Aniol president. Only in August 2026, in the separate dispute over intervention in the discipline process at FBC Lindale, did the Church Network announce its dissolution and the ministry announce a wind-down. The [timeline](TIMELINE.md) distinguishes the participants’ reproduced 25 August statement from later reports. The [subscriber letter](PRIMARY_SOURCE_G3PLUS_SUBSCRIBER_EMAIL_2026-08-27.md) described a transition still in progress. The [Georgia register](Q005_Q006_GEORGIA_FILING_DELTA_2026-11-15.md) later recorded a change of name effective 28 October, not a filing dissolving the corporation or an instrument conveying the publishing rights. In [*Our leadership*](https://lumenaministries.com/about/), read 20 November, the version read named Laramie Minga as president, formerly G3’s director of operations. A [separate reviewer](https://github.com/FedorMilovanov/Research/pull/582#issuecomment-7052347960) did not find the biography in another rendering. Neither its presence nor its absence is an officer filing. The endorsements in the first rendering anticipated carrying content forward. Neither the biography nor the endorsements identify a counterparty, catalogue of assets, or closing terms.
 
 ## Theme sequence — official/primary anchors now substantially stronger
 
-- **2013** — The Gospel: Message and Mission — official archive
-- **2014** — The Doctrine of the Church / Church from a Biblical Perspective — official announcement + archive + contemporary Founders ad
+- **2013** — The Gospel: Message and Mission — historical programme record
+- **2014** — The Doctrine of the Church / Church from a Biblical Perspective — advertised programme + recording catalogue
 - **2015** — The Bible is the Word of God — official review
 - **2016** — The Trinity — official announcement + archive
-- **2017** — Reformation 500 — official archive
+- **2017** — Reformation 500 — historical programme record
 - **2018** — Knowing God / discipleship — official archive + contemporary promotion
-- **2019** — The Mission of God — official archive + G3 curriculum
-- **2020** — Worship — official archive + Challies first-person report
-- **2021** — Christ — official archive + Form 990 scale evidence
+- **2019** — The Mission of God — 2024 curriculum preface
+- **2020** — Worship — recording catalogue + Challies first-person report
+- **2021** — Christ — historical title; Form 990 for scale
 - **2023** — **The Sovereignty of God** — official G3 curriculum + contemporaneous official conference article
 
 The thematic record demonstrates a primarily theological/ecclesial national-conference identity across the full pre-collapse history. It does **not** mean G3’s broader media ministry was apolitical or free of culture-war content.
