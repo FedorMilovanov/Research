@@ -54,7 +54,7 @@ jobs:
           python -m pip freeze > approved-ephemera-originals/PIP_FREEZE.txt
           sha256sum requirements/source-audit.lock > approved-ephemera-originals/DEPENDENCY_LOCK_SHA256.txt
       - name: Upload temporary originals and manifest
-        uses: actions/upload-artifact@65462800fd760344b1a7b4382951275a0abb4808
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
         with:
           name: ephemeral-approved-ephemera-originals-63
           path: approved-ephemera-originals/
