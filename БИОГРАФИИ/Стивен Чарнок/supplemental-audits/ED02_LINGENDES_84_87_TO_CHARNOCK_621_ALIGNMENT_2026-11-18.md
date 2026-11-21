@@ -168,8 +168,7 @@ XML `A32723` прочитан как **TEI**, а не текст, выдерну
 3. Оставить отдельно \`1682 A32723 p.621 → Lingendes pp.84–85\` и вопрос конкретного издания Lingendes, его пагинации и литературной передачи 84–87. Учитывать выявленную инверсию порядка доводов и различие модальности.
 4. Не загружать на сайт/Drive/публичный продукт OCR-массив, факсимиле или производную русскую цитату до отдельной проверки прав; не переписывать \`04\`, canonical SSOT, старые custody receipts.
 
-**Итог этой волны ED-02:** стадия раннего свидетеля продвинута от \`1699_CATALOG_ONLY\` до \`1699_PRIMARY_PRINT_OCR_MARGINALIA_FOUND\`; **точные цифры \`p.185\`, 1684 и ED-02 в целом остаются OPEN**.
-
+**Итог этой волны ED-02:** стадия раннего свидетеля продвинута от \`1699_CATALOG_ONLY\` до \`1699_PRIMARY_PRINT_OCR_MARGINALIA_FOUND\`; **точные цифры \`p.185\`, 1684 и ED-02 в целом остаются OPEN**. 
 
 ---
 
@@ -187,7 +186,7 @@ XML `A32723` прочитан как **TEI**, а не текст, выдерну
 
 **Прямые источники и локаторы:**
 
-1. [Antrim Presbytery Book Collection Listing, Queen's University Belfast (PDF)](https://www.qub.ac.uk/directorates/InformationServices/TheLibrary/SpecialCollections/FileStore/Filetoupload839610en.pdf), **печатная с. 47**, запись **B.2.9.2**; **печатная с. 175**, запись **B.8.5.16**. Это *публичный институциональный каталог holdings* (операционно `CATALOG_ONLY` для текста XVII века), **не** факсимиле страницы 521.
+1. [Antrim Presbytery Book Collection Listing, Queen's University Belfast (PDF)](https://www.qub.ac.uk/directorates/InformationServices/TheLibrary/SpecialCollections/FileStore/Filetoupload839610en.pdf), записи **B.2.9.2** и **B.8.5.16** (по отдельным шифрам хранения; номера страниц каталога здесь не утверждаются без проверки изображения). Это *публичный институциональный каталог holdings* (операционно `CATALOG_ONLY` для текста XVII века), **не** факсимиле страницы 521.
 2. [Huntington, коллекционная карточка 446165 v.2](https://www.huntington.org/collections/lib-446165-v2), поля «Publication date: 1684», «Call number: 446165 v.2», «Vol. II»; статус `CATALOG_ONLY` относительно текста и примечания.
 3. [Grub Street Project, список изданий Чарнока](https://www.grubstreetproject.net/people/25338/works/?order=title): **ESTC R11740 = Works Vol. II 1684**, **ESTC R226925 = Works Vol. II 1699**. В этом же списке **R12522 = Vol. I 1684**; нельзя по ошибке взять его за нужный том II. Это библиографическая контрольная запись (`B1`), не чтение маргиналии.
 
