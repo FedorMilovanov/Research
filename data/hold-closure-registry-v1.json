@@ -1095,6 +1095,51 @@
         "PUBLICATION_HOLD"
       ],
       "residualReason": "Прочитаны README и имена, а не содержимое всех dataset-файлов. Заявление CC BY относится к распространителю и может покрывать разметку, но не исходный ESV, LSJ, Abbott-Smith и иные вложенные произведения. Никакое лицензионное или публикационное решение не принято; PROMOTE остаётся 0."
+    },
+    {
+      "id": "HCR-2026-11-18-33",
+      "title": "Official core: три carrier из истекающего CI artifact воспроизводятся по pinned Git commits",
+      "holdType": "ARCHIVE_HOLD",
+      "previousState": "В #621 была датированная квитанция трёх скачиваний, но пакет оставался HOLD: отдельного принятого генератора/полного check для всей тройки не было, а исчезновение ephemeral CI artifact выглядело как риск потери carrier",
+      "closedScope": "STEPBible-Data, morphhb и SBLGNT заново получены из codeload.github.com по трём полным commit SHA; для каждого размер и полный SHA-256 совпали с квитанцией. Принят отдельный offline-гейт внутренней арифметики и cross-check STEPBible pin, полный --archive/--fetch маршрут и негативные тесты. Истечение CI artifact больше не является потерей единственного воспроизводимого carrier",
+      "recordLocations": [
+        "data/official-core-datasets-reproducibility-2026-11-18.json",
+        "scripts/check_official_core_reproducibility.py",
+        "scripts/test_check_official_core_reproducibility.py",
+        "docs/research/PR621_SELECTIVE_INTEGRATION_CROSSWALK_2026-11-18.md §2",
+        "docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md §4"
+      ],
+      "method": "pinned-commit-raw-fetch-and-rehash",
+      "objects": [
+        {
+          "repository": "STEPBible/STEPBible-Data",
+          "commit": "b86d26cdb1f51729e73b5b4eb7f7ccadc5dfba39",
+          "bytes": 100920275,
+          "sha256": "6845fa9660c62301a0eec38c009ca34ef82647a9737529d8c56ac45d35182df0"
+        },
+        {
+          "repository": "openscriptures/morphhb",
+          "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+          "bytes": 20870584,
+          "sha256": "f56c150708b5d74719ecb709c712c31eae9855bca7b111fd82ec91b5d177b4c7"
+        },
+        {
+          "repository": "Faithlife/SBLGNT",
+          "commit": "c4d241a9c1c479a55b989ba35a4976c1d0b8052c",
+          "bytes": 1414688,
+          "sha256": "4fc2659ce10ec6f57552f22e039de927ed3e417c7b5a757f34f05dae530e4c0f"
+        },
+        {
+          "sourcePrDataBlob": "2c1bdecf91f6c05f5cf7ec3187eb86e19bbc905c"
+        }
+      ],
+      "residualHolds": [
+        "ARCHIVE_HOLD",
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "residualReason": "Проверены ZIP-carriers, а не чтение содержимого и не научная пригодность. Внутренняя независимая custody-копия на Drive не создана; доступность всё ещё зависит от непереписанной upstream Git history. Лицензии и вложенные произведения требуют отдельного решения, наборы не объявлены сохранёнными или публикационно разрешёнными; PROMOTE остаётся 0."
     }
   ],
   "confirmations": [
