@@ -137,13 +137,13 @@ No global `45 proven instances`, percentage, or `17 sermons plagiarized` conclus
 
 ### Q009 — physical packet preparation/mailing chain
 
-**State:** `PARTIALLY_VERIFIED / DOCUMENT_HOLD`.
+**State:** `PARTIALLY_VERIFIED / DOCUMENT_HOLD — UNCLOSABLE 2026-11-20`.
 
 Anonymous external circulation and recipient evidence for at least one Texas-postmarked/deceptive-return-address package are supportable. Exact physical actor chain, gloves and forensic intent are not primary-closed.
 
 ### Q010 — PMBC resignation mechanics
 
-**State:** `DISPUTED / PRIMARY PMBC DOCUMENT_HOLD`.
+**State:** `DISPUTED / PRIMARY PMBC DOCUMENT_HOLD — UNCLOSABLE 2026-11-20`.
 
 The reproduced participant letter says all four voluntarily resigned. Secondary reporting says three were required/pressed by deacons and Dylan Joyner resigned voluntarily. The Aug. 16 Matt Sikes primary announcement predates the resignation event and does not settle this contradiction.
 
@@ -151,11 +151,13 @@ The reproduced participant letter says all four voluntarily resigned. Secondary 
 
 ### Q011 — motive in the 2026 Buck campaign
 
-**State:** `INFERENCE ONLY`.
+**State:** `INFERENCE ONLY — UNCLOSABLE by design 2026-11-20 (requires communications/confession)`.
 
 Conduct can be documented without inventing revenge, institutional self-protection or other motive. Motive requires communications/confession/participant testimony.
 
 ### Q012 — prior knowledge of Buice anonymous accounts
+
+**HOLD-попытка 2026-11-20:** `UNVERIFIED CONTRARY TO OFFICIAL DENIAL — UNCLOSABLE` без contrary primary evidence.
 
 **State:** `UNVERIFIED CONTRARY TO OFFICIAL DENIAL`.
 
@@ -183,7 +185,7 @@ Map speaker/friendship/institutional overlap without converting overlap into for
 
 ### Q016 — January 2021 MacArthur `live` episode
 
-**State:** `PARTIALLY_VERIFIED / ARCHIVE_HOLD / INTENT_UNPROVED`.
+**State:** `PARTIALLY_VERIFIED / ARCHIVE_HOLD / INTENT_UNPROVED — DURATION CLOSABLE 2026-11-20 (50:43 primary) wording/intent UNCLOSABLE`.
 
 Exact-phrase/archive searches still converge on the same adversarial compilation. Repetition of that compilation is not corroboration.
 
