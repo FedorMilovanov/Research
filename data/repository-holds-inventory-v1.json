@@ -98,7 +98,7 @@
       "HOLD_MAJOR": 11,
       "HOLD_RETAINED": 1,
       "LIVE-READBACK-HOLD": 4,
-      "LOCATOR_HOLD": 1985,
+      "LOCATOR_HOLD": 1983,
       "PAGE-IMAGE-HOLD": 14,
       "PUBLICATION_HOLD": 2656,
       "RIGHTS_HOLD": 1476,
@@ -106,7 +106,7 @@
     },
     "mentionsByStatus": {
       "closed": 824,
-      "open": 2359,
+      "open": 2357,
       "unmarked": 6065
     },
     "canonicalFlagLineStatesRecordedAsBothOpenAndClosed": 406,
@@ -425,13 +425,13 @@
       "mentions": {
         "ARCHIVE_HOLD": 299,
         "EVIDENCE_HOLD": 75,
-        "LOCATOR_HOLD": 432,
+        "LOCATOR_HOLD": 430,
         "PUBLICATION_HOLD": 361,
         "RIGHTS_HOLD": 217
       },
       "status": {
         "closed": 110,
-        "open": 397,
+        "open": 395,
         "unmarked": 925
       }
     },
@@ -28469,11 +28469,10 @@
       "path": "БИОГРАФИИ/Стивен Чарнок/manuscripts/V_KAK_PROPOVEDI_STALI_KNIGAMI_WORKING_DRAFT.md",
       "corpus": "БИОГРАФИИ",
       "mentions": {
-        "LOCATOR_HOLD": 1,
         "PUBLICATION_HOLD": 3
       },
       "status": {
-        "open": 2,
+        "open": 1,
         "unmarked": 2
       }
     },
@@ -28481,11 +28480,11 @@
       "path": "БИОГРАФИИ/Стивен Чарнок/reader-preview/CHARNOCK_FULL_BOOK_EDITORIAL_READER_2026-11-21.md",
       "corpus": "БИОГРАФИИ",
       "mentions": {
-        "LOCATOR_HOLD": 2,
+        "LOCATOR_HOLD": 1,
         "PUBLICATION_HOLD": 3
       },
       "status": {
-        "open": 2,
+        "open": 1,
         "unmarked": 3
       }
     },
