@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "corpusId": "NAMES_OF_GOD_CANONICAL_DIGITAL_TEXT_EDITIONS",
+  "createdAt": "2026-11-07",
+  "status": "RESEARCH_ONLY_NOT_CRITICAL_MANUSCRIPT_EDITORIAL_APPROVAL",
+  "policy": "One normalized edition ID for original edition display variants. This does NOT make an internet transcription a critical manuscript witness. Edition/source/host rights are separate.",
+  "records": [
+    {
+      "id": "ED-MECHON-MT-ONLINE",
+      "canonicalName": "Mechon-Mamre online pointed Masoretic Text transcription",
+      "languageGroup": [
+        "hebrew",
+        "aramaic"
+      ],
+      "family": "MASORETIC_DIGITAL_TRANSCRIPTION",
+      "host": "https://mechon-mamre.org/p/pt/",
+      "compatibleRawEditionStrings": [
+        "Mechon-Mamre MT digital transcription"
+      ],
+      "textualWitnessLevel": "DIGITAL_VERSE_SURFACE_NOT_BHS_OR_BHQ",
+      "criticalEditionCollated": false,
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "BLOCKED",
+      "sourceRecordIds": [
+        "SRC-MT-MECHON",
+        "SRC-DANIEL-ARAMAIC"
+      ]
+    },
+    {
+      "id": "ED-SBLGNT-2010-BIBLEGATEWAY",
+      "canonicalName": "Michael W. Holmes SBL Greek New Testament (2010), displayed by BibleGateway",
+      "languageGroup": [
+        "greek"
+      ],
+      "family": "SBLGNT_2010_EDITED_NT_GREEK",
+      "host": "https://www.biblegateway.com/",
+      "compatibleRawEditionStrings": [
+        "SBLGNT 2010 via BibleGateway"
+      ],
+      "textualWitnessLevel": "PRINTED_GREEK_EDITION_DISPLAY_NOT_FULL_ECM_NA28_APPARATUS",
+      "criticalEditionCollated": false,
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "BLOCKED",
+      "sourceRecordIds": [
+        "SRC-SBLGNT-DIGITAL-NT"
+      ],
+      "publisherLicenseSourceId": "SRC-SBLGNT-CCBY-LICENSE",
+      "licenseBoundary": "SBLGNT Greek source text CC BY 4.0 with attribution, host design/other Bible translations separately; still editorial publication BLOCKED"
+    },
+    {
+      "id": "ED-THGNT-2017-BIBLEGATEWAY",
+      "canonicalName": "Tyndale House Greek New Testament (2017), BibleGateway display",
+      "languageGroup": [
+        "greek"
+      ],
+      "family": "THGNT_2017_EDITED_NT_GREEK",
+      "host": "https://www.biblegateway.com/",
+      "compatibleRawEditionStrings": [
+        "THGNT 2017 via BibleGateway"
+      ],
+      "textualWitnessLevel": "PRINTED_GREEK_EDITION_DISPLAY_NOT_FULL_MANUSCRIPT_COLLATION",
+      "criticalEditionCollated": false,
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "BLOCKED",
+      "sourceRecordIds": [
+        "SRC-THGNT-LUKE"
+      ],
+      "licenseBoundary": "THGNT copyrighted edition does not inherit SBLGNT free license"
+    },
+    {
+      "id": "ED-RAHLFS-HANHART-2006-PUBLISHER",
+      "canonicalName": "Rahlfs–Hanhart Septuaginta 2006 Greek Old Testament, Deutsche Bibelgesellschaft online",
+      "languageGroup": [
+        "greek"
+      ],
+      "family": "RAHLFS_HANHART_2006_LXX_GREEK",
+      "host": "https://www.die-bibel.de/bibel/LXX/",
+      "compatibleRawEditionStrings": [
+        "Rahlfs-Hanhart 2006 via Deutsche Bibelgesellschaft",
+        "Rahlfs-Hanhart 2006 LXX via Deutsche Bibelgesellschaft"
+      ],
+      "textualWitnessLevel": "PUBLISHER_PRINTED_TEXT_SURFACE_NO_WITNESS_LEVEL_VARIANT_COLLATION",
+      "criticalEditionCollated": false,
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "BLOCKED",
+      "sourceRecordIds": [
+        "SRC-RAHLFS-EXODUS3",
+        "SRC-RAHLFS-EXODUS17",
+        "SRC-RAHLFS-ISAIAH"
+      ],
+      "licenseBoundary": "Publisher copyrighted edited LXX does not inherit SBLGNT Greek NT license"
+    }
+  ]
+}
