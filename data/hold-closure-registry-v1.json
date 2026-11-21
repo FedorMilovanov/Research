@@ -992,11 +992,11 @@
       "method": "register-claims-audit",
       "objects": [
         {
-          "defectsFixed": 9,
+          "defectsFixed": 10,
           "mutationsInjected": 13,
           "mutationsMissedBeforeFixes": 3,
-          "staleArtefactsFound": 2,
-          "proseCountersResyncedAfterMerge": 5
+          "staleArtefactsFound": 3,
+          "proseCountersResyncedAfterMerge": 8
         }
       ],
       "residualHolds": [

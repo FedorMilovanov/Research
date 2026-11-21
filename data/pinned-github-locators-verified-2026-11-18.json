@@ -11,8 +11,8 @@
     "unclaimed": 13,
     "unavailable": 0,
     "notChecked": 0,
-    "citations": 19,
-    "citationFiles": 7
+    "citations": 20,
+    "citationFiles": 8
   },
   "limits": [
     "Совпадение хеша доказывает байты объекта на закреплённом коммите, а не прочтение содержания.",
@@ -151,6 +151,10 @@
         {
           "file": "БИОГРАФИИ/Стивен Чарнок/manuscripts/INTRO_MIR_STEPHEN_CHARNOCK_WORKING_DRAFT.md",
           "line": 91
+        },
+        {
+          "file": "БИОГРАФИИ/Стивен Чарнок/reader-preview/CHARNOCK_FULL_BOOK_EDITORIAL_READER_2026-11-21.md",
+          "line": 108
         }
       ],
       "state": "unclaimed",
