@@ -2836,8 +2836,8 @@ S. Escobedo III, «2 Peter 2:1 and Universal Redemption» (сайт Alpha & Omeg
 
 ### 75.2. Источники
 
-- (а) **«Limited Atonement Debate pt. 1»** (answeringislam.blog, 2026; страница загружена). Длинная выдержка из Melick, NAC 32 (Broadman, 1991), к Кол. 1:20, с пропусками («…»), выделениями блогера и знаком прим. «106» в тексте. Класс C.
-- (б) **«Hymn We Proclaim | The Christological Hymn of Colossians 1:13–20»** (theotivity.com, 2025; фрагмент из поисковой выдачи). «The scope of reconciliation includes the material creation, the animal world, humanity, and spiritual beings» и «Here, however, reconciliation involves more than a voluntary movement. The natural creation was subjected to sin “not by its own choice” (Rom 8:20)…» — обе с пометкой «[Melick, Philippians, Colossians, 225]». Класс C; то же у liberatinglions.wordpress.com (2015).
+- (а) **«Limited Atonement Debate pt. 1»** (answeringislam.blog, 2026; страница загружена) *(р. 159, §82: URL — https://answeringislam.blog/limited-atonement-debate-pt-1/ ; автор Sam Shamoun; страница помечена тегом «2020», изображение загружено в 2026/08, так что «2026» — дата текущей версии, а не первой публикации. Выдержка Мелика — четвёртый из пяти блоков раздела «Biblical Commentaries on Colossians 1:20» (Wall, Sumney, Moo, Melick, пятый блок с пометкой «Ibid.»); границы блока и атрибуция NAC 32 проверены)*. Длинная выдержка из Melick, NAC 32 (Broadman, 1991), к Кол. 1:20, с пропусками («…»), выделениями блогера и знаком прим. «106» в тексте. Класс C.
+- (б) **«Hymn We Proclaim | The Christological Hymn of Colossians 1:13–20»** (theotivity.com, 2025; фрагмент из поисковой выдачи) *(р. 159: URL — https://www.theotivity.com/post/the-christological-hymn-of-colossians/ )*. «The scope of reconciliation includes the material creation, the animal world, humanity, and spiritual beings» и «Here, however, reconciliation involves more than a voluntary movement. The natural creation was subjected to sin “not by its own choice” (Rom 8:20)…» — обе с пометкой «[Melick, Philippians, Colossians, 225]». Класс C; то же у liberatinglions.wordpress.com (2015) *(р. 159: URL — https://liberatinglions.wordpress.com/2015/04/21/the-christological-hymn-of-colossians-1-2/ )*.
 - (в) **Печатный текст** не виден: на IA книги нет, полнотекстовый индекс Open Library формулу не выдал. Текст прим. 106 Мелика посредники не приводят.
 
 ### 75.3. Сверка
@@ -3088,6 +3088,34 @@ S. Escobedo III, «2 Peter 2:1 and Universal Redemption» (сайт Alpha & Omeg
 
 - **Подтверждено:** §76.1 (текст статьи); вердикты §76 для сн. 107 и 108.
 - **Новое:** начало заметки MSB к Кол. 1:20 дополнено словами «means “to change”» (класс B; три издания, включая NKJV 1997).
+- **HOLD:** без изменений против §80.4.
+
+Вердикты S1–S5 не меняются. Умысел не утверждается.
+
+## 82. Раунд 159 (2026-11-17): самопроверка раунда 152 (сн. 109–111, Мелик) — атрибуция и прослеживаемость посредников
+
+**Повод.** Пользователь просил перепроверять себя. В §75.2 посредники класса C названы без URL. Кроме того, поисковый фрагмент страницы (а) показал, что это коллаж из нескольких комментариев. Значит, нужно было проверить, что ключевая фраза §75 о «невольном подчинении» действительно принадлежит Мелику, а не соседнему автору.
+
+### 82.1. Источники
+
+- (а) S. Shamoun, «Limited Atonement Debate pt. 1», https://answeringislam.blog/limited-atonement-debate-pt-1/ — страница загружена целиком (6 фрагментов), раздел «Biblical Commentaries on Colossians 1:20». Класс C.
+- (б) https://www.theotivity.com/post/the-christological-hymn-of-colossians/ (2025); https://liberatinglions.wordpress.com/2015/04/21/the-christological-hymn-of-colossians-1-2/ (2015). Класс C.
+- (в) Полнотекстовый индекс Open Library: «involuntary submission, being conquered» — **0** попаданий (печатный NAC 32 по-прежнему не виден).
+
+### 82.2. Сверка
+
+| Что проверено | Итог |
+|---|---|
+| Строение раздела (а) | Пять блоков цитат, у каждого своя атрибуция: Wall (IVPNTC, 1993) → Sumney (NTL, 2008, p. 76) → Moo (PNTC, 2008, pp. 133–137) → **Melick (NAC 32, 1991)** → пятый блок без собственного заглавия (у блогера «Ibid.», хотя Мелику он не принадлежит; по содержанию, вероятно, N. T. Wright, TNTC — не сверялось). |
+| Принадлежность фраз §75.3 | Блок Мелика начинается с «The scope of reconciliation includes the material creation…» и заканчивается атрибуцией «*The New American Commentary*… Richard R. Melick, Jr., Volume 32». Внутри него, по порядку: «Nothing lies outside the realm of Christ's reconciling work.106» → «Thus reconciliation is normally voluntary and volitional…» → «**Thus reconciliation may be effected by voluntary submission to Jesus… or by involuntary submission, being conquered by the power of his might. Reconciliation must be defined in this context, therefore, as all things being put into proper relation to Christ**» → «Everyone and everything will be subordinated to Christ.111». **Атрибуция §75 подтверждена.** Похожая фраза «Having been defeated as rebels, they now can be reconciled as subjects» стоит в следующем, пятом блоке и Мелику в §75 **не** приписывалась |
+| Страница | Блогер страниц для Мелика не даёт. p. 225 — только по посреднику (б) для первой фразы и для фразы о «voluntary movement». Для фразы о «voluntary/involuntary submission» печатная страница **не установлена** (вероятно, p. 225 или следующая). Уточнение к §75.3, вердикт не меняется |
+| Знаки примечаний | В блоке Мелика видны «106» (при «Nothing lies outside…») и «111» (при «subordinated to Christ»). Для сн. 111 статьи («Ibid. P. 225. Fn. 106») это подтверждает, что прим. 106 Мелика стоит при «Nothing lies outside…». Текст прим. 106 — HOLD |
+| Дата посредника (а) | Тег «2020» на странице; «2026» в §75.2 — дата текущей версии. Помечено |
+
+### 82.3. Сводка §82
+
+- **Подтверждено:** фраза о «voluntary / involuntary submission» и определение примирения как «all things being put into proper relation to Christ» входят в блок Мелика. `SOURCE_SAYS_MORE` (существенно) для сн. 109–110 в силе.
+- **Исправлено:** URL посредников внесены в §75.2 и в `34_` S250; отмечена неопределённость даты (а); печатная страница фразы о подчинении — «не установлена» (не p. 225 по умолчанию).
 - **HOLD:** без изменений против §80.4.
 
 Вердикты S1–S5 не меняются. Умысел не утверждается.
