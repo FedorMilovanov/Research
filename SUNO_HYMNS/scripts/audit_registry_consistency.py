@@ -7,13 +7,14 @@
 
 1. дубликаты идентификаторов;
 2. ссылки из претензий на несуществующие источники;
-3. источники и претензии, отсутствующие в зеркалах Markdown;
+3. карточки источников и претензий в Markdown, их операционные состояния и HOLDs;
 4. идентификаторы, упомянутые в исследовательских документах, но не
    существующие в реестрах;
 5. числа источников и претензий, названные в прозе, против факта;
 6. токены со смешанной кириллицей и латиницей — опечатки вроде «Сисebut».
 
-Только чтение. Код возврата 1, если найдено хоть что-то.
+Только чтение. Код возврата 1 при ошибках идентификаторов, ссылок или состояний.
+Наблюдения о числах и смешанном алфавите — подсказки для ручной проверки, не ошибки гейта.
 """
 
 import json
@@ -43,6 +44,116 @@ def load(path, key):
     return json.loads(path.read_text(encoding="utf-8"))[key]
 
 
+MIRROR_FIELDS = {
+    "evidence class": "evidenceClass",
+    "access": "accessState", "access state": "accessState",
+    "locator": "locatorState", "locator state": "locatorState",
+    "rights": "rightsState", "rights state": "rightsState",
+    "publication": "publicationState", "publication state": "publicationState",
+    "review state": "claimStatus", "holds": "holds",
+}
+SOURCE_STATES = ("evidenceClass", "accessState", "locatorState", "rightsState", "publicationState")
+
+
+def _visible_metadata(text):
+    """Mask fenced examples and HTML comments before looking for declarations."""
+    lines = []
+    fence = None
+    comment = False
+
+    def mask_comment(match):
+        nonlocal comment
+        comment = not match[0].endswith("-->")
+        return " " * len(match[0])
+
+    for line in text.splitlines(keepends=True):
+        if fence is not None:
+            if fence.fullmatch(line):
+                fence = None
+            lines.append("\n")
+            continue
+        opening = re.match(r"^ {0,3}(`{3,}|~{3,})", line) if not comment else None
+        if opening:
+            marker = opening[1]
+            fence = re.compile(r" {0,3}" + re.escape(marker[0])
+                               + r"{" + str(len(marker)) + r",}[ \t]*(?:\r?\n)?")
+            lines.append("\n")
+            continue
+        if comment:
+            end = line.find("-->")
+            if end < 0:
+                lines.append("\n")
+                continue
+            line = " " * (end + 3) + line[end + 3:]
+            comment = False
+        lines.append(re.sub(r"<!--.*?(?:-->|$)", mask_comment, line))
+    return "".join(lines)
+
+
+def mirror_states(text):
+    """Read declared fields, not incidental IDs/HOLDs in explanatory prose.
+
+    The ledger retains dated revisions. A later explicitly declared field replaces
+    that field only; a note-only revision must not erase a previous state or HOLD.
+    This checks operational metadata, not equality of the scientific prose.
+    """
+    text = _visible_metadata(text)
+    cards = {}
+    headings = list(re.finditer(r"^#{1,6} (.+)$", text, re.M))
+    labels = "|".join(re.escape(label) for label in MIRROR_FIELDS)
+    field_re = re.compile(r"^(?:- )?(" + labels + r"):[ \t]*([^\n]*)$", re.M | re.I)
+    # Sources/Level delimit existing compact rows, but are not state fields.
+    compact_labels = labels + "|sources|level"
+    separator_re = re.compile(
+        r"(?:[ \t]+·[ \t]+|\.[ \t]+(?=HOLDs:))(?=(?:- )?(?:" + compact_labels + r"):)", re.I
+    )
+    for i, heading in enumerate(headings):
+        ident = re.match(r"(?:Revised:\s*)?((?:SRC|CLM)-[A-Z0-9-]+)(?=\s|$)", heading[1])
+        if not ident:
+            continue
+        end = headings[i + 1].start() if i + 1 < len(headings) else len(text)
+        body = text[heading.end():end].replace("**", "").replace("`", "")
+        # Only split an actual metadata line, and only before another field.
+        # A quoted label in Notes/Limits must not become an operational override.
+        body = "\n".join(separator_re.sub("\n", line) for line in body.splitlines()
+                         if field_re.fullmatch(line))
+        fields = cards.setdefault(ident[1], {})
+        for match in field_re.finditer(body):
+            field = MIRROR_FIELDS[match[1].lower()]
+            if field == "holds":
+                value = match[2].strip()
+                if not value or value.removesuffix(".").casefold() in {"none", "none recorded", "нет", "—"}:
+                    fields[field] = set()
+                elif re.fullmatch(r"[A-Z][A-Z0-9_]+(?:[ \t]*[,;][ \t]*[A-Z][A-Z0-9_]+)*[.;]?", value):
+                    fields[field] = set(re.findall(r"\b[A-Z][A-Z0-9_]+\b", value))
+                else:
+                    # Keep malformed text visible as a mismatch, never as an empty set.
+                    fields[field] = {value}
+            else:
+                value = re.fullmatch(
+                    r"([A-Z][A-Z0-9_]*)(?:[.;]|[ \t]+(?:\([^\n]*\)|—[^\n]*))?[ \t]*", match[2]
+                )
+                fields[field] = value[1] if value else None
+    return cards
+
+
+def check_mirror_states(records, text, state_fields, problems):
+    cards = mirror_states(text)
+    for record in records:
+        ident = record["id"]
+        if ident not in cards:
+            problems.append(f"{ident}: нет отдельной Markdown-карточки")
+            continue
+        fields = cards[ident]
+        for field in state_fields:
+            if fields.get(field) != record[field]:
+                problems.append(f"{ident}: Markdown {field}={fields.get(field)!r}, JSON {record[field]!r}")
+        expected = set(record.get("holds", []))
+        actual = fields.get("holds", set())
+        if actual != expected:
+            problems.append(f"{ident}: Markdown HOLDs={sorted(actual)}, JSON {sorted(expected)}")
+
+
 def main():
     problems = []
     notes = []
@@ -70,14 +181,8 @@ def main():
     # 3. mirrors
     src_md = SRC_MD.read_text(encoding="utf-8") if SRC_MD.exists() else ""
     clm_md = CLM_MD.read_text(encoding="utf-8") if CLM_MD.exists() else ""
-    missing_src_md = [i for i in src_ids if i not in src_md]
-    missing_clm_md = [i for i in clm_ids if i not in clm_md]
-    if missing_src_md:
-        problems.append(f"нет в {SRC_MD.name}: {len(missing_src_md)} — "
-                        f"например {missing_src_md[:5]}")
-    if missing_clm_md:
-        problems.append(f"нет в {CLM_MD.name}: {len(missing_clm_md)} — "
-                        f"например {missing_clm_md[:5]}")
+    check_mirror_states(sources, src_md, SOURCE_STATES, problems)
+    check_mirror_states(claims, clm_md, ("claimStatus",), problems)
 
     # 4. ids mentioned in prose but absent from the registries
     known = src_set | set(clm_ids)
@@ -109,8 +214,9 @@ def main():
                         f"в реестрах {expected} — проверить, не устарело ли"
                     )
 
-    # 6. mixed-script tokens
-    for doc in sorted(ROOT.glob("SUNO_HYMNS/**/*.md")):
+    # 6. mixed-script tokens (this inventory also includes the prose scans above)
+    all_docs = sorted(ROOT.glob("SUNO_HYMNS/**/*.md"))
+    for doc in all_docs:
         for i, line in enumerate(doc.read_text(encoding="utf-8").splitlines(), 1):
             for tok in line.split():
                 core = tok.strip(".,;:()«»\"'—–-")
@@ -118,7 +224,7 @@ def main():
                     notes.append(f"{doc.relative_to(ROOT)}:{i}: смешанная запись «{core}»")
 
     print(f"источников: {n_src}   претензий: {n_clm}")
-    print(f"документов проверено: {len(docs) + len(list(ROOT.glob('SUNO_HYMNS/**/*.md')))}")
+    print(f"документов проверено: {len(all_docs)}")
     print()
     if problems:
         print("ПРОБЛЕМЫ:")

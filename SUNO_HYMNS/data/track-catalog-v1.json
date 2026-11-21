@@ -548,7 +548,7 @@
       "textCategory": "Six-line Greek hymn sung at the lighting of the lamps; Christological address, Trinitarian doxology, Christological close",
       "sourceChain": [
         "Greek received text, six lines, transcribed from an open choral library and cross-checked against other online witnesses",
-        "Basil of Caesarea, De Spiritu Sancto 29.73 (c. 375), read in the NPNF English translation",
+        "Basil of Caesarea, De Spiritu Sancto 29.73 (c. 375): the read NPNF/New Advent passage attests an ancient lamp-lighting thanksgiving and formula, not the complete six-line received text.",
         "Russian verse translation PHOS-001-RU v0.4, authored in this repository"
       ],
       "tuneDirection": "No historical melody is claimed. The Greek tradition sings the hymn to a modal chant; the melodies printed for the Church Slavonic 'Свете тихий' belong to the 17th–19th centuries. Any recording here is a modern setting.",
@@ -654,7 +654,7 @@
         "CLM-PHOS-BASIL-SCOPE"
       ],
       "qaStatus": "OPEN",
-      "textChainNote": "Six lines, three parts. The performance arrangement repeats line 4 as a refrain and line 6 as a reprise, using no new words (owner's decision, 2026-10-26). The Greek leaves the reference of the three genitive adjectives open; the Russian of v0.5 does not reproduce that (dossier § 4.2 — the address opens line 1 and the three read as attributes of the Father). No refrain, no printed repetition, and no rhyme or metre in the source (six different line-endings; 15·15·18·16·16·18 syllables), so neither is added to the translation. The date of composition is unknown and is not asserted; the popular 'Apostolic Constitutions VIII.35' claim is under EVIDENCE_HOLD and may not be used in copy. Package: SUNO/PHOS-001_PRODUCTION_PACKAGE.md.",
+      "textChainNote": "Six lines, three parts. The performance arrangement repeats line 4 as a refrain and line 6 as a reprise, using no new words (owner's decision, 2026-10-26). The Greek leaves the reference of the three genitive adjectives open; the Russian of v0.5 does not reproduce that (dossier § 4.2 — the address opens line 1 and the three read as attributes of the Father). No refrain, no printed repetition, and no rhyme or metre in the source (six different line-endings; 15·15·18·16·16·18 syllables), so neither is added to the translation. The date of composition is unknown and is not asserted; the Apostolic Constitutions VIII.35 citation does not supply this hymn in the checked Donaldson/New Advent sections (CLM-PHOS-AC-CHECKED: VERIFIED_NEGATIVE), not an absence finding for the whole Greek work. Package: SUNO/PHOS-001_PRODUCTION_PACKAGE.md.",
       "rightsNote": "The Greek text is public domain and is reproduced as text only; no modern critical edition is quoted. Church Slavonic and existing Russian translations are not reproduced. The Russian text v0.1 is authored here.",
       "openChecks": [
         "Lines 1–2 order: the address now stands first because the Greek order with a nominative address is ungrammatical in Russian; the owner should confirm the new line break, or pick variant В (dash, adjectives in the nominative, order kept) — dossier § 4.2.",
@@ -663,7 +663,7 @@
         "Record the verbatim prompt and the take in PROMPT_AND_VERSION_REGISTER.md once a take exists.",
         "Collate the Greek text against a printed Horologion or Plank 2001 (LOCATOR_HOLD).",
         "Closed 2026-10-26: Apostolic Constitutions VIII.35–37 read — the hymn is not there; the claim is false (CLM-PHOS-AC-CHECKED)",
-        "See P. Lond. 2037B in a catalogue or image (ARCHIVE_HOLD).",
+        "Catalogue identification is complete: P. Lond. 2037 b = P. Lond. Lit. 244, DCLP/TM 65200. The papyrus facsimile and images of Milne 1927, pp. 205–206 remain unread (ARCHIVE_HOLD); catalogue metadata and the read OCR are not those images.",
         "Channel copy (title, description, pinned comments, Telegram) is deliberately not written yet: it must describe the take that exists."
       ],
       "displayTitleNote": "Approved by the owner on 2026-10-26 as «Свет Отрадный», with the capital О as the owner wrote it; the verse line keeps the ordinary lowercase «отрадный». «Свете тихий» is not available: it names the Church Slavonic text.",
@@ -671,7 +671,7 @@
       "interpretationNotes": [
         "The three genitive adjectives now read as attributes of the Father: the Greek ambiguity cannot survive a nominative address. Resolved in favour of the case, not of the majority translation; variant В resolves it the other way and is documented.",
         "The nominative «Иисус Христос» / «Сын Божий» is an address by position and context, not by form: Russian lost the vocative, and the Church Slavonic -е forms would have raised the register above the Greek, which uses the vocative neutrally. The owner chose register over case.",
-        "«Oldest» may be said only in the full form: the earliest non-scriptural Christian hymn whose complete text survives and which has been sung continuously to this day. It is not the oldest by manuscript (P. Lond. 2037B, 6th–7th c.; P.Oxy. XV 1786, c. 250–300) or by composition (Odes of Solomon, c. 70–125). Verified 2026-10-26; dossier § 3.4–3.6."
+        "HISTORICAL / SUPERSEDED: the 2026-10-26 permission to call this the earliest non-scriptural hymn preserved complete and sung continuously. The comparative superlative and continuity remain unverified (CLM-PHOS-OLDEST-SCOPE, EVIDENCE_HOLD); Basil 29.73 does not attest the complete six-line text. Track selection and the owner-approved title are unchanged."
       ]
     },
     {
@@ -681,7 +681,7 @@
       "originalTitleVariants": [
         "Ὕμνος τοῦ Σωτῆρος Χριστοῦ",
         "Στόμιον πώλων ἀδαῶν",
-        "Βασιλεῦ ἁγίων, λόγε πανδαμάτωρ (HISTORICAL / SUPERSEDED as an independent manuscript incipit: formerly labelled 'opening in some editions'; Chatfield explains an editorial arrangement, not a newly established ancient title/opening. His ninth line is not mapped to Stählin's line 11: CLM-PHOS-CLEM-VARIANT-OPENING)",
+        "Βασιλεῦ ἁγίων, λόγε πανδαμάτωρ (editorial opening, not an established manuscript incipit)",
         "Hymn to Christ the Savior",
         "Bridle of untamed colts",
         "Shepherd of tender youth"
@@ -693,17 +693,17 @@
       },
       "textCategory": "Greek hymn closing the third book of the Paedagogus, described in the saved sources as short anapaestic verse. The working transcription numbers 65 lb-delimited verse segments in the digital Stählin 1905 text. The reported 64 lines of Wood and 66 of van den Hoek concern translations (via Webster); Gordley separately describes a sixty-six-line Greek hymn. These are not three collated Greek editions; their alignment remains open.",
       "sourceChain": [
-        "Manuscripts of the Paedagogus: Paris, BnF, MS Grec 451 (913 or 914, scribe Baanes for Arethas), imperfect; lacunae supplied from Modena, Biblioteca Estense, Miscellanea Greca 126 (11th c.) and Florence, Biblioteca Medicea Laurenziana, Plut. 5.24",
-        "HISTORICAL first-stage record: Greek text read in this pass at catholiclibrary.org; second accessible Greek text (Apostoliki Diakonia) differs from it in two places. This refers to earlier readings, not new acquisition or collation in the present metadata pass.",
-        "Critical editions named but not opened: Marcovich (VCS 61, 2002); Stählin/Treu (GCS 12, 3rd ed., 1972), text at pp. 291–292. This remains true for those named editions, not for every Stählin text: the later registered First1KGreek digital transcription is Stählin 1905 (SRC-PHOS-CLEM-FIRST1K-PAED); its header and end of Book III were read as excerpts, not the whole Paedagogus or a printed-page/manuscript collation.",
-        "No papyrus witness found for the hymn; the hymn is absent from one of the primary manuscripts"
+        "P (Paris, BnF, Grec 451, 913/914) does not preserve the hymn; Stählin reconstructs lost leaves. The hymn is reported in M (Modena, Miscellanea Greca 126) and F (Florence, Plut. 5.24). No manuscript images were inspected and the witnesses are not assumed independent.",
+        "Earlier Greek readings: Catholic Library and Apostoliki Diakonia. Two differences were reported; this was not an independent manuscript collation.",
+        "Working text: First1KGreek digital Stählin 1905 (SRC-PHOS-CLEM-FIRST1K-PAED); the header and end of Book III were read, not the whole Paedagogus or printed pages. Stählin/Treu 1972 and Marcovich/van Winden 2002 remain uncollated.",
+        "No papyrus witness of this hymn was identified in the checked material (CLM-PHOS-CLEM-PAPYRUS-SEARCH); this is not a global absence finding."
       ],
       "tuneDirection": "The original tune is not established in the checked material; this is not proof that no historical melody existed or survives anywhere. Phillips reports anapaestic dimeters through Hymnology Archive; Wilamowitz, in the saved Stählin 1905 OCR excerpt, describes monometers. Their exact relationship has not been reconciled and no new scansion was made. The previously checked XML hymn paragraph encodes no score; one digital paragraph cannot establish global loss. Metre or literary singability does not identify a tune or actual liturgical performance. No tune is selected and no arrangement or production is authorised here (CLM-PHOS-CLEM-METRE; CLM-PHOS-CLEM-METRE-WILAMOWITZ).",
       "structure": {
         "lines": 65,
         "lineUnit": "lb-delimited verse segments in the previously checked First1KGreek digital transcription of Stählin 1905, Paedagogus III.12.101.3; not a universal count for every edition, translation or manuscript",
         "note": "65 is the working numbering of this digital transcription, with 14 explicit n labels; the page break after segment 24 gives 24 + 41. Saved Webster excerpts report 64 lines in Wood and 66 in van den Hoek, both translations. Gordley separately calls the Greek hymn sixty-six-line; this is not an independently verified count. Reported outlines retain their own 1–66 numbering: Wolbergs 1–32 / 33–66; Gordley seven strophes (1–10, 11–18, 19–28, 29–34, 35–41, 42–53, 54–66), with further outlines by Ferguson, Marrou and May known only through Gordley. These boundaries have not been mapped onto the 65 XML segments or adopted as a performance structure. Alignment remains BACKLOG, not a lost-verse diagnosis or a completed renumbering.",
-        "source": "Existing results, not new acquisition or collation: SRC-PHOS-CLEM-FIRST1K-PAED / CLM-PHOS-CLEM-VERSE-COUNT and CLM-PHOS-CLEM-STRUCTURE-DISPUTED; RESEARCH/DOSSIER_PHOS-007_PART13_FULL_TEXT_AND_FOLIOS.md#verse-count-scope. Gordley, Teaching through Song in Antiquity, pp. 371–381, was read only as a partial author blog excerpt; Webster and other authors remain at their recorded excerpt/reference scope. The XML, originals and translations were not fetched or reread in this metadata pass."
+        "source": "SRC-PHOS-CLEM-FIRST1K-PAED; CLM-PHOS-CLEM-VERSE-COUNT; CLM-PHOS-CLEM-STRUCTURE-DISPUTED; RESEARCH/DOSSIER_PHOS-007_PART13_FULL_TEXT_AND_FOLIOS.md#verse-count-scope. Gordley and Webster remain at the recorded partial blog/excerpt scope, not newly collated originals or translations."
       },
       "productionState": "NOT_STARTED",
       "publicPublicationStatus": "UNKNOWN_NOT_VERIFIED",

@@ -57,7 +57,6 @@ jobs:
         # enforces the rule that a wrapper closes against a space or end of line.
         run: |
           set -euo pipefail
-          python3 SUNO_HYMNS/scripts/check_youtube_markup.py SUNO_HYMNS/SUNO/DUTCH-005_YOUTUBE.md || true
           # NB: the first fenced block of that file is a *title candidate*, not the
           # description. Taking it unchecked made this gate pass while checking
           # 59 characters of headline. The description is the first block under
@@ -113,11 +112,12 @@ jobs:
         run: python3 SUNO_HYMNS/scripts/check_revision_consistency.py
 
       - name: Audit cross-file consistency
-        # The validator only sees the JSON. It cannot see that a source is missing
-        # from the Markdown mirror, that a claim points at a source which no longer
-        # exists, or that a dossier cites an ID that was never created. All three
-        # happened on 2026-10-26 and none of them failed a gate.
-        run: python3 SUNO_HYMNS/scripts/audit_registry_consistency.py
+        # Check actual cards and their operational fields, not mere ID mentions.
+        # Regression tests cover missing HOLDs and dated/partial revisions.
+        run: |
+          set -euo pipefail
+          python3 -B -m unittest discover -s SUNO_HYMNS/scripts -p 'test_*.py'
+          python3 -B SUNO_HYMNS/scripts/audit_registry_consistency.py
 
       - name: Assert the validator is read-only
         run: |
