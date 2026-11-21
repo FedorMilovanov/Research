@@ -8,7 +8,8 @@ import unittest
 from pathlib import Path
 
 from audit_charnock_handoff import (
-    ROOT, REGISTRY, audit_contract, canonical_bytes, inspect, observed_counts, verify_receipt,
+    ROOT, REGISTRY, MARKER, DOSSIER_HEADER_SCAN_BYTES, has_dossier_authority_markers,
+    audit_contract, canonical_bytes, inspect, observed_counts, verify_receipt,
 )
 
 
@@ -38,6 +39,18 @@ class HandoffTests(unittest.TestCase):
                     destinationSha256Readback=digest, verifiedAtUtc='2026-10-25T21:00:00Z',
                     verifiedBy='UNIT-TEST-NOT-A-REMOTE-OBSERVATION',
                     verificationMethod='INDEPENDENT_DRIVE_GET_FILE_SHA256_CHECKSUM')
+
+    def test_dated_status_overlay_can_precede_historical_owner_marker(self):
+        # The owner marker remains mandatory; the old 5,000-byte cutoff was brittle
+        # after a dated 10-chapter navigation update was inserted above it.
+        original = 'x' * 6100 + MARKER + '\nРоль: CURRENT_ENTRY'
+        self.assertTrue(has_dossier_authority_markers(original, 'CURRENT_ENTRY'))
+        self.assertFalse(has_dossier_authority_markers(original, 'NOT_AN_OWNER'))
+        self.assertFalse(has_dossier_authority_markers(
+            'x' * DOSSIER_HEADER_SCAN_BYTES + MARKER + '\nРоль: CURRENT_ENTRY',
+            'CURRENT_ENTRY'))
+        self.assertFalse(has_dossier_authority_markers(
+            'x' * 6100 + MARKER + '\nРоль: WRONG_ROLE', 'CURRENT_ENTRY'))
 
     def test_current_contract(self):
         self.assertEqual(audit_contract(self.registry,packet_replay=True)['counts']['dossierOwners'], 18)
