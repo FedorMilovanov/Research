@@ -1205,7 +1205,7 @@
         "PUBLICATION_HOLD"
       ],
       "reason": "Смешение осей в machine-SSOT сохраняется: часть значений — accessState/rightsState/publicationState, часть — статусы, часть — склейки двух флагов. Все manual-употребления теперь прочитаны и классифицированы по record key, но переписывать поля без владельца корпуса нельзя.",
-      "proposal": "data/hold-value-mapping-proposal-v1.json (status PROPOSAL_ONLY): все неканонические написания покрыты; manual-употребления имеют record-keyed resolution, unresolved=0. Проверка соответствия: python3 -B scripts/check_hold_vocabulary.py --check",
+      "proposal": "data/hold-value-mapping-proposal-v1.json (status PROPOSAL_ONLY): все неканонические написания покрыты; manual-употребления разрешены по записи, unresolved=0. Проверка соответствия: python3 -B scripts/check_hold_vocabulary.py --check",
       "decisionRequiredFrom": "владелец корпуса"
     },
     {
