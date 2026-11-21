@@ -139,4 +139,6 @@ FY25 $399,645/$950,642 −$550,997 net $304,459 receivable $153,000 income $15,3
 
 *Обновление 2026-11-20 (ультра-мощная PRESS-консолидация):* `SOURCE_LEDGER.md` добавлен **G3-S149 Lumena Press live Shopify 20ноя** — taxonomy Books/Lumena Press Books/Living Heritage Books/Downloads/DVDs/Christian Living/Family/Ministry/Doctrine/Merch + cross-links Lumena Ministries/Media + g3conference socials retained + titles Johnson/Spurgeon/Talbert — Press catalog continuity operationally verified, Q020/Q022 title-by-title HOLD сохранён, но platform identity теперь primary A1.
 
-*Подпись:* Agent №4 SCOUT — консолидация 11–18 + Lumena chain S145-S149 live verified 20ноя + Press live, дальше обновления в канон.
+*Обновление 2026-11-20 (мощная P0-HOLD синхронизация Press):* `FINAL_P0_HOLD_MATRIX` overlay 7bfa0a1 (Press live) + `ASSET_TRANSFER_AND_RIGHTS.md` synced S149 — Q020/Q022 platform identity теперь primary A1, title-by-title beneficial-ownership HOLD preserved, без новых WAVE-файлов.
+
+*Подпись:* Agent №4 SCOUT — консолидация 11–18 + Lumena chain S145-S149 live verified 20ноя + Press live + P0 matrix, дальше обновления в канон.
