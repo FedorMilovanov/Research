@@ -135,4 +135,6 @@ FY25 $399,645/$950,642 −$550,997 net $304,459 receivable $153,000 income $15,3
 
 *Обновление 2026-11-20 (мощная PRIMARY-верификация Lumena live 20ноя):* **прямое наблюдение `lumenaministries.com/` + `/about/` + `g3min.org` redirect live** — `Living Truth Faithful Living` + Latin `lumen` rose window Psalm43:3 + Lumena Press/Media divisions + Minga bio 2022 Director of Media/Managing Editor →2024 Director Operations + Beeke/de Bruyn/Johnson/Tanner endorsements — **G3-S148 PRIMARY A1 PUBLICATION_ELIGIBLE** заменяет placeholder S143, операционная преемственность прямо верифицирована, без новых WAVE-файлов.
 
-*Подпись:* Agent №4 SCOUT — консолидация 11–18 + Lumena chain S145-S148 live verified 20ноя, дальше обновления в канон.
+*Обновление 2026-11-20 (супер-мощная ASSET/TIMELINE-консолидация live):* `ASSET_TRANSFER_AND_RIGHTS.md` + `TIMELINE.md` дополнены G3-S148 live (redirect + Press/Media live divisions + Minga bio 2022→2024) — asset-правопреемство same-EIN operationally verified, timeline S143→S148 upgraded, без новых WAVE-файлов.
+
+*Подпись:* Agent №4 SCOUT — консолидация 11–18 + Lumena chain S145-S148 live verified 20ноя + asset/timeline live, дальше обновления в канон.
