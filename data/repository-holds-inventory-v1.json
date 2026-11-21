@@ -76,13 +76,13 @@
     ]
   },
   "totals": {
-    "filesScanned": 3131,
-    "filesWithMentions": 918,
+    "filesScanned": 3133,
+    "filesWithMentions": 920,
     "mentions": {
       "ARCHIVE_HOLD": 1424,
       "BLOCKING-HOLD": 16,
       "BOOK-FULLTEXT-HOLD": 15,
-      "EVIDENCE_HOLD": 1303,
+      "EVIDENCE_HOLD": 1305,
       "HOLD-APPARATUS": 1,
       "HOLD-AS": 3,
       "HOLD-GLOSS": 1,
@@ -100,14 +100,14 @@
       "LIVE-READBACK-HOLD": 4,
       "LOCATOR_HOLD": 1984,
       "PAGE-IMAGE-HOLD": 14,
-      "PUBLICATION_HOLD": 2659,
-      "RIGHTS_HOLD": 1478,
+      "PUBLICATION_HOLD": 2664,
+      "RIGHTS_HOLD": 1481,
       "VERSION-HOLD": 23
     },
     "mentionsByStatus": {
       "closed": 824,
       "open": 2362,
-      "unmarked": 6068
+      "unmarked": 6078
     },
     "canonicalFlagLineStatesRecordedAsBothOpenAndClosed": 406,
     "filesWithJsonHolds": 41,
@@ -229,18 +229,18 @@
       }
     },
     "G3_HISTORY": {
-      "files": 91,
+      "files": 92,
       "mentions": {
         "ARCHIVE_HOLD": 21,
-        "EVIDENCE_HOLD": 14,
+        "EVIDENCE_HOLD": 16,
         "LOCATOR_HOLD": 2,
-        "PUBLICATION_HOLD": 149,
-        "RIGHTS_HOLD": 14
+        "PUBLICATION_HOLD": 151,
+        "RIGHTS_HOLD": 16
       },
       "status": {
         "closed": 4,
         "open": 5,
-        "unmarked": 191
+        "unmarked": 197
       }
     },
     "LE_CANON_SUCRE": {
@@ -358,18 +358,18 @@
       }
     },
     "docs": {
-      "files": 98,
+      "files": 99,
       "mentions": {
         "ARCHIVE_HOLD": 541,
         "EVIDENCE_HOLD": 435,
         "LOCATOR_HOLD": 332,
-        "PUBLICATION_HOLD": 1038,
-        "RIGHTS_HOLD": 564
+        "PUBLICATION_HOLD": 1041,
+        "RIGHTS_HOLD": 565
       },
       "status": {
         "closed": 247,
         "open": 1107,
-        "unmarked": 1702
+        "unmarked": 1706
       }
     },
     "scripts": {
@@ -23268,6 +23268,18 @@
       }
     },
     {
+      "path": "G3_HISTORY/PRODUCT_HANDOFF_G3_PUB015_CORRECTION_PROPOSAL_2026-11-21.md",
+      "corpus": "G3_HISTORY",
+      "mentions": {
+        "EVIDENCE_HOLD": 1,
+        "PUBLICATION_HOLD": 1,
+        "RIGHTS_HOLD": 1
+      },
+      "status": {
+        "unmarked": 3
+      }
+    },
+    {
       "path": "G3_HISTORY/Q004_FY2025_IRS_INTERNAL_PRESIDENCY_DATE_CONFLICT_2026-09-09.md",
       "corpus": "G3_HISTORY",
       "mentions": {
@@ -23388,10 +23400,12 @@
       "path": "G3_HISTORY/tools/validate_g3_corpus_integrity.py",
       "corpus": "G3_HISTORY",
       "mentions": {
-        "PUBLICATION_HOLD": 3
+        "EVIDENCE_HOLD": 1,
+        "PUBLICATION_HOLD": 4,
+        "RIGHTS_HOLD": 1
       },
       "status": {
-        "unmarked": 3
+        "unmarked": 6
       }
     },
     {
@@ -26142,6 +26156,17 @@
       },
       "status": {
         "unmarked": 1
+      }
+    },
+    {
+      "path": "docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md",
+      "corpus": "docs",
+      "mentions": {
+        "PUBLICATION_HOLD": 3,
+        "RIGHTS_HOLD": 1
+      },
+      "status": {
+        "unmarked": 4
       }
     },
     {

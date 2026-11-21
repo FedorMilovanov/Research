@@ -1005,6 +1005,32 @@
         "EVIDENCE_HOLD"
       ],
       "residualReason": "Три шага CI остаются отчётными (дубли, самодатировка, сверка Drive), поэтому свежесть этих отчётов не гейтится; предыдущее состояние записей по-прежнему цитирует исторические числа; проверки ловят цифры, а не слова."
+    },
+    {
+      "id": "HCR-2026-11-18-30",
+      "title": "Неклассифицированные употребления `HOLD` и `FORBIDDEN` прочитаны по record key",
+      "holdType": "EVIDENCE_HOLD",
+      "previousState": "Два написания класса manual давали три значения в holds-массивах; mapping знал файлы и число, но не различал конкретные записи и честно оставлял requires per-record reading",
+      "closedScope": "Все измеренные manual-употребления получили отдельное соответствие по path, JSON pointer и value: одно legacy-написание дублирует PUBLICATION_HOLD, второе является собирательным marker/status при уже типизированных флагах, FORBIDDEN является статусом отсечённой формулировки; checker требует полное покрытие и отклоняет пропавшие, лишние и дублированные разрешения",
+      "recordLocations": [
+        "docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md §2",
+        "data/hold-value-mapping-proposal-v1.json",
+        "scripts/check_hold_vocabulary.py",
+        "scripts/test_check_hold_vocabulary.py"
+      ],
+      "method": "record-context-classification",
+      "objects": [
+        {
+          "manualOccurrencesClassified": 3,
+          "unresolvedManualOccurrences": 0,
+          "registryValuesRewritten": 0
+        }
+      ],
+      "residualHolds": [
+        "EVIDENCE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "residualReason": "Закрыта неоднозначность классификации, а не сами удержания. Proposal остаётся PROPOSAL_ONLY; переписывание corpus SSOT требует решения владельца и официального пересъёма."
     }
   ],
   "confirmations": [
@@ -1148,8 +1174,8 @@
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ],
-      "reason": "Смешение осей в machine-SSOT: часть значений — это accessState/rightsState/publicationState, часть — статусы, часть — склейки двух флагов. Переписывать поля без владельца корпуса нельзя.",
-      "proposal": "data/hold-value-mapping-proposal-v1.json (status PROPOSAL_ONLY): 80 значений — канонические флаги, 24 — значения осей, 7 — склейки, 20 — статусы, 3 — требуют чтения записи человеком. Проверка соответствия: python3 -B scripts/check_hold_vocabulary.py --check",
+      "reason": "Смешение осей в machine-SSOT сохраняется: часть значений — accessState/rightsState/publicationState, часть — статусы, часть — склейки двух флагов. Все manual-употребления теперь прочитаны и классифицированы по record key, но переписывать поля без владельца корпуса нельзя.",
+      "proposal": "data/hold-value-mapping-proposal-v1.json (status PROPOSAL_ONLY): все неканонические написания покрыты; manual-употребления имеют record-keyed resolution, unresolved=0. Проверка соответствия: python3 -B scripts/check_hold_vocabulary.py --check",
       "decisionRequiredFrom": "владелец корпуса"
     },
     {

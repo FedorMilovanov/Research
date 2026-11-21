@@ -104,6 +104,48 @@ class VocabularyTests(unittest.TestCase):
         self.assertTrue(any("missing justification" in p for p in problems), problems)
 
 
+class ManualResolutionTests(unittest.TestCase):
+    def manual_proposal(self, *resolutions: dict) -> dict:
+        prop = proposal(entry("HOLD", "manual", "requires per-record reading"))
+        prop["manualResolutions"] = list(resolutions)
+        prop["counts"]["manualReview"] = {
+            "occurrences": 1,
+            "resolvedByRecordContext": len(resolutions),
+            "unresolved": 1 - len(resolutions),
+        }
+        return prop
+
+    def resolution(self, *, pointer: str = "/a/0/holds") -> dict:
+        return {
+            "value": "HOLD",
+            "path": "corpus/data/x.json",
+            "pointer": pointer,
+            "classification": "status",
+            "proposedRepresentation": "legacy marker; no additional hold",
+            "sourceLocator": "corpus/source.md:10",
+            "justification": "record context was read",
+        }
+
+    def test_manual_occurrence_requires_record_resolution(self) -> None:
+        problems = chv.check(inventory("HOLD"), POLICY, self.manual_proposal())
+        self.assertTrue(any("has no record resolution" in p for p in problems), problems)
+
+    def test_exact_record_resolution_passes(self) -> None:
+        prop = self.manual_proposal(self.resolution())
+        self.assertEqual(chv.check(inventory("HOLD"), POLICY, prop), [])
+
+    def test_stale_record_resolution_fails(self) -> None:
+        prop = self.manual_proposal(self.resolution(pointer="/wrong/holds"))
+        problems = chv.check(inventory("HOLD"), POLICY, prop)
+        self.assertTrue(any("stale manual resolution" in p for p in problems), problems)
+
+    def test_manual_resolution_needs_source_and_reason(self) -> None:
+        bad = self.resolution()
+        bad["sourceLocator"] = ""
+        problems = chv.check(inventory("HOLD"), POLICY, self.manual_proposal(bad))
+        self.assertTrue(any("missing sourceLocator" in p for p in problems), problems)
+
+
 class CountTests(unittest.TestCase):
     def test_count_drift_fails(self) -> None:
         inv = inventory("QUOTE_RISK", "QUOTE_RISK")

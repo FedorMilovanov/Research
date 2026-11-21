@@ -49,6 +49,7 @@ METHOD_NAMES = {
     "unclaimed-reason-classification": "классификация строк",
     "relative-link-audit": "проверка относительных ссылок",
     "hold-vocabulary-mapping": "соответствие неканонических значений `holds`",
+    "record-context-classification": "контекстная классификация по record key",
     "ci-trigger-dependency-audit": "сверка триггеров CI с зависимостями гейтов",
     "self-confirmation-regression": "регрессия на самоподтверждение",
     "confirmation-counter-audit": "счётчики подтверждений против артефактов",
