@@ -992,8 +992,8 @@
       "method": "register-claims-audit",
       "objects": [
         {
-          "defectsFixed": 10,
-          "mutationsInjected": 13,
+          "defectsFixed": 12,
+          "mutationsInjected": 14,
           "mutationsMissedBeforeFixes": 3,
           "staleArtefactsFound": 3,
           "proseCountersResyncedAfterMerge": 8

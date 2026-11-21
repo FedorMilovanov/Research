@@ -98,10 +98,6 @@ class StampTests(unittest.TestCase):
         self.assertIn("byState", report["totals"])
 
 
-if __name__ == "__main__":
-    unittest.main()
-
-
 class CommittedStampReportTests(unittest.TestCase):
     """The committed report records the date it judges against, so it can be reproduced.
 
@@ -129,3 +125,7 @@ class CommittedStampReportTests(unittest.TestCase):
     def test_today_is_taken_from_the_flag(self) -> None:
         report = stamps.audit(Path(__file__).resolve().parents[1], today=datetime.date(2020, 1, 1))
         self.assertEqual(report["scope"]["today"], "2020-01-01")
+
+
+if __name__ == "__main__":
+    unittest.main()
