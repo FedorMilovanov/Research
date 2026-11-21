@@ -2790,7 +2790,7 @@ S. Escobedo III, «2 Peter 2:1 and Universal Redemption» (сайт Alpha & Omeg
 ### 74.2. Источники
 
 - (а) **M. R. Finney, «The Supremacy of Christ: A Study of Colossians 1:15-23»** (gospeloutreach.net; страница загружена). Без указания источника воспроизводит текст BKC к Кол. 1:15–20: семь черт Христа, пять доводов о «Firstborn», di' autou / eis auton / en autō. К ст. 20: «Through Christ God will reconcile to Himself all things. The phrase “all things” is limited to good angels and redeemed people since only things on earth and things in heaven are mentioned. Things “under the earth” (Philippians 2:10) are not reconciled.» Класс C.
-- (б) **«Colossians 1:15-20 Devotional – The Supremacy of Christ»** (seekingourgod.com, 2020; сама страница не загрузилась, текст из поисковой выдачи). Та же фраза к ст. 20; сноски на «Norman L. Geisler, “Colossians,” in *The Bible Knowledge Commentary*… vol. 2 (Wheaton: Victor Books, 1985)» с pp. 672 и 673 к соседним утверждениям о ст. 15–18. Класс C.
+- (б) **«Colossians 1:15-20 Devotional – The Supremacy of Christ»** (seekingourgod.com, 2020; сама страница не загрузилась, текст из поисковой выдачи). Та же фраза к ст. 20; сноски на «Norman L. Geisler, “Colossians,” in *The Bible Knowledge Commentary*… vol. 2 (Wheaton: Victor Books, 1985)» с pp. 672 и 673 к соседним утверждениям о ст. 15–18. Класс C. *(р. 160, §83: URL — https://seekingourgod.com/colossians-115-20-devotional-the-supremacy-of-christ/ (2020-07-19); в выдаче видны прим. [2]–[5] → p. 672 и [7], [9], [10] → p. 673; у фразы к ст. 20 номер примечания в выдаче не виден)*
 - (в) **T. Lowe, «Lessons on Colossians»** (preachology.com, 2018): пересказ «good angels and redeemed people; since only things on earth and things in heaven are mentioned». Класс D.
 - (г) **N. Geisler, T. Howe, *When Critics Ask*** (Wheaton: Victor, 1992), к Кол. 1:20; перепечатка с разрешения на defendinginerrancy.com, страница загружена. Другой труд Гайслера: «Paul is not speaking about universal salvation here, but simply universal sovereignty of Jesus Christ… When Paul speaks of being “in Christ” (i.e., being saved), he does not include “those under the earth” (i.e., the lost).» Класс B для этой книги.
 - (д) **Печатная страница.** Скан BKC NT на IA закрыт; полнотекстовый индекс Open Library формулу не выдал. Посредник (б) относит ст. 15–18 к pp. 672–673. Значит, ст. 20 приходится на p. 673 или 674; **p. 674 правдоподобна, но не проверена (HOLD).**
@@ -3117,5 +3117,44 @@ S. Escobedo III, «2 Peter 2:1 and Universal Redemption» (сайт Alpha & Omeg
 - **Подтверждено:** фраза о «voluntary / involuntary submission» и определение примирения как «all things being put into proper relation to Christ» входят в блок Мелика. `SOURCE_SAYS_MORE` (существенно) для сн. 109–110 в силе.
 - **Исправлено:** URL посредников внесены в §75.2 и в `34_` S250; отмечена неопределённость даты (а); печатная страница фразы о подчинении — «не установлена» (не p. 225 по умолчанию).
 - **HOLD:** без изменений против §80.4.
+
+Вердикты S1–S5 не меняются. Умысел не утверждается.
+
+## 83. Раунд 160 (2026-11-17): самопроверка раунда 151 (сн. 112, Гайслер, BKC II)
+
+**Повод.** Пользователь просил перепроверять себя. В §74 вердикт ACCURATE (класс C) держится на двух посредниках; страница 674 оставлена в HOLD.
+
+### 83.1. Что сделано заново
+
+- (а) Поиск по точной формуле «limited to good angels and redeemed people». Выдача снова показала оба посредника из §74.2:
+  - M. R. Finney, https://www.gospeloutreach.net/supremacy.html: «1:20. The seventh feature of Christ is that He is the Reconciler. … The phrase "all things" is limited to good angels and redeemed people since only things on earth and things in heaven are mentioned. Things "under the earth" (Philippians 2:10) are not reconciled. Reconciliation of sinners to God is by Christ's physical body through death.» Есть рубрика «1:20.», как в BKC;
+  - seekingourgod.com (2020-07-19): та же фраза. Видны прим. [2]–[5] → p. 672 и [7], [9], [10] → p. 673.
+  - Новый посредник класса D: sharing-bread.com, «Colossians Episode 2». Пересказ без атрибуции: «“All things” is limited to good angels and redeemed people since only things on earth and things in heaven are mentioned».
+  - Два независимых посредника дают формулу слово в слово, третий её пересказывает.
+- (б) Полнотекстовый индекс Open Library:
+  - «limited to good angels and redeemed people» — **0**;
+  - «under the earth» + «are not reconciled» + Philippians — 242 попадания, но BKC среди них нет. Похожее рассуждение даёт другой автор: J. Vernon McGee, *Philippians / Colossians* (Thomas Nelson), лист 198: «The things under the earth are not mentioned here» (без пересечения с текстом Гайслера).
+- (в) Страница seekingourgod.com, её копия в Wayback и Wayback CDX не загрузились (ошибка / HTTP 500). Какое примечание стоит при ст. 20, не установлено.
+
+### 83.2. Итог
+
+| Что проверено | Итог |
+|---|---|
+| Формулировка Гайслера (§74.3, строки 1–3) | **Подтверждена повторно** (класс C). ACCURATE в силе |
+| p. 674 | Не подтверждена и не опровергнута. Последние видимые примечания посредника (б) ведут к p. 673. **HOLD** в силе |
+| `INTERNAL_TENSION` (мягко) | В силе: у Гайслера ограничение касается охвата («good angels and redeemed people»), а не характера отношений |
+| Ошибки раунда 151 | Не найдены. Добавлены URL и дата посредника (б) |
+
+**HOLD:** без изменений против §80.4.
+
+### 83.3. Попутно: проверка чужих PR в этом раунде
+
+- **#621** (`PUSEY_II_294_296_OCR_LOCATOR`). По OCR `operacyrilli04cyriuoft` (поток djvu.txt, чанки 96–97 из 234) подтверждены колонтитулы 294 («2394»), 295, 296, «997»; лемма Ин. 11:49–52; обе фразы с. 295; сноска 19. Замечания:
+  - в §5 указано «колонтитул 295 ↔ лист 306», но по таблице того же документа лист 306 — это с. 294;
+  - сноски 20 и 22 на с. 295: «συνεισήγαγε habet Cat. Harl.» (остальные — συνήγαγε) и «παρεσκεύασεν des. c.l.» (в c и l перечня народов нет);
+  - сноска 11: «Inc. γένος γὰρ … c. Cord.» — в части свидетелей фраза о «роде / чадах» начинает отдельный фрагмент;
+  - интеграционный риск по `atonement-corpus-v1.json`, индексу библиотеки и валидатору.
+  - Комментарий: issuecomment-7062277665.
+- **#620** (Чарнок, `00_`). Все 10 путей существуют. В редакторском экземпляре 180 уникальных определений сносок. Кроме двух названных исторических фраз есть ещё строка 286 «главы не пишут…». Комментарий: issuecomment-7062277954.
 
 Вердикты S1–S5 не меняются. Умысел не утверждается.

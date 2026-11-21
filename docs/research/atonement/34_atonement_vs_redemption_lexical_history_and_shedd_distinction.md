@@ -426,6 +426,8 @@
   - Текст статьи совпадает с PDF. Заметка MSB к Кол. 1:20 дополнена словами «means “to change”» (три издания, вкл. NKJV 1997). `STRAWMAN` (умеренно) и `NON_SEQUITUR` (мягко) остаются в силе. Вердикты S1–S5 не меняются. Документ: REPASS, §81.
 - **раунд 159 (2026-11-17, AGENT 2):** §3 (S257), новый §4.242 (Q238): самопроверка раунда 152 (сн. 109–111, Мелик).
   - Посредник answeringislam.blog — коллаж пяти комментариев. Фраза о «невольном подчинении» лежит внутри блока Мелика (атрибуция NAC 32), так что `SOURCE_SAYS_MORE` в силе. URL посредников внесены. Печатная страница этой фразы не установлена. Вердикты S1–S5 не меняются. Документ: REPASS, §82.
+- **раунд 160 (2026-11-17, AGENT 2):** §3 (S258), новый §4.243 (Q239): самопроверка раунда 151 (сн. 112, Гайслер, BKC II).
+  - Формула «limited to good angels and redeemed people» снова найдена у двух посредников (класс C) и в одном пересказе (класс D); ACCURATE в силе. p. 674 — HOLD (видимые примечания посредника ведут к pp. 672–673). Попутно проверены PR #621 (Пусей, OCR подтверждён; ошибка «295 ↔ лист 306»; сноски 11/20/22) и #620. Вердикты S1–S5 не меняются. Документ: REPASS, §83.
 
 **Erratum (раунд 4).** В раунде 3 номера страниц протоколов Ассамблеи (S19) и Шедда II (S22) были выведены из индекса страниц OCR-API archive.org (`BookReaderGetTextWrapper`), который **не совпадает** с номером листа (`leafNum`) скана: для `minutesofsession00west` индекс = лист − 5, для `dogmatictheology02sheduoft` индекс = лист − 1. Сверка по `inside.php` (полнотекстовый поиск, возвращает `leafNum`) и `<id>_page_numbers.json` (лист → печатная страница) дала: **Minutes «pp. 150–155/156» → pp. 155–160/161** (листы 251–257); **Shedd «II.478, 482–483» → II.479, 483–484** (листы 489, 493–494). Все затронутые числа в S19, S22, §4.13, §4.16, §5–§8 исправлены **на месте** с пометкой «(испр. р. 4)»; содержание цитат не менялось. Локаторы раундов 1–2 (Minutes p. lv/lviii/lx/152, Shedd II.464–477, I.441, A. A. Hodge pp. 33–34) перепроверены тем же способом и **верны** (лист 248 = p. 152; лист 457 = I.441; лист 39 = Hodge p. 33).
 **Статус:** `ACTIVE RESEARCH / NO SETTLED VERDICT ON EXTENT / EVIDENCE_HOLD / PUBLICATION_HOLD`
@@ -846,6 +848,7 @@
 | S255 *(раунд 157, 2026-11-17)* | W. Barclay, *The Letters to the Philippians, Colossians, and Thessalonians* (1975), OCR через полнотекстовый индекс Open Library (доступ ограничен; класс B для фразы): «The most interesting suggestion was made by Theodoret and followed by Erasmus. It was that…» — IA `letterstophilipp0000unse_p6g9` (Philadelphia: Westminster Press), `letterstophilip00barc_0` (Toronto: G. R. Welch), `dailystudybible0000barc` (Edinburgh: St Andrew Press). Для учёта HOLD — REPASS §33 (р. 110, *Annotationes* 1535, p. 635). |
 | S256 *(раунд 158, 2026-11-17)* | *The MacArthur Study Bible*, заметка к Кол. 1:20, OCR через полнотекстовый индекс Open Library (доступ ограничен; класс B): «1:20 reconcile all things to Himself. The Gr. word for “reconcile” means “to change”…» — IA `macarthurstudybi0000unse_n6a5` (NKJV, Nashville: Word Bibles, 1997), `macarthurstudybi0000unse` (NASB, 2006), `macarthurstudybi0000john` (Personal Size, 2008). Статья — Drive-PDF, с. 34–35 (A1). |
 | S257 *(раунд 159, 2026-11-17)* | S. Shamoun, «Limited Atonement Debate pt. 1», https://answeringislam.blog/limited-atonement-debate-pt-1/ (класс C; загружена целиком): раздел «Biblical Commentaries on Colossians 1:20» — блоки Wall, Sumney (p. 76), Moo (pp. 133–137), Melick (NAC 32, без страниц), пятый блок («Ibid.»; по содержанию не Мелик). В блоке Мелика: «…Nothing lies outside the realm of Christ's reconciling work.106 … Thus reconciliation may be effected by voluntary submission to Jesus, which brings the blessings of salvation, or by involuntary submission, being conquered by the power of his might. Reconciliation must be defined in this context, therefore, as all things being put into proper relation to Christ… Everyone and everything will be subordinated to Christ.111». Также https://www.theotivity.com/post/the-christological-hymn-of-colossians/ (2025). |
+| S258 *(раунд 160, 2026-11-17)* | Самопроверка сн. 112 (Гайслер, BKC II, к Кол. 1:20): M. R. Finney, https://www.gospeloutreach.net/supremacy.html (класс C; рубрика «1:20.», фраза дословно); seekingourgod.com, «Colossians 1:15-20 Devotional» (2020-07-19; класс C; прим. [2]–[5] → p. 672, [7], [9], [10] → p. 673); sharing-bread.com, «Colossians Episode 2» (класс D, пересказ без атрибуции). Open Library по точной формуле — 0. p. 674 — HOLD | REPASS §83 |
 
 **Ответ: П1 исторически неверен; «словом о цене» в английской традиции является *redemption*, а не *atonement*.**
 
@@ -8465,8 +8468,9 @@ hommes** selon ce propos déterminé…*» (с. 183) **есть в источн�
 | 4.240 | Q236 | Самопроверка р. 154 (Баркли): фраза подтверждена по трём изданиям 1975 г.; исправлен ошибочный возврат *Annotationes* Эразма в HOLD (REPASS §77.5, §78.5) (р. 157) |
 | 4.241 | Q237 | Самопроверка р. 153 (сн. 107–108): текст статьи совпадает; MSB дополнена («to change»); `STRAWMAN` (умеренно) и `NON_SEQUITUR` (мягко) в силе (р. 158) |
 | 4.242 | Q238 | Самопроверка р. 152 (Мелик): фраза о «невольном подчинении» — внутри блока Мелика у посредника; URL внесены; страница фразы не установлена (р. 159) |
+| 4.243 | Q239 | Самопроверка р. 151 (Гайслер, сн. 112): формула подтверждена повторно (класс C), p. 674 — HOLD, `INTERNAL_TENSION` (мягко) в силе (р. 160) |
 
-⇒ разделов с `Q` — **235**, разделов §4.x — **237**; пропуски нумерации прежние.
+⇒ разделов с `Q` — **236**, разделов §4.x — **238**; пропуски нумерации прежние.
 
 
 ### 4.139. Q135 — Приёмка раунда 61: связка Сомюра, аудит объёма, готовность к мерджу (раунд 61)
@@ -10501,6 +10505,21 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 3. **Прослеживаемость.** URL посредников внесены в S250 и REPASS §75.2. «2026» у посредника (а) — дата текущей версии (тег «2020»).
 
 **Чего нет.** Печатный NAC 32 и текст прим. 106.
+
+Вердикты S1–S5 не меняются.
+
+### 4.243. Q239 — Самопроверка раунда 151 (сноска 112, Гайслер, BKC II, к Кол. 1:20) (раунд 160, 2026-11-17)
+
+**Повод.** Вердикт ACCURATE в §4.234 / REPASS §74 держится на посредниках класса C. Источник — S258. Таблица — REPASS §83.
+
+**Вопрос.** Держится ли формулировка Гайслера, на которой стоит сн. 112 статьи, и можно ли установить p. 674?
+
+**Ответы.**
+1. **Формулировка — да.** Два независимых посредника дают дословно: «The phrase "all things" is limited to good angels and redeemed people since only things on earth and things in heaven are mentioned. Things "under the earth" (Philippians 2:10) are not reconciled.» Третий (класс D) пересказывает. Перевод в статье точен.
+2. **Страница — нет.** У посредника с примечаниями видны ссылки на pp. 672–673 к ст. 15–18. Номер примечания к ст. 20 не виден. p. 674 остаётся HOLD.
+3. **`INTERNAL_TENSION` (мягко)** в силе: Гайслер ограничивает охват «всего» двумя группами лиц. Статья подаёт его как оговорку о характере отношений и одновременно цитирует Мелика, который включает материальное творение.
+
+**Чего нет.** Печатный BKC II (скан на IA закрыт).
 
 Вердикты S1–S5 не меняются.
 
