@@ -700,6 +700,11 @@ def run(probe=False, only=None):
     if only:
         cs = [c for c in cs if any(o in c[0] for o in only)]
         print("фильтр %s: %d из %d случаев" % (", ".join(only), len(cs), total))
+        if not cs:
+            # Прогон нуля случаев — не «всё чисто», а несработавший фильтр:
+            # молчаливое «непопаданий: 0» здесь читалось бы как победа.
+            print("ни один случай не совпал с фильтром; имена: --holes, затем любой фрагмент из них")
+            return 2
     backups = {p: p.read_bytes() for p in FILES}
     print("батарея: %d случаев; затронуто файлов: %d" % (len(cs), len(FILES)))
     bad, npass, nfail, notchecked = [], 0, 0, []
@@ -755,7 +760,8 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--probe", action="store_true", help="печатать фактические ошибки гейта по каждому случаю")
     ap.add_argument("--only", action="append", default=None,
-                    help="прогнать только случаи, в имени которых есть подстрока (можно несколько раз)")
+                    help="прогнать только случаи, в имени которых есть подстрока (можно несколько раз); "
+                         "фильтр, не совпавший ни с одним случаем, — код 2, а не «всё чисто»")
     ap.add_argument("--holes", action="store_true",
                     help="напечатать PASS-дыры (где гейт не обязан ловить) и не запускать прогон")
     _ap = ap.parse_args()

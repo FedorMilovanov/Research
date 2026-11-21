@@ -166,7 +166,10 @@ def mirror_summary() -> dict[str, int]:
         r"DRIVE MIRROR PAIRS: (\d+) записей, названных коммитов (\d+), отстают (\d+) "
         r"\(максимум (\d+) ревизий\), без ревизии (\d+)", out)
     if not found:
-        raise RuntimeError("check_drive_mirror_pairs.py --summary не назвал ожидаемых чисел")
+        # Причину берём у самого скрипта: «клон неполный» и «сломался формат» — разные беды,
+        # и вторая строка отчёта не должна выглядеть одинаково в обоих случаях.
+        why = out.strip().splitlines()[0] if out.strip() else "скрипт молчит"
+        raise RuntimeError(f"check_drive_mirror_pairs.py --summary не назвал ожидаемых чисел: {why}")
     names = ("records", "revisions", "lagging", "max_behind", "no_revision")
     return {name: int(found.group(i + 1)) for i, name in enumerate(names)}
 

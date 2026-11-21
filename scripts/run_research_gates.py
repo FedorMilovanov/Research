@@ -105,12 +105,13 @@ def main(argv: list[str]) -> int:
         elif verbose:
             print("       " + " ".join(out.strip().splitlines()[-1:]))
 
-    for entry in INFORMATIONAL:
-        name, cwd, cmd = entry[0], entry[1], entry[2]
-        tail = len(entry) > 3 and entry[3] == "tail"
+    for name, cwd, cmd in INFORMATIONAL:
         code, out = run(cwd, cmd)
         lines = out.strip().splitlines()
-        shown = (lines[-1] if tail else lines[0]) if lines else "(пусто)"
+        # Первая строка — итог: все шесть счётчиков печатают сведение первой строкой.
+        # (Механизм «показать последнюю» жил здесь один коммит, пока --cross числился
+        # сведениями, и был снят вместе с переводом --cross в гейты — им никто не пользовался.)
+        shown = lines[0] if lines else "(пусто)"
         print(f"[INFO] {name}: {shown}")
         if code != 0:
             print(f"       гейт вернул {code}; это сведения, а не приговор")

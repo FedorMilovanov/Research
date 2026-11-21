@@ -32,6 +32,14 @@ git-блоба, реальные байты файла) и где `kind: file` �
 
 `07_` записан без `revision`: его текст не попадал в Git ни разу, и это
 установлено, а не пропущено (`RIGHTS_MIRROR_07_STOP_POINT_2026-11-18.md`).
+
+Коды возврата — чтобы «не проверено» не читалось как «сломано»:
+
+    0  всё сверено и сошлось;
+    1  сверено и разошлось (дефект данных или реестра);
+    2  сверить нечем: клон неполный (shallow) либо git не отвечает. На обрезанной
+       истории названные коммиты «не находятся» — это свойство клона, а не реестра,
+       и обвинять данные за собственную слепоту инструмент не должен.
 """
 
 from __future__ import annotations
@@ -52,6 +60,22 @@ EXPECTED_MIRRORS = 13
 
 def git(*args: str) -> subprocess.CompletedProcess:
     return subprocess.run(["git", *args], cwd=ROOT, capture_output=True, text=True)
+
+
+def history_state() -> tuple[bool, str]:
+    """Полна ли история клона.
+
+    На shallow-клоне `git rev-parse <коммит>` честно отвечает «не найден» — но это
+    свойство клона, а не реестра. Без этой проверки инструмент обвинял данные
+    в том, что у него самого обрезана память: `--check` печатал «коммит не найден»
+    по шести зеркалам, а `--summary` — «структурных ошибок 12».
+    """
+    probe = git("rev-parse", "--is-shallow-repository")
+    if probe.returncode != 0:
+        return False, "git не отвечает — историю проверить нельзя"
+    if probe.stdout.strip() == "true":
+        return False, "клон неполный (shallow): названные коммиты в нём отсутствуют"
+    return True, ""
 
 
 def load() -> tuple[dict, list[str]]:
@@ -304,17 +328,31 @@ def report_cross(entries: list[dict]) -> int:
         if corpus_id not in (None, "—") and corpus_id != drive_id:
             ok = False
             mismatches += 1
-        if rec and (rec.get("contentRevision") != entry.get("revision")):
+        # Зеркала без ключа в корпусе (04_, 09_, 10_) иначе проходили бы с любым ID:
+        # сверка с корпусом их не касается, и отсутствие записи в индексе — единственное,
+        # что их вообще связывает с данными. Поэтому «в индексе нет такой записи» — расхождение.
+        if not rec:
+            ok = False
+            mismatches += 1
+        elif rec.get("contentRevision") != entry.get("revision"):
             ok = False
             mismatches += 1
         print(
             f"{tag:<8} {('совпадает' if corpus_id == drive_id else corpus_state):<16} "
-            f"{index_rev:<12} {registry_rev:<10} {corpus_state}{'' if ok else '  ← расходится'}"
+            f"{index_rev:<12} {registry_rev:<10} "
+            f"{corpus_state if rec else 'в индексе не найден'}{'' if ok else '  ← расходится'}"
         )
+
+    # Два зеркала под одним именем: таблица покажет обе строки, а «расхождений 0» —
+    # потому что каждая по отдельности сходится. Имя зеркала обязано быть уникальным.
+    tags = [e.get("mirror") for e in entries]
+    repeated = sorted({t for t in tags if tags.count(t) > 1})
+    if repeated:
+        print(f"имена зеркал повторяются: {', '.join(repeated)}")
 
     print(f"\nзеркал: {len(entries)}; ID расходятся с корпусом/индексом: {mismatches}; "
           f"в driveMirrors записаны голой строкой: {bare}")
-    return 1 if mismatches else 0
+    return 1 if (mismatches or repeated) else 0
 
 
 def main(argv: list[str]) -> int:
@@ -322,18 +360,24 @@ def main(argv: list[str]) -> int:
     mode_check = "--check" in argv
     mode_summary = "--summary" in argv
 
+    if "--cross" in argv:
+        return report_cross(data.get("mirrors", []))
+
+    if "--index" in argv:
+        return report_index(data.get("mirrors", []))
+
+    complete, why = history_state()
+    if not complete:
+        # Не «ошибки реестра», а «проверить нечем»: разные вещи, и код возврата разный.
+        print(f"DRIVE MIRROR PAIRS: не проверено — {why}; полный клон: git fetch --unshallow")
+        return 2
+
     infos: list[dict] = []
     if data:
         for entry in data.get("mirrors", []):
             entry_errors, info = check_entry(entry)
             errors.extend(entry_errors)
             infos.append(info)
-
-    if "--cross" in argv:
-        return report_cross(data.get("mirrors", []))
-
-    if "--index" in argv:
-        return report_index(data.get("mirrors", []))
 
     if mode_summary:
         behind = [i["behind"] for i in infos if isinstance(i.get("behind"), int)]
