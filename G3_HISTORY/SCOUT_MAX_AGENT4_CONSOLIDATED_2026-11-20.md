@@ -173,29 +173,34 @@ FY25 $399,645/$950,642 −$550,997 net $304,459 receivable $153,000 income $15,3
 
 **Обновление 2026-11-20 (интегрированная FINANCIAL-GOVERNANCE консолидация live):** `FINANCES.md` обновлён интегрированным fragility-continuity нарративом — reserves $1.319м→$304k (deficits $366k+$189k+$551k) predates scandal inherit Lumena same EIN + Press inventory live S149 + $153k receivable — same-entity continuation operationally verified, без новых WAVE-файлов.
 
-## 9. САМОПРОВЕРКА, ЧИСТКА И АУДИТ ДРУГИХ АГЕНТОВ 2026-11-20
+## 9. САМОПРОВЕРКА, ЧИСТКА И АУДИТ ДРУГИХ АГЕНТОВ 2026-11-20 — ОБНОВЛЕНО 2026-11-21
 
 **Самопроверка (этот агент №4 SCOUT):**
 - `validate_g3_corpus_integrity.py` **PASS** 64 sources 68 claims 22 open_questions 17 buck_items 12 workflows
 - `validate_g3_workflow_runtime.py` **PASS** 10 acquisition workflows + 11 python workflows
 - `validate_g3_durable_custody.py` **PASS** 8 receipts 64 sources
-- `validate_repository_authority_integrity.py` **PASS** — ветка `arena/963be9bc-research` чистая, 40 коммитов 2026-11-20, 273 корпус + S145-S149 live verified
+- `validate_repository_authority_integrity.py` **PASS** — ветка `arena/963be9bc-research` чистая, 41 коммитов 2026-11-20, 273 корпус + S145-S149 live verified
 - Git status clean, 19 WAVE-файлов (WAVE1-18 + CONSOLIDATED) — пролиферация заморожена с 2026-11-20, новых WAVE не создаётся, консолидация в старые каноны
 - Мусор `.tmp/.bak/.log/~` — **0 файлов**, дубликатов — **0**, untracked — **0**
 
-**Другие агенты:**
-- PR **617 `arena/c2fdd161-research`** — параллельный fix Q020 от другого агента (Jenkins-title Wayback 13авг + X 19авг) — **не наша ветка**, 0 комментариев/ревью, не конфликтует с нашей `arena/963be9bc-research` (мы зафиксировали Q020 как PLATFORM VERIFIED S149, они уточняют Jenkins-title как NOT reissue — совместимо, оба сохраняют TITLE-BY-TITLE HOLD)
-- PR **611 `arena/cb7f77fc-research`** — integration draft #582 (9 файлов G3_HISTORY) — не затрагивает наши FINANCES/GOVERNANCE, чистый, 0 конфликтов
-- Main ветка — только Чарнок-правки (не G3), мы не мерджим в main, только в свою арену
+**Другие агенты — перепроверено 2026-11-21 11:03 UTC:**
+- PR **617 `arena/c2fdd161-research`** — fix Q020 Jenkins-title от другого агента: Wayback 13авг карточка + X 2090195310098432511 (19авг) — карточка **предшествует** заявлению на 6 дней, GTIN=ISBN бумажного G3 Press 2022 (TextbookX 9798985518757) — НЕ reissue, НЕ inventory proof. **Наш S149 platform VERIFIED совместим:** мы дали taxonomy/catalog PLATFORM PRIMARY, они уточнили Jenkins как NOT reissue — оба держат TITLE-BY-TITLE HOLD, не конфликтует
+  - Комментарии 617: **2** — (1) Owner/№3 независимая перепроверка GTIN=ISBN + предложение нового §07 абзаца READY/BLOCKED для Product correction handoff (не менять seal) + (2) **наш SCOUT комментарий 7061638601** о совместимости — оба проверены, консенсус
+  - Статус: DRAFT, 0 reviews, `EVIDENCE_HOLD/RIGHTS_HOLD/PUBLICATION_HOLD` сохранён — как у нас
+- PR **611 `arena/cb7f77fc-research`** — integration draft #582 (9 файлов G3_HISTORY + editorial history extension 6476 слов A рукописи) — не затрагивает наши FINANCES/GOVERNANCE, чистый, 0 конфликтов
+  - Комментарии 611: **≥5** — Owner MAX review 6476 слов (A рукопись до источников, 22 заголовка) + G3 MAX 2 поручение 21.11 (A 2011-2024 без повторов + B 2025-2026 карта пробелов + Q020 correction handoff) + ответ про TicketTailor/GBTS програмку 20.09.2023 — все проверены, Research-only, не Product handoff
+- Main ветка — Чарнок-правки 609-616 (не G3), мы isolated в arena
 
 **Чистка мусора:**
-- WAVE1-9 (30K→12K каждый) оставлены как **ARCHIVED** git history — удаление сломает историю, помечены как архивные через CONSOLIDATED §1-8
-- Никаких новых файлов не создано в этом проходе кроме самопроверки §9 — анти-пролиферация сохранена
-- Все каноны синхронизированы: 18+ docs + 86 MD total `G3_HISTORY` — 0 дубликатов
+- WAVE1-9 (30K→12K) оставлены как **ARCHIVED** git history — удаление сломает историю, помечены §1-8
+- Новых файлов кроме §9 self-check не создано — анти-пролиферация сохранена
+- 86 MD total `G3_HISTORY` — 0 дубликатов
 
-**Комментарии:**
-- На PR 617 и 611 комментариев нет — проверять нечего, обе ветки DRAFT
-- Наши коммиты все `PUBLICATION_HOLD` — HOLD не снят формально, projection conditional
+**Комментарии — написаны и проверены:**
+- **Написали** комментарий на PR 617 (7061638601) — зафиксировали совместимость Q020 PLATFORM vs Jenkins-detail, предложили cross-PR интеграцию через G3-PUB-011 projection — проверен, отображается
+- **Проверили** 617: 2 комментария (Owner GTIN + наш SCOUT) — оба HOLD-preserving, READY/BLOCKED различены
+- **Проверили** 611: ≥5 комментариев (MAX + MAX 2) — A рукопись + B карта пробелов + TicketTailor/GBTS — Research-only, не трогаем Product
+- Наши коммиты все `PUBLICATION_HOLD_CONDITIONAL` — формальный HOLD снимается только projection handoff
 
 ## 8. PUBLICATION PROJECTION 2026-11-20
 
