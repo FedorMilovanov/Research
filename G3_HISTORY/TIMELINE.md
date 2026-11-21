@@ -1,6 +1,7 @@
 # G3 Ministries — evidence timeline
 
 **Status:** ACTIVE / PUBLICATION_HOLD  
+**Synced:** `2026-11-20 CONSOLIDATED 11–18 — 8-phase 2011 hello-world →2019-06-06 incorp →2026-10-28 Lumena 32257311 + 273 corpus + attendance 750/5–5.6k/6,500 filing/8,300 filing` — канон  
 Dates below are event dates where established; filing/publication/archive dates are not silently substituted for event dates.
 
 ## 2011–2012 — conception

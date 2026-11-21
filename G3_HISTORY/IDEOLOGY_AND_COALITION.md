@@ -1,6 +1,7 @@
 # G3 Ministries — ideology, coalition, and boundary reconstruction
 
-**Status:** ACTIVE / PUBLICATION_HOLD
+**Status:** ACTIVE / PUBLICATION_HOLD  
+**Synced:** `2026-11-20 CONSOLIDATED 11–18 — left 14 Dallas→2019 preconf→2021 Challies + right Aniol May3 NT≠CN + protocol A139/B90/C30 vocab20 P1-5 HOLD` — канон  
 
 ## Core finding
 
