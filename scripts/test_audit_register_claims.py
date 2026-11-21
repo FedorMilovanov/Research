@@ -175,6 +175,27 @@ class ProseClaimTests(unittest.TestCase):
         self.fx.write_register("Сравнено **9** документов (из 4 Markdown).\n")
         self.assertEqual(claims.main(["--root", str(self.fx.root), "--check"]), 1)
 
+    def test_holds_prose_inflection_uses_declared_counters(self) -> None:
+        self.fx.write_json(claims.INVENTORY, {
+            "totals": {"filesWithJsonHolds": 41, "jsonHoldsTotal": 6156}, "byCorpus": {}
+        })
+        document = ("| Гигиена машинных реестров | 41 файл с массивом `holds` | см. §5 |\n"
+                    "В 41 JSON-файле массивы `holds` содержат 6 156 значений.\n")
+        found = self.prose(document)
+        for name in ("holds-array-files-in-section-2", "json-holds-files", "json-holds-values"):
+            self.assertEqual(found[name]["state"], "match", name)
+
+    def test_holds_prose_inflection_does_not_hide_stale_claim(self) -> None:
+        self.fx.write_json(claims.INVENTORY, {
+            "totals": {"filesWithJsonHolds": 41, "jsonHoldsTotal": 6156}, "byCorpus": {}
+        })
+        document = ("| Гигиена машинных реестров | 40 файлов с массивом `holds` | см. §5 |\n"
+                    "В 40 JSON-файлах массивы `holds` содержат 6 155 значений.\n")
+        found = self.prose(document)
+        for name in ("holds-array-files-in-section-2", "json-holds-files", "json-holds-values"):
+            self.assertEqual(found[name]["state"], "stale", name)
+
+
 class SliceRegistryTests(unittest.TestCase):
     """Every generated block is declared once, and an unknown name is not silently skipped."""
 
