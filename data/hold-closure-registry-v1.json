@@ -1166,6 +1166,44 @@
       ],
       "residualHolds": [],
       "residualReason": "Закрыта только механическая ошибочность recovery-note. Исторические рассказы о перезапусках не считаются corpus evidence; рецепт не применяется к detached HEAD, неизвестному authority или неотправленным коммитам. Никакие research, rights, publication, mirror или independent-review HOLD не изменены; PROMOTE остаётся 0."
+    },
+    {
+      "id": "HCR-2026-11-18-35",
+      "title": "Чарнок ED-09: обновлённый редакционный архив воспроизведён и зарегистрирован как durable snapshot",
+      "holdType": "ARCHIVE_HOLD",
+      "previousState": "HCR-31 закрывал custody только для source Git SHA 962010d55e38cabf3f0c04670ec16a9d5a80704e. После обновления reader-preview README прежняя квитанция по определению не покрывала точный новый 17-source набор; новая квитанция из main ещё не была связана с канонической картой HOLD-замыканий и отдельным offline-гейтом",
+      "closedScope": "Для source Git SHA 209c593fc23bcc32c29bc636b93bcf29d892e725 заново прочитаны из Git все 17 ограниченных source members, пересчитаны их bytes/SHA-256/Git blob IDs, воспроизведены canonical inner manifest и deterministic ZIP. Полученные source bytes, manifest SHA-256, archive bytes и archive SHA-256 точно совпали с ED-09 квитанцией. Текущий read-only ответ Drive по точному имени вернул тот же object ID, размер и server SHA-256; raw destination readback остаётся зафиксирован в квитанции #626",
+      "recordLocations": [
+        "data/charnock-editorial-book-receipt-v1-20261121-ed09.json",
+        "scripts/check_charnock_editorial_receipt.py",
+        "scripts/test_check_charnock_editorial_receipt.py",
+        ".github/workflows/charnock-editorial-book-custody.yml",
+        "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED09_FULL_BOOK_EDITORIAL_QA_AND_TEXT_RIGHTS_2026-11-21.md",
+        "docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md §3"
+      ],
+      "method": "raw-download-compare",
+      "objects": [
+        {
+          "sourceGitSha": "209c593fc23bcc32c29bc636b93bcf29d892e725",
+          "sourceFileCount": 17,
+          "manuscriptCount": 10,
+          "sourceTotalBytes": 3526392,
+          "archiveBytes": 1000295,
+          "archiveSha256": "c4f719d5449e028568934ac2ea34a0defaf032ff06c007705aa4560f702e2efe",
+          "sourceManifestSha256": "ed07ba1e0447919676988e21cbd6ab857286cac39712bef989f754cc820fa7a7",
+          "destinationObjectId": "1LAZNJj2Zu2huKVoqEgnzoV6HHJ7AN2Py",
+          "serverMetadataMatchedReceipt": true,
+          "localSourceArchiveReconstructionMatchedReceipt": true
+        }
+      ],
+      "residualHolds": [
+        "ARCHIVE_HOLD",
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "residualReason": "Замыкание относится только к точному 17-source snapshot; ED-09 audit и его тест прямо исключены из архива, а следующие правки требуют новой versioned-квитанции. Внешние факсимиле не включены, ED-02 marginal images остаются open, независимая переводческая проверка равна 0/12, rightsState остаётся RIGHTS_UNKNOWN, publicationState — BLOCKED. Серверный Drive SHA в этом проходе перечитан как metadata, но private ZIP повторно не скачивался. PROMOTE остаётся 0."
     }
   ],
   "confirmations": [
