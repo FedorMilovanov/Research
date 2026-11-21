@@ -320,9 +320,10 @@ Added after reading the 1676 printing directly (both Hert-sterckte poems and *De
 **Review state:** SUPPORTED_WITH_SCOPE_LIMITS  
 **Project-level:** yes
 
-**Source IDs:** SRC-L-1676, SRC-L-1676-DEN-NEDRIGEN, SRC-L-1676-HERT-II-82-84
+**Source IDs:** SRC-L-1676, SRC-L-1676-COLOPHON, SRC-L-1676-DEN-NEDRIGEN, SRC-L-1676-HERT-II-82-84
 
 - Reading the colophon's 'p. 84' as slug 0084 lands on an unrelated funeral poem. Cite the printed page bracket and the poem title.
+- Keep observed printed-page markers separate from pagination inferred from illustration filenames. This warning is not a complete slug-to-page map and does not attest a fresh reading of DBNL or page images.
 
 **HOLDs:** None recorded.
 

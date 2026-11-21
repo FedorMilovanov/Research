@@ -119,6 +119,11 @@ jobs:
           python3 -B -m unittest discover -s SUNO_HYMNS/scripts -p 'test_*.py'
           python3 -B SUNO_HYMNS/scripts/audit_registry_consistency.py
 
+      - name: Check the generated HOLD snapshot without rewriting
+        # --check compares the entire view using its recorded build date. A pass
+        # is consistency only, not a new build, fresh source reading or rights approval.
+        run: python3 -B SUNO_HYMNS/scripts/render_hold_ledger.py --check
+
       - name: Assert the validator is read-only
         run: |
           set -euo pipefail

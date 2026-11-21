@@ -2,21 +2,36 @@
 """Собрать RESEARCH/OPEN_HOLDS.md — сводку незакрытых HOLD-ов реестров.
 
 Читает source-registry и claim-ledger, пишет Markdown-зеркало. Реестры не меняет.
-Запуск:  python3 scripts/render_hold_ledger.py
+Запись:  python3 scripts/render_hold_ledger.py
+Проверка без записи: python3 scripts/render_hold_ledger.py --check
+Проверка сохраняет дату готового снимка; это не новая сборка и не проверка прав.
 
 Зеркало нужно затем, чтобы расхождение между тем, что заявлено в досье, и тем, что
 действительно не проверено, было видно в один взгляд: HOLD, о котором забыли, — это
 дыра, замаскированная под вывод.
 """
 
+import argparse
 import datetime
 import json
 import pathlib
+import re
+import sys
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 SRC_JSON = ROOT / "data" / "source-registry-v1.json"
 CLM_JSON = ROOT / "data" / "claim-ledger-v1.json"
 OUT = ROOT / "RESEARCH" / "OPEN_HOLDS.md"
+
+HEADER_PREFIX = (
+    "Файл собран скриптом `scripts/render_hold_ledger.py` из `data/source-registry-v1.json` "
+    "и `data/claim-ledger-v1.json`; сборка от "
+)
+HEADER_SUFFIX = (
+    ". **Вручную не править** — при изменении "
+    "реестров пересобрать: `python3 scripts/render_hold_ledger.py`."
+)
+HEADER_RE = re.compile(re.escape(HEADER_PREFIX) + r"(\d{4}-\d{2}-\d{2})" + re.escape(HEADER_SUFFIX))
 
 HOLD_GLOSS = [
     ("ARCHIVE_HOLD",
@@ -36,11 +51,17 @@ HOLD_GLOSS = [
 ACTIONABLE = ("ARCHIVE_HOLD", "LOCATOR_HOLD", "EVIDENCE_HOLD")
 
 
-def main():
-    sources = json.loads(SRC_JSON.read_text(encoding="utf-8"))["sources"]
-    claims = json.loads(CLM_JSON.read_text(encoding="utf-8"))["claims"]
-    today = datetime.date.today().isoformat()
+def recorded_date(text):
+    """Accept only the generated header, never a date-like phrase in the body."""
+    lines = text.splitlines()
+    match = HEADER_RE.fullmatch(lines[2]) if len(lines) > 2 else None
+    if match is None:
+        raise ValueError("не распознан заголовок с датой сборки")
+    return datetime.date.fromisoformat(match[1])
 
+
+def render(sources, claims, generated_on):
+    """Build the existing view in memory; no registry, output or clock writes."""
     src_counts = {k: 0 for k, _ in HOLD_GLOSS}
     clm_counts = {k: 0 for k, _ in HOLD_GLOSS}
     for s in sources:
@@ -53,9 +74,7 @@ def main():
     out = []
     out.append("# OPEN_HOLDS — открытые HOLD-ы реестров SUNO_HYMNS")
     out.append("")
-    out.append(f"Файл собран скриптом `scripts/render_hold_ledger.py` из `data/source-registry-v1.json` "
-               f"и `data/claim-ledger-v1.json`; сборка от {today}. **Вручную не править** — при изменении "
-               f"реестров пересобрать: `python3 scripts/render_hold_ledger.py`.")
+    out.append(f"{HEADER_PREFIX}{generated_on.isoformat()}{HEADER_SUFFIX}")
     out.append("")
     out.append("Смысл сводки: HOLD — это обещание, которое ещё не исполнено. Список ниже — перечень "
                "того, что в текстах рубрики **нельзя** выдавать за проверенное.")
@@ -124,13 +143,45 @@ def main():
                "прямо оговаривается в тексте рубрики.")
     out.append("")
 
-    OUT.write_text("\n".join(out) + "\n", encoding="utf-8")
-    print(f"собрано: {OUT.relative_to(ROOT)}; "
+    return "\n".join(out) + "\n", src_counts, clm_counts
+
+
+def main(argv=None):
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--check", action="store_true", help="сверить снимок с реестрами без записи")
+    args = parser.parse_args(argv)
+    label = OUT.relative_to(ROOT) if OUT.is_relative_to(ROOT) else OUT
+    try:
+        on_disk = OUT.read_bytes().decode("utf-8") if args.check else None
+        generated_on = recorded_date(on_disk) if args.check else datetime.date.today()
+        sources = json.loads(SRC_JSON.read_text(encoding="utf-8"))["sources"]
+        claims = json.loads(CLM_JSON.read_text(encoding="utf-8"))["claims"]
+        text, src_counts, clm_counts = render(sources, claims, generated_on)
+    except (OSError, UnicodeError, ValueError) as exc:
+        print(f"SUNO hold ledger: FAIL — {label}: {exc}", file=sys.stderr)
+        return 1
+
+    if args.check:
+        if on_disk != text:
+            print(f"SUNO hold ledger: FAIL — {label} не соответствует реестрам; "
+                  "пересобрать: python3 SUNO_HYMNS/scripts/render_hold_ledger.py", file=sys.stderr)
+            return 1
+        print(f"SUNO hold ledger: PASS — содержимое соответствует реестрам; "
+              f"дата снимка {generated_on.isoformat()} сохранена, это не новая сборка")
+        return 0
+
+    try:
+        OUT.write_bytes(text.encode("utf-8"))
+    except OSError as exc:
+        print(f"SUNO hold ledger: FAIL — {label}: {exc}", file=sys.stderr)
+        return 1
+    print(f"собрано: {label}; "
           f"ARCHIVE={src_counts['ARCHIVE_HOLD']}/{clm_counts['ARCHIVE_HOLD']} "
           f"LOCATOR={src_counts['LOCATOR_HOLD']}/{clm_counts['LOCATOR_HOLD']} "
           f"EVIDENCE={src_counts['EVIDENCE_HOLD']}/{clm_counts['EVIDENCE_HOLD']} "
           f"RIGHTS={src_counts['RIGHTS_HOLD']}/{clm_counts['RIGHTS_HOLD']}")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

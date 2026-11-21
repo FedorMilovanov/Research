@@ -20,7 +20,7 @@ This registry is the human-readable view of data/source-registry-v1.json. The re
 - Publication state: REFERENCE
 - HOLDs: RIGHTS_HOLD
 - Supports: Title-page imprint, original collection and primary text witness
-- Limits / caveats: DBNL marks the underlying 1676 work Auteursrechtvrij, but the online transcription is diplomatic rather than a complete unmediated scan; its colophon records omissions and editorial corrections. Use the exact page or scan for poem-level claims.
+- Limits / caveats: DBNL marks the underlying 1676 work Auteursrechtvrij, but the online transcription is diplomatic rather than a complete unmediated scan; its colophon records omissions and editorial corrections. Use the exact page or scan for poem-level claims. DBNL slug numbers are chunk indices, not printed page numbers (CLM-DBNL-SLUG-TRAP). An illustration filename alone is not a printed page marker or a page-image reading; label pagination inferred from it as inference. Partial locator aids do not upgrade this whole-volume locator state, and the colophon's corrections refer to printed pages.
 
 ## SRC-L-1676-COLOPHON — DBNL colophon for the 1676 Uyt-spanningen transcription
 
