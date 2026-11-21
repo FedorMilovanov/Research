@@ -2,7 +2,7 @@
 
 **Status:** ACTIVE / P0 EVIDENCE_HOLD / PUBLICATION_HOLD  
 **Cutoff:** 2026-09-08 + overlay `2026-11-15/20` Q005 Oct28 32257311 NO_DISSOLUTION + Lumena Press `new form new leadership` G3-S142 — successor HOLD  
-**Synced:** `2026-11-20 CONSOLIDATED 11–18` — corp rename ≠ asset succession, platform stale ≠ ownership  
+**Synced:** `2026-11-20 CONSOLIDATED 11–18` — corp rename ≠ asset succession, platform stale ≠ ownership — **Nov17-20 upgrade:** Q005/Q006 now **same-corporation rename continuation** (not independent asset transfer) per GA chain Aug27 LLC→Sep17 Minga & Co→Oct28 rename same corp no.→Oct30 officer swap + Nov04/11 legal notices + redirect live; Q006 transferee = same EIN with new board/CEO Minga — ownership nuance still HOLD without primary deed/operating agreement  
 **Canonical Q006 authority:** [`ASSET_TRANSFER_FORENSICS.md`](ASSET_TRANSFER_FORENSICS.md). This file retains the broader title-level rights, storefront and discovery reconstruction.
 
 ## Question

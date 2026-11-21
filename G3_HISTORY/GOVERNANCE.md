@@ -297,7 +297,7 @@ Institutional teaching and admitted conduct can be juxtaposed; the systemic expl
 
 Recurrence is factual; institutional-culture causation is not yet directly evidenced.
 
-**2026-11-20 overlay (Q005/Q004 Nov15):** Rename Oct28 **does not equal dissolution** — corporation renamed Lumena Inc. (filings 32257311/32269080) remains legal container; Q005/Q006 successor HOLD — G3-S142 first-party `new form` corroborates intent but not transferee. July21 board `20260721102641` (Braswell/Broome/Norton/Sikes/Joyner/Mooney 3/6 PMBC elders) is last primary snapshot before Aug crisis; later roster remains OPEN. B1 window May12→Jul09 (Buck board → Aniol PRESIDENT AS OF 05/2025, Frazier chair) — mechanics HOLD (detail 403).
+**2026-11-20 overlay (Q005/Q004 Nov15→Nov17-20 chain):** Rename Oct28 **does not equal dissolution** — same nonprofit corp no./EIN 84-2403597 renamed Lumena Inc. (32257311 +62269080) CORROBORATED_SECONDARY Nov17 Protestia citing GA records + Nov04/11 legal notices; preparation chain Aug27 Lumena LLC (Minga organizer) → Sep17 Minga & Co freeing name. Oct30 officer swap: Frazier CEO/CFO→Minga CEO+Pogue CFO, Broome→Etheridge secretary, Aniol registered agent→Minga, PMBC→Ramah Baptist (Huckaby chair Huckaby/Etheridge/Pogue/Ross board) — letter claims `completely new` omitting Minga continuity (former Director of Media/Managing Editor + Aniol employee/student ties + Aniol books retained). July21 board `20260721102641` (Braswell/Broome/Norton/Sikes/Joyner/Mooney 3/6 PMBC) is last primary snapshot before Aug crisis; B1 May12→Jul09 still HOLD mechanics 403 but context now full Aug27→Oct30 maneuver.
 
 ## Next governance acquisitions
 
