@@ -7,20 +7,20 @@
   },
   "totals": {
     "byState": {
-      "resolves": 3203,
+      "resolves": 3206,
       "missing": 58,
       "outside": 0,
       "unqualified": 0,
-      "external": 6570,
+      "external": 6581,
       "missing-anchor": 0,
       "fragment": 28,
       "missing-fragment": 0
     },
     "byKind": {
-      "external": 6570,
+      "external": 6581,
       "fragment": 28,
       "missing": 58,
-      "resolves": 3203
+      "resolves": 3206
     },
     "defects": 58,
     "fragments": {

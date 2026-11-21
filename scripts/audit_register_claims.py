@@ -203,7 +203,7 @@ PROSE_CLAIMS: list[dict] = [
      "pattern": r"\((?P<n>\d+) написаний\)",
      "artefact": PROPOSAL, "field": "counts.spellings"},
     {"id": "holds-array-files-in-section-2",
-     "pattern": r"Гигиена машинных реестров \| (?P<n>\d+) файл(?:ов)?(?=\s+с массивом)",
+     "pattern": r"Гигиена машинных реестров \| (?P<n>\d+) файл(?:а|ов)?(?=\s+с массивом)",
      "artefact": INVENTORY, "field": "totals.filesWithJsonHolds"},
     # §10 quoted the gate's counts by hand; each now has a field in the queue snapshot.
     {"id": "gate-records",

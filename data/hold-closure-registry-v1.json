@@ -1031,6 +1031,36 @@
         "PUBLICATION_HOLD"
       ],
       "residualReason": "Закрыта неоднозначность классификации, а не сами удержания. Proposal остаётся PROPOSAL_ONLY; переписывание corpus SSOT требует решения владельца и официального пересъёма."
+    },
+    {
+      "id": "HCR-2026-11-18-31",
+      "title": "Точный редакционный архив Чарнока получил durable Drive readback",
+      "holdType": "ARCHIVE_HOLD",
+      "previousState": "Полный editorial book package имел воспроизводимый source manifest и workflow artifact, но не был записан в канонической карте закрытий #584 как отдельная ограниченная custody-ось",
+      "closedScope": "Для неизменяемого snapshot от source Git SHA 962010d55e38cabf3f0c04670ec16a9d5a80704e подтверждены исходные SHA-256, Git blob IDs, ZIP-member readback, SHA-256 архива и точное равенство сырого destination readback на Drive; закрытие относится только к перечисленным в квитанции исходным файлам",
+      "recordLocations": [
+        "data/charnock-editorial-book-receipt-v1-20261121.json",
+        ".github/workflows/charnock-editorial-book-custody.yml",
+        "docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md §3"
+      ],
+      "method": "raw-download-compare",
+      "objects": [
+        {
+          "sourceFileCount": 17,
+          "manuscriptCount": 10,
+          "archiveBytes": 1000011,
+          "archiveSha256": "7c7eb5bc2402d1d85b4cc12c6de26c6e39069744a6fee310077a578f66b6f359",
+          "sourceDestinationExactByteMatch": true
+        }
+      ],
+      "residualHolds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD",
+        "ARCHIVE_HOLD"
+      ],
+      "residualReason": "Поздние правки требуют нового versioned archive; внешние факсимиле в пакет не входят; независимая оценка перевода не выполнена; rightsState остаётся RIGHTS_UNKNOWN, publicationState — BLOCKED. OPEN-MIRRORS-BEHIND-HEAD для рабочих 00/04/16 не закрыт этим отдельным snapshot."
     }
   ],
   "confirmations": [
