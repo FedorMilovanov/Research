@@ -1,6 +1,7 @@
 # G3 archive content census — acquisition checkpoint, 2026-09-09
 
 **Status:** `ARCHIVE_URL_FRAME_ACQUIRED / ARTICLE_DENOMINATOR_OPEN / QUANTITATIVE_LANGUAGE_HOLD / PUBLICATION_HOLD`  
+**Synced:** `2026-11-20 CONSOLIDATED 11–18 S144 GNL 273 (A139/B90/C30) host294 FCA filtered — denominator = delivered media not attendance` — quantitative HOLD preserved  
 **Purpose:** replace the failed live sitemap / WordPress-API denominator route with a reproducible metadata-only Wayback CDX discovery frame without converting URL discovery into topic prevalence claims.
 
 ## Exact acquisition

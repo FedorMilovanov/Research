@@ -1,6 +1,7 @@
 # G3 HISTORY — public content census acquisition status, 2026-09-08
 
 **Status:** ACTIVE / QUANTITATIVE_LANGUAGE_HOLD / PUBLICATION_HOLD  
+**Synced:** `2026-11-20 CONSOLIDATED 11–18 — A139/B90/C30 protocol vocab20 P1-5 equal-n required before %` — 273 corpus ready  
 **Purpose:** preserve the result of the first reproducible live-metadata census attempt without converting access failure into a false zero-content denominator.
 
 ## Exact acquisition

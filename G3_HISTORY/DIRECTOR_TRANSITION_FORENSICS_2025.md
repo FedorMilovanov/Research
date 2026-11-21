@@ -1,7 +1,7 @@
 # G3 2025 director-transition forensics
 
 **Status:** ACTIVE / DATE-BOUNDED / PUBLICATION_HOLD  
-**Cutoff:** 2026-09-08  
+**Cutoff:** 2026-09-08 + overlay `2026-11-20` B1 May12 Buck board `our decision` → Jul09 Aniol PRESIDENT 3/6 PMBC  
 **Purpose:** establish the strongest supportable dates for G3 board transitions after the May 2025 Josh Buice crisis without converting later testimony, Form 990 reporting rows, or archive gaps into exact resignation dates.
 
 ## 1. Why this file exists
