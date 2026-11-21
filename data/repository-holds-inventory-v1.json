@@ -76,13 +76,13 @@
     ]
   },
   "totals": {
-    "filesScanned": 3130,
-    "filesWithMentions": 917,
+    "filesScanned": 3131,
+    "filesWithMentions": 918,
     "mentions": {
-      "ARCHIVE_HOLD": 1423,
+      "ARCHIVE_HOLD": 1424,
       "BLOCKING-HOLD": 16,
       "BOOK-FULLTEXT-HOLD": 15,
-      "EVIDENCE_HOLD": 1302,
+      "EVIDENCE_HOLD": 1303,
       "HOLD-APPARATUS": 1,
       "HOLD-AS": 3,
       "HOLD-GLOSS": 1,
@@ -98,22 +98,22 @@
       "HOLD_MAJOR": 11,
       "HOLD_RETAINED": 1,
       "LIVE-READBACK-HOLD": 4,
-      "LOCATOR_HOLD": 1983,
+      "LOCATOR_HOLD": 1984,
       "PAGE-IMAGE-HOLD": 14,
-      "PUBLICATION_HOLD": 2656,
-      "RIGHTS_HOLD": 1476,
+      "PUBLICATION_HOLD": 2659,
+      "RIGHTS_HOLD": 1478,
       "VERSION-HOLD": 23
     },
     "mentionsByStatus": {
       "closed": 824,
-      "open": 2357,
-      "unmarked": 6065
+      "open": 2362,
+      "unmarked": 6068
     },
     "canonicalFlagLineStatesRecordedAsBothOpenAndClosed": 406,
-    "filesWithJsonHolds": 40,
+    "filesWithJsonHolds": 41,
     "jsonHoldsValues": {
       "APPARATUS_FALSE_FRIEND": 1,
-      "ARCHIVE_HOLD": 1344,
+      "ARCHIVE_HOLD": 1345,
       "ATTRIBUTION_HOLD": 5,
       "ATTRIBUTION_SECONDARY": 3,
       "BLOCKED": 1,
@@ -123,7 +123,7 @@
       "DRAFT / PUBLICATION_HOLD": 2,
       "EDITION_HOLD": 5,
       "EDITION_UNAVAILABLE": 2,
-      "EVIDENCE_HOLD": 1115,
+      "EVIDENCE_HOLD": 1116,
       "FACSIMILE_HOLD": 1,
       "FALSE_FRIEND": 11,
       "FALSE_LOCATOR": 5,
@@ -145,19 +145,19 @@
       "PARTIAL_VERIFICATION": 4,
       "PERMISSION_REQUIRED": 1,
       "PRIVATE_STUDY_ONLY": 13,
-      "PUBLICATION_HOLD": 1966,
+      "PUBLICATION_HOLD": 1967,
       "QUOTE_RISK": 6,
       "RECONCILIATION_HOLD": 2,
       "RESEARCH / NOT PRODUCT": 1,
       "RESEARCH / NOT PUBLICATION-READY": 1,
       "RESOLVED-BY-TEXT": 1,
-      "RIGHTS_HOLD": 1357,
+      "RIGHTS_HOLD": 1358,
       "RIGHTS_HOLD + PUBLICATION_HOLD": 1,
       "RIGHTS_UNCLEAR": 1,
       "RIGHTS_UNKNOWN": 3,
       "TEXT_ACCESS_HOLD": 1
     },
-    "jsonHoldsTotal": 6152
+    "jsonHoldsTotal": 6156
   },
   "byCorpus": {
     "1_PETER_BOT": {
@@ -342,19 +342,19 @@
       }
     },
     "data": {
-      "files": 23,
+      "files": 24,
       "mentions": {
         "ARCHIVE_HOLD": 8,
         "EVIDENCE_HOLD": 11,
         "HOLD_MAJOR": 3,
         "LOCATOR_HOLD": 27,
-        "PUBLICATION_HOLD": 29,
-        "RIGHTS_HOLD": 13
+        "PUBLICATION_HOLD": 30,
+        "RIGHTS_HOLD": 14
       },
       "status": {
         "closed": 10,
         "open": 11,
-        "unmarked": 73
+        "unmarked": 75
       }
     },
     "docs": {
@@ -423,16 +423,16 @@
     "БИОГРАФИИ": {
       "files": 57,
       "mentions": {
-        "ARCHIVE_HOLD": 299,
-        "EVIDENCE_HOLD": 75,
-        "LOCATOR_HOLD": 430,
-        "PUBLICATION_HOLD": 361,
-        "RIGHTS_HOLD": 217
+        "ARCHIVE_HOLD": 300,
+        "EVIDENCE_HOLD": 76,
+        "LOCATOR_HOLD": 431,
+        "PUBLICATION_HOLD": 363,
+        "RIGHTS_HOLD": 218
       },
       "status": {
         "closed": 110,
-        "open": 395,
-        "unmarked": 925
+        "open": 400,
+        "unmarked": 926
       }
     },
     "ИСКУПЛЕНИЕ": {
@@ -5219,6 +5219,16 @@
     },
     {
       "path": "data/charnock-custody-receipt-v3-20261117.json",
+      "pointer": "/holds",
+      "values": [
+        "PUBLICATION_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "EVIDENCE_HOLD"
+      ]
+    },
+    {
+      "path": "data/charnock-custody-receipt-v3-20261121-pr620.json",
       "pointer": "/holds",
       "values": [
         "PUBLICATION_HOLD",
@@ -25947,6 +25957,17 @@
       }
     },
     {
+      "path": "data/charnock-custody-receipt-v3-20261121-pr620.json",
+      "corpus": "data",
+      "mentions": {
+        "PUBLICATION_HOLD": 1,
+        "RIGHTS_HOLD": 1
+      },
+      "status": {
+        "unmarked": 2
+      }
+    },
+    {
       "path": "data/charnock-series-editorial-plan-v1.json",
       "corpus": "data",
       "mentions": {
@@ -28109,15 +28130,16 @@
       "path": "БИОГРАФИИ/Стивен Чарнок/00_README_AND_NAVIGATION.md",
       "corpus": "БИОГРАФИИ",
       "mentions": {
-        "ARCHIVE_HOLD": 6,
-        "LOCATOR_HOLD": 15,
-        "PUBLICATION_HOLD": 4,
-        "RIGHTS_HOLD": 2
+        "ARCHIVE_HOLD": 7,
+        "EVIDENCE_HOLD": 1,
+        "LOCATOR_HOLD": 16,
+        "PUBLICATION_HOLD": 6,
+        "RIGHTS_HOLD": 3
       },
       "status": {
         "closed": 11,
-        "open": 9,
-        "unmarked": 8
+        "open": 14,
+        "unmarked": 9
       }
     },
     {

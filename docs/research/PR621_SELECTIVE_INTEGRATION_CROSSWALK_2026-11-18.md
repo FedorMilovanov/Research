@@ -1,7 +1,7 @@
 # #621 → #584: карта выборочной интеграции, без wholesale merge
 
 **Дата проверки:** 2026-11-18  
-**Целевое дерево:** `#584 @ 89de617acbc4c6211421ed318f6b4d42f74df06c` поверх `main @ e9e4facbea74ca7bd4a2469bafd2f8c1e1bc2aba`
+**Целевое дерево:** `#584 @ 3837d973b625307e4ae66d39b51f85bec9270968` поверх `main @ 3ce8c29ad3d04ae3a5f37897096ac324bbf35b0d`
 **Источник:** `#621 @ 1bb893a95b499237afe5e086c016e3ef9da64b8d`  
 **Редакционный владелец пересечений SUNO:** `#585 @ 35260487d767c38c9709656d343ccf474713128a`  
 **Роль документа:** интеграционная карта. Она не создаёт второй HOLD-реестр, не снимает HOLD, не разрешает публикацию и не разрешает целиком сливать #621.
@@ -171,7 +171,7 @@ git fetch origin refs/pull/621/head:refs/remotes/origin/pr-621
 git fetch origin refs/pull/585/head:refs/remotes/origin/pr-585
 
 # added-only combined tree
-git worktree add --detach /tmp/pr621-combined 89de617acbc4c6211421ed318f6b4d42f74df06c
+git worktree add --detach /tmp/pr621-combined 3837d973b625307e4ae66d39b51f85bec9270968
 cd /tmp/pr621-combined
 base=$(git merge-base HEAD refs/remotes/origin/pr-621)
 git diff --name-only --diff-filter=A -z "$base" refs/remotes/origin/pr-621 \
@@ -179,7 +179,7 @@ git diff --name-only --diff-filter=A -z "$base" refs/remotes/origin/pr-621 \
 python3 -B scripts/run_research_gates.py --verbose
 
 # full scratch merge: не коммитить и не переносить как merge
-git worktree add --detach /tmp/pr621-full-combined 89de617acbc4c6211421ed318f6b4d42f74df06c
+git worktree add --detach /tmp/pr621-full-combined 3837d973b625307e4ae66d39b51f85bec9270968
 git -C /tmp/pr621-full-combined merge --no-commit --no-ff refs/remotes/origin/pr-621
 ```
 
