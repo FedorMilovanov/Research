@@ -2,7 +2,8 @@
 
 **Status:** ACTIVE / PUBLICATION_HOLD
 
-**Canonical working states:** `VERIFIED_PRIMARY`, `CORROBORATED`, `PARTIALLY_VERIFIED`, `DISPUTED`, `UNVERIFIED`, `INFERENCE`, `REFUTED`. Ecclesial/legal/media holds belong in publication notes, not in the state field.
+**Canonical working states:** `VERIFIED_PRIMARY`, `CORROBORATED`, `PARTIALLY_VERIFIED`, `DISPUTED`, `UNVERIFIED`, `INFERENCE`, `REFUTED`. Ecclesial/legal/media holds belong in publication notes, not in the state field.  
+**Synced:** `2026-11-20 CONSOLIDATED 11–18 — 273 corpus + PartIX $1,061,800 + Schedule L + Q007 0/17 + Q016 split` — claims ledger aligned
 
 | ID | Claim | State | Best evidence | Publication note |
 |---|---|---|---|---|

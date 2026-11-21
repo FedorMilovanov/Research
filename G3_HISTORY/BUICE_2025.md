@@ -1,6 +1,7 @@
 # Josh Buice crisis — 2025 evidence dossier
 
-**Status:** ACTIVE / PUBLICATION_HOLD
+**Status:** ACTIVE / PUBLICATION_HOLD  
+**Synced:** `2026-11-20 CONSOLIDATED 11–18 — Q016 MacArthur 50:43 split-state + B1 May12→Jul09 + timeline 8-phase` — канон
 
 This file isolates the 2025 founder crisis from the 2026 Tom Buck controversy. Similarities between the two may be analyzed later, but evidence must not be merged.
 
