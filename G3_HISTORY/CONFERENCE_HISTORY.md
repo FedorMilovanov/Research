@@ -68,6 +68,8 @@ The [ticket page](https://web.archive.org/web/20151125102857id_/http://www.g3con
 
 There is no defensible attendance total here. In the November 2015 ticket capture, *Total Tickets Sold* reads 437 even in the row for an **additional meal plan**. On the [18 January 2016 homepage](https://web.archive.org/web/20160118114654id_/http://www.g3conference.com/) the top link says registration is full while the lower panel says open. Neither a ticket-system field before the event nor contrary labels on one page tell us how many people came.
 
+One recording looks forward to 2017 but belongs here: [Buice’s Feb 25 post](https://web.archive.org/web/20160503085300id_/http://www.deliveredbygrace.com/round-table-on-the-reformation/) says he sat down with Lawson and Challies at the preceding G3. Its eight topic markers end with New Calvinism (19:50), followed by the invitation for **next** January. The [2017 organiser archive](https://web.archive.org/web/20210919192707id_/https://g3min.org/archives/2017/) instead lists two numbered multi-speaker Q&As and fifteen main sessions. The markers identify questions, not answers.
+
 ### 2017 — Reformation 500 at the convention center
 
 In 2016 the [organizer’s page](https://web.archive.org/web/20160118114654id_/http://www.g3conference.com/) named Pray’s Mill as the venue. For 19–21 January 2017 its [next registration page](https://web.archive.org/web/20161202212832id_/http://www.g3conference.com:80/?) named the Georgia International Convention Center. Both versions stated the same three-part mission; the change of building did not imply a new charter. The prospectus offered a theological bookstore and meetings with other ministries. A November 2016 [AFA Journal notice](https://afajournal.org/past-issues/2016/november/g3-conference-to-celebrate-reformation/) advertised the Reformation anniversary programme. Neither notice proves that every announced speaker appeared.
@@ -138,6 +140,8 @@ The main 2023 G3 National Conference theme is now directly anchored as **`The So
 G3’s [study description captured on 14 July 2024](https://web.archive.org/web/20240714222403id_/https://g3min.org/library-resources/the-sovereignty-of-god-study/) identifies the 2023 national sermons as the basis for a twelve-week course on sovereignty. This establishes what G3 offered to teachers, not the attendance at individual sessions or uptake in churches. The description was read; the linked study PDF was not obtained.
 
 A contemporaneous official G3 article published immediately before the conference likewise states that attendees would gather under the thematic banner of **God's sovereignty**, with **13 main sessions and 15 breakout sessions**.
+
+The published resources are not a running order. [FOX 5 Atlanta](https://www.fox5atlanta.com/news/g3-national-conference-religious-threat) confirms the Friday evacuation and Saturday resumption; its general description of resuming as planned is not session-level reporting. [Elizabeth Prata, Sept 23](https://the-end-time.org/2023/09/23/g3-conference-day-3-final-day-final-thoughts/), paragraphs from the altered start through hotel checkout, says the video sermon was dropped, Ham opened an hour late and Riccardi followed. She left before Lawson. The Friday film screening and Saturday video sermon were distinct.
 
 This matters historically: political theology had become an explicit conference subject by 2023, but the national event's main thematic frame remained a recognizably theological doctrine-of-God theme.
 
