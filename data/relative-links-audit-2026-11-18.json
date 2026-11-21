@@ -1,0 +1,568 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "RESEARCH-RELATIVE-LINKS-INVENTORY-V1",
+  "root": ".",
+  "scope": {
+    "markdownFiles": 2422
+  },
+  "totals": {
+    "byState": {
+      "resolves": 3197,
+      "missing": 58,
+      "outside": 0,
+      "unqualified": 0,
+      "external": 6570,
+      "missing-anchor": 0,
+      "fragment": 28,
+      "missing-fragment": 0
+    },
+    "byKind": {
+      "external": 6570,
+      "fragment": 28,
+      "missing": 58,
+      "resolves": 3197
+    },
+    "defects": 58,
+    "fragments": {
+      "total": 48,
+      "inPage": 28,
+      "crossFile": 20,
+      "resolved": 48,
+      "unresolved": 0,
+      "note": "Links whose target carries a #fragment; in-page anchors are reported, not counted as defects."
+    },
+    "filesWithDefects": 4,
+    "explained": 58,
+    "unexplained": 0
+  },
+  "defectsByFile": {
+    "history/README_CORPUS_INDEX_2026-08-17.md": 50,
+    "БИОГРАФИИ/Джон Гилл/01_SERIES_GAPS_AND_PRIMARY_SOURCES.md": 4,
+    "incoming/arena-auditor/2026-07-09/pr2-lossless-snapshots/GILL_README_PR2_2026-07-09.md": 3,
+    "incoming/arena-auditor/2026-07-09/pr2-lossless-snapshots/GILL_MASTER_MAP_PR2_2026-07-09.md": 1
+  },
+  "findings": [
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 13,
+      "kind": "link",
+      "state": "missing",
+      "target": "00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 14,
+      "kind": "link",
+      "state": "missing",
+      "target": "00_RESEARCH_CONTROL_PLANE_AUTHORITY_2026-08-02.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 15,
+      "kind": "link",
+      "state": "missing",
+      "target": "AGENT_RULES.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 16,
+      "kind": "link",
+      "state": "missing",
+      "target": "data/repository-evidence-policy-v2.json",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 17,
+      "kind": "link",
+      "state": "missing",
+      "target": "data/public-projection-current-2026-08-02.json",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 18,
+      "kind": "link",
+      "state": "missing",
+      "target": "data/artifact-custody-policy-v2.json",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 39,
+      "kind": "link",
+      "state": "missing",
+      "target": "%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_GENESIS6_MASTER_AUTHORITY_INDEX_AND_SUPERSESSION_MAP_XLII.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 40,
+      "kind": "link",
+      "state": "missing",
+      "target": "%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_GENESIS6_PUBLICATION_POSITION_SHEET_XLII.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 41,
+      "kind": "link",
+      "state": "missing",
+      "target": "%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_GENESIS6_SOURCE_WEIGHT_DEDUPLICATION_AND_CITATION_STANDARD_XLII.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 42,
+      "kind": "link",
+      "state": "missing",
+      "target": "%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_GENESIS6_GLOBAL_SYNCHRONIZATION_AUDIT_AND_REMEDIATION_LOG_XLII.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 43,
+      "kind": "link",
+      "state": "missing",
+      "target": "00_GENESIS6_FILE_LOCATION_NORMALIZATION_NOTICE_XLII.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 44,
+      "kind": "link",
+      "state": "missing",
+      "target": "%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_AUTHORITY_AND_SUPERSESSION_OVERLAY_XLVI.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 45,
+      "kind": "link",
+      "state": "missing",
+      "target": "%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_SITE_READY_AUTHORITY_OVERLAY_XLVIII.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 46,
+      "kind": "link",
+      "state": "missing",
+      "target": "%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_XLIX_PUBLICATION_CORRECTION_OVERLAY.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 47,
+      "kind": "link",
+      "state": "missing",
+      "target": "%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_L_RIGHTS_GATE_RESOLUTION_AND_PUBLICATION_DECISION.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 48,
+      "kind": "link",
+      "state": "missing",
+      "target": "%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_LI_PRECISION_AUTHORITY_OVERLAY.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 49,
+      "kind": "link",
+      "state": "missing",
+      "target": "%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_LI_44_POINT_PRECISION_CONTROL_MANIFEST.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 50,
+      "kind": "link",
+      "state": "missing",
+      "target": "%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/ARTICLE_6_LI_ENOCH_ATTRIBUTION_AND_TRANSMISSION_CORRECTION_OVERLAY.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 51,
+      "kind": "link",
+      "state": "missing",
+      "target": "%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/ARTICLE_8_LI_BAPTISM_SIGN_REALITY_AND_EPEROTEMA_CORRECTION_OVERLAY.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 52,
+      "kind": "link",
+      "state": "missing",
+      "target": "%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_L_50_NODE_RIGHTS_AND_OPEN_ALTERNATIVES_MANIFEST.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 53,
+      "kind": "link",
+      "state": "missing",
+      "target": "%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/ARTICLE_6_4Q204_OPEN_TRANSCRIPTION_SCHEMATIC_SPEC_L.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 54,
+      "kind": "link",
+      "state": "missing",
+      "target": "%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/PERMISSION_REQUEST_IAA_4Q204_EN_L.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 55,
+      "kind": "link",
+      "state": "missing",
+      "target": "%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/PERMISSION_REQUEST_BAV_P72_EN_L.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 56,
+      "kind": "link",
+      "state": "missing",
+      "target": "%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_MARATHON_XLIX_CONTROL_RUN_CLOSEOUT.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 57,
+      "kind": "link",
+      "state": "missing",
+      "target": "%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_XLIX_56_SOURCE_CONTROL_MANIFEST.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 61,
+      "kind": "link",
+      "state": "missing",
+      "target": "%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/ARTICLE_6_SITE_READY_ENOCH_PROPHESIED_JUDE14_15_4Q204_XLVIII.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 62,
+      "kind": "link",
+      "state": "missing",
+      "target": "%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/ARTICLE_7_SITE_READY_ANGELS_UNDER_DARKNESS_JUDE6_7_2PETER2_XLVIII.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 63,
+      "kind": "link",
+      "state": "missing",
+      "target": "%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/ARTICLE_8_SITE_READY_SPIRITS_IN_PRISON_NOAH_BAPTISM_VICTORY_XLVIII.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 64,
+      "kind": "link",
+      "state": "missing",
+      "target": "%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/ARTICLE_9_SITE_READY_GOSPEL_TO_THE_DEAD_1PETER4_5_6_XLVIII.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 70,
+      "kind": "link",
+      "state": "missing",
+      "target": "%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_ECM2_NA28_PRIMARY_LINE_RESOLUTION_XLIX.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 71,
+      "kind": "link",
+      "state": "missing",
+      "target": "%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_CODEX_SINAITICUS_DIRECT_LOCUS_AUDIT_XLIX.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 72,
+      "kind": "link",
+      "state": "missing",
+      "target": "%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLE_6_4Q204_P72_IMAGE_RIGHTS_AND_ARCHIVE_CROSSWALK_XLIX.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 73,
+      "kind": "link",
+      "state": "missing",
+      "target": "%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_8_9_ACCESS_AND_LOCATOR_FINALIZATION_XLIX.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 77,
+      "kind": "link",
+      "state": "missing",
+      "target": "%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_MASTER_CLAIM_TO_CITATION_LEDGER_XLIII.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 78,
+      "kind": "link",
+      "state": "missing",
+      "target": "%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_CLAIM_LEDGER_XLIV_BAPTISM_OVERLAY.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 79,
+      "kind": "link",
+      "state": "missing",
+      "target": "%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLE_6_PAGE_LEVEL_CLAIM_TO_CITATION_LEDGER_XLVII.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 80,
+      "kind": "link",
+      "state": "missing",
+      "target": "%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLE_7_PAGE_LEVEL_CLAIM_TO_CITATION_LEDGER_XLVI.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 81,
+      "kind": "link",
+      "state": "missing",
+      "target": "%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLE_7_XLVII_LOCATOR_COMPLETION_OVERLAY.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 82,
+      "kind": "link",
+      "state": "missing",
+      "target": "%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLE_8_PAGE_LEVEL_CLAIM_TO_CITATION_LEDGER_XLVI.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 83,
+      "kind": "link",
+      "state": "missing",
+      "target": "%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLE_8_XLVII_LOCATOR_COMPLETION_OVERLAY.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 84,
+      "kind": "link",
+      "state": "missing",
+      "target": "%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLE_9_PAGE_LEVEL_CLAIM_TO_CITATION_LEDGER_XLVII.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 85,
+      "kind": "link",
+      "state": "missing",
+      "target": "%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_NA28_ECM_AND_EARLY_WITNESS_APPARATUS_CONTROL_XLVII.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 86,
+      "kind": "link",
+      "state": "missing",
+      "target": "%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_PUBLICATION_ASSEMBLY_AND_QA_GATE_XLIV.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 90,
+      "kind": "link",
+      "state": "missing",
+      "target": "%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/ARTICLE_7_JUDE6_7_HOMOIOS_TOUTOIS_OTHER_FLESH_FOCUSED_AUDIT_XLVI.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 91,
+      "kind": "link",
+      "state": "missing",
+      "target": "%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/ARTICLE_7_PUBLICATION_OVERLAY_JUDE6_7_SYNTAX_XLVI.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 92,
+      "kind": "link",
+      "state": "missing",
+      "target": "%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/ARTICLE_8_1PETER3_21_WATER_SPIRIT_UNION_WITH_CHRIST_BAPTISM_COMPARATIVE_DOSSIER_XLIV.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 93,
+      "kind": "link",
+      "state": "missing",
+      "target": "%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/ARTICLE_8_1PETER3_21_EPEROTEMA_BRIEF_SCOPE_AND_TRANSLATION_NOTE_XLV.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 94,
+      "kind": "link",
+      "state": "missing",
+      "target": "%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLE_8_XLV_EPEROTEMA_PUBLICATION_SCOPE_OVERLAY.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 123,
+      "kind": "link",
+      "state": "missing",
+      "target": "AUDIT_PROJECT_INTEGRITY_CASE.md",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "history/README_CORPUS_INDEX_2026-08-17.md",
+      "line": 124,
+      "kind": "link",
+      "state": "missing",
+      "target": "scripts/validate_repository_authority_integrity.py",
+      "reason": "absent here; resolves from repository root",
+      "explained": "Архивная копия корневого README до 2026-08-02: относительные пути записаны от корня репозитория и от корня разрешаются (проверено холодным обходом 2026-11-18). Текст архивной копии не переписывается; правило чтения добавлено в шапку файла."
+    },
+    {
+      "file": "incoming/arena-auditor/2026-07-09/pr2-lossless-snapshots/GILL_MASTER_MAP_PR2_2026-07-09.md",
+      "line": 6,
+      "kind": "link",
+      "state": "missing",
+      "target": "../incoming/arena-auditor/2026-07-09/GILL_SERIES_EVIDENCE_ARCHIVE_V1_V11_001_480_2026-07-09.md",
+      "reason": "no such path",
+      "explained": "Lossless-снимок: относительные пути принадлежат исходному расположению БИОГРАФИИ/Джон Гилл/. Байтовая верность снимка важнее навигации, поэтому пути не переписываются; адресация — через канонический путь."
+    },
+    {
+      "file": "incoming/arena-auditor/2026-07-09/pr2-lossless-snapshots/GILL_README_PR2_2026-07-09.md",
+      "line": 9,
+      "kind": "link",
+      "state": "missing",
+      "target": "31_GILL_DEPT_MASTER_MAP.md",
+      "reason": "no such path",
+      "explained": "Lossless-снимок: относительные пути принадлежат исходному расположению БИОГРАФИИ/Джон Гилл/. Байтовая верность снимка важнее навигации, поэтому пути не переписываются; адресация — через канонический путь."
+    },
+    {
+      "file": "incoming/arena-auditor/2026-07-09/pr2-lossless-snapshots/GILL_README_PR2_2026-07-09.md",
+      "line": 10,
+      "kind": "link",
+      "state": "missing",
+      "target": "../incoming/arena-auditor/2026-07-09/GILL_SERIES_EVIDENCE_ARCHIVE_V1_V11_001_480_2026-07-09.md",
+      "reason": "no such path",
+      "explained": "Lossless-снимок: относительные пути принадлежат исходному расположению БИОГРАФИИ/Джон Гилл/. Байтовая верность снимка важнее навигации, поэтому пути не переписываются; адресация — через канонический путь."
+    },
+    {
+      "file": "incoming/arena-auditor/2026-07-09/pr2-lossless-snapshots/GILL_README_PR2_2026-07-09.md",
+      "line": 38,
+      "kind": "link",
+      "state": "missing",
+      "target": "../AGENT_RULES.md",
+      "reason": "no such path",
+      "explained": "Lossless-снимок: относительные пути принадлежат исходному расположению БИОГРАФИИ/Джон Гилл/. Байтовая верность снимка важнее навигации, поэтому пути не переписываются; адресация — через канонический путь."
+    },
+    {
+      "file": "БИОГРАФИИ/Джон Гилл/01_SERIES_GAPS_AND_PRIMARY_SOURCES.md",
+      "line": 132,
+      "kind": "link",
+      "state": "missing",
+      "target": "../AUDIT_gb-main_e044908e_2026-07-05.md",
+      "reason": "no such path",
+      "explained": "Корпус сам пометил эти строки как HISTORICAL (§7 файла): AUDIT_gb-main_* и verified/MASTER_BUG_MATRIX.md принадлежали параллельному аудиторскому checkout и в Research не переносились. Строки не удаляются и не переписываются."
+    },
+    {
+      "file": "БИОГРАФИИ/Джон Гилл/01_SERIES_GAPS_AND_PRIMARY_SOURCES.md",
+      "line": 132,
+      "kind": "link",
+      "state": "missing",
+      "target": "./AUDIT_gb-main_14a49be8_2026-07-06_cycle2.md",
+      "reason": "no such path",
+      "explained": "Корпус сам пометил эти строки как HISTORICAL (§7 файла): AUDIT_gb-main_* и verified/MASTER_BUG_MATRIX.md принадлежали параллельному аудиторскому checkout и в Research не переносились. Строки не удаляются и не переписываются."
+    },
+    {
+      "file": "БИОГРАФИИ/Джон Гилл/01_SERIES_GAPS_AND_PRIMARY_SOURCES.md",
+      "line": 132,
+      "kind": "link",
+      "state": "missing",
+      "target": "./AUDIT_gb-main_14a49be8_2026-07-06_cycle3.md",
+      "reason": "no such path",
+      "explained": "Корпус сам пометил эти строки как HISTORICAL (§7 файла): AUDIT_gb-main_* и verified/MASTER_BUG_MATRIX.md принадлежали параллельному аудиторскому checkout и в Research не переносились. Строки не удаляются и не переписываются."
+    },
+    {
+      "file": "БИОГРАФИИ/Джон Гилл/01_SERIES_GAPS_AND_PRIMARY_SOURCES.md",
+      "line": 133,
+      "kind": "link",
+      "state": "missing",
+      "target": "../verified/MASTER_BUG_MATRIX.md",
+      "reason": "no such path",
+      "explained": "Корпус сам пометил эти строки как HISTORICAL (§7 файла): AUDIT_gb-main_* и verified/MASTER_BUG_MATRIX.md принадлежали параллельному аудиторскому checkout и в Research не переносились. Строки не удаляются и не переписываются."
+    }
+  ]
+}

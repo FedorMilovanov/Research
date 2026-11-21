@@ -10,7 +10,7 @@
 
 | № | Название документа / расследования | Год | Верифицированная внешняя ссылка (URL) |
 |---|---|---|---|
-| 1 | Guidepost Solutions Independent Investigation Report (SBC Executive Committee) | 2022 | [www.sataskforce.net pdf](www.sataskforce.net/s/Guidepost-Solutions-Independent-Investigation-Report_.pdf) |
+| 1 | Guidepost Solutions Independent Investigation Report (SBC Executive Committee) | 2022 | [www.sataskforce.net pdf](https://www.sataskforce.net/s/Guidepost-Solutions-Independent-Investigation-Report_.pdf) |
 | 2 | Guidepost Solutions SBC Report (Зеркало в архиве Mennonite Abuse Prevention) | 2022 | [mennoniteabuseprevention.org pdf](https://mennoniteabuseprevention.org/wp-content/uploads/2024/02/Guidepost-Solutions-report-2022-Southern-Baptist-Convention.pdf) |
 | 3 | Guidepost Solutions SBC Report (Зеркало в архиве Baptist Standard) | 2022 | [baptiststandard.com pdf](https://baptiststandard.com/wp-content/uploads/SBC-Guidepost-report.pdf) |
 | 4 | Miller & Martin PLLC Report of Independent Investigation (RZIM / Ravi Zacharias) | 2021 | [amazonaws.com rzimmedia pdf](https://s3-us-west-2.amazonaws.com/rzimmedia.rzim.org/assets/downloads/Report-of-Investigation.pdf) |

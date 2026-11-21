@@ -1,0 +1,191 @@
+{
+  "schemaVersion": "state-stamps/1",
+  "authorityId": "STATE-STAMPS-2026-11-18",
+  "root": ".",
+  "scope": {
+    "markdownFiles": 2415,
+    "headLines": 15,
+    "today": "2026-11-18"
+  },
+  "totals": {
+    "stamped": 17,
+    "byState": {
+      "current": 9,
+      "edited-after-stamp": 6,
+      "stamp-ahead-of-history": 2
+    },
+    "impossible": 0
+  },
+  "findings": [
+    {
+      "file": "G3_HISTORY/IRS_RAW_XML_ACQUISITION_GATE.md",
+      "line": 4,
+      "stamp": "2026-09-08",
+      "state": "current",
+      "text": "**Last updated:** 2026-09-08",
+      "lastCommit": "2026-09-08",
+      "lastSubject": "research(g3): mark IRS acquisition gates closed",
+      "addedCommit": "2026-09-08"
+    },
+    {
+      "file": "STEVE_LAWSON/19_CURRENT_STATUS_AND_ACQUISITION_QUEUE_2026-09-28.md",
+      "line": 11,
+      "stamp": "2026-09-29",
+      "state": "current",
+      "text": "This file is the **single current operational status** for the Lawson corpus as of 2026-09-29. It supersedes earlier queue labels in `00_`, `02_`, `06_`, `11_`, `13_`, `16_`, `18_`, the 2026-09-28 version of this file, and the parallel `STEVEN_LAWSON_2024_2026/00_CURRENT_AUTHORITY_2026-09-27.md` whe",
+      "lastCommit": "2026-09-29",
+      "lastSubject": "research(lawson): advance current status through Sep 29 control pass",
+      "addedCommit": "2026-09-28"
+    },
+    {
+      "file": "SUNO_HYMNS/RESEARCH/DOSSIER_PHOS-003_GLORIA.md",
+      "line": 7,
+      "stamp": "2026-10-27",
+      "state": "current",
+      "text": "**Обновлено 2026-10-27:** греческий текст славословия прочитан в составе библейских Од (издание Ральфса—Ханхарта) и сверен с греческой выкладкой; прочитан научный разбор рукописной традиции Од (Coogan 2019). Обнаружено расхождение в первом глаголе гимна — см. § 3.4. Работой (`work`) в реестре пока н",
+      "lastCommit": "2026-10-27",
+      "lastSubject": "Заглавная только о Боге; вероучение канала; часть 2 досье PHOS-004",
+      "addedCommit": "2026-10-26"
+    },
+    {
+      "file": "SUNO_HYMNS/RESEARCH/DUTCH_HYMN_BACKLOG.md",
+      "line": 3,
+      "stamp": "2026-10-25",
+      "state": "current",
+      "text": "**Scope caveat:** “not produced” means there is no production record in this project's known conversation/repository context as of 2026-10-25. It is not proof the owner has never produced the item elsewhere. Recheck local assets or channel records before making a global negative claim.",
+      "lastCommit": "2026-10-25",
+      "lastSubject": "research: read the 2005 melody register, close the two-tune-names puzzle, dossier candidate 006; record the owner's release report",
+      "addedCommit": "2026-10-25"
+    },
+    {
+      "file": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/12-iniciativnaya-gruppa-golden-chapter-source-to-claim-2026-09-06.md",
+      "line": 6,
+      "stamp": "2026-11-16",
+      "state": "current",
+      "text": "**Статус (обновлено 2026-11-16):** полная 10-страничная машинописная копия Инструктивного письма найдена в Google Drive и визуально прочитана; **подлинное происхождение/дата/права исходного документа ещё открыты**. Решение Оргкомитета 25.02.1962 идентифицировано по AS 770 и академическому тексту; or",
+      "lastCommit": "2026-11-16",
+      "lastSubject": "research(baptists): глава 18 — документы 1959–1965 и первичный скан письма ВСЕХБ (#534)",
+      "addedCommit": "2026-11-16"
+    },
+    {
+      "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/CS06_BH1_PAGE_TALLY_WORKSHEET_2026-11-16.md",
+      "line": 3,
+      "stamp": "2026-11-16",
+      "state": "current",
+      "text": "> **ОБНОВЛЕНО CS-06r (2026-11-16).** Первоначальная посылка этого листа — «текст источника исчерпан, считать можно только по изображениям» — оказалась **неверной для `djvu.txt`**: прямой URL `archive.org/download/…_djvu.txt` отдаёт текст целиком, с номерами лотов и заголовками отделов. Поэтому **сна",
+      "lastCommit": "2026-11-16",
+      "lastSubject": "research(charnock): integrate source-checked Agent 5–8 findings",
+      "addedCommit": "2026-11-16"
+    },
+    {
+      "file": "ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/David_Platt_McLean_Bible.md",
+      "line": 5,
+      "stamp": "2026-06-27",
+      "state": "current",
+      "text": "**Обновлено: 2026-06-27**",
+      "lastCommit": "2026-06-27",
+      "lastSubject": "research: Deep Pass VIII — сегмент ВЛАСТЬ/ПРОЦЕДУРА/ДИОТРЕФ в консервативных кругах (Fletcher + Timmis); углубление Platt; рекатегоризация Hengsbach",
+      "addedCommit": "2026-06-27"
+    },
+    {
+      "file": "ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/Ravi_Zacharias_RZIM.md",
+      "line": 4,
+      "stamp": "2026-06-27",
+      "state": "current",
+      "text": "**Обновлено: 2026-06-27**",
+      "lastCommit": "2026-06-27",
+      "lastSubject": "research: Deep Pass V — Driscoll + RZIM свежие детали 2024-2026 (углубление, без новых файлов). Driscoll (102->161): Trinity 'total control without accountability' (Turner verbatim), surveillance text threads 2026 (Freese, B+), $15.5M office buy; defense included; НЕ criminal. RZIM (101->167): Guidepost $960K donor money на иск против жертвы + $400K бонус + ложь 'no ministry funds' (Level A); class-action доноров (Georgia federal court); Thompson victim impact statement 06/2025; NDA не снят Margie; Lighten Group закрылся; Nathan Zacharias defense. RZIM ключевые факты A- -> A. VERIFICATION_LOG обновлён (Pass V).",
+      "addedCommit": "2026-06-27"
+    },
+    {
+      "file": "ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/Robert_Morris.md",
+      "line": 4,
+      "stamp": "2026-06-27",
+      "state": "current",
+      "text": "**Обновлено: 2026-06-27**",
+      "lastCommit": "2026-06-27",
+      "lastSubject": "research: Deep Pass VI — Guay (GCC #2) + Robert Morris свежие детали 2025-2026",
+      "addedCommit": "2026-06-27"
+    },
+    {
+      "file": "PORTFOLIO/PORTFOLIO_EN.md",
+      "line": 3,
+      "stamp": "2026-11-03",
+      "state": "edited-after-stamp",
+      "text": "> CI census updated: 221,596 GitHub Actions runs currently available via the API for ten repositories in 2026 through 2026-11-03 21:05:16 UTC. Other portfolio metrics retain their 2026-11-01 snapshot. Previously deleted runs are not recoverable. See CI_RUNS_2026-11-03.csv and tools/measure_ci_runs.p",
+      "lastCommit": "2026-11-05",
+      "lastSubject": "docs(portfolio): align visual direction with published cases (EN)",
+      "addedCommit": "2026-11-01"
+    },
+    {
+      "file": "STEVE_LAWSON/_START_HERE.md",
+      "line": 3,
+      "stamp": "2026-11-13",
+      "state": "edited-after-stamp",
+      "text": "**Updated:** 2026-11-13",
+      "lastCommit": "2026-11-15",
+      "lastSubject": "research(lawson): reconcile November 2026 elders' letter evidence",
+      "addedCommit": "2026-09-30"
+    },
+    {
+      "file": "БИОГРАФИИ/Джон Гилл/31_GILL_DEPT_MASTER_MAP.md",
+      "line": 4,
+      "stamp": "2026-07-07",
+      "state": "edited-after-stamp",
+      "text": "> Назначение: отдел разросся до 30 досье (01–30) от нескольких параллельных агентов — свести их в кластеры, указать дублирования и **реальные оставшиеся лакуны**. Снимок по состоянию на 2026-07-07 (HEAD репо на момент написания).",
+      "lastCommit": "2026-10-26",
+      "lastSubject": "research: organize biographies and preserve audited Charnock research",
+      "addedCommit": "2026-10-26"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/fathers/00_FATHERS_AUTHORITY_2026-10-07.md",
+      "line": 3,
+      "stamp": "2026-10-08",
+      "state": "edited-after-stamp",
+      "text": "**Дата:** 2026-10-07 (обновлено 2026-10-08: карточки `11_`, приёмка PD-каналов)",
+      "lastCommit": "2026-11-16",
+      "lastSubject": "research(atonement): consolidate Agent 5 verified historical primary sources (#526)",
+      "addedCommit": "2026-10-12"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/fathers/10_ORIGINAL_LANGUAGE_VERIFICATION.md",
+      "line": 3,
+      "stamp": "2026-10-08",
+      "state": "edited-after-stamp",
+      "text": "**Дата:** 2026-10-07 (обновлено 2026-10-08 — §11, §12)",
+      "lastCommit": "2026-11-16",
+      "lastSubject": "research(atonement): consolidate Agent 5 verified historical primary sources (#526)",
+      "addedCommit": "2026-10-12"
+    },
+    {
+      "file": "СЕРИЯ СЕРДЦЕ/61_BOOK_ARCHITECTURE_V2_CHAPTERS_AND_RESEARCH_TASKS.md",
+      "line": 13,
+      "stamp": "2026-07-31",
+      "state": "edited-after-stamp",
+      "text": "5. P0 architecture gaps still lacking dedicated dossiers as of 2026-07-31:",
+      "lastCommit": "2026-08-01",
+      "lastSubject": "Close heart-series source verification gaps (#77)",
+      "addedCommit": "2026-07-14"
+    },
+    {
+      "file": "SUNO_HYMNS/HANDOFF_FOR_NEXT_AGENT.md",
+      "line": 3,
+      "stamp": "2026-10-26",
+      "state": "stamp-ahead-of-history",
+      "text": "**As of:** 2026-10-26, publication pass (branch `arena/0bdf988d-research`, PR #237)",
+      "lastCommit": "2026-10-25",
+      "lastSubject": "research: read the 2005 melody register, close the two-tune-names puzzle, dossier candidate 006; record the owner's release report",
+      "addedCommit": "2026-10-25"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/fathers/06_METAPHOR_AND_MODEL_MAP.md",
+      "line": 6,
+      "stamp": "2026-11-03",
+      "state": "stamp-ahead-of-history",
+      "text": "**Обновлено 2026-11-03:** прежние взаимоисключающие противопоставления моделей — SUPERSEDED. Один автор может соединять долг, заместительство, жертву, победу и обожение; см. Афанасия 19–21, 25 и Григория Or. 30.20–21 в [10_](10_ORIGINAL_LANGUAGE_VERIFICATION.md). Нельзя заключать об отсутствии мотив",
+      "lastCommit": "2026-11-02",
+      "lastSubject": "Repair OT, patristic and John 11 sources; distinguish labels from reading",
+      "addedCommit": "2026-10-12"
+    }
+  ]
+}

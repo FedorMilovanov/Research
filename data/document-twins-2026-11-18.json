@@ -1,0 +1,304 @@
+{
+  "schemaVersion": "document-twins/1",
+  "authorityId": "DOCUMENT-TWINS-2026-11-18",
+  "root": ".",
+  "scope": {
+    "markdownFiles": 2415,
+    "documentsCompared": 2391,
+    "minWords": 200,
+    "shingleWords": 8,
+    "signatureElements": 48
+  },
+  "totals": {
+    "pairs": 12,
+    "byState": {
+      "identical-text": 3,
+      "near-identical": 1,
+      "shared-text": 6,
+      "superset": 2
+    },
+    "identicalTextUndeclared": 1,
+    "declared": 8,
+    "undeclaredIdenticalPairs": [
+      {
+        "a": "1КОРИНФЯНАМ_11_ПОКРЫВАЛО/13_ADVERSARIAL_AND_LIBERAL_READINGS_DOSSIER.md",
+        "b": "1КОРИНФЯНАМ_11_ПОКРЫВАЛО/24_ADVERSARIAL_AND_LIBERAL_READINGS_2026-08-09.md",
+        "overlap": 1.0
+      }
+    ]
+  },
+  "findings": [
+    {
+      "a": "1КОРИНФЯНАМ_11_ПОКРЫВАЛО/08_LOGIC_AND_RHETORIC_OF_1COR11_2_16.md",
+      "b": "1КОРИНФЯНАМ_11_ПОКРЫВАЛО/27_LOGIC_AND_RHETORIC_2026-08-09.md",
+      "overlap": 1.0,
+      "sharedShingles": 1610,
+      "unionShingles": 1610,
+      "sameBytes": true,
+      "tokens": [
+        1617,
+        1617
+      ],
+      "lines": [
+        140,
+        140
+      ],
+      "supersetOf": null,
+      "state": "identical-text",
+      "declared": true,
+      "declaration": {
+        "kind": "index-line",
+        "file": "1КОРИНФЯНАМ_11_ПОКРЫВАЛО/18_MASTER_INDEX_AND_SERIES_MAP.md",
+        "line": "| 27 | `27_LOGIC_AND_RHETORIC_2026-08-09.md` | Логика и риторика (дубль файла 08) | SUPPLEMENT | Сохранён как supplement. |"
+      }
+    },
+    {
+      "a": "1КОРИНФЯНАМ_11_ПОКРЫВАЛО/13_ADVERSARIAL_AND_LIBERAL_READINGS_DOSSIER.md",
+      "b": "1КОРИНФЯНАМ_11_ПОКРЫВАЛО/24_ADVERSARIAL_AND_LIBERAL_READINGS_2026-08-09.md",
+      "overlap": 1.0,
+      "sharedShingles": 1673,
+      "unionShingles": 1673,
+      "sameBytes": true,
+      "tokens": [
+        1680,
+        1680
+      ],
+      "lines": [
+        167,
+        167
+      ],
+      "supersetOf": null,
+      "state": "identical-text",
+      "declared": false,
+      "declaration": null
+    },
+    {
+      "a": "1КОРИНФЯНАМ_11_ПОКРЫВАЛО/14_VERSE_BY_VERSE_SYNOPSIS_AND_STATUS.md",
+      "b": "1КОРИНФЯНАМ_11_ПОКРЫВАЛО/28_VERSE_BY_VERSE_EXEGESIS_2026-08-09.md",
+      "overlap": 1.0,
+      "sharedShingles": 1971,
+      "unionShingles": 1971,
+      "sameBytes": true,
+      "tokens": [
+        1979,
+        1979
+      ],
+      "lines": [
+        188,
+        188
+      ],
+      "supersetOf": null,
+      "state": "identical-text",
+      "declared": true,
+      "declaration": {
+        "kind": "index-line",
+        "file": "1КОРИНФЯНАМ_11_ПОКРЫВАЛО/18_MASTER_INDEX_AND_SERIES_MAP.md",
+        "line": "| 28 | `28_VERSE_BY_VERSE_EXEGESIS_2026-08-09.md` | Экзегеза стих-за-стихом (дубль файла 14) | SUPPLEMENT | Сохранён как supplement. |"
+      }
+    },
+    {
+      "a": "1КОРИНФЯНАМ_11_ПОКРЫВАЛО/04_OT_AND_JEWISH_BACKGROUND_DOSSIER.md",
+      "b": "1КОРИНФЯНАМ_11_ПОКРЫВАЛО/30_OT_AND_JEWISH_BACKGROUND_SUPPLEMENT_2026-08-09.md",
+      "overlap": 0.9092,
+      "sharedShingles": 1042,
+      "unionShingles": 1146,
+      "sameBytes": false,
+      "tokens": [
+        1061,
+        1141
+      ],
+      "lines": [
+        135,
+        142
+      ],
+      "supersetOf": null,
+      "state": "near-identical",
+      "declared": true,
+      "declaration": {
+        "kind": "index-line",
+        "file": "1КОРИНФЯНАМ_11_ПОКРЫВАЛО/18_MASTER_INDEX_AND_SERIES_MAP.md",
+        "line": "| 30 | `30_OT_AND_JEWISH_BACKGROUND_SUPPLEMENT_2026-08-09.md` | ВЗ/еврейский фон (supplement к 04) | SUPPLEMENT | Расширенный фон. |"
+      }
+    },
+    {
+      "a": "ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/osk_update_h/obratnaya_storona_kafedry_FINAL_PACKAGE/00_START_HERE/CASE_VERIFICATION_REGISTER.md",
+      "b": "ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/osk_update_h/obratnaya_storona_kafedry_FINAL_PACKAGE/02_RESEARCH_BY_VERSION/v3_case_atlas_verification/research_obratnaya_storona_kafedry_v3_1_case_verification.md",
+      "overlap": 0.7594,
+      "sharedShingles": 12101,
+      "unionShingles": 15935,
+      "sameBytes": false,
+      "tokens": [
+        14337,
+        14125
+      ],
+      "lines": [
+        1596,
+        1630
+      ],
+      "supersetOf": null,
+      "state": "shared-text",
+      "declared": false,
+      "declaration": null
+    },
+    {
+      "a": "1КОРИНФЯНАМ_11_ПОКРЫВАЛО/10_PRAYER_PROPHECY_AND_1COR14_34_RECONCILIATION.md",
+      "b": "1КОРИНФЯНАМ_11_ПОКРЫВАЛО/29_WOMEN_PRAYING_VS_1COR14_34_2026-08-09.md",
+      "overlap": 0.7389,
+      "sharedShingles": 934,
+      "unionShingles": 1264,
+      "sameBytes": false,
+      "tokens": [
+        941,
+        1273
+      ],
+      "lines": [
+        95,
+        117
+      ],
+      "supersetOf": "1КОРИНФЯНАМ_11_ПОКРЫВАЛО/29_WOMEN_PRAYING_VS_1COR14_34_2026-08-09.md",
+      "state": "superset",
+      "declared": true,
+      "declaration": {
+        "kind": "index-line",
+        "file": "1КОРИНФЯНАМ_11_ПОКРЫВАЛО/18_MASTER_INDEX_AND_SERIES_MAP.md",
+        "line": "| 29 | `29_WOMEN_PRAYING_VS_1COR14_34_2026-08-09.md` | 11:5 vs 14:34 (дубль файла 10) | SUPPLEMENT | Пять стратегий. |"
+      }
+    },
+    {
+      "a": "ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/osk_update_h/obratnaya_storona_kafedry_FINAL_PACKAGE/02_RESEARCH_BY_VERSION/v0_foundation_methodology/research_obratnaya_storona_kafedry_v0_5.md",
+      "b": "ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/osk_update_h/obratnaya_storona_kafedry_FINAL_PACKAGE/02_RESEARCH_BY_VERSION/v0_foundation_methodology/research_obratnaya_storona_kafedry_v0_6.md",
+      "overlap": 0.7061,
+      "sharedShingles": 7669,
+      "unionShingles": 10861,
+      "sameBytes": false,
+      "tokens": [
+        7685,
+        10879
+      ],
+      "lines": [
+        1205,
+        1769
+      ],
+      "supersetOf": "ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/osk_update_h/obratnaya_storona_kafedry_FINAL_PACKAGE/02_RESEARCH_BY_VERSION/v0_foundation_methodology/research_obratnaya_storona_kafedry_v0_6.md",
+      "state": "superset",
+      "declared": true,
+      "declaration": {
+        "kind": "version-name",
+        "file": null,
+        "line": null
+      }
+    },
+    {
+      "a": "STEVE_LAWSON/64_ARTICLE_RU_REFINED_V5_2026-09-29.md",
+      "b": "STEVE_LAWSON/74_ARTICLE_RU_REFINED_V6_2026-09-30.md",
+      "overlap": 0.696,
+      "sharedShingles": 4996,
+      "unionShingles": 7178,
+      "sameBytes": false,
+      "tokens": [
+        5501,
+        6717
+      ],
+      "lines": [
+        917,
+        951
+      ],
+      "supersetOf": null,
+      "state": "shared-text",
+      "declared": true,
+      "declaration": {
+        "kind": "version-name",
+        "file": null,
+        "line": null
+      }
+    },
+    {
+      "a": "СЕРИЯ СЕРДЦЕ/V68_SINGLE_ZIP_MANIFEST.md",
+      "b": "СЕРИЯ СЕРДЦЕ/V69_SINGLE_ZIP_MANIFEST.md",
+      "overlap": 0.5614,
+      "sharedShingles": 434,
+      "unionShingles": 773,
+      "sameBytes": false,
+      "tokens": [
+        608,
+        635
+      ],
+      "lines": [
+        92,
+        94
+      ],
+      "supersetOf": null,
+      "state": "shared-text",
+      "declared": true,
+      "declaration": {
+        "kind": "version-name",
+        "file": null,
+        "line": null
+      }
+    },
+    {
+      "a": "ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/osk_update_h/obratnaya_storona_kafedry_FINAL_PACKAGE/00_START_HERE/SOURCE_PROTOCOL.md",
+      "b": "ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/osk_update_h/obratnaya_storona_kafedry_FINAL_PACKAGE/02_RESEARCH_BY_VERSION/v2_history_taxonomy_categories/research_obratnaya_storona_kafedry_v2_8_deep_taxonomy_web.md",
+      "overlap": 0.541,
+      "sharedShingles": 6797,
+      "unionShingles": 12563,
+      "sameBytes": false,
+      "tokens": [
+        8559,
+        10926
+      ],
+      "lines": [
+        1141,
+        1666
+      ],
+      "supersetOf": null,
+      "state": "shared-text",
+      "declared": false,
+      "declaration": null
+    },
+    {
+      "a": "STEVE_LAWSON/07_ARTICLE_RU_REFINED_V3_2026-09-27.md",
+      "b": "STEVE_LAWSON/17_ARTICLE_RU_REFINED_V4_2026-09-28.md",
+      "overlap": 0.5383,
+      "sharedShingles": 4264,
+      "unionShingles": 7921,
+      "sameBytes": false,
+      "tokens": [
+        5026,
+        7214
+      ],
+      "lines": [
+        672,
+        761
+      ],
+      "supersetOf": null,
+      "state": "shared-text",
+      "declared": true,
+      "declaration": {
+        "kind": "version-name",
+        "file": null,
+        "line": null
+      }
+    },
+    {
+      "a": "ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/osk_update_h/obratnaya_storona_kafedry_FINAL_PACKAGE/02_RESEARCH_BY_VERSION/v3_case_atlas_verification/research_obratnaya_storona_kafedry_v3_0_case_atlas.md",
+      "b": "ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/osk_update_h/obratnaya_storona_kafedry_FINAL_PACKAGE/02_RESEARCH_BY_VERSION/v3_case_atlas_verification/research_obratnaya_storona_kafedry_v3_1_case_verification.md",
+      "overlap": 0.5032,
+      "sharedShingles": 8184,
+      "unionShingles": 16263,
+      "sameBytes": false,
+      "tokens": [
+        10613,
+        14125
+      ],
+      "lines": [
+        1346,
+        1630
+      ],
+      "supersetOf": null,
+      "state": "shared-text",
+      "declared": false,
+      "declaration": null
+    }
+  ]
+}
