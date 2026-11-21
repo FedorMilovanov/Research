@@ -204,9 +204,11 @@ Direct root, stale indexed pages, app-store metadata, G3+ web app, G3 Press stor
 
 ### Q020 — G3 Press author rights/inventory
 
-**State:** `TITLE-BY-TITLE PARTIAL CLOSURE`.
+**State:** `TITLE-BY-TITLE PARTIAL CLOSURE / JENKINS PARTICIPANT STATEMENT VERIFIED / LEGAL-TITLE-INVENTORY-REISSUE HOLD`.
 
-Dave Jenkins' title has observable post-G3 republication under his current ecosystem; other rights-return requests are less complete. Continue title-by-title contract/inventory/license reconstruction. Do not assume one monolithic transfer.
+Jenkins’ directly read 2026-08-19 participant post says G3 returned rights to *The Word Matters* and that a new Servants of Grace cover/availability was forthcoming. An archived Servants of Grace card predates that statement by six days, so it cannot establish a new post-return/post-G3 reissue or corroborate legal reversion. Contract, effective date, scope, edition, inventory, fulfilment and licence facts remain unacquired. Continue title-by-title contract/inventory/license reconstruction; do not assume one monolithic transfer.
+
+Canonical correction: `Q020_JENKINS_TITLE_CORRECTION_2026-11-21.md`. The immutable 9 Sep. Product handoff is historical and requires a new signed correction delta before `G3-PUB-015` is retained or altered in Product.
 
 ### Q021 — Scott Aniol post-G3 status
 

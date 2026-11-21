@@ -10,7 +10,7 @@ This is not a claim that G3 occupied a politically neutral center. It is a claim
 
 ## 2011–2017 — theological conference before later coalition battles
 
-The official 2011 announcement frames the future G3 Conference around God, gospel, sound doctrine and God’s glory for pastors, evangelists, missionaries and laypeople. The early national-conference themes are likewise overwhelmingly theological/ecclesial:
+The official invitation to the January 2013 meeting (publisher’s date 10 August 2011; G3-S003) frames the future G3 Conference around God, gospel, sound doctrine and God’s glory for pastors, evangelists, missionaries and laypeople. The early national-conference themes are likewise overwhelmingly theological/ecclesial:
 
 - 2013 — `The Gospel: Message and Mission`;
 - 2014 — `The Doctrine of the Church`;
@@ -103,7 +103,7 @@ The best current chronology is therefore not simply `after 2018 G3 became anti-C
 
 ## 2021–2022 — a self-conscious conservative institutional ecosystem
 
-The Church Network required close confessional alignment, historically including the Second London Baptist Confession of 1689 and the Dallas Statement with specified requirements/exceptions. G3 simultaneously expanded beyond the annual conference into publishing, G3+, a theological journal, workshops and a church network.
+The [2021 network form](https://web.archive.org/web/20210802180311id_/https://g3min.org/g3-church-network/) asked pastors for affirmation of the 1689 confession or qualifications, and for willingness to sign the Dallas Statement or an explanation. Agreement without signature was a selectable answer. An application procedure is neither an automatic exemption nor evidence that every admitted pastor signed. These are church membership criteria, not a conference-wide speaker rule. G3 simultaneously expanded beyond the annual conference into publishing, G3+, a theological journal, workshops and a church network.
 
 Its media and program ecosystem increasingly addressed:
 
@@ -140,7 +140,9 @@ This matters because `G3 opposed Christian Nationalism` can itself be too compre
 
 Aniol states directly that one of his biggest objections is that **the New Testament does not present anything like Christian Nationalism** as the Christian model. His proposed alternative is `Christian Faithfulness`: Christians as citizens of a heavenly kingdom who nevertheless care for this world.
 
-This directly disproves any later claim that G3’s official 2023 line was simply to endorse Christian Nationalism.
+In his [review of Wilson, archived by 8 May](https://web.archive.org/web/20230508124256id_/https://g3min.org/a-review-of-mere-christendom-by-doug-wilson/), Aniol accepts that politics is not religiously neutral but rejects the inference that Christian public engagement requires Christian nationalism. In [the reply](https://web.archive.org/web/20230601041844id_/https://dougwils.com/the-church/s16-theology/public-theology-comes-out-your-fingertips-also.html), *Unless We Win*, Wilson distinguishes formulating a public theology from enacting it; in *The Second Half of His First Point* he argues for a Christian consensus without necessarily establishing a church. These are two authors arguing about what political faithfulness requires, not a corporate G3 resolution. The [GDJT version](https://web.archive.org/web/20240415132108id_/https://g3min.org/journal_article/book-review-mere-christendom-by-douglas-wilson/) shares the two introductory theses but is not an independent witness or evidence that the exchange started at the September conference.
+
+**Editorial question for №3 (no separate manuscript):** Did agreement about Scripture and public life conceal different answers to what a church or magistrate should do? The May review/reply supplies a first-person exchange rather than another speaker list. For now keep it as a chapter of A: (1) shared premise on neutrality; (2) disagreement over what putting faith into practice entails; (3) later use of the review in the journal. A third article would need further independent evidence tying those differences to actual coalition decisions. Neither publication nor a stage invitation proves such a decision. No new route or handoff.
 
 ### G3 review of `Mere Christendom`
 
@@ -156,7 +158,11 @@ This prevents another retrospective distortion: the appearance of explicit polit
 
 ### Official 2023 pre-conference program
 
-G3’s own schedule placed political theology at the center of a dedicated pre-conference day:
+The [G3 ticket listing](https://www.tickettailor.com/events/g3ministries/878305), *Pre-Conference Schedule*, and [GBTS course page](https://web.archive.org/web/20231003133702id_/https://gbtseminary.org/g3/), *Pre-Conference Description*, concern the same 20 September event. The ticket names the Georgia International Convention Center; the seminary listing still says “Location TBA”. Neither is a transcript.
+
+A later [catalogue description of the panel](https://lumenamedia.com/tabs/none/videos/12222) names Strachan as moderator and Johnson, Moore, Coates, Aniol and White as guests. Unlike the ticket it does not name Buice. That difference is not proof he was absent. The card requires a subscription; its 2 October date is not the event date, nor its duration a locator for anyone’s remarks.
+
+Advertised sessions:
 
 - James White — non-compliance / civil authority questions;
 - Owen Strachan — evaluating Christian Nationalism;
