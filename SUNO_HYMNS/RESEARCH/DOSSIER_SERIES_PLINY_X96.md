@@ -35,8 +35,8 @@
 
 Оба вспомогательных объекта на том же SHA получены и проверены по фактическим байтам:
 
-- `README.md`: **2334 байта**, blob `dc327f44bde676e16bb63cd223afa922d00045b5`, SHA-256 `7ea684aea5b084c38fc919da2adf0df8339490243a43bf744fb8e27384d82623`.
-- `license.md`: **18625 байт**, blob `033217724f8631eeb12987b30d76e8a62f275ceb`, SHA-256 `ccf0e8ce183761bf82700126cc45a4e907b2cede024e65e3fef5c2338b9b7063`. Прочитаны нужные условия §3, не заявляется новая юридическая экспертиза всей лицензии.
+- [PerseusDL/canonical-latinLit/README.md](https://github.com/PerseusDL/canonical-latinLit/blob/8cef51623130f2412da410858e32c322eb796c0a/README.md): **2334 байта**, blob `dc327f44bde676e16bb63cd223afa922d00045b5`, SHA-256 `7ea684aea5b084c38fc919da2adf0df8339490243a43bf744fb8e27384d82623`.
+- [PerseusDL/canonical-latinLit/license.md](https://github.com/PerseusDL/canonical-latinLit/blob/8cef51623130f2412da410858e32c322eb796c0a/license.md): **18625 байт**, blob `033217724f8631eeb12987b30d76e8a62f275ceb`, SHA-256 `ccf0e8ce183761bf82700126cc45a4e907b2cede024e65e3fef5c2338b9b7063`. Прочитаны нужные условия §3, не заявляется новая юридическая экспертиза всей лицензии.
 
 `SRC-PHOS-SERIES-PLINY-X96` сохраняет **B1 / PARTIAL_OBJECT / EXACT_LOCATOR_VERIFIED / PUBLICATION_ELIGIBLE / REFERENCE**, без изменения HOLD. Проверено содержание двух писем, не оригинальный документ и не полный критический текст; публикационный статус трека не повышен.
 

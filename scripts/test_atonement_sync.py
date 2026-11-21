@@ -7,6 +7,7 @@ from copy import deepcopy
 import io
 import hashlib
 import json
+import re
 from pathlib import Path
 import tempfile
 import subprocess
@@ -2646,6 +2647,52 @@ class ReshootTable91Tests(unittest.TestCase):
         corrupted = self.document.replace(self.ot_row + "\n", "", 1)
         with self.assertRaises(SystemExit):
             reshoot.render_table_91(self.corpus, corrupted)
+
+
+class CalvinReaderScopeTests(unittest.TestCase):
+    """Editorial regression contracts, not primary verification or a rights grant."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.article = (ROOT / "docs/research/atonement/01_prokopenko_article_review.md").read_text(encoding="utf-8")
+        cls.registry = (ROOT / "docs/research/atonement/22_master_source_registry_50_plus_primary_citations.md").read_text(encoding="utf-8")
+        cls.calvin_article = cls.article.split("  3. **Кальвин —", 1)[1].split("\n  4.", 1)[0]
+        cls.calvin_registry = cls.registry.split("11. **John Calvin.** *Dilucida", 1)[1].split("\n12. **", 1)[0]
+        cls.matrix = cls.registry.split("## VII. ИТОГОВАЯ ВЕРИФИКАЦИОННАЯ МАТРИЦА — ДЕЙСТВУЮЩИЕ СТАТУСЫ", 1)[1].split("\n**HISTORICAL", 1)[0]
+
+    def test_current_reader_cards_retain_the_already_recorded_quote(self):
+        recorded = (ROOT / "docs/research/atonement/32_archbald_dissertation_calvin_boundaries_vs_prokopenko.md").read_text(encoding="utf-8")
+        words = "Scire velim quomodo Christi carnem edant impii pro quibus non est crucifixa et quomodo sanguinem bibant qui expiandis eorum peccatis non est effusus"
+        normalize = lambda s: " ".join(re.sub(r"[,.*]", "", s).split())
+        for text in (recorded, self.calvin_article, self.calvin_registry):
+            self.assertIn(words, normalize(text))
+
+    def test_a_current_quote_without_its_frame_and_countertext_is_not_enough(self):
+        for text in (self.calvin_article, self.calvin_registry):
+            for fragment in ("CO 9:484", "quatenus est spiritualis animarum cibus",
+                             "CO 9:483", "victimam, qua expiata sunt mundi peccata",
+                             "CO 9:485", "solis electis"):
+                self.assertIn(fragment, text)
+        self.assertIn("не новое собственное чтение OCR/сканов", self.article)
+        self.assertIn("Нового собственного чтения оригинала", self.calvin_registry)
+
+    def test_unmerged_section_numbers_are_explicit_pinned_draft_links(self):
+        for text in (self.article, self.registry):
+            current = "\n".join(line for line in text.splitlines() if not line.lstrip().startswith(">"))
+            self.assertNotRegex(current, r"`34_` §§?4\.(?:152|153|159|164)\b")
+            self.assertIn("Draft #554", current)
+            self.assertIn("/blob/619c739435574fabc4ab756ac422141eed7ca5f9/", current)
+
+    def test_current_matrix_distinguishes_old_false_quote_and_scope_questions(self):
+        row11 = next(line for line in self.matrix.splitlines() if line.startswith("| 11 |"))
+        row14 = next(line for line in self.matrix.splitlines() if line.startswith("| 14 |"))
+        for text in ("CO 9:483", "CO 9:484", "CO 9:485", "TENSION"):
+            self.assertIn(text, row11)
+        for text in ("кто спасается", "достаточность", "применение"):
+            self.assertIn(text, row14)
+        self.assertNotIn("только один тезис о числе спасаемых не заменяет второй", row14)
+        self.assertIn("относится к комментарию Урсина", self.matrix)
+        self.assertIn("не цитата из самого Гейдельбергского катехизиса", self.matrix)
 
 
 if __name__ == "__main__":
