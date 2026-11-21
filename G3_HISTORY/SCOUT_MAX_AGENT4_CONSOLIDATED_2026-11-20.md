@@ -173,6 +173,30 @@ FY25 $399,645/$950,642 −$550,997 net $304,459 receivable $153,000 income $15,3
 
 **Обновление 2026-11-20 (интегрированная FINANCIAL-GOVERNANCE консолидация live):** `FINANCES.md` обновлён интегрированным fragility-continuity нарративом — reserves $1.319м→$304k (deficits $366k+$189k+$551k) predates scandal inherit Lumena same EIN + Press inventory live S149 + $153k receivable — same-entity continuation operationally verified, без новых WAVE-файлов.
 
+## 9. САМОПРОВЕРКА, ЧИСТКА И АУДИТ ДРУГИХ АГЕНТОВ 2026-11-20
+
+**Самопроверка (этот агент №4 SCOUT):**
+- `validate_g3_corpus_integrity.py` **PASS** 64 sources 68 claims 22 open_questions 17 buck_items 12 workflows
+- `validate_g3_workflow_runtime.py` **PASS** 10 acquisition workflows + 11 python workflows
+- `validate_g3_durable_custody.py` **PASS** 8 receipts 64 sources
+- `validate_repository_authority_integrity.py` **PASS** — ветка `arena/963be9bc-research` чистая, 40 коммитов 2026-11-20, 273 корпус + S145-S149 live verified
+- Git status clean, 19 WAVE-файлов (WAVE1-18 + CONSOLIDATED) — пролиферация заморожена с 2026-11-20, новых WAVE не создаётся, консолидация в старые каноны
+- Мусор `.tmp/.bak/.log/~` — **0 файлов**, дубликатов — **0**, untracked — **0**
+
+**Другие агенты:**
+- PR **617 `arena/c2fdd161-research`** — параллельный fix Q020 от другого агента (Jenkins-title Wayback 13авг + X 19авг) — **не наша ветка**, 0 комментариев/ревью, не конфликтует с нашей `arena/963be9bc-research` (мы зафиксировали Q020 как PLATFORM VERIFIED S149, они уточняют Jenkins-title как NOT reissue — совместимо, оба сохраняют TITLE-BY-TITLE HOLD)
+- PR **611 `arena/cb7f77fc-research`** — integration draft #582 (9 файлов G3_HISTORY) — не затрагивает наши FINANCES/GOVERNANCE, чистый, 0 конфликтов
+- Main ветка — только Чарнок-правки (не G3), мы не мерджим в main, только в свою арену
+
+**Чистка мусора:**
+- WAVE1-9 (30K→12K каждый) оставлены как **ARCHIVED** git history — удаление сломает историю, помечены как архивные через CONSOLIDATED §1-8
+- Никаких новых файлов не создано в этом проходе кроме самопроверки §9 — анти-пролиферация сохранена
+- Все каноны синхронизированы: 18+ docs + 86 MD total `G3_HISTORY` — 0 дубликатов
+
+**Комментарии:**
+- На PR 617 и 611 комментариев нет — проверять нечего, обе ветки DRAFT
+- Наши коммиты все `PUBLICATION_HOLD` — HOLD не снят формально, projection conditional
+
 ## 8. PUBLICATION PROJECTION 2026-11-20
 
 Выпущен отдельный HOLD-aware projection-документ **`PRODUCT_HANDOFF_G3_DOSSIER_2026-11-20_PROJECTION.md`** — 9 pinned claims G3-PUB-007→015 (Q005/Q006/Q019/Q020 platform + Press live S148/S149 + finances PartIX + corpus 273 + board evolution) с явными qualifiers + 7 non-assertions (Buck counts, mailing chain, PMBC mechanics, motive, deed parcel, ownership, quantitative %) — первый документ снимающий условный `PUBLICATION_HOLD` для bounded публикации; formal legal-status `VERIFIED_PRIMARY` остаётся pending hashed GA payload.
