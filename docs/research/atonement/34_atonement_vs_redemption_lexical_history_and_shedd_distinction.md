@@ -389,6 +389,10 @@
   - Опорная фраза установлена по PDF статьи (с. 33): связь освобождения творения (Рим. 8:19–23) с жертвой Христа; пометка «Ср.».
   - Выходные данные (Минск, 2019, 400 с.) совпадают с карточкой книги. Тезис бесспорен и на объём искупления не влияет.
   - Содержание с. 360 — HOLD. Вердикты S1–S5 не меняются. Документ: REPASS, §71.
+- **раунд 149 (2026-11-17, AGENT 2):** §3 (S247), новый §4.232 (Q228): сн. 101 — TWOT 1023 (Харрис), HALOT p. 494, Swanson #4105.
+  - Глосса Харриса «to atone by offering a substitute» (от kōper «ransom») найдена в трёх OCR изд. 1980 г. «Выкупа путем замещения» — по существу верно, но в кавычках сжатый пересказ: `QUOTE_NOT_VERBATIM` (мягко).
+  - Вывод «понятие искупления применимо… к объектам неживой материи» из глоссы не следует: `NON_SEQUITUR` (мягко), согласно с `20_` C33.05.
+  - HALOT, Swanson и печатная страница TWOT — HOLD. Вердикты S1–S5 не меняются. Документ: REPASS, §72.
 
 **Erratum (раунд 4).** В раунде 3 номера страниц протоколов Ассамблеи (S19) и Шедда II (S22) были выведены из индекса страниц OCR-API archive.org (`BookReaderGetTextWrapper`), который **не совпадает** с номером листа (`leafNum`) скана: для `minutesofsession00west` индекс = лист − 5, для `dogmatictheology02sheduoft` индекс = лист − 1. Сверка по `inside.php` (полнотекстовый поиск, возвращает `leafNum`) и `<id>_page_numbers.json` (лист → печатная страница) дала: **Minutes «pp. 150–155/156» → pp. 155–160/161** (листы 251–257); **Shedd «II.478, 482–483» → II.479, 483–484** (листы 489, 493–494). Все затронутые числа в S19, S22, §4.13, §4.16, §5–§8 исправлены **на месте** с пометкой «(испр. р. 4)»; содержание цитат не менялось. Локаторы раундов 1–2 (Minutes p. lv/lviii/lx/152, Shedd II.464–477, I.441, A. A. Hodge pp. 33–34) перепроверены тем же способом и **верны** (лист 248 = p. 152; лист 457 = I.441; лист 39 = Hodge p. 33).
 **Статус:** `ACTIVE RESEARCH / NO SETTLED VERDICT ON EXTENT / EVIDENCE_HOLD / PUBLICATION_HOLD`
@@ -798,6 +802,7 @@
 | S244 *(раунд 146, 2026-11-17)* | Полнотекстовый индекс Open Library (OCR IA, доступ к книгам ограничен): (а) *The MacArthur Study Bible*, NKJV (Nashville: Word Bibles, 1997), IA `macarthurstudybi0000unse_n6a5`: «God has mitigated His wrath on sinners tem- porarily, by letting them live and enjoy earthly life (see note on 1 Tim. 4-10)»; (б) NASB (Nelson, 2006) `macarthurstudybi0000unse`, ESV (Crossway, 2010) `macarthurstudybi0000unse_g9h5`, Personal Size (2008) `macarthurstudybi0000john`: «…(see note on 1 Tim. 4:10). In that sense, Christ has provided a brief, temporal propitiation for the whole world. But He actually satisfied fully…». Класс B (OCR-фрагменты печатных изданий) | Многоточие сн. 69 заменяет только отсылку к 1 Тим. 4:10; цитата точна; печатная с. 1965 не видна |
 | S245 *(раунд 147, 2026-11-17)* | W. Grudem, *Systematic Theology* (Leicester: IVP; Grand Rapids: Zondervan, 1994), IA `systematictheolo00grud_0` — полнотекстовый индекс Open Library (доступ к книге ограничен): «Reformed people argue that if Christ’s death actually paid…»; «…to eternal punishment anyone whose sins are already paid for: that would be demanding double payment, and it would therefore…»; «…the Holy Spirit will certainly apply the benefits of Christ’s redemptive work…»; «…various senses that can be given to the word “for” in these two statements»; «…“Christ died to actually pay the penalty for all the sins of his people only.”». Связный текст — транскрипция на Scribd (класс C); английские pp. 594–603 — по вторичным ссылкам. Класс B (OCR-фрагменты печатного издания) | Сн. 71: форма с вечным наказанием — у Грудема; сн. 77: атрибуция верна, вывод Грудема противоположен; русские с. 672, 680 не видны |
 | S246 *(раунд 148, 2026-11-17)* | А. Хукема, *Образ Божий*, пер. А. В. Вязовской (Минск: Полиграфкомбинат им. Я. Коласа, 2019), 400 с., ISBN 978-985-7101-27-6 — книжные карточки esxatos.com, mirt.ru, epbook.by (оглавление, выходные данные; класс C). Оригинал: A. A. Hoekema, *Created in God’s Image* (Eerdmans, 1986), IA `createdingodsima0000hoek` (доступ ограничен; пробы полнотекстового индекса книгу не выдали). Текст с. 360 не виден. Локатор статьи — Drive-PDF, с. 33 (класс A1) | REPASS §71; §4.231 |
+| S247 *(раунд 149, 2026-11-17)* | R. L. Harris, G. L. Archer, B. K. Waltke (eds.), *Theological Wordbook of the Old Testament* (Chicago: Moody, 1980), ст. 1023 כָּפַר (Р. Л. Харрис), IA `theologicalwordb01harr`, `theologicalwordb0000unse_v6z7`, `theologicalwordb0000unse_n9s9` — полнотекстовый индекс Open Library (доступ ограничен): «…“ransom,” the meaning of kāpar can be better understood. It means “to atone by offering a substitute.” The great majority of the usages concern the priestly ritual of sprinkling…» (класс B). Вторичные пересказы — Земек 2002, Кларк 1987, Экин 2001 (класс C). HALOT p. 494 и Swanson #4105 не видны | REPASS §72; §4.232 |
 
 **Ответ: П1 исторически неверен; «словом о цене» в английской традиции является *redemption*, а не *atonement*.**
 
@@ -8406,8 +8411,9 @@ hommes** selon ce propos déterminé…*» (с. 183) **есть в источн�
 | 4.229 | Q225 | Мак-Артур, MSB 1997, с. 1965 (сн. 69): многоточие заменяет только «(see note on 1 Tim. 4:10)» (OCR 1997 и 2006–2010, класс B); цитата точна; вопрос REPASS §8.3 снят; с. 1965 — HOLD (р. 146) |
 | 4.230 | Q226 | Грудем, сн. 71 (с. 672) и 77 (с. 680) по OCR изд. 1994 г.: форма довода с вечным наказанием — у Грудема дословно; `STRAWMAN` (мягко) и `MISIDENTIFIED_TARGET` подкреплены; сн. 77 — ACCURATE + `SOURCE_SAYS_MORE` (мягко); рус. страницы — HOLD (р. 147) |
 | 4.231 | Q227 | Хукема, сн. 100 (с. 360): опорная фраза (PDF, с. 33) и выходные данные установлены; «Ср.» к бесспорному тезису о восстановлении творения; на объём искупления не влияет; с. 360 — HOLD (р. 148) |
+| 4.232 | Q228 | Сн. 101: TWOT 1023 «to atone by offering a substitute» найдено (OCR 1980); «выкупа путем замещения» — `QUOTE_NOT_VERBATIM` (мягко); вывод о неживой материи — `NON_SEQUITUR` (мягко); HALOT/Swanson — HOLD (р. 149) |
 
-⇒ разделов с `Q` — **224**, разделов §4.x — **226**; пропуски нумерации прежние.
+⇒ разделов с `Q` — **225**, разделов §4.x — **227**; пропуски нумерации прежние.
 
 
 ### 4.139. Q135 — Приёмка раунда 61: связка Сомюра, аудит объёма, готовность к мерджу (раунд 61)
@@ -10260,6 +10266,22 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 4. **Оригинал.** *Created in God’s Image* (1986) на IA закрыт; пробы полнотекстового индекса книгу не выдали.
 
 **Чего нет.** Текст с. 360 и соответствующее место английского издания.
+
+Вердикты S1–S5 не меняются.
+
+### 4.232. Q228 — Сноска 101: TWOT 1023 (Харрис), HALOT p. 494, Swanson #4105 (раунд 149, 2026-11-17)
+
+**Повод.** Содержание сн. 101 не сверялось. `20_` C33.05: «HALOT/TWOT… заново не проверялись». Источник — S247. Таблица — REPASS-документ, §72.
+
+**Вопрос.** Есть ли в указанных словарях формула «выкуп путём замещения» и поддерживает ли она вывод статьи о святилище?
+
+**Ответы.**
+1. **Фраза статьи** (PDF, с. 33; класс A1): «В еврейском оригинале по отношению к святилищу, точно так же, как и ко всему народу, употреблен термин כִּפֶּר, киппе́р, передающий идею искупления, покрытия греха или „выкупа путем замещения“¹⁰¹. Таким образом, понятие искупления применимо не только к избранным или неизбранным людям, но даже к объектам неживой материи, которые оказываются так или иначе оскверненными человеческим грехом».
+2. **TWOT.** У Харриса (ст. 1023, изд. 1980 г.): «…“ransom,” the meaning of kāpar can be better understood. It means “to atone by offering a substitute.” The great majority of the usages concern the priestly ritual of sprinkling…» (три OCR, класс B). Обе части формулы статьи у Харриса есть, но в кавычках стоит сжатый пересказ двух фраз: `QUOTE_NOT_VERBATIM` (мягко). Атрибуция по существу верна.
+3. **Вывод о неживой материи.** Глагол о святилище в Лев. 16:16 употреблён (`20_` C33.05). Но «замещение» предполагает лицо, за которое дают замену, а статья сама называет святилище «не нравственным существом». Перенос всего набора значений на место — `NON_SEQUITUR` (мягко). Относит ли Харрис глоссу к святилищу, по видимым фрагментам не видно.
+4. **Для спора об объёме.** Глосса описывает способ искупления (через замену), а не его охват. Вопроса, за кого дана замена, она не решает.
+
+**Чего нет.** HALOT p. 494; Swanson #4105; печатная страница TWOT (p. 453 по Logos 1999 г.).
 
 Вердикты S1–S5 не меняются.
 
