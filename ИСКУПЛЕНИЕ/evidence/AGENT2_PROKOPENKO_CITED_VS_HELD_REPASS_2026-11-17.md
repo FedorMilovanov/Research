@@ -3158,3 +3158,32 @@ S. Escobedo III, «2 Peter 2:1 and Universal Redemption» (сайт Alpha & Omeg
 - **#620** (Чарнок, `00_`). Все 10 путей существуют. В редакторском экземпляре 180 уникальных определений сносок. Кроме двух названных исторических фраз есть ещё строка 286 «главы не пишут…». Комментарий: issuecomment-7062277954.
 
 Вердикты S1–S5 не меняются. Умысел не утверждается.
+
+## 84. Раунд 161 (2026-11-17): самопроверка цитаты Кальвина против Хесхузия (CO 9:484) по всему корпусу; чистка
+
+**Повод.** При проверке PR #585 (правки `01_` и `22_` по п. 11 «Кальвин») надо было убедиться, что дословный текст CO 9:484, на котором стоят E1 и R1 аудита AGENT 2, совпадает с изданием. Затем — что во всех файлах корпуса он приведён одинаково.
+
+### 84.1. Источник
+
+- *Ioannis Calvini opera quae supersunt omnia*, ed. Baum, Cunitz, Reuss, t. IX (CR 37; Brunsvigae: Schwetschke, 1870), IA `operaquaesupersu0037calv`, поток djvu.txt, чанк 171 из 278. Колонтитулы «DE VERA PARTICIPATIONE 484», «485», «CHRISTI IN COENA 486». Индекс Open Library по «pro quibus non est crucifixa» находит этот том и Cunningham, *The Reformers* (1866; p. 642 скана). Класс A2 (OCR, без визуальной сверки страницы).
+- Кол. 484: «…quomodo adsit Christus incredulis, quatenus est spiritualis animarum cibus, vita denique et salus mundi. Et quando tam mordicus verbis adhaeret, scire velim quomodo Christi carnem edant impii, pro quibus non est crucifixa, et quomodo sanguinem bibant, qui expiandis eorum peccatis non est effusus. Fateor quod dicit, adesse ut severum iudicem… Sed aliud est comedi, aliud esse iudicem.»
+- Конец кол. 483: «…damnantur: quia victimam, qua expiata sunt mundi peccata, et homines Deo reconciliati, pro nihilo ducunt.»
+- Кол. 485: «…sanctificationem, quae solis electis et filiis Dei propria est, discernere a generali potentia discat, quae ad reprobos quoque pertinet.»
+
+### 84.2. Сверка по корпусу
+
+| Файл | Как приведено | Итог |
+|---|---|---|
+| Аудит AGENT 2, строка 78 и E1 | «pro quibus non est crucifixa… qui expiandis eorum peccatis non est effusus» | Совпадает |
+| `32_` строка 80 | то же | Совпадает |
+| `02_` п. 17 | «…qui non est effusus in peccatorum eorum expiationem» | **Окончание неточно.** Исправлено в этом раунде; прежнее окончание помечено как HISTORICAL прямо в строке |
+| `AGENT6_…` строка 137 | «quae non pro ipsis crucifixa est… qui non pro ipsorum peccatis effusus est» | Неточно. Уже вынесено в R5 аудита; файл принадлежит Agent 6 / MAX, здесь не правится |
+| PR #585 (`01_`, `22_`) | «CO 9:484 обсуждает евхаристическое участие», без цитаты | Верно, но неполно. Предложено привести текст и рамку (issuecomment-7062733025) |
+
+### 84.3. Попутно
+
+- **#585.** Подтверждены *Enchiridion* 103 («distributos»), Сперджен № 566 (Ин. 17:2, MTP 10, p. 229) и Turretin XIV Q. X / Q. XIV. Отмечен интеграционный конфликт с #554 в `01_` и `22_`.
+- **#611** (уже в main). Пост-merge заметка о расхождении «>200» (самоотчёт G3, 2025-07-14) и «>100» (Christian Post 2026-08-26; Roys Report 2026-09-01; класс C); issuecomment-7062703356.
+- Ветка обновлена от main (`e9e4facb`, G3); atonement-пути main не менял.
+
+**HOLD:** без изменений против §80.4. Вердикты S1–S5 не меняются. Умысел не утверждается.

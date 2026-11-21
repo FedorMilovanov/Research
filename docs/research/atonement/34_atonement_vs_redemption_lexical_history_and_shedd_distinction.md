@@ -428,6 +428,8 @@
   - Посредник answeringislam.blog — коллаж пяти комментариев. Фраза о «невольном подчинении» лежит внутри блока Мелика (атрибуция NAC 32), так что `SOURCE_SAYS_MORE` в силе. URL посредников внесены. Печатная страница этой фразы не установлена. Вердикты S1–S5 не меняются. Документ: REPASS, §82.
 - **раунд 160 (2026-11-17, AGENT 2):** §3 (S258), новый §4.243 (Q239): самопроверка раунда 151 (сн. 112, Гайслер, BKC II).
   - Формула «limited to good angels and redeemed people» снова найдена у двух посредников (класс C) и в одном пересказе (класс D); ACCURATE в силе. p. 674 — HOLD (видимые примечания посредника ведут к pp. 672–673). Попутно проверены PR #621 (Пусей, OCR подтверждён; ошибка «295 ↔ лист 306»; сноски 11/20/22) и #620. Вердикты S1–S5 не меняются. Документ: REPASS, §83.
+- **раунд 161 (2026-11-17, AGENT 2):** §3 (S259), новый §4.244 (Q240): самопроверка цитаты Кальвина против Хесхузия (CO 9:484) по изданию и по корпусу.
+  - Текст совпадает с OCR CO 9 (кол. 484). В `02_` п. 17 неточное окончание исправлено. Попутно проверены PR #585 (подтверждены Enchiridion 103, Сперджен № 566, Turretin Q. X / XIV; Кальвин дан без цитаты; конфликт с #554 в `01_` / `22_`) и #611 (>200 против >100). Вердикты S1–S5 не меняются. Документ: REPASS, §84.
 
 **Erratum (раунд 4).** В раунде 3 номера страниц протоколов Ассамблеи (S19) и Шедда II (S22) были выведены из индекса страниц OCR-API archive.org (`BookReaderGetTextWrapper`), который **не совпадает** с номером листа (`leafNum`) скана: для `minutesofsession00west` индекс = лист − 5, для `dogmatictheology02sheduoft` индекс = лист − 1. Сверка по `inside.php` (полнотекстовый поиск, возвращает `leafNum`) и `<id>_page_numbers.json` (лист → печатная страница) дала: **Minutes «pp. 150–155/156» → pp. 155–160/161** (листы 251–257); **Shedd «II.478, 482–483» → II.479, 483–484** (листы 489, 493–494). Все затронутые числа в S19, S22, §4.13, §4.16, §5–§8 исправлены **на месте** с пометкой «(испр. р. 4)»; содержание цитат не менялось. Локаторы раундов 1–2 (Minutes p. lv/lviii/lx/152, Shedd II.464–477, I.441, A. A. Hodge pp. 33–34) перепроверены тем же способом и **верны** (лист 248 = p. 152; лист 457 = I.441; лист 39 = Hodge p. 33).
 **Статус:** `ACTIVE RESEARCH / NO SETTLED VERDICT ON EXTENT / EVIDENCE_HOLD / PUBLICATION_HOLD`
@@ -849,6 +851,7 @@
 | S256 *(раунд 158, 2026-11-17)* | *The MacArthur Study Bible*, заметка к Кол. 1:20, OCR через полнотекстовый индекс Open Library (доступ ограничен; класс B): «1:20 reconcile all things to Himself. The Gr. word for “reconcile” means “to change”…» — IA `macarthurstudybi0000unse_n6a5` (NKJV, Nashville: Word Bibles, 1997), `macarthurstudybi0000unse` (NASB, 2006), `macarthurstudybi0000john` (Personal Size, 2008). Статья — Drive-PDF, с. 34–35 (A1). |
 | S257 *(раунд 159, 2026-11-17)* | S. Shamoun, «Limited Atonement Debate pt. 1», https://answeringislam.blog/limited-atonement-debate-pt-1/ (класс C; загружена целиком): раздел «Biblical Commentaries on Colossians 1:20» — блоки Wall, Sumney (p. 76), Moo (pp. 133–137), Melick (NAC 32, без страниц), пятый блок («Ibid.»; по содержанию не Мелик). В блоке Мелика: «…Nothing lies outside the realm of Christ's reconciling work.106 … Thus reconciliation may be effected by voluntary submission to Jesus, which brings the blessings of salvation, or by involuntary submission, being conquered by the power of his might. Reconciliation must be defined in this context, therefore, as all things being put into proper relation to Christ… Everyone and everything will be subordinated to Christ.111». Также https://www.theotivity.com/post/the-christological-hymn-of-colossians/ (2025). |
 | S258 *(раунд 160, 2026-11-17)* | Самопроверка сн. 112 (Гайслер, BKC II, к Кол. 1:20): M. R. Finney, https://www.gospeloutreach.net/supremacy.html (класс C; рубрика «1:20.», фраза дословно); seekingourgod.com, «Colossians 1:15-20 Devotional» (2020-07-19; класс C; прим. [2]–[5] → p. 672, [7], [9], [10] → p. 673); sharing-bread.com, «Colossians Episode 2» (класс D, пересказ без атрибуции). Open Library по точной формуле — 0. p. 674 — HOLD | REPASS §83 |
+| S259 *(раунд 161, 2026-11-17)* | Calvin, *Opera* (CO) IX = CR 37 (1870), IA `operaquaesupersu0037calv`, djvu.txt чанк 171 (колонтитулы 484 / 485 / 486; класс A2): кол. 484 «scire velim quomodo Christi carnem edant impii, pro quibus non est crucifixa, et quomodo sanguinem bibant, qui expiandis eorum peccatis non est effusus»; кол. 483 «victimam, qua expiata sunt mundi peccata»; кол. 485 «sanctificationem, quae solis electis… propria est» | REPASS §84 |
 
 **Ответ: П1 исторически неверен; «словом о цене» в английской традиции является *redemption*, а не *atonement*.**
 
@@ -8469,8 +8472,9 @@ hommes** selon ce propos déterminé…*» (с. 183) **есть в источн�
 | 4.241 | Q237 | Самопроверка р. 153 (сн. 107–108): текст статьи совпадает; MSB дополнена («to change»); `STRAWMAN` (умеренно) и `NON_SEQUITUR` (мягко) в силе (р. 158) |
 | 4.242 | Q238 | Самопроверка р. 152 (Мелик): фраза о «невольном подчинении» — внутри блока Мелика у посредника; URL внесены; страница фразы не установлена (р. 159) |
 | 4.243 | Q239 | Самопроверка р. 151 (Гайслер, сн. 112): формула подтверждена повторно (класс C), p. 674 — HOLD, `INTERNAL_TENSION` (мягко) в силе (р. 160) |
+| 4.244 | Q240 | CO 9:484 (Кальвин против Хесхузия): текст сверен по OCR; неточное окончание в `02_` п. 17 исправлено; `AGENT6_…` — за владельцем (р. 161) |
 
-⇒ разделов с `Q` — **236**, разделов §4.x — **238**; пропуски нумерации прежние.
+⇒ разделов с `Q` — **237**, разделов §4.x — **239**; пропуски нумерации прежние.
 
 
 ### 4.139. Q135 — Приёмка раунда 61: связка Сомюра, аудит объёма, готовность к мерджу (раунд 61)
@@ -10520,6 +10524,21 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 3. **`INTERNAL_TENSION` (мягко)** в силе: Гайслер ограничивает охват «всего» двумя группами лиц. Статья подаёт его как оговорку о характере отношений и одновременно цитирует Мелика, который включает материальное творение.
 
 **Чего нет.** Печатный BKC II (скан на IA закрыт).
+
+Вердикты S1–S5 не меняются.
+
+### 4.244. Q240 — Самопроверка: цитата Кальвина против Хесхузия (CO 9:484) по изданию и по корпусу (раунд 161, 2026-11-17)
+
+**Повод.** PR #585 правит п. 11 `22_` и §2.2 `01_` («Кальвин»), опираясь на аудит AGENT 2 (E1, R1). Источник — S259. Таблица — REPASS §84.
+
+**Вопрос.** Совпадает ли дословно текст CO 9:484, на котором стоит E1, с изданием, и одинаково ли он приведён в корпусе?
+
+**Ответы.**
+1. **С изданием — да.** Кол. 484: «…pro quibus non est crucifixa, et quomodo sanguinem bibant, qui expiandis eorum peccatis non est effusus», в рамке «quatenus est spiritualis animarum cibus».
+2. **В корпусе — не везде.** `02_` п. 17 давал окончание «qui non est effusus in peccatorum eorum expiationem». Исправлено, прежнее помечено HISTORICAL. `AGENT6_…` строка 137 неточна; это уже вынесено в R5, файл правит владелец.
+3. **Баланс того же разворота.** Кол. 483: «victimam, qua expiata sunt mundi peccata, et homines Deo reconciliati». Кол. 485: «solis electis» — об освящении, не о страдании. Это подтверждает §9.3 аудита: формулы «Christum solis electis passum esse» в CO 9 нет.
+
+**Чего нет.** Визуальной сверки страницы скана (класс A2, не A1).
 
 Вердикты S1–S5 не меняются.
 
