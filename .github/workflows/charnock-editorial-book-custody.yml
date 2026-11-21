@@ -1,0 +1,123 @@
+name: Charnock — entire editorial book source archive (research-only)
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/charnock-editorial-book-custody.yml'
+      - 'БИОГРАФИИ/Стивен Чарнок/manuscripts/**'
+      - 'БИОГРАФИИ/Стивен Чарнок/reader-preview/**'
+      - 'БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED02_*'
+      - 'БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED06_*'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/charnock-editorial-book-custody.yml'
+      - 'БИОГРАФИИ/Стивен Чарнок/manuscripts/**'
+      - 'БИОГРАФИИ/Стивен Чарнок/reader-preview/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  editorial-book-archive:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - name: Check out exact source Git revision, not PR synthetic merge
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - name: Assert exact reader and archival source boundaries
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse HEAD)" = '${{ github.event.pull_request.head.sha || github.sha }}'
+          python3 -B -m unittest discover -s scripts -p 'test_audit_charnock_reader_preview.py' -v
+      - name: Assemble exact 17-source deterministic ZIP; research only, no rights promotion
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/charnock-full-book
+          python3 - <<'PY'
+          import hashlib, json, subprocess, zipfile
+          from pathlib import Path
+          root=Path('.')
+          c=Path('БИОГРАФИИ/Стивен Чарнок')
+          manuscripts=sorted((c/'manuscripts').glob('*_WORKING_DRAFT.md'))
+          expected={
+              'INTRO_MIR_STEPHEN_CHARNOCK_WORKING_DRAFT.md',
+              'I_CHELOVEK_KEMBRIDZH_DUBLIN_LONDON_WORKING_DRAFT.md',
+              'II_UCHENYI_I_PROPOVEDNIK_WORKING_DRAFT.md',
+              'III_CHARNOCK_AND_SCRIPTURE_FROM_TEXT_TO_SERMON_WORKING_DRAFT.md',
+              'IV_BOGOSLOVSKII_PORTRET_WORKING_DRAFT.md',
+              'V_KAK_PROPOVEDI_STALI_KNIGAMI_WORKING_DRAFT.md',
+              'VI_GLAVNAYA_KNIGA_BYTIE_I_ATRIBUTY_WORKING_DRAFT.md',
+              'VII_ZA_PREDELAMI_GLAVNOI_KNIGI_WORKING_DRAFT.md',
+              'VIII_CHARNOCK_POSLE_CHARNOCKA_WORKING_DRAFT.md',
+              'REFERENCE_KHRONOLOGIYA_TRUDY_ISTOCHNIKI_WORKING_DRAFT.md',
+          }
+          assert {p.name for p in manuscripts}==expected, "Manifest cardinality/identity changed"
+          support=[
+              c/'reader-preview/CHARNOCK_FULL_BOOK_EDITORIAL_READER_2026-11-21.md',
+              c/'reader-preview/README.md',
+              c/'supplemental-audits/ED02_LINGENDES_84_87_TO_CHARNOCK_621_ALIGNMENT_2026-11-18.md',
+              c/'supplemental-audits/ED06_EXTERNAL_REVIEW_PACKET_ALL12_2026-11-18.md',
+              c/'supplemental-audits/ED06_ALL12_TRANSLATION_CONTEXT_REVIEW_2026-11-17.md',
+              c/'supplemental-audits/ED06_THREE_ENGLISH_WITNESS_TRIANGULATION_2026-11-18.md',
+              Path('data/charnock-series-editorial-plan-v1.json'),
+          ]
+          paths=sorted(manuscripts+support,key=lambda p:p.as_posix())
+          assert len(paths)==17 and len({str(p) for p in paths})==17
+          assert all(p.is_file() for p in paths)
+          def blob(raw):
+              return hashlib.sha1(b'blob '+str(len(raw)).encode()+b'\x00'+raw).hexdigest()
+          def canonical(x):
+              return (json.dumps(x,ensure_ascii=False,sort_keys=True,indent=2)+'\n').encode()
+          source_sha=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()
+          rows={p.as_posix():p.read_bytes() for p in paths}
+          manifest={
+              'schema':'charnock-editorial-book-custody-v1',
+              'sourceGitSha':source_sha,
+              'manuscriptCount':10,
+              'sourceFileCount':len(rows),
+              'scope':'10 working manuscripts, full editorial reader, navigation and supporting textual research; no image/facsimile license, independent expert review or publication approval',
+              'holds':['EVIDENCE_HOLD','LOCATOR_HOLD','RIGHTS_HOLD','PUBLICATION_HOLD'],
+              'files':{k:{'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest(),'gitBlobSha1':blob(b)} for k,b in rows.items()}
+          }
+          filename='charnock-full-editorial-book-'+source_sha[:12]+'.zip'
+          dest=Path('/tmp/charnock-full-book')/filename
+          with zipfile.ZipFile(dest,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=9) as z:
+              for path,raw in rows.items():
+                  zi=zipfile.ZipInfo(path,date_time=(1980,1,1,0,0,0))
+                  zi.compress_type=zipfile.ZIP_DEFLATED
+                  zi.external_attr=0o644<<16
+                  z.writestr(zi,raw,compress_type=zipfile.ZIP_DEFLATED,compresslevel=9)
+              zi=zipfile.ZipInfo('SOURCE_MANIFEST.json',date_time=(1980,1,1,0,0,0))
+              zi.compress_type=zipfile.ZIP_DEFLATED
+              zi.external_attr=0o644<<16
+              z.writestr(zi,canonical(manifest),compress_type=zipfile.ZIP_DEFLATED,compresslevel=9)
+          with zipfile.ZipFile(dest) as z:
+              assert len(z.namelist())==18
+              assert json.loads(z.read('SOURCE_MANIFEST.json'))==manifest
+              assert all(z.read(path)==raw for path,raw in rows.items())
+          receipt={'sourceGitSha':source_sha,'sourceFileCount':len(rows),
+                   'sourceZipName':filename,'sourceZipBytes':dest.stat().st_size,
+                   'sourceZipSha256':hashlib.sha256(dest.read_bytes()).hexdigest(),
+                   'sourceManifestSha256':hashlib.sha256(canonical(manifest)).hexdigest(),
+                   'state':'EPHEMERAL_ACTION_ARTIFACT / RESEARCH_ONLY / NOT_DRIVE_VERIFIED / PUBLICATION_HOLD'}
+          Path('/tmp/charnock-full-book/CANDIDATE_CHECKSUM.json').write_bytes(canonical(receipt))
+          print(json.dumps(receipt,ensure_ascii=False,sort_keys=True))
+          PY
+          sha256sum /tmp/charnock-full-book/*.zip
+          git diff --exit-code
+          test -z "$(git status --porcelain)"
+      - name: Retain time-limited ZIP candidate for independent Drive readback
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: charnock-full-editorial-book-research-only
+          path: /tmp/charnock-full-book/
+          retention-days: 30
+          if-no-files-found: error

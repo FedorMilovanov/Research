@@ -224,3 +224,16 @@ Hansang Lee, *Trinitarian Theology and Piety: The Attributes of God in the Thoug
 На с. 12 Lee в библиографической сводке обозначает **1699 как «third edition»** применительно к комплекту *Works*. При работе с **томом II** не следует заменять его напечатанное **«The Second Edition Corrected»** этим общим обозначением; у томов комплекта могут различаться собственные edition statements. В существующем библиографическом досье это различие уже учтено и **не пересматривается**.
 
 **Итог:** добавлено **одно новое B1-свидетельство проверенной исследовательской практики** с точной страницей. Текст старых первичных источников, маргиналии, редакционные переводы, защищённые тома и custody-квитанции **не менялись**. Следующее действие ED-02 остаётся прежним: факсимильный readback издания 1699, затем 1684, по *самой* строке Lingendes. При отсутствии изображения — честный `IMAGE_PENDING`, а не заимствование цифр из Nichol.
+
+---
+
+## 21.11.2026 — первопечатные страницы запрошены, LOCATOR_HOLD остаётся
+
+**ED-02 / AWAITING_LIBRARY_RESPONSE / IMAGE_PENDING / NOT_A_FACSIMILE_READING.** Реально отправлены два адресных письма; ни получения изображений, ни проверки точных цифр не заявлено.
+
+1. **The Huntington Library:** запрос к [том II, 1684, шифр 446165 v.2](https://www.huntington.org/collections/lib-446165-v2), включая предложение «Let then the bounty of Christ engage us», всю маргиналию Lingend. de Eucharist. с её цифрами, титул и возможную сверку 1699 года. Адрес подтверждён [официальным источником](https://www.huntington.org/library/library-rights-and-permissions).
+2. **Queen's University Belfast Special Collections:** запрос на *Works* II, 1699, B.2.9.2 / B.8.5.16; печатные с. 520–522 указаны как предварительный ориентир, не установленный локатор. Попросили полные поля и точные цифры после Lingend. de Eucharist. Подтверждения: [контакт библиотеки](https://www.qub.ac.uk/directorates/InformationServices/TheLibrary/SpecialCollections/ContactUs/) и [Antrim Presbytery catalog](https://www.qub.ac.uk/directorates/InformationServices/TheLibrary/SpecialCollections/FileStore/Filetoupload839610en.pdf).
+
+Письма отправлены 21.11.2026 и подтверждены Gmail SENT, однако частные идентификаторы сообщений не публикуются в Research. Условия и стоимость копирования запрошены, **никаких платных услуг не заказано**. До получения оригиналов разницу печатных страниц 84–85 / 87, атрибуцию Lingendes и ссылку 1699 года не считать разрешёнными.
+
+Дополнительная публичная доступность: [Wikimedia Commons, скан 1699 года на 777 страницах](https://commons.wikimedia.org/wiki/File%3AThe_works_of_..._1699_%28IA_bim_early-english-books-1641-1700_the-works-of-_charnock-stephen_1699_0%29.pdf). Вес около 1,08 ГБ; через доступные в этой проверке инструменты читаемый кадр нужного поля не получен. Каталог, OCR и файл-ссылка сами по себе **не** подтверждают точный локатор или цифры, права на перепечатку чужих изображений отдельно не получены.
