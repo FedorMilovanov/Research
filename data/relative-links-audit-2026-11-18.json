@@ -11,13 +11,13 @@
       "missing": 58,
       "outside": 0,
       "unqualified": 0,
-      "external": 5987,
+      "external": 5992,
       "missing-anchor": 0,
       "fragment": 28,
       "missing-fragment": 0
     },
     "byKind": {
-      "external": 5987,
+      "external": 5992,
       "fragment": 28,
       "missing": 58,
       "resolves": 3163

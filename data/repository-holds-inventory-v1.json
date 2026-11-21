@@ -98,16 +98,16 @@
       "HOLD_MAJOR": 11,
       "HOLD_RETAINED": 1,
       "LIVE-READBACK-HOLD": 4,
-      "LOCATOR_HOLD": 1977,
+      "LOCATOR_HOLD": 1978,
       "PAGE-IMAGE-HOLD": 14,
-      "PUBLICATION_HOLD": 2616,
-      "RIGHTS_HOLD": 1460,
+      "PUBLICATION_HOLD": 2617,
+      "RIGHTS_HOLD": 1461,
       "VERSION-HOLD": 23
     },
     "mentionsByStatus": {
       "closed": 821,
-      "open": 2348,
-      "unmarked": 6008
+      "open": 2349,
+      "unmarked": 6010
     },
     "canonicalFlagLineStatesRecordedAsBothOpenAndClosed": 403,
     "filesWithJsonHolds": 38,
@@ -424,14 +424,14 @@
       "mentions": {
         "ARCHIVE_HOLD": 299,
         "EVIDENCE_HOLD": 75,
-        "LOCATOR_HOLD": 426,
-        "PUBLICATION_HOLD": 357,
-        "RIGHTS_HOLD": 213
+        "LOCATOR_HOLD": 427,
+        "PUBLICATION_HOLD": 358,
+        "RIGHTS_HOLD": 214
       },
       "status": {
         "closed": 107,
-        "open": 390,
-        "unmarked": 918
+        "open": 391,
+        "unmarked": 920
       }
     },
     "ИСКУПЛЕНИЕ": {
@@ -28513,11 +28513,13 @@
       "path": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED02_LINGENDES_84_87_TO_CHARNOCK_621_ALIGNMENT_2026-11-18.md",
       "corpus": "БИОГРАФИИ",
       "mentions": {
-        "LOCATOR_HOLD": 1,
-        "RIGHTS_HOLD": 1
+        "LOCATOR_HOLD": 2,
+        "PUBLICATION_HOLD": 1,
+        "RIGHTS_HOLD": 2
       },
       "status": {
-        "unmarked": 2
+        "open": 1,
+        "unmarked": 4
       }
     },
     {
