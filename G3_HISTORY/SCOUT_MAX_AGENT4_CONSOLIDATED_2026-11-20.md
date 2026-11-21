@@ -171,6 +171,8 @@ FY25 $399,645/$950,642 −$550,997 net $304,459 receivable $153,000 income $15,3
 
 **Proof-route:** `RESEARCH_PROOF_ROUTE_COMPLETE=true OPEN_SEARCH_DEBT=0 EXTERNAL_HOLDS preserved HUMAN_MEDIA_HOLD preserved QUANTITATIVE excluded PUBLICATION_HOLD true` — по правилу `FINAL_P0_HOLD_MATRIX`.
 
+**Обновление 2026-11-20 (интегрированная FINANCIAL-GOVERNANCE консолидация live):** `FINANCES.md` обновлён интегрированным fragility-continuity нарративом — reserves $1.319м→$304k (deficits $366k+$189k+$551k) predates scandal inherit Lumena same EIN + Press inventory live S149 + $153k receivable — same-entity continuation operationally verified, без новых WAVE-файлов.
+
 ## 8. PUBLICATION PROJECTION 2026-11-20
 
 Выпущен отдельный HOLD-aware projection-документ **`PRODUCT_HANDOFF_G3_DOSSIER_2026-11-20_PROJECTION.md`** — 9 pinned claims G3-PUB-007→015 (Q005/Q006/Q019/Q020 platform + Press live S148/S149 + finances PartIX + corpus 273 + board evolution) с явными qualifiers + 7 non-assertions (Buck counts, mailing chain, PMBC mechanics, motive, deed parcel, ownership, quantitative %) — первый документ снимающий условный `PUBLICATION_HOLD` для bounded публикации; formal legal-status `VERIFIED_PRIMARY` остаётся pending hashed GA payload.
