@@ -22,6 +22,9 @@ from audit_charnock_biographical_anchors import (
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRY = Path('data/charnock-biographical-anchors-v1.json')
 MARKER = 'CHARNOCK-HANDOFF-V1 · wave40 · 2026-10-26'
+# Dated, explicitly scoped current-status updates can precede the historical owner marker.
+# Bound the scan to the first 8 KiB; never waive the historical role/boundary check.
+DOSSIER_HEADER_SCAN_BYTES = 8192
 
 
 def canonical_bytes(value):
@@ -48,6 +51,11 @@ def safe_file(root, name):
     if not path.is_relative_to(root.resolve()) or not path.is_file():
         raise ValueError('Missing or unsafe handoff file: ' + name)
     return path
+
+
+def has_dossier_authority_markers(body, role):
+    header = body[:DOSSIER_HEADER_SCAN_BYTES]
+    return MARKER in header and ('Роль: ' + role) in header
 
 
 def audit_contract(registry, root=ROOT, packet_replay=False):
@@ -77,7 +85,7 @@ def audit_contract(registry, root=ROOT, packet_replay=False):
     links = 0
     for owner in owners:
         text = safe_file(root, owner['path']).read_text()
-        if MARKER not in text[:5000] or not owner.get('boundary') or ('Роль: ' + owner['role']) not in text[:5000]:
+        if not owner.get('boundary') or not has_dossier_authority_markers(text, owner['role']):
             raise ValueError('Dossier lacks current role/boundary marker')
         for match in re.finditer(r'(?<!!)\[[^\]\n]*\]\(([^)\n]+)\)', text):
             href = unquote(match.group(1).strip().split(' "')[0].split('#')[0])
