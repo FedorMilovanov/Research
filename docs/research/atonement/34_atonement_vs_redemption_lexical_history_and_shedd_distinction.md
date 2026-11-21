@@ -401,6 +401,10 @@
   - Текст BKC найден через двух посредников (класс C): «The phrase “all things” is limited to good angels and redeemed people since only things on earth and things in heaven are mentioned…». Перевод статьи точен.
   - `INTERNAL_TENSION` Гайслер ↔ Мелик (REPASS §11) подтверждён по источнику: Гайслер ограничивает «всё» лицами, а Мелик и «восстановительная» цель статьи включают материальное творение.
   - В *When Critics Ask* (1992) Гайслер читает стих как «universal sovereignty» — без флага. Печатная p. 674 — HOLD. Вердикты S1–S5 не меняются. Документ: REPASS, §74.
+- **раунд 152 (2026-11-17, AGENT 2):** §3 (S250), новый §4.235 (Q231): сн. 109–111 — Мелик, NAC 32, p. 225 и прим. 106 (Кол. 1:20).
+  - Текст Мелика найден через посредников (класс C). Обе цитаты (сн. 109–110) и пересказ о трёх сферах верны; p. 225 подтверждена.
+  - Ниже Мелик определяет примирение как приведение всего «into proper relation to Christ», в том числе через «involuntary submission, being conquered by the power of his might». Статья подаёт его как альтернативу толкованию через подчинение (сн. 107–108): `SOURCE_SAYS_MORE` (существенно).
+  - Пометки в `20_` C35.02 и `06_` (с. 35). Прим. 106 Мелика — HOLD. Вердикты S1–S5 не меняются. Документ: REPASS, §75.
 
 **Erratum (раунд 4).** В раунде 3 номера страниц протоколов Ассамблеи (S19) и Шедда II (S22) были выведены из индекса страниц OCR-API archive.org (`BookReaderGetTextWrapper`), который **не совпадает** с номером листа (`leafNum`) скана: для `minutesofsession00west` индекс = лист − 5, для `dogmatictheology02sheduoft` индекс = лист − 1. Сверка по `inside.php` (полнотекстовый поиск, возвращает `leafNum`) и `<id>_page_numbers.json` (лист → печатная страница) дала: **Minutes «pp. 150–155/156» → pp. 155–160/161** (листы 251–257); **Shedd «II.478, 482–483» → II.479, 483–484** (листы 489, 493–494). Все затронутые числа в S19, S22, §4.13, §4.16, §5–§8 исправлены **на месте** с пометкой «(испр. р. 4)»; содержание цитат не менялось. Локаторы раундов 1–2 (Minutes p. lv/lviii/lx/152, Shedd II.464–477, I.441, A. A. Hodge pp. 33–34) перепроверены тем же способом и **верны** (лист 248 = p. 152; лист 457 = I.441; лист 39 = Hodge p. 33).
 **Статус:** `ACTIVE RESEARCH / NO SETTLED VERDICT ON EXTENT / EVIDENCE_HOLD / PUBLICATION_HOLD`
@@ -813,6 +817,7 @@
 | S247 *(раунд 149, 2026-11-17)* | R. L. Harris, G. L. Archer, B. K. Waltke (eds.), *Theological Wordbook of the Old Testament* (Chicago: Moody, 1980), ст. 1023 כָּפַר (Р. Л. Харрис), IA `theologicalwordb01harr`, `theologicalwordb0000unse_v6z7`, `theologicalwordb0000unse_n9s9` — полнотекстовый индекс Open Library (доступ ограничен): «…“ransom,” the meaning of kāpar can be better understood. It means “to atone by offering a substitute.” The great majority of the usages concern the priestly ritual of sprinkling…» (класс B). Вторичные пересказы — Земек 2002, Кларк 1987, Экин 2001 (класс C). HALOT p. 494 и Swanson #4105 не видны | REPASS §72; §4.232 |
 | S248 *(раунд 150, 2026-11-17)* | B. Demarest, *The Cross and Salvation: The Doctrine of Salvation* (Wheaton: Crossway, 1997; Foundations of Evangelical Theology, ред. J. S. Feinberg), p. 193 — печатный текст не виден (на IA нет). Посредники (класс C): (а) T. Tiessen, блог *Thoughts Theological*, «For whom did Christ die?»: «Christ died to make atonement for all to the end that its benefits would be applied to the elect» (193); «by divine *intention* Christ's suffering and death are universal in its provision and particular in its application» (193); (б) G. L. Shultz, Jr., диссертация SBTS 2008: «Demarest makes a distinction between God's general provision in the atonement and his application of the atonement only to the elect. Demarest, *Cross and Salvation*, 193». Переизд. Crossway 2006 (карточки everand/Perlego). |
 | S249 *(раунд 151, 2026-11-17)* | N. L. Geisler, «Colossians», в *The Bible Knowledge Commentary: New Testament* (Wheaton: Victor, 1983; т. 2 двухтомника 1985), к Кол. 1:20 — печатный текст не виден (IA закрыт). Посредники (класс C): (а) M. R. Finney, «The Supremacy of Christ: A Study of Colossians 1:15-23», gospeloutreach.net (текст BKC без атрибуции); (б) «Colossians 1:15-20 Devotional», seekingourgod.com (2020; сноски на BKC II, pp. 672–673 к ст. 15–18): «The phrase “all things” is limited to good angels and redeemed people since only things on earth and things in heaven are mentioned. Things “under the earth” (Philippians 2:10) are not reconciled.» (в) N. Geisler, T. Howe, *When Critics Ask* (Victor, 1992), к Кол. 1:20 (defendinginerrancy.com, класс B): «Paul is not speaking about universal salvation here, but simply universal sovereignty of Jesus Christ». |
+| S250 *(раунд 152, 2026-11-17)* | R. R. Melick, Jr., *Philippians, Colossians, Philemon* (NAC 32; Nashville: Broadman, 1991), к Кол. 1:20, p. 225 — печатный текст не виден (на IA нет). Посредники (класс C): (а) «Limited Atonement Debate pt. 1», answeringislam.blog (2026) — длинная выдержка с прим. «106»: «The scope of reconciliation includes the material creation, the animal world, humanity, and spiritual beings… Thus, sin affected every area of creation, and the work of God in redemption extends likewise to every area of creation… Nothing lies outside the realm of Christ's reconciling work.¹⁰⁶ … Thus reconciliation may be effected by voluntary submission to Jesus… or by involuntary submission, being conquered by the power of his might. Reconciliation must be defined in this context, therefore, as all things being put into proper relation to Christ… Everyone and everything will be subordinated to Christ.»; (б) theotivity.com (2025) — две фразы с пометкой «[Melick, Philippians, Colossians, 225]». |
 
 **Ответ: П1 исторически неверен; «словом о цене» в английской традиции является *redemption*, а не *atonement*.**
 
@@ -8424,8 +8429,9 @@ hommes** selon ce propos déterminé…*» (с. 183) **есть в источн�
 | 4.232 | Q228 | Сн. 101: TWOT 1023 «to atone by offering a substitute» найдено (OCR 1980); «выкупа путем замещения» — `QUOTE_NOT_VERBATIM` (мягко); вывод о неживой материи — `NON_SEQUITUR` (мягко); HALOT/Swanson — HOLD (р. 149) |
 | 4.233 | Q229 | Сн. 98: Демарест, p. 193 — формулы и страница подтверждены двумя посредниками (класс C); перевод верен; взгляд — собственный, ярлык «сублапсарианство» через Эриксона; исправлены `23_` §7 и `35_` FP-109 (р. 150) |
 | 4.234 | Q230 | Сн. 112: Гайслер, BKC II — текст к Кол. 1:20 найден через посредников (класс C); перевод точен; `INTERNAL_TENSION` с Меликом подтверждён по источнику; p. 674 — HOLD (р. 151) |
+| 4.235 | Q231 | Сн. 109–111: Мелик, NAC 32, p. 225 — цитаты верны (посредники, класс C); его определение примирения включает невольное подчинение, а статья противопоставляет его толкованию через подчинение: `SOURCE_SAYS_MORE` (существенно); прим. 106 — HOLD (р. 152) |
 
-⇒ разделов с `Q` — **227**, разделов §4.x — **229**; пропуски нумерации прежние.
+⇒ разделов с `Q` — **228**, разделов §4.x — **230**; пропуски нумерации прежние.
 
 
 ### 4.139. Q135 — Приёмка раунда 61: связка Сомюра, аудит объёма, готовность к мерджу (раунд 61)
@@ -10330,6 +10336,22 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 6. **Для спора об объёме.** Довод от отсутствия «преисподних» корпус уже счёл недостаточным (`06_` A175; `20_` C35.04). Найденный текст показывает, что другого довода в этом месте BKC нет.
 
 **Чего нет.** Печатная p. 674; тексты Мелика (сн. 109–111), Кинера и MSB (сн. 107), BDAG (сн. 108).
+
+Вердикты S1–S5 не меняются.
+
+### 4.235. Q231 — Сноски 109–111: Мелик, NAC 32, p. 225 и прим. 106 (Кол. 1:20) (раунд 152, 2026-11-17)
+
+**Повод.** REPASS §11: Мелик — HOLD; `20_` C35.02: «печатная с.225 и примечание106 Мелика заново не сверены». Источник — S250. Таблица — REPASS-документ, §75.
+
+**Вопрос.** Точно ли переданы цитаты Мелика и поддерживает ли его толкование противопоставление «не подчинение, а именно примирение», которое строит статья?
+
+**Ответы.**
+1. **Текст статьи** (PDF, с. 34–35; класс A1): толкование через подчинение (сн. 107) отвергнуто, так как ἀποκαταλλάσσω обозначает «не подчинение, а именно примирение враждующих сторон» (сн. 108). Затем: «Наиболее вероятное, на наш взгляд, объяснение предлагает д-р Мелик» — две цитаты (сн. 109–110) и пересказ о трёх сферах. Сн. 111 (прим. 106 Мелика) — к оговорке «это не значит, что все творение вступает в подлинные спасительные отношения».
+2. **Точность.** Через посредников (класс C): «The scope of reconciliation includes the material creation, the animal world, humanity, and spiritual beings… This was provided in Christ» и «Thus, sin affected every area of creation, and the work of God in redemption extends likewise to every area of creation… Nothing lies outside the realm of Christ's reconciling work.¹⁰⁶». Перевод верен. «Должен простираться» вместо «extends» — лёгкий сдвиг модальности, без флага. P. 225 подтверждена посредником.
+3. **Определение Мелика.** Ниже у него: «Thus reconciliation may be effected by voluntary submission to Jesus, which brings the blessings of salvation, or by involuntary submission, being conquered by the power of his might. Reconciliation must be defined in this context, therefore, as all things being put into proper relation to Christ… Everyone and everything will be subordinated to Christ.» Значит, для противящихся «примирение» по Мелику и есть подчинение. Статья же выставляет его как альтернативу толкованию через подчинение. **`SOURCE_SAYS_MORE` (существенно).** Умысел не утверждается: выдержка взята из начала рассуждения.
+4. **Для спора об объёме.** «Примирительная» цель статьи опирается на Мелика, но у него всеобщее «примирение» — это приведение всего в порядок под Христом, а не всеобщая спасительная плата. Довод `06_` (с. 35) и вывод `20_` C35.02 подтверждены. Напряжение с Гайслером (§4.234) остаётся.
+
+**Чего нет.** Текст прим. 106 Мелика; печатная страница.
 
 Вердикты S1–S5 не меняются.
 
