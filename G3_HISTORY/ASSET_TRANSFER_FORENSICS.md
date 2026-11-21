@@ -121,7 +121,7 @@ Separate recipient/secondary reporting says some Living Heritage users were told
 
 Title-level evidence shows why `G3 Press transferred as one monolithic asset` is unsafe:
 
-- Dave Jenkins' *The Word Matters* has an observable post-G3 publishing/sales presence under his current Servants of Grace / Theology for Life ecosystem, materially corroborating reported title-level rights return;
+- Dave Jenkins publicly stated on 2026-08-19 that G3 returned rights to *The Word Matters* and that new Servants of Grace availability was forthcoming; the earlier 2026-08-13 product card does not establish a new reissue or independently corroborate legal reversion;
 - Darrell Harrison's request/inquiry about rights return is reported, but completed reversion is not established;
 - current G3 Press storefront visibility cannot resolve contract rights or residual inventory.
 

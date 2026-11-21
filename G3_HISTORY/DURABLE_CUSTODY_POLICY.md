@@ -18,6 +18,12 @@ For high-value acquired objects, the repository should preserve, where available
 
 `DURABLE_CUSTODY_MANIFEST.json` is the machine-readable receipt set for the highest-value cryptographically controlled objects.
 
+## Bounded Actions-artifact preservation receipt — 2026-11-21
+
+The exact eight original GitHub Actions ZIPs enumerated in [`G3_ACTIONS_PRESERVATION_SOURCE_MANIFEST_2026-11-21.json`](G3_ACTIONS_PRESERVATION_SOURCE_MANIFEST_2026-11-21.json) have a supplemental private-custody record in [`G3_ACTIONS_PRESERVATION_CUSTODY_RECEIPT_2026-11-21.json`](G3_ACTIONS_PRESERVATION_CUSTODY_RECEIPT_2026-11-21.json). The receipt records the source provider digest, exact workflow/artifact identity, private Drive object ID/path, raw destination-byte SHA-256 readback, Drive metadata comparison, non-extracting ZIP-integrity test, and owner-only permission check for each object.
+
+`ACQUIRED_DURABLE` here is limited to **those eight stored ZIP byte streams**. The sandbox's equality check is `raw Drive readback SHA-256 = GitHub Actions API artifact digest`; it does not falsely claim an in-sandbox source-side GitHub ZIP download after the signed-store EOF. The custody owner's reported source acquisition/source-readback match is retained as external attestation. Neither the eight-object receipt nor an external transfer attestation establishes a Georgia filing body, transition/closing record, legal title, asset scope, rights clearance, publication authorization, or preservation of the rest of the G3 corpus.
+
 ## Raw-byte rule
 
 `DURABLE RECEIPT != RAW BYTES IN GIT`.
