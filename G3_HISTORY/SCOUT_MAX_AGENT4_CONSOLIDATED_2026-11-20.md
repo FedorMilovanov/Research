@@ -143,4 +143,6 @@ FY25 $399,645/$950,642 −$550,997 net $304,459 receivable $153,000 income $15,3
 
 *Обновление 2026-11-20 (финальная GOVERNANCE-консолидация live):* `GOVERNANCE.md` overlay дополнен S148/S149 live (redirect + Press taxonomy + Minga 2022→2024 + Huckaby chair board Aniol books retained vs Buice removed) — full Aug27→Oct30→Nov20 chain governance завершена, same-EIN continuation полностью прослежена без новых WAVE-файлов.
 
-*Подпись:* Agent №4 SCOUT — консолидация 11–18 + Lumena chain S145-S149 live verified 20ноя + Press live + P0 matrix + governance live, дальше обновления в канон.
+*Обновление 2026-11-20 (МОЩНАЯ HOLD-ПОПЫТКА ЗАКРЫТИЯ 2026-11-20):* **Q005 CLOSABLE VERIFIED_CORROBORATED (same corp NO_DISSOLUTION 32257311 + 3 corroborations + 2 notices + 2 live S148/S149) — formal hashed GA payload pending; Q006 70% CLOSABLE same-EIN continuation (independent-sale theory closed) 30% HOLD transferee/closing; Q019/Q020 platform/catalog CLOSABLE VERIFIED_PRIMARY S148/S149 — ownership/title-by-title still HOLD; Q006A/Q007 UNCLOSABLE without deed/human listening** — `OPEN_QUESTIONS.md` + `FINAL_P0_HOLD_MATRIX` мощно обновлены без новых WAVE-файлов, честная HOLD-карта закрыта максимально.
+
+*Подпись:* Agent №4 SCOUT — консолидация 11–18 + Lumena S145-S149 + HOLD-закрытие 20ноя, дальше обновления в канон.

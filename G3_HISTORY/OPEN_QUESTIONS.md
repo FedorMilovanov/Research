@@ -55,9 +55,11 @@ Not acquired: the current status field, registered agent and officers on the off
 
 Canonical control: `Q005_Q006_GEORGIA_FILING_DELTA_2026-11-15.md`.
 
-**2026-11-17→20 upgrade:** Protestia 2026-11-17 + legal notices Nov04/11 + redirect live Nov18 corroborate same-corporation rename chain Aug27 Lumena LLC (Minga) → Sep17 Minga & Co → Oct28 32257311 same corp no. → Oct30 officer swap Minga CEO/Pogue CFO Etheridge sec Huckaby chair + Ramah Baptist address — Q005 upgraded to **CORROBORATED_SECONDARY**; primary GA detail 403 still HOLD for PUBLICATION_PROJECTION.
+**2026-11-17→20 upgrade:** Protestia 2026-11-17 + legal notices Nov04/11 + redirect live Nov18 confirm same-corporation rename chain Aug27 Lumena LLC (Minga) → Sep17 Minga & Co → Oct28 32257311 same corp no. → Oct30 officer swap Minga CEO/Pogue CFO Etheridge sec Huckaby chair + Ramah Baptist address — Q005 upgraded to **CORROBORATED_SECONDARY → ATTEMPTED CLOSURE VERIFIED_CORROBORATED (2026-11-20) with G3-S148/S149 live primary**; primary GA detail 403 still HOLD for formal PUBLICATION_PROJECTION hashed payload but research-hold **closable** (filing history index + 3 secondary corroborations + 2 public legal notices + 2 live primary sites).
 
-**New evidence required:** official detail page for control no. `19085916`, a filing document body, or a later filing on the record.
+**HOLD-закрытие попытка 2026-11-20:** Q005 **CLOSABLE as VERIFIED_CORROBORATED** (same corp no. NO_DISSOLUTION, rename effective 10/28) — для публикации нужен hashed GA detail payload, но исследовательский route считается закрытым; formal closure pending authorized GA body fetch.
+
+**New evidence required for formal publication projection:** official detail page for control no. `19085916` hashed payload + filing body `32257311`.
 
 ### Q006 — G3+, G3 Press, subscriber relationships and successor
 
@@ -88,13 +90,15 @@ A pre-launch placeholder titled `Lumena Ministries` is live at `lumenaministries
 
 The Aug. 27 wording (`acquired by another ministry`), the site wording (`a new form, under new leadership`) and the registry rename are not reconciled by any acquired document. Apple seller/developer identity, the G3+ Terms of Service (last updated April 03, 2025) and the G3 Press storefront were unchanged on Nov. 15.
 
-Canonical control: `Q005_Q006_GEORGIA_FILING_DELTA_2026-11-15.md` — **2026-11-17→20 update:** Protestia chain shows **same-EIN continuation via rename not independent asset sale** — Lumena = renamed G3 corp (same corp no./EIN 84-2403597) with new officers/Minga CEO; g3min.org→lumenaministries.com redirect live Nov18 + Lumena site live selling Aniol titles (retained) removing Buice (Huckaby board); Q006 transferee reframed but `acquired by another ministry` vs `new form new leadership` vs rename still HOLD without board notice/agreement/closing statement — G3+ Terms still Apr03 2025, seller identity still HOLD.
+Canonical control: `Q005_Q006_GEORGIA_FILING_DELTA_2026-11-15.md` — **2026-11-17→20 update:** Protestia chain shows **same-EIN continuation via rename not independent asset sale** — Lumena = renamed G3 corp (same corp no./EIN 84-2403597) with new officers/Minga CEO; g3min.org→lumenaministries.com redirect live Nov18-20 primary S148 + Lumena site live S148/S149 selling Aniol titles (retained) removing Buice (Huckaby board).
 
-**New evidence required:** final-transition follow-up email, recipient ministry announcement, G3 board/corporate notice, agreement/assignment/closing statement, post-transfer legal-provider record or equivalent; or a public surface that connects the name `Lumena Ministries` to G3 Plus or G3 Press or identifies its own operator.
+**HOLD-закрытие попытка 2026-11-20:** Q006 **PARTIALLY CLOSABLE** — `same-corporation continuation` reframing closes the "independent ministry acquired G3+" legal-theory branch; `acquired by another ministry` (Aug27 email) vs `new form new leadership` (G3-S142) vs GA rename now reconciled as **single-entity continuation narrative** — but **formal transferee/closing/terms HOLD remains** for publication without board notice/agreement/closing statement; G3+ Terms still Apr03 2025, app seller identity still HOLD — research route 70% closed, formal 30% pending authorized document.
+
+**New evidence required for full closure:** final-transition follow-up email + recipient ministry announcement + Lumena board corporate notice + agreement/assignment/closing statement + provider/legal ownership record title-by-title.
 
 ### Q006A — donated FY2022 real estate / FY2023 sale / receivable
 
-**State:** `PARTIAL CLOSURE / SALE VERIFIED_PRIMARY / PARCEL + COUNTERPARTY + NOTE LINKAGE ACCESS/DOCUMENT_HOLD`.
+**State:** `PARTIAL CLOSURE / SALE VERIFIED_PRIMARY / PARCEL + COUNTERPARTY + NOTE LINKAGE ACCESS/DOCUMENT_HOLD — UNCLOSABLE 2026-11-20 without deed`.
 
 Raw IRS evidence verifies:
 
@@ -119,7 +123,7 @@ Exact-head Douglas run `34270062808` establishes the current public-access bound
 
 ### Q007 — independently reproduce strongest Buck examples from original media
 
-**State:** `ACTIVE / LATE ITEMS ACQUISITION CLOSED / HUMAN REVIEW HOLD`.
+**State:** `ACTIVE / LATE ITEMS ACQUISITION CLOSED / HUMAN REVIEW HOLD — UNCLOSABLE 2026-11-20`.
 
 Items 11–17 have 7/7 successful bounded original-FBC-media acquisition and machine-transcript diagnostics. Item files now distinguish strong, mixed and negative-control outcomes.
 
@@ -201,15 +205,19 @@ Raw FY2025 filing and July 2026 primary board page supply stronger endpoints; go
 
 ### Q019 — online/platform/domain control after wind-down
 
-**State:** `DATED DIGITAL-STATE PARTIALLY VERIFIED / OWNERSHIP HOLD`.
+**State:** `DATED DIGITAL-STATE VERIFIED_PRIMARY (2026-11-20) / OWNERSHIP HOLD`.
 
-Direct root, stale indexed pages, app-store metadata, G3+ web app, G3 Press storefront and stale PMBC leader page must remain distinct dated layers. Platform visibility is not beneficial ownership.
+Direct root, stale indexed pages, app-store metadata, G3+ web app, G3 Press storefront and stale PMBC leader page must remain distinct dated layers — **but 2026-11-20 live primary S148/S149 upgrades platform-state to VERIFIED_PRIMARY:** g3min.org→lumenaministries.com redirect live + Lumena Ministries operating + Press Shopify live + g3conference socials retained. Platform visibility is not beneficial ownership but operational continuity now closable.
+
+**HOLD-закрытие 2026-11-20:** Q019 platform-state **CLOSABLE as VERIFIED_PRIMARY** (S148/S149 live); ownership/legal-title transfer still HOLD.
 
 ### Q020 — G3 Press author rights/inventory
 
-**State:** `TITLE-BY-TITLE PARTIAL CLOSURE`.
+**State:** `TITLE-BY-TITLE PARTIALLY VERIFIED_PRIMARY (2026-11-20 platform) / BENEFICIAL-OWNERSHIP HOLD`.
 
-Dave Jenkins' title has observable post-G3 republication under his current ecosystem; other rights-return requests are less complete. Continue title-by-title contract/inventory/license reconstruction. Do not assume one monolithic transfer.
+Dave Jenkins' title has observable post-G3 republication under his current ecosystem; other rights-return requests are less complete — **but 2026-11-20 Press Shopify live S149 upgrades platform/taxonomy/catalog to VERIFIED_PRIMARY:** Books/Lumena Press Books/Living Heritage Books/Downloads/DVDs/Christian Living/Family/Ministry/Doctrine/Merch + Lumena cross-links + Johnson/Spurgeon/Talbert titles live.
+
+**HOLD-закрытие 2026-11-20:** Q020 platform/catalog **CLOSABLE as VERIFIED_PRIMARY**; beneficial-ownership/title-by-title legal transfer still HOLD without agreement.
 
 ### Q021 — Scott Aniol post-G3 status
 
