@@ -76,8 +76,8 @@
     ]
   },
   "totals": {
-    "filesScanned": 3130,
-    "filesWithMentions": 917,
+    "filesScanned": 3131,
+    "filesWithMentions": 918,
     "mentions": {
       "ARCHIVE_HOLD": 1424,
       "BLOCKING-HOLD": 16,
@@ -100,14 +100,14 @@
       "LIVE-READBACK-HOLD": 4,
       "LOCATOR_HOLD": 1984,
       "PAGE-IMAGE-HOLD": 14,
-      "PUBLICATION_HOLD": 2658,
-      "RIGHTS_HOLD": 1477,
+      "PUBLICATION_HOLD": 2659,
+      "RIGHTS_HOLD": 1478,
       "VERSION-HOLD": 23
     },
     "mentionsByStatus": {
       "closed": 824,
       "open": 2362,
-      "unmarked": 6066
+      "unmarked": 6068
     },
     "canonicalFlagLineStatesRecordedAsBothOpenAndClosed": 406,
     "filesWithJsonHolds": 41,
@@ -358,18 +358,18 @@
       }
     },
     "docs": {
-      "files": 97,
+      "files": 98,
       "mentions": {
         "ARCHIVE_HOLD": 541,
         "EVIDENCE_HOLD": 435,
         "LOCATOR_HOLD": 332,
-        "PUBLICATION_HOLD": 1037,
-        "RIGHTS_HOLD": 563
+        "PUBLICATION_HOLD": 1038,
+        "RIGHTS_HOLD": 564
       },
       "status": {
         "closed": 247,
         "open": 1107,
-        "unmarked": 1700
+        "unmarked": 1702
       }
     },
     "scripts": {
@@ -26142,6 +26142,17 @@
       },
       "status": {
         "unmarked": 1
+      }
+    },
+    {
+      "path": "docs/research/PR621_SELECTIVE_INTEGRATION_CROSSWALK_2026-11-18.md",
+      "corpus": "docs",
+      "mentions": {
+        "PUBLICATION_HOLD": 1,
+        "RIGHTS_HOLD": 1
+      },
+      "status": {
+        "unmarked": 2
       }
     },
     {
