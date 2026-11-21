@@ -730,7 +730,7 @@ Blue Letter Bible. Это A1-свидетельство **редакторско
 |---|---|---|
 | REC-01 | [SPURGEONPS103](https://www.blueletterbible.org/comm/spurgeon_charles/tod/ps103.cfm);Explanatory Notes and Quaint Sayings;v12 | Подписанная атрибуция StephenCharnock;точный исходный locus в проверенных TCP ещё не найден:не объявлять сверенным оригиналом |
 | REC-02 | [SPURGEONPS103](https://www.blueletterbible.org/comm/spurgeon_charles/tod/ps103.cfm);Explanatory Notes and Quaint Sayings;v18 | Подписанная выдержка;совпадение с A32723,p699,различие comma/semicolon и оформления не скрывать |
-| REC-03 | [SPURGEONPS103](https://www.blueletterbible.org/comm/spurgeon_charles/tod/ps103.cfm);Explanatory Notes and Quaint Sayings;v19,Condensed from Charnock | Сокращённый6частный разбор прямо помечен Condensed;финальный пункт сопоставлен A32723,p702;не выдавать всю компиляцию за дословную цитату |
+| REC-03 | [SPURGEONPS103](https://www.blueletterbible.org/comm/spurgeon_charles/tod/ps103.cfm);Explanatory Notes and Quaint Sayings;v19,Condensed from Charnock | Сокращённый 6 частный разбор прямо помечен Condensed;финальный пункт сопоставлен A32723,p702;не выдавать всю компиляцию за дословную цитату |
 | REC-04 | [SPURGEONPS103](https://www.blueletterbible.org/comm/spurgeon_charles/tod/ps103.cfm);Hints to the Village Preacher;v19 | Прямая рекомендация дискурса с адресом в Nichol/Nicol;указанный диапазон не проверен по скану этого издания;не переносить его на1682 |
 
 ### 9.2. Сопоставление с Чарноком
@@ -745,7 +745,7 @@ v.18 — та же мысль и подпись Stephen Charnock, но посл�
 **REC-03:** на стороне *Treasury*,v.19,шесть пунктов завершаются пометой
 **Condensed from Charnock**. Последний пункт соответствует A32723,p.702:
 «The Heavens are incorruptible, his Throne is placed there in an incorruptible
-state.» В1682между этим и «The Throne of God outlives the dissolution of the
+state.» В 1682 между этим и «The Throne of God outlives the dissolution of the
 World» есть фраза «Earthly Empires have their decayes and dissolutions»,
 которую сокращённая передача опускает. Получена конкретная демонстрация отбора,
 не основание печатать сокращение как непрерывную дословную цитату1682.

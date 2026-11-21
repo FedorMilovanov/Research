@@ -217,6 +217,7 @@
 | Gill mobile reference .txt (копия) | `1uXU3sR6yn8VEUhQWQ_z_ctwtD300-Pwi` | `01 — ДЖОН ГИЛЛ` | копия `1tQ6MLcTuslMxH3jTecVOjWC-Ju-LqE1m` |
 
 **Custody именно трёх строк-копий в §6:** созданы через Drive `copy_file`; оригиналы на месте; **SHA-256 readback этих трёх копий не выполнялся** → `TRANSFER_PENDING_VERIFICATION`. Отдельные независимые v3/r2 ZIP-архивы 15 исходных файлов выше **проверены**, но не служат квитанцией этих трёх копий. Не заявлять forensic acquisition там, где его нет.
+**UPDATE 2026-11-18:** readback **выполнен** — каждая копия и её источник скачаны заново, локальный SHA-256 совпал, байты идентичны; `TRANSFER_PENDING_VERIFICATION` этих трёх копий закрыт, custody переведён в `ACQUIRED_DURABLE` относительно пары копия/источник ([08 §27.1](../08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md), `HCR-2026-11-18-01` в [`data/hold-closure-registry-v1.json`](../../data/hold-closure-registry-v1.json)). Предыдущее утверждение сохранено как история волны 1. Локаторы Works 3–5, права и публикационный гейт **не затронуты**.
 Подробный ledger — в [`../08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md`](../08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md).
 
 ---
@@ -224,7 +225,7 @@
 ## 7. Права, архив и публикационные HOLD
 
 - **SUPERSEDED (после Research PR #552/#553):** старое обобщение «все Charnock-локаторы = `B1`/digital» не соответствует evidence-policy v2. Класс источника определяется происхождением конкретного свидетельства, не цифровым носителем. Непроверенные цифровые зеркала CCEL/Digital Puritan/Monergism — `C`/поисковые свидетельства с адресным `LOCATOR_HOLD` и `PUBLICATION_HOLD`; независимо проверенный первичный текст учитывается отдельно по собственному локатору и контексту. Нельзя автоматически повышать все ссылки до `B1` или снимать права/публикационный HOLD.
-- Исторические три копии §6: `TRANSFER_PENDING_VERIFICATION` (без SHA-256 readback). Новые отдельно созданные v3/r2 архивы ED-08: `ACQUIRED_DURABLE_SOURCE_SNAPSHOT` **только для своих 15 файлов и pinned source commits**; не переводить статус на всё содержимое Drive.
+- Исторические три копии §6: `TRANSFER_PENDING_VERIFICATION` (без SHA-256 readback) — **закрыто 2026-11-18** обратным readback, см. §6 UPDATE и [08 §27.1](../08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md); прочие HOLD отдела не сняты. Новые отдельно созданные v3/r2 архивы ED-08: `ACQUIRED_DURABLE_SOURCE_SNAPSHOT` **только для своих 15 файлов и pinned source commits**; не переводить статус на всё содержимое Drive.
 - Перенос в Product: `PUBLICATION_HOLD` по всему отделу.
 
 ---
