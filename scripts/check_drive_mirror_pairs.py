@@ -360,10 +360,16 @@ def main(argv: list[str]) -> int:
     mode_check = "--check" in argv
     mode_summary = "--summary" in argv
 
-    if "--cross" in argv:
-        return report_cross(data.get("mirrors", []))
-
-    if "--index" in argv:
+    # --cross и --index не прогоняют поштучный разбор, но структурные ошибки реестра
+    # (не то число записей, повтор имени) обязаны валить и их: иначе гейт зеленеет
+    # на реестре, из которого зеркало просто выпало.
+    if "--cross" in argv or "--index" in argv:
+        if errors:
+            for error in errors:
+                print(f"[FAIL] {error}", file=sys.stderr)
+            return 1
+        if "--cross" in argv:
+            return report_cross(data.get("mirrors", []))
         return report_index(data.get("mirrors", []))
 
     complete, why = history_state()
