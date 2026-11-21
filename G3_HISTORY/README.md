@@ -21,6 +21,9 @@ Repository evidence authority:
 - [`ENGINEERING_HARDENING_2026-09-08.md`](ENGINEERING_HARDENING_2026-09-08.md)
 - [`DURABLE_CUSTODY_POLICY.md`](DURABLE_CUSTODY_POLICY.md)
 - [`DURABLE_CUSTODY_MANIFEST.json`](DURABLE_CUSTODY_MANIFEST.json)
+- [`G3_ACTIONS_PRESERVATION_SOURCE_MANIFEST_2026-11-21.json`](G3_ACTIONS_PRESERVATION_SOURCE_MANIFEST_2026-11-21.json) — bounded eight-ZIP source provenance
+- [`G3_ACTIONS_PRESERVATION_CUSTODY_RECEIPT_2026-11-21.json`](G3_ACTIONS_PRESERVATION_CUSTODY_RECEIPT_2026-11-21.json) — private Drive raw-readback receipt (`8/8` only)
+- [`G3_ACTIONS_2026-11-24_EXPIRY_COHORT_ASSESSMENT_2026-11-21.md`](G3_ACTIONS_2026-11-24_EXPIRY_COHORT_ASSESSMENT_2026-11-21.md) — separate metadata-only expiry assessment, no scope expansion
 
 ## Non-negotiable research rules
 
@@ -137,6 +140,10 @@ The remaining P0 uncertainty is no longer ordinary search debt. It requires genu
 4. **Crisis-day board:** another dated primary object after July 21.
 5. **2025 director transitions:** resignation/minutes/appointment instruments or authorized filing history.
 
+### Bounded Actions-artifact custody update — 2026-11-21
+
+The private Drive readback receipt preserves and independently verifies the **exact eight** enumerated original GitHub Actions ZIPs (`2,807,235` bytes total) as `ACQUIRED_DURABLE` for byte custody. The sandbox calculated each raw Drive-readback SHA-256, matched it to the GitHub Actions API digest pinned in the source manifest, and passed non-extracting ZIP-integrity tests. The prior source-side acquisition/readback statement is retained as external attestation rather than relabeled as an in-sandbox source download. [`G3_ACTIONS_2026-11-24_EXPIRY_COHORT_ASSESSMENT_2026-11-21.md`](G3_ACTIONS_2026-11-24_EXPIRY_COHORT_ASSESSMENT_2026-11-21.md) separately inventories the bounded remainder without expanding transfer scope. This does **not** preserve the whole G3 corpus, settle Q005/Q006, establish legal title/closing/scope, or lift `PUBLICATION_HOLD`, `RIGHTS_HOLD`, `EVIDENCE_HOLD`, or `CATALOG_ONLY`.
+
 See [`OPEN_QUESTIONS.md`](OPEN_QUESTIONS.md) and [`P0_CLOSURE_CHECKPOINT_2026-09-08.md`](P0_CLOSURE_CHECKPOINT_2026-09-08.md) for the route-exhaustion state machine.
 
 ## Corpus map
@@ -152,6 +159,9 @@ See [`OPEN_QUESTIONS.md`](OPEN_QUESTIONS.md) and [`P0_CLOSURE_CHECKPOINT_2026-09
 - [`ENGINEERING_HARDENING_2026-09-08.md`](ENGINEERING_HARDENING_2026-09-08.md)
 - [`DURABLE_CUSTODY_POLICY.md`](DURABLE_CUSTODY_POLICY.md)
 - [`DURABLE_CUSTODY_MANIFEST.json`](DURABLE_CUSTODY_MANIFEST.json)
+- [`G3_ACTIONS_PRESERVATION_SOURCE_MANIFEST_2026-11-21.json`](G3_ACTIONS_PRESERVATION_SOURCE_MANIFEST_2026-11-21.json)
+- [`G3_ACTIONS_PRESERVATION_CUSTODY_RECEIPT_2026-11-21.json`](G3_ACTIONS_PRESERVATION_CUSTODY_RECEIPT_2026-11-21.json)
+- [`G3_ACTIONS_2026-11-24_EXPIRY_COHORT_ASSESSMENT_2026-11-21.md`](G3_ACTIONS_2026-11-24_EXPIRY_COHORT_ASSESSMENT_2026-11-21.md)
 
 ### Finance / governance / assets
 
