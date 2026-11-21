@@ -422,6 +422,8 @@
   - Поправка: в REPASS §11 «в IA его нет» неверно — книга в IA есть, доступ ограничен. Пометки в `24_` (строка о не сверенных страницах) и `20_` C34.05. Вердикт сн. 102 и S1–S5 не меняются. Документ: REPASS, §79.
 - **раунд 157 (2026-11-17, AGENT 2):** §3 (S255), новый §4.240 (Q236): самопроверка раунда 154 (сн. 104, Баркли) и списков HOLD.
   - Фраза Баркли подтверждена по OCR трёх изданий 1975 г. В REPASS §77.5 и §78.5 найден ошибочный возврат «*Annotationes* Эразма к Кол. 1:20» в HOLD (снято в р. 110) — исправлено; две ранние сводки «Баркли — HOLD» помечены. Вердикты S1–S5 не меняются. Документ: REPASS, §80.
+- **раунд 158 (2026-11-17, AGENT 2):** §3 (S256), новый §4.241 (Q237): самопроверка раунда 153 (сн. 107–108).
+  - Текст статьи совпадает с PDF. Заметка MSB к Кол. 1:20 дополнена словами «means “to change”» (три издания, вкл. NKJV 1997). `STRAWMAN` (умеренно) и `NON_SEQUITUR` (мягко) остаются в силе. Вердикты S1–S5 не меняются. Документ: REPASS, §81.
 
 **Erratum (раунд 4).** В раунде 3 номера страниц протоколов Ассамблеи (S19) и Шедда II (S22) были выведены из индекса страниц OCR-API archive.org (`BookReaderGetTextWrapper`), который **не совпадает** с номером листа (`leafNum`) скана: для `minutesofsession00west` индекс = лист − 5, для `dogmatictheology02sheduoft` индекс = лист − 1. Сверка по `inside.php` (полнотекстовый поиск, возвращает `leafNum`) и `<id>_page_numbers.json` (лист → печатная страница) дала: **Minutes «pp. 150–155/156» → pp. 155–160/161** (листы 251–257); **Shedd «II.478, 482–483» → II.479, 483–484** (листы 489, 493–494). Все затронутые числа в S19, S22, §4.13, §4.16, §5–§8 исправлены **на месте** с пометкой «(испр. р. 4)»; содержание цитат не менялось. Локаторы раундов 1–2 (Minutes p. lv/lviii/lx/152, Shedd II.464–477, I.441, A. A. Hodge pp. 33–34) перепроверены тем же способом и **верны** (лист 248 = p. 152; лист 457 = I.441; лист 39 = Hodge p. 33).
 **Статус:** `ACTIVE RESEARCH / NO SETTLED VERDICT ON EXTENT / EVIDENCE_HOLD / PUBLICATION_HOLD`
@@ -840,6 +842,7 @@
 | S253 *(раунд 155, 2026-11-17)* | K. S. Wuest, *Ephesians and Colossians in the Greek New Testament for the English Reader* (Grand Rapids: Eerdmans, © 1953; перепечатка 1981), IA `ephesianscolossi0000wues` — OCR через полнотекстовый индекс Open Library (доступ к книге ограничен; класс B для фраз). К Кол. 1:20: «Our Lord by His death on the Cross bound together again a holy God and sinful man who placed his faith in the Saviour. Likewise, the curse placed upon the material universe because of sin, will one day be removed through that same precious Blood. Reconciliation in the case of God and man is twofold. A holy God is reconciled in that justice has been satisfied at the Cross, and sinful man is reconciled in that, in the case of the believing sinner, his attitude of enmity towards God is changed to one of friendship. The verb “reconcile” is apokatallassō…» Перевод: «…whether the things upon the earth or the things in the heavens.» Вероятно, к Кол. 1:16 *(р. 156, S254: подтверждено)*: «…principalities, and powers” refer to both holy and fallen angels, to demons and man. Vincent says…» Место не установлено *(р. 156, S254: комментарий к Еф. 1:10)*: «…Great White Throne judgment will take place at which all lost human beings, fallen angels, and demons will be judged. The material universe cursed by sin will be brought back…» Начало комментария к Кол. 1:20 — также у Precept Austin (класс C). Электронное издание Logos (1997, c1984): «Mr. Wuest's volume on *Colossians and Ephesians* was split so that canonical order could be maintained» (biblia.com, класс C). |
 | S254 *(раунд 156, 2026-11-17)* | Тот же OCR (IA `ephesianscolossi0000wues`, класс B для фраз), повторные запросы. К Кол. 1:16: «The words, “thrones, dominions, principalities, and powers” refer to both holy and fallen angels, to demons and man. Vincent says; “The passage is aimed at the angel-worship…» К Еф. 1:10: «…with a view to the administration that has to do with the completion of the seasons. At the close of the Messianic Kingdom, the Great White Throne judgment will take place at which all lost human beings, fallen angels, and demons will be judged. The material universe cursed by sin will be brought back to its pristine state, the saved of the human race will live on the new earth, and the endless eternal ages will begin. This is what is meant by an administration of the completion of the seasons. God will accomplish all this restoration work in and through the Lord Jesus and His atoning death on the Cross. He is the Head…» Перевод Еф. 1:10: «…with respect to an administration of the completion of the seasons, to bring back again to their original state the all things in the Christ, the things in the heavens and the things on the earth, in…» Кол. 1:20, продолжение: «The verb “reconcile” is apokatalass6 [OCR]. Vincent says that “the compounded preposition…». Вторичные цитаты издания Logos (класс C): forum.ebcct.org/?p=1249 — «vol. 6, p. 199» (Кол. 2:8 «Beware»), «vol. 6, p. 200» (Кол. 2:8 «rudiments»). |
 | S255 *(раунд 157, 2026-11-17)* | W. Barclay, *The Letters to the Philippians, Colossians, and Thessalonians* (1975), OCR через полнотекстовый индекс Open Library (доступ ограничен; класс B для фразы): «The most interesting suggestion was made by Theodoret and followed by Erasmus. It was that…» — IA `letterstophilipp0000unse_p6g9` (Philadelphia: Westminster Press), `letterstophilip00barc_0` (Toronto: G. R. Welch), `dailystudybible0000barc` (Edinburgh: St Andrew Press). Для учёта HOLD — REPASS §33 (р. 110, *Annotationes* 1535, p. 635). |
+| S256 *(раунд 158, 2026-11-17)* | *The MacArthur Study Bible*, заметка к Кол. 1:20, OCR через полнотекстовый индекс Open Library (доступ ограничен; класс B): «1:20 reconcile all things to Himself. The Gr. word for “reconcile” means “to change”…» — IA `macarthurstudybi0000unse_n6a5` (NKJV, Nashville: Word Bibles, 1997), `macarthurstudybi0000unse` (NASB, 2006), `macarthurstudybi0000john` (Personal Size, 2008). Статья — Drive-PDF, с. 34–35 (A1). |
 
 **Ответ: П1 исторически неверен; «словом о цене» в английской традиции является *redemption*, а не *atonement*.**
 
@@ -8457,8 +8460,9 @@ hommes** selon ce propos déterminé…*» (с. 183) **есть в источн�
 | 4.238 | Q234 | Сн. 102: Вюст к Кол. 1:20 — Бог и человек плюс материальная вселенная, тезиса «небесное = ангелы» нет: `SOURCE_BROADER_THAN_CLAIM` (мягко); «Vol. 6» — Колоссянам в издании Logos; p. 188 — HOLD (р. 155) |
 | 4.239 | Q235 | Самопроверка р. 155 (сн. 102, Вюст): фразы подтверждены; Кол. 1:16 и Еф. 1:10 — места установлены; т. 6 = Колоссянам (pp. 199–200 = Кол. 2:8); поправка «в IA его нет»; вердикт не меняется (р. 156) |
 | 4.240 | Q236 | Самопроверка р. 154 (Баркли): фраза подтверждена по трём изданиям 1975 г.; исправлен ошибочный возврат *Annotationes* Эразма в HOLD (REPASS §77.5, §78.5) (р. 157) |
+| 4.241 | Q237 | Самопроверка р. 153 (сн. 107–108): текст статьи совпадает; MSB дополнена («to change»); `STRAWMAN` (умеренно) и `NON_SEQUITUR` (мягко) в силе (р. 158) |
 
-⇒ разделов с `Q` — **233**, разделов §4.x — **235**; пропуски нумерации прежние.
+⇒ разделов с `Q` — **234**, разделов §4.x — **236**; пропуски нумерации прежние.
 
 
 ### 4.139. Q135 — Приёмка раунда 61: связка Сомюра, аудит объёма, готовность к мерджу (раунд 61)
@@ -10463,6 +10467,21 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 3. **Прочие пункты** списка противоречий с прежними снятиями не имеют. Две ранние сводки «Баркли — HOLD» помечены как суженные до печатной p. 124.
 
 **Чего нет.** Печатная p. 124 Баркли (по-прежнему HOLD).
+
+Вердикты S1–S5 не меняются.
+
+### 4.241. Q237 — Самопроверка раунда 153 (сноски 107–108: Кинер, MSB, BDAG) (раунд 158, 2026-11-17)
+
+**Повод.** Пользователь просил перепроверять себя. `STRAWMAN` (умеренно) для сн. 107 — самый сильный вердикт раундов 150–157. Источник — S256. Таблица — REPASS-документ, §81.
+
+**Вопрос.** Верно ли передан текст статьи и выдерживает ли вердикт повторную проверку?
+
+**Ответы.**
+1. **Текст статьи** при сн. 107–108 и сами сноски совпадают с PDF дословно.
+2. **MSB.** Начало заметки к Кол. 1:20 дополнено: «The Gr. word for “reconcile” means “to change”…» (NKJV 1997 и ещё два издания). Словарное определение у MSB — «изменение», а не подчинение. Подчинение («all will ultimately submit») относится к неуверовавшим.
+3. **Вердикт.** `STRAWMAN` (умеренно) остаётся: статья обобщила частный мотив обоих источников (подчинение враждебных сил или неверующих) до определения всего примирения. «Умеренно», потому что мотив у источников действительно есть. `NON_SEQUITUR` (мягко) для сн. 108 — без изменений.
+
+**Чего нет.** Продолжение заметки MSB после «to change»; печатная p. 1833; формулировка Кинера 1993 г.
 
 Вердикты S1–S5 не меняются.
 
