@@ -152,9 +152,6 @@ class OutputTests(unittest.TestCase):
             fx.close()
 
 
-if __name__ == "__main__":
-    unittest.main()
-
 
 class ReportDriftTests(unittest.TestCase):
     """The bytes need network; the shape of the report does not."""

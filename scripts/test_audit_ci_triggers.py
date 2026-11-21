@@ -8,6 +8,7 @@ through an artefact, and a workflow whose shape cannot be parsed at all.
 """
 from __future__ import annotations
 
+import ast
 import tempfile
 import unittest
 from pathlib import Path
@@ -125,6 +126,24 @@ class TriggerTests(unittest.TestCase):
                     self.assertIn(path, act.trigger_lists(
                         Path(act.WORKFLOW).read_text(encoding="utf-8"))["pull_request"],
                         f"{path} is declared ({reason}) but not a trigger")
+
+
+class TestModuleLayoutTests(unittest.TestCase):
+    """A direct invocation must discover the same classes as unittest discovery."""
+
+    def test_main_guard_is_unique_and_last_when_present(self) -> None:
+        scripts = Path(__file__).resolve().parent
+        for path in sorted(scripts.glob("test_*.py")):
+            module = ast.parse(path.read_text(encoding="utf-8"), filename=str(path))
+            guards = [node for node in module.body if isinstance(node, ast.If)
+                      and isinstance(node.test, ast.Compare)
+                      and isinstance(node.test.left, ast.Name)
+                      and node.test.left.id == "__name__"]
+            with self.subTest(path.name):
+                self.assertLessEqual(len(guards), 1, "duplicate __main__ guards")
+                if guards:
+                    self.assertIs(module.body[-1], guards[0],
+                                  "classes below unittest.main() do not run on direct invocation")
 
 
 if __name__ == "__main__":

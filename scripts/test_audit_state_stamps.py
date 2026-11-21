@@ -98,21 +98,8 @@ class StampTests(unittest.TestCase):
         self.assertIn("byState", report["totals"])
 
 
-class CommittedStampReportTests(unittest.TestCase):
-    """The committed report records the date it judges against, so it can be reproduced.
-
-    It could not be reproduced before: the tool took today's date, wrote it into scope.today,
-    and a report regenerated on the next calendar day differed only by that field. A report
-    that changes when nothing in the tree changes is not evidence of anything.
-    """
-
-    def test_report_reappears_with_its_own_date(self) -> None:
-        root = Path(__file__).resolve().parents[1]
-        committed = json.loads((root / "data" / "state-stamps-2026-11-18.json").read_text(encoding="utf-8"))
-        recorded = committed["scope"]["today"]
-        fresh = stamps.audit(root, today=datetime.date.fromisoformat(recorded))
-        self.assertEqual(fresh, committed,
-                         "regenerate with --today " + recorded + " (если дерево уехало — merge main и переснимите; см. §33.5)")
+class ExplicitDateTests(unittest.TestCase):
+    """A supplied date makes the report reproducible on another calendar day."""
 
     def test_the_command_line_honours_today(self) -> None:
         # The two tests above call audit() directly, so they would stay green if main()

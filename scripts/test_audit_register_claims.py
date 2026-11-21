@@ -253,9 +253,6 @@ class SliceRegistryTests(unittest.TestCase):
     def report(self) -> dict:
         return claims.audit(self.fx.root)
 
-if __name__ == "__main__":
-    unittest.main()
-
 
 class RegisterSelfCountTests(unittest.TestCase):
     """The register may not quote the claims tool's own tally.
@@ -340,3 +337,7 @@ class ProseAmbiguityTests(unittest.TestCase):
 
     def test_two_different_numbers_are_ambiguous(self) -> None:
         self.assertEqual(self.states("В 7 JSON-файлах ... и ещё В 8 JSON-файлах"), ["anchor-ambiguous"])
+
+
+if __name__ == "__main__":
+    unittest.main()

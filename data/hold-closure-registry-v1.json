@@ -992,11 +992,13 @@
       "method": "register-claims-audit",
       "objects": [
         {
-          "defectsFixed": 12,
+          "defectsFixed": 13,
           "mutationsInjected": 14,
           "mutationsMissedBeforeFixes": 3,
           "staleArtefactsFound": 3,
-          "proseCountersResyncedAfterMerge": 8
+          "proseCountersResyncedAfterMerge": 8,
+          "snapshotReportsGatedAtPrHead": 6,
+          "testModulesWithEarlyMainGuardFixed": 7
         }
       ],
       "residualHolds": [

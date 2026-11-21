@@ -238,9 +238,6 @@ class AugmentTests(unittest.TestCase):
         self.assertIn("PROMOTE 0", text)
 
 
-if __name__ == "__main__":
-    unittest.main()
-
 
 class SelfConfirmationTests(unittest.TestCase):
     """A file cannot witness an id that exists only because the queue named it.

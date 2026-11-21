@@ -27,6 +27,7 @@ on:
       - 'data/text-integrity-repairs-2026-11-18.json'
       - 'docs/research/HOLDS_REGISTER_2026-11-18.md'
       - 'scripts/audit_ci_triggers.py'
+      - 'scripts/check_snapshot_freshness.py'
       - 'scripts/audit_document_twins.py'
       - 'scripts/audit_drive_ledger.py'
       - 'scripts/audit_register_claims.py'
@@ -46,6 +47,7 @@ on:
       - 'scripts/test_audit_state_stamps.py'
       - 'scripts/test_audit_text_integrity.py'
       - 'scripts/test_check_hold_vocabulary.py'
+      - 'scripts/test_check_snapshot_freshness.py'
       - 'scripts/test_hold_closure_registry.py'
       - 'scripts/test_publication_gate_status.py'
       - 'scripts/test_render_closures_summary.py'
@@ -80,6 +82,7 @@ on:
       - 'data/text-integrity-repairs-2026-11-18.json'
       - 'docs/research/HOLDS_REGISTER_2026-11-18.md'
       - 'scripts/audit_ci_triggers.py'
+      - 'scripts/check_snapshot_freshness.py'
       - 'scripts/audit_document_twins.py'
       - 'scripts/audit_drive_ledger.py'
       - 'scripts/audit_register_claims.py'
@@ -99,6 +102,7 @@ on:
       - 'scripts/test_audit_state_stamps.py'
       - 'scripts/test_audit_text_integrity.py'
       - 'scripts/test_check_hold_vocabulary.py'
+      - 'scripts/test_check_snapshot_freshness.py'
       - 'scripts/test_hold_closure_registry.py'
       - 'scripts/test_publication_gate_status.py'
       - 'scripts/test_render_closures_summary.py'
@@ -130,17 +134,39 @@ jobs:
           python3 -m py_compile scripts/audit_relative_links.py
           python3 -m py_compile scripts/check_hold_vocabulary.py
           python3 -m py_compile scripts/audit_ci_triggers.py
+          python3 -m py_compile scripts/check_snapshot_freshness.py
           python3 -m py_compile scripts/publication_gate_status.py
           python3 -m py_compile scripts/verify_pinned_github_locators.py
           python3 -m py_compile scripts/test_hold_closure_registry.py
           python3 -m py_compile scripts/audit_text_integrity.py
           python3 -m py_compile scripts/verify_internal_digests.py
+      # A pull_request checkout is a synthetic merge commit. Dated snapshots belong to
+      # the branch that authored them, so unrelated main changes must not make that branch
+      # rewrite all reports. The PR head is therefore the blocking freshness boundary.
+      - name: Gate dated snapshots at the PR head
+        if: github.event_name == 'pull_request'
+        env:
+          SNAPSHOT_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          git cat-file -e "$SNAPSHOT_SHA^{commit}" || git fetch --no-tags origin "$SNAPSHOT_SHA"
+          git worktree add --detach "$RUNNER_TEMP/holds-snapshot" "$SNAPSHOT_SHA"
+          cd "$RUNNER_TEMP/holds-snapshot"
+          python3 -B scripts/check_snapshot_freshness.py --check
+          python3 -B scripts/render_closures_summary.py --check
+          python3 -B scripts/audit_register_claims.py --check
+      # A merged main tree legitimately contains files that were not in the PR-head
+      # snapshot. Preserve that drift in the log, but do not turn it into a post-merge
+      # failure that can only be "fixed" by chasing main in another commit.
+      - name: Report dated snapshot drift after integration
+        if: github.event_name != 'pull_request'
+        run: python3 -B scripts/check_snapshot_freshness.py
       - name: Test classification and read-only behaviour
         run: |
           python3 -B -m unittest discover -s scripts -p 'test_audit_repository_holds.py' -v
           python3 -B -m unittest discover -s scripts -p 'test_audit_relative_links.py' -v
           python3 -B -m unittest discover -s scripts -p 'test_check_hold_vocabulary.py' -v
           python3 -B -m unittest discover -s scripts -p 'test_audit_ci_triggers.py' -v
+          python3 -B -m unittest discover -s scripts -p 'test_check_snapshot_freshness.py' -v
           python3 -B -m unittest discover -s scripts -p 'test_publication_gate_status.py' -v
           python3 -B -m unittest discover -s scripts -p 'test_verify_pinned_github_locators.py' -v
           python3 -B -m unittest discover -s scripts -p 'test_hold_closure_registry.py' -v
@@ -159,9 +185,6 @@ jobs:
           python3 scripts/audit_relative_links.py -o /tmp/links-a.json
           python3 scripts/audit_relative_links.py -o /tmp/links-b.json
           cmp /tmp/links-a.json /tmp/links-b.json
-          # The register's §8 table is generated from this committed report, so the report
-          # itself has to be current - otherwise the table would faithfully quote an old run.
-          cmp /tmp/links-a.json data/relative-links-audit-2026-11-18.json
       - name: Reject working-tree changes
         run: git diff --exit-code
       - name: Reject unexplained dead locators
@@ -170,25 +193,24 @@ jobs:
         run: python3 -B scripts/check_hold_vocabulary.py --check
       - name: Check the workflow's own trigger list
         run: python3 -B scripts/audit_ci_triggers.py --check
-      - name: Check the pinned-locator report still describes the tree
-        run: >-
-          python3 -B scripts/verify_pinned_github_locators.py
-          --check-report data/pinned-github-locators-verified-2026-11-18.json
       - name: Reject new glued tokens in prose
         run: python3 -B scripts/audit_text_integrity.py --check
       - name: Reject stale digests in live documents
         run: python3 -B scripts/verify_internal_digests.py --check
-      # Reported, not gated: one byte-identical pair currently carries no declaration,
-      # and that is an open item for the lane owning its master index. A red gate here
-      # would invite the tool to edit somebody's index instead of reporting it.
+      # Snapshot freshness is gated at the branch head above. The finding is reported,
+      # not gated: one byte-identical pair currently carries no declaration, and that is
+      # an open item for the lane owning its master index. Blocking on the finding would
+      # invite the tool to edit somebody's index instead of reporting it.
       - name: Count document twins (report only)
         run: python3 -B scripts/audit_document_twins.py --summary
-      # Report only: "edited after its own stamp" needs a human to judge whether the
-      # later commit changed the substance. Only an impossible stamp would be a defect.
+      # Snapshot freshness is gated above; the interpretation stays report only.
+      # "Edited after its own stamp" needs a human to judge whether the later commit
+      # changed the substance. Only an impossible stamp is an automatic defect.
       - name: Compare self-dating stamps with Git history (report only)
         run: python3 -B scripts/audit_state_stamps.py --summary
-      # Joins the ledger rows with the stored Drive snapshot and the local bytes. No
-      # network: the snapshot is what Drive answered on its date, and it is committed.
+      # Freshness against the dated Drive snapshot is gated above; these findings stay
+      # report only. No network: the snapshot is what Drive answered on its date, and a
+      # current Drive answer must never be inferred from that historical evidence.
       - name: Reconcile Drive library ledger (report only)
         run: python3 -B scripts/audit_drive_ledger.py --snapshot data/drive-ledger-snapshot-2026-11-18.json --summary
       # A generated map that disagrees with the registry is the same defect as a stale

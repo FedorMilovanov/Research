@@ -95,9 +95,6 @@ class RenderTests(unittest.TestCase):
         self.assertIn("## 1. Дальше", text)
 
 
-if __name__ == "__main__":
-    unittest.main()
-
 
 class ConfirmationCounterTests(unittest.TestCase):
     """A confirmation's numbers must come from an artefact, not from its own title."""

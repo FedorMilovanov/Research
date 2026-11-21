@@ -169,9 +169,6 @@ class ClosureTests(unittest.TestCase):
         self.assertTrue(self.data.get("notClosed"))
 
 
-if __name__ == "__main__":
-    unittest.main()
-
 
 class HoldTypeDeclarationTests(unittest.TestCase):
     """A HOLD type the evidence policy does not know must be declared before it is used.
@@ -204,3 +201,7 @@ class HoldTypeDeclarationTests(unittest.TestCase):
     def test_local_axes_do_not_duplicate_the_policy(self) -> None:
         self.assertEqual(sorted(self.local & self.canonical), [],
                          "an axis declared local is not local if the policy already names it")
+
+
+if __name__ == "__main__":
+    unittest.main()

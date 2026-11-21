@@ -3,7 +3,6 @@
 Fixtures are synthetic: they test classification of marker text, not the
 evidentiary state of any real source.
 """
-import json
 import tempfile
 import unittest
 from pathlib import Path
@@ -138,20 +137,3 @@ class PolicyTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-
-
-class CommittedInventoryTests(unittest.TestCase):
-    """The machine slice in §2 is generated from data/repository-holds-inventory-v1.json.
-
-    Nothing compared that file with a fresh scan: the CI step runs the tool twice and compares
-    the two runs, which proves it is deterministic, not that it is current. It was not - seven
-    mentions of ARCHIVE_HOLD had appeared in scripts since the artefact was written, so §2 and
-    §2.1 quoted an older tree while the claims audit happily confirmed them.
-    """
-
-    def test_committed_inventory_matches_a_fresh_scan(self) -> None:
-        root = Path(__file__).resolve().parents[1]
-        committed = json.loads((root / "data" / "repository-holds-inventory-v1.json").read_text(encoding="utf-8"))
-        self.assertEqual(scan(root), committed,
-                         "re-run python3 -B scripts/audit_repository_holds.py -o "
-                         "data/repository-holds-inventory-v1.json and regenerate §2/§2.1 (если дерево уехало — merge main и переснимите; см. §33.5)")
