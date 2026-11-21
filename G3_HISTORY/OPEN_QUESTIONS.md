@@ -55,6 +55,8 @@ Not acquired: the current status field, registered agent and officers on the off
 
 Canonical control: `Q005_Q006_GEORGIA_FILING_DELTA_2026-11-15.md`.
 
+**2026-11-17→20 upgrade:** Protestia 2026-11-17 + legal notices Nov04/11 + redirect live Nov18 corroborate same-corporation rename chain Aug27 Lumena LLC (Minga) → Sep17 Minga & Co → Oct28 32257311 same corp no. → Oct30 officer swap Minga CEO/Pogue CFO Etheridge sec Huckaby chair + Ramah Baptist address — Q005 upgraded to **CORROBORATED_SECONDARY**; primary GA detail 403 still HOLD for PUBLICATION_PROJECTION.
+
 **New evidence required:** official detail page for control no. `19085916`, a filing document body, or a later filing on the record.
 
 ### Q006 — G3+, G3 Press, subscriber relationships and successor
@@ -86,7 +88,7 @@ A pre-launch placeholder titled `Lumena Ministries` is live at `lumenaministries
 
 The Aug. 27 wording (`acquired by another ministry`), the site wording (`a new form, under new leadership`) and the registry rename are not reconciled by any acquired document. Apple seller/developer identity, the G3+ Terms of Service (last updated April 03, 2025) and the G3 Press storefront were unchanged on Nov. 15.
 
-Canonical control: `Q005_Q006_GEORGIA_FILING_DELTA_2026-11-15.md`.
+Canonical control: `Q005_Q006_GEORGIA_FILING_DELTA_2026-11-15.md` — **2026-11-17→20 update:** Protestia chain shows **same-EIN continuation via rename not independent asset sale** — Lumena = renamed G3 corp (same corp no./EIN 84-2403597) with new officers/Minga CEO; g3min.org→lumenaministries.com redirect live Nov18 + Lumena site live selling Aniol titles (retained) removing Buice (Huckaby board); Q006 transferee reframed but `acquired by another ministry` vs `new form new leadership` vs rename still HOLD without board notice/agreement/closing statement — G3+ Terms still Apr03 2025, seller identity still HOLD.
 
 **New evidence required:** final-transition follow-up email, recipient ministry announcement, G3 board/corporate notice, agreement/assignment/closing statement, post-transfer legal-provider record or equivalent; or a public surface that connects the name `Lumena Ministries` to G3 Plus or G3 Press or identifies its own operator.
 
