@@ -1,6 +1,6 @@
 # HOLD inventory — сквозной инвентарь HOLD-ов Research
 
-**Собрано:** 2026-11-21; **проверенный коммит:** `3819e8d22624098c9c33fbd9ecfdb728b35a46b4`. **Роль:** производный read-only артефакт, не authority. Пересобрать: `python3 -B scripts/render_hold_inventory.py`; весь контур гейтов: `python3 -B scripts/run_research_gates.py`.
+**Собрано:** 2026-11-21; **проверенный коммит:** `4849a126121757a3020405944e6c19629a7169b7`. **Роль:** производный read-only артефакт, не authority. Пересобрать: `python3 -B scripts/render_hold_inventory.py`; весь контур гейтов: `python3 -B scripts/run_research_gates.py`.
 
 Инвентарь отвечает на один вопрос: какие HOLD-и объявлены в репозитории, какого они типа и что нужно, чтобы закрыть каждый честно. Он **ничего не снимает**: по `data/repository-evidence-policy-v2.json` HOLD не снимается ни присутствием файла в Research/Drive, ни достижимостью URL, ни библиографической записью.
 
@@ -8,22 +8,22 @@
 
 | Метрика | Значение |
 |---|---|
-| JSON-файлов с HOLD-ами | 35 |
-| JSON-записей (объектов) с HOLD-ами | 2235 |
-| Всего HOLD-вхождений в `holds`-массивах | 6016 |
-| Markdown-файлов с типизированными токенами | 765 |
-| Всего типизированных токенов в Markdown/YAML | 7183 |
+| JSON-файлов с HOLD-ами | 39 |
+| JSON-записей (объектов) с HOLD-ами | 2243 |
+| Всего HOLD-вхождений в `holds`-массивах | 6036 |
+| Markdown-файлов с типизированными токенами | 780 |
+| Всего типизированных токенов в Markdown/YAML | 7404 |
 | Нетипизированных строк `HOLD` | 0 |
 
 По типам:
 
 | Тип | В JSON-реестрах | В Markdown/YAML | Маршрут закрытия |
 |---|---|---|---|
-| `EVIDENCE_HOLD` | 1117 | 1092 | EXTERNAL_EVIDENCE |
-| `LOCATOR_HOLD` | 236 | 1586 | EXTERNAL_LOCATOR |
-| `ARCHIVE_HOLD` | 1344 | 1177 | EXTERNAL_OBJECT |
-| `RIGHTS_HOLD` | 1355 | 1215 | EXTERNAL_RIGHTS |
-| `PUBLICATION_HOLD` | 1964 | 2113 | TERMINAL_BY_DEFAULT |
+| `EVIDENCE_HOLD` | 1123 | 1140 | EXTERNAL_EVIDENCE |
+| `LOCATOR_HOLD` | 238 | 1618 | EXTERNAL_LOCATOR |
+| `ARCHIVE_HOLD` | 1346 | 1197 | EXTERNAL_OBJECT |
+| `RIGHTS_HOLD` | 1360 | 1252 | EXTERNAL_RIGHTS |
+| `PUBLICATION_HOLD` | 1969 | 2197 | TERMINAL_BY_DEFAULT |
 
 Счётчики не суммировать: один и тот же HOLD описывается и в машинном реестре, и в досье, и в аудите.
 
@@ -39,14 +39,14 @@
 
 | Корпус | JSON-записей с HOLD | Markdown-токенов |
 |---|---|---|
-| `docs` | 219 | 2389 |
-| `ИСКУПЛЕНИЕ` | 526 | 1978 |
-| `БИОГРАФИИ` | 0 | 1329 |
-| `data` | 1248 | 1 |
+| `docs` | 219 | 2499 |
+| `ИСКУПЛЕНИЕ` | 526 | 1980 |
+| `БИОГРАФИИ` | 0 | 1385 |
+| `data` | 1254 | 1 |
 | `SUNO_HYMNS` | 223 | 618 |
 | `1КОРИНФЯНАМ_11_ПОКРЫВАЛО` | 0 | 217 |
+| `G3_HISTORY` | 2 | 195 |
 | `apostasy` | 0 | 183 |
-| `G3_HISTORY` | 0 | 142 |
 | `TEEN_DOUBLE_LIFE` | 0 | 58 |
 | `1_PETER_BOT` | 19 | 27 |
 | `LE_CANON_SUCRE` | 0 | 44 |

@@ -12,7 +12,7 @@
 
 | Файл | На какой вопрос отвечает | Роль | Ключевое число |
 |---|---|---|---|
-| `HOLD_INVENTORY.md` / `.json` | Сколько записей держат HOLD и где именно | **генерируется** `scripts/render_hold_inventory.py`, проверяется гейтом | 2 235 записей / 6 016 вхождений (число markdown-токенов не цитируется здесь: оно растёт от любого упоминания HOLD в любом `.md`, включая этот файл) |
+| `HOLD_INVENTORY.md` / `.json` | Сколько записей держат HOLD и где именно | **генерируется** `scripts/render_hold_inventory.py`, проверяется гейтом | 2 243 записей / 6 036 вхождений (число markdown-токенов не цитируется здесь: оно растёт от любого упоминания HOLD в любом `.md`, включая этот файл) |
 | `UNDER_ACQUIRED_WITHOUT_HOLD_TRIAGE_2026-11-18.md` | Сколько объектов не приобретено, а HOLD не выставлен, и почему это не одна ошибка | находка, решения ждут владельца | 51 запись с `holds: []`; **+52** без поля `holds`; **+83** называют HOLD прозой |
 | `RIGHTS_DETERMINATION_MATRIX_2026-11-18.md` | По каким слоям прав разложены 22 объекта, где права действительно возникают | предложение, HOLD не снимает | 22 объекта, 6 классов |
 | `CORPUS_CUSTODY_RECEIPTS_2026-11-18.md` | Что лежит на Drive, кем видно, чем подтверждено | квитанция хранения | 33 объекта квитанций; **доступ проверен у 48** (33 + 7 предков + 4 соседних папки + 4 корневых объекта); 12 разделов корпуса; §12 — оригинальный ZIP канала найден: `1kuW-24iE…`, 1 285 100 997 B, папка «00 — ORIGINAL ZIP — НЕ ИЗМЕНЯТЬ»; §13 — сверено **38 строк каталога из 5 941 (0,64 %)**, 37 совпали по полному SHA-256, расхождений 0 |
@@ -54,7 +54,7 @@ python3 -B scripts/run_research_gates.py            # 7 гейтов + 6 инф�
 python3 -B scripts/check_hold_doc_numbers.py --verbose       # 54 числа с их источниками
 python3 -B scripts/audit_hold_coverage_gaps.py --summary     # 51 и их раскладка
 python3 -B scripts/audit_hold_coverage_gaps.py --no-holds-field  # 52 без поля holds
-python3 -B scripts/audit_prose_holds.py --summary            # 83 с HOLD в прозе
+python3 -B scripts/audit_prose_holds.py --summary            # 91 с HOLD в прозе
 python3 -B scripts/audit_hold_coverage_gaps.py --promotion-gaps   # 1 PROMOTE с пробелом
 ```
 

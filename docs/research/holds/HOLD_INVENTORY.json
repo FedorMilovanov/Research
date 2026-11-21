@@ -3,27 +3,27 @@
  "artifact": "REPO-HOLD-INVENTORY",
  "role": "DERIVED_READ_ONLY_NOT_AUTHORITY",
  "generatedAt": "2026-11-21",
- "testedCommit": "3819e8d22624098c9c33fbd9ecfdb728b35a46b4",
+ "testedCommit": "4849a126121757a3020405944e6c19629a7169b7",
  "policy": "data/repository-evidence-policy-v2.json",
  "totals": {
-  "json_files_with_holds": 35,
-  "json_nodes_with_holds": 2235,
-  "json_hold_entries": 6016,
+  "json_files_with_holds": 39,
+  "json_nodes_with_holds": 2243,
+  "json_hold_entries": 6036,
   "json_hold_by_type": {
-   "ARCHIVE_HOLD": 1344,
-   "EVIDENCE_HOLD": 1117,
-   "LOCATOR_HOLD": 236,
-   "PUBLICATION_HOLD": 1964,
-   "RIGHTS_HOLD": 1355
+   "ARCHIVE_HOLD": 1346,
+   "EVIDENCE_HOLD": 1123,
+   "LOCATOR_HOLD": 238,
+   "PUBLICATION_HOLD": 1969,
+   "RIGHTS_HOLD": 1360
   },
-  "markdown_files_with_typed_tokens": 765,
-  "markdown_typed_tokens": 7183,
+  "markdown_files_with_typed_tokens": 780,
+  "markdown_typed_tokens": 7404,
   "markdown_typed_by_type": {
-   "ARCHIVE_HOLD": 1177,
-   "EVIDENCE_HOLD": 1092,
-   "LOCATOR_HOLD": 1586,
-   "PUBLICATION_HOLD": 2113,
-   "RIGHTS_HOLD": 1215
+   "ARCHIVE_HOLD": 1197,
+   "EVIDENCE_HOLD": 1140,
+   "LOCATOR_HOLD": 1618,
+   "PUBLICATION_HOLD": 2197,
+   "RIGHTS_HOLD": 1252
   },
   "bare_untyped_status_lines": 0
  },
@@ -53,8 +53,8 @@
    "markdown_hold_tokens": 15
   },
   "G3_HISTORY": {
-   "json_nodes_with_holds": 0,
-   "markdown_hold_tokens": 142
+   "json_nodes_with_holds": 2,
+   "markdown_hold_tokens": 195
   },
   "LE_CANON_SUCRE": {
    "json_nodes_with_holds": 0,
@@ -85,12 +85,12 @@
    "markdown_hold_tokens": 183
   },
   "data": {
-   "json_nodes_with_holds": 1248,
+   "json_nodes_with_holds": 1254,
    "markdown_hold_tokens": 1
   },
   "docs": {
    "json_nodes_with_holds": 219,
-   "markdown_hold_tokens": 2389
+   "markdown_hold_tokens": 2499
   },
   "БАПТИСТЫ РОССИИ": {
    "json_nodes_with_holds": 0,
@@ -98,11 +98,11 @@
   },
   "БИОГРАФИИ": {
    "json_nodes_with_holds": 0,
-   "markdown_hold_tokens": 1329
+   "markdown_hold_tokens": 1385
   },
   "ИСКУПЛЕНИЕ": {
    "json_nodes_with_holds": 526,
-   "markdown_hold_tokens": 1978
+   "markdown_hold_tokens": 1980
   },
   "ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ": {
    "json_nodes_with_holds": 0,
@@ -1368,8 +1368,8 @@
    "meaning": "accessState=FULL_OBJECT_VERIFIED и locatorState=EXACT_LOCATOR_VERIFIED, а holds ⊆ {RIGHTS_HOLD, PUBLICATION_HOLD}. Закрытие таких HOLD-ов — решение о правах и публикации, а не новый поиск.",
    "caveat": "Один и тот же объект может учитываться в двух реестрах корпуса (например, карточка и её снимок в плане), поэтому сумма — верхняя граница."
   },
-  "files_with_holds": 35,
-  "nodes_with_holds": 2235
+  "files_with_holds": 39,
+  "nodes_with_holds": 2243
  },
  "examinedCases": [
   {
