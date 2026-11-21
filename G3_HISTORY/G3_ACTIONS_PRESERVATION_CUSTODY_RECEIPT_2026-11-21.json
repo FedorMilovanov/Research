@@ -1,0 +1,465 @@
+{
+  "artifacts": [
+    {
+      "destinationBytes": 65346,
+      "destinationCreatedAtUtc": "2026-11-21T10:32:58.010Z",
+      "destinationMd5DriveMetadata": "45287d7aadf8b8dd6b785ec2c0c7169a",
+      "destinationObjectId": "1MFxriQsm-u1EW2dVy-dV-_IYrVplT88n",
+      "destinationObjectName": "g3-georgia-14304253824-original.zip",
+      "destinationParentId": "1ZI8zUVHDZEjg4TERnZ5i7_Vv9lbP93Kw",
+      "destinationPath": "04 — AuditRepo/G3-PRESERVATION-2026-11-21/g3-georgia-14304253824-original.zip",
+      "destinationProvider": "Google Drive",
+      "destinationSha256DriveMetadata": "2e7ba7d4cf5e447ab59af5e26a5dda6fac1eb6d4a675dee6f3698e06f04526f0",
+      "destinationSha256Readback": "2e7ba7d4cf5e447ab59af5e26a5dda6fac1eb6d4a675dee6f3698e06f04526f0",
+      "directPermissionCheck": {
+        "activePermission": {
+          "displayName": "Fedor",
+          "emailAddress": "oldpoet2025@gmail.com",
+          "role": "owner",
+          "type": "user"
+        },
+        "activePermissionCount": 1,
+        "method": "Google Drive list_permissions",
+        "publicOrDomainPermissionObserved": false
+      },
+      "driveMetadataMd5EqualsDestinationReadback": true,
+      "driveMetadataSha256EqualsDestinationReadback": true,
+      "githubActionsArtifactId": 14304253824,
+      "sourceArchiveBytes": 65346,
+      "sourceArchiveSha256ProviderMetadata": "2e7ba7d4cf5e447ab59af5e26a5dda6fac1eb6d4a675dee6f3698e06f04526f0",
+      "sourceArtifactApiDigest": "sha256:2e7ba7d4cf5e447ab59af5e26a5dda6fac1eb6d4a675dee6f3698e06f04526f0",
+      "sourceArtifactName": "g3-georgia-entity-44029722878-1",
+      "sourceExpirationAtUtc": "2026-11-24T06:14:43Z",
+      "sourceManifestSha256": "fd6638227dfdeac0314bbb2f4762ccac64cc7966d2c1a18ab1dede81fdda1be1",
+      "sourceProviderDigestEqualsDestinationReadback": true,
+      "sourceRepository": "FedorMilovanov/Research",
+      "sourceWorkflowDefinition": ".github/workflows/g3-georgia-entity-acquisition.yml",
+      "sourceWorkflowHeadSha": "a9ff7f63ad6828c525dd7fcb08380a1408c18e4c",
+      "sourceWorkflowRun": 44029722878,
+      "verifiedAtUtc": "2026-11-21T10:41:30Z",
+      "verifiedBy": "Arena.ai Agent Mode — local raw-byte SHA-256 and ZIP-integrity verifier",
+      "zipIntegrity": {
+        "extractedToFilesystem": false,
+        "memberCount": 18,
+        "method": "unzip -tqq plus Python zipfile.testzip()",
+        "passed": true,
+        "repacked": false,
+        "uncompressedBytes": 62684
+      }
+    },
+    {
+      "destinationBytes": 71689,
+      "destinationCreatedAtUtc": "2026-11-21T10:33:12.768Z",
+      "destinationMd5DriveMetadata": "d5ce34fc705464ed720b30a9748fca90",
+      "destinationObjectId": "1697zT11kVD0WeHIPbqGviUDHCMhSnRbu",
+      "destinationObjectName": "g3-georgia-14305050966-original.zip",
+      "destinationParentId": "1ZI8zUVHDZEjg4TERnZ5i7_Vv9lbP93Kw",
+      "destinationPath": "04 — AuditRepo/G3-PRESERVATION-2026-11-21/g3-georgia-14305050966-original.zip",
+      "destinationProvider": "Google Drive",
+      "destinationSha256DriveMetadata": "584db2d786761e03e277ea433d6b9128d9e3ee123503e80c006f6145297d9d59",
+      "destinationSha256Readback": "584db2d786761e03e277ea433d6b9128d9e3ee123503e80c006f6145297d9d59",
+      "directPermissionCheck": {
+        "activePermission": {
+          "displayName": "Fedor",
+          "emailAddress": "oldpoet2025@gmail.com",
+          "role": "owner",
+          "type": "user"
+        },
+        "activePermissionCount": 1,
+        "method": "Google Drive list_permissions",
+        "publicOrDomainPermissionObserved": false
+      },
+      "driveMetadataMd5EqualsDestinationReadback": true,
+      "driveMetadataSha256EqualsDestinationReadback": true,
+      "githubActionsArtifactId": 14305050966,
+      "sourceArchiveBytes": 71689,
+      "sourceArchiveSha256ProviderMetadata": "584db2d786761e03e277ea433d6b9128d9e3ee123503e80c006f6145297d9d59",
+      "sourceArtifactApiDigest": "sha256:584db2d786761e03e277ea433d6b9128d9e3ee123503e80c006f6145297d9d59",
+      "sourceArtifactName": "g3-georgia-entity-44029724036-1",
+      "sourceExpirationAtUtc": "2026-11-24T06:18:18Z",
+      "sourceManifestSha256": "fd6638227dfdeac0314bbb2f4762ccac64cc7966d2c1a18ab1dede81fdda1be1",
+      "sourceProviderDigestEqualsDestinationReadback": true,
+      "sourceRepository": "FedorMilovanov/Research",
+      "sourceWorkflowDefinition": ".github/workflows/g3-georgia-entity-acquisition.yml",
+      "sourceWorkflowHeadSha": "d993e45bd7ba42850f5ec462d9e5b9acf92f23f9",
+      "sourceWorkflowRun": 44029724036,
+      "verifiedAtUtc": "2026-11-21T10:41:30Z",
+      "verifiedBy": "Arena.ai Agent Mode — local raw-byte SHA-256 and ZIP-integrity verifier",
+      "zipIntegrity": {
+        "extractedToFilesystem": false,
+        "memberCount": 18,
+        "method": "unzip -tqq plus Python zipfile.testzip()",
+        "passed": true,
+        "repacked": false,
+        "uncompressedBytes": 69027
+      }
+    },
+    {
+      "destinationBytes": 575955,
+      "destinationCreatedAtUtc": "2026-11-21T10:33:17.795Z",
+      "destinationMd5DriveMetadata": "36f56abb4ebd04e921ad375c4c144bc2",
+      "destinationObjectId": "1jbKYAY22C2IGwD4_dVh4qEqGVif0_igO",
+      "destinationObjectName": "g3-douglas-14304413494-original.zip",
+      "destinationParentId": "1ZI8zUVHDZEjg4TERnZ5i7_Vv9lbP93Kw",
+      "destinationPath": "04 — AuditRepo/G3-PRESERVATION-2026-11-21/g3-douglas-14304413494-original.zip",
+      "destinationProvider": "Google Drive",
+      "destinationSha256DriveMetadata": "4dde4d8ef449fe6b2e62c686860fe624f749554768fb125cd1af5c6945e6f24c",
+      "destinationSha256Readback": "4dde4d8ef449fe6b2e62c686860fe624f749554768fb125cd1af5c6945e6f24c",
+      "directPermissionCheck": {
+        "activePermission": {
+          "displayName": "Fedor",
+          "emailAddress": "oldpoet2025@gmail.com",
+          "role": "owner",
+          "type": "user"
+        },
+        "activePermissionCount": 1,
+        "method": "Google Drive list_permissions",
+        "publicOrDomainPermissionObserved": false
+      },
+      "driveMetadataMd5EqualsDestinationReadback": true,
+      "driveMetadataSha256EqualsDestinationReadback": true,
+      "githubActionsArtifactId": 14304413494,
+      "sourceArchiveBytes": 575955,
+      "sourceArchiveSha256ProviderMetadata": "4dde4d8ef449fe6b2e62c686860fe624f749554768fb125cd1af5c6945e6f24c",
+      "sourceArtifactApiDigest": "sha256:4dde4d8ef449fe6b2e62c686860fe624f749554768fb125cd1af5c6945e6f24c",
+      "sourceArtifactName": "g3-douglas-property-44029722858-1",
+      "sourceExpirationAtUtc": "2026-11-24T06:15:22Z",
+      "sourceManifestSha256": "fd6638227dfdeac0314bbb2f4762ccac64cc7966d2c1a18ab1dede81fdda1be1",
+      "sourceProviderDigestEqualsDestinationReadback": true,
+      "sourceRepository": "FedorMilovanov/Research",
+      "sourceWorkflowDefinition": ".github/workflows/g3-douglas-property-acquisition.yml",
+      "sourceWorkflowHeadSha": "a9ff7f63ad6828c525dd7fcb08380a1408c18e4c",
+      "sourceWorkflowRun": 44029722858,
+      "verifiedAtUtc": "2026-11-21T10:41:30Z",
+      "verifiedBy": "Arena.ai Agent Mode — local raw-byte SHA-256 and ZIP-integrity verifier",
+      "zipIntegrity": {
+        "extractedToFilesystem": false,
+        "memberCount": 62,
+        "method": "unzip -tqq plus Python zipfile.testzip()",
+        "passed": true,
+        "repacked": false,
+        "uncompressedBytes": 567619
+      }
+    },
+    {
+      "destinationBytes": 396929,
+      "destinationCreatedAtUtc": "2026-11-21T10:33:15.626Z",
+      "destinationMd5DriveMetadata": "65b0c2b9ac60e1716d878c607ab4b3ad",
+      "destinationObjectId": "1v8wEqHq-XT52lN9DTNYza9uB7Lp5O1yl",
+      "destinationObjectName": "g3-douglas-14304577164-original.zip",
+      "destinationParentId": "1ZI8zUVHDZEjg4TERnZ5i7_Vv9lbP93Kw",
+      "destinationPath": "04 — AuditRepo/G3-PRESERVATION-2026-11-21/g3-douglas-14304577164-original.zip",
+      "destinationProvider": "Google Drive",
+      "destinationSha256DriveMetadata": "f5e5fcb1f104eb30fcbbf46bc9b8d14e86332615935b63b00381973d7835b792",
+      "destinationSha256Readback": "f5e5fcb1f104eb30fcbbf46bc9b8d14e86332615935b63b00381973d7835b792",
+      "directPermissionCheck": {
+        "activePermission": {
+          "displayName": "Fedor",
+          "emailAddress": "oldpoet2025@gmail.com",
+          "role": "owner",
+          "type": "user"
+        },
+        "activePermissionCount": 1,
+        "method": "Google Drive list_permissions",
+        "publicOrDomainPermissionObserved": false
+      },
+      "driveMetadataMd5EqualsDestinationReadback": true,
+      "driveMetadataSha256EqualsDestinationReadback": true,
+      "githubActionsArtifactId": 14304577164,
+      "sourceArchiveBytes": 396929,
+      "sourceArchiveSha256ProviderMetadata": "f5e5fcb1f104eb30fcbbf46bc9b8d14e86332615935b63b00381973d7835b792",
+      "sourceArtifactApiDigest": "sha256:f5e5fcb1f104eb30fcbbf46bc9b8d14e86332615935b63b00381973d7835b792",
+      "sourceArtifactName": "g3-douglas-property-44029723817-1",
+      "sourceExpirationAtUtc": "2026-11-24T06:17:29Z",
+      "sourceManifestSha256": "fd6638227dfdeac0314bbb2f4762ccac64cc7966d2c1a18ab1dede81fdda1be1",
+      "sourceProviderDigestEqualsDestinationReadback": true,
+      "sourceRepository": "FedorMilovanov/Research",
+      "sourceWorkflowDefinition": ".github/workflows/g3-douglas-property-acquisition.yml",
+      "sourceWorkflowHeadSha": "d993e45bd7ba42850f5ec462d9e5b9acf92f23f9",
+      "sourceWorkflowRun": 44029723817,
+      "verifiedAtUtc": "2026-11-21T10:41:30Z",
+      "verifiedBy": "Arena.ai Agent Mode — local raw-byte SHA-256 and ZIP-integrity verifier",
+      "zipIntegrity": {
+        "extractedToFilesystem": false,
+        "memberCount": 62,
+        "method": "unzip -tqq plus Python zipfile.testzip()",
+        "passed": true,
+        "repacked": false,
+        "uncompressedBytes": 388593
+      }
+    },
+    {
+      "destinationBytes": 1741,
+      "destinationCreatedAtUtc": "2026-11-21T10:33:25.478Z",
+      "destinationMd5DriveMetadata": "ca660c7d80ea19297ca686512cb16e47",
+      "destinationObjectId": "1LPRdlo9K9SjgLB_kxDK52gS9uhtwi4UB",
+      "destinationObjectName": "g3-inventory-14304975723-original.zip",
+      "destinationParentId": "1ZI8zUVHDZEjg4TERnZ5i7_Vv9lbP93Kw",
+      "destinationPath": "04 — AuditRepo/G3-PRESERVATION-2026-11-21/g3-inventory-14304975723-original.zip",
+      "destinationProvider": "Google Drive",
+      "destinationSha256DriveMetadata": "3c23fc4dc846623cb3bd5cd7693fced0ab324bd3a8d7307319a85bdb19fa42a4",
+      "destinationSha256Readback": "3c23fc4dc846623cb3bd5cd7693fced0ab324bd3a8d7307319a85bdb19fa42a4",
+      "directPermissionCheck": {
+        "activePermission": {
+          "displayName": "Fedor",
+          "emailAddress": "oldpoet2025@gmail.com",
+          "role": "owner",
+          "type": "user"
+        },
+        "activePermissionCount": 1,
+        "method": "Google Drive list_permissions",
+        "publicOrDomainPermissionObserved": false
+      },
+      "driveMetadataMd5EqualsDestinationReadback": true,
+      "driveMetadataSha256EqualsDestinationReadback": true,
+      "githubActionsArtifactId": 14304975723,
+      "sourceArchiveBytes": 1741,
+      "sourceArchiveSha256ProviderMetadata": "3c23fc4dc846623cb3bd5cd7693fced0ab324bd3a8d7307319a85bdb19fa42a4",
+      "sourceArtifactApiDigest": "sha256:3c23fc4dc846623cb3bd5cd7693fced0ab324bd3a8d7307319a85bdb19fa42a4",
+      "sourceArtifactName": "g3-content-inventory-2ebf700f4cebc18e0cf571f42591c042790a6efb",
+      "sourceExpirationAtUtc": "2026-11-24T06:15:02Z",
+      "sourceManifestSha256": "fd6638227dfdeac0314bbb2f4762ccac64cc7966d2c1a18ab1dede81fdda1be1",
+      "sourceProviderDigestEqualsDestinationReadback": true,
+      "sourceRepository": "FedorMilovanov/Research",
+      "sourceWorkflowDefinition": ".github/workflows/g3-content-inventory-acquisition.yml",
+      "sourceWorkflowHeadSha": "a9ff7f63ad6828c525dd7fcb08380a1408c18e4c",
+      "sourceWorkflowRun": 44029722794,
+      "verifiedAtUtc": "2026-11-21T10:41:30Z",
+      "verifiedBy": "Arena.ai Agent Mode — local raw-byte SHA-256 and ZIP-integrity verifier",
+      "zipIntegrity": {
+        "extractedToFilesystem": false,
+        "memberCount": 5,
+        "method": "unzip -tqq plus Python zipfile.testzip()",
+        "passed": true,
+        "repacked": false,
+        "uncompressedBytes": 2485
+      }
+    },
+    {
+      "destinationBytes": 1739,
+      "destinationCreatedAtUtc": "2026-11-21T10:33:23.128Z",
+      "destinationMd5DriveMetadata": "b955511da11723dde6483e6733389090",
+      "destinationObjectId": "1kgt6oTZnBcy7pjtT7OK0zI0aw3je3sUB",
+      "destinationObjectName": "g3-inventory-14305250133-original.zip",
+      "destinationParentId": "1ZI8zUVHDZEjg4TERnZ5i7_Vv9lbP93Kw",
+      "destinationPath": "04 — AuditRepo/G3-PRESERVATION-2026-11-21/g3-inventory-14305250133-original.zip",
+      "destinationProvider": "Google Drive",
+      "destinationSha256DriveMetadata": "924221c6d7e35c7cfbec941797ee1c8cc92f573d141032c0d60300e57155793d",
+      "destinationSha256Readback": "924221c6d7e35c7cfbec941797ee1c8cc92f573d141032c0d60300e57155793d",
+      "directPermissionCheck": {
+        "activePermission": {
+          "displayName": "Fedor",
+          "emailAddress": "oldpoet2025@gmail.com",
+          "role": "owner",
+          "type": "user"
+        },
+        "activePermissionCount": 1,
+        "method": "Google Drive list_permissions",
+        "publicOrDomainPermissionObserved": false
+      },
+      "driveMetadataMd5EqualsDestinationReadback": true,
+      "driveMetadataSha256EqualsDestinationReadback": true,
+      "githubActionsArtifactId": 14305250133,
+      "sourceArchiveBytes": 1739,
+      "sourceArchiveSha256ProviderMetadata": "924221c6d7e35c7cfbec941797ee1c8cc92f573d141032c0d60300e57155793d",
+      "sourceArtifactApiDigest": "sha256:924221c6d7e35c7cfbec941797ee1c8cc92f573d141032c0d60300e57155793d",
+      "sourceArtifactName": "g3-content-inventory-eb6f0f19b40f8a4bfe6eb54d2d2c253fdfdb3711",
+      "sourceExpirationAtUtc": "2026-11-24T06:16:18Z",
+      "sourceManifestSha256": "fd6638227dfdeac0314bbb2f4762ccac64cc7966d2c1a18ab1dede81fdda1be1",
+      "sourceProviderDigestEqualsDestinationReadback": true,
+      "sourceRepository": "FedorMilovanov/Research",
+      "sourceWorkflowDefinition": ".github/workflows/g3-content-inventory-acquisition.yml",
+      "sourceWorkflowHeadSha": "d993e45bd7ba42850f5ec462d9e5b9acf92f23f9",
+      "sourceWorkflowRun": 44029724082,
+      "verifiedAtUtc": "2026-11-21T10:41:30Z",
+      "verifiedBy": "Arena.ai Agent Mode — local raw-byte SHA-256 and ZIP-integrity verifier",
+      "zipIntegrity": {
+        "extractedToFilesystem": false,
+        "memberCount": 5,
+        "method": "unzip -tqq plus Python zipfile.testzip()",
+        "passed": true,
+        "repacked": false,
+        "uncompressedBytes": 2485
+      }
+    },
+    {
+      "destinationBytes": 871843,
+      "destinationCreatedAtUtc": "2026-11-21T10:33:27.870Z",
+      "destinationMd5DriveMetadata": "dd6af11e26969dc9f2f910e1e6ef5e1a",
+      "destinationObjectId": "1IAUUXmUcQJd5rK1LVfLy4huIb-UnFFJN",
+      "destinationObjectName": "g3-inventory-14304199942-original.zip",
+      "destinationParentId": "1ZI8zUVHDZEjg4TERnZ5i7_Vv9lbP93Kw",
+      "destinationPath": "04 — AuditRepo/G3-PRESERVATION-2026-11-21/g3-inventory-14304199942-original.zip",
+      "destinationProvider": "Google Drive",
+      "destinationSha256DriveMetadata": "5d37214fab54c1089f31bace33d4069c46d852e93f66f4fbd9a651bec8c02cde",
+      "destinationSha256Readback": "5d37214fab54c1089f31bace33d4069c46d852e93f66f4fbd9a651bec8c02cde",
+      "directPermissionCheck": {
+        "activePermission": {
+          "displayName": "Fedor",
+          "emailAddress": "oldpoet2025@gmail.com",
+          "role": "owner",
+          "type": "user"
+        },
+        "activePermissionCount": 1,
+        "method": "Google Drive list_permissions",
+        "publicOrDomainPermissionObserved": false
+      },
+      "driveMetadataMd5EqualsDestinationReadback": true,
+      "driveMetadataSha256EqualsDestinationReadback": true,
+      "githubActionsArtifactId": 14304199942,
+      "sourceArchiveBytes": 871843,
+      "sourceArchiveSha256ProviderMetadata": "5d37214fab54c1089f31bace33d4069c46d852e93f66f4fbd9a651bec8c02cde",
+      "sourceArtifactApiDigest": "sha256:5d37214fab54c1089f31bace33d4069c46d852e93f66f4fbd9a651bec8c02cde",
+      "sourceArtifactName": "g3-archive-content-inventory-44029724211-1",
+      "sourceExpirationAtUtc": "2026-11-24T06:18:47Z",
+      "sourceManifestSha256": "fd6638227dfdeac0314bbb2f4762ccac64cc7966d2c1a18ab1dede81fdda1be1",
+      "sourceProviderDigestEqualsDestinationReadback": true,
+      "sourceRepository": "FedorMilovanov/Research",
+      "sourceWorkflowDefinition": ".github/workflows/g3-archive-content-inventory-acquisition.yml",
+      "sourceWorkflowHeadSha": "d993e45bd7ba42850f5ec462d9e5b9acf92f23f9",
+      "sourceWorkflowRun": 44029724211,
+      "verifiedAtUtc": "2026-11-21T10:41:30Z",
+      "verifiedBy": "Arena.ai Agent Mode — local raw-byte SHA-256 and ZIP-integrity verifier",
+      "zipIntegrity": {
+        "extractedToFilesystem": false,
+        "memberCount": 10,
+        "method": "unzip -tqq plus Python zipfile.testzip()",
+        "passed": true,
+        "repacked": false,
+        "uncompressedBytes": 4505439
+      }
+    },
+    {
+      "destinationBytes": 821993,
+      "destinationCreatedAtUtc": "2026-11-21T10:33:32.514Z",
+      "destinationMd5DriveMetadata": "5f719dbf671b9d616df669597aad0243",
+      "destinationObjectId": "17t5bV03EK7hTp2PlkGhAcA1n6Cye5xjQ",
+      "destinationObjectName": "g3-inventory-14305021388-original.zip",
+      "destinationParentId": "1ZI8zUVHDZEjg4TERnZ5i7_Vv9lbP93Kw",
+      "destinationPath": "04 — AuditRepo/G3-PRESERVATION-2026-11-21/g3-inventory-14305021388-original.zip",
+      "destinationProvider": "Google Drive",
+      "destinationSha256DriveMetadata": "0413b1553f78cdd636affcaa315511960a20ff8ec468b85213f681091b4a1bda",
+      "destinationSha256Readback": "0413b1553f78cdd636affcaa315511960a20ff8ec468b85213f681091b4a1bda",
+      "directPermissionCheck": {
+        "activePermission": {
+          "displayName": "Fedor",
+          "emailAddress": "oldpoet2025@gmail.com",
+          "role": "owner",
+          "type": "user"
+        },
+        "activePermissionCount": 1,
+        "method": "Google Drive list_permissions",
+        "publicOrDomainPermissionObserved": false
+      },
+      "driveMetadataMd5EqualsDestinationReadback": true,
+      "driveMetadataSha256EqualsDestinationReadback": true,
+      "githubActionsArtifactId": 14305021388,
+      "sourceArchiveBytes": 821993,
+      "sourceArchiveSha256ProviderMetadata": "0413b1553f78cdd636affcaa315511960a20ff8ec468b85213f681091b4a1bda",
+      "sourceArtifactApiDigest": "sha256:0413b1553f78cdd636affcaa315511960a20ff8ec468b85213f681091b4a1bda",
+      "sourceArtifactName": "g3-archive-content-inventory-44029723187-1",
+      "sourceExpirationAtUtc": "2026-11-24T06:21:37Z",
+      "sourceManifestSha256": "fd6638227dfdeac0314bbb2f4762ccac64cc7966d2c1a18ab1dede81fdda1be1",
+      "sourceProviderDigestEqualsDestinationReadback": true,
+      "sourceRepository": "FedorMilovanov/Research",
+      "sourceWorkflowDefinition": ".github/workflows/g3-archive-content-inventory-acquisition.yml",
+      "sourceWorkflowHeadSha": "a9ff7f63ad6828c525dd7fcb08380a1408c18e4c",
+      "sourceWorkflowRun": 44029723187,
+      "verifiedAtUtc": "2026-11-21T10:41:30Z",
+      "verifiedBy": "Arena.ai Agent Mode — local raw-byte SHA-256 and ZIP-integrity verifier",
+      "zipIntegrity": {
+        "extractedToFilesystem": false,
+        "memberCount": 10,
+        "method": "unzip -tqq plus Python zipfile.testzip()",
+        "passed": true,
+        "repacked": false,
+        "uncompressedBytes": 3138975
+      }
+    }
+  ],
+  "custodyState": "ACQUIRED_DURABLE",
+  "destination": {
+    "custodyOwner": {
+      "displayName": "Fedor",
+      "emailAddress": "oldpoet2025@gmail.com",
+      "githubLoginAuthorityObserved": "FedorMilovanov"
+    },
+    "folderDirectPermissionCheck": {
+      "activePermission": {
+        "displayName": "Fedor",
+        "emailAddress": "oldpoet2025@gmail.com",
+        "role": "owner",
+        "type": "user"
+      },
+      "activePermissionCount": 1,
+      "method": "Google Drive list_permissions",
+      "publicOrDomainPermissionObserved": false
+    },
+    "parentAuditRepoFolder": {
+      "id": "1dvpLmTtcvQIMbAkp4bki4F9tVnyIWXEt",
+      "name": "04 — AuditRepo"
+    },
+    "preservationFolder": {
+      "id": "1ZI8zUVHDZEjg4TERnZ5i7_Vv9lbP93Kw",
+      "name": "G3-PRESERVATION-2026-11-21"
+    },
+    "provider": "Google Drive"
+  },
+  "historicalRecord": {
+    "boundary": "It accurately records the pre-transfer EOF blocker and is not this final receipt.",
+    "driveObjectId": "1C0jQvzpcsRYwlyf2zRQ5nPFVhQxmlTk_",
+    "name": "G3_MAX_PRESERVATION_DECISION_AND_TRANSFER_STATUS_2026-11-21.md",
+    "sha256": "7148b1e625fdfd19ddbd1278b0ed63418b01be68521b01020f8b82a4b33b2e7a",
+    "status": "RETAINED_UNMODIFIED_HISTORICAL_PRETRANSFER_BLOCKER_RECORD"
+  },
+  "policyAuthority": "RESEARCH-ARTIFACT-CUSTODY-POLICY-2026-08-02",
+  "policyRequiredReceiptFieldsLocation": "Each artifacts[] entry contains every field in durableReceiptRequiredFields.",
+  "publicationAndLegalBoundary": {
+    "catalogStatus": "CATALOG_ONLY",
+    "holds": [
+      "PUBLICATION_HOLD",
+      "RIGHTS_HOLD",
+      "EVIDENCE_HOLD"
+    ],
+    "publicationState": "BLOCKED",
+    "rightsState": "PRIVATE_STUDY_ONLY",
+    "statement": "This custody receipt proves a bounded private preservation/readback result only. It does not obtain an official Georgia filing body, a primary transition/assignment/purchase/donation/closing instrument, title, asset scope, publication authorization, rights clearance, or an evidentiary upgrade for any contained material."
+  },
+  "receiptId": "G3-ACTIONS-PRESERVATION-CUSTODY-RECEIPT-2026-11-21",
+  "schema": "g3-actions-preservation-custody-receipt-v1",
+  "scope": {
+    "artifactCountAuthorized": 8,
+    "artifactCountPresentAndVerified": 8,
+    "scopeRule": "This receipt covers only the eight enumerated original GitHub Actions ZIPs. It does not declare the complete G3 corpus, other first-cohort artifacts, or any non-enumerated object preserved.",
+    "sourceZipHandling": "Original ZIP custody only; no unpacking to a destination, modification, replacement, or repacking.",
+    "totalDestinationBytes": 2807235
+  },
+  "sourceManifest": {
+    "bytes": 13006,
+    "driveObjectId": "103kDGQvgdAOHBFqnbSWUxkDF1D4GysCb",
+    "drivePath": "04 — AuditRepo/G3-PRESERVATION-2026-11-21/G3_ACTIONS_PRESERVATION_SOURCE_MANIFEST_2026-11-21.json",
+    "driveRawReadbackVerified": true,
+    "repositoryPath": "G3_HISTORY/G3_ACTIONS_PRESERVATION_SOURCE_MANIFEST_2026-11-21.json",
+    "sha256": "fd6638227dfdeac0314bbb2f4762ccac64cc7966d2c1a18ab1dede81fdda1be1"
+  },
+  "sourceManifestSha256": "fd6638227dfdeac0314bbb2f4762ccac64cc7966d2c1a18ab1dede81fdda1be1",
+  "status": "ACQUIRED_DURABLE_8_OF_8_PRIVATE_DRIVE_READBACK_VERIFIED",
+  "verification": {
+    "externalSourceTransferAttestation": {
+      "reportedBy": "custody owner/user instruction in this session",
+      "reportedResult": "8/8 original GitHub Actions ZIPs externally acquired and uploaded; external source/readback SHA-256 matched 8/8; ZIP-integrity passed 8/8; unpack/repack none.",
+      "treatment": "Recorded as external attestation, not substituted for the sandbox raw-byte Drive verification described above."
+    },
+    "performedChecks": [
+      "Fetched each stored non-Workspace ZIP from the exact Google Drive object ID as raw bytes.",
+      "Calculated SHA-256 locally over each raw Drive readback and compared it with the GitHub Actions API digest pinned in the source manifest.",
+      "Compared each local SHA-256 and MD5 with Drive metadata from get_file.",
+      "Ran unzip -tqq and Python zipfile.testzip() against each raw readback without extracting files to a destination or repacking the archive.",
+      "Confirmed each ZIP parent ID, untrashed status, and direct owner-only permission using Google Drive metadata/list_permissions."
+    ],
+    "sourceDigestBoundary": "The in-sandbox equality is destination raw readback SHA-256 = GitHub Actions API artifact digest. The sandbox did not directly download the source-side GitHub ZIP after its original signed-store EOF; it therefore does not claim a locally observed source-side byte transfer.",
+    "verificationMethod": "CONNECTED_GOOGLE_DRIVE_RAW_DOWNLOAD_LOCAL_SHA256_COMPARISON_AND_ZIP_INTEGRITY_TEST",
+    "verifiedAtUtc": "2026-11-21T10:41:30Z",
+    "verifiedBy": "Arena.ai Agent Mode — local raw-byte SHA-256 and ZIP-integrity verifier"
+  }
+}

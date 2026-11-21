@@ -21,6 +21,9 @@ Repository evidence authority:
 - [`ENGINEERING_HARDENING_2026-09-08.md`](ENGINEERING_HARDENING_2026-09-08.md)
 - [`DURABLE_CUSTODY_POLICY.md`](DURABLE_CUSTODY_POLICY.md)
 - [`DURABLE_CUSTODY_MANIFEST.json`](DURABLE_CUSTODY_MANIFEST.json)
+- [`G3_ACTIONS_PRESERVATION_SOURCE_MANIFEST_2026-11-21.json`](G3_ACTIONS_PRESERVATION_SOURCE_MANIFEST_2026-11-21.json) — exact eight-ZIP source provenance
+- [`G3_ACTIONS_PRESERVATION_CUSTODY_RECEIPT_2026-11-21.json`](G3_ACTIONS_PRESERVATION_CUSTODY_RECEIPT_2026-11-21.json) — private durable custody and bounded raw-byte readback
+- [`G3_ACTIONS_2026-11-24_EXPIRY_COHORT_ASSESSMENT_2026-11-21.md`](G3_ACTIONS_2026-11-24_EXPIRY_COHORT_ASSESSMENT_2026-11-21.md) — metadata-only wider-expiry cohort, not preserved by eight-object receipt
 
 ## Non-negotiable research rules
 
@@ -137,6 +140,10 @@ The remaining P0 uncertainty is no longer ordinary search debt. It requires genu
 4. **Crisis-day board:** another dated primary object after July 21.
 5. **2025 director transitions:** resignation/minutes/appointment instruments or authorized filing history.
 
+### Bounded Actions-artifact preservation (Research-only, 2026-11-21)
+
+The exact eight original GitHub Actions ZIP byte streams (2,807,235 bytes in total) have a separately verified private custody receipt. The SHA-256 of all eight local original ZIP bytes was independently recalculated and matched to each recorded source-manifest digest, and non-extracting ZIP integrity checks passed 8/8. The receipt's separate Google Drive readback and owner-only permission checks remain attributed to their recorded attestation; repository CI does not claim to have reread Drive live. This preserves these eight byte streams only — **not the entire G3 evidence corpus**, publication rights, legal title, Q005 or Q006. Evidence/rights/publication HOLD and the unchanged 9 September Product handoff remain in force.
+
 See [`OPEN_QUESTIONS.md`](OPEN_QUESTIONS.md) and [`P0_CLOSURE_CHECKPOINT_2026-09-08.md`](P0_CLOSURE_CHECKPOINT_2026-09-08.md) for the route-exhaustion state machine.
 
 ## Corpus map
@@ -152,6 +159,9 @@ See [`OPEN_QUESTIONS.md`](OPEN_QUESTIONS.md) and [`P0_CLOSURE_CHECKPOINT_2026-09
 - [`ENGINEERING_HARDENING_2026-09-08.md`](ENGINEERING_HARDENING_2026-09-08.md)
 - [`DURABLE_CUSTODY_POLICY.md`](DURABLE_CUSTODY_POLICY.md)
 - [`DURABLE_CUSTODY_MANIFEST.json`](DURABLE_CUSTODY_MANIFEST.json)
+- [`G3_ACTIONS_PRESERVATION_SOURCE_MANIFEST_2026-11-21.json`](G3_ACTIONS_PRESERVATION_SOURCE_MANIFEST_2026-11-21.json) — exact eight-ZIP source provenance
+- [`G3_ACTIONS_PRESERVATION_CUSTODY_RECEIPT_2026-11-21.json`](G3_ACTIONS_PRESERVATION_CUSTODY_RECEIPT_2026-11-21.json) — private durable custody and bounded raw-byte readback
+- [`G3_ACTIONS_2026-11-24_EXPIRY_COHORT_ASSESSMENT_2026-11-21.md`](G3_ACTIONS_2026-11-24_EXPIRY_COHORT_ASSESSMENT_2026-11-21.md) — metadata-only wider-expiry cohort, not preserved by eight-object receipt
 
 ### Finance / governance / assets
 
