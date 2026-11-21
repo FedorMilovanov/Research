@@ -1,20 +1,20 @@
 # #621 → #584: карта выборочной интеграции, без wholesale merge
 
 **Дата проверки:** 2026-11-18  
-**Целевое дерево:** `#584 @ 3837d973b625307e4ae66d39b51f85bec9270968` поверх `main @ 3ce8c29ad3d04ae3a5f37897096ac324bbf35b0d`
+**Целевое дерево:** `main @ 8d2bc9709531743be905aaabbb70b3ead54dc683` после слияния `#584`
 **Источник:** `#621 @ 1bb893a95b499237afe5e086c016e3ef9da64b8d`  
 **Редакционный владелец пересечений SUNO:** `#585 @ 35260487d767c38c9709656d343ccf474713128a`  
 **Роль документа:** интеграционная карта. Она не создаёт второй HOLD-реестр, не снимает HOLD, не разрешает публикацию и не разрешает целиком сливать #621.
 
 ## 1. Короткий вывод
 
-GitHub API для точного head #621 перечисляет 50 путей: 32 новых и 18 изменённых. Все 32 новых пути отсутствуют в целевом дереве. В scratch-дереве «актуальный #584 + только 32 новых пути» все девять новых Python-скриптов компилируются, но общий раннер проходит лишь четыре гейта из семи. Падают:
+GitHub API для точного head #621 перечисляет 50 путей: 32 новых и 18 изменённых. Все 32 новых пути отсутствуют в целевом дереве. В scratch-дереве «актуальный `main` после #584 + только 32 новых пути» все девять новых Python-скриптов компилируются, но общий раннер проходит лишь четыре гейта из семи. Падают:
 
 1. `render_hold_inventory.py --check`: оба производных файла инвентаря уже не описывают текущее дерево;
 2. `check_hold_doc_numbers.py`: 13 из 54 утверждений не воспроизводятся (часть чисел устарела, часть источников существует только вместе с изменёнными файлами #621);
 3. `check_drive_mirror_pairs.py --cross`: 12 из 13 пар расходятся с актуальными корпусом или индексом.
 
-Полное scratch-слияние #621 в актуальный #584 не является даже текстово бесконфликтным: ровно два конфликта — `ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json` и `ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json`. После сохранения актуальных версий этих двух производных JSON и пересъёма командой `atonement_reshoot_state.py --write` проверка `--check` и 230 тестов `test_atonement_sync.py` проходят. Это доказывает способ механического разрешения, но не принимает спорную исходную прозу #621.
+Полное scratch-слияние #621 в актуальный `main` после #584 не является даже текстово бесконфликтным: ровно два конфликта — `ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json` и `ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json`. После сохранения актуальных версий этих двух производных JSON и пересъёма командой `atonement_reshoot_state.py --write` проверка `--check` и 230 тестов `test_atonement_sync.py` проходят. Это доказывает способ механического разрешения, но не принимает спорную исходную прозу #621.
 
 **Решение:** один узкий пакет готов к отдельной приёмке (`ADMIT`); остальные девять пакетов остаются `HOLD`. Ничего из #621 в #584 этим документом не перенесено.
 
@@ -171,7 +171,7 @@ git fetch origin refs/pull/621/head:refs/remotes/origin/pr-621
 git fetch origin refs/pull/585/head:refs/remotes/origin/pr-585
 
 # added-only combined tree
-git worktree add --detach /tmp/pr621-combined 3837d973b625307e4ae66d39b51f85bec9270968
+git worktree add --detach /tmp/pr621-combined 8d2bc9709531743be905aaabbb70b3ead54dc683
 cd /tmp/pr621-combined
 base=$(git merge-base HEAD refs/remotes/origin/pr-621)
 git diff --name-only --diff-filter=A -z "$base" refs/remotes/origin/pr-621 \
@@ -179,7 +179,7 @@ git diff --name-only --diff-filter=A -z "$base" refs/remotes/origin/pr-621 \
 python3 -B scripts/run_research_gates.py --verbose
 
 # full scratch merge: не коммитить и не переносить как merge
-git worktree add --detach /tmp/pr621-full-combined 3837d973b625307e4ae66d39b51f85bec9270968
+git worktree add --detach /tmp/pr621-full-combined 8d2bc9709531743be905aaabbb70b3ead54dc683
 git -C /tmp/pr621-full-combined merge --no-commit --no-ff refs/remotes/origin/pr-621
 ```
 
