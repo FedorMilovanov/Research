@@ -119,4 +119,6 @@ FY25 $399,645/$950,642 −$550,997 net $304,459 receivable $153,000 income $15,3
 
 *Обновление 2026-11-20 (ультра-синхронизация канона 7 доков):* `TIMELINE.md` (8-phase 2011→2019-06-06→Oct28) + `IDEOLOGY_AND_COALITION.md` (left/right flank + protocol HOLD) + `FINAL_P0_HOLD_MATRIX` (overlay 2e164d6) — 7 канонов теперь синхронизированы, WAVE-пролiferation остановлена.
 
+*Обновление 2026-11-20 (мощная контент-синхронизация):* `FINANCES.md` + `GOVERNANCE.md` получили substantive overlay Q005/Q006/Q006A Nov15 (Oct28 32257311 NO_DISSOLUTION vs successor HOLD, deed 4979 403, July21 board OPEN) + reserves fragility — больше за проход внутри старых файлов.
+
 *Подпись:* Agent №4 SCOUT — консолидация 11–18, дальше обновления в канон.

@@ -214,6 +214,8 @@ The corporate documents/status do not identify the 2026 recipient of G3+, G3 Pre
 - `H-FIN-07` — the property sale/loss or Schedule L salary disclosure proves fraud/diversion/private enrichment: **UNSUPPORTED**.
 - `H-FIN-08` — Living Heritage’s 2025 separation proves it became the 2026 G3+/Press successor: **UNSUPPORTED / Q006 remains open**.
 
+**2026-11-20 overlay (Q005/Q006/Q006A Nov15):** Georgia filings 32257311/32260917/32269080: **G3→Lumena Inc. rename effective Oct28 2026 NO_DISSOLUTION** (G3-S144) couples with Press `new form new leadership under Lumena` (G3-S142) — corporation vs asset successor are distinct holdings. Q005 status ACCESS_HOLD (seal 2026-09-09 still Active/Compliance, later dissolution filing not returned; detail 403, index bodies 404). Q006 transferee/terms/document HOLD — three formulations compatible none-selecting. Q006A parcel 4979 Highway 5 still 403 guardrail (GSCCCA/qPublic 34270062808) — deed/grantee/note HOLD preserved. Reserves $1.319м→$304k fragility predates scandal, not proof of fraud (FY23 Part III 8,300 +211 network still delivered).
+
 ## Remaining high-value financial acquisitions
 
 1. exact property parcel/legal description and deed chain;
