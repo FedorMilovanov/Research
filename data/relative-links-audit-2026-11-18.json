@@ -3,31 +3,31 @@
   "authorityId": "RESEARCH-RELATIVE-LINKS-INVENTORY-V1",
   "root": ".",
   "scope": {
-    "markdownFiles": 2418
+    "markdownFiles": 2423
   },
   "totals": {
     "byState": {
-      "resolves": 3163,
+      "resolves": 3187,
       "missing": 58,
       "outside": 0,
       "unqualified": 0,
-      "external": 5997,
+      "external": 6570,
       "missing-anchor": 0,
       "fragment": 28,
       "missing-fragment": 0
     },
     "byKind": {
-      "external": 5997,
+      "external": 6570,
       "fragment": 28,
       "missing": 58,
-      "resolves": 3163
+      "resolves": 3187
     },
     "defects": 58,
     "fragments": {
-      "total": 46,
+      "total": 48,
       "inPage": 28,
-      "crossFile": 18,
-      "resolved": 46,
+      "crossFile": 20,
+      "resolved": 48,
       "unresolved": 0,
       "note": "Links whose target carries a #fragment; in-page anchors are reported, not counted as defects."
     },

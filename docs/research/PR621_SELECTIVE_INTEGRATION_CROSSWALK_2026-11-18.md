@@ -1,7 +1,7 @@
 # #621 → #584: карта выборочной интеграции, без wholesale merge
 
 **Дата проверки:** 2026-11-18  
-**Целевое дерево:** `#584 @ 2060c43b50cadba37634559365e72bee455ad88c` поверх `main @ 0cb65c0cf7b143b89647a5ac6047cee6002f9bd0`  
+**Целевое дерево:** `#584 @ 89de617acbc4c6211421ed318f6b4d42f74df06c` поверх `main @ e9e4facbea74ca7bd4a2469bafd2f8c1e1bc2aba`
 **Источник:** `#621 @ 1bb893a95b499237afe5e086c016e3ef9da64b8d`  
 **Редакционный владелец пересечений SUNO:** `#585 @ 35260487d767c38c9709656d343ccf474713128a`  
 **Роль документа:** интеграционная карта. Она не создаёт второй HOLD-реестр, не снимает HOLD, не разрешает публикацию и не разрешает целиком сливать #621.
@@ -23,7 +23,7 @@ GitHub API для точного head #621 перечисляет 50 путей:
 | Пакет | Путей | Зависимости и проверка на актуальном дереве | Владелец | Решение |
 |---|---:|---|---|---|
 | STEPBible subdataset terms | 2 | Только stdlib и закреплённый ZIP. `--check` = 0; ZIP заново скачан по pinned commit, размер и SHA-256 совпали; генерация дала JSON, структурно равный закоммиченному | #584, read-only rights evidence | **ADMIT** после отдельной приёмки |
-| Actions artifact custody | 3 | Live GitHub API + датированный JSON/Markdown. Снимок #621 знает старую совокупность артефактов и не подтверждает байтовый readback; последующие owner-комментарии фиксируют отдельные когорты `g3-*` | custody owner | **HOLD** |
+| Actions artifact custody | 3 | Снимок #621 устарел и не подтверждает байтовый readback. Актуальный main уже содержит bounded assessment 38 G3 items, отдельную квитанцию private readback 8/8 и канонический durable manifest; `validate_g3_durable_custody.py` = PASS | G3 custody owner | **HOLD**, не дублировать текущий main |
 | Corpus/Drive custody и пары зеркал | 8 | Датированный Drive-снимок, текущие corpus/index JSON и изменённые валидаторы #621. `--cross` на актуальном дереве: 12/13 расходятся | custody owner + владельцы корпусов | **HOLD** |
 | Official-core reproducibility | 3 | Данные и проза есть, но отдельного генератора/полного `--check` для всех трёх архивов в пакете нет; один STEPBible-пункт проверяется соседним скриптом | #584, read-only evidence | **HOLD** до собственного воспроизводимого гейта |
 | Rights proposal | 3 | `render_rights_matrix.py --check` проходит, но импортирует не принятый `render_hold_inventory.py`; это предложение, а не authority | #584 | **HOLD** до отделения от непринятого inventory-слоя |
@@ -69,6 +69,8 @@ python3 -B scripts/stepbible_subdataset_terms.py --check
 - `scripts/audit_artifact_custody.py`
 - `data/artifact-custody-snapshot-2026-11-18.json`
 - `docs/research/holds/ARTIFACT_CUSTODY_SNAPSHOT_2026-11-18.md`
+
+Актуальная замена уже находится в main: `G3_HISTORY/G3_ACTIONS_2026-11-24_EXPIRY_COHORT_ASSESSMENT_2026-11-21.md` отделяет 8 сохранённых объектов от 30 несохранённых; `G3_ACTIONS_PRESERVATION_CUSTODY_RECEIPT_2026-11-21.json` имеет статус `ACQUIRED_DURABLE_8_OF_8_PRIVATE_DRIVE_READBACK_VERIFIED`. Это закрывает старые комментарии о восьми приоритетных artifacts, но не объявляет сохранёнными остальные 30 и не снимает `PUBLICATION_HOLD`/`RIGHTS_HOLD`.
 
 **Corpus/Drive custody и пары зеркал (8):**
 
@@ -169,7 +171,7 @@ git fetch origin refs/pull/621/head:refs/remotes/origin/pr-621
 git fetch origin refs/pull/585/head:refs/remotes/origin/pr-585
 
 # added-only combined tree
-git worktree add --detach /tmp/pr621-combined 2060c43b50cadba37634559365e72bee455ad88c
+git worktree add --detach /tmp/pr621-combined 89de617acbc4c6211421ed318f6b4d42f74df06c
 cd /tmp/pr621-combined
 base=$(git merge-base HEAD refs/remotes/origin/pr-621)
 git diff --name-only --diff-filter=A -z "$base" refs/remotes/origin/pr-621 \
@@ -177,7 +179,7 @@ git diff --name-only --diff-filter=A -z "$base" refs/remotes/origin/pr-621 \
 python3 -B scripts/run_research_gates.py --verbose
 
 # full scratch merge: не коммитить и не переносить как merge
-git worktree add --detach /tmp/pr621-full-combined 2060c43b50cadba37634559365e72bee455ad88c
+git worktree add --detach /tmp/pr621-full-combined 89de617acbc4c6211421ed318f6b4d42f74df06c
 git -C /tmp/pr621-full-combined merge --no-commit --no-ff refs/remotes/origin/pr-621
 ```
 

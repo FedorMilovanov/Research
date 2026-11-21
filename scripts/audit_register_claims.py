@@ -194,7 +194,7 @@ PROSE_CLAIMS: list[dict] = [
      "pattern": r"В (?P<n>\d+) JSON-файлах",
      "artefact": INVENTORY, "field": "totals.filesWithJsonHolds"},
     {"id": "json-holds-values",
-     "pattern": r"содержат (?P<n>[\d\s\u2009]+) значений",
+     "pattern": r"содержат (?P<n>[\d\s\u2009]+) значени[йя]",
      "artefact": INVENTORY, "field": "totals.jsonHoldsTotal"},
     {"id": "hold-vocabulary-values",
      "pattern": r"из них \*\*(?P<n>\d+) \(",

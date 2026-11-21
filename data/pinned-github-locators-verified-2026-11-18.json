@@ -5,14 +5,14 @@
   "method": "gh api contents?ref=<commit> with raw media type; size and SHA-256 recomputed locally; claims read from the same line only",
   "offline": false,
   "totals": {
-    "locators": 17,
+    "locators": 20,
     "match": 4,
     "mismatch": 0,
-    "unclaimed": 13,
+    "unclaimed": 16,
     "unavailable": 0,
     "notChecked": 0,
-    "citations": 20,
-    "citationFiles": 8
+    "citations": 23,
+    "citationFiles": 10
   },
   "limits": [
     "Совпадение хеша доказывает байты объекта на закреплённом коммите, а не прочтение содержания.",
@@ -20,6 +20,63 @@
     "URL без закреплённого коммита этим инструментом не проверяются: у них нет версии."
   ],
   "locators": [
+    {
+      "file": "G3_HISTORY/SOURCE_LEDGER.md",
+      "line": 75,
+      "repo": "FedorMilovanov/Research",
+      "commit": "d3d071646f9708b1327a14c2cc15007b97be23e7",
+      "path": "G3_HISTORY/SOURCE_LEDGER.md",
+      "url": "https://github.com/FedorMilovanov/Research/blob/d3d071646f9708b1327a14c2cc15007b97be23e7/G3_HISTORY/SOURCE_LEDGER.md",
+      "claimedSha256": null,
+      "claimedBytes": null,
+      "citations": [
+        {
+          "file": "G3_HISTORY/SOURCE_LEDGER.md",
+          "line": 75
+        }
+      ],
+      "state": "unclaimed",
+      "fetchedBytes": 44074,
+      "fetchedSha256": "48887dab8d8d1131e9bbe3975e13bda2cb6ac69b5c34b662112f46992ab2b595"
+    },
+    {
+      "file": "G3_HISTORY/drafts/B_CORRECTIONS_REVIEW.md",
+      "line": 3,
+      "repo": "FedorMilovanov/Research",
+      "commit": "43f13a21da6fd59d1fedea9de78a1c8f97a4f37e",
+      "path": "G3_HISTORY/drafts/B_CORRECTIONS_REVIEW.md",
+      "url": "https://github.com/FedorMilovanov/Research/blob/43f13a21da6fd59d1fedea9de78a1c8f97a4f37e/G3_HISTORY/drafts/B_CORRECTIONS_REVIEW.md",
+      "claimedSha256": null,
+      "claimedBytes": null,
+      "citations": [
+        {
+          "file": "G3_HISTORY/drafts/B_CORRECTIONS_REVIEW.md",
+          "line": 3
+        }
+      ],
+      "state": "unclaimed",
+      "fetchedBytes": 7151,
+      "fetchedSha256": "96d3689a494b0dc0936d79729745f0ad8c160b8dbc2a4146804ea5efa2ec409a"
+    },
+    {
+      "file": "G3_HISTORY/drafts/B_CORRECTIONS_REVIEW.md",
+      "line": 3,
+      "repo": "FedorMilovanov/gb-is-my-strength",
+      "commit": "e733dd29f6186801eff9260365eeff8e72d4da0c",
+      "path": "src/components/journal/G3Dossier.astro",
+      "url": "https://github.com/FedorMilovanov/gb-is-my-strength/blob/e733dd29f6186801eff9260365eeff8e72d4da0c/src/components/journal/G3Dossier.astro",
+      "claimedSha256": null,
+      "claimedBytes": null,
+      "citations": [
+        {
+          "file": "G3_HISTORY/drafts/B_CORRECTIONS_REVIEW.md",
+          "line": 3
+        }
+      ],
+      "state": "unclaimed",
+      "fetchedBytes": 40757,
+      "fetchedSha256": "61a19fcb0385cc476f87fa60b51872a3af087c50bb247e013d650dd22989caf2"
+    },
     {
       "file": "STEVE_LAWSON/87_NOV2026_ELDERS_LETTER_SOURCE_DEPENDENCY_AND_RESTORATION_SCOPE_2026-11-13.md",
       "line": 226,
