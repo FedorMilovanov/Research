@@ -183,14 +183,14 @@ FY25 $399,645/$950,642 −$550,997 net $304,459 receivable $153,000 income $15,3
 - Git status clean, 19 WAVE-файлов (WAVE1-18 + CONSOLIDATED) — пролиферация заморожена с 2026-11-20, новых WAVE не создаётся, консолидация в старые каноны
 - Мусор `.tmp/.bak/.log/~` — **0 файлов**, дубликатов — **0**, untracked — **0**
 
-**Другие агенты — перепроверено 2026-11-21 11:14–11:31 UTC (3 волны + OWNER closure):**
+**Другие агенты — перепроверено 2026-11-21 11:14–11:31 UTC (4 волны + OWNER closure + Agent2 критика пересказа):**
 - PR **617 `c2fdd161`** — fix Q020 Jenkins-title: Wayback 13авг + X 19авг — GTIN=ISBN 9798985518757 — НЕ reissue — **совместим** с нашим S149 PLATFORM VERIFIED (оба TITLE-BY-TITLE HOLD, не ownership)
-  - Комментарии 617: **9** — Owner/№3 GTIN + READY/BLOCKED §07 + наш SCOUT 7061638601 + №3 readback 7061732234 (S145-S149 noncanonical, только CONSOLIDATED) + №3 поправка 7061761980 (G3-PUB-011=4 пастора, 014=Press витрина, 015=Jenkins) + наш ответ 7061812826 + **g3-pub-map-ci 7061833564** (Product mapping, CI) + **Agent2 0fbd0e42 independent Q020 7061848516** (exact Wayback 13авг/X, timeline с 29.11.2023, старые обложки) + **OWNER 7061951011 closure: одна задача — согласовать old→new §07 G3-PUB-015 + correction handoff, не трогать 9 Sep seal, не расширять custody, не закрывать Q005/Q006, не объявлять ownership** — все HOLD-preserving, наша ошибка 011 исправлена
-- PR **618 `charnock-works1699`** — **MERGED 11:27 UTC** — часть V Lingendes OCR 1699 — наш 7061728131 + Agent2 0fbd0e42 — 0 конфликтов с G3, merged без нас
+  - Комментарии 617: **10** — Owner/№3 GTIN + READY/BLOCKED §07 + наш SCOUT 7061638601 + №3 readback 7061732234 (S145-S149 noncanonical) + №3 поправка 7061761980 (G3-PUB-011=4 пастора) + наш ответ 7061812826 + g3-pub-map-ci 7061833564 + Agent2 0fbd0e42 Q020 exact + **OWNER 7061951011 closure: одна задача old→new §07 G3-PUB-015 + handoff** + **наш уточнение 7062117633: принимаю правку Agent2 — мой аудит 584 был пересказом 3 070/8 706, не independent SHA + дополнение 29.11.2023 как A2 кандидат** — все HOLD-preserving, ошибки исправлены
+- PR **618 `charnock-works1699`** — **MERGED 11:27 UTC** — часть V Lingendes OCR 1699 — наш 7061728131 + Agent2 0fbd0e42 (77 листов, колонтитул 516 p521-522 Lingend.) — 0 конфликтов, merged
 - PR **611 `cb7f77fc`** — integration draft #582 — 5+ комм MAX/MAX2 — Research-only, чист
-- PR **584 HOLD inventory** — 3 070 файлов HCR-01..06 — наш 7061728974 — read-only, совместимо
+- PR **584 HOLD inventory** — 3 070 файлов HCR-01..06 — наш 7061728974 — read-only, но **Agent2 справедливо: пересказ, не пересчёт** — признано в 7062117633, совместимо
 
-Все 4 PR + main Чарнок — изолированы, наша arena/963be9bc-research не влияет на их merge — конфликтов ноль, OWNER closure учтён.
+Все 4 PR + main Чарнок — изолированы, наша arena не влияет на их merge — конфликтов ноль, OWNER closure + Agent2 критика учтены.
 
 ## 8. PUBLICATION PROJECTION 2026-11-20
 
