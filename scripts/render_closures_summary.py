@@ -49,6 +49,7 @@ METHOD_NAMES = {
     "unclaimed-reason-classification": "классификация строк",
     "relative-link-audit": "проверка относительных ссылок",
     "hold-vocabulary-mapping": "соответствие неканонических значений `holds`",
+    "record-context-classification": "контекстная классификация по record key",
     "ci-trigger-dependency-audit": "сверка триггеров CI с зависимостями гейтов",
     "self-confirmation-regression": "регрессия на самоподтверждение",
     "confirmation-counter-audit": "счётчики подтверждений против артефактов",
@@ -62,6 +63,8 @@ METHOD_NAMES = {
     # in a Russian sentence - the kind of omission a reader reads as a missing translation
     # rather than a missing fact. A test now fails when a method has no name.
     "pinned-commit-raw-fetch-and-rehash": "скачивание закреплённого коммита и пересчёт байтов",
+    "pinned-commit-subdataset-terms-audit": "карта условий поднаборов закреплённого коммита",
+    "fresh-shallow-clone-refspec-fixture": "восстановление ветки в свежем shallow-clone fixture",
     "section-anchor-slug-check": "сверка якорей по заголовкам раздела",
     "google-drive-server-metadata-read": "чтение серверных метаданных Drive",
 }

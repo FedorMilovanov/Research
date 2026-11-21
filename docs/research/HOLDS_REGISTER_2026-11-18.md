@@ -11,9 +11,9 @@
 <!-- closures-summary:begin -->
 ## 0. Карта закрытий (генерируется; не редактировать руками)
 
-Закрытий: **29**. Подтверждений без закрытия: **4**. Открытых пунктов по существу: **5**.
+Закрытий: **35**. Подтверждений без закрытия: **4**. Открытых пунктов по существу: **5**.
 
-Типы HOLD: `ARCHIVE_HOLD` — 8, `EVIDENCE_HOLD` — 16, `LOCATOR_HOLD` — 4, `TEXT_INTEGRITY_HOLD` — 1 (ось реестра, не флаг политики).
+Типы HOLD: `ARCHIVE_HOLD` — 11, `EVIDENCE_HOLD` — 19, `LOCATOR_HOLD` — 4, `TEXT_INTEGRITY_HOLD` — 1 (ось реестра, не флаг политики).
 
 | № | Ось | HOLD | Чем проверено | Где запись |
 |---|---|---|---|---|
@@ -46,6 +46,12 @@
 | 27 | Само-счётчики удалены из реестра и из прозы: два из пяти уже разошлись | `EVIDENCE_HOLD` | счётчики против артефактов | `docs/research/HOLDS_REGISTER_2026-11-18.md §31`, `data/hold-closure-registry-v1.json` и ещё 1 |
 | 28 | Правило «число тестов — тоже счётчик» применялось к одному предложению; три из шести цитат разошлись | `EVIDENCE_HOLD` | счётчики против артефактов | `docs/research/HOLDS_REGISTER_2026-11-18.md §32`, `scripts/test_audit_register_claims.py` и ещё 1 |
 | 29 | Аудит собственной работы: мутации нашли три проверки, которые ничего не проверяли | `EVIDENCE_HOLD` | счётчики против артефактов | `docs/research/HOLDS_REGISTER_2026-11-18.md §33`, `scripts/render_closures_summary.py` и ещё 3 |
+| 30 | Неклассифицированные употребления `HOLD` и `FORBIDDEN` прочитаны по record key | `EVIDENCE_HOLD` | контекстная классификация по record key | `docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md §2`, `data/hold-value-mapping-proposal-v1.json` и ещё 2 |
+| 31 | Точный редакционный архив Чарнока получил durable Drive readback | `ARCHIVE_HOLD` | скачивание и пересчёт байтов | `data/charnock-editorial-book-receipt-v1-20261121.json`, `.github/workflows/charnock-editorial-book-custody.yml` и ещё 1 |
+| 32 | STEPBible: вопрос «проверить каждый поднабор» превращён в воспроизводимую карту заявленных условий | `EVIDENCE_HOLD` | карта условий поднаборов закреплённого коммита | `data/stepbible-subdataset-terms-2026-11-18.json`, `scripts/stepbible_subdataset_terms.py` и ещё 3 |
+| 33 | Official core: три carrier из истекающего CI artifact воспроизводятся по pinned Git commits | `ARCHIVE_HOLD` | скачивание закреплённого коммита и пересчёт байтов | `data/official-core-datasets-reproducibility-2026-11-18.json`, `scripts/check_official_core_reproducibility.py` и ещё 3 |
+| 34 | Shallow clone: инструкция восстановления ветки исправлена и воспроизведена локальным fixture | `EVIDENCE_HOLD` | восстановление ветки в свежем shallow-clone fixture | `docs/research/arena/SANDBOX_SHALLOW_CLONE_RECOVERY_2026-11-18.md`, `scripts/test_sandbox_shallow_clone_recovery.py` и ещё 3 |
+| 35 | Чарнок ED-09: обновлённый редакционный архив воспроизведён и зарегистрирован как durable snapshot | `ARCHIVE_HOLD` | скачивание и пересчёт байтов | `data/charnock-editorial-book-receipt-v1-20261121-ed09.json`, `scripts/check_charnock_editorial_receipt.py` и ещё 4 |
 
 **Подтверждения (не закрытия):**
 - `HCR-2026-11-18-C1` — Charnock custody v3 ZIP — независимое подтверждение квитанции
@@ -54,7 +60,7 @@
 - `HCR-2026-11-18-C4` — Объекты Drive перечитаны у сервера; размер и SHA-256 совпали с заявленными в реестре — значения пересняты в §19
 
 **Осталось открытым по существу:**
-- `OPEN-HOLDS-VOCABULARY` — Неканонические значения `holds` в machine-SSOT. Смешение осей в machine-SSOT: часть значений — это accessState/rightsState/publicationState, часть — статусы, часть — склейки двух флагов.
+- `OPEN-HOLDS-VOCABULARY` — Неканонические значения `holds` в machine-SSOT. Смешение осей в machine-SSOT сохраняется: часть значений — accessState/rightsState/publicationState, часть — статусы, часть — склейки двух флагов.
 - `OPEN-PRIMARY-SOURCES` — Внешние первоисточники и точные страницы. Внешние архивы, сканы и печатные издания в этой волне не открывались; исходящая сеть ограничена, а каталог, аннотация и URL не считаются прочтением объекта.
 - `OPEN-RIGHTS` — Права на хранение и публикацию. Требуют отдельного лицензионного решения по каждому объекту и не снимаются ни хешами, ни присутствием на Drive.
 - `OPEN-MIRRORS-BEHIND-HEAD` — Зеркала, отставшие от HEAD. Текущие редакции томов 00/04/16 и досье новее последних проверенных зеркал; закрытие readback исторических снимков не делает их актуальными.
@@ -87,18 +93,18 @@
 <!-- inventory-slice:begin -->
 | Показатель | Значение |
 |---|---:|
-| просканировано текстовых файлов | 3 131 |
-| файлов хотя бы с одним маркером | 918 |
-| канонические упоминания `PUBLICATION_HOLD` | 2 659 |
-| канонические упоминания `LOCATOR_HOLD` | 1 984 |
-| канонические упоминания `RIGHTS_HOLD` | 1 478 |
+| просканировано текстовых файлов | 3 148 |
+| файлов хотя бы с одним маркером | 924 |
+| канонические упоминания `PUBLICATION_HOLD` | 2 676 |
+| канонические упоминания `LOCATOR_HOLD` | 1 987 |
+| канонические упоминания `RIGHTS_HOLD` | 1 488 |
 | канонические упоминания `ARCHIVE_HOLD` | 1 424 |
-| канонические упоминания `EVIDENCE_HOLD` | 1 303 |
-| строки, где флаг зафиксирован как действующий (`open`) | 2 362 |
+| канонические упоминания `EVIDENCE_HOLD` | 1 307 |
+| строки, где флаг зафиксирован как действующий (`open`) | 2 369 |
 | строки, где флаг зафиксирован как снятый (`closed`) | 824 |
-| строки без явного состояния (`unmarked`) | 6 068 |
+| строки без явного состояния (`unmarked`) | 6 095 |
 | строки, где одновременно записаны и снятие, и сохранение (`mixed`) | 406 |
-| JSON-файлов с массивом `holds` | 41 |
+| JSON-файлов с массивом `holds` | 43 |
 <!-- inventory-slice:end -->
 
 Замер снят с исключением артефактов, которые **сами описывают удержания** (`data/repository-holds-inventory-v1.json`, `data/hold-closure-registry-v1.json`, `data/hold-value-mapping-proposal-v1.json`, этот регистр): иначе пасс считал бы свои же классы и число зависело бы от того, сколько их перечислили. Поэтому цифры ниже отличаются от предыдущего снимка не только потому, что добавились файлы.
@@ -119,13 +125,13 @@
 <!-- corpus-table:begin -->
 | Корпус | Файлов с маркерами | Канонических упоминаний |
 |---|---:|---:|
-| `docs/` | 98 | 2 910 |
+| `docs/` | 99 | 2 916 |
 | `ИСКУПЛЕНИЕ/` | 153 | 2 522 |
-| `БИОГРАФИИ/` | 57 | 1 388 |
+| `БИОГРАФИИ/` | 58 | 1 396 |
 | `SUNO_HYMNS/` | 65 | 712 |
-| `scripts/` | 48 | 317 |
+| `scripts/` | 50 | 326 |
 | `1КОРИНФЯНАМ_11_ПОКРЫВАЛО/` | 124 | 293 |
-| `G3_HISTORY/` | 91 | 200 |
+| `G3_HISTORY/` | 92 | 206 |
 | `apostasy/` | 116 | 183 |
 | `data/` | 24 | 93 |
 | `ТРУДНЫЕ ТЕКСТЫ/` | 15 | 59 |
@@ -144,6 +150,7 @@
 | `БАПТИСТЫ РОССИИ/` | 7 | 8 |
 | `SOURCE_LIBRARY/` | 2 | 8 |
 | `APOSTASY/` | 2 | 6 |
+| `.github/` | 1 | 5 |
 <!-- corpus-table:end -->
 ## 3. Что закрыто 18.11.2026 (и чем именно)
 
@@ -185,6 +192,12 @@ Google Drive не выполнялась; перечень всех закрыт
 | `HCR-2026-11-18-27` | Само-счётчики (closures, confirmations, openItems, claims, triggerPaths) удалены из objects и заменены отсылкой к инструменту; число утверждений убрано из прозы §21.2, §24 и записи 17; добавлены два теста — на ключи в objects и на конструкцию «N утверждени…» в регистре | счётчики против артефактов | [`docs/research/HOLDS_REGISTER_2026-11-18.md`](../../docs/research/HOLDS_REGISTER_2026-11-18.md) §31, [`data/hold-closure-registry-v1.json`](../../data/hold-closure-registry-v1.json), [`scripts/test_hold_closure_registry.py`](../../scripts/test_hold_closure_registry.py) |
 | `HCR-2026-11-18-28` | Размер набора удалён, а не обновлён; в §8 осталось проверяемое имя CI-шага; добавлены четыре теста — на конструкцию «число + тест» в прозе, на существование цитируемого имени шага среди шагов workflow и на те же счётчики в полях записи (previousState исключён как пересказ прошлой формулировки); свежесть закоммиченного отчёта о ссылках переехала из шага workflow в тест — первый коммит главы упал в CI именно на ней | счётчики против артефактов | [`docs/research/HOLDS_REGISTER_2026-11-18.md`](../../docs/research/HOLDS_REGISTER_2026-11-18.md) §32, [`scripts/test_audit_register_claims.py`](../../scripts/test_audit_register_claims.py), [`scripts/test_hold_closure_registry.py`](../../scripts/test_hold_closure_registry.py) |
 | `HCR-2026-11-18-29` | Восемь дефектов исправлены: §3 печатает все локаторы, §0 — первые два и «и ещё N»; неканонический флаг объявлен в localAxes и помечен в §0; добавлены имена трёх методов, тест падает на методе без имени; словарь имён методов дедуплицирован; обрыв причины открытого пункта помечается «…»; правило двусмысленности приведено к одному (сравниваются значения, тесты в обе стороны); у самодатировки появился --today, и закоммиченный отчёт воспроизводится со своей датой. Сверх правок: тринадцать внесённых поломок — три не были пойманы до правок и ловятся после; инвентарь §2 цитировал артефакт, разошедшийся с деревом, потому что CI сравнивал два прогона между собой, — артефакт перегенерирован и получил тест свежести; после слияния с main пересняты отчёты, пересняты пять просроченных прозовых чисел, ручная копия таблицы в §23 заменена ссылкой на генерируемую | счётчики против артефактов | [`docs/research/HOLDS_REGISTER_2026-11-18.md`](../../docs/research/HOLDS_REGISTER_2026-11-18.md) §33, [`scripts/render_closures_summary.py`](../../scripts/render_closures_summary.py), [`scripts/audit_register_claims.py`](../../scripts/audit_register_claims.py), [`scripts/audit_state_stamps.py`](../../scripts/audit_state_stamps.py), [`scripts/test_render_closures_summary.py`](../../scripts/test_render_closures_summary.py) |
+| `HCR-2026-11-18-30` | Все измеренные manual-употребления получили отдельное соответствие по path, JSON pointer и value: одно legacy-написание дублирует PUBLICATION_HOLD, второе является собирательным marker/status при уже типизированных флагах, FORBIDDEN является статусом отсечённой формулировки; checker требует полное покрытие и отклоняет пропавшие, лишние и дублированные разрешения | контекстная классификация по record key | [`docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md`](../../docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md) §2, [`data/hold-value-mapping-proposal-v1.json`](../../data/hold-value-mapping-proposal-v1.json), [`scripts/check_hold_vocabulary.py`](../../scripts/check_hold_vocabulary.py), [`scripts/test_check_hold_vocabulary.py`](../../scripts/test_check_hold_vocabulary.py) |
+| `HCR-2026-11-18-31` | Для неизменяемого snapshot от source Git SHA 962010d55e38cabf3f0c04670ec16a9d5a80704e подтверждены исходные SHA-256, Git blob IDs, ZIP-member readback, SHA-256 архива и точное равенство сырого destination readback на Drive; закрытие относится только к перечисленным в квитанции исходным файлам | скачивание и пересчёт байтов | [`data/charnock-editorial-book-receipt-v1-20261121.json`](../../data/charnock-editorial-book-receipt-v1-20261121.json), `.github/workflows/charnock-editorial-book-custody.yml`, [`docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md`](../../docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md) §3 |
+| `HCR-2026-11-18-32` | Для закреплённого STEPBible-Data commit построен и повторно воспроизведён полный read-only снимок имён и README: все верхнеуровневые наборы перечислены, отдельно выделены отличающиеся CC BY-NC и CC BY-SA ветви, размер и SHA-256 входного ZIP проверены до разбора; offline-check и негативные тесты включены в CI | карта условий поднаборов закреплённого коммита | [`data/stepbible-subdataset-terms-2026-11-18.json`](../../data/stepbible-subdataset-terms-2026-11-18.json), [`scripts/stepbible_subdataset_terms.py`](../../scripts/stepbible_subdataset_terms.py), [`scripts/test_stepbible_subdataset_terms.py`](../../scripts/test_stepbible_subdataset_terms.py), [`docs/research/PR621_SELECTIVE_INTEGRATION_CROSSWALK_2026-11-18.md`](../../docs/research/PR621_SELECTIVE_INTEGRATION_CROSSWALK_2026-11-18.md) §2.1, [`docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md`](../../docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md) §4 |
+| `HCR-2026-11-18-33` | STEPBible-Data, morphhb и SBLGNT заново получены из codeload.github.com по трём полным commit SHA; для каждого размер и полный SHA-256 совпали с квитанцией. Принят отдельный offline-гейт внутренней арифметики и cross-check STEPBible pin, полный --archive/--fetch маршрут и негативные тесты. Истечение CI artifact больше не является потерей единственного воспроизводимого carrier | скачивание закреплённого коммита и пересчёт байтов | [`data/official-core-datasets-reproducibility-2026-11-18.json`](../../data/official-core-datasets-reproducibility-2026-11-18.json), [`scripts/check_official_core_reproducibility.py`](../../scripts/check_official_core_reproducibility.py), [`scripts/test_check_official_core_reproducibility.py`](../../scripts/test_check_official_core_reproducibility.py), [`docs/research/PR621_SELECTIVE_INTEGRATION_CROSSWALK_2026-11-18.md`](../../docs/research/PR621_SELECTIVE_INTEGRATION_CROSSWALK_2026-11-18.md) §2, [`docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md`](../../docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md) §4 |
+| `HCR-2026-11-18-34` | Принят исправленный NOT_AUTHORITY runbook: имя текущей ветки проверяется, tracked и untracked байты получают аварийную копию, полная история достаётся только когда clone действительно shallow, а remote-tracking ref создаётся явным refspec и разрешается в commit до reset --mixed. Offline fixture строит fresh depth-1 single-branch repository, воспроизводит расщепление working tree/.git и доказывает, что reset переводит HEAD на точную remote-верхушку, не теряя настоящую локальную правку | восстановление ветки в свежем shallow-clone fixture | [`docs/research/arena/SANDBOX_SHALLOW_CLONE_RECOVERY_2026-11-18.md`](../../docs/research/arena/SANDBOX_SHALLOW_CLONE_RECOVERY_2026-11-18.md), [`scripts/test_sandbox_shallow_clone_recovery.py`](../../scripts/test_sandbox_shallow_clone_recovery.py), `.github/workflows/holds-inventory.yml`, [`docs/research/PR621_SELECTIVE_INTEGRATION_CROSSWALK_2026-11-18.md`](../../docs/research/PR621_SELECTIVE_INTEGRATION_CROSSWALK_2026-11-18.md) §2, [`docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md`](../../docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md) §4 |
+| `HCR-2026-11-18-35` | Для source Git SHA 209c593fc23bcc32c29bc636b93bcf29d892e725 заново прочитаны из Git все 17 ограниченных source members, пересчитаны их bytes/SHA-256/Git blob IDs, воспроизведены canonical inner manifest и deterministic ZIP. Полученные source bytes, manifest SHA-256, archive bytes и archive SHA-256 точно совпали с ED-09 квитанцией. Текущий read-only ответ Drive по точному имени вернул тот же object ID, размер и server SHA-256; raw destination readback остаётся зафиксирован в квитанции #626 | скачивание и пересчёт байтов | [`data/charnock-editorial-book-receipt-v1-20261121-ed09.json`](../../data/charnock-editorial-book-receipt-v1-20261121-ed09.json), [`scripts/check_charnock_editorial_receipt.py`](../../scripts/check_charnock_editorial_receipt.py), [`scripts/test_check_charnock_editorial_receipt.py`](../../scripts/test_check_charnock_editorial_receipt.py), `.github/workflows/charnock-editorial-book-custody.yml`, `БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED09_FULL_BOOK_EDITORIAL_QA_AND_TEXT_RIGHTS_2026-11-21.md`, [`docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md`](../../docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md) §3 |
 <!-- closures-detail:end -->
 **Важная граница.** Readback говорит только «байты копии равны байтам источника / байты на Drive
 равны записанному снимку». Он **не** говорит, что в PDF есть нужная печатная страница, что локатор
@@ -202,7 +215,7 @@ Google Drive не выполнялась; перечень всех закрыт
 | `PUBLICATION_HOLD` | фактически весь исследовательский корпус (`PROMOTE` не заявлялся нигде) | редакционное принятие + отдельная Product-проверка на текущем source anchor; Research closure ≠ publication approval |
 | Независимая научная приёмка | Чарнок ED-02/ED-06, «Реформация» (peer review open), Искупление (agent 7) | внешний рецензент/эксперт; агентская проверка его не заменяет |
 | `ARCHIVE_HOLD` по актуальности зеркал | тома 00/04/16 и досье новее последних зеркал | новая загрузка + независимый destination readback + квитанция (в этой волне не выполнялись) |
-| Гигиена машинных реестров | 41 файл с массивом `holds` | см. §5 |
+| Гигиена машинных реестров | 43 файла с массивом `holds` | см. §5 |
 
 ## 5. Наблюдение по машинным реестрам (не исправлялось)
 
@@ -274,9 +287,9 @@ HOLD-флаги считались, а мёртвые относительные
 <!-- links-slice:begin -->
 | Показатель ссылок | Значение |
 |---|---:|
-| Markdown-файлов | 2 423 |
-| ссылок `resolves` | 3 198 |
-| ссылок `external` | 6 570 |
+| Markdown-файлов | 2 427 |
+| ссылок `resolves` | 3 228 |
+| ссылок `external` | 6 583 |
 | ссылок `missing` | 58 |
 | ссылок `outside` | 0 |
 | ссылок `unqualified` | 0 |
@@ -337,7 +350,7 @@ python3 -B scripts/audit_relative_links.py --only missing    # полный сп
 
 ## 9. Неканонические значения `holds`: предложение соответствия (не правка)
 
-В 41 JSON-файле массивы `holds` содержат 6 156 значений, из них **134 (39 написаний)** — не
+В 43 JSON-файлах массивы `holds` содержат 6 164 значения, из них **134 (39 написаний)** — не
 канонические флаги. Это смешение осей, которое policy v2 запрещает концептуально. Автоматически
 переписать такие поля нельзя — это machine-SSOT чужих корпусов, — но и оставлять их без разбора
 значит хранить неизмеримое.
@@ -354,7 +367,7 @@ python3 -B scripts/audit_relative_links.py --only missing    # полный сп
 | `axis` | 24 | это значение оси policy v2 (`accessState` / `rightsState` / `publicationState` / `locatorState`), а не HOLD |
 | `split` | 7 | в одной строке склеены две вещи (флаг + статус, два флага) |
 | `status` | 20 | статус записи, а не удержание: `OPEN`, `RESOLVED-BY-TEXT`, `RESEARCH / NOT PRODUCT` |
-| `manual` | 3 | из строки не выводится (`HOLD`, `FORBIDDEN`), читает человек |
+| `manual` | 3 | из одной строки не выводится (`HOLD`, `FORBIDDEN`); каждое употребление требует чтения записи |
 <!-- hold-classes:end -->
 <!-- hold-values:begin -->
 | Написание в `holds` | Значений | Класс | Предлагаемое место |
@@ -704,8 +717,8 @@ Markdown-документах (§14).
 <!-- twins-states:begin -->
 | Показатель | Значение |
 |---|---:|
-| сравнено документов | 2 392 |
-| документов в корпусе | 2 416 |
+| сравнено документов | 2 396 |
+| документов в корпусе | 2 420 |
 
 | Состояние | Пар | Что это |
 |---|---:|---|
@@ -768,7 +781,7 @@ STEVE_LAWSON). Скрытого дублирования между корпус
 | Показатель | Значение |
 |---|---:|
 | документов со своей датой | 17 |
-| документов в корпусе | 2 416 |
+| документов в корпусе | 2 420 |
 
 | Состояние | Документов |
 |---|---:|

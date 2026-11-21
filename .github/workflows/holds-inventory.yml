@@ -5,6 +5,8 @@ on:
     paths:
       - '.github/workflows/holds-inventory.yml'
       - 'data/bratsky-listok-publication-ledger.json'
+      - 'data/charnock-editorial-book-receipt-v1-20261121.json'
+      - 'data/charnock-editorial-book-receipt-v1-20261121-ed09.json'
       - 'data/document-twins-2026-11-18.json'
       - 'data/drive-ledger-audit-2026-11-18.json'
       - 'data/drive-ledger-snapshot-2026-11-18.json'
@@ -13,6 +15,7 @@ on:
       - 'data/hold-closure-registry-v1.json'
       - 'data/hold-value-mapping-proposal-v1.json'
       - 'data/internal-digests-verified-2026-11-18.json'
+      - 'data/official-core-datasets-reproducibility-2026-11-18.json'
       - 'data/physical-rights-ledger-2026-08-01.json'
       - 'data/pinned-github-locators-verified-2026-11-18.json'
       - 'data/public-projection-current-2026-08-02.json'
@@ -24,10 +27,13 @@ on:
       - 'data/repository-evidence-policy-v2.json'
       - 'data/repository-holds-inventory-v1.json'
       - 'data/state-stamps-2026-11-18.json'
+      - 'data/stepbible-subdataset-terms-2026-11-18.json'
       - 'data/text-integrity-repairs-2026-11-18.json'
       - 'docs/research/HOLDS_REGISTER_2026-11-18.md'
+      - 'docs/research/arena/SANDBOX_SHALLOW_CLONE_RECOVERY_2026-11-18.md'
       - 'scripts/audit_ci_triggers.py'
       - 'scripts/check_snapshot_freshness.py'
+      - 'scripts/stepbible_subdataset_terms.py'
       - 'scripts/audit_document_twins.py'
       - 'scripts/audit_drive_ledger.py'
       - 'scripts/audit_register_claims.py'
@@ -36,6 +42,8 @@ on:
       - 'scripts/audit_state_stamps.py'
       - 'scripts/audit_text_integrity.py'
       - 'scripts/check_hold_vocabulary.py'
+      - 'scripts/check_charnock_editorial_receipt.py'
+      - 'scripts/check_official_core_reproducibility.py'
       - 'scripts/publication_gate_status.py'
       - 'scripts/render_closures_summary.py'
       - 'scripts/test_audit_ci_triggers.py'
@@ -47,10 +55,14 @@ on:
       - 'scripts/test_audit_state_stamps.py'
       - 'scripts/test_audit_text_integrity.py'
       - 'scripts/test_check_hold_vocabulary.py'
+      - 'scripts/test_check_charnock_editorial_receipt.py'
+      - 'scripts/test_check_official_core_reproducibility.py'
+      - 'scripts/test_sandbox_shallow_clone_recovery.py'
       - 'scripts/test_check_snapshot_freshness.py'
       - 'scripts/test_hold_closure_registry.py'
       - 'scripts/test_publication_gate_status.py'
       - 'scripts/test_render_closures_summary.py'
+      - 'scripts/test_stepbible_subdataset_terms.py'
       - 'scripts/test_verify_internal_digests.py'
       - 'scripts/test_verify_pinned_github_locators.py'
       - 'scripts/verify_internal_digests.py'
@@ -60,6 +72,8 @@ on:
     paths:
       - '.github/workflows/holds-inventory.yml'
       - 'data/bratsky-listok-publication-ledger.json'
+      - 'data/charnock-editorial-book-receipt-v1-20261121.json'
+      - 'data/charnock-editorial-book-receipt-v1-20261121-ed09.json'
       - 'data/document-twins-2026-11-18.json'
       - 'data/drive-ledger-audit-2026-11-18.json'
       - 'data/drive-ledger-snapshot-2026-11-18.json'
@@ -68,6 +82,7 @@ on:
       - 'data/hold-closure-registry-v1.json'
       - 'data/hold-value-mapping-proposal-v1.json'
       - 'data/internal-digests-verified-2026-11-18.json'
+      - 'data/official-core-datasets-reproducibility-2026-11-18.json'
       - 'data/physical-rights-ledger-2026-08-01.json'
       - 'data/pinned-github-locators-verified-2026-11-18.json'
       - 'data/public-projection-current-2026-08-02.json'
@@ -79,10 +94,13 @@ on:
       - 'data/repository-evidence-policy-v2.json'
       - 'data/repository-holds-inventory-v1.json'
       - 'data/state-stamps-2026-11-18.json'
+      - 'data/stepbible-subdataset-terms-2026-11-18.json'
       - 'data/text-integrity-repairs-2026-11-18.json'
       - 'docs/research/HOLDS_REGISTER_2026-11-18.md'
+      - 'docs/research/arena/SANDBOX_SHALLOW_CLONE_RECOVERY_2026-11-18.md'
       - 'scripts/audit_ci_triggers.py'
       - 'scripts/check_snapshot_freshness.py'
+      - 'scripts/stepbible_subdataset_terms.py'
       - 'scripts/audit_document_twins.py'
       - 'scripts/audit_drive_ledger.py'
       - 'scripts/audit_register_claims.py'
@@ -91,6 +109,8 @@ on:
       - 'scripts/audit_state_stamps.py'
       - 'scripts/audit_text_integrity.py'
       - 'scripts/check_hold_vocabulary.py'
+      - 'scripts/check_charnock_editorial_receipt.py'
+      - 'scripts/check_official_core_reproducibility.py'
       - 'scripts/publication_gate_status.py'
       - 'scripts/render_closures_summary.py'
       - 'scripts/test_audit_ci_triggers.py'
@@ -102,10 +122,14 @@ on:
       - 'scripts/test_audit_state_stamps.py'
       - 'scripts/test_audit_text_integrity.py'
       - 'scripts/test_check_hold_vocabulary.py'
+      - 'scripts/test_check_charnock_editorial_receipt.py'
+      - 'scripts/test_check_official_core_reproducibility.py'
+      - 'scripts/test_sandbox_shallow_clone_recovery.py'
       - 'scripts/test_check_snapshot_freshness.py'
       - 'scripts/test_hold_closure_registry.py'
       - 'scripts/test_publication_gate_status.py'
       - 'scripts/test_render_closures_summary.py'
+      - 'scripts/test_stepbible_subdataset_terms.py'
       - 'scripts/test_verify_internal_digests.py'
       - 'scripts/test_verify_pinned_github_locators.py'
       - 'scripts/verify_internal_digests.py'
@@ -140,6 +164,10 @@ jobs:
           python3 -m py_compile scripts/test_hold_closure_registry.py
           python3 -m py_compile scripts/audit_text_integrity.py
           python3 -m py_compile scripts/verify_internal_digests.py
+          python3 -m py_compile scripts/stepbible_subdataset_terms.py
+          python3 -m py_compile scripts/check_official_core_reproducibility.py
+          python3 -m py_compile scripts/check_charnock_editorial_receipt.py
+          python3 -m py_compile scripts/test_sandbox_shallow_clone_recovery.py
       # A pull_request checkout is a synthetic merge commit. Dated snapshots belong to
       # the branch that authored them, so unrelated main changes must not make that branch
       # rewrite all reports. The PR head is therefore the blocking freshness boundary.
@@ -177,6 +205,10 @@ jobs:
           python3 -B -m unittest discover -s scripts -p 'test_audit_drive_ledger.py' -v
           python3 -B -m unittest discover -s scripts -p 'test_render_closures_summary.py' -v
           python3 -B -m unittest discover -s scripts -p 'test_audit_register_claims.py' -v
+          python3 -B -m unittest discover -s scripts -p 'test_stepbible_subdataset_terms.py' -v
+          python3 -B -m unittest discover -s scripts -p 'test_check_official_core_reproducibility.py' -v
+          python3 -B -m unittest discover -s scripts -p 'test_check_charnock_editorial_receipt.py' -v
+          python3 -B -m unittest discover -s scripts -p 'test_sandbox_shallow_clone_recovery.py' -v
       - name: Scan (must not touch the working tree)
         run: |
           python3 scripts/audit_repository_holds.py -o /tmp/holds-a.json
@@ -220,6 +252,12 @@ jobs:
       # A counter in prose has no expiry date; this is the only thing that gives it one.
       - name: Register counters match their artefacts
         run: python3 -B scripts/audit_register_claims.py --check
+      - name: Check the pinned STEPBible terms snapshot
+        run: python3 -B scripts/stepbible_subdataset_terms.py --check
+      - name: Check the official-core carrier receipts
+        run: python3 -B scripts/check_official_core_reproducibility.py --check
+      - name: Check the Charnock ED-09 durable receipt
+        run: python3 -B scripts/check_charnock_editorial_receipt.py --check
       - name: Check publication gate queue composition
         run: python3 -B scripts/publication_gate_status.py --check
       - name: Report counts without asserting closure

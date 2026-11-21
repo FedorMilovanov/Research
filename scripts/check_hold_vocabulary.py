@@ -2,10 +2,10 @@
 """Check the non-canonical ``holds`` vocabulary against the mapping proposal.
 
 ``data/repository-holds-inventory-v1.json`` counts what the machine registries
-actually say. 39 spellings inside ``holds`` arrays are not canonical flags of
-``data/repository-evidence-policy-v2.json``: some are axis values of that same
-policy, some are statuses, some glue two facts into one string, and three
-cannot be resolved without reading the record.
+actually say. Non-canonical spellings inside ``holds`` arrays are not canonical
+flags of ``data/repository-evidence-policy-v2.json``: some are axis values of
+that same policy, some are statuses, some glue two facts into one string, and
+some require a record-by-record reading.
 
 ``data/hold-value-mapping-proposal-v1.json`` proposes a home for each spelling.
 It is a **proposal**, not a rewrite: no registry value is changed here or
@@ -18,6 +18,8 @@ anywhere else. This script is the guard rail around it:
   of that axis in policy v2;
 * class - every entry is one of ``canonical`` | ``axis`` | ``split`` |
   ``status`` | ``manual``;
+* manual coverage - every measured occurrence of a ``manual`` spelling has one
+  record-keyed resolution, with no invented or stale resolution;
 * rendering - ``--render`` prints the table used in the register, so the human
   document cannot drift from the machine file.
 
@@ -49,7 +51,7 @@ CLASS_DESCRIPTIONS = {
     "axis": "это значение оси policy v2 (`accessState` / `rightsState` / `publicationState` / `locatorState`), а не HOLD",
     "split": "в одной строке склеены две вещи (флаг + статус, два флага)",
     "status": "статус записи, а не удержание: `OPEN`, `RESOLVED-BY-TEXT`, `RESEARCH / NOT PRODUCT`",
-    "manual": "из строки не выводится (`HOLD`, `FORBIDDEN`), читает человек",
+    "manual": "из одной строки не выводится (`HOLD`, `FORBIDDEN`); каждое употребление требует чтения записи",
 }
 
 CLASSES = ("canonical", "axis", "split", "status", "manual")
@@ -83,6 +85,18 @@ def measured_spellings(inventory: dict, canonical: set[str]) -> dict[str, dict]:
             slot["count"] += 1
             slot["files"].add(item.get("path", ""))
     return acc
+
+
+def measured_manual_occurrences(inventory: dict, manual_spellings: set[str]) -> set[tuple[str, str, str]]:
+    """Return ``(path, JSON pointer, spelling)`` for every manual occurrence."""
+    out: set[tuple[str, str, str]] = set()
+    for item in inventory.get("jsonHolds", []):
+        path = str(item.get("path", ""))
+        pointer = str(item.get("pointer", ""))
+        for value in item.get("values", []):
+            if value in manual_spellings:
+                out.add((path, pointer, value))
+    return out
 
 
 def check(inventory: dict, policy: dict, proposal: dict) -> list[str]:
@@ -127,6 +141,39 @@ def check(inventory: dict, policy: dict, proposal: dict) -> list[str]:
             for flag in named:
                 if flag not in canonical:
                     problems.append(f"{spelling!r}: {flag} is not a canonical flag")
+
+    manual_spellings = {str(v.get("value", "")) for v in proposed if v.get("class") == "manual"}
+    measured_manual = measured_manual_occurrences(inventory, manual_spellings)
+    resolutions = proposal.get("manualResolutions", [])
+    resolution_keys = [
+        (str(v.get("path", "")), str(v.get("pointer", "")), str(v.get("value", "")))
+        for v in resolutions
+    ]
+    if len(resolution_keys) != len(set(resolution_keys)):
+        problems.append("duplicate record keys in manualResolutions")
+    for key in sorted(measured_manual - set(resolution_keys)):
+        problems.append(f"manual occurrence has no record resolution: {key!r}")
+    for key in sorted(set(resolution_keys) - measured_manual):
+        problems.append(f"stale manual resolution (occurrence not measured): {key!r}")
+    for resolution, key in zip(resolutions, resolution_keys):
+        if resolution.get("classification") not in {"canonical", "axis", "split", "status"}:
+            problems.append(f"manual resolution {key!r}: invalid classification")
+        for field in ("proposedRepresentation", "sourceLocator", "justification"):
+            if not str(resolution.get(field, "")).strip():
+                problems.append(f"manual resolution {key!r}: missing {field}")
+
+    review = proposal.get("counts", {}).get("manualReview")
+    if measured_manual or resolutions or review is not None:
+        if not isinstance(review, dict):
+            problems.append("counts.manualReview is required when manual occurrences exist")
+        else:
+            resolved = len(set(resolution_keys) & measured_manual)
+            if review.get("occurrences") != len(measured_manual):
+                problems.append("counts.manualReview.occurrences does not match the inventory")
+            if review.get("resolvedByRecordContext") != resolved:
+                problems.append("counts.manualReview.resolvedByRecordContext does not match resolutions")
+            if review.get("unresolved") != len(measured_manual - set(resolution_keys)):
+                problems.append("counts.manualReview.unresolved does not match resolutions")
 
     if proposal.get("status") != "PROPOSAL_ONLY":
         problems.append("proposal must stay PROPOSAL_ONLY: nothing here rewrites registries")
@@ -235,8 +282,13 @@ def main(argv: list[str] | None = None) -> int:
         canonical = canonical_flags(policy)
         measured = measured_spellings(inventory, canonical)
         total = sum(v["count"] for v in measured.values())
+        review = proposal.get("counts", {}).get("manualReview", {})
+        manual = ""
+        if review:
+            manual = (f"; manual context {review.get('resolvedByRecordContext', 0)}/"
+                      f"{review.get('occurrences', 0)} resolved, {review.get('unresolved', 0)} unresolved")
         print(f"hold vocabulary: PASS — {len(measured)} non-canonical spellings / {total} values, "
-              f"all mapped; proposal stays PROPOSAL_ONLY (no registry rewritten)")
+              f"all mapped{manual}; proposal stays PROPOSAL_ONLY (no registry rewritten)")
     return 0
 
 

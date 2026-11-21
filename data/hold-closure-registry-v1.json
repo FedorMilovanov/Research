@@ -1005,6 +1005,205 @@
         "EVIDENCE_HOLD"
       ],
       "residualReason": "Три шага CI остаются отчётными (дубли, самодатировка, сверка Drive), поэтому свежесть этих отчётов не гейтится; предыдущее состояние записей по-прежнему цитирует исторические числа; проверки ловят цифры, а не слова."
+    },
+    {
+      "id": "HCR-2026-11-18-30",
+      "title": "Неклассифицированные употребления `HOLD` и `FORBIDDEN` прочитаны по record key",
+      "holdType": "EVIDENCE_HOLD",
+      "previousState": "Два написания класса manual давали три значения в holds-массивах; mapping знал файлы и число, но не различал конкретные записи и честно оставлял requires per-record reading",
+      "closedScope": "Все измеренные manual-употребления получили отдельное соответствие по path, JSON pointer и value: одно legacy-написание дублирует PUBLICATION_HOLD, второе является собирательным marker/status при уже типизированных флагах, FORBIDDEN является статусом отсечённой формулировки; checker требует полное покрытие и отклоняет пропавшие, лишние и дублированные разрешения",
+      "recordLocations": [
+        "docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md §2",
+        "data/hold-value-mapping-proposal-v1.json",
+        "scripts/check_hold_vocabulary.py",
+        "scripts/test_check_hold_vocabulary.py"
+      ],
+      "method": "record-context-classification",
+      "objects": [
+        {
+          "manualOccurrencesClassified": 3,
+          "unresolvedManualOccurrences": 0,
+          "registryValuesRewritten": 0
+        }
+      ],
+      "residualHolds": [
+        "EVIDENCE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "residualReason": "Закрыта неоднозначность классификации, а не сами удержания. Proposal остаётся PROPOSAL_ONLY; переписывание corpus SSOT требует решения владельца и официального пересъёма."
+    },
+    {
+      "id": "HCR-2026-11-18-31",
+      "title": "Точный редакционный архив Чарнока получил durable Drive readback",
+      "holdType": "ARCHIVE_HOLD",
+      "previousState": "Полный editorial book package имел воспроизводимый source manifest и workflow artifact, но не был записан в канонической карте закрытий #584 как отдельная ограниченная custody-ось",
+      "closedScope": "Для неизменяемого snapshot от source Git SHA 962010d55e38cabf3f0c04670ec16a9d5a80704e подтверждены исходные SHA-256, Git blob IDs, ZIP-member readback, SHA-256 архива и точное равенство сырого destination readback на Drive; закрытие относится только к перечисленным в квитанции исходным файлам",
+      "recordLocations": [
+        "data/charnock-editorial-book-receipt-v1-20261121.json",
+        ".github/workflows/charnock-editorial-book-custody.yml",
+        "docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md §3"
+      ],
+      "method": "raw-download-compare",
+      "objects": [
+        {
+          "sourceFileCount": 17,
+          "manuscriptCount": 10,
+          "archiveBytes": 1000011,
+          "archiveSha256": "7c7eb5bc2402d1d85b4cc12c6de26c6e39069744a6fee310077a578f66b6f359",
+          "sourceDestinationExactByteMatch": true
+        }
+      ],
+      "residualHolds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD",
+        "ARCHIVE_HOLD"
+      ],
+      "residualReason": "Поздние правки требуют нового versioned archive; внешние факсимиле в пакет не входят; независимая оценка перевода не выполнена; rightsState остаётся RIGHTS_UNKNOWN, publicationState — BLOCKED. OPEN-MIRRORS-BEHIND-HEAD для рабочих 00/04/16 не закрыт этим отдельным snapshot."
+    },
+    {
+      "id": "HCR-2026-11-18-32",
+      "title": "STEPBible: вопрос «проверить каждый поднабор» превращён в воспроизводимую карту заявленных условий",
+      "holdType": "EVIDENCE_HOLD",
+      "previousState": "Кандидат из #621 был помечен dataset-specific; verify each subdataset, но в canonical Research не было ни полного перечня поднаборов, ни гейта, связывающего его с закреплённым carrier",
+      "closedScope": "Для закреплённого STEPBible-Data commit построен и повторно воспроизведён полный read-only снимок имён и README: все верхнеуровневые наборы перечислены, отдельно выделены отличающиеся CC BY-NC и CC BY-SA ветви, размер и SHA-256 входного ZIP проверены до разбора; offline-check и негативные тесты включены в CI",
+      "recordLocations": [
+        "data/stepbible-subdataset-terms-2026-11-18.json",
+        "scripts/stepbible_subdataset_terms.py",
+        "scripts/test_stepbible_subdataset_terms.py",
+        "docs/research/PR621_SELECTIVE_INTEGRATION_CROSSWALK_2026-11-18.md §2.1",
+        "docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md §4"
+      ],
+      "method": "pinned-commit-subdataset-terms-audit",
+      "objects": [
+        {
+          "sourceCommit": "b86d26cdb1f51729e73b5b4eb7f7ccadc5dfba39",
+          "archiveBytes": 100920275,
+          "archiveSha256": "6845fa9660c62301a0eec38c009ca34ef82647a9737529d8c56ac45d35182df0",
+          "filesMeasured": 106,
+          "dataFilesMeasured": 104,
+          "topLevelSubdatasets": 7,
+          "nestedTermsExceptions": 1,
+          "sourcePrScriptBlob": "ba56572a98a3f96b159392b5c91ff492dff26617",
+          "sourcePrDataBlob": "038b2cca840d71fc525c9414550611c50658364a"
+        }
+      ],
+      "residualHolds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "residualReason": "Прочитаны README и имена, а не содержимое всех dataset-файлов. Заявление CC BY относится к распространителю и может покрывать разметку, но не исходный ESV, LSJ, Abbott-Smith и иные вложенные произведения. Никакое лицензионное или публикационное решение не принято; PROMOTE остаётся 0."
+    },
+    {
+      "id": "HCR-2026-11-18-33",
+      "title": "Official core: три carrier из истекающего CI artifact воспроизводятся по pinned Git commits",
+      "holdType": "ARCHIVE_HOLD",
+      "previousState": "В #621 была датированная квитанция трёх скачиваний, но пакет оставался HOLD: отдельного принятого генератора/полного check для всей тройки не было, а исчезновение ephemeral CI artifact выглядело как риск потери carrier",
+      "closedScope": "STEPBible-Data, morphhb и SBLGNT заново получены из codeload.github.com по трём полным commit SHA; для каждого размер и полный SHA-256 совпали с квитанцией. Принят отдельный offline-гейт внутренней арифметики и cross-check STEPBible pin, полный --archive/--fetch маршрут и негативные тесты. Истечение CI artifact больше не является потерей единственного воспроизводимого carrier",
+      "recordLocations": [
+        "data/official-core-datasets-reproducibility-2026-11-18.json",
+        "scripts/check_official_core_reproducibility.py",
+        "scripts/test_check_official_core_reproducibility.py",
+        "docs/research/PR621_SELECTIVE_INTEGRATION_CROSSWALK_2026-11-18.md §2",
+        "docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md §4"
+      ],
+      "method": "pinned-commit-raw-fetch-and-rehash",
+      "objects": [
+        {
+          "repository": "STEPBible/STEPBible-Data",
+          "commit": "b86d26cdb1f51729e73b5b4eb7f7ccadc5dfba39",
+          "bytes": 100920275,
+          "sha256": "6845fa9660c62301a0eec38c009ca34ef82647a9737529d8c56ac45d35182df0"
+        },
+        {
+          "repository": "openscriptures/morphhb",
+          "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+          "bytes": 20870584,
+          "sha256": "f56c150708b5d74719ecb709c712c31eae9855bca7b111fd82ec91b5d177b4c7"
+        },
+        {
+          "repository": "Faithlife/SBLGNT",
+          "commit": "c4d241a9c1c479a55b989ba35a4976c1d0b8052c",
+          "bytes": 1414688,
+          "sha256": "4fc2659ce10ec6f57552f22e039de927ed3e417c7b5a757f34f05dae530e4c0f"
+        },
+        {
+          "sourcePrDataBlob": "2c1bdecf91f6c05f5cf7ec3187eb86e19bbc905c"
+        }
+      ],
+      "residualHolds": [
+        "ARCHIVE_HOLD",
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "residualReason": "Проверены ZIP-carriers, а не чтение содержимого и не научная пригодность. Внутренняя независимая custody-копия на Drive не создана; доступность всё ещё зависит от непереписанной upstream Git history. Лицензии и вложенные произведения требуют отдельного решения, наборы не объявлены сохранёнными или публикационно разрешёнными; PROMOTE остаётся 0."
+    },
+    {
+      "id": "HCR-2026-11-18-34",
+      "title": "Shallow clone: инструкция восстановления ветки исправлена и воспроизведена локальным fixture",
+      "holdType": "EVIDENCE_HOLD",
+      "previousState": "Одиночный документ #621 оставался HOLD: команда git fetch origin arena/<ветка> обновляет FETCH_HEAD, но в свежем single-branch clone не гарантирует refs/remotes/origin/arena/<ветка>, на который сразу ссылался reset; процедура также называла себя идемпотентной, хотя --unshallow на полном clone завершается ошибкой",
+      "closedScope": "Принят исправленный NOT_AUTHORITY runbook: имя текущей ветки проверяется, tracked и untracked байты получают аварийную копию, полная история достаётся только когда clone действительно shallow, а remote-tracking ref создаётся явным refspec и разрешается в commit до reset --mixed. Offline fixture строит fresh depth-1 single-branch repository, воспроизводит расщепление working tree/.git и доказывает, что reset переводит HEAD на точную remote-верхушку, не теряя настоящую локальную правку",
+      "recordLocations": [
+        "docs/research/arena/SANDBOX_SHALLOW_CLONE_RECOVERY_2026-11-18.md",
+        "scripts/test_sandbox_shallow_clone_recovery.py",
+        ".github/workflows/holds-inventory.yml",
+        "docs/research/PR621_SELECTIVE_INTEGRATION_CROSSWALK_2026-11-18.md §2",
+        "docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md §4"
+      ],
+      "method": "fresh-shallow-clone-refspec-fixture",
+      "objects": [
+        {
+          "sourcePrDocumentBlob": "aaef9274f73c258d22bad189d23eacc0b460b411",
+          "explicitRemoteTrackingRefspec": true,
+          "freshDepthOneSingleBranchFixture": true,
+          "networkRequired": false,
+          "workingRepositoryMutatedByFixture": false
+        }
+      ],
+      "residualHolds": [],
+      "residualReason": "Закрыта только механическая ошибочность recovery-note. Исторические рассказы о перезапусках не считаются corpus evidence; рецепт не применяется к detached HEAD, неизвестному authority или неотправленным коммитам. Никакие research, rights, publication, mirror или independent-review HOLD не изменены; PROMOTE остаётся 0."
+    },
+    {
+      "id": "HCR-2026-11-18-35",
+      "title": "Чарнок ED-09: обновлённый редакционный архив воспроизведён и зарегистрирован как durable snapshot",
+      "holdType": "ARCHIVE_HOLD",
+      "previousState": "HCR-31 закрывал custody только для source Git SHA 962010d55e38cabf3f0c04670ec16a9d5a80704e. После обновления reader-preview README прежняя квитанция по определению не покрывала точный новый 17-source набор; новая квитанция из main ещё не была связана с канонической картой HOLD-замыканий и отдельным offline-гейтом",
+      "closedScope": "Для source Git SHA 209c593fc23bcc32c29bc636b93bcf29d892e725 заново прочитаны из Git все 17 ограниченных source members, пересчитаны их bytes/SHA-256/Git blob IDs, воспроизведены canonical inner manifest и deterministic ZIP. Полученные source bytes, manifest SHA-256, archive bytes и archive SHA-256 точно совпали с ED-09 квитанцией. Текущий read-only ответ Drive по точному имени вернул тот же object ID, размер и server SHA-256; raw destination readback остаётся зафиксирован в квитанции #626",
+      "recordLocations": [
+        "data/charnock-editorial-book-receipt-v1-20261121-ed09.json",
+        "scripts/check_charnock_editorial_receipt.py",
+        "scripts/test_check_charnock_editorial_receipt.py",
+        ".github/workflows/charnock-editorial-book-custody.yml",
+        "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED09_FULL_BOOK_EDITORIAL_QA_AND_TEXT_RIGHTS_2026-11-21.md",
+        "docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md §3"
+      ],
+      "method": "raw-download-compare",
+      "objects": [
+        {
+          "sourceGitSha": "209c593fc23bcc32c29bc636b93bcf29d892e725",
+          "sourceFileCount": 17,
+          "manuscriptCount": 10,
+          "sourceTotalBytes": 3526392,
+          "archiveBytes": 1000295,
+          "archiveSha256": "c4f719d5449e028568934ac2ea34a0defaf032ff06c007705aa4560f702e2efe",
+          "sourceManifestSha256": "ed07ba1e0447919676988e21cbd6ab857286cac39712bef989f754cc820fa7a7",
+          "destinationObjectId": "1LAZNJj2Zu2huKVoqEgnzoV6HHJ7AN2Py",
+          "serverMetadataMatchedReceipt": true,
+          "localSourceArchiveReconstructionMatchedReceipt": true
+        }
+      ],
+      "residualHolds": [
+        "ARCHIVE_HOLD",
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "residualReason": "Замыкание относится только к точному 17-source snapshot; ED-09 audit и его тест прямо исключены из архива, а следующие правки требуют новой versioned-квитанции. Внешние факсимиле не включены, ED-02 marginal images остаются open, независимая переводческая проверка равна 0/12, rightsState остаётся RIGHTS_UNKNOWN, publicationState — BLOCKED. Серверный Drive SHA в этом проходе перечитан как metadata, но private ZIP повторно не скачивался. PROMOTE остаётся 0."
     }
   ],
   "confirmations": [
@@ -1148,8 +1347,8 @@
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ],
-      "reason": "Смешение осей в machine-SSOT: часть значений — это accessState/rightsState/publicationState, часть — статусы, часть — склейки двух флагов. Переписывать поля без владельца корпуса нельзя.",
-      "proposal": "data/hold-value-mapping-proposal-v1.json (status PROPOSAL_ONLY): 80 значений — канонические флаги, 24 — значения осей, 7 — склейки, 20 — статусы, 3 — требуют чтения записи человеком. Проверка соответствия: python3 -B scripts/check_hold_vocabulary.py --check",
+      "reason": "Смешение осей в machine-SSOT сохраняется: часть значений — accessState/rightsState/publicationState, часть — статусы, часть — склейки двух флагов. Все manual-употребления теперь прочитаны и классифицированы по record key, но переписывать поля без владельца корпуса нельзя.",
+      "proposal": "data/hold-value-mapping-proposal-v1.json (status PROPOSAL_ONLY): все неканонические написания покрыты; manual-употребления разрешены по записи, unresolved=0. Проверка соответствия: python3 -B scripts/check_hold_vocabulary.py --check",
       "decisionRequiredFrom": "владелец корпуса"
     },
     {
