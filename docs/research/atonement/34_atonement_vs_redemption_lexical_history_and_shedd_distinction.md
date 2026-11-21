@@ -393,6 +393,10 @@
   - Глосса Харриса «to atone by offering a substitute» (от kōper «ransom») найдена в трёх OCR изд. 1980 г. «Выкупа путем замещения» — по существу верно, но в кавычках сжатый пересказ: `QUOTE_NOT_VERBATIM` (мягко).
   - Вывод «понятие искупления применимо… к объектам неживой материи» из глоссы не следует: `NON_SEQUITUR` (мягко), согласно с `20_` C33.05.
   - HALOT, Swanson и печатная страница TWOT — HOLD. Вердикты S1–S5 не меняются. Документ: REPASS, §72.
+- **раунд 150 (2026-11-17, AGENT 2):** §3 (S248), новый §4.233 (Q229): сн. 98 — Демарест, *The Cross and Salvation* (Crossway, 1997), p. 193.
+  - Английские формулы «universal in its provision and particular in its application» и p. 193 подтверждены двумя независимыми посредниками (Тиссен; Шульц 2008; класс C). Перевод верен по смыслу.
+  - Демарест излагает собственный взгляд; ярлык «сублапсарианство» дан через Эриксона (сн. 97) и по существу правдоподобен. Ошибок цитирования нет.
+  - Исправлены `23_` §7 (сноски) и `35_` FP-109 (издательство); к `16_` §6 — примечание. Печатный текст p. 193 — HOLD. Вердикты S1–S5 не меняются. Документ: REPASS, §73.
 
 **Erratum (раунд 4).** В раунде 3 номера страниц протоколов Ассамблеи (S19) и Шедда II (S22) были выведены из индекса страниц OCR-API archive.org (`BookReaderGetTextWrapper`), который **не совпадает** с номером листа (`leafNum`) скана: для `minutesofsession00west` индекс = лист − 5, для `dogmatictheology02sheduoft` индекс = лист − 1. Сверка по `inside.php` (полнотекстовый поиск, возвращает `leafNum`) и `<id>_page_numbers.json` (лист → печатная страница) дала: **Minutes «pp. 150–155/156» → pp. 155–160/161** (листы 251–257); **Shedd «II.478, 482–483» → II.479, 483–484** (листы 489, 493–494). Все затронутые числа в S19, S22, §4.13, §4.16, §5–§8 исправлены **на месте** с пометкой «(испр. р. 4)»; содержание цитат не менялось. Локаторы раундов 1–2 (Minutes p. lv/lviii/lx/152, Shedd II.464–477, I.441, A. A. Hodge pp. 33–34) перепроверены тем же способом и **верны** (лист 248 = p. 152; лист 457 = I.441; лист 39 = Hodge p. 33).
 **Статус:** `ACTIVE RESEARCH / NO SETTLED VERDICT ON EXTENT / EVIDENCE_HOLD / PUBLICATION_HOLD`
@@ -803,6 +807,7 @@
 | S245 *(раунд 147, 2026-11-17)* | W. Grudem, *Systematic Theology* (Leicester: IVP; Grand Rapids: Zondervan, 1994), IA `systematictheolo00grud_0` — полнотекстовый индекс Open Library (доступ к книге ограничен): «Reformed people argue that if Christ’s death actually paid…»; «…to eternal punishment anyone whose sins are already paid for: that would be demanding double payment, and it would therefore…»; «…the Holy Spirit will certainly apply the benefits of Christ’s redemptive work…»; «…various senses that can be given to the word “for” in these two statements»; «…“Christ died to actually pay the penalty for all the sins of his people only.”». Связный текст — транскрипция на Scribd (класс C); английские pp. 594–603 — по вторичным ссылкам. Класс B (OCR-фрагменты печатного издания) | Сн. 71: форма с вечным наказанием — у Грудема; сн. 77: атрибуция верна, вывод Грудема противоположен; русские с. 672, 680 не видны |
 | S246 *(раунд 148, 2026-11-17)* | А. Хукема, *Образ Божий*, пер. А. В. Вязовской (Минск: Полиграфкомбинат им. Я. Коласа, 2019), 400 с., ISBN 978-985-7101-27-6 — книжные карточки esxatos.com, mirt.ru, epbook.by (оглавление, выходные данные; класс C). Оригинал: A. A. Hoekema, *Created in God’s Image* (Eerdmans, 1986), IA `createdingodsima0000hoek` (доступ ограничен; пробы полнотекстового индекса книгу не выдали). Текст с. 360 не виден. Локатор статьи — Drive-PDF, с. 33 (класс A1) | REPASS §71; §4.231 |
 | S247 *(раунд 149, 2026-11-17)* | R. L. Harris, G. L. Archer, B. K. Waltke (eds.), *Theological Wordbook of the Old Testament* (Chicago: Moody, 1980), ст. 1023 כָּפַר (Р. Л. Харрис), IA `theologicalwordb01harr`, `theologicalwordb0000unse_v6z7`, `theologicalwordb0000unse_n9s9` — полнотекстовый индекс Open Library (доступ ограничен): «…“ransom,” the meaning of kāpar can be better understood. It means “to atone by offering a substitute.” The great majority of the usages concern the priestly ritual of sprinkling…» (класс B). Вторичные пересказы — Земек 2002, Кларк 1987, Экин 2001 (класс C). HALOT p. 494 и Swanson #4105 не видны | REPASS §72; §4.232 |
+| S248 *(раунд 150, 2026-11-17)* | B. Demarest, *The Cross and Salvation: The Doctrine of Salvation* (Wheaton: Crossway, 1997; Foundations of Evangelical Theology, ред. J. S. Feinberg), p. 193 — печатный текст не виден (на IA нет). Посредники (класс C): (а) T. Tiessen, блог *Thoughts Theological*, «For whom did Christ die?»: «Christ died to make atonement for all to the end that its benefits would be applied to the elect» (193); «by divine *intention* Christ's suffering and death are universal in its provision and particular in its application» (193); (б) G. L. Shultz, Jr., диссертация SBTS 2008: «Demarest makes a distinction between God's general provision in the atonement and his application of the atonement only to the elect. Demarest, *Cross and Salvation*, 193». Переизд. Crossway 2006 (карточки everand/Perlego). |
 
 **Ответ: П1 исторически неверен; «словом о цене» в английской традиции является *redemption*, а не *atonement*.**
 
@@ -8412,8 +8417,9 @@ hommes** selon ce propos déterminé…*» (с. 183) **есть в источн�
 | 4.230 | Q226 | Грудем, сн. 71 (с. 672) и 77 (с. 680) по OCR изд. 1994 г.: форма довода с вечным наказанием — у Грудема дословно; `STRAWMAN` (мягко) и `MISIDENTIFIED_TARGET` подкреплены; сн. 77 — ACCURATE + `SOURCE_SAYS_MORE` (мягко); рус. страницы — HOLD (р. 147) |
 | 4.231 | Q227 | Хукема, сн. 100 (с. 360): опорная фраза (PDF, с. 33) и выходные данные установлены; «Ср.» к бесспорному тезису о восстановлении творения; на объём искупления не влияет; с. 360 — HOLD (р. 148) |
 | 4.232 | Q228 | Сн. 101: TWOT 1023 «to atone by offering a substitute» найдено (OCR 1980); «выкупа путем замещения» — `QUOTE_NOT_VERBATIM` (мягко); вывод о неживой материи — `NON_SEQUITUR` (мягко); HALOT/Swanson — HOLD (р. 149) |
+| 4.233 | Q229 | Сн. 98: Демарест, p. 193 — формулы и страница подтверждены двумя посредниками (класс C); перевод верен; взгляд — собственный, ярлык «сублапсарианство» через Эриксона; исправлены `23_` §7 и `35_` FP-109 (р. 150) |
 
-⇒ разделов с `Q` — **225**, разделов §4.x — **227**; пропуски нумерации прежние.
+⇒ разделов с `Q` — **226**, разделов §4.x — **228**; пропуски нумерации прежние.
 
 
 ### 4.139. Q135 — Приёмка раунда 61: связка Сомюра, аудит объёма, готовность к мерджу (раунд 61)
@@ -10282,6 +10288,24 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 4. **Для спора об объёме.** Глосса описывает способ искупления (через замену), а не его охват. Вопроса, за кого дана замена, она не решает.
 
 **Чего нет.** HALOT p. 494; Swanson #4105; печатная страница TWOT (p. 453 по Logos 1999 г.).
+
+Вердикты S1–S5 не меняются.
+
+### 4.233. Q229 — Сноска 98: Демарест, *The Cross and Salvation* (1997), p. 193 (раунд 150, 2026-11-17)
+
+**Повод.** REPASS, строка 6: «передача соответствует» по выдержке класса C; не проверено, чью позицию излагает Демарест и связывает ли он её с лапсарианской схемой. Источник — S248. Таблица — REPASS-документ, §73.
+
+**Вопрос.** Точно ли передана цитата сн. 98, верен ли локатор и правомерно ли представлять Демареста как описывающего «сублапсарианский» взгляд?
+
+**Ответы.**
+1. **Текст статьи** (PDF, с. 30–31; класс A1): подводка «Описывая последнюю точку зрения, Брюс Демарест… пишет:» следует за фразой «Сублапсарианский взгляд иногда называют «неограниченное искупление с ограниченным применением»⁹⁷» (сн. 97 — Эриксон, с. 779). Цитата начинается словами «Обозначенная нами позиция – это не арминианство…» и кончается «…универсально по своей обеспечительной способности [universal in its provision] и конкретно по своему применению [particular in its application]»⁹⁸.
+2. **Локатор и формулы.** Тиссен и Шульц (2008) независимо цитируют p. 193: «by divine *intention* Christ's suffering and death are universal in its provision and particular in its application»; «Christ died to make atonement for all to the end that its benefits would be applied to the elect» (класс C). Английские вставки статьи совпадают. Выходные данные (Crossway, 1997) верны.
+3. **Перевод.** В переводе универсальным названо «божественное намерение», а у Демареста — страдания и смерть Христа «по божественному намерению». Смысл не меняется. «Particular» → «конкретно» теряет технический оттенок, но английский оригинал дан в скобках. Без флага.
+4. **Чья позиция.** Демарест излагает **свой** взгляд («Обозначенная нами позиция», «Наш взгляд»); Тиссен считает его четырёхпунктным кальвинистом. Ярлык «сублапсарианство» по видимым данным привязан через Эриксона. Структурно отождествление правдоподобно: всеобщее обеспечение, частное применение. Флага нет; употребляет ли Демарест сам этот термин — HOLD.
+5. **Для спора об объёме.** Цитата показывает, что статья опирается на умеренно-реформатское различение обеспечения и применения. Довод против этого различения — `16_` §6, `07_`; на точность сноски он не влияет.
+6. **Корпус.** `23_` §7 неверно относил к *The Cross and Salvation* сн. 10, 18, 45 (это *Integrative Theology* и Сперджен через неё), а Аллена — к сн. 10 (верно: сн. 9 и 19). `35_` FP-109 называл издательства Word/B&H вместо Crossway. Оба места исправлены. К таблице `16_` §6 добавлено примечание: в кавычках там пересказы, а не слова статьи или Демареста.
+
+**Чего нет.** Печатный текст p. 193; есть ли у Демареста слово «sublapsarian».
 
 Вердикты S1–S5 не меняются.
 
