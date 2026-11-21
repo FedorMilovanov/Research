@@ -121,4 +121,6 @@ FY25 $399,645/$950,642 −$550,997 net $304,459 receivable $153,000 income $15,3
 
 *Обновление 2026-11-20 (мощная контент-синхронизация):* `FINANCES.md` + `GOVERNANCE.md` получили substantive overlay Q005/Q006/Q006A Nov15 (Oct28 32257311 NO_DISSOLUTION vs successor HOLD, deed 4979 403, July21 board OPEN) + reserves fragility — больше за проход внутри старых файлов.
 
+*Обновление 2026-11-20 (расширенная синхронизация 10 канонов):* `ASSET_TRANSFER_AND_RIGHTS.md` (Oct28 rename≠succession) + `MEDIA_LEDGER.md` (18 media platform≠ownership) + `SOURCE_LEDGER.md` (S144 + GNL 273 SHA) — все ключевые каноны синхронизированы, новых WAVE-файлов нет.
+
 *Подпись:* Agent №4 SCOUT — консолидация 11–18, дальше обновления в канон.

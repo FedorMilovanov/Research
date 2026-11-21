@@ -1,7 +1,8 @@
 # G3 HISTORY — media / photo ledger
 
 **Status:** ACTIVE / RIGHTS_HOLD by default  
-**Rule:** discovery of a public image does not authorize copying it into this public repository or republishing it in the final article.
+**Rule:** discovery of a public image does not authorize copying it into this public repository or republishing it in the final article.  
+**Synced:** `2026-11-20 CONSOLIDATED 11–18` — 18 media M009 8,200 M017 wide 2020 host proves audience ≠ ownership; no rights transferred  
 
 | ID | Subject / scene | Source / owner context | Historical use | Rights state | Action |
 |---|---|---|---|---|---|

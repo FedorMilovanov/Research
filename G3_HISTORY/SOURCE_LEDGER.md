@@ -1,7 +1,8 @@
 # G3 HISTORY — source ledger
 
 **Status:** ACTIVE / PUBLICATION_HOLD  
-**Policy:** `RESEARCH-EVIDENCE-POLICY-V2-2026-08-02`
+**Policy:** `RESEARCH-EVIDENCE-POLICY-V2-2026-08-02`  
+**Synced:** `2026-11-20 CONSOLIDATED 11–18 S144 GNL 273 host294 SHA 678b/c8eb/c14f/48846` — G3-S001-S144 + host 294 chunks 0-3 FCA filtered  
 
 This ledger records provenance and evidentiary weight. A source appearing here is not automatically publication-eligible.
 
