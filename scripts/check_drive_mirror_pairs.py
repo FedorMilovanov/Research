@@ -108,6 +108,10 @@ def load() -> tuple[dict, list[str]]:
         seen_id.add(drive_id)
         if entry.get("kind") not in {"docs", "file"}:
             errors.append(f"{tag}: kind={entry.get('kind')!r}, ожидалось docs или file")
+        if not entry.get("path"):
+            # Пустой path — не мелочь: ROOT / "" это сам каталог репозитория, и чтение
+            # «файла» падало трейсбеком IsADirectoryError вместо названной ошибки.
+            errors.append(f"{tag}: пустой path")
     return data, errors
 
 
@@ -343,16 +347,9 @@ def report_cross(entries: list[dict]) -> int:
             f"{corpus_state if rec else 'в индексе не найден'}{'' if ok else '  ← расходится'}"
         )
 
-    # Два зеркала под одним именем: таблица покажет обе строки, а «расхождений 0» —
-    # потому что каждая по отдельности сходится. Имя зеркала обязано быть уникальным.
-    tags = [e.get("mirror") for e in entries]
-    repeated = sorted({t for t in tags if tags.count(t) > 1})
-    if repeated:
-        print(f"имена зеркал повторяются: {', '.join(repeated)}")
-
     print(f"\nзеркал: {len(entries)}; ID расходятся с корпусом/индексом: {mismatches}; "
           f"в driveMirrors записаны голой строкой: {bare}")
-    return 1 if (mismatches or repeated) else 0
+    return 1 if mismatches else 0
 
 
 def main(argv: list[str]) -> int:
@@ -363,11 +360,13 @@ def main(argv: list[str]) -> int:
     # --cross и --index не прогоняют поштучный разбор, но структурные ошибки реестра
     # (не то число записей, повтор имени) обязаны валить и их: иначе гейт зеленеет
     # на реестре, из которого зеркало просто выпало.
+    if errors:
+        # Реестр сломан структурно — проверять нечего и незачем: печатаем причины и выходим.
+        for error in errors:
+            print(f"[FAIL] {error}", file=sys.stderr)
+        return 1
+
     if "--cross" in argv or "--index" in argv:
-        if errors:
-            for error in errors:
-                print(f"[FAIL] {error}", file=sys.stderr)
-            return 1
         if "--cross" in argv:
             return report_cross(data.get("mirrors", []))
         return report_index(data.get("mirrors", []))

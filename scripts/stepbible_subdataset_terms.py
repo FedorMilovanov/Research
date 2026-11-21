@@ -206,7 +206,11 @@ def check() -> int:
     if not OUT_JSON.exists():
         print(f"нет {OUT_JSON.relative_to(ROOT)}", file=sys.stderr)
         return 1
-    data = json.loads(OUT_JSON.read_text(encoding="utf-8"))
+    try:
+        data = json.loads(OUT_JSON.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        print(f"{OUT_JSON.relative_to(ROOT)} не разбирается: {exc}", file=sys.stderr)
+        return 1
     errors: list[str] = []
 
     pin = data.get("pin", {})

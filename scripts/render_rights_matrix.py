@@ -80,7 +80,11 @@ def registry_index() -> dict[str, dict]:
 
 
 def load() -> dict:
-    return json.loads(DATA.read_text(encoding="utf-8"))
+    """JSON матрицы. Сломанный файл — названная ошибка: трейсбек читается как поломка скрипта."""
+    try:
+        return json.loads(DATA.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        raise SystemExit(f"Rights matrix: FAIL — {DATA.relative_to(ROOT)} не разбирается: {exc}")
 
 
 def validate(matrix: dict) -> list[str]:
