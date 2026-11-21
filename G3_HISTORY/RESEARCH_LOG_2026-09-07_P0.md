@@ -1,6 +1,6 @@
 # G3 HISTORY — P0 acquisition log — 2026-09-07
 
-**Status:** ACTIVE / FORENSIC LOG  
+**Status:** ACTIVE / FORENSIC LOG + `2026-11-20 CONSOLIDATED 39 commits arena/963be9bc-research proof-route complete`  
 **Purpose:** record what was actually acquired, what route was attempted, and why unresolved claims remain on HOLD.
 
 ## 1. IRS e-file acquisition
