@@ -1140,6 +1140,32 @@
         "PUBLICATION_HOLD"
       ],
       "residualReason": "Проверены ZIP-carriers, а не чтение содержимого и не научная пригодность. Внутренняя независимая custody-копия на Drive не создана; доступность всё ещё зависит от непереписанной upstream Git history. Лицензии и вложенные произведения требуют отдельного решения, наборы не объявлены сохранёнными или публикационно разрешёнными; PROMOTE остаётся 0."
+    },
+    {
+      "id": "HCR-2026-11-18-34",
+      "title": "Shallow clone: инструкция восстановления ветки исправлена и воспроизведена локальным fixture",
+      "holdType": "EVIDENCE_HOLD",
+      "previousState": "Одиночный документ #621 оставался HOLD: команда git fetch origin arena/<ветка> обновляет FETCH_HEAD, но в свежем single-branch clone не гарантирует refs/remotes/origin/arena/<ветка>, на который сразу ссылался reset; процедура также называла себя идемпотентной, хотя --unshallow на полном clone завершается ошибкой",
+      "closedScope": "Принят исправленный NOT_AUTHORITY runbook: имя текущей ветки проверяется, tracked и untracked байты получают аварийную копию, полная история достаётся только когда clone действительно shallow, а remote-tracking ref создаётся явным refspec и разрешается в commit до reset --mixed. Offline fixture строит fresh depth-1 single-branch repository, воспроизводит расщепление working tree/.git и доказывает, что reset переводит HEAD на точную remote-верхушку, не теряя настоящую локальную правку",
+      "recordLocations": [
+        "docs/research/arena/SANDBOX_SHALLOW_CLONE_RECOVERY_2026-11-18.md",
+        "scripts/test_sandbox_shallow_clone_recovery.py",
+        ".github/workflows/holds-inventory.yml",
+        "docs/research/PR621_SELECTIVE_INTEGRATION_CROSSWALK_2026-11-18.md §2",
+        "docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md §4"
+      ],
+      "method": "fresh-shallow-clone-refspec-fixture",
+      "objects": [
+        {
+          "sourcePrDocumentBlob": "aaef9274f73c258d22bad189d23eacc0b460b411",
+          "explicitRemoteTrackingRefspec": true,
+          "freshDepthOneSingleBranchFixture": true,
+          "networkRequired": false,
+          "workingRepositoryMutatedByFixture": false
+        }
+      ],
+      "residualHolds": [],
+      "residualReason": "Закрыта только механическая ошибочность recovery-note. Исторические рассказы о перезапусках не считаются corpus evidence; рецепт не применяется к detached HEAD, неизвестному authority или неотправленным коммитам. Никакие research, rights, publication, mirror или independent-review HOLD не изменены; PROMOTE остаётся 0."
     }
   ],
   "confirmations": [

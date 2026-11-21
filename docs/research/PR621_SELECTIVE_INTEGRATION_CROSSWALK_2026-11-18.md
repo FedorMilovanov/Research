@@ -16,7 +16,7 @@ GitHub API для точного head #621 перечисляет 50 путей:
 
 Полное scratch-слияние #621 в актуальный `main` после #584 не является даже текстово бесконфликтным: ровно два конфликта — `ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json` и `ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json`. После сохранения актуальных версий этих двух производных JSON и пересъёма командой `atonement_reshoot_state.py --write` проверка `--check` и 230 тестов `test_atonement_sync.py` проходят. Это доказывает способ механического разрешения, но не принимает спорную исходную прозу #621.
 
-**Актуальное решение:** два узких среза приняты отдельными closures: STEPBible subdataset terms (`HCR-2026-11-18-32`) и точная official-core квитанция вместе с независимо написанным полным гейтом (`HCR-2026-11-18-33`). Два исходных official-core prose-файла #621 не приняты; восемь прочих пакетов остаются `HOLD`. Wholesale merge #621 по-прежнему запрещён.
+**Актуальное решение:** три узких среза приняты отдельными closures: STEPBible subdataset terms (`HCR-2026-11-18-32`), точная official-core квитанция вместе с независимо написанным полным гейтом (`HCR-2026-11-18-33`) и исправленный shallow-clone runbook с fresh-clone fixture (`HCR-2026-11-18-34`). Два исходных official-core prose-файла #621 не приняты; семь прочих пакетов остаются `HOLD`. Wholesale merge #621 по-прежнему запрещён.
 
 ## 2. Пакеты 32 новых путей
 
@@ -30,7 +30,7 @@ GitHub API для точного head #621 перечисляет 50 путей:
 | HOLD inventory / triage / orchestration | 9 | Производные снимки и документы уже stale; общий раннер падает на inventory, numbers и mirror cross | #584 | **HOLD** |
 | Russian Baptists Drive custody note | 1 | Зависит от четырёх изменённых RBA-файлов и датированных Drive identifiers/readback | RBA custody owner | **HOLD** |
 | SUNO DBNL slug map | 1 | Сам по себе не обновляет реестр; требуются пять пересекающихся путей, принадлежащих #585, и разрешение по record IDs | #585 | **HOLD** |
-| Shallow-clone recovery note | 1 | В инструкции `git fetch origin arena/<ветка>` не создаёт гарантированно `origin/arena/<ветка>` в свежем клоне, хотя следующая команда делает reset именно на этот ref; нужен явный refspec | #584 tooling | **HOLD** до исправления команды и теста в fresh shallow clone |
+| Shallow-clone recovery note | 1 | Ошибочная связка заменена явным `refs/heads/$branch:refs/remotes/origin/$branch`; добавлены безопасные backup/precondition границы. Offline fixture воспроизводит fresh depth-1 single-branch clone и сохранение локальной правки после `reset --mixed` | #584 tooling | **ADMIT выполнен в HCR-34** |
 | Pusey II locator note | 1 | Независимая перепроверка подтвердила OCR, но нашла неверную пару p.295 ↔ leaf 306, пропущенный аппарат и границу фрагмента; визуальный C-25 остаётся OPEN | atonement source owner | **HOLD** |
 
 ### 2.1. Принятые узкие срезы
@@ -72,6 +72,16 @@ scripts/test_check_official_core_reproducibility.py
 ```
 
 Проверка `--fetch` повторно получила все три ZIP и сверила суммарно `123205547` байт; offline-check и девять негативных тестов включены в CI. Это закрывает только зависимость от истекающего Actions artifact. Независимая Drive-custody, чтение содержимого, научная приёмка, права, публикация и `PROMOTE=0` не изменены.
+
+Shallow-clone note принят после исправления, а не как исходный blob. Канонический документ называет source blob, использует явный refspec и не объявляет runbook authority над корпусом:
+
+```text
+docs/research/arena/SANDBOX_SHALLOW_CLONE_RECOVERY_2026-11-18.md
+  source git blob aaef9274f73c258d22bad189d23eacc0b460b411
+scripts/test_sandbox_shallow_clone_recovery.py
+```
+
+Fresh local fixture не использует сеть и не меняет рабочий repository; он проверяется в holds CI. Закрыта ошибка инструкции, а не какой-либо corpus/evidence/rights HOLD.
 
 ### 2.2. Точные пути остальных пакетов
 
@@ -118,11 +128,10 @@ scripts/test_check_official_core_reproducibility.py
 - `scripts/render_hold_inventory.py`
 - `scripts/run_research_gates.py`
 
-**Одиночные пакеты (по одному):**
+**Оставшиеся одиночные пакеты (по одному):**
 
 - RBA: `RUSSIAN_BAPTISTS_ARCHIVE/DRIVE_CUSTODY_VS_LEDGER_2026-11-18.md`
 - SUNO: `SUNO_HYMNS/data/dbnl-slug-map-1676.json`
-- shallow clone: `docs/research/arena/SANDBOX_SHALLOW_CLONE_RECOVERY_2026-11-18.md`
 - Pusey: `ИСКУПЛЕНИЕ/evidence/PUSEY_II_294_296_OCR_LOCATOR_2026-11-18.md`
 
 ## 3. Все 18 изменённых путей: владелец и disposition
@@ -211,4 +220,4 @@ python3 -B scripts/test_atonement_sync.py -q
 - Drive snapshot #621 не перечитывался как сегодняшний ответ Drive; наличие ID не равно destination readback.
 - Pusey II page images не открывались визуально; OCR и page-number index не закрывают C-25.
 - DBNL slug map не принят редакционным владельцем #585.
-- HCR-32 и HCR-33 уже выполняют два выборочных переноса; ни один из них не является решением о правах, независимой custody, научной приёмке или публикации.
+- HCR-32, HCR-33 и HCR-34 уже выполняют три выборочных переноса. Первые два не являются решением о правах, независимой custody, научной приёмке или публикации; HCR-34 закрывает только дефект tooling-документа.

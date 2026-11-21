@@ -28,6 +28,7 @@ on:
       - 'data/stepbible-subdataset-terms-2026-11-18.json'
       - 'data/text-integrity-repairs-2026-11-18.json'
       - 'docs/research/HOLDS_REGISTER_2026-11-18.md'
+      - 'docs/research/arena/SANDBOX_SHALLOW_CLONE_RECOVERY_2026-11-18.md'
       - 'scripts/audit_ci_triggers.py'
       - 'scripts/check_snapshot_freshness.py'
       - 'scripts/stepbible_subdataset_terms.py'
@@ -52,6 +53,7 @@ on:
       - 'scripts/test_audit_text_integrity.py'
       - 'scripts/test_check_hold_vocabulary.py'
       - 'scripts/test_check_official_core_reproducibility.py'
+      - 'scripts/test_sandbox_shallow_clone_recovery.py'
       - 'scripts/test_check_snapshot_freshness.py'
       - 'scripts/test_hold_closure_registry.py'
       - 'scripts/test_publication_gate_status.py'
@@ -89,6 +91,7 @@ on:
       - 'data/stepbible-subdataset-terms-2026-11-18.json'
       - 'data/text-integrity-repairs-2026-11-18.json'
       - 'docs/research/HOLDS_REGISTER_2026-11-18.md'
+      - 'docs/research/arena/SANDBOX_SHALLOW_CLONE_RECOVERY_2026-11-18.md'
       - 'scripts/audit_ci_triggers.py'
       - 'scripts/check_snapshot_freshness.py'
       - 'scripts/stepbible_subdataset_terms.py'
@@ -113,6 +116,7 @@ on:
       - 'scripts/test_audit_text_integrity.py'
       - 'scripts/test_check_hold_vocabulary.py'
       - 'scripts/test_check_official_core_reproducibility.py'
+      - 'scripts/test_sandbox_shallow_clone_recovery.py'
       - 'scripts/test_check_snapshot_freshness.py'
       - 'scripts/test_hold_closure_registry.py'
       - 'scripts/test_publication_gate_status.py'
@@ -154,6 +158,7 @@ jobs:
           python3 -m py_compile scripts/verify_internal_digests.py
           python3 -m py_compile scripts/stepbible_subdataset_terms.py
           python3 -m py_compile scripts/check_official_core_reproducibility.py
+          python3 -m py_compile scripts/test_sandbox_shallow_clone_recovery.py
       # A pull_request checkout is a synthetic merge commit. Dated snapshots belong to
       # the branch that authored them, so unrelated main changes must not make that branch
       # rewrite all reports. The PR head is therefore the blocking freshness boundary.
@@ -193,6 +198,7 @@ jobs:
           python3 -B -m unittest discover -s scripts -p 'test_audit_register_claims.py' -v
           python3 -B -m unittest discover -s scripts -p 'test_stepbible_subdataset_terms.py' -v
           python3 -B -m unittest discover -s scripts -p 'test_check_official_core_reproducibility.py' -v
+          python3 -B -m unittest discover -s scripts -p 'test_sandbox_shallow_clone_recovery.py' -v
       - name: Scan (must not touch the working tree)
         run: |
           python3 scripts/audit_repository_holds.py -o /tmp/holds-a.json
