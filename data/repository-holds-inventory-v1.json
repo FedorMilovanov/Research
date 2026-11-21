@@ -76,13 +76,13 @@
     ]
   },
   "totals": {
-    "filesScanned": 3129,
-    "filesWithMentions": 916,
+    "filesScanned": 3301,
+    "filesWithMentions": 1032,
     "mentions": {
       "ARCHIVE_HOLD": 1423,
       "BLOCKING-HOLD": 16,
       "BOOK-FULLTEXT-HOLD": 15,
-      "EVIDENCE_HOLD": 1302,
+      "EVIDENCE_HOLD": 1304,
       "HOLD-APPARATUS": 1,
       "HOLD-AS": 3,
       "HOLD-GLOSS": 1,
@@ -98,16 +98,16 @@
       "HOLD_MAJOR": 11,
       "HOLD_RETAINED": 1,
       "LIVE-READBACK-HOLD": 4,
-      "LOCATOR_HOLD": 1983,
+      "LOCATOR_HOLD": 1988,
       "PAGE-IMAGE-HOLD": 14,
-      "PUBLICATION_HOLD": 2655,
-      "RIGHTS_HOLD": 1475,
+      "PUBLICATION_HOLD": 2825,
+      "RIGHTS_HOLD": 1481,
       "VERSION-HOLD": 23
     },
     "mentionsByStatus": {
-      "closed": 824,
-      "open": 2357,
-      "unmarked": 6063
+      "closed": 834,
+      "open": 2370,
+      "unmarked": 6223
     },
     "canonicalFlagLineStatesRecordedAsBothOpenAndClosed": 406,
     "filesWithJsonHolds": 40,
@@ -325,6 +325,20 @@
       "status": {
         "closed": 1,
         "unmarked": 20
+      }
+    },
+    "apostasy": {
+      "files": 116,
+      "mentions": {
+        "EVIDENCE_HOLD": 2,
+        "LOCATOR_HOLD": 5,
+        "PUBLICATION_HOLD": 170,
+        "RIGHTS_HOLD": 6
+      },
+      "status": {
+        "closed": 10,
+        "open": 13,
+        "unmarked": 160
       }
     },
     "data": {
@@ -25857,6 +25871,1183 @@
       },
       "status": {
         "unmarked": 4
+      }
+    },
+    {
+      "path": "apostasy/09_CORPUS_AUTHORITY_RECONCILIATION_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 3
+      },
+      "status": {
+        "unmarked": 3
+      }
+    },
+    {
+      "path": "apostasy/10_JUDE_EPISTLE_APOSTASY_AND_KEEPING_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "open": 1,
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/11_CASE_MATRIX_EXPANDED_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "unmarked": 2
+      }
+    },
+    {
+      "path": "apostasy/12_2_PETER_2_CANONICAL_SUPPLEMENT_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 3
+      },
+      "status": {
+        "closed": 1,
+        "unmarked": 2
+      }
+    },
+    {
+      "path": "apostasy/139_VERIFICATION_REGISTER_PRINT_AND_PRIMARY_SOURCE_DEBT_2026-10-02.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "EVIDENCE_HOLD": 2,
+        "LOCATOR_HOLD": 5,
+        "PUBLICATION_HOLD": 1,
+        "RIGHTS_HOLD": 6
+      },
+      "status": {
+        "open": 4,
+        "unmarked": 10
+      }
+    },
+    {
+      "path": "apostasy/13_SOURCE_REGISTRY_SUPPLEMENT_30_PLUS_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "unmarked": 2
+      }
+    },
+    {
+      "path": "apostasy/14_PRODUCT_SERIES_BLUEPRINT_V2_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/15_JOHN_15_VINE_BRANCHES_AND_ABIDING_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "unmarked": 2
+      }
+    },
+    {
+      "path": "apostasy/16_ROMANS_11_OLIVE_TREE_CUT_OFF_AND_GRAFTED_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "unmarked": 2
+      }
+    },
+    {
+      "path": "apostasy/17_GALATIANS_5_4_FALLEN_FROM_GRACE_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "unmarked": 2
+      }
+    },
+    {
+      "path": "apostasy/17_LUKE_8_TEMPORARY_FAITH_AND_ROOT_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "unmarked": 2
+      }
+    },
+    {
+      "path": "apostasy/18_1_CORINTHIANS_9_27_10_13_DISQUALIFIED_AND_WILDERNESS_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "unmarked": 2
+      }
+    },
+    {
+      "path": "apostasy/18_SOURCE_REMEDIATION_AND_ALTERNATIVE_MODELS_LEDGER_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "open": 1,
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/19_1_JOHN_2_19_REMAINING_AND_DEPARTURE_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "unmarked": 2
+      }
+    },
+    {
+      "path": "apostasy/19_ARTICLE_CLAIM_OWNERSHIP_AND_INTERNAL_LINK_MATRIX_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "unmarked": 2
+      }
+    },
+    {
+      "path": "apostasy/19_WHOLE_BIBLE_CANONICAL_ATLAS_GENESIS_TO_REVELATION_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "open": 1,
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/20_APOSTASY_TAXONOMY_TRAJECTORIES_DECEPTIONS_AND_HARDENING_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/20_P0_TECHNICAL_SOURCE_ACQUISITION_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "closed": 1,
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/20_REVELATION_2_3_CHURCHES_WARNING_MATRIX_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "unmarked": 2
+      }
+    },
+    {
+      "path": "apostasy/21_2_PETER_2_TECHNICAL_COMMENTARY_ACQUISITION_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "open": 1,
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/21_JAMES_5_19_20_WANDERING_AND_RESTORATION_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "unmarked": 2
+      }
+    },
+    {
+      "path": "apostasy/21_PERSONS_GROUPS_AND_FINAL_STATE_CASE_LEDGER_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/22_BOOK_OF_LIFE_BIBLICAL_THEOLOGY_AND_REVELATION_3_5_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "unmarked": 2
+      }
+    },
+    {
+      "path": "apostasy/22_HEBREWS_10_29_TECHNICAL_REFERENT_MATRIX_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "open": 1,
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/22_NATIONS_ISRAEL_JUDAH_AND_CHURCH_CORPORATE_APOSTASY_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/23_1_CORINTHIANS_11_27_32_DISCIPLINE_DEATH_NOT_WORLD_CONDEMNATION_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "unmarked": 2
+      }
+    },
+    {
+      "path": "apostasy/23_WARNINGS_RESTORATION_DISCIPLINE_AND_PASTORAL_RESPONSE_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/24_HEBREWS_12_ESAU_ROOT_BITTERNESS_REFUSING_SPEAKER_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "unmarked": 2
+      }
+    },
+    {
+      "path": "apostasy/24_HEBREW_GREEK_APOSTASY_LEXEME_AND_IMAGE_MAP_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/25_PUBLICATION_READINESS_AND_CLAIM_LEDGER_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 3
+      },
+      "status": {
+        "unmarked": 3
+      }
+    },
+    {
+      "path": "apostasy/25_SCRIPTURE_INDEX_OT_APOSTASY_RETURN_AND_HARDENING_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/26_HEBREWS_HAGIAZO_CONCORDANCE_AND_CULTIC_SEMANTICS_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/26_SCRIPTURE_INDEX_NT_APOSTASY_PERSEVERANCE_AND_RESTORATION_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/27_CANON_WIDE_SOURCE_REGISTRY_SUPPLEMENT_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/27_JOHN_17_12_GIVEN_ONES_AND_SON_OF_PERDITION_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "unmarked": 2
+      }
+    },
+    {
+      "path": "apostasy/28_BLIND_SPOTS_GAL5_2THESS2_SAUL_SOLOMON_REV22_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/28_MATTHEW_27_3_5_JUDAS_REMORSE_AND_REPENTANCE_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "open": 1,
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/29_1_PETER_2_25_RETURNED_TO_SHEPHERD_AND_CONVERSION_LANGUAGE_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "unmarked": 2
+      }
+    },
+    {
+      "path": "apostasy/29_CANON_WIDE_AUTHORITY_MAP_AND_HANDOFF_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/30_GALATIANS_4_8_11_TURN_BACK_AGAIN_AND_ELEMENTAL_SLAVERY_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "unmarked": 2
+      }
+    },
+    {
+      "path": "apostasy/31_1_PETER_CONVERSION_PRESERVATION_WARNING_AND_RESTORATION_MATRIX_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "unmarked": 2
+      }
+    },
+    {
+      "path": "apostasy/32_TRANSLATION_DIRECTIONAL_AND_STATUS_LANGUAGE_INFERENCE_TRAPS_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "unmarked": 2
+      }
+    },
+    {
+      "path": "apostasy/33_2_TIMOTHY_2_11_19_DENIAL_FAITHLESSNESS_AND_FIRM_FOUNDATION_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "unmarked": 2
+      }
+    },
+    {
+      "path": "apostasy/33_CANON_66_BOOK_COMPLETENESS_AUDIT_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "open": 1,
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/34_LUKE_22_31_32_PETER_SIFTING_INTERCESSION_FAITH_AND_RETURN_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "unmarked": 2
+      }
+    },
+    {
+      "path": "apostasy/34_OT_HISTORICAL_BOOKS_APOSTASY_DEEPENING_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "unmarked": 2
+      }
+    },
+    {
+      "path": "apostasy/35_JOHN_6_60_71_DISCIPLES_TURN_BACK_FATHER_GIVES_AND_JUDAS_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "unmarked": 2
+      }
+    },
+    {
+      "path": "apostasy/35_WISDOM_AND_PROPHETS_APOSTASY_DEEPENING_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "unmarked": 2
+      }
+    },
+    {
+      "path": "apostasy/36_HOSEA_BACKSLIDING_RETURN_FALSE_REPENTANCE_AND_HEALING_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "unmarked": 2
+      }
+    },
+    {
+      "path": "apostasy/36_NT_APOSTASY_GAPS_ACTS_PASTORALS_JAMES_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "unmarked": 2
+      }
+    },
+    {
+      "path": "apostasy/37_CANON_WIDE_WORK_HANDOFF_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/37_JEREMIAH_2_3_BROKEN_CISTERNS_BACKSLIDING_RETURN_AND_HEALING_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "unmarked": 2
+      }
+    },
+    {
+      "path": "apostasy/38_1_TIMOTHY_1_18_20_4_1_SHIPWRECK_AND_DEPARTURE_FROM_THE_FAITH_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "unmarked": 2
+      }
+    },
+    {
+      "path": "apostasy/38_CROSS_CANONICAL_APOSTASY_MECHANISMS_MATRIX_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "unmarked": 2
+      }
+    },
+    {
+      "path": "apostasy/39_LOST_SHEEP_SEEK_RETURN_SHEPHERD_PSALM119_ISAIAH53_EZEKIEL34_LUKE15_1PETER2_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "unmarked": 2
+      }
+    },
+    {
+      "path": "apostasy/39_RETURN_BACK_AGAIN_LEXEME_AND_TRAJECTORY_CONCORDANCE_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/40_HEART_MEMORY_FORGETTING_HARDENING_MATRIX_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "unmarked": 2
+      }
+    },
+    {
+      "path": "apostasy/40_LATE_LIFE_LONG_COURSE_APOSTASY_SOLOMON_ASA_JOASH_UZZIAH_DEMAS_AND_COUNTEREXAMPLES_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "unmarked": 2
+      }
+    },
+    {
+      "path": "apostasy/41_EZEKIEL_18_33_RIGHTEOUS_TURNS_PERSONAL_RESPONSIBILITY_AND_PRESENT_FAITHFULNESS_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "unmarked": 2
+      }
+    },
+    {
+      "path": "apostasy/41_PROSPERITY_AGE_SUCCESS_AND_LATE_FALL_MATRIX_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/42_MONEY_COVETOUSNESS_GAIN_AND_APOSTASY_MATRIX_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/43_SEXUAL_IMMORALITY_IDOLATRY_AND_COVENANT_INFIDELITY_MATRIX_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/44_FALSE_ASSURANCE_PRESUMPTION_AND_PRIVILEGE_MATRIX_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/45_REPEATED_WARNING_RESISTANCE_AND_JUDICIAL_HARDENING_MATRIX_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/46_RESTORATION_AFTER_FALL_REPENTANCE_AND_RECLAMATION_MATRIX_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/47_TERMINAL_AND_NEAR_TERMINAL_APOSTASY_TEXTS_MATRIX_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/49A_SOURCE_TRUST_CONFESSIONAL_AND_EXEGETICAL_FILTER_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 3
+      },
+      "status": {
+        "unmarked": 3
+      }
+    },
+    {
+      "path": "apostasy/49_P0B_THEMATIC_MATRIX_CLOSURE_AND_P0A_SOURCE_HARDENING_LEDGER_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "closed": 1,
+        "open": 1
+      }
+    },
+    {
+      "path": "apostasy/50_PROVERBS_HEBREW_WAYWARDNESS_HEART_AND_HARDENING_DOSSIER_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/51_AMOS_4_RETURN_REFUSAL_AND_COVENANT_CURSE_DOSSIER_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/52_ACTS_7_HEART_RETURN_IDOLATRY_AND_JUDICIAL_TURN_DOSSIER_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "closed": 1
+      }
+    },
+    {
+      "path": "apostasy/53_2_TIMOTHY_2_DENIAL_FAITHFULNESS_FOUNDATION_DOSSIER_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/54_TITUS_PRACTICAL_DENIAL_WARNING_AND_BOUNDARY_DOSSIER_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/55_PASTORALS_EXACT_LOCATOR_SUPPLEMENT_2TIM2_TITUS_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/55_TITUS_TECHNICAL_LEXEME_AND_GOOD_WORKS_SOURCE_CLOSURE_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/56_ACTS_7_CONSERVATIVE_TECHNICAL_SOURCE_CLOSURE_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/56_AMOS_4_EXACT_LOCATOR_SUPPLEMENT_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "closed": 1,
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/57_2_TIMOTHY_2_TECHNICAL_SOURCE_AND_INTERPRETIVE_CLOSURE_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/57_PROVERBS_EXACT_LOCATOR_SUPPLEMENT_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/58_ACTS_7_EXACT_LOCATOR_SUPPLEMENT_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/58_P0A_SOURCE_HARDENING_CLOSURE_AND_NEXT_HARD_TEXTS_LEDGER_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "open": 1,
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/59_CANON_66_RERUN_AND_PUBLICATION_READINESS_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "unmarked": 2
+      }
+    },
+    {
+      "path": "apostasy/60_HEBREWS_6_4_9_TECHNICAL_CLOSURE_AND_COMPETING_READINGS_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/61_HEBREWS_10_29_TECHNICAL_WEIGHTING_AND_SOURCE_CLOSURE_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/62_2_PETER_2_1_MASTER_WHO_BOUGHT_THEM_TECHNICAL_CLOSURE_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/63_2_PETER_2_18_22_KNOWLEDGE_ESCAPE_DEFEAT_AND_NATURE_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/64_1_JOHN_5_16_17_SIN_UNTO_DEATH_TECHNICAL_CLOSURE_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/65_BLASPHEMY_AGAINST_HOLY_SPIRIT_TERMINAL_HARDENING_DOSSIER_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/66_P0_HARD_TEXT_CLOSURE_AND_P1_QUEUE_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "closed": 1,
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/67_JAMES_5_19_20_DEATH_RESTORATION_AND_FORGIVENESS_DOSSIER_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/68_LUKE_11_24_26_MATTHEW_12_43_45_EMPTY_HOUSE_REFORMATION_AND_WORSE_END_DOSSIER_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/69_LUKE_8_13_P1_SOURCE_HARDENING_AND_COMPETING_MODELS_SUPPLEMENT_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "closed": 1
+      }
+    },
+    {
+      "path": "apostasy/70_JOHN_6_15_17_GIVEN_DRAWN_KEPT_BRANCHES_AND_JUDAS_DOSSIER_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/71_ROMANS_11_OLIVE_TREE_FAITH_CONTINUANCE_AND_CUTOFF_DOSSIER_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/72_1_CORINTHIANS_9_27_10_1_13_DISQUALIFICATION_WILDERNESS_WARNING_AND_FAITHFUL_GOD_DOSSIER_2026-09-30.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/73_GALATIANS_5_4_SEVERED_FROM_CHRIST_FALLEN_FROM_GRACE_P1_CLOSURE_2026-10-01.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/74_1_TIMOTHY_SHIPWRECK_DEPARTURE_WANDERING_P1_TECHNICAL_CLOSURE_2026-10-01.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/75_2_THESSALONIANS_2_APOSTASIA_DECEPTION_AND_JUDICIAL_DELUSION_P1_TECHNICAL_CLOSURE_2026-10-01.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/76_REVELATION_2_3_SEVEN_CHURCHES_REPENT_HOLD_FAST_AND_OVERCOME_P1_CLOSURE_2026-10-01.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/77_REVELATION_3_5_BOOK_OF_LIFE_ERASURE_AND_PERSEVERANCE_P1_CLOSURE_2026-10-01.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/78_REVELATION_22_18_19_ADD_TAKE_AWAY_TREE_OF_LIFE_WARNING_P1_CLOSURE_2026-10-01.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/79_JUDE_TEXT_CRITICAL_KEEPING_AND_RESCUE_P1_CLOSURE_2026-10-01.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "closed": 1
+      }
+    },
+    {
+      "path": "apostasy/80_P1_CLOSURE_RERUN_AND_REMAINING_PUBLICATION_BLOCKERS_2026-10-01.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "closed": 1
+      }
+    },
+    {
+      "path": "apostasy/81_SAUL_TRAJECTORY_SPIRIT_REJECTION_UNFAITHFULNESS_AND_FINAL_STATE_RESTRAINT_2026-10-01.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/82_JOSHUA_22_24_SUSPECTED_APOSTASY_INVESTIGATION_WITNESS_AND_COVENANT_CHOICE_2026-10-01.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/83_JUDGES_2_17_21_GENERATIONAL_FORGETTING_PRIVATE_CULT_AND_SOCIAL_DISINTEGRATION_2026-10-01.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/84_JEROBOAM_2_KINGS_17_INSTITUTIONAL_APOSTASY_AND_EXILE_DOSSIER_2026-10-01.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/85_APOSTATES_FIVE_PART_SERIES_ARCHITECTURE_BIBLICAL_HISTORICAL_PASTORAL_2026-10-01.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/86_ISAIAH_63_10_REBELLION_GRIEVING_HOLY_SPIRIT_AND_CORPORATE_COVENANT_DOSSIER_2026-10-01.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/87_MICAH_3_11_CORRUPT_LEADERS_DIVINE_PRESENCE_PRESUMPTION_AND_JUDGMENT_DOSSIER_2026-10-01.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/88_OT_SOURCE_CUSTODY_CLOSURE_RERUN_2026-10-01.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "closed": 1
+      }
+    },
+    {
+      "path": "apostasy/89_PURITAN_PRACTICAL_THEOLOGY_APOSTASY_FALSE_PEACE_DECAY_RESTORATION_SOURCE_MAP_2026-10-01.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/90_COMPETING_VIEWS_EXACT_LOCATOR_LEDGER_LUTHERAN_ARMINIAN_REFORMED_FREE_GRACE_2026-10-01.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/91_JUDE_5_22_23_TEXTUAL_APPARATUS_AND_SAFE_SYNTHESIS_DOSSIER_2026-10-01.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/92_REVELATION_3_5_22_14_22_19_TEXTUAL_VARIANTS_AND_SAFE_PUBLICATION_SYNTHESIS_2026-10-01.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
+      "path": "apostasy/94_CHURCH_HISTORY_LAPSE_RECANTATION_RESTORATION_AND_APOSTASY_PRIMARY_SOURCE_DOSSIER_2026-10-01.md",
+      "corpus": "apostasy",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
       }
     },
     {
