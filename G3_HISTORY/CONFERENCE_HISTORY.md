@@ -193,6 +193,29 @@ The resulting historical picture is not `theological conference → political co
 
 The thematic record demonstrates a primarily theological/ecclesial national-conference identity across the full pre-collapse history. It does **not** mean G3’s broader media ministry was apolitical or free of culture-war content.
 
+## GNL delivered corpus (host 294) — 273 total verified 2026-11-20 (consolidation waves 11–18)
+
+**Host:** `gnli.com/hosts/G3-Ministries/294` chunks 0–3 live 2026-11-20 — single GNL registry for G3 Ministries. FCA misroutes `2913–2915 My Own Voice/True Life Sessions` rejected; only `2901–2912` are G3. **Counts are delivered-media, not attendance** (Q014 guardrail: GNL ≠ registration ledger).
+
+| GNL ID | Year | Theme (official) | Episodes | Banner proof | Key speakers / durations (sample) |
+|---|---|---|---|---|---|
+| 2908 | 2013 | Gospel: Message and Mission | 9 | 9 Ministries 2013 Banner | Washer Prayer 1:52:40, Whitney 1:03:21, Washer Penal Sub 1:22:40, Baucham 56:48, Beeke 56:48, Lawson 1:07:01, Challies 37:07 |
+| 2909 | 2014 | Doctrine of the Church (Jan23–25 Pray's Mill) | 11 | 10 Ministries 2014 Banner | Baucham Faithful Men 1:02:06 + Sissified Jesus 1:03:20, Miller 32:21/39:15, Mbewe 49:41/49:16, Snyder 1:02:20, Lawson 1:26:44/1:12:40, Challies 1:00:46, Q&A 59:34 |
+| 2910 | 2015 | Bible is Word of God | 10 | 11 Ministries 2015 Banner | Lawson God-Breathed 1:11:29, Washer 1:02:41, Miller 38:56, Baucham 56:57, Roberts 1:16:50, Charles 51:20, White 53:48 |
+| 2912 | 2016 | Trinity | 8 | 13 Ministries 2016 Banner | Ware 1:06:32, White 55:15, Q&A 1:13:30, Lawson 1:05:02, Charles 44:55/52:09, White Qur'an 57:11, Miller 34:07 |
+| 2901 | 2017 | Reformation 500 | 18 | 2 Ministries 2017 Banner | Baucham 50:25/53:32, Washer 56:17/56:20, Mbewe 50:59/50:12, Lawson 1:02:20/50:10, Johnson 50:15, Carson Soli Deo 58:27 + Laying Foundation 48:42, White 49:40, Miller 31:29, Challies 48:58 |
+| 2902 | 2018 | Knowing God / Discipleship | 15 | 3 Ministries 2018 Banner | Q&A 53:11, Lawson 54:46/56:07, Johnson 51:01, Ascol 50:15, Baucham 51:21/46:20, Thomas 49:42, White 49:55/Kruger 1:00:08, Tripp 51:16/49:10, Challies 52:00, Miller 31:46, Buice 57:54 |
+| 2903 | 2019 | Mission of God | 17 | 4 Ministries 2019 Banner | Mbewe 52:11, Lawson 59:27/58:29, Baucham 50:21/51:39, Washer 1:11:24, Johnson 49:36, Piper 53:23, Dever 53:47/48:34, White 51:24, Platt 54:07, Miller 38:04, Q&A 1:02:31 |
+| 2905 | 2020 | Worship | 14 | 6 Ministries 2020 Banner | MacArthur 57:46, Johnson 49:59, Lawson 54:59/52:37, Ascol 45:59, Hinn 45:50, Washer 53:06, Beeke 1:01:02 |
+| 2906 | 2021 | Christ | 27 | 7 Ministries 2021 Banner | Strachan 49:36, Nichols 56:18, Peace 54:04, Aniol 52:07, Walls 1:03:06, Brown 53:38, Thornton 46:20, Lawson 54:10, Jonas 46:26, Riccardi 53:51, Q&A 57:49 |
+| 2911 | 2022 Regional | Salvation / Ordo Salutis | 14 | 12 Regional Salvational Banner | Canons Dort 1:01:39, Strachan 1:00:26, Buck 52:35, Buice/Aniol 37:44, Buice Gospel Call 1:04:20, Johnson Perseverance 52:39, Lawson Glorification 50:09, Payne Sanctification 1:11:58, Lawson Justification 1:09:52 etc |
+| 2904 | Podcast 2020–21 + Articles | G3 Podcast | 30 | 5 Ministries Podcast Banner | Rhodes 39:58, MacArthur E31 50:43 (dual-pin wave7+13), Walker/Buice 36:07, Romans13 47:20, Worship 38:05, Expository 27:12, Standpoint 36:12 |
+| 2907 | Articles from G3 | Articles | 90 | 8 Ministries Articles Banner | Song Anointed 17:19, Red Wave 8:15, New Heaven 11:51, Culture-Changing 6:38, Limited Aton 14:15, Government contradict 8:14 etc |
+
+**Continuity matrix (core vs guest):** Lawson 9/9 all nationals (2013 1:07 →2021 54:10), Baucham/Washer 6/9 (6 pre-2020 then gone), White 5/9, Mbewe 3/9, Carson/Piper/Platt/MacArthur guest spikes 2017–2020 collapsed after 2020 — quantifies narrowing without attendance invention (AE01). Early polemic Sissified Jesus 1:03 already 2014 (AD01), peak broad 2017 Carson double, baseline apolitical 2016 Trinity, bridge political Romans13 47:20 + Standpoint 36:12 already in Podcast S2 2020–21 before Articles Red Wave 2024 — staged narrowing 2014→2017→2018→2021→2024, not linear rightward.
+
+**Protocol note:** This is Universe A (national) 139 + Regional 14 + Podcast 30 + Articles 90 = 273 total. For Q013 coding use separate universes A/B/C/D per `IDEOLOGY_CONTENT_CODING_PROTOCOL`; no % until deterministic equal-n interval + inter-coder audit (waves 13/16 AM01). Platform-state ≠ attendance/ownership.
+
 ## Local-church motif
 
 The local-church principle clearly predates the later crises:

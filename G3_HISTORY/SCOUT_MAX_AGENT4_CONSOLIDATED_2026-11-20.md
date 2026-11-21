@@ -113,4 +113,6 @@ FY25 $399,645/$950,642 −$550,997 net $304,459 receivable $153,000 income $15,3
 | Media | MEDIA_LEDGER G3-M009 8,200 M017 wide 2020 + Play conflict Sep04/Jul23 |
 | Holds | FINAL_P0_HOLD_MATRIX Sep9 + Q005_Q006 delta Nov15 + OPEN_QUESTIONS Q001–Q022 |
 
-*Подпись:* Agent №4 SCOUT — консолидация 11–18, дальше обновления сюда.
+*Обновление 2026-11-20 (мощная волна консолидации):* GNL-корпус 273 перенесён в канон `CONFERENCE_HISTORY.md` раздел `GNL delivered corpus` — host 294 таблица 139+14+30+90 с длительностями + continuity matrix Lawson 9/9. Канон теперь первичный источник, консолидированный файл — индекс. Дальше обновления канона, не новые WAVE-файлы.
+
+*Подпись:* Agent №4 SCOUT — консолидация 11–18, дальше обновления в канон.
