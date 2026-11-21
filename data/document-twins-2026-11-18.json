@@ -3,8 +3,8 @@
   "authorityId": "DOCUMENT-TWINS-2026-11-18",
   "root": ".",
   "scope": {
-    "markdownFiles": 2411,
-    "documentsCompared": 2387,
+    "markdownFiles": 2415,
+    "documentsCompared": 2391,
     "minWords": 200,
     "shingleWords": 8,
     "signatureElements": 48
