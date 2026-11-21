@@ -5,7 +5,7 @@
   "scope": "Precisely 15 source files in data/charnock-custody-manifest-v2.json as of verified source commit; new Charnock navigation correction included; not entire Research, literary reader, independent review or rights clearance.",
   "sourceGitSha": "98544a9958564b720793a4988287dabc274cf752",
   "sourceBranch": "research/charnock-nav00-custody-20261121",
-  "sourceWorkflowRunId": 44902277539,
+  "sourceWorkflowRunId": null,
   "sourceArtifactId": null,
   "sourceArtifactName": null,
   "sourceWorkflowArtifactZipSha256": null,
@@ -33,7 +33,7 @@
   "sourceDestinationBytesIdentical": true,
   "verificationDateUtc": "2026-11-21",
   "verificationMethod": "INDEPENDENT_GOOGLE_DRIVE_RAW_DOWNLOAD_LOCAL_SHA256_AND_BYTE_EQUALITY",
-  "verificationBoundary": "15 original member bytes from the previously verified source archive were replayed, while the changed protected 00 was reconstructed with two exact documented text edits and its Git blob SHA1 was compared to the actual GitHub 98544a995856 source ref (722e7c5e7386eeb16a21570d47c54ae4babac4fd). The previous deterministic ZIP builder was byte-reproducible. All 15 member bytes, SHA-256 values, blob identities and the new canonical manifest were checked locally. The new inner ZIP was uploaded to Charnock's existing Drive folder and downloaded independently; source and Drive bytes and SHA-256 match. The NEW GitHub Actions run 44902277539 was queued at receipt preparation and its newly uploaded workflow artifact ID/digest have NOT YET been checked; fields are deliberately null, not guessed. This custody record attests only the 15 source members of sourceGitSha, not subsequent receipt edits, not other manuscripts, rights permissions, independent translation approvals, facsimiles, or permission to publish.",
+  "verificationBoundary": "This receipt attests only the exact 15-file source set at 98544a9958564b720793a4988287dabc274cf752. The old authenticated GitHub workflow archive was deterministically replayed; the corrected protected 00 bytes were rebuilt from two documented text edits and validated against the actual GitHub blob SHA1 722e7c5e7386eeb16a21570d47c54ae4babac4fd. All 15 member bytes/sha256 and Git blob identities were validated. The new source ZIP was uploaded to the original Charnock Drive folder and independently raw-downloaded and byte-compared; SHA-256 10b7477b6eb27f81061087abfaa7a0c93e745f9537d959fb183b7108c20e18b0 matches. No new GitHub workflow artifact ID is asserted because this receipt is for the locally reproducible snapshot; future CI artifacts can separately check member-byte identity without changing the source-revision pin. Subsequent commits to this receipt or unrelated scripts do not change those 15 archived bytes; not full HEAD custody, facsimile reading, publication rights, independent review or book approval.",
   "custodyState": "ACQUIRED_DURABLE_SOURCE_SNAPSHOT",
   "publicationState": "BLOCKED",
   "rightsState": "PRIVATE_STUDY_ONLY",
@@ -47,6 +47,7 @@
   "supersedesHistoricalArchive": false,
   "ed02Status": "OPEN_IMAGE_EDITION_AND_LOCATOR_REVIEW",
   "ed06Status": "OPEN_INDEPENDENT_TRANSLATION_REVIEW",
-  "nextAction": "Check GitHub Actions run 44902277539 exact 15-source ZIP SHA-256 against archived Drive SHA; attach verified artifact ID/digest in this receipt only if run succeeds; then wait for mandatory CI green. Do not merge or close #607 before successful tests. ED-02, ED-06, RIGHTS_HOLD and PUBLICATION_HOLD remain.",
-  "sourceWorkflowArtifactState": "PENDING_EXACT_SHA_COMPARISON_TO_NEW_RUN"
+  "nextAction": "Mandatory PR620 CI all green and an independent comparison of the new workflow artifact's 15 source members to the already verified Drive archive; no receipt rewrite is needed if only Git commit header differs while the 15 member hashes remain identical. Merge only after these gates, then close #607 for stale navigation only; ED-02, ED-06, RIGHTS_HOLD, PUBLICATION_HOLD remain.",
+  "sourceWorkflowArtifactState": "NOT_CLAIMED_NOT_REQUIRED_FOR_THIS_LOCAL_SHA256_CUSTODY_RECEIPT",
+  "sourceWorkflowRunReason": "This is a locally reproduced deterministic INNER source archive, not a GitHub Actions artifact. The first generation's byte-exact ZIP recipe was independently reproduced; the updated protected 00 bytes were verified by exact Git blob SHA1 at pinned sourceGitSha. Run IDs and artifact IDs for unrelated or canceled CI runs are not borrowed as provenance."
 }
