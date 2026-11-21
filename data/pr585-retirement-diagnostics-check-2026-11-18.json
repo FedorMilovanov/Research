@@ -1,0 +1,315 @@
+{
+ "schemaVersion": 1,
+ "recordId": "PR585-RETIREMENT-DIAGNOSTICS-2026-11-18",
+ "kind": "DATED_DIAGNOSTIC_EVIDENCE_NOT_AUTHORITY",
+ "labelDate": "2026-11-18",
+ "sourceBase": "ffc1263b6db1c88a5c85b330f11103a1d41f9e89",
+ "sourceBranch": "arena/8ccdf6c9-research",
+ "scope": "Three code/workflow paths only; the two added receipt files are not part of the diagnostic component tree.",
+ "codeBlobs": {
+  ".github/workflows/branch-retirement-authority.yml": {
+   "gitBlob": "ac593c80545d2322609c0609e478a1e79ddfb8c7",
+   "sha256": "48136e34903c55593c7a03562d9e12e3ceb3a559fc1209d204cf9fe021f31acc"
+  },
+  "scripts/validate_branch_retirement_authority.py": {
+   "gitBlob": "996d1fdaddf88da05e99205c08bd8fe68761a440",
+   "sha256": "55b33aab3ae737e27d320a94c8c155eda8b9335ded0c0540c877bcedb6688113"
+  },
+  "scripts/test_validate_branch_retirement_authority.py": {
+   "gitBlob": "a7a0de212d0efaf219a501001878a0f8cd7ed6e9",
+   "sha256": "c038f5777ba1a5c0cb84972745175fe630d0a7fbd08c0aaa45f3f0e96642d13b"
+  }
+ },
+ "authorityInputSha256Unchanged": {
+  "data/branch-retirement-authority-2026-08-02.json": "d8987060a7a46448aa9f60c9972e1dbe658759db41aca783088917d15ae49e11",
+  "archive-ledgers/CURRENT_BRANCH_RETIREMENT_AUTHORITY_2026-08-02.md": "1becff6b9b018f34251f59f8ec16f45e1d4ca75d43bef5a073e66de204da3ebf"
+ },
+ "existingSourceFilesUnchangedExceptTwoCodePaths": 3141,
+ "offlineRegressions": {
+  "tests": 15,
+  "result": "PASS",
+  "gitCommandsMocked": true,
+  "beforeFixTestMethodsRun": 15,
+  "beforeFixFailureEvents": 15,
+  "beforeFixFailureEventsIncludeSubtests": true,
+  "beforeFixAllTestMethodsFailed": false,
+  "negativeControlExpectedFailure": true
+ },
+ "sourceVerification": {
+  "focusedUnitTests": 54,
+  "composition": {
+   "retirement": 15,
+   "relativeLinks": 39
+  },
+  "result": "PASS",
+  "reshootCheck": "PASS",
+  "corpusIntegrity": "PASS",
+  "sync": "PASS",
+  "rootAuthority": "PASS",
+  "stageAuthority": "PASS",
+  "repositoryAuthority": "PASS",
+  "primarySourceReplay": "NOT_RUN",
+  "newPrimaryReading": false
+ },
+ "liveDiagnosticControl": {
+  "main": "bb1fbbd445664d9efdf1483bf3aa725b71c2fc10",
+  "authorityInputsUnchanged": true,
+  "runs": [
+   {
+    "version": "before",
+    "exitCode": 1,
+    "findings": [
+     "- remote branch set drift: ['agent/le-canon-sucre-research-wave1-20260809', 'archive/legacy-diverged-heads-20260801', 'arena/019fed70-research', 'arena/01a0ea6e-research', 'arena/01a0ee73-research', 'arena/0fbd0e42-research', 'arena/1c7822a1-research', 'arena/298e23cc-research', 'arena/2d7cd0a2-research', 'arena/31f89861-research', 'arena/3e2286e2-research', 'arena/5b7e8b7a-research', 'arena/6cf3e3f1-research', 'arena/75b72abc-research', 'arena/8ccdf6c9-research', 'arena/8df2bfd5-research', 'arena/963be9bc-research', 'arena/97a64e16-research', 'arena/9860f5c2-research', 'arena/a13d73b7-research', 'arena/adf1728a-research', 'arena/af867302-research', 'arena/b1ff2c4e-research', 'arena/bcb56b70-research', 'arena/c5802a5f-research', 'arena/c605a90a-research', 'arena/cc020b86-research', 'arena/cd8114e2-research', 'arena/cdc37d9b-research', 'arena/cf4fa838-research', 'arena/dc7e8cb5-research', 'arena/de594bd4-research', 'arena/e7839688-research', 'arena/f08ffbac-research', 'dependabot/github_actions/actions/checkout-7.0.1', 'dependabot/github_actions/actions/setup-python-7.1.0', 'dependabot/github_actions/actions/upload-artifact-7.0.2', 'docs/atonement-acd-7-agents-20261115', 'lane/heart-part4-reader-assembly-20260804', 'lane/heart-x2-owner-closure-successor-20260804', 'lane/heart-x3-owner-closure-20260804', 'lane/journal-research-intake-20261118', 'lawson-final-import-20260928', 'main', 'research/apostasy-biblical-theology', 'research/apostasy-hebrews-judas-master', 'research/apostasy-master-dossier-2026-09-30', 'research/apostasy-whole-bible', 'research/baptists-book-ch07-mazaev-prokhanov-literary-20261116', 'research/baptists-book-ch08-print-republic-literary-20261116', 'research/baptists-book-ch18-1961-split-manuscript-20261116', 'research/baptists-book-ch19-manuscript-20261116', 'research/calvin-john316-propitium-ledger-20261117', 'research/covenant-children-comparative-20260908', 'research/names-of-god-source-audit-20261107', 'research/teen-double-life-digital-sin-20260907']",
+     "- remote forensic archive head drift",
+     "- recorded tested main commit unavailable",
+     "- archive ledger missing: archive-ledgers/branch-cleanup-summary-20260801.md",
+     "- archive ledger missing: archive-ledgers/branch-forensic-retirement-receipt-20260801.json",
+     "- archive ledger missing: archive-ledgers/legacy-diverged-heads-20260801.json",
+     "- archive ledger missing: archive-ledgers/legacy-diverged-heads-20260801.md",
+     "- archive ledger missing: archive-ledgers/source-library-ref-consolidation-20260801.json",
+     "- archive ledger missing: archive-ledgers/source-library-ref-consolidation-20260801.md"
+    ]
+   },
+   {
+    "version": "after",
+    "exitCode": 1,
+    "findings": [
+     "- remote branch set drift: ['agent/le-canon-sucre-research-wave1-20260809', 'archive/legacy-diverged-heads-20260801', 'arena/019fed70-research', 'arena/01a0ea6e-research', 'arena/01a0ee73-research', 'arena/0fbd0e42-research', 'arena/1c7822a1-research', 'arena/298e23cc-research', 'arena/2d7cd0a2-research', 'arena/31f89861-research', 'arena/3e2286e2-research', 'arena/5b7e8b7a-research', 'arena/6cf3e3f1-research', 'arena/75b72abc-research', 'arena/8ccdf6c9-research', 'arena/8df2bfd5-research', 'arena/963be9bc-research', 'arena/97a64e16-research', 'arena/9860f5c2-research', 'arena/a13d73b7-research', 'arena/adf1728a-research', 'arena/af867302-research', 'arena/b1ff2c4e-research', 'arena/bcb56b70-research', 'arena/c5802a5f-research', 'arena/c605a90a-research', 'arena/cc020b86-research', 'arena/cd8114e2-research', 'arena/cdc37d9b-research', 'arena/cf4fa838-research', 'arena/dc7e8cb5-research', 'arena/de594bd4-research', 'arena/e7839688-research', 'arena/f08ffbac-research', 'dependabot/github_actions/actions/checkout-7.0.1', 'dependabot/github_actions/actions/setup-python-7.1.0', 'dependabot/github_actions/actions/upload-artifact-7.0.2', 'docs/atonement-acd-7-agents-20261115', 'lane/heart-part4-reader-assembly-20260804', 'lane/heart-x2-owner-closure-successor-20260804', 'lane/heart-x3-owner-closure-20260804', 'lane/journal-research-intake-20261118', 'lawson-final-import-20260928', 'main', 'research/apostasy-biblical-theology', 'research/apostasy-hebrews-judas-master', 'research/apostasy-master-dossier-2026-09-30', 'research/apostasy-whole-bible', 'research/baptists-book-ch07-mazaev-prokhanov-literary-20261116', 'research/baptists-book-ch08-print-republic-literary-20261116', 'research/baptists-book-ch18-1961-split-manuscript-20261116', 'research/baptists-book-ch19-manuscript-20261116', 'research/calvin-john316-propitium-ledger-20261117', 'research/covenant-children-comparative-20260908', 'research/names-of-god-source-audit-20261107', 'research/teen-double-life-digital-sin-20260907']",
+     "- remote forensic archive head drift"
+    ]
+   }
+  ],
+  "directObjectExitChecks": [
+   {
+    "object": "321e3efbe797c9e7155911e9f9deda6197db8076^{commit}",
+    "exitCode": 0
+   },
+   {
+    "object": "refs/remotes/origin/archive/legacy-diverged-heads-20260801:archive-ledgers/branch-cleanup-summary-20260801.md",
+    "exitCode": 0
+   },
+   {
+    "object": "refs/remotes/origin/archive/legacy-diverged-heads-20260801:archive-ledgers/branch-forensic-retirement-receipt-20260801.json",
+    "exitCode": 0
+   },
+   {
+    "object": "refs/remotes/origin/archive/legacy-diverged-heads-20260801:archive-ledgers/legacy-diverged-heads-20260801.json",
+    "exitCode": 0
+   },
+   {
+    "object": "refs/remotes/origin/archive/legacy-diverged-heads-20260801:archive-ledgers/legacy-diverged-heads-20260801.md",
+    "exitCode": 0
+   },
+   {
+    "object": "refs/remotes/origin/archive/legacy-diverged-heads-20260801:archive-ledgers/source-library-ref-consolidation-20260801.json",
+    "exitCode": 0
+   },
+   {
+    "object": "refs/remotes/origin/archive/legacy-diverged-heads-20260801:archive-ledgers/source-library-ref-consolidation-20260801.md",
+    "exitCode": 0
+   }
+  ],
+  "gateStillFailClosed": true,
+  "remoteBranchesWrittenOrDeleted": false
+ },
+ "mainComponent": {
+  "kind": "DIAGNOSTIC_COMPONENT_CHECK_NOT_TRANSFER_AUTHORITY",
+  "main": "bb1fbbd445664d9efdf1483bf3aa725b71c2fc10",
+  "sourceBase": "ffc1263b6db1c88a5c85b330f11103a1d41f9e89",
+  "overlayPaths": [
+   ".github/workflows/branch-retirement-authority.yml",
+   "scripts/validate_branch_retirement_authority.py",
+   "scripts/test_validate_branch_retirement_authority.py"
+  ],
+  "candidateTree": "79044ff977b6acb43952941e7907faa84dd58ec5",
+  "localOnlyCandidateCommit": "7694aab69ce890e1c7362950251e93baecc7c9ba",
+  "candidateFiles": 3212,
+  "unchangedMainPaths": 3209,
+  "onlyExpectedPathsChanged": true,
+  "allOtherMainBlobModesUnchanged": true,
+  "sourceFactsOrCorporaCopied": false,
+  "patchSha256": "8eded118c6acddba9c0af08ae90ad9aa698d8303026c2c591efc0d50e01c8407",
+  "patchBytes": 15847,
+  "results": [
+   {
+    "name": "retirement-unit",
+    "command": [
+     "/usr/bin/python",
+     "-B",
+     "-m",
+     "unittest",
+     "discover",
+     "-s",
+     "scripts",
+     "-p",
+     "test_validate_branch_retirement_authority.py",
+     "-v"
+    ],
+    "exitCode": 0,
+    "expectedExit": 0
+   },
+   {
+    "name": "workflow-triggers",
+    "command": [
+     "/usr/bin/python",
+     "-B",
+     "scripts/audit_ci_triggers.py",
+     "--check"
+    ],
+    "exitCode": 0,
+    "expectedExit": 0
+   },
+   {
+    "name": "main-atonement-reshoot",
+    "command": [
+     "/usr/bin/python",
+     "-B",
+     "scripts/atonement_reshoot_state.py",
+     "--check"
+    ],
+    "exitCode": 0,
+    "expectedExit": 0
+   },
+   {
+    "name": "main-repository-authority",
+    "command": [
+     "/usr/bin/python",
+     "-B",
+     "scripts/validate_repository_authority_integrity.py"
+    ],
+    "exitCode": 0,
+    "expectedExit": 0
+   },
+   {
+    "name": "retirement-live",
+    "command": [
+     "/usr/bin/python",
+     "-B",
+     "scripts/validate_branch_retirement_authority.py"
+    ],
+    "exitCode": 1,
+    "expectedExit": 1
+   }
+  ],
+  "liveFindings": [
+   "- remote branch set drift: ['agent/le-canon-sucre-research-wave1-20260809', 'archive/legacy-diverged-heads-20260801', 'arena/019fed70-research', 'arena/01a0ea6e-research', 'arena/01a0ee73-research', 'arena/0fbd0e42-research', 'arena/1c7822a1-research', 'arena/298e23cc-research', 'arena/2d7cd0a2-research', 'arena/31f89861-research', 'arena/3e2286e2-research', 'arena/5b7e8b7a-research', 'arena/6cf3e3f1-research', 'arena/75b72abc-research', 'arena/8ccdf6c9-research', 'arena/8df2bfd5-research', 'arena/963be9bc-research', 'arena/97a64e16-research', 'arena/9860f5c2-research', 'arena/a13d73b7-research', 'arena/adf1728a-research', 'arena/af867302-research', 'arena/b1ff2c4e-research', 'arena/bcb56b70-research', 'arena/c5802a5f-research', 'arena/c605a90a-research', 'arena/cc020b86-research', 'arena/cd8114e2-research', 'arena/cdc37d9b-research', 'arena/cf4fa838-research', 'arena/dc7e8cb5-research', 'arena/de594bd4-research', 'arena/e7839688-research', 'arena/f08ffbac-research', 'dependabot/github_actions/actions/checkout-7.0.1', 'dependabot/github_actions/actions/setup-python-7.1.0', 'dependabot/github_actions/actions/upload-artifact-7.0.2', 'docs/atonement-acd-7-agents-20261115', 'lane/heart-part4-reader-assembly-20260804', 'lane/heart-x2-owner-closure-successor-20260804', 'lane/heart-x3-owner-closure-20260804', 'lane/journal-research-intake-20261118', 'lawson-final-import-20260928', 'main', 'research/apostasy-biblical-theology', 'research/apostasy-hebrews-judas-master', 'research/apostasy-master-dossier-2026-09-30', 'research/apostasy-whole-bible', 'research/baptists-book-ch07-mazaev-prokhanov-literary-20261116', 'research/baptists-book-ch08-print-republic-literary-20261116', 'research/baptists-book-ch18-1961-split-manuscript-20261116', 'research/baptists-book-ch19-manuscript-20261116', 'research/calvin-john316-propitium-ledger-20261117', 'research/covenant-children-comparative-20260908', 'research/names-of-god-source-audit-20261107', 'research/teen-double-life-digital-sin-20260907']",
+   "- remote forensic archive head drift"
+  ],
+  "liveGateStatus": "FAIL",
+  "trackedFilesBeforeAfterEqual": true,
+  "fileManifestSha256": "d8a7a6b49f41d55a3563b1f9f550b12487ec9db7c8285bc2cb9b134abf03da2d",
+  "gitMetadataStrictlyReadOnly": false,
+  "gitMetadataNote": "The inherited live gate reads origin and fetches only a local forensic remote-tracking ref; no remote ref writer.",
+  "wholePRFullSuiteRerun": false,
+  "newRightsOrPublicationApproval": false,
+  "noBranchSwitch": true,
+  "syntheticCommitPushed": false
+ },
+ "coordination554": {
+  "url": "https://github.com/FedorMilovanov/Research/pull/554#issuecomment-7068434299",
+  "commentId": 7068434299,
+  "newCommentPosted": true,
+  "bodyVerified": true,
+  "sourceReaderHead": "ffc1263b6db1c88a5c85b330f11103a1d41f9e89",
+  "ownerAckReceived": false
+ },
+ "peerReaderPreimageProof": [
+  {
+   "path": "docs/research/atonement/01_prokopenko_article_review.md",
+   "peerOlderPin": "619c739435574fabc4ab756ac422141eed7ca5f9",
+   "peerCurrentObservedPin": "8bc6db9a993a4bccaa51bf67645d7a3c852b3ee8",
+   "sharedReaderBytesUnchanged": true,
+   "sha256": "259fd636ce96aa8cb99a0a995727631089001fcc3b5fc0723c5999cd77c3d83e"
+  },
+  {
+   "path": "docs/research/atonement/22_master_source_registry_50_plus_primary_citations.md",
+   "peerOlderPin": "619c739435574fabc4ab756ac422141eed7ca5f9",
+   "peerCurrentObservedPin": "8bc6db9a993a4bccaa51bf67645d7a3c852b3ee8",
+   "sharedReaderBytesUnchanged": true,
+   "sha256": "1aab7e301288d58932abb2c9728295072beeb49188e87210e0fa10d32dbf5b84"
+  }
+ ],
+ "peer621Observed": {
+  "head": "aa793f4d00c4a5cf8a4365c682f2e5dda0421b40",
+  "draft": false,
+  "mergeStateStatus": "BLOCKED",
+  "checks": [
+   {
+    "name": "Atonement corpus integrity",
+    "conclusion": "FAILURE",
+    "url": "https://github.com/FedorMilovanov/Research/actions/runs/44917324498/job/136885614554"
+   },
+   {
+    "name": "handoff-integrity",
+    "conclusion": "SUCCESS",
+    "url": "https://github.com/FedorMilovanov/Research/actions/runs/44917324511/job/136885614461"
+   },
+   {
+    "name": "validate",
+    "conclusion": "SUCCESS",
+    "url": "https://github.com/FedorMilovanov/Research/actions/runs/44917324537/job/136885614932"
+   },
+   {
+    "name": "authority-contract",
+    "conclusion": "SUCCESS",
+    "url": "https://github.com/FedorMilovanov/Research/actions/runs/44917324499/job/136885614660"
+   },
+   {
+    "name": "Repository authority integrity",
+    "conclusion": "SUCCESS",
+    "url": "https://github.com/FedorMilovanov/Research/actions/runs/44917324518/job/136885614709"
+   },
+   {
+    "name": "validate",
+    "conclusion": "SUCCESS",
+    "url": "https://github.com/FedorMilovanov/Research/actions/runs/44917324600/job/136885614911"
+   },
+   {
+    "name": "SUNO hymns registry",
+    "conclusion": "SUCCESS",
+    "url": "https://github.com/FedorMilovanov/Research/actions/runs/44917324630/job/136885615264"
+   },
+   {
+    "name": "Secret scanning",
+    "conclusion": "SUCCESS",
+    "url": "https://github.com/FedorMilovanov/Research/actions/runs/44917324527/job/136885614819"
+   },
+   {
+    "name": "Workflow hygiene",
+    "conclusion": "SUCCESS",
+    "url": "https://github.com/FedorMilovanov/Research/actions/runs/44917324527/job/136885615074"
+   }
+  ],
+  "latestFailureRootCauseReplayed": false,
+  "contentImported": false
+ },
+ "logSha256": {
+  "source-focused-unit.log": "d380b683c3da9e595d5284eaa51b8d393a51f64e76f9b634dd5b91a830f9f73f",
+  "source-reshoot-check.log": "ab7fafd876bf3613d5de580e1d8787db6656f2820e82968613d010a72e8f5b0d",
+  "source-sync-check.log": "73f80b2b46d75c782811dddc54491c3033b23f4760d7c47b8052915fd1215d2f",
+  "source-corpus-integrity.log": "c2b40f067dea284ccd7a4cc9bbd3f48ad21bd043981f856ffdd60d3573918d9e",
+  "source-root-authority.log": "4dc436fc87a55247191f32adbef22f48946dd46a3f1796fa07a072257852e1c2",
+  "source-stage-authority.log": "a38dcd860eddab60d234180b065002da605b12c5d94cefc7be730918c06de013",
+  "source-repository-authority.log": "261fa3cb02c5ec923e316f22beb2c6f46223c6d79ac6cb8380a9b909958874e5",
+  "retirement-unit.log": "642c6b3ca5b59b6b634ef9b12b8f9789e52c2ec17a47238dfa22fc2222e6040f",
+  "retirement-before-fix-unit.log": "accc0874a3e182af7d794fe2164af5ca3d22e59cf976c433330d4a53210e6bde",
+  "retirement-live-before.log": "dea9146935a0141c5ed3b090c1584a99a52be08c2c972d863c660adde1460e0a",
+  "retirement-live-after.log": "5ef8355dcfdd2b33dd49019b28b6ff515ced2cca22bc46e3dc2f2ba64eddb989",
+  "main-retirement-unit.log": "e7f851e5662d2ba0f3a6d98c0c24a4dbe91a7c1faceb71d8af37187cde051842",
+  "main-workflow-triggers.log": "7c415451b6b0c52c2982881ec0fd2c320284e23ebe8e2b98850ea984f761c9f7",
+  "main-main-atonement-reshoot.log": "ab7fafd876bf3613d5de580e1d8787db6656f2820e82968613d010a72e8f5b0d",
+  "main-main-repository-authority.log": "261fa3cb02c5ec923e316f22beb2c6f46223c6d79ac6cb8380a9b909958874e5",
+  "main-retirement-live.log": "5ef8355dcfdd2b33dd49019b28b6ff515ced2cca22bc46e3dc2f2ba64eddb989"
+ },
+ "boundaries": {
+  "retirementPolicyOrAuthorityChanged": false,
+  "realRemoteDriftMadePassing": false,
+  "remoteBranchesDeletedOrWritten": false,
+  "wholePRFullSuiteRerun": false,
+  "previous1424TestsNotClaimedFresh": true,
+  "mainRollback": false,
+  "branchSwitch": false,
+  "mergeOrReadyPerformed": false,
+  "rightsOrPublicationApproval": false
+ }
+}

@@ -29,12 +29,25 @@ def require(condition: bool, message: str) -> None:
         errors.append(message)
 
 
+def git_result(*args: str) -> subprocess.CompletedProcess[str]:
+    result = subprocess.run(
+        ["git", *args], cwd=ROOT, text=True,
+        stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
+    )
+    if result.returncode != 0:
+        errors.append(f"git {' '.join(args)} failed: {result.stdout.strip()}")
+    return result
+
+
 def git(*args: str) -> str:
-    try:
-        return subprocess.check_output(["git", *args], cwd=ROOT, text=True, stderr=subprocess.STDOUT).strip()
-    except subprocess.CalledProcessError as exc:
-        errors.append(f"git {' '.join(args)} failed: {exc.output.strip()}")
-        return ""
+    result = git_result(*args)
+    return result.stdout.strip() if result.returncode == 0 else ""
+
+
+def git_ok(*args: str) -> bool:
+    # cat-file -e succeeds with empty stdout. Earlier findings must not turn a
+    # successful object check into an invented missing-object diagnosis.
+    return git_result(*args).returncode == 0
 
 
 require(AUTH.is_file(), "machine authority missing")
@@ -86,12 +99,12 @@ require(remote_refs.get(archive.get("branch")) == archive.get("headSha"), "remot
 archive_ref = "refs/remotes/origin/archive/legacy-diverged-heads-20260801"
 git("fetch", "origin", "+refs/heads/archive/legacy-diverged-heads-20260801:" + archive_ref)
 tested_main = authority.get("testedMainBeforeReceipt", "")
-require(bool(git("cat-file", "-e", f"{tested_main}^{{commit}}")) or not errors, "recorded tested main commit unavailable")
+require(git_ok("cat-file", "-e", f"{tested_main}^{{commit}}"), "recorded tested main commit unavailable")
 require(git("merge-base", tested_main, archive_ref) == archive.get("mergeBaseWithMain"), "recorded merge base no longer reproduces")
 require(git("rev-list", "--count", f"{tested_main}..{archive_ref}") == "50", "archive unique commits at receipt no longer reproduce")
 require(git("rev-list", "--count", f"{archive_ref}..{tested_main}") == "138", "main unique commits at receipt no longer reproduce")
 for relative in archive.get("uniqueLedgerFiles", []):
-    require(bool(git("cat-file", "-e", f"{archive_ref}:{relative}")) or not errors, f"archive ledger missing: {relative}")
+    require(git_ok("cat-file", "-e", f"{archive_ref}:{relative}"), f"archive ledger missing: {relative}")
 
 human = HUMAN.read_text(encoding="utf-8") if HUMAN.exists() else ""
 for marker in (

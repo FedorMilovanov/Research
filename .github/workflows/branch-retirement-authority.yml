@@ -7,6 +7,7 @@ on:
       - 'data/branch-retirement-authority-2026-08-02.json'
       - 'archive-ledgers/CURRENT_BRANCH_RETIREMENT_AUTHORITY_2026-08-02.md'
       - 'scripts/validate_branch_retirement_authority.py'
+      - 'scripts/test_validate_branch_retirement_authority.py'
       - '.github/workflows/branch-retirement-authority.yml'
   push:
     branches: [main]
@@ -14,6 +15,7 @@ on:
       - 'data/branch-retirement-authority-2026-08-02.json'
       - 'archive-ledgers/CURRENT_BRANCH_RETIREMENT_AUTHORITY_2026-08-02.md'
       - 'scripts/validate_branch_retirement_authority.py'
+      - 'scripts/test_validate_branch_retirement_authority.py'
       - '.github/workflows/branch-retirement-authority.yml'
 
 permissions:
@@ -31,6 +33,9 @@ jobs:
 
       - name: Compile validator
         run: python3 -m py_compile scripts/validate_branch_retirement_authority.py
+
+      - name: Offline regression tests
+        run: python3 -B -m unittest discover -s scripts -p 'test_validate_branch_retirement_authority.py' -v
 
       - name: Validate remote refs and forensic archive
         run: python3 scripts/validate_branch_retirement_authority.py
