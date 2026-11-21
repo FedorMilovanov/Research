@@ -22,6 +22,14 @@
 > Год1628 приблизителен;27/28июля1680 —CONFLICT;B.D. у Wood as I conceive. Старые каркасы ниже не проверенные актовые записи.
 > Исходные транскрипции/старые выводы сохранены;противоречащие текущим решениям итоги HISTORICAL/SUPERSEDED,не разрешение публикации.
 
+
+> **Действующая поправка к статусу книги · 21.11.2026 · CURRENT-STATUS, не новый root authority.** В Research уже существуют **10/10 полных рабочих рукописей**: введение, части I–VIII и справочник, а также единый [редакторский экземпляр](reader-preview/CHARNOCK_FULL_BOOK_EDITORIAL_READER_2026-11-21.md) на 180 источниковых сносок. Это **DRAFT / RESEARCH_ONLY / PUBLICATION_HOLD**, не научно утверждённое издание. [Читательский вход с действующими ограничениями](reader-preview/README.md). **Сохранённые ниже фразы «главы не написаны» и «главы не пишутся» являются HISTORICAL / SUPERSEDED:** они относятся к прежней стадии, а не к нынешнему состоянию серии. Не использовать их для блокировки редактуры или как указание снова создавать главы.
+>
+> **Прямые пути к десяти рукописям (не новая иерархия authority):** [Введение](manuscripts/INTRO_MIR_STEPHEN_CHARNOCK_WORKING_DRAFT.md) · [I](manuscripts/I_CHELOVEK_KEMBRIDZH_DUBLIN_LONDON_WORKING_DRAFT.md) · [II](manuscripts/II_UCHENYI_I_PROPOVEDNIK_WORKING_DRAFT.md) · [III](manuscripts/III_CHARNOCK_AND_SCRIPTURE_FROM_TEXT_TO_SERMON_WORKING_DRAFT.md) · [IV](manuscripts/IV_BOGOSLOVSKII_PORTRET_WORKING_DRAFT.md) · [V](manuscripts/V_KAK_PROPOVEDI_STALI_KNIGAMI_WORKING_DRAFT.md) · [VI](manuscripts/VI_GLAVNAYA_KNIGA_BYTIE_I_ATRIBUTY_WORKING_DRAFT.md) · [VII](manuscripts/VII_ZA_PREDELAMI_GLAVNOI_KNIGI_WORKING_DRAFT.md) · [VIII](manuscripts/VIII_CHARNOCK_POSLE_CHARNOCKA_WORKING_DRAFT.md) · [Справочник](manuscripts/REFERENCE_KHRONOLOGIYA_TRUDY_ISTOCHNIKI_WORKING_DRAFT.md).
+>
+> **Архивная граница ED-08:** исторические 15-файловые квитанции удостоверяют лишь свои исходные байты. Для этой редакции 00 оформлена отдельная [проверяемая квитанция 15-файлового источникового снимка](../../data/charnock-custody-receipt-v3-20261121-pr620.json) с независимым SHA-256 readback из Google Drive. **Её область охвата — только закреплённые исходные файлы, не вся книга:** за её пределами `ARCHIVE_HOLD` и `EVIDENCE_HOLD` сохраняются. `ED-02 / LOCATOR_HOLD`, `ED-06 (0/12 независимых рецензий)`, `RIGHTS_HOLD` и `PUBLICATION_HOLD` также не снимаются.
+
+
 ## Текущая работа и пределы
 
 Исследовательские материалы для **10 будущих документов**; главы не пишутся.
