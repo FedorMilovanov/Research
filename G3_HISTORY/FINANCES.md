@@ -2,6 +2,7 @@
 
 **Entity:** `G3 Ministries for the Church, Inc.`  
 **EIN:** `84-2403597`  
+**Synced:** `2026-11-20 CONSOLIDATED waves 11–18 (34 packets, 273 corpus host294, $1,061,800 PartIX, $590k→$550k sale, $416k→$153k receivable, 9→4→6 board, Lumena Oct28)` — канон первичен, WAVE-файлы архивные  
 **Status:** ACTIVE / PUBLICATION_HOLD  
 **Primary source family:** official IRS TEOS e-file XML (`G3-S002` / `G3-S028`). ProPublica, Philanthropy.org and Cause IQ are derivative parser/cross-check surfaces of the same filing family and must not be counted as independent corroboration of IRS facts.
 

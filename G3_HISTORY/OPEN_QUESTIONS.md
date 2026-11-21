@@ -1,7 +1,8 @@
 # G3 HISTORY — open questions / proof-closure backlog
 
 **Status:** ACTIVE / FAIL-CLOSED / ROUTE-RECONCILED  
-**Cutoff:** 2026-09-08  
+**Cutoff:** `2026-09-08` + overlay `2026-11-15 Q005/Q006` + consolidated `2026-11-20 waves 11–18 273 corpus A139/B90/C30`  
+**Synced:** канон P0 HOLD матрица Sep9→Nov15 (Lumena Oct28 32257311) + ideology protocol P1-5 holds preserved  
 **Canonical evidence batches:** PASS22–PASS23.
 
 The target is not metaphysical “100% knowledge.” It is **proof-complete reconstruction against an explicit claim set**. A question is closed when the requested fact is primary-verified/refuted, or when the current public route is demonstrably exhausted/access-controlled and the remaining uncertainty is explicitly named.

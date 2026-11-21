@@ -1,6 +1,7 @@
 # G3 Ministries — governance and role-overlap reconstruction
 
-**Status:** ACTIVE / PUBLICATION_HOLD
+**Status:** ACTIVE / PUBLICATION_HOLD  
+**Synced:** `2026-11-20 CONSOLIDATED waves 11–18 — board 9(Jul22)→7(FY24)→4(FY25)→6(Jul21 20260721102641 Braswell/Broome/Norton/Sikes/Joyner/Mooney) + B1 May12→Jul09 + PMBC overlap 3/6` — канон первичен
 
 ## Core question
 
