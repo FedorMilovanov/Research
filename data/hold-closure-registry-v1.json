@@ -1061,6 +1061,40 @@
         "ARCHIVE_HOLD"
       ],
       "residualReason": "Поздние правки требуют нового versioned archive; внешние факсимиле в пакет не входят; независимая оценка перевода не выполнена; rightsState остаётся RIGHTS_UNKNOWN, publicationState — BLOCKED. OPEN-MIRRORS-BEHIND-HEAD для рабочих 00/04/16 не закрыт этим отдельным snapshot."
+    },
+    {
+      "id": "HCR-2026-11-18-32",
+      "title": "STEPBible: вопрос «проверить каждый поднабор» превращён в воспроизводимую карту заявленных условий",
+      "holdType": "EVIDENCE_HOLD",
+      "previousState": "Кандидат из #621 был помечен dataset-specific; verify each subdataset, но в canonical Research не было ни полного перечня поднаборов, ни гейта, связывающего его с закреплённым carrier",
+      "closedScope": "Для закреплённого STEPBible-Data commit построен и повторно воспроизведён полный read-only снимок имён и README: все верхнеуровневые наборы перечислены, отдельно выделены отличающиеся CC BY-NC и CC BY-SA ветви, размер и SHA-256 входного ZIP проверены до разбора; offline-check и негативные тесты включены в CI",
+      "recordLocations": [
+        "data/stepbible-subdataset-terms-2026-11-18.json",
+        "scripts/stepbible_subdataset_terms.py",
+        "scripts/test_stepbible_subdataset_terms.py",
+        "docs/research/PR621_SELECTIVE_INTEGRATION_CROSSWALK_2026-11-18.md §2.1",
+        "docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md §4"
+      ],
+      "method": "pinned-commit-subdataset-terms-audit",
+      "objects": [
+        {
+          "sourceCommit": "b86d26cdb1f51729e73b5b4eb7f7ccadc5dfba39",
+          "archiveBytes": 100920275,
+          "archiveSha256": "6845fa9660c62301a0eec38c009ca34ef82647a9737529d8c56ac45d35182df0",
+          "filesMeasured": 106,
+          "dataFilesMeasured": 104,
+          "topLevelSubdatasets": 7,
+          "nestedTermsExceptions": 1,
+          "sourcePrScriptBlob": "ba56572a98a3f96b159392b5c91ff492dff26617",
+          "sourcePrDataBlob": "038b2cca840d71fc525c9414550611c50658364a"
+        }
+      ],
+      "residualHolds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "residualReason": "Прочитаны README и имена, а не содержимое всех dataset-файлов. Заявление CC BY относится к распространителю и может покрывать разметку, но не исходный ESV, LSJ, Abbott-Smith и иные вложенные произведения. Никакое лицензионное или публикационное решение не принято; PROMOTE остаётся 0."
     }
   ],
   "confirmations": [

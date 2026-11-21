@@ -24,10 +24,12 @@ on:
       - 'data/repository-evidence-policy-v2.json'
       - 'data/repository-holds-inventory-v1.json'
       - 'data/state-stamps-2026-11-18.json'
+      - 'data/stepbible-subdataset-terms-2026-11-18.json'
       - 'data/text-integrity-repairs-2026-11-18.json'
       - 'docs/research/HOLDS_REGISTER_2026-11-18.md'
       - 'scripts/audit_ci_triggers.py'
       - 'scripts/check_snapshot_freshness.py'
+      - 'scripts/stepbible_subdataset_terms.py'
       - 'scripts/audit_document_twins.py'
       - 'scripts/audit_drive_ledger.py'
       - 'scripts/audit_register_claims.py'
@@ -51,6 +53,7 @@ on:
       - 'scripts/test_hold_closure_registry.py'
       - 'scripts/test_publication_gate_status.py'
       - 'scripts/test_render_closures_summary.py'
+      - 'scripts/test_stepbible_subdataset_terms.py'
       - 'scripts/test_verify_internal_digests.py'
       - 'scripts/test_verify_pinned_github_locators.py'
       - 'scripts/verify_internal_digests.py'
@@ -79,10 +82,12 @@ on:
       - 'data/repository-evidence-policy-v2.json'
       - 'data/repository-holds-inventory-v1.json'
       - 'data/state-stamps-2026-11-18.json'
+      - 'data/stepbible-subdataset-terms-2026-11-18.json'
       - 'data/text-integrity-repairs-2026-11-18.json'
       - 'docs/research/HOLDS_REGISTER_2026-11-18.md'
       - 'scripts/audit_ci_triggers.py'
       - 'scripts/check_snapshot_freshness.py'
+      - 'scripts/stepbible_subdataset_terms.py'
       - 'scripts/audit_document_twins.py'
       - 'scripts/audit_drive_ledger.py'
       - 'scripts/audit_register_claims.py'
@@ -106,6 +111,7 @@ on:
       - 'scripts/test_hold_closure_registry.py'
       - 'scripts/test_publication_gate_status.py'
       - 'scripts/test_render_closures_summary.py'
+      - 'scripts/test_stepbible_subdataset_terms.py'
       - 'scripts/test_verify_internal_digests.py'
       - 'scripts/test_verify_pinned_github_locators.py'
       - 'scripts/verify_internal_digests.py'
@@ -140,6 +146,7 @@ jobs:
           python3 -m py_compile scripts/test_hold_closure_registry.py
           python3 -m py_compile scripts/audit_text_integrity.py
           python3 -m py_compile scripts/verify_internal_digests.py
+          python3 -m py_compile scripts/stepbible_subdataset_terms.py
       # A pull_request checkout is a synthetic merge commit. Dated snapshots belong to
       # the branch that authored them, so unrelated main changes must not make that branch
       # rewrite all reports. The PR head is therefore the blocking freshness boundary.
@@ -177,6 +184,7 @@ jobs:
           python3 -B -m unittest discover -s scripts -p 'test_audit_drive_ledger.py' -v
           python3 -B -m unittest discover -s scripts -p 'test_render_closures_summary.py' -v
           python3 -B -m unittest discover -s scripts -p 'test_audit_register_claims.py' -v
+          python3 -B -m unittest discover -s scripts -p 'test_stepbible_subdataset_terms.py' -v
       - name: Scan (must not touch the working tree)
         run: |
           python3 scripts/audit_repository_holds.py -o /tmp/holds-a.json
@@ -220,6 +228,8 @@ jobs:
       # A counter in prose has no expiry date; this is the only thing that gives it one.
       - name: Register counters match their artefacts
         run: python3 -B scripts/audit_register_claims.py --check
+      - name: Check the pinned STEPBible terms snapshot
+        run: python3 -B scripts/stepbible_subdataset_terms.py --check
       - name: Check publication gate queue composition
         run: python3 -B scripts/publication_gate_status.py --check
       - name: Report counts without asserting closure

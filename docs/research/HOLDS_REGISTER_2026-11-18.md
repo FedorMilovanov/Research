@@ -11,9 +11,9 @@
 <!-- closures-summary:begin -->
 ## 0. Карта закрытий (генерируется; не редактировать руками)
 
-Закрытий: **31**. Подтверждений без закрытия: **4**. Открытых пунктов по существу: **5**.
+Закрытий: **32**. Подтверждений без закрытия: **4**. Открытых пунктов по существу: **5**.
 
-Типы HOLD: `ARCHIVE_HOLD` — 9, `EVIDENCE_HOLD` — 17, `LOCATOR_HOLD` — 4, `TEXT_INTEGRITY_HOLD` — 1 (ось реестра, не флаг политики).
+Типы HOLD: `ARCHIVE_HOLD` — 9, `EVIDENCE_HOLD` — 18, `LOCATOR_HOLD` — 4, `TEXT_INTEGRITY_HOLD` — 1 (ось реестра, не флаг политики).
 
 | № | Ось | HOLD | Чем проверено | Где запись |
 |---|---|---|---|---|
@@ -48,6 +48,7 @@
 | 29 | Аудит собственной работы: мутации нашли три проверки, которые ничего не проверяли | `EVIDENCE_HOLD` | счётчики против артефактов | `docs/research/HOLDS_REGISTER_2026-11-18.md §33`, `scripts/render_closures_summary.py` и ещё 3 |
 | 30 | Неклассифицированные употребления `HOLD` и `FORBIDDEN` прочитаны по record key | `EVIDENCE_HOLD` | контекстная классификация по record key | `docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md §2`, `data/hold-value-mapping-proposal-v1.json` и ещё 2 |
 | 31 | Точный редакционный архив Чарнока получил durable Drive readback | `ARCHIVE_HOLD` | скачивание и пересчёт байтов | `data/charnock-editorial-book-receipt-v1-20261121.json`, `.github/workflows/charnock-editorial-book-custody.yml` и ещё 1 |
+| 32 | STEPBible: вопрос «проверить каждый поднабор» превращён в воспроизводимую карту заявленных условий | `EVIDENCE_HOLD` | карта условий поднаборов закреплённого коммита | `data/stepbible-subdataset-terms-2026-11-18.json`, `scripts/stepbible_subdataset_terms.py` и ещё 3 |
 
 **Подтверждения (не закрытия):**
 - `HCR-2026-11-18-C1` — Charnock custody v3 ZIP — независимое подтверждение квитанции
@@ -89,14 +90,14 @@
 <!-- inventory-slice:begin -->
 | Показатель | Значение |
 |---|---:|
-| просканировано текстовых файлов | 3 135 |
+| просканировано текстовых файлов | 3 138 |
 | файлов хотя бы с одним маркером | 921 |
-| канонические упоминания `PUBLICATION_HOLD` | 2 667 |
+| канонические упоминания `PUBLICATION_HOLD` | 2 668 |
 | канонические упоминания `LOCATOR_HOLD` | 1 986 |
-| канонические упоминания `RIGHTS_HOLD` | 1 483 |
+| канонические упоминания `RIGHTS_HOLD` | 1 484 |
 | канонические упоминания `ARCHIVE_HOLD` | 1 424 |
 | канонические упоминания `EVIDENCE_HOLD` | 1 306 |
-| строки, где флаг зафиксирован как действующий (`open`) | 2 365 |
+| строки, где флаг зафиксирован как действующий (`open`) | 2 367 |
 | строки, где флаг зафиксирован как снятый (`closed`) | 824 |
 | строки без явного состояния (`unmarked`) | 6 083 |
 | строки, где одновременно записаны и снятие, и сохранение (`mixed`) | 406 |
@@ -121,7 +122,7 @@
 <!-- corpus-table:begin -->
 | Корпус | Файлов с маркерами | Канонических упоминаний |
 |---|---:|---:|
-| `docs/` | 99 | 2 914 |
+| `docs/` | 99 | 2 916 |
 | `ИСКУПЛЕНИЕ/` | 153 | 2 522 |
 | `БИОГРАФИИ/` | 57 | 1 391 |
 | `SUNO_HYMNS/` | 65 | 712 |
@@ -190,6 +191,7 @@ Google Drive не выполнялась; перечень всех закрыт
 | `HCR-2026-11-18-29` | Восемь дефектов исправлены: §3 печатает все локаторы, §0 — первые два и «и ещё N»; неканонический флаг объявлен в localAxes и помечен в §0; добавлены имена трёх методов, тест падает на методе без имени; словарь имён методов дедуплицирован; обрыв причины открытого пункта помечается «…»; правило двусмысленности приведено к одному (сравниваются значения, тесты в обе стороны); у самодатировки появился --today, и закоммиченный отчёт воспроизводится со своей датой. Сверх правок: тринадцать внесённых поломок — три не были пойманы до правок и ловятся после; инвентарь §2 цитировал артефакт, разошедшийся с деревом, потому что CI сравнивал два прогона между собой, — артефакт перегенерирован и получил тест свежести; после слияния с main пересняты отчёты, пересняты пять просроченных прозовых чисел, ручная копия таблицы в §23 заменена ссылкой на генерируемую | счётчики против артефактов | [`docs/research/HOLDS_REGISTER_2026-11-18.md`](../../docs/research/HOLDS_REGISTER_2026-11-18.md) §33, [`scripts/render_closures_summary.py`](../../scripts/render_closures_summary.py), [`scripts/audit_register_claims.py`](../../scripts/audit_register_claims.py), [`scripts/audit_state_stamps.py`](../../scripts/audit_state_stamps.py), [`scripts/test_render_closures_summary.py`](../../scripts/test_render_closures_summary.py) |
 | `HCR-2026-11-18-30` | Все измеренные manual-употребления получили отдельное соответствие по path, JSON pointer и value: одно legacy-написание дублирует PUBLICATION_HOLD, второе является собирательным marker/status при уже типизированных флагах, FORBIDDEN является статусом отсечённой формулировки; checker требует полное покрытие и отклоняет пропавшие, лишние и дублированные разрешения | контекстная классификация по record key | [`docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md`](../../docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md) §2, [`data/hold-value-mapping-proposal-v1.json`](../../data/hold-value-mapping-proposal-v1.json), [`scripts/check_hold_vocabulary.py`](../../scripts/check_hold_vocabulary.py), [`scripts/test_check_hold_vocabulary.py`](../../scripts/test_check_hold_vocabulary.py) |
 | `HCR-2026-11-18-31` | Для неизменяемого snapshot от source Git SHA 962010d55e38cabf3f0c04670ec16a9d5a80704e подтверждены исходные SHA-256, Git blob IDs, ZIP-member readback, SHA-256 архива и точное равенство сырого destination readback на Drive; закрытие относится только к перечисленным в квитанции исходным файлам | скачивание и пересчёт байтов | [`data/charnock-editorial-book-receipt-v1-20261121.json`](../../data/charnock-editorial-book-receipt-v1-20261121.json), `.github/workflows/charnock-editorial-book-custody.yml`, [`docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md`](../../docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md) §3 |
+| `HCR-2026-11-18-32` | Для закреплённого STEPBible-Data commit построен и повторно воспроизведён полный read-only снимок имён и README: все верхнеуровневые наборы перечислены, отдельно выделены отличающиеся CC BY-NC и CC BY-SA ветви, размер и SHA-256 входного ZIP проверены до разбора; offline-check и негативные тесты включены в CI | карта условий поднаборов закреплённого коммита | [`data/stepbible-subdataset-terms-2026-11-18.json`](../../data/stepbible-subdataset-terms-2026-11-18.json), [`scripts/stepbible_subdataset_terms.py`](../../scripts/stepbible_subdataset_terms.py), [`scripts/test_stepbible_subdataset_terms.py`](../../scripts/test_stepbible_subdataset_terms.py), [`docs/research/PR621_SELECTIVE_INTEGRATION_CROSSWALK_2026-11-18.md`](../../docs/research/PR621_SELECTIVE_INTEGRATION_CROSSWALK_2026-11-18.md) §2.1, [`docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md`](../../docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md) §4 |
 <!-- closures-detail:end -->
 **Важная граница.** Readback говорит только «байты копии равны байтам источника / байты на Drive
 равны записанному снимку». Он **не** говорит, что в PDF есть нужная печатная страница, что локатор
@@ -280,7 +282,7 @@ HOLD-флаги считались, а мёртвые относительные
 | Показатель ссылок | Значение |
 |---|---:|
 | Markdown-файлов | 2 425 |
-| ссылок `resolves` | 3 206 |
+| ссылок `resolves` | 3 211 |
 | ссылок `external` | 6 581 |
 | ссылок `missing` | 58 |
 | ссылок `outside` | 0 |

@@ -76,7 +76,7 @@
     ]
   },
   "totals": {
-    "filesScanned": 3135,
+    "filesScanned": 3138,
     "filesWithMentions": 921,
     "mentions": {
       "ARCHIVE_HOLD": 1424,
@@ -100,13 +100,13 @@
       "LIVE-READBACK-HOLD": 4,
       "LOCATOR_HOLD": 1986,
       "PAGE-IMAGE-HOLD": 14,
-      "PUBLICATION_HOLD": 2667,
-      "RIGHTS_HOLD": 1483,
+      "PUBLICATION_HOLD": 2668,
+      "RIGHTS_HOLD": 1484,
       "VERSION-HOLD": 23
     },
     "mentionsByStatus": {
       "closed": 824,
-      "open": 2365,
+      "open": 2367,
       "unmarked": 6083
     },
     "canonicalFlagLineStatesRecordedAsBothOpenAndClosed": 406,
@@ -375,12 +375,12 @@
         "ARCHIVE_HOLD": 541,
         "EVIDENCE_HOLD": 435,
         "LOCATOR_HOLD": 332,
-        "PUBLICATION_HOLD": 1041,
-        "RIGHTS_HOLD": 565
+        "PUBLICATION_HOLD": 1042,
+        "RIGHTS_HOLD": 566
       },
       "status": {
         "closed": 247,
-        "open": 1107,
+        "open": 1109,
         "unmarked": 1706
       }
     },
@@ -26197,10 +26197,11 @@
       "path": "docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md",
       "corpus": "docs",
       "mentions": {
-        "PUBLICATION_HOLD": 3,
-        "RIGHTS_HOLD": 1
+        "PUBLICATION_HOLD": 4,
+        "RIGHTS_HOLD": 2
       },
       "status": {
+        "open": 2,
         "unmarked": 4
       }
     },

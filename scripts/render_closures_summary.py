@@ -63,6 +63,7 @@ METHOD_NAMES = {
     # in a Russian sentence - the kind of omission a reader reads as a missing translation
     # rather than a missing fact. A test now fails when a method has no name.
     "pinned-commit-raw-fetch-and-rehash": "скачивание закреплённого коммита и пересчёт байтов",
+    "pinned-commit-subdataset-terms-audit": "карта условий поднаборов закреплённого коммита",
     "section-anchor-slug-check": "сверка якорей по заголовкам раздела",
     "google-drive-server-metadata-read": "чтение серверных метаданных Drive",
 }
