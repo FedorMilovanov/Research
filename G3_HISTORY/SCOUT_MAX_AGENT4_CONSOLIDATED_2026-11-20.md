@@ -171,4 +171,8 @@ FY25 $399,645/$950,642 −$550,997 net $304,459 receivable $153,000 income $15,3
 
 **Proof-route:** `RESEARCH_PROOF_ROUTE_COMPLETE=true OPEN_SEARCH_DEBT=0 EXTERNAL_HOLDS preserved HUMAN_MEDIA_HOLD preserved QUANTITATIVE excluded PUBLICATION_HOLD true` — по правилу `FINAL_P0_HOLD_MATRIX`.
 
-*Подпись:* Agent №4 SCOUT — консолидация 11–18 + Lumena S145-S149 + HOLD-закрытие P0-P3 complete 20ноя, дальше обновления в канон.
+## 8. PUBLICATION PROJECTION 2026-11-20
+
+Выпущен отдельный HOLD-aware projection-документ **`PRODUCT_HANDOFF_G3_DOSSIER_2026-11-20_PROJECTION.md`** — 9 pinned claims G3-PUB-007→015 (Q005/Q006/Q019/Q020 platform + Press live S148/S149 + finances PartIX + corpus 273 + board evolution) с явными qualifiers + 7 non-assertions (Buck counts, mailing chain, PMBC mechanics, motive, deed parcel, ownership, quantitative %) — первый документ снимающий условный `PUBLICATION_HOLD` для bounded публикации; formal legal-status `VERIFIED_PRIMARY` остаётся pending hashed GA payload.
+
+*Подпись:* Agent №4 SCOUT — консолидация 11–18 + Lumena S145-S149 + HOLD-закрытие P0-P3 complete + projection 20ноя, дальше обновления в канон.
