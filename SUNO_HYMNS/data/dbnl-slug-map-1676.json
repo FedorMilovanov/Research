@@ -1,0 +1,147 @@
+{
+  "work": {
+    "author": "Jodocus van Lodenstein",
+    "title": "Uyt-spanningen, behelsende eenige stigtelyke liederen",
+    "imprint": "Utrecht: Willem Clerck, 1676",
+    "dbnlId": "lode002uyt_01_01",
+    "indexUrl": "https://www.dbnl.org/tekst/lode002uyt_01_01/"
+  },
+  "what": "Слаг в URL DBNL — это порядковый кусок текста, а не печатная страница. Таблица ниже переводит печатные страницы, на которые ссылается проект, в конкретные файлы слаг-адресов. Каждая пара прочитана в самом файле: на странице DBNL печатный номер стоит открыто, как [pagina N] / [p. N].",
+  "verifiedAt": "2026-11-18",
+  "method": "fetch_page по каждому слаг-адресу, чтение маркеров [p. N] в теле страницы",
+  "slugs": [
+    {
+      "slug": "0007",
+      "printedPages": [
+        12,
+        13
+      ],
+      "title": "Symeons Lof-sang, Uytgebreydet",
+      "markers": [
+        "12",
+        "13"
+      ],
+      "markersExplicit": true,
+      "citedAs": null,
+      "url": "https://www.dbnl.org/tekst/lode002uyt_01_01/lode002uyt_01_01_0007.php"
+    },
+    {
+      "slug": "0013",
+      "printedPages": [
+        29,
+        29
+      ],
+      "title": "Simeons Lof-sang",
+      "markers": [
+        "29"
+      ],
+      "markersExplicit": true,
+      "citedAs": "SRC-L-1676-SIMEONS-29",
+      "url": "https://www.dbnl.org/tekst/lode002uyt_01_01/lode002uyt_01_01_0013.php"
+    },
+    {
+      "slug": "0036",
+      "printedPages": [
+        74,
+        75
+      ],
+      "title": "Den Nedrigen Christen, Op Psalm 131",
+      "markers": [
+        "74",
+        "75"
+      ],
+      "markersExplicit": true,
+      "citedAs": "SRC-L-1676-DEN-NEDRIGEN",
+      "url": "https://www.dbnl.org/tekst/lode002uyt_01_01/lode002uyt_01_01_0036.php"
+    },
+    {
+      "slug": "0038",
+      "printedPages": [
+        78,
+        81
+      ],
+      "title": "I. Hert-sterckte in Jehova. Op 1. Sam.30:6",
+      "markers": [
+        "78",
+        "79",
+        "80",
+        "81"
+      ],
+      "markersExplicit": true,
+      "citedAs": "SRC-L-1676-HERT-I-78-81",
+      "url": "https://www.dbnl.org/tekst/lode002uyt_01_01/lode002uyt_01_01_0038.php"
+    },
+    {
+      "slug": "0039",
+      "printedPages": [
+        82,
+        84
+      ],
+      "title": "II. Hert-sterckte in Jehova. Op 1. Sam.30:6",
+      "markers": [
+        "82",
+        "83",
+        "84"
+      ],
+      "markersExplicit": true,
+      "citedAs": "SRC-L-1676-HERT-II-82-84",
+      "url": "https://www.dbnl.org/tekst/lode002uyt_01_01/lode002uyt_01_01_0039.php"
+    },
+    {
+      "slug": "0040",
+      "printedPages": [
+        85,
+        87
+      ],
+      "title": "'t Verheven Herte van een Christen die Gode leeft. Op 2 Par.17:6",
+      "markers": [
+        "85",
+        "86",
+        "87"
+      ],
+      "markersExplicit": true,
+      "citedAs": "SRC-L-1676-VERHEVEN-85-87",
+      "url": "https://www.dbnl.org/tekst/lode002uyt_01_01/lode002uyt_01_01_0040.php"
+    },
+    {
+      "slug": "0056",
+      "printedPages": [
+        131,
+        134
+      ],
+      "title": "Schepselen Niet en Iesus Al",
+      "markers": [
+        "132",
+        "133",
+        "134"
+      ],
+      "markersExplicit": false,
+      "firstPageBasis": "начальная страница 131 выведена из имени иллюстрации ill0131.gif в начале стихотворения; маркеры 132–134 стоят открыто",
+      "citedAs": "SRC-L-1676-SCHEPSELEN-131-134",
+      "url": "https://www.dbnl.org/tekst/lode002uyt_01_01/lode002uyt_01_01_0056.php"
+    },
+    {
+      "slug": "0061",
+      "printedPages": [
+        155,
+        158
+      ],
+      "title": "Heerlijckheyds Loff",
+      "markers": [
+        "156",
+        "157",
+        "158"
+      ],
+      "markersExplicit": false,
+      "firstPageBasis": "начальная страница 155 выведена из имени иллюстрации ill0155.gif; маркеры 156–158 стоят открыто",
+      "citedAs": "SRC-L-1676-HEERLIJCKHEYD-155-158",
+      "url": "https://www.dbnl.org/tekst/lode002uyt_01_01/lode002uyt_01_01_0061.php"
+    }
+  ],
+  "limits": [
+    "Проверено восемь слаг-адресов из 143; остальные пары «слаг ↔ печатная страница» не установлены.",
+    "У двух стихотворений (0056, 0061) первая печатная страница не имеет открытого маркера и выведена из имени иллюстрации — это вывод, а не чтение.",
+    "Изображения страниц не сверялись с печатным экземпляром: читался текстовый слой DBNL, а не сканы.",
+    "Права не проверялись; RIGHTS_HOLD на SRC-L-1676 остаётся."
+  ]
+}

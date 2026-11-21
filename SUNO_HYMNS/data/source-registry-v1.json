@@ -55,7 +55,8 @@
     "Title-page imprint, original collection and primary text witness"
    ],
    "limits": [
-    "DBNL marks the underlying 1676 work Auteursrechtvrij, but the online transcription is diplomatic rather than a complete unmediated scan; its colophon records omissions and editorial corrections. Use the exact page or scan for poem-level claims."
+    "DBNL marks the underlying 1676 work Auteursrechtvrij, but the online transcription is diplomatic rather than a complete unmediated scan; its colophon records omissions and editorial corrections. Use the exact page or scan for poem-level claims.",
+    "Poem-level locators are pinned by exact slug for eight addresses, read 2026-11-18 from the [p. N] markers on the pages themselves (SUNO_HYMNS/data/dbnl-slug-map-1676.json); the source stays COARSE_LOCATOR_ONLY because eight pairs out of 143 slugs are pinned, not the book."
    ]
   },
   {

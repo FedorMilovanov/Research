@@ -3,7 +3,7 @@
 """Батарея мутаций «Искупления» — прогон против рабочего дерева.
 
 С круга 27 батарея лежит в репозитории. До этого она семь кругов жила в /tmp
-(/tmp/mutations22.py … /home/user/cap26/mutations26b.py), и дважды — в кругах 26 и
+(в /tmp и в песочницах прошлых кругов), и дважды — в кругах 26 и
 26-после-отката — гибла вместе с песочницей вместе со своим логом: восстановить
 «что именно проверялось» тогда было нечем. Результат прогона вносится в
 ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json, а способ прогона — вот сюда, чтобы его
@@ -101,6 +101,30 @@ def anchors():
     }
 
 
+
+def live_registry_mirror(raw):
+    """Зеркало реестра, которое правило 25 действительно сверяет с деревом.
+
+    До круга 68 три случая искали запись с предикатом «роль registry-mirror и
+    НЕ lagBehindGit» — и перестали находить что-либо, когда лаг объявили у всех
+    зеркал: якорь описал прошлое состояние дерева. Теперь берётся запись,
+    которую правило увидит по роли и имени, а «живой» её делает сам случай —
+    снятием лага, потому что сравнение md5 и байтов правило включает только
+    для зеркал без объявленного лага.
+    """
+    cand = [r for r in raw["records"]
+            if r.get("role") == "registry-mirror"
+            and "35_four_point" in str(r.get("gitFile", ""))
+            and "УСТАРЕЛО" not in str(r.get("name", ""))
+            and re.search(r"md5 ([0-9a-f]{32})", str(r.get("name")))]
+    if len(cand) != 1:
+        raise AssertionError("не проверен: зеркал реестра, видимых правилу 25, найдено %d, ожидалось одно"
+                             % len(cand))
+    rec = cand[0]
+    rec["lagBehindGit"] = False  # случай сначала делает зеркало «живым», иначе сверка md5 не включается
+    return rec
+
+
 def md_row_sample(text):
     m = re.search(r"^\|\s*FP-\d+\s*\|[^\n]*$", text, re.M)
     if not m:
@@ -168,6 +192,24 @@ def jsurgical_first(path, block_key, field, new_scalar_text):
                     encoding="utf-8")
 
 
+
+def patch_record(drive_id, old, new, path=None):
+    """Точечная правка поля внутри одной записи индекса: запись ищется по driveId,
+    конец — по закрывающей скобке на отступе записи. Whole-file dump переставил бы
+    форму всему индексу, и ловить пришлось бы формат, а не правило."""
+    path = path or IDX
+    t = path.read_text(encoding="utf-8")
+    anchor = '"driveId": "%s"' % drive_id
+    if t.count(anchor) != 1:
+        raise AssertionError("не проверен: driveId %s встречается %d раз" % (drive_id, t.count(anchor)))
+    i = t.index(anchor)
+    j = t.index("\n  },", i)
+    seg = t[i:j]
+    if seg.count(old) != 1:
+        raise AssertionError("не проверен: %r в записи %s встречается %d раз" % (old, drive_id, seg.count(old)))
+    path.write_text(t[:i] + seg.replace(old, new, 1) + t[j:], encoding="utf-8")
+
+
 # --- случаи ------------------------------------------------------------------------------
 def cases():
     """Каждый случай: (имя, ожидаемый вердикт, ожидаемая подстрока, функция правки).
@@ -201,7 +243,25 @@ def cases():
         new = "|".join(" `A1` " if c.strip().strip("`").strip("*") == "A2" else c for c in cells)
         REG_MD.write_text(sub(t, line, new, "реестр"), encoding="utf-8")
 
-    add("registryClassPromoted", "классы достоверности разошлись", m_class, "A2 поднят до A1 без печатного носителя")
+    add("registryClassPromoted", "исторические коды разошлись", m_class,
+        "A2 поднят до A1 без печатного носителя; ловится счётчиком «заявлено против обхода», а не "
+        "построчной сверкой класса с основанием — это и есть разница, которую показывает следующий случай")
+
+    # 2а. Тот же подъём, но уравновешенный: одна строка A2 → A1 и одна A1 → A2. Итоги классов
+    # сходятся, и гейт зеленеет: значит счётчик защищает суммы, а не отдельную строку. Это
+    # открытое место, и оно проверяется как PASS-дыра, чтобы не выглядело закрытым.
+    def m_class_swap():
+        t = REG_MD.read_text(encoding="utf-8")
+        up, up_cells = md_row_with_class(t, "A2")
+        down, down_cells = md_row_with_class(t, "A1")
+        up_new = "|".join(" `A1` " if c.strip().strip("`").strip("*") == "A2" else c for c in up_cells)
+        down_new = "|".join(" `A2` " if c.strip().strip("`").strip("*") == "A1" else c for c in down_cells)
+        t = sub(t, up, up_new, "реестр")
+        t = sub(t, down, down_new, "реестр")
+        REG_MD.write_text(t, encoding="utf-8")
+
+    add("registryClassSwapBalanced", None, m_class_swap,
+        "классы двух строк обменяны: итоги сходятся, и построчной сверки класса с основанием нет")
 
     # 3. Живой счётчик строк реестра в JSON (снимается обходом, литералов нет).
     def m_reglines():
@@ -283,24 +343,31 @@ def cases():
     add("doc17LinesClaim", "reconciliationDocument20261022", m_doc17, "число строк `17_` в сводке завышено")
 
     # 11. Имя живого зеркала: байты в имени не равны git-файлу.
+    #
+    # С круга 68 этот случай переписан, а не починен. Предикат «живое зеркало» перестал
+    # что-либо находить: лаг объявлен у всех зеркал с md5 в имени, а правило включает
+    # сравнение md5 и байтов только для зеркал БЕЗ лага. Хуже того, у всех таких записей
+    # md5 в имени уже расходится с деревом, и первым сработает он, замаскировав проверку
+    # байтов. Поэтому случай сначала делает зеркало правдивым (снимает лаг, подставляет
+    # настоящие md5 и размер), а потом сдвигает размер в имени на байт: проверяется ровно
+    # то сравнение, которое заявлено в названии.
     def m_mirrorname():
+        import hashlib as _h
         raw = json.loads(IDX.read_text(encoding="utf-8"))
-        # живым зеркалом считается единственная запись без пометки в имени и без роли superseded:
-        # с круга 53 в индексе появился второй способ помечать снятое (role …-superseded при
-        # ненарушенном имени), и старый предикат по одному имени находил два живых
-        rec = [r for r in raw["records"] if "35_four_point_authors_mass_registry" in str(r.get("name", ""))
-               and "УСТАРЕЛО" not in str(r.get("name", ""))
-               and "superseded" not in str(r.get("role", ""))]
-        if len(rec) != 1:
-            raise AssertionError("не проверен: живых записей о зеркале реестра %d, ожидалась одна" % len(rec))
-        rec = rec[0]
-        fld = "driveBytesClaimed" if "driveBytesClaimed" in rec else "bytes"
-        if int(rec[fld]) != int(A["liveBytes"]):
-            raise AssertionError("не проверен: в записи %s = %s, в якорях %s" % (fld, rec[fld], A["liveBytes"]))
-        rec[fld] = int(rec[fld]) + 1
+        rec = live_registry_mirror(raw)
+        gf = ROOT / rec["gitFile"]
+        live_md5 = _h.md5(gf.read_bytes()).hexdigest()
+        live_size = gf.stat().st_size
+        name = re.sub(r"md5 [0-9a-f]{32}", "md5 " + live_md5, str(rec["name"]))
+        name = re.sub(r"\d[\d ]* B", "%d B" % live_size, name, count=1)
+        m = re.search(r"(\d[\d ]*) B", name)
+        if not m:
+            raise AssertionError("не проверен: в имени зеркала нет размера в байтах — подложить ложь некуда")
+        rec["name"] = name[:m.start(1)] + str(int(m.group(1).replace(" ", "")) + 1) + name[m.end(1):]
         IDX.write_text(json.dumps(raw, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
-    add("mirrorBytesClaimed", None, m_mirrorname, "размер в записи индекса о живом зеркале сдвинут на 1 байт")
+    add("mirrorBytesClaimed", "обещает", m_mirrorname,
+        "имя живого зеркала обещает на 1 байт больше, чем весит git-файл")
 
     # 12. Пустая группа мутаций (гейт обязан не дать спрятать расхождение).
     def m_group():
@@ -356,12 +423,7 @@ def cases():
     # сверка обязана краснеть. Поймано кругом 30 (до перестановки роли молчало).
     def m_mirrorname_md5():
         raw = json.loads(IDX.read_text(encoding="utf-8"))
-        live = [r for r in raw["records"] if r.get("role") == "registry-mirror" and not r.get("lagBehindGit")
-                and "35_four_point" in str(r.get("gitFile", ""))]
-        if len(live) != 1:
-            raise AssertionError("не проверен: живых зеркал с ролью registry-mirror найдено %d, ожидалось одно"
-                                 % len(live))
-        rec = live[0]
+        rec = live_registry_mirror(raw)
         m = re.search(r"md5 ([0-9a-f]{32})", str(rec["name"]))
         if not m:
             raise AssertionError("не проверен: в имени зеркала нет md5 — подложить ложь некуда")
@@ -377,11 +439,7 @@ def cases():
     # «я завела запись с нужной ролью». Случай обязан дать PASS.
     def m_mirror_role_stripped():
         raw = json.loads(IDX.read_text(encoding="utf-8"))
-        live = [r for r in raw["records"] if r.get("role") == "registry-mirror" and not r.get("lagBehindGit")
-                and "35_four_point" in str(r.get("gitFile", ""))]
-        if len(live) != 1:
-            raise AssertionError("не проверен: живых зеркал с ролью registry-mirror найдено %d" % len(live))
-        rec = live[0]
+        rec = live_registry_mirror(raw)
         m = re.search(r"md5 ([0-9a-f]{32})", str(rec["name"]))
         if not m:
             raise AssertionError("не проверен: в имени зеркала нет md5")
@@ -540,12 +598,19 @@ def cases():
         start = raw.find('"cards": [')
         if start == -1:
             raise AssertionError("не проверен: в ot-корпусе нет списка cards")
-        i = raw.find('"holds": ["EVIDENCE_HOLD"', start)
+        # С круга 68 ищем не «holds, начинающийся с EVIDENCE_HOLD» (в карточке первым может
+        # стоять другой флаг), а любой однострочный массив holds: случай проверяет, что
+        # удержание, которого проза не знает, роняет сверку двух учётов, и ему всё равно,
+        # какой флаг стоит первым.
+        i = raw.find('"holds": [', start)
         if i == -1:
-            raise AssertionError("не проверен: у первой карточки нет однострочного holds")
+            raise AssertionError("не проверен: у первой карточки нет поля holds")
+        j = i + len('"holds": [')
+        close = raw.find("]", j)
+        if close == -1:
+            raise AssertionError("не проверен: у holds первой карточки нет закрывающей скобки")
         if "ZZZ_UNSEEN_HOLD" in raw:
             raise AssertionError("не проверен: маркер уже в файле")
-        j = i + len('"holds": [')
         LANE_REG["ot"].write_text(raw[:j] + '"ZZZ_UNSEEN_HOLD", ' + raw[j:], encoding="utf-8")
 
     add("cardStateWithoutRegisterReshoot", "сверка с машинными карточками разошлась", m_card_state_without_reshoot,
@@ -586,11 +651,60 @@ def cases():
     add("coverageClaimFakedUpward", "сводка «файловБезКарточки» записана", m_faked_coverage,
         "покрытие приукрасили числом: сверка обязана читать его с дерева, а не с бумаги")
 
+    # 24–26. Зеркала ланов: правило 25 с круга 68 смотрит и на lane-mirror/ledger-mirror,
+    # а доказательством у них служит contentRevision. Три мутации — три способа соврать:
+    # снять лаг, подделать число ревизий, назвать несуществующий коммит.
+    def m_lanelag():
+        patch_record("1Jt96MpLxvFV1_EWgy2sHIwXypvqWZ3h8j-1KnpqRoas",
+                     '"lagBehindGit": true', '"lagBehindGit": false')
+
+    add("laneMirrorLagRemoved", "lagBehindGit не выставлен", m_lanelag,
+        "12_ отстаёт на 16 ревизий, а лаг снят: зеркало снова «молчит»")
+
+    def m_lanrevs():
+        patch_record("1Jt96MpLxvFV1_EWgy2sHIwXypvqWZ3h8j-1KnpqRoas",
+                     '"lagRevisions": 16', '"lagRevisions": 3')
+
+    add("laneMirrorRevisionsFaked", "перестало быть измерением", m_lanrevs,
+        "число ревизий в записи перестало совпадать с git rev-list")
+
+    def m_lansha():
+        patch_record("1v4er6LbmOhEvJh50skuL8dVu3m6U3s06JSZEuxxFhy0",
+                     '"contentRevision": "8a5b6765"', '"contentRevision": "deadbeef"')
+
+    add("laneMirrorRevisionMissing", "не на что опереться", m_lansha,
+        "contentRevision называет коммит, которого в клоне нет")
+
     return out
 
 
-def run(probe=False):
+def holes():
+    """Напечатать PASS-дыры: случаи, где гейт ловить НЕ обязан.
+
+    Это не список дефектов и не заявка на их закрытие. Это граница проверки,
+    названная поимённо: случай портит дерево ожидаемым способом, гейт остаётся
+    зелёным, и так и должно быть — но читателю надо знать, где именно кончается
+    покрытие. Печатается из самого списка случаев, поэтому не может разойтись
+    с прогоном: разойдётся — значит случай переписали.
+    """
+    cs = [c for c in cases() if c[1] is None]
+    print("PASS-дыры (гейт не обязан ловить): %d" % len(cs))
+    for name, _expect, _fn, note in cs:
+        print("  %-34s %s" % (name, note))
+    return 0
+
+
+def run(probe=False, only=None):
     cs = cases()
+    total = len(cs)
+    if only:
+        cs = [c for c in cs if any(o in c[0] for o in only)]
+        print("фильтр %s: %d из %d случаев" % (", ".join(only), len(cs), total))
+        if not cs:
+            # Прогон нуля случаев — не «всё чисто», а несработавший фильтр:
+            # молчаливое «непопаданий: 0» здесь читалось бы как победа.
+            print("ни один случай не совпал с фильтром; имена: --holes, затем любой фрагмент из них")
+            return 2
     backups = {p: p.read_bytes() for p in FILES}
     print("батарея: %d случаев; затронуто файлов: %d" % (len(cs), len(FILES)))
     bad, npass, nfail, notchecked = [], 0, 0, []
@@ -645,4 +759,12 @@ def run(probe=False):
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--probe", action="store_true", help="печатать фактические ошибки гейта по каждому случаю")
-    sys.exit(run(probe="--probe" in sys.argv[1:]))
+    ap.add_argument("--only", action="append", default=None,
+                    help="прогнать только случаи, в имени которых есть подстрока (можно несколько раз); "
+                         "фильтр, не совпавший ни с одним случаем, — код 2, а не «всё чисто»")
+    ap.add_argument("--holes", action="store_true",
+                    help="напечатать PASS-дыры (где гейт не обязан ловить) и не запускать прогон")
+    _ap = ap.parse_args()
+    if _ap.holes:
+        sys.exit(holes())
+    sys.exit(run(probe=_ap.probe, only=_ap.only))
