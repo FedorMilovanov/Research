@@ -104,25 +104,25 @@ A public commerce surface under G3 Press branding remained reachable after the w
 
 Do not conduct a purchase merely to test ownership without a separate authorized transaction plan.
 
-## 5. Dave Jenkins — title-level post-G3 republication is strongly corroborated
+## 5. Dave Jenkins — direct participant rights-return statement; new reissue not established
 
 ### Original G3 relationship
 
 Historical G3 material identifies Dave Jenkins’ *The Word Matters: Defending Biblical Authority Against the Spirit of the Age* as a G3 Press title.
 
-### Reported rights return
+### Direct participant statement
 
-Secondary reporting reproduces a participant statement that G3 returned the rights and that Jenkins intended to reissue the title through his own publishing ecosystem.
+The directly read Jenkins X status dated 2026-08-19 says that G3 returned rights to the title and that Jenkins and Sarah would begin work on a new cover and make it available again soon through Servants of Grace. This is primary evidence of what Jenkins publicly represented.
 
-### Observable current result
+### Earlier storefront-card boundary
 
-Servants of Grace / Theology for Life Publishing now exposes a current sales surface for the same title under Jenkins’ publishing ecosystem.
+The exact Servants of Grace product card was archived on 2026-08-13, six days before that participant statement. Its title, price, GTIN and add-to-cart surface establish only a dated earlier card. Because the later statement describes renewed availability as forthcoming, the card cannot establish a new post-return/post-G3 reissue or independently corroborate legal reversion.
 
 ### Current conclusion
 
-> At least one former G3 Press title has an observable post-G3 republication/sales presence under the author’s current publishing ecosystem, materially corroborating the reported title-level rights return.
+> Jenkins publicly represented on 2026-08-19 that G3 returned rights to *The Word Matters* and that a renewed Servants of Grace availability was forthcoming. The acquired evidence does not establish the legal instrument, effective date, scope, edition, actual availability, residual G3 inventory treatment or every ancillary right.
 
-This still does not supply the assignment/reversion instrument, exact effective date, residual G3 inventory treatment or every ancillary right.
+Canonical correction: `Q020_JENKINS_TITLE_CORRECTION_2026-11-21.md`.
 
 ## 6. Darrell Harrison — request supported, completed reversion not proved
 
@@ -188,7 +188,7 @@ Possible, especially for G3+/software/content operations. No contract acquired.
 
 ### H-ASSET-04 — partial transfer with author-right reversions and retained inventory
 
-Plausible because title-level post-G3 republication and still-visible G3 Press catalog state coexist. This is an explanatory model, not a proved transaction structure.
+Plausible because a direct participant representation of title-level rights return and a still-visible G3 Press catalog state coexist. A completed new reissue remains unestablished. This is an explanatory model, not a proved transaction structure.
 
 ### H-ASSET-05 — Living Heritage became the 2026 successor because it had been separated in 2025
 
@@ -211,6 +211,6 @@ Repeated observation of the same unchanged app-store/storefront metadata is low-
 
 ## 12. Article-safe wording
 
-> G3’s FY2025 tax filing states that Living Heritage Homeschool was separated as an independent entity from G3 Ministries during 2025. After G3’s 2026 operational wind-down, reporting indicated that another ministry was expected to take over G3+ and possibly G3 Press, but no acquired primary public record names that ministry or supplies the transaction terms. Current Living Heritage G3+ bundling, G3-linked app-store metadata and the still-visible G3 Press storefront document service/platform continuity; none by itself establishes beneficial ownership. Title-level disposition may differ across authors: Dave Jenkins’ *The Word Matters* has an observable post-G3 publishing presence under his current ecosystem, while other rights-return claims remain less complete. The legal disposition of G3+, G3 Press, subscriber contracts, domains, trademarks, inventory and other rights therefore remains unresolved at the current evidence cutoff.
+> G3’s FY2025 tax filing states that Living Heritage Homeschool was separated as an independent entity from G3 Ministries during 2025. After G3’s 2026 operational wind-down, reporting indicated that another ministry was expected to take over G3+ and possibly G3 Press, but no acquired primary public record names that ministry or supplies the transaction terms. Current Living Heritage G3+ bundling, G3-linked app-store metadata and the still-visible G3 Press storefront document service/platform continuity; none by itself establishes beneficial ownership. Title-level disposition may differ across authors: Dave Jenkins publicly said on 19 Aug. 2026 that G3 returned rights to *The Word Matters* and that renewed Servants of Grace availability was forthcoming, while the legal instrument, new edition/availability and inventory outcome remain unacquired; other rights-return claims remain less complete. The legal disposition of G3+, G3 Press, subscriber contracts, domains, trademarks, inventory and other rights therefore remains unresolved at the current evidence cutoff.
 
 **Do not identify a 2026 successor or upgrade `potentially piecemeal` into a factual transaction structure until primary transfer records are acquired.**

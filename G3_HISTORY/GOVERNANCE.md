@@ -235,13 +235,7 @@ The November index and September status are distinct dated primary observations.
 
 ## G3 Church Network governance problem
 
-The network publicly emphasized:
-
-- autonomy of the local church;
-- confessional alignment;
-- plurality of elders;
-- church discipline;
-- cooperation rather than denominational control.
+The [August 2021 application](https://web.archive.org/web/20210802180311id_/https://g3min.org/g3-church-network/), *Goals* and *Minimal Requirements*, asked for confessional alignment while allowing continuing affiliation with other networks and denominations. The fields on plural elders and church discipline allowed a negative answer or a statement of intent. They are evidence of what G3 asked, not proof that every accepted church already had both practices. [One joining pastor](https://gardenchurchnb.com/the-g3-church-network/) publicly described his own church as autonomous in February 2022. Neither document supplies a charter conferring disciplinary jurisdiction.
 
 The 2026 participant admissions are institutionally significant because leaders acknowledged improper intervention in another autonomous church’s disciplinary process.
 
