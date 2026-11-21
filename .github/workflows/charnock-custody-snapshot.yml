@@ -31,6 +31,13 @@ jobs:
     steps:
       - name: Check out exact Git revision
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - name: Verify source SHA is the exact checked-out PR head or event commit
+        shell: bash
+        run: |
+          expected_sha='${{ github.event.pull_request.head.sha || github.sha }}'
+          test "$(git rev-parse HEAD)" = "$expected_sha"
       - name: Prove v3 source-byte boundaries with synthetic tests
         run: python3 -m unittest discover -s scripts -p 'test_build_charnock_custody_candidate.py' -v
       - name: Create reproducible current-source candidate without Drive writes
