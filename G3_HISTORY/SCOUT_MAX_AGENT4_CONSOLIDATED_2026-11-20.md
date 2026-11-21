@@ -86,8 +86,8 @@ FY25 $399,645/$950,642 −$550,997 net $304,459 receivable $153,000 income $15,3
 | Q002 reversal | CLOSED $1,061,800 | preserved | corrected filing |
 | Q003 board before Aug | July21 6 VERIFIED HOLD | preserved | later roster/minutes |
 | Q004 transition | DATES CLOSED mechanics HOLD | 29366217 index readable body 404 still HOLD | minutes/filing body |
-| Q005 legal status | Active/Compliance Sep8 TIME_SENSITIVE | **NAME_CHANGE_VERIFIED Oct28 32257311 NO_DISSOLUTION as of Nov15** current status field ACCESS_HOLD G3-S144 PARTIAL REFERENCE | detail/ filing body/later filing |
-| Q006 successor | IN-PROGRESS HOLD | `new form new leadership` G3-S142 first-party Press coupled but transferee/closing/terms HOLD 3 formulations compatible none selects | final email/recipient announcement/board notice/agreement |
+| Q005 legal status | Active/Compliance Sep8 TIME_SENSITIVE | **NAME_CHANGE_VERIFIED Oct28 32257311 same corp no. NO_DISSOLUTION — CORROBORATED_SECONDARY Nov17 Protestia GA records + Nov04/11 public notices + g3min.org→lumenaministries.com redirect live Nov18 G3-S144-S147** | primary GA detail 403 still HOLD for PUBLICATION_PROJECTION |
+| Q006 successor | IN-PROGRESS HOLD | **same-EIN continuation via rename not asset sale — Aug27 Lumena LLC (Minga) → Sep17 Minga & Co → Oct28 rename → Oct30 officers Minga CEO/Pogue CFO Etheridge sec Huckaby chair Ramah Baptist** — `acquired by another ministry` vs `new form` still HOLD without board notice/agreement G3-S145 | board notice/agreement/closing statement |
 | Q006A parcel | SALE VERIFIED HOLD | preserved qPublic 403 34270062808 | deed/grantee/note/authorization |
 | Q010 PMBC resign | DISPUTED | preserved G3-S015 voluntary vs G3-S043 required | PMBC minutes |
 | Q007-12 | HUMAN/Media/inference HOLD 0/17 | preserved | human listening/postal/communications |
@@ -107,7 +107,7 @@ FY25 $399,645/$950,642 −$550,997 net $304,459 receivable $153,000 income $15,3
 | Finance SHA | 202340569349300209 678b391e + 202411429349300611 c8eb0baa + 202541359349304489 c14f511c + 202641339349303874 48846b93 |
 | Q006A guardrail | Q006A_4979_HIGHWAY5 run 34270062808 qPublic 403 GSCCCA login |
 | Board July21 | 20260721102641 a946cafd decoded 30908b37 Braswell/Broome/Norton/Sikes/Joyner/Mooney |
-| Q005/Q006 | ecorp.sos.ga.gov BusinessFilings 2751672 filings 17370469/17449198/18903966/22250386/29366217/32257311/32260917/32269080 NameChangeHistory Lumena effective Oct28 + G3-S144 |
+| Q005/Q006 | ecorp.sos.ga.gov BusinessFilings 2751672 filings 17370469/17449198/18903966/22250386/29366217/32257311/32260917/32269080 NameChangeHistory Lumena effective Oct28 + G3-S144 + G3-S145 Protestia Nov17 + G3-S146 JubileeCast/Wiki + G3-S147 Doctrinematters Nov04/11 notices |
 | Ideology | statementonsocialjustice.com Jun19 + 2019 preconference + Aniol Apr26/May03 Walker Apr27 + protocol vocab P1-5 |
 | Timeline | TIMELINE 8 phases 2011 hello-world vs 2019-06-06 incorp vs 2026-10-28 Lumena |
 | Media | MEDIA_LEDGER G3-M009 8,200 M017 wide 2020 + Play conflict Sep04/Jul23 |
@@ -131,4 +131,6 @@ FY25 $399,645/$950,642 −$550,997 net $304,459 receivable $153,000 income $15,3
 
 *Обновление 2026-11-20 (мощная HOLD-консолидация):* `OPEN_QUESTIONS.md` Q005/Q006 upgraded Lumena chain + `FINAL_P0_HOLD_MATRIX` overlay 40c28bc — HOLD-матрица 18 канонов синхронизирована, пролиферация остановлена.
 
-*Подпись:* Agent №4 SCOUT — консолидация 11–18 + Lumena chain 17–20ноя, дальше обновления в канон.
+*Обновление 2026-11-20 (ультра-мощная SOURCE-консолидация):* `SOURCE_LEDGER.md` добавлены **G3-S145 Protestia 17ноя chain + G3-S146 JubileeCast/Wiki + G3-S147 Doctrinematters Nov04/11 notices/redirect** — 3 новых источника + reframed acquisition #4 (same-EIN continuation) + таблица Q005/Q006 в CONSOLIDATED обновлена — источниковедческая база полностью синхронизирована без новых WAVE-файлов.
+
+*Подпись:* Agent №4 SCOUT — консолидация 11–18 + Lumena chain 17–20ноя S145-S147, дальше обновления в канон.
