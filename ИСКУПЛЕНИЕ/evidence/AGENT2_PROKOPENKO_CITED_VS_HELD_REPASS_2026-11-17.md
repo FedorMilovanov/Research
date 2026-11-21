@@ -2742,7 +2742,7 @@ S. Escobedo III, «2 Peter 2:1 and Universal Redemption» (сайт Alpha & Omeg
 
 ### 73.2. Источники
 
-- (а) **T. Tiessen, «For whom did Christ die?»** (блог *Thoughts Theological*; виден фрагмент из поисковой выдачи, сама страница не загрузилась; класс C). Цитаты Демареста с указанием p. 193:
+- (а) **T. Tiessen, «For whom did Christ die?»** *(р. 162, §85: URL — https://www.thoughtstheological.com/for-whom-did-christ-die/ ; фрагмент выдачи повторно совпал дословно)* (блог *Thoughts Theological*; виден фрагмент из поисковой выдачи, сама страница не загрузилась; класс C). Цитаты Демареста с указанием p. 193:
   - вопрос разделён на «God's purpose regarding the *provision* of the Atonement and his purpose concerning the *application* thereof»;
   - «Christ died to make atonement for all to the end that its benefits would be applied to the elect» (193);
   - «by divine *intention* Christ's suffering and death are universal in its provision and particular in its application» (193).
@@ -3187,3 +3187,41 @@ S. Escobedo III, «2 Peter 2:1 and Universal Redemption» (сайт Alpha & Omeg
 - Ветка обновлена от main (`e9e4facb`, G3); atonement-пути main не менял.
 
 **HOLD:** без изменений против §80.4. Вердикты S1–S5 не меняются. Умысел не утверждается.
+
+## 85. Раунд 162 (2026-11-17): самопроверка раунда 150 (сн. 98, Демарест, *The Cross and Salvation*, p. 193)
+
+**Повод.** Пользователь просил перепроверять себя. В §73 вердикт ACCURATE (класс C) держится на двух посредниках, один из них без URL. В том же раунде исправлены `23_` §7, `35_` FP-109 и `16_` §6.
+
+### 85.1. Что сделано заново
+
+- (а) Поиск по формуле «universal in its provision and particular in its application»:
+  - выдача снова показывает T. Tiessen, https://www.thoughtstheological.com/for-whom-did-christ-die/ , с тремя цитатами и пометкой «(193)» у каждой: «God's purpose regarding the *provision* of the Atonement and his purpose concerning the *application* thereof»; «Christ died to make atonement for all to the end that its benefits would be applied to the elect»; «by divine *intention* Christ's suffering and death are universal in its provision and particular in its application». Совпадает с §73.2 (а) слово в слово;
+  - сама страница снова не загрузилась (класс C).
+- (б) Издание: карточка Crossway (https://www.crossway.org/books/the-cross-and-salvation-case/) — Foundations of Evangelical Theology, серийный редактор J. S. Feinberg; твёрдый переплёт 2006 г. Рецензия *JMAT* 3:1 (1999), p. 98 (galaxie.com): «Wheaton, Illinois: Crossway, 1997». Части книги: «the plan of salvation», «the provision of salvation», «the application of salvation…». Значит, различение provision / application заложено в саму структуру книги. Класс C; подтверждает выходные данные сн. 98 и §73.4 (`35_` FP-109).
+- (в) Полнотекстовый индекс Open Library: «particular in its application» + Demarest — 3 попадания, все юридические тексты XIX века. Печатного текста p. 193 по-прежнему нет.
+- (г) Исправления раунда 150 сверены с PDF статьи (`art.txt`, класс A1):
+  - сн. 10 — Daniel p. 360; Lewis & Demarest II p. 380; Макграт;
+  - сн. 13, 18, 83 — *Integrative Theology*;
+  - сн. 45 — Сперджен через Lewis & Demarest;
+  - Аллен — в сн. 9 (ETS-доклад 2017 г.) и в сн. 19;
+  - *The Cross and Salvation* — только сн. 98.
+  - Правка `23_` §7 верна.
+- (д) Попутно, для сн. 45: «Vol. 10. P. 230, 233» проповеди «General and Yet Particular» попадают внутрь № 566 (MTP 10, начинается на p. 229, текст Ин. 17:2; указатель archive.spurgeon.org). Локатор статьи согласуется с указателем.
+
+### 85.2. Итог
+
+| Что проверено | Итог |
+|---|---|
+| Английские формулы и p. 193 | Подтверждены повторно (класс C). ACCURATE в силе |
+| Выходные данные (Crossway 1997; серия Фейнберга) | Подтверждены двумя независимыми карточками (класс C) |
+| Называет ли Демарест свой взгляд «сублапсарианским» | Не установлено. **HOLD** в силе |
+| Правки `23_` §7, `35_` FP-109 | Верны по PDF статьи |
+| Ошибки раунда 150 | Не найдены. Добавлен URL посредника (а) |
+
+**HOLD:** без изменений против §80.4.
+
+### 85.3. Попутно: PR #584
+
+Независимо прочитаны `sha256Checksum` / `md5Checksum` / `size` восьми файлов Drive для `HCR-2026-11-18-06` (Owen, Calvin, Goodwin, WCF). Все четыре пары совпали. Замечено: копия WCF лежит в другой папке, чем три остальные. Отмечен интеграционный риск по `atonement-corpus-v1.json` и счётчикам `18_`. Комментарий: issuecomment-7063153936.
+
+Вердикты S1–S5 не меняются. Умысел не утверждается.
