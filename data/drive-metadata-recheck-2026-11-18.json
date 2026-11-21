@@ -1,0 +1,127 @@
+{
+  "schemaVersion": "drive-metadata-recheck/1",
+  "authorityId": "DRIVE-METADATA-RECHECK-2026-11-18",
+  "snapshotDate": "2026-11-18",
+  "method": "google-drive-server-metadata-read",
+  "whatWasRead": "Поле `sha256Checksum` и `size` из ответа Drive API на `files.get` (fields=id,name,size,sha256Checksum,mimeType) — то есть значение, которое сервер сообщает о хранимом объекте сейчас.",
+  "whatWasNotRead": "Байты объекта не скачивались (кроме объекта из HCR-C1, где скачивание и пересчёт делались отдельно). Совпадение означает, что объект существует, доступен и его серверный хеш не изменился; оно не является независимым пересчётом содержимого.",
+  "totals": {
+    "sampled": 8,
+    "match": 8,
+    "mismatch": 0,
+    "notFound": 0,
+    "distinctObjectsInRegistry": 24
+  },
+  "objects": [
+    {
+      "driveFileId": "1Vg9tA3uhECDf6uHLdv2_PArcgd7BL70x",
+      "name": "2026-10-23 — Чарнок — Works 3–5, семь локаторов (фрагмент 1 из 16, снято с ?p=17).md",
+      "mimeType": "text/markdown",
+      "declaredSha256": "5ad0aa5211571d24894fb2516a4f1b173ed3bcb5922f732120234e27dec4b0ea",
+      "observedSha256": "5ad0aa5211571d24894fb2516a4f1b173ed3bcb5922f732120234e27dec4b0ea",
+      "declaredBytes": 2965,
+      "observedBytes": 2965,
+      "state": "match",
+      "registryClosures": [
+        "HCR-2026-11-18-01"
+      ]
+    },
+    {
+      "driveFileId": "14bfNjtyOgIh7MQV-7yK8I6K2p3AG6dNY",
+      "name": "GILL-BIO-RIPPON-1838-IA__briefmemoiroflif00ripp__sha256-362019ee851280e1.pdf",
+      "mimeType": "application/pdf",
+      "declaredSha256": "362019ee851280e14eb4c6cd8bca70a30df957af225ac56c7c6d95bbaf461792",
+      "observedSha256": "362019ee851280e14eb4c6cd8bca70a30df957af225ac56c7c6d95bbaf461792",
+      "declaredBytes": 9297102,
+      "observedBytes": 9297102,
+      "state": "match",
+      "registryClosures": [
+        "HCR-2026-11-18-01"
+      ]
+    },
+    {
+      "driveFileId": "1uXU3sR6yn8VEUhQWQ_z_ctwtD300-Pwi",
+      "name": "GILL — MOBILE REFERENCE — REMOTE CHECKED — 2026-06-29.txt",
+      "mimeType": "text/plain",
+      "declaredSha256": "7472a79f61e911451312aab278c1c574dde289ebf0863c39153c981bac89beee",
+      "observedSha256": "7472a79f61e911451312aab278c1c574dde289ebf0863c39153c981bac89beee",
+      "declaredBytes": 40563,
+      "observedBytes": 40563,
+      "state": "match",
+      "registryClosures": [
+        "HCR-2026-11-18-01"
+      ]
+    },
+    {
+      "driveFileId": "1sV3jfs0slLQh1lX6FawkL-It7tob2X10",
+      "name": "Стивен Чарнок — 00 Navigation (wave 22, 2026-10-25).md",
+      "mimeType": "text/markdown",
+      "declaredSha256": "c6ce878b5ed468a524020cc2fe83fb86211038e98cfb45c0e4ce99ac6cdd793e",
+      "observedSha256": "c6ce878b5ed468a524020cc2fe83fb86211038e98cfb45c0e4ce99ac6cdd793e",
+      "declaredBytes": 89100,
+      "observedBytes": 89100,
+      "state": "match",
+      "registryClosures": [
+        "HCR-2026-11-18-02"
+      ]
+    },
+    {
+      "driveFileId": "1JmhghsHYSS13PF_nVpn4b0jdEc7WrQkT",
+      "name": "Стивен Чарнок — 01 Witnesses (wave 22, 2026-10-25).md",
+      "mimeType": "text/markdown",
+      "declaredSha256": "a74bed26fdf265989f45d5aa1aced994571db8a9af264abfb6e2cba28be226fa",
+      "observedSha256": "a74bed26fdf265989f45d5aa1aced994571db8a9af264abfb6e2cba28be226fa",
+      "declaredBytes": 67556,
+      "observedBytes": 67556,
+      "state": "match",
+      "registryClosures": [
+        "HCR-2026-11-18-02"
+      ]
+    },
+    {
+      "driveFileId": "12btSm2nqtKH7PaI0KbpVeSs2nalWvI5W",
+      "name": "Стивен Чарнок — 03 Works and Catalogue (wave 22, 2026-10-25).md",
+      "mimeType": "text/markdown",
+      "declaredSha256": "7e92a29912ca2a4147e4fd162700a4bb3a96f90726af5c0501a90924cca8cec4",
+      "observedSha256": "7e92a29912ca2a4147e4fd162700a4bb3a96f90726af5c0501a90924cca8cec4",
+      "declaredBytes": 78099,
+      "observedBytes": 78099,
+      "state": "match",
+      "registryClosures": [
+        "HCR-2026-11-18-02"
+      ]
+    },
+    {
+      "driveFileId": "1liMd0gBB7tWsYQTqonR_QnglutSPnn1A",
+      "name": "Стивен Чарнок — 04 Theology and Identity Audit (wave 22, 2026-10-25).md",
+      "mimeType": "text/markdown",
+      "declaredSha256": "0ca9926770ae5814f011fd4a7a9a1b8a8f6eb407b5e857a109e597b896d33aca",
+      "observedSha256": "0ca9926770ae5814f011fd4a7a9a1b8a8f6eb407b5e857a109e597b896d33aca",
+      "declaredBytes": 259911,
+      "observedBytes": 259911,
+      "state": "match",
+      "registryClosures": [
+        "HCR-2026-11-18-02"
+      ]
+    },
+    {
+      "driveFileId": "10q8rOMAWPxUqMRqoR9M-lEYWU8HHvewl",
+      "name": "Стивен Чарнок — 16 Series and Persons (wave 22, 2026-10-25).md",
+      "mimeType": "text/markdown",
+      "declaredSha256": "fb81a207686712b3d932165e2a1d7475820dcb87b53d7641374c3db442be5c59",
+      "observedSha256": "fb81a207686712b3d932165e2a1d7475820dcb87b53d7641374c3db442be5c59",
+      "declaredBytes": 96664,
+      "observedBytes": 96664,
+      "state": "match",
+      "registryClosures": [
+        "HCR-2026-11-18-02"
+      ]
+    }
+  ],
+  "limits": [
+    "Серверный sha256Checksum — заявление Drive, а не пересчёт: коллизия или подмена объекта с обновлением метаданных этим не исключается.",
+    "Проверено 8 из 24 различных объектов реестра; остальные 16 не проверялись, и «8/8» не означает «все».",
+    "Совпадение хеша не даёт прав на публикацию и не доказывает, что текст прочитан: RIGHTS_HOLD/PUBLICATION_HOLD остаются.",
+    "Выборка не случайная: взяты первые по порядку объекты замыканий HCR-2026-11-18-01 (три исторические копии и Rippon PDF) и HCR-2026-11-18-02 (зеркала волны 22)."
+  ]
+}

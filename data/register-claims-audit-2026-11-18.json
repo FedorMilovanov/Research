@@ -1,0 +1,515 @@
+{
+  "schemaVersion": "register-claims-audit/1",
+  "authorityId": "REGISTER-CLAIMS-AUDIT-2026-11-18",
+  "register": "docs/research/HOLDS_REGISTER_2026-11-18.md",
+  "scope": {
+    "declaredClaims": 51,
+    "proseClaims": 16,
+    "numericTableRows": 157
+  },
+  "totals": {
+    "match": 50,
+    "superseded": 1
+  },
+  "sliceStates": {
+    "inventory": "match",
+    "corpus": "match",
+    "links": "match",
+    "pinned": "match",
+    "twins": "match",
+    "stamps": "match"
+  },
+  "findings": [
+    {
+      "label": "просканировано текстовых файлов",
+      "artefact": "data/repository-holds-inventory-v1.json",
+      "field": "totals.filesScanned",
+      "claimed": 3130,
+      "actual": 3130,
+      "line": 90,
+      "state": "match"
+    },
+    {
+      "label": "файлов хотя бы с одним маркером",
+      "artefact": "data/repository-holds-inventory-v1.json",
+      "field": "totals.filesWithMentions",
+      "claimed": 917,
+      "actual": 917,
+      "line": 91,
+      "state": "match"
+    },
+    {
+      "label": "канонические упоминания `PUBLICATION_HOLD`",
+      "artefact": "data/repository-holds-inventory-v1.json",
+      "field": "totals.mentions.PUBLICATION_HOLD",
+      "claimed": 2658,
+      "actual": 2658,
+      "line": 92,
+      "state": "match"
+    },
+    {
+      "label": "канонические упоминания `LOCATOR_HOLD`",
+      "artefact": "data/repository-holds-inventory-v1.json",
+      "field": "totals.mentions.LOCATOR_HOLD",
+      "claimed": 1984,
+      "actual": 1984,
+      "line": 93,
+      "state": "match"
+    },
+    {
+      "label": "канонические упоминания `RIGHTS_HOLD`",
+      "artefact": "data/repository-holds-inventory-v1.json",
+      "field": "totals.mentions.RIGHTS_HOLD",
+      "claimed": 1477,
+      "actual": 1477,
+      "line": 94,
+      "state": "match"
+    },
+    {
+      "label": "канонические упоминания `ARCHIVE_HOLD`",
+      "artefact": "data/repository-holds-inventory-v1.json",
+      "field": "totals.mentions.ARCHIVE_HOLD",
+      "claimed": 1424,
+      "actual": 1424,
+      "line": 95,
+      "state": "match"
+    },
+    {
+      "label": "канонические упоминания `EVIDENCE_HOLD`",
+      "artefact": "data/repository-holds-inventory-v1.json",
+      "field": "totals.mentions.EVIDENCE_HOLD",
+      "claimed": 1303,
+      "actual": 1303,
+      "line": 96,
+      "state": "match"
+    },
+    {
+      "label": "строки, где флаг зафиксирован как действующий (`open`)",
+      "artefact": "data/repository-holds-inventory-v1.json",
+      "field": "totals.mentionsByStatus.open",
+      "claimed": 2362,
+      "actual": 2362,
+      "line": 97,
+      "state": "match"
+    },
+    {
+      "label": "строки, где флаг зафиксирован как снятый (`closed`)",
+      "artefact": "data/repository-holds-inventory-v1.json",
+      "field": "totals.mentionsByStatus.closed",
+      "claimed": 824,
+      "actual": 824,
+      "line": 98,
+      "state": "match"
+    },
+    {
+      "label": "строки без явного состояния (`unmarked`)",
+      "artefact": "data/repository-holds-inventory-v1.json",
+      "field": "totals.mentionsByStatus.unmarked",
+      "claimed": 6066,
+      "actual": 6066,
+      "line": 99,
+      "state": "match"
+    },
+    {
+      "label": "строки, где одновременно записаны и снятие, и сохранение (`mixed`)",
+      "artefact": "data/repository-holds-inventory-v1.json",
+      "field": "totals.canonicalFlagLineStatesRecordedAsBothOpenAndClosed",
+      "claimed": 406,
+      "actual": 406,
+      "line": 100,
+      "state": "match"
+    },
+    {
+      "label": "JSON-файлов с массивом `holds`",
+      "artefact": "data/repository-holds-inventory-v1.json",
+      "field": "totals.filesWithJsonHolds",
+      "claimed": 41,
+      "actual": 41,
+      "line": 101,
+      "state": "match"
+    },
+    {
+      "label": "`match`",
+      "artefact": "data/internal-digests-verified-2026-11-18.json",
+      "field": "totals.byState.match",
+      "claimed": 58,
+      "actual": 58,
+      "line": 611,
+      "state": "match"
+    },
+    {
+      "label": "`stale`",
+      "artefact": "data/internal-digests-verified-2026-11-18.json",
+      "field": "totals.byState.stale",
+      "claimed": 27,
+      "actual": 27,
+      "line": 612,
+      "state": "match"
+    },
+    {
+      "label": "`external`",
+      "artefact": "data/internal-digests-verified-2026-11-18.json",
+      "field": "totals.byState.external",
+      "claimed": 258,
+      "actual": 258,
+      "line": 613,
+      "state": "match"
+    },
+    {
+      "label": "`external-drive`",
+      "artefact": "data/internal-digests-verified-2026-11-18.json",
+      "field": "totals.byState.external-drive",
+      "claimed": 920,
+      "actual": 920,
+      "line": 614,
+      "state": "match"
+    },
+    {
+      "label": "`ambiguous`",
+      "artefact": "data/internal-digests-verified-2026-11-18.json",
+      "field": "totals.byState.ambiguous",
+      "claimed": 8,
+      "actual": 8,
+      "line": 615,
+      "state": "match"
+    },
+    {
+      "label": "`unclaimed`",
+      "artefact": "data/internal-digests-verified-2026-11-18.json",
+      "field": "totals.byState.unclaimed",
+      "claimed": 514,
+      "actual": 514,
+      "line": 616,
+      "state": "match"
+    },
+    {
+      "label": "`git-object-id`",
+      "artefact": "data/internal-digests-verified-2026-11-18.json",
+      "field": "totals.byState.git-object-id",
+      "claimed": 789,
+      "actual": 789,
+      "line": 617,
+      "state": "match"
+    },
+    {
+      "label": "`labelled-no-path`",
+      "artefact": "data/internal-digests-verified-2026-11-18.json",
+      "field": "totals.unclaimedByReason.labelled-no-path",
+      "claimed": 205,
+      "actual": 205,
+      "line": 871,
+      "state": "match"
+    },
+    {
+      "label": "`bare-hash`",
+      "artefact": "data/internal-digests-verified-2026-11-18.json",
+      "field": "totals.unclaimedByReason.bare-hash",
+      "claimed": 141,
+      "actual": 141,
+      "line": 872,
+      "state": "match"
+    },
+    {
+      "label": "`short-digest-no-path`",
+      "artefact": "data/internal-digests-verified-2026-11-18.json",
+      "field": "totals.unclaimedByReason.short-digest-no-path",
+      "claimed": 95,
+      "actual": 95,
+      "line": 873,
+      "state": "match"
+    },
+    {
+      "label": "`artifact-not-in-tree`",
+      "artefact": "data/internal-digests-verified-2026-11-18.json",
+      "field": "totals.unclaimedByReason.artifact-not-in-tree",
+      "claimed": 59,
+      "actual": 59,
+      "line": 874,
+      "state": "match"
+    },
+    {
+      "label": "`media-segment`",
+      "artefact": "data/internal-digests-verified-2026-11-18.json",
+      "field": "totals.unclaimedByReason.media-segment",
+      "claimed": 12,
+      "actual": 12,
+      "line": 875,
+      "state": "match"
+    },
+    {
+      "label": "`corpus-digest`",
+      "artefact": "data/internal-digests-verified-2026-11-18.json",
+      "field": "totals.unclaimedByReason.corpus-digest",
+      "claimed": 2,
+      "actual": 2,
+      "line": 876,
+      "state": "match"
+    },
+    {
+      "label": "`identical-text`",
+      "artefact": "data/document-twins-2026-11-18.json",
+      "field": "totals.byState.identical-text",
+      "claimed": 3,
+      "actual": 3,
+      "line": 712,
+      "state": "match"
+    },
+    {
+      "label": "`near-identical`",
+      "artefact": "data/document-twins-2026-11-18.json",
+      "field": "totals.byState.near-identical",
+      "claimed": 1,
+      "actual": 1,
+      "line": 713,
+      "state": "match"
+    },
+    {
+      "label": "`shared-text`",
+      "artefact": "data/document-twins-2026-11-18.json",
+      "field": "totals.byState.shared-text",
+      "claimed": 6,
+      "actual": 6,
+      "line": 715,
+      "state": "match"
+    },
+    {
+      "label": "`superset`",
+      "artefact": "data/document-twins-2026-11-18.json",
+      "field": "totals.byState.superset",
+      "claimed": 2,
+      "actual": 2,
+      "line": 714,
+      "state": "match"
+    },
+    {
+      "label": "`current` — последний коммит в тот же день",
+      "artefact": "data/state-stamps-2026-11-18.json",
+      "field": "totals.byState.current",
+      "claimed": 9,
+      "actual": 9,
+      "line": 775,
+      "state": "match"
+    },
+    {
+      "label": "`edited-after-stamp` — файл менялся после своей даты",
+      "artefact": "data/state-stamps-2026-11-18.json",
+      "field": "totals.byState.edited-after-stamp",
+      "claimed": 6,
+      "actual": 6,
+      "line": 776,
+      "state": "match"
+    },
+    {
+      "label": "`stamp-ahead-of-history` — дата позже любого коммита",
+      "artefact": "data/state-stamps-2026-11-18.json",
+      "field": "totals.byState.stamp-ahead-of-history",
+      "claimed": 2,
+      "actual": 2,
+      "line": 777,
+      "state": "match"
+    },
+    {
+      "label": "сравнено документов",
+      "artefact": "data/document-twins-2026-11-18.json",
+      "field": "scope.documentsCompared",
+      "claimed": 2391,
+      "actual": 2391,
+      "line": 707,
+      "state": "match"
+    },
+    {
+      "label": "документов в корпусе",
+      "artefact": "data/document-twins-2026-11-18.json",
+      "field": "scope.markdownFiles",
+      "claimed": 2415,
+      "actual": 2415,
+      "line": 708,
+      "state": "match"
+    },
+    {
+      "label": "документов со своей датой",
+      "artefact": "data/state-stamps-2026-11-18.json",
+      "field": "totals.stamped",
+      "claimed": 17,
+      "actual": 17,
+      "line": 770,
+      "state": "match"
+    },
+    {
+      "id": "drive-sample-in-section-11",
+      "artefact": "data/drive-ledger-audit-2026-11-18.json",
+      "field": "scope.distinctDriveIds",
+      "claimed": 8,
+      "actual": 92,
+      "line": 594,
+      "supersededBy": "§19",
+      "state": "superseded",
+      "label": "drive-sample-in-section-11"
+    },
+    {
+      "id": "fragment-links-in-section-11",
+      "artefact": "data/relative-links-audit-2026-11-18.json",
+      "field": "totals.fragments.total",
+      "claimed": 48,
+      "actual": 48,
+      "line": 324,
+      "supersededBy": null,
+      "state": "match",
+      "label": "fragment-links-in-section-11"
+    },
+    {
+      "id": "json-holds-files",
+      "artefact": "data/repository-holds-inventory-v1.json",
+      "field": "totals.filesWithJsonHolds",
+      "claimed": 41,
+      "actual": 41,
+      "line": 340,
+      "supersededBy": null,
+      "state": "match",
+      "label": "json-holds-files"
+    },
+    {
+      "id": "json-holds-values",
+      "artefact": "data/repository-holds-inventory-v1.json",
+      "field": "totals.jsonHoldsTotal",
+      "claimed": 6156,
+      "actual": 6156,
+      "line": 340,
+      "supersededBy": null,
+      "state": "match",
+      "label": "json-holds-values"
+    },
+    {
+      "id": "hold-vocabulary-values",
+      "artefact": "data/hold-value-mapping-proposal-v1.json",
+      "field": "counts.values",
+      "claimed": 134,
+      "actual": 134,
+      "line": 340,
+      "supersededBy": null,
+      "state": "match",
+      "label": "hold-vocabulary-values"
+    },
+    {
+      "id": "hold-vocabulary-spellings",
+      "artefact": "data/hold-value-mapping-proposal-v1.json",
+      "field": "counts.spellings",
+      "claimed": 39,
+      "actual": 39,
+      "line": 340,
+      "supersededBy": null,
+      "state": "match",
+      "label": "hold-vocabulary-spellings"
+    },
+    {
+      "id": "holds-array-files-in-section-2",
+      "artefact": "data/repository-holds-inventory-v1.json",
+      "field": "totals.filesWithJsonHolds",
+      "claimed": 41,
+      "actual": 41,
+      "line": 205,
+      "supersededBy": null,
+      "state": "match",
+      "label": "holds-array-files-in-section-2"
+    },
+    {
+      "id": "gate-records",
+      "artefact": "data/publication-gate-queue-v1.json",
+      "field": "len:records",
+      "claimed": 10,
+      "actual": 10,
+      "line": 424,
+      "supersededBy": null,
+      "state": "match",
+      "label": "gate-records"
+    },
+    {
+      "id": "gate-blocked",
+      "artefact": "data/publication-gate-queue-v1.json",
+      "field": "composedCounts.BLOCKED",
+      "claimed": 6,
+      "actual": 6,
+      "line": 425,
+      "supersededBy": null,
+      "state": "match",
+      "label": "gate-blocked"
+    },
+    {
+      "id": "gate-reference",
+      "artefact": "data/publication-gate-queue-v1.json",
+      "field": "composedCounts.REFERENCE",
+      "claimed": 4,
+      "actual": 4,
+      "line": 425,
+      "supersededBy": null,
+      "state": "match",
+      "label": "gate-reference"
+    },
+    {
+      "id": "gate-promote",
+      "artefact": "data/publication-gate-queue-v1.json",
+      "field": "composedCounts.PROMOTE",
+      "claimed": 0,
+      "actual": 0,
+      "line": 425,
+      "supersededBy": null,
+      "state": "match",
+      "label": "gate-promote"
+    },
+    {
+      "id": "gate-rights-ids-not-recorded",
+      "artefact": "data/publication-gate-queue-v1.json",
+      "field": "checks.rightsIdsNotRecorded",
+      "claimed": 0,
+      "actual": 0,
+      "line": 428,
+      "supersededBy": null,
+      "state": "match",
+      "label": "gate-rights-ids-not-recorded"
+    },
+    {
+      "id": "gate-missing-authorities",
+      "artefact": "data/publication-gate-queue-v1.json",
+      "field": "checks.recordsWithMissingAuthorityFile",
+      "claimed": 0,
+      "actual": 0,
+      "line": 426,
+      "supersededBy": null,
+      "state": "match",
+      "label": "gate-missing-authorities"
+    },
+    {
+      "id": "twins-pairs-above-threshold",
+      "artefact": "data/document-twins-2026-11-18.json",
+      "field": "totals.pairs",
+      "claimed": 12,
+      "actual": 12,
+      "line": 726,
+      "supersededBy": null,
+      "state": "match",
+      "label": "twins-pairs-above-threshold"
+    },
+    {
+      "id": "repairs-applied",
+      "artefact": "data/text-integrity-repairs-2026-11-18.json",
+      "field": "totals.repairedTokens",
+      "claimed": 95,
+      "actual": 95,
+      "line": 27,
+      "supersededBy": null,
+      "state": "match",
+      "label": "repairs-applied"
+    },
+    {
+      "id": "repairs-blocked",
+      "artefact": "data/text-integrity-repairs-2026-11-18.json",
+      "field": "totals.blockedTokens",
+      "claimed": 446,
+      "actual": 446,
+      "line": 27,
+      "supersededBy": null,
+      "state": "match",
+      "label": "repairs-blocked"
+    }
+  ]
+}

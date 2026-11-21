@@ -1,0 +1,1198 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "RESEARCH-HOLD-CLOSURE-REGISTRY-V1",
+  "snapshotDate": "2026-11-18",
+  "policy": "data/repository-evidence-policy-v2.json",
+  "localAxes": [
+    {
+      "value": "TEXT_INTEGRITY_HOLD",
+      "reason": "Ось реестра, а не флаг документа: data/repository-evidence-policy-v2.json объявляет пять флагов HOLD, и повреждение текста среди них нет. Значение остаётся в записи 08, чтобы ось не потеряла имя, но §0 помечает его как не-флаг, и тест требует, чтобы каждое такое значение было здесь объявлено."
+    }
+  ],
+  "custodyPolicy": "data/artifact-custody-policy-v2.json",
+  "inventory": "data/repository-holds-inventory-v1.json",
+  "inventoryTool": "scripts/audit_repository_holds.py",
+  "boundaries": {
+    "holdIsNotEvidenceClass": true,
+    "onlyCustodyReadbackAxisClosed": true,
+    "originalsStillUnread": true,
+    "rightsUnchanged": true,
+    "publicationHoldUnchanged": true,
+    "noDriveWritePerformed": true,
+    "note": "Каждая запись закрывает только тот HOLD, который был прямо обоснован отсутствием обратной SHA-256 сверки байтов Drive. EVIDENCE_HOLD/LOCATOR_HOLD по внешним оригиналам, RIGHTS_HOLD и PUBLICATION_HOLD этими проверками не снимаются: ни одна внешняя страница, рукопись или издание в этой волне не читались."
+  },
+  "verificationMethods": {
+    "raw-download-compare": "Независимое скачивание обоих объектов из Google Drive, локальный sha256sum и побайтовое сравнение (cmp).",
+    "server-checksum-readback": "Google Drive `get_file` → `sha256Checksum` для каждого объекта; сравнивался с SHA-256, зафиксированным в репозитории при загрузке. Метод контроля: скачанный в этой же волне объект Westminster Confession (16 179 601 B) дал локальный SHA-256 ff7e220cd60eb48cd7ca0cedcef4dfc3801bb8f0d9d564d2e557d89df7a1dced, идентичный серверному, то есть серверная сумма — хеш реальных байтов."
+  },
+  "closures": [
+    {
+      "id": "HCR-2026-11-18-01",
+      "title": "Три исторические копии §2 / §6 — обратный SHA-256 readback выполнен",
+      "holdType": "ARCHIVE_HOLD",
+      "previousState": "TRANSFER_PENDING_VERIFICATION; в реестрах прямо записано «копия создана через Drive copy_file; SHA-256 readback не выполнялся»",
+      "closedScope": "Custody-ось трёх копий: байты копии совпадают с байтами исходного объекта Drive. `ACQUIRED_DURABLE` относительно пары копия/источник.",
+      "recordLocations": [
+        "БИОГРАФИИ/08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md §2, §2.2, §6 п.1",
+        "БИОГРАФИИ/Стивен Чарнок/07_REPO_CROSSLINKS_AND_DRIVE_MIRROR.md §6"
+      ],
+      "method": "raw-download-compare",
+      "objects": [
+        {
+          "pair": "Charnock Works 3–5 locators (фрагмент 1 из 16, .md)",
+          "copy": {
+            "driveFileId": "1Vg9tA3uhECDf6uHLdv2_PArcgd7BL70x",
+            "bytes": 2965,
+            "sha256": "5ad0aa5211571d24894fb2516a4f1b173ed3bcb5922f732120234e27dec4b0ea"
+          },
+          "source": {
+            "driveFileId": "13pODGSirmiu3no33l_O0XsGRtvJRkAyr",
+            "bytes": 2965,
+            "sha256": "5ad0aa5211571d24894fb2516a4f1b173ed3bcb5922f732120234e27dec4b0ea"
+          },
+          "byteIdentical": true
+        },
+        {
+          "pair": "Gill Rippon 1838 PDF",
+          "copy": {
+            "driveFileId": "14bfNjtyOgIh7MQV-7yK8I6K2p3AG6dNY",
+            "bytes": 9297102,
+            "sha256": "362019ee851280e14eb4c6cd8bca70a30df957af225ac56c7c6d95bbaf461792"
+          },
+          "source": {
+            "driveFileId": "1q4IFETrDu9bH8mGMIPQO38qQTVwxjxMu",
+            "bytes": 9297102,
+            "sha256": "362019ee851280e14eb4c6cd8bca70a30df957af225ac56c7c6d95bbaf461792"
+          },
+          "byteIdentical": true
+        },
+        {
+          "pair": "Gill mobile reference .txt",
+          "copy": {
+            "driveFileId": "1uXU3sR6yn8VEUhQWQ_z_ctwtD300-Pwi",
+            "bytes": 40563,
+            "sha256": "7472a79f61e911451312aab278c1c574dde289ebf0863c39153c981bac89beee"
+          },
+          "source": {
+            "driveFileId": "1tQ6MLcTuslMxH3jTecVOjWC-Ju-LqE1m",
+            "bytes": 40563,
+            "sha256": "7472a79f61e911451312aab278c1c574dde289ebf0863c39153c981bac89beee"
+          },
+          "byteIdentical": true
+        }
+      ],
+      "residualHolds": [
+        "LOCATOR_HOLD",
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "residualReason": "Readback подтверждает только совпадение байтов копии и её источника. Локаторы Works 3–5 по-прежнему не сверены с печатным Nichol 1864, фрагменты 2–16 страницы calvinandcalvinism не читались, права и публикационный гейт не меняются."
+    },
+    {
+      "id": "HCR-2026-11-18-02",
+      "title": "Зеркала отдела Чарнока, волна 22 (5 файлов) — обратная SHA-256 сверка",
+      "holdType": "ARCHIVE_HOLD",
+      "previousState": "«SHA-256 readback открыт» (CHR-DRIVE-W22, accessState=upload-acknowledged-size-and-md5-matched)",
+      "closedScope": "Серверные байты каждого объекта совпадают с SHA-256 локального снимка, зафиксированным при загрузке.",
+      "recordLocations": [
+        "БИОГРАФИИ/08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md §7"
+      ],
+      "method": "server-checksum-readback",
+      "objects": [
+        {
+          "name": "00_README_AND_NAVIGATION.md",
+          "driveFileId": "1sV3jfs0slLQh1lX6FawkL-It7tob2X10",
+          "bytes": 89100,
+          "sha256": "c6ce878b5ed468a524020cc2fe83fb86211038e98cfb45c0e4ce99ac6cdd793e",
+          "matchesRecorded": true
+        },
+        {
+          "name": "01_BIOGRAPHICAL_WITNESSES_AND_EVIDENCE_HIERARCHY.md",
+          "driveFileId": "1JmhghsHYSS13PF_nVpn4b0jdEc7WrQkT",
+          "bytes": 67556,
+          "sha256": "a74bed26fdf265989f45d5aa1aced994571db8a9af264abfb6e2cba28be226fa",
+          "matchesRecorded": true
+        },
+        {
+          "name": "03_WORKS_EDITIONS_AND_PUBLICATION_CHRONOLOGY.md",
+          "driveFileId": "12btSm2nqtKH7PaI0KbpVeSs2nalWvI5W",
+          "bytes": 78099,
+          "sha256": "7e92a29912ca2a4147e4fd162700a4bb3a96f90726af5c0501a90924cca8cec4",
+          "matchesRecorded": true
+        },
+        {
+          "name": "04_CHARACTER_MINISTRY_AND_THEOLOGY.md",
+          "driveFileId": "1liMd0gBB7tWsYQTqonR_QnglutSPnn1A",
+          "bytes": 259911,
+          "sha256": "0ca9926770ae5814f011fd4a7a9a1b8a8f6eb407b5e857a109e597b896d33aca",
+          "matchesRecorded": true
+        },
+        {
+          "name": "16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md",
+          "driveFileId": "10q8rOMAWPxUqMRqoR9M-lEYWU8HHvewl",
+          "bytes": 96664,
+          "sha256": "fb81a207686712b3d932165e2a1d7475820dcb87b53d7641374c3db442be5c59",
+          "matchesRecorded": true
+        }
+      ],
+      "residualHolds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD"
+      ],
+      "residualReason": "Зеркала волны 22 — исторические снимки, а не текущие файлы отдела; readback не совпадает с проверкой содержания, локаторов первоисточников или прав."
+    },
+    {
+      "id": "HCR-2026-11-18-03",
+      "title": "Зеркала отдела Чарнока, волна 23 (3 файла) — обратная SHA-256 сверка",
+      "holdType": "ARCHIVE_HOLD",
+      "previousState": "CHR-DRIVE-W23: «ARCHIVE_HOLD (обратная SHA-256 сверка байтов Drive не выполнена)»",
+      "closedScope": "Серверные байты трёх объектов совпадают с SHA-256 локального снимка.",
+      "recordLocations": [
+        "БИОГРАФИИ/08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md, блок волны 23"
+      ],
+      "method": "server-checksum-readback",
+      "objects": [
+        {
+          "name": "00_README_AND_NAVIGATION.md",
+          "driveFileId": "1iCUZfGdbKooPjYAPbNsb2TFcffILhlCT",
+          "bytes": 90213,
+          "sha256": "5fc719eae7aa11cd9b3a7d4fdd885eff331561f328ece4c2cfc012c62c5fe317",
+          "matchesRecorded": true
+        },
+        {
+          "name": "04_CHARACTER_MINISTRY_AND_THEOLOGY.md",
+          "driveFileId": "1AhkIF3iJkQhLW4yYGwqQNoJMChq2Eb4t",
+          "bytes": 282635,
+          "sha256": "1d5d31df1b7d069286b407a4a53e67791ad54acab2a07d8920c994911fc3ea85",
+          "matchesRecorded": true
+        },
+        {
+          "name": "16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md",
+          "driveFileId": "1bl8xcxmO8-rf0IzVOukQRsk9y09MFt2U",
+          "bytes": 99321,
+          "sha256": "65285327acc4aa73939a225ca6beb7faa1044efd09bd473545d6c7221503938e",
+          "matchesRecorded": true
+        }
+      ],
+      "residualHolds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD"
+      ],
+      "residualReason": "То же, что HCR-2026-11-18-02: сверены только байты исторического снимка."
+    },
+    {
+      "id": "HCR-2026-11-18-04",
+      "title": "Зеркала отдела Чарнока, волна 24 (3 файла) — обратная SHA-256 сверка",
+      "holdType": "ARCHIVE_HOLD",
+      "previousState": "CHR-DRIVE-W24: «ARCHIVE_HOLD (обратная SHA-256 сверка байтов Drive не выполнена)»",
+      "closedScope": "Серверные байты трёх объектов совпадают с SHA-256 локального снимка.",
+      "recordLocations": [
+        "БИОГРАФИИ/08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md, блок волны 24"
+      ],
+      "method": "server-checksum-readback",
+      "objects": [
+        {
+          "name": "00_README_AND_NAVIGATION.md",
+          "driveFileId": "1_wHf4f_UMG1SkQS4Fl4_w801Vez47Oex",
+          "bytes": 90930,
+          "sha256": "0917e29dc35c64bae4c4a844d5e628529d309a91ef09444178cd89069b90a688",
+          "matchesRecorded": true
+        },
+        {
+          "name": "04_CHARACTER_MINISTRY_AND_THEOLOGY.md",
+          "driveFileId": "1VMvcvf6kYoEAyzJiB9U9lbq4utChNRgI",
+          "bytes": 322011,
+          "sha256": "dee9d3bdb59aa7ade467c7ef16f337cf19697908372ce8508501d10a6eea527e",
+          "matchesRecorded": true
+        },
+        {
+          "name": "16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md",
+          "driveFileId": "155aLE0bTV1oeE55cjecCnF_KVY7Vx-Oe",
+          "bytes": 106429,
+          "sha256": "c29a785988b5c1b5b3383cc6aa96567dbc61cb6e910eb7a94c3d5961320143d7",
+          "matchesRecorded": true
+        }
+      ],
+      "residualHolds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD"
+      ],
+      "residualReason": "То же, что HCR-2026-11-18-02: сверены только байты исторического снимка."
+    },
+    {
+      "id": "HCR-2026-11-18-05",
+      "title": "Зеркала отдела Чарнока, волна 25 (6 файлов) — обратный SHA-256 readback",
+      "holdType": "ARCHIVE_HOLD",
+      "previousState": "CHR-DRIVE-W25: «ARCHIVE_HOLD (обратное получение и SHA-256 содержимого Drive не выполнены)»",
+      "closedScope": "Серверные байты шести объектов совпадают с SHA-256 локального снимка.",
+      "recordLocations": [
+        "БИОГРАФИИ/08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md, блок волны 25"
+      ],
+      "method": "server-checksum-readback",
+      "objects": [
+        {
+          "name": "00_README_AND_NAVIGATION.md",
+          "driveFileId": "1GE2jLataKXvuS2ytMbu_f_hF0AnM296T",
+          "bytes": 92265,
+          "sha256": "5096db747e8f354ea5510b8d84c4fece44d65aed442959db70ca4e6dccbefb2a",
+          "matchesRecorded": true
+        },
+        {
+          "name": "03_WORKS_EDITIONS_AND_PUBLICATION_CHRONOLOGY.md",
+          "driveFileId": "1swq3vIOnx4EBLUZ3bTdOxrTertuzcGmy",
+          "bytes": 79802,
+          "sha256": "05712e4cf3130137d559a3ad135bb48662285dcd79a0641de96e7706abc8c11d",
+          "matchesRecorded": true
+        },
+        {
+          "name": "04_CHARACTER_MINISTRY_AND_THEOLOGY.md",
+          "driveFileId": "1IJ0b2EdKmV2SfhocXXcZpRiCqJa1_h86",
+          "bytes": 361036,
+          "sha256": "c85efe86cc3825c8cf471e6d30414671e044352617c9a5186559b447c3f4125b",
+          "matchesRecorded": true
+        },
+        {
+          "name": "05_CONTROVERSIES_AND_CLAIM_AUDIT.md",
+          "driveFileId": "17L0RvwAQJoSME3oGBbbeyFRQQbP84J2M",
+          "bytes": 26361,
+          "sha256": "947446ea424417256d93c5aef69a4052e3696e2584206da49b1b2fe8f64904cc",
+          "matchesRecorded": true
+        },
+        {
+          "name": "16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md",
+          "driveFileId": "1dU7xOdML0KZtUfqAsmRXiQ7ru4rYhkz3",
+          "bytes": 114395,
+          "sha256": "3db4a59b8039200adb6bec690bf9d8b99bfc002aa1964307e7507f6686ffacb1",
+          "matchesRecorded": true
+        },
+        {
+          "name": "17_PROMPT_PARALLEL_AGENT_HISTORICAL_CONTEXT.md",
+          "driveFileId": "1z_Kv6vTbloN5bQ35BfwWeS8Ams7BeOLQ",
+          "bytes": 23093,
+          "sha256": "c12143367a115e11d99dd3479484fed386b0cae89f73d81fe0b7fd5f6409ed03",
+          "matchesRecorded": true
+        }
+      ],
+      "residualHolds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD"
+      ],
+      "residualReason": "То же, что HCR-2026-11-18-02. Права исходников (BSB NoC-NC/1.0, Pittion CC BY-NC-ND) этими хешами не затрагиваются."
+    },
+    {
+      "id": "HCR-2026-11-18-06",
+      "title": "Искупление — четыре PD-копии: parity копия/источник по серверной SHA-256",
+      "holdType": "ARCHIVE_HOLD",
+      "previousState": "«копия создана через Drive copy_file; SHA-256 readback не выполнялся» → TRANSFER_PENDING_VERIFICATION",
+      "closedScope": "Байты каждой копии равны байтам её исходного объекта (серверные SHA-256 и размеры совпадают).",
+      "recordLocations": [
+        "ИСКУПЛЕНИЕ/07_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md §2"
+      ],
+      "method": "server-checksum-readback",
+      "objects": [
+        {
+          "pair": "Owen, Works",
+          "copy": {
+            "driveFileId": "1gfKY8eXGhV-HL5O4u1tVVcCRYNKx-dQY",
+            "bytes": 42084171,
+            "sha256": "f245a520c376ccdb4e8813d34b36b8b10f18429e63664461dbbe90ab66fd7aae"
+          },
+          "source": {
+            "driveFileId": "1e1rTdQH8bBrDh8NeEufhtVcBhbzWqyFK",
+            "bytes": 42084171,
+            "sha256": "f245a520c376ccdb4e8813d34b36b8b10f18429e63664461dbbe90ab66fd7aae"
+          },
+          "byteIdentical": true
+        },
+        {
+          "pair": "Calvin, Institutes",
+          "copy": {
+            "driveFileId": "1DLcwFWyRXtTDBzdS_tHptGkoItoumVWZ",
+            "bytes": 45351929,
+            "sha256": "1597cfde8222438e387c415084cd728ea35b43cb7f10b615542b2ce3ee4a3b0f"
+          },
+          "source": {
+            "driveFileId": "1Pj5iUMrf8OlRuTowMVt7tRoHejpHY1_6",
+            "bytes": 45351929,
+            "sha256": "1597cfde8222438e387c415084cd728ea35b43cb7f10b615542b2ce3ee4a3b0f"
+          },
+          "byteIdentical": true
+        },
+        {
+          "pair": "Goodwin, Works",
+          "copy": {
+            "driveFileId": "1o9T7mIQxIH3ZB2EVc2hQsKdjEQM3SW-M",
+            "bytes": 27215853,
+            "sha256": "1ba271e897f6be5685eb1f3676765ce5d82f993f1a1f6e06754e8b390762caa6"
+          },
+          "source": {
+            "driveFileId": "1q_D74eAj1x1J_rgE9qL1Y_N3kRPpMrSL",
+            "bytes": 27215853,
+            "sha256": "1ba271e897f6be5685eb1f3676765ce5d82f993f1a1f6e06754e8b390762caa6"
+          },
+          "byteIdentical": true
+        },
+        {
+          "pair": "Westminster Confession",
+          "copy": {
+            "driveFileId": "1VSp4vU56X8uuYrp2SERkp2p0BRk-vQq4",
+            "bytes": 16179601,
+            "sha256": "ff7e220cd60eb48cd7ca0cedcef4dfc3801bb8f0d9d564d2e557d89df7a1dced"
+          },
+          "source": {
+            "driveFileId": "1zbqz-EaFN5Fwnqo3a8ynVG4B1MpqVVVX",
+            "bytes": 16179601,
+            "sha256": "ff7e220cd60eb48cd7ca0cedcef4dfc3801bb8f0d9d564d2e557d89df7a1dced"
+          },
+          "byteIdentical": true
+        }
+      ],
+      "residualHolds": [
+        "LOCATOR_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "residualReason": "Parity копия/источник не доказывает, что PDF содержит нужную печатную страницу: текстового слоя у WCF нет, cap извлечения у Owen/Calvin превышен. Страничные локаторы этих объектов по-прежнему `unchecked`."
+    },
+    {
+      "id": "HCR-2026-11-18-07",
+      "title": "Локаторная ось Markdown: 58 мёртвых относительных ссылок классифицированы, 3 дефекта починены, остальное объяснено точечно",
+      "holdType": "LOCATOR_HOLD",
+      "previousState": "Машинного учёта относительных ссылок в репозитории не было: сколько мёртвых путей, в каких файлах и почему — не измерялось. Два пути в STEVE_LAWSON/README.md вели на удалённые файлы, один внешний URL был записан без схемы, архивная копия корневого README выглядела как набор битых ссылок.",
+      "closedScope": "Не «все LOCATOR_HOLD корпуса», а локаторная ось Markdown: 2 407 файлов, 8 712 ссылок измерены, 58 дефектов разобраны по классам; 3 дефекта исправлены проверяемым способом (указание на коммит вместо мёртвого пути; добавление схемы https://), остальные 55 записаны в data/relative-link-exceptions-v1.json парами (файл, ссылка) с причиной. Ни одна ссылка не переписана «на глаз».",
+      "recordLocations": [
+        "scripts/audit_relative_links.py",
+        "scripts/test_audit_relative_links.py",
+        "data/relative-link-exceptions-v1.json",
+        "docs/research/HOLDS_REGISTER_2026-11-18.md §8",
+        "STEVE_LAWSON/README.md п.4, п.6",
+        "history/README_CORPUS_INDEX_2026-08-17.md (шапка)",
+        "incoming/arena-auditor/2026-07-09/pr2-lossless-snapshots/README_SNAPSHOT_FIDELITY.md",
+        "ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/29_EXTERNAL_LINKS_REGISTRY_30_PLUS.md (строка 1)"
+      ],
+      "method": "read-only-link-audit",
+      "objects": [
+        {
+          "class": "Исправлено: мёртвый путь → коммит + blob",
+          "files": [
+            "STEVE_LAWSON/README.md"
+          ],
+          "detail": "03_ARTICLE_RU_POLISHED_2026-09-27.md удалён в dff6e36a (2026-09-28), читается из b8f15a6c, blob fcf649c93aa00ff35bf4af3a9d93f9f266326216, 37 149 байт; 05_ARTICLE_RU_REFINED_V2_2026-09-27.md удалён там же, читается из e3952667, blob 3f91d6d0ae052dd8a7c0c05bc66f13359e55e56a, 52 255 байт. Проверено `git cat-file -s` и `git rev-parse`."
+        },
+        {
+          "class": "Исправлено: ссылка без схемы",
+          "files": [
+            "ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/29_EXTERNAL_LINKS_REGISTRY_30_PLUS.md"
+          ],
+          "detail": "www.sataskforce.net/s/... → https://www.sataskforce.net/s/... Доступность URL в этой сессии не проверялась (исходящая сеть ограничена); правка меняет только форму записи, не утверждение о доступности."
+        },
+        {
+          "class": "Объяснено: архивная копия корневого README (50 ссылок)",
+          "files": [
+            "history/README_CORPUS_INDEX_2026-08-17.md"
+          ],
+          "detail": "Все 50 путей разрешаются от корня репозитория (проверено отдельным проходом: 50 из 50). Текст копии не переписывался; в шапку добавлено правило чтения и ссылка на ../README.md и ../CURRENT_AUTHORITY.md."
+        },
+        {
+          "class": "Объяснено: HISTORICAL самим корпусом (4 ссылки)",
+          "files": [
+            "БИОГРАФИИ/Джон Гилл/01_SERIES_GAPS_AND_PRIMARY_SOURCES.md"
+          ],
+          "detail": "§7 файла уже фиксирует, что AUDIT_gb-main_* и verified/MASTER_BUG_MATRIX.md принадлежали параллельному аудиторскому checkout и в Research не переносились; строки намеренно не удаляются и не переписываются."
+        },
+        {
+          "class": "Объяснено: lossless-снимок (4 ссылки)",
+          "files": [
+            "incoming/arena-auditor/2026-07-09/pr2-lossless-snapshots/"
+          ],
+          "detail": "Снимок main@58e1ea5f: относительные пути принадлежат исходному расположению БИОГРАФИИ/Джон Гилл/. Байтовая верность важнее навигации; добавлена отдельная заметка README_SNAPSHOT_FIDELITY.md, сами снимки не тронуты."
+        }
+      ],
+      "verification": {
+        "command": "python3 -B scripts/audit_relative_links.py --summary && python3 -B scripts/audit_relative_links.py --strict",
+        "expect": "resolves 2 688, missing 58, outside 0, unqualified 0, external 5 966; explained 58, unexplained 0; strict exit 0",
+        "tests": "python3 -B -m unittest discover -s scripts -p 'test_audit_relative_links.py' → 18 OK",
+        "ci": ".github/workflows/holds-inventory.yml, шаг «Reject unexplained dead locators»"
+      },
+      "limits": [
+        "Проверено существование байтов по пути, а не тождество объекта, на который ссылка указывает: разрешающаяся ссылка не доказывает содержание.",
+        "Исключения — не починка: 55 мёртвых локаторов остаются мёртвыми и видны в отчёте.",
+        "Внешние URL по сети не проверялись (исходящая сеть ограничена github/npm/pypi).",
+        "Ссылки внутри нетронутых снимков останутся мёртвыми по построению."
+      ]
+    },
+    {
+      "id": "HCR-2026-11-18-08",
+      "title": "Повреждённый текст: 95 склеек «слово+число+слово» восстановлены по истории самих файлов; 446 остаются под квитанциями",
+      "holdType": "TEXT_INTEGRITY_HOLD",
+      "previousState": "Массовые проходы по репозиторию записали прозу без пробелов вокруг чисел: `Архитектура10будущих документов`, `погребение30июля`, `Итого44строки`. Текст читается, но цитата из него не является транскрипцией; ни один HOLD на это не срабатывал, потому что путь и файл на месте.",
+      "closedScope": "Не «весь текст корпуса», а измеримый класс: 541 склейка в 19 файлах. 95 починены там, где в истории того же файла уже существовало окно ±25 символов с теми же словами и пробелами (проверка нечувствительна к пробелам: «10будущих» = «10 будущих» ≠ «11 будущих»). 446 в 9 файлах не тронуты: их текущие байты названы SHA-256 внутри корпуса (квитанции, `dossierSha256`), и правка сломала бы квитанцию молча — такие файлы помечаются `receipt-blocked`, `--repair` их пропускает, `--check` падает только на чинимой склейке. Для всех изменённых файлов выполнено «текст без пробелов совпадает до и после», все изменённые .json остаются валидным JSON. Четыре склейки в «Искуплении» починены с последующим штатным пересъёмом байтовой описи лана (`atonement_reshoot_state.py --write` → `--check: PASS`); дальнейшие правки в этом лане инструмент помечает `lane-blocked` и не делает.",
+      "recordLocations": [
+        "data/text-integrity-repairs-2026-11-18.json",
+        "scripts/audit_text_integrity.py",
+        "scripts/test_audit_text_integrity.py",
+        "docs/research/HOLDS_REGISTER_2026-11-18.md §12"
+      ],
+      "method": "space-restoration-backed-by-file-history",
+      "objects": [
+        "БИОГРАФИИ/08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md — 52 починено",
+        "БИОГРАФИИ/Стивен Чарнок/02_LIFE_CHRONOLOGY_AND_DATE_CONFLICTS.md — 24",
+        "БИОГРАФИИ/Стивен Чарнок/06_CORPUS_ACCESS_MATRIX_AND_LOCATORS.md — 7",
+        "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json — 3",
+        "ещё 6 файлов — 9",
+        "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md — 277 receipt-blocked",
+        "data/charnock-series-editorial-plan-v1.json — 96 receipt-blocked",
+        "БИОГРАФИИ/Стивен Чарнок/00_README_AND_NAVIGATION.md — 29 receipt-blocked",
+        "data/charnock-biographical-anchors-v1.json — 28 receipt-blocked",
+        "ещё 5 файлов — 16 receipt-blocked"
+      ],
+      "verification": {
+        "command": "python3 -B scripts/audit_text_integrity.py --summary",
+        "expect": "446 glued tokens in 9 files, все receipt-blocked; --check → 0 (в мелком клоне состояния not-checked; ИСКУПЛЕНИЕ — lane-blocked)",
+        "tests": "python3 -B -m unittest discover -s scripts -p 'test_audit_text_integrity.py' → 22 OK",
+        "invariant": "re.sub(r'\\s+', '', before) == re.sub(r'\\s+', '', after) для всех изменённых файлов",
+        "provenance": "склейки появились в основном в c6a6ea67 (2026-10-26, «organize biographies»); история не переписывалась"
+      },
+      "limits": [
+        "Число, лишь замыкающее слово («Кор80»), не чинится: та же форма у цитат вида «Мф5» и «1Кор».",
+        "446 склеек в 9 файлах корпуса Чарнока остаются под квитанциями: нужен владелец корпуса, который переиздаст SHA-256, иначе правка уничтожит свидетельство.",
+        "Возвращены пробелы, а не иное повреждение того же прохода: кавычки, абзацы, маркеры сносок этим не восстанавливаются.",
+        "Наличие окна в истории доказывает раздельность слов, но не верность числа по существу.",
+        "Права, издания и прочитанность текста не затрагивались: RIGHTS_HOLD/PUBLICATION_HOLD остаются."
+      ]
+    },
+    {
+      "id": "HCR-2026-11-18-09",
+      "title": "Подписи SHA-256 в Markdown: 1 537 подписей разобраны, 58 совпали с байтами, 0 просроченных в живых документах",
+      "holdType": "EVIDENCE_HOLD",
+      "previousState": "Квитанции вида «файл = sha256» лежали в документах, но ни один инструмент не перечитывал байты: подпись могла описывать прошлую редакцию, другой файл или ничего, а документ продолжал выглядеть сверенным.",
+      "closedScope": "Не «все хеши в репозитории», а измеримая ось: 1 537 подписей в 2 416 Markdown-файлах разобраны по состояниям. 58 подписей впервые сверены с байтами рабочего дерева и совпали. Просроченных 27, и все они в документах, которые фиксируют момент: 21 в манифестах раундов V68–V70 (включая три самоподписи, которые не могут совпасть никогда) и 6 в хендофф-таблице, которая сама сообщает о расхождении квитанции с файлом. Просроченных подписей в живых документах — 0.",
+      "recordLocations": [
+        "data/internal-digests-verified-2026-11-18.json",
+        "scripts/verify_internal_digests.py",
+        "scripts/test_verify_internal_digests.py",
+        "docs/research/HOLDS_REGISTER_2026-11-18.md §14"
+      ],
+      "method": "internal-digest-rehash",
+      "objects": [
+        "СЕРИЯ СЕРДЦЕ/V70_SINGLE_ZIP_MANIFEST.md — 21 подпись совпала",
+        "СЕРИЯ СЕРДЦЕ/V69_SINGLE_ZIP_MANIFEST.md — 19 совпало",
+        "СЕРИЯ СЕРДЦЕ/V68_SINGLE_ZIP_MANIFEST.md — 17 совпало",
+        "778 подписей относятся к объектам Drive, 248 — к файлам вне дерева, 419 стоят без пути",
+        "2 329 записей в JSON-реестрах: 1 850 из них описывают прошлое состояние файла, поэтому машинный реестр нельзя читать как текущую сверку"
+      ],
+      "verification": {
+        "command": "python3 -B scripts/verify_internal_digests.py --summary",
+        "expect": "Markdown: 1 537 подписей, match=58, stale=27 (round-manifest=21, handoff=6), 0 в живых документах, external=248, external-drive=778, ambiguous=7, unclaimed=419. JSON: 2 329 записей, 1 908 о файлах в дереве (58 совпало, 1 850 описывают прошлое состояние), 421 о файлах вне дерева; JSON-проход не гейтится",
+        "tests": "python3 -B -m unittest discover -s scripts -p 'test_verify_internal_digests.py' → 30 OK",
+        "ci": ".github/workflows/holds-inventory.yml, шаг «Reject stale digests in live documents»"
+      },
+      "limits": [
+        "Проверяется целый файл по названному пути; хеш фрагмента, страницы или архива так не проверяется.",
+        "Подпись без пути в той же строке остаётся unclaimed: она не подтверждена и не опровергнута.",
+        "Совпадение хеша удостоверяет байты, а не факт чтения, не издание и не права: RIGHTS_HOLD/PUBLICATION_HOLD остаются.",
+        "Просроченные подписи в манифестах раундов и хендоффе не переписаны: это исторические записи о моменте."
+      ]
+    },
+    {
+      "id": "HCR-2026-11-18-10",
+      "axis": "short digests: SHA-1 and MD5 written next to file names",
+      "method": "short-digest-label",
+      "closedOn": "2026-11-18",
+      "state": "closed",
+      "question": "Документы приводят 40- и 32-знаковые хеши рядом с именами файлов. Утверждают ли они байты этих файлов?",
+      "finding": "Почти нет. 789 значений из 40 знаков — идентификаторы объектов Git (коммиты и blob-ы, часть в чужих репозиториях), 165 из 32 знаков не размечены вовсе. Проверка по близости дала бы 12 ложных обвинений в живых документах: колонка «Коммит» в закрывающем отчёте DEEP_PASS_XXV, «at/after <sha1>» в apostasy/README.md, «main=<sha1>» в independent_review_packets.md и Git blob словаря из gb-vosk-tts рядом с упоминанием AGENTS.md.",
+      "evidence": "data/internal-digests-verified-2026-11-18.json (schema internal-digests-verified/2, totals.byAlgorithm, состояния git-object-id и unlabelled-partial)",
+      "closedScope": "Хеш считается подписью байтов только при словесной разметке (sha1, sha-1, md5, checksum, контрольная) и отсутствии commit/коммит/blob/main=/at/after. Размеченных коротких подписей 10 (sha1 3, md5 7), и все десять указывают на объекты вне рабочего дерева — локально сверять нечего. Совпадений с файлами дерева и просроченных среди них нет.",
+      "notClosed": "Тот же предел, что у SHA-256: совпадение подтверждает байты, а не прочтение, издание или права. Короткие подписи внешних объектов не перепроверены — их нечем сверять без повторной загрузки.",
+      "limits": [
+        "40-знаковое значение сверяется и как обычный sha1, и как Git blob (blob <len>\\0 + байты): обе функции определены.",
+        "Значения без разметки не обвиняются: git-object-id и unlabelled-partial — это «не утверждает», а не «утверждает неверно».",
+        "В CI не гейтится: гейт стоит на живых Markdown-документах и на состояниях match/stale для SHA-256."
+      ],
+      "commands": [
+        "python3 -B scripts/verify_internal_digests.py --summary",
+        "python3 -B scripts/verify_internal_digests.py --only match",
+        "python3 -B -m unittest discover -s scripts -p 'test_verify_internal_digests.py'"
+      ],
+      "tests": "python3 -B -m unittest discover -s scripts -p 'test_verify_internal_digests.py' → 24 OK",
+      "title": "Короткие хеши: SHA-1 и MD5 рядом с именами файлов",
+      "holdType": "EVIDENCE_HOLD"
+    },
+    {
+      "id": "HCR-2026-11-18-11",
+      "axis": "twin documents: one text under two names",
+      "method": "document-twin-shingles",
+      "closedOn": "2026-11-18",
+      "state": "closed-with-open-item",
+      "question": "Есть ли в корпусе один и тот же документ под двумя именами, и объявлено ли это?",
+      "finding": "На уровне сходства >= 0.5 найдено 12 пар среди 2 385 документов, все внутри одного корпуса. Три пары дословно совпадают; две объявлены в мастер-индексе («дубль файла 08», «дубль файла 14»), третья — 13_ADVERSARIAL_AND_LIBERAL_READINGS_DOSSIER.md и 24_ADVERSARIAL_AND_LIBERAL_READINGS_2026-08-09.md — стоит в индексе как самостоятельный PASS-1 без пометки.",
+      "evidence": "data/document-twins-2026-11-18.json (schema document-twins/1)",
+      "closedScope": "Скрытого дублирования между корпусами на сходстве >= 0.5 нет: все 12 пар лежат в 1 Кор. 11, «Обратной стороне кафедры» и STEVE_LAWSON. Пары-надмножества (04⊂30, 10⊂29, v0_5⊂v0_6) объявлены как supplement или поколения.",
+      "notClosed": "Пара 13↔24 не объявлена в мастер-индексе — открытый пункт владельцу лана: инструмент не правит чужую карту.",
+      "limits": [
+        "Сходство — перекрытие слов, не смысла: пересказ не ловится, общий блок цитат может сблизить разные документы.",
+        "Совпадение байтов подтверждает копию, но не говорит, какая копия каноническая.",
+        "--check не подключён в CI: сегодня он падал бы на необъявленной дословной паре, а это решение владельца индекса."
+      ],
+      "commands": [
+        "python3 -B scripts/audit_document_twins.py --summary",
+        "python3 -B scripts/audit_document_twins.py -o data/document-twins-2026-11-18.json",
+        "python3 -B -m unittest discover -s scripts -p 'test_audit_document_twins.py'"
+      ],
+      "tests": "python3 -B -m unittest discover -s scripts -p 'test_audit_document_twins.py' → 8 OK",
+      "title": "Дубли-близнецы: один документ под двумя именами",
+      "holdType": "EVIDENCE_HOLD"
+    },
+    {
+      "id": "HCR-2026-11-18-12",
+      "axis": "self-dating headers vs Git history",
+      "method": "state-stamp-vs-commit",
+      "closedOn": "2026-11-18",
+      "state": "closed",
+      "question": "Соответствует ли дата, которую документ ставит себе в заголовке, тому, когда файл действительно менялся?",
+      "finding": "Из 2 409 Markdown-файлов 17 датируют себя в первых 15 строках: 9 совпадают с последним коммитом, 6 отредактированы позже своей даты (с темами коммитов как уликой), 2 датированы позже истории файла, невозможных 0.",
+      "evidence": "data/state-stamps-2026-11-18.json (schema state-stamps/1)",
+      "closedScope": "Перепись полная: каждая самодатировка в шапке документа найдена и сверена с датой последнего коммита. Даты не переписывались — инструмент печатает дату, коммит и его тему.",
+      "notClosed": "«Отредактирован после своей даты» — факт, а не приговор: законность поздней правки решает владелец лана. Два файла ИСКУПЛЕНИЕ/fathers/ связаны квитанциями лана.",
+      "limits": [
+        "Сверяется только шапка (первые 15 строк) и только дата, стоящая в той же строке, что и фраза-штамп.",
+        "Строки таблиц и строки со ссылкой исключены: они датируют чужой документ (19 из 36 строк отсеяно).",
+        "Дата последнего коммита — дата коммита, а не дата правки; правка нумерации или пробелов тоже двигает её.",
+        "--check падает только на невозможной дате (позже сегодняшней); в CI шаг отчётный."
+      ],
+      "commands": [
+        "python3 -B scripts/audit_state_stamps.py --summary",
+        "python3 -B scripts/audit_state_stamps.py -o data/state-stamps-2026-11-18.json",
+        "python3 -B -m unittest discover -s scripts -p 'test_audit_state_stamps.py'"
+      ],
+      "tests": "python3 -B -m unittest discover -s scripts -p 'test_audit_state_stamps.py' → 8 OK",
+      "title": "Самодатировка: дата в заголовке против истории Git",
+      "holdType": "EVIDENCE_HOLD"
+    },
+    {
+      "id": "HCR-2026-11-18-13",
+      "axis": "Drive library ledger rows: Drive's answer vs the local file",
+      "method": "drive-ledger-join",
+      "closedOn": "2026-11-18",
+      "state": "closed-with-open-item",
+      "question": "Верны ли строки Drive-реестра, которые одновременно утверждают размер и MD5 объекта в Drive и байты локального файла?",
+      "finding": "92 строки, 92 разных id. Семь объектов перечитаны у Drive — все семь совпали по размеру и md5Checksum. При этом все 13 однозначно разрешённых локальных файлов выросли с момента загрузки (04_CHARACTER 259 911 → 406 668; 16_SERIES 96 664 → 887 094; 03_WORKS 78 099 → 116 999), то есть реестр описывает момент волны, а не текущее состояние.",
+      "evidence": "data/drive-ledger-audit-2026-11-18.json; data/drive-ledger-snapshot-2026-11-18.json (что именно ответил Drive)",
+      "closedScope": "Перепись полная по строкам: 92 строки найдены, у каждой зафиксировано состояние обеих сторон. Drive-сторона проверена на выборке 7 объектов, локальная — целиком там, где имя разрешается однозначно.",
+      "notClosed": "Зеркало «Drive = локальный файл сейчас» не подтверждено и не опровергнуто: 85 id не запрашивались, 4 имени неоднозначны. Закрыть это может только новая загрузка и новый ряд подписей — действие владельца лана.",
+      "limits": [
+        "Байты объектов не скачивались: сверялся md5Checksum из ответа Drive, то есть утверждение сервера.",
+        "Перечитано 7 из 92 id: по одному вызову на объект, фильтр по id язык запросов Drive не принимает.",
+        "Имя, встречающееся в отделе более одного раза, не разрешается — состояние local-ambiguous, выбор по имени был бы догадкой.",
+        "Старые строки реестра — история моментов; переписывать их нельзя, иначе исчезнет след проверенного."
+      ],
+      "commands": [
+        "python3 -B scripts/audit_drive_ledger.py --snapshot data/drive-ledger-snapshot-2026-11-18.json --summary",
+        "python3 -B scripts/audit_drive_ledger.py --snapshot data/drive-ledger-snapshot-2026-11-18.json -o data/drive-ledger-audit-2026-11-18.json"
+      ],
+      "tests": "python3 -B -m unittest discover -s scripts -p 'test_audit_drive_ledger.py' → 7 OK",
+      "title": "Строки Drive-реестра: ответ Drive против локального файла",
+      "holdType": "ARCHIVE_HOLD"
+    },
+    {
+      "id": "HCR-2026-11-18-14",
+      "axis": "hashes that stand without a file name (514 of 1 537)",
+      "method": "unclaimed-reason-classification",
+      "closedOn": "2026-11-18",
+      "state": "closed",
+      "question": "Проверяемы ли 514 подписей SHA-256, в строке которых не назван ни один файл репозитория?",
+      "finding": "Нет, и причина у каждой записана: 205 подписаны словами, но объект — не файл дерева (фиды, Vimeo); 141 стоят без подписи вообще (объект назван другой колонкой или строкой выше); 95 — короткие дайджесты без пути; 59 — артефакты вне дерева (ZIP, XML, PDF, скан); 12 — медиа-сегменты; 2 — дайджесты состояния корпуса. 11 значений подписаны с путём в другом документе и подтверждаются там.",
+      "evidence": "data/internal-digests-verified-2026-11-18.json, totals.unclaimedByReason и unclaimedDigestClaimedElsewhere",
+      "closedScope": "Разобраны все 514. Проверена и отклонена гипотеза «взять путь из предыдущей строки»: подходящих строк 18, и выборка показала обрывки URL и ссылки на внешние файлы — правило дало бы подписи, которых документ не делал.",
+      "notClosed": "Ни один из 514 не сверен с байтами, потому что сверять нечего: объекты вне дерева. Дотянуть их можно только загрузкой этих объектов, а не проверкой.",
+      "limits": [
+        "Классификация по словам строки, а не по смыслу документа; слово «архив» в другом значении попадёт в artifact-not-in-tree.",
+        "Классы — карта поверхности, а не приговор; --check на них не гейтится.",
+        "Перекрёстное совпадение значения подтверждает, что значение известно репозиторию, но не проверяет эту строку."
+      ],
+      "commands": [
+        "python3 -B scripts/verify_internal_digests.py --only unclaimed",
+        "python3 -B -m unittest discover -s scripts -p 'test_verify_internal_digests.py'"
+      ],
+      "tests": "python3 -B -m unittest discover -s scripts -p 'test_verify_internal_digests.py' → 30 OK",
+      "title": "Хеши без имени файла: 514 строк разобраны по причине",
+      "holdType": "EVIDENCE_HOLD"
+    },
+    {
+      "id": "HCR-2026-11-18-15",
+      "title": "Drive-реестр: 92 из 92 id подтверждены; две собственные ошибки сняты в тот же день",
+      "holdType": "ARCHIVE_HOLD",
+      "previousState": "«7 id подтверждены, 85 не опрошены»; затем четыре строки wave40 выглядели как расхождение MD5, а четыре SHA-256-строки — как непроверяемые",
+      "closedScope": "Drive-сторона реестра: 92 из 92 объектов подтверждены — 88 по размеру и md5Checksum, 4 по размеру и sha256Checksum; расхождений 0.",
+      "recordLocations": [
+        "docs/research/HOLDS_REGISTER_2026-11-18.md §19",
+        "data/drive-ledger-audit-2026-11-18.json",
+        "data/drive-ledger-snapshot-2026-11-18.json"
+      ],
+      "method": "drive-ledger-join",
+      "objects": [
+        {
+          "sample": "92 of 92 Drive ids",
+          "verifiedSizeAndMd5": 88,
+          "verifiedSizeAndSha256": 4,
+          "mismatches": 0
+        }
+      ],
+      "residualHolds": [
+        "ARCHIVE_HOLD"
+      ],
+      "residualReason": "Байты не скачивались: сверялись серверные checksum-поля Drive, то есть тождество объекта, а не прочтение документа. Актуальность локального зеркала (13 moved-on, 75 unresolved, 4 ambiguous) опросом не снимается — нужна новая загрузка текущих редакций."
+    },
+    {
+      "id": "HCR-2026-11-18-16",
+      "title": "Регистр проверен на собственные счётчики: 8 просроченных чисел и таблица по корпусам, ставшая генерируемой",
+      "holdType": "EVIDENCE_HOLD",
+      "previousState": "Счётчики в §2 и §13 были верны при написании и молча разошлись с артефактами; таблица §2.1 по 25 корпусам отставала на одну пересборку инвентаря",
+      "closedScope": "32 объявленных счётчика сверяются с полями артефактов; таблица §2.1 генерируется из byCorpus; оба механизма под гейтом CI",
+      "recordLocations": [
+        "docs/research/HOLDS_REGISTER_2026-11-18.md §20",
+        "scripts/audit_register_claims.py",
+        "scripts/test_audit_register_claims.py"
+      ],
+      "method": "register-claims-audit",
+      "objects": [
+        {
+          "declaredClaims": 32,
+          "staleFound": 8,
+          "anchorMissing": 1,
+          "corpusTableRows": 25,
+          "corpusRowsReshot": 4
+        }
+      ],
+      "residualHolds": [
+        "EVIDENCE_HOLD"
+      ],
+      "residualReason": "Проверяются только объявленные счётчики: числа без машинного поля остаются утверждениями без срока годности, и это записано как граница."
+    },
+    {
+      "id": "HCR-2026-11-18-17",
+      "title": "Счётчики в прозе: «закрыта одна ось» — число убрано из фразы, а не обновлено",
+      "holdType": "EVIDENCE_HOLD",
+      "previousState": "§1 и §3 утверждали масштаб работы словами («одна ось»), что не ловилось проверкой таблиц; §11 и C4 несли число 8 из 24, переснятое в §19",
+      "closedScope": "введены утверждения в прозе под проверкой; введено состояние superseded, требующее существующего раздела ниже по файлу; число закрытий в §1/§3 заменено ссылкой на генерируемый §0",
+      "recordLocations": [
+        "docs/research/HOLDS_REGISTER_2026-11-18.md §21",
+        "scripts/audit_register_claims.py",
+        "scripts/test_audit_register_claims.py"
+      ],
+      "method": "register-claims-audit",
+      "objects": [
+        {
+          "totalClaims": 38,
+          "tableClaims": 32,
+          "proseClaims": 6,
+          "match": 36,
+          "superseded": 2
+        }
+      ],
+      "residualHolds": [
+        "EVIDENCE_HOLD"
+      ],
+      "residualReason": "Проверка ловит расхождение с артефактом, но не судит, должно ли утверждение быть таким; числа без машинного поля остаются без срока годности."
+    },
+    {
+      "id": "HCR-2026-11-18-18",
+      "title": "Ссылки: отчёт стал закоммиченным артефактом, таблица §8 генерируется, отчёт сверяется в CI",
+      "holdType": "LOCATOR_HOLD",
+      "previousState": "Замер §8 (2 856 / 5 974 / 58) жил только в прозе; у инструмента был -o, но отчёт не коммитился — сверять было не с чем",
+      "closedScope": "Отчёт data/relative-links-audit-2026-11-18.json закоммичен, §8 генерируется из него, CI сверяет отчёт с новым прогоном: resolves 2 861, external 5 984, missing 58",
+      "recordLocations": [
+        "docs/research/HOLDS_REGISTER_2026-11-18.md §22",
+        "data/relative-links-audit-2026-11-18.json",
+        "scripts/audit_register_claims.py"
+      ],
+      "method": "relative-link-audit",
+      "objects": [
+        {
+          "resolves": 2861,
+          "external": 5984,
+          "missing": 58,
+          "explained": 58,
+          "unexplained": 0
+        }
+      ],
+      "residualHolds": [
+        "LOCATOR_HOLD"
+      ],
+      "residualReason": "Проверяются относительные ссылки рабочего дерева; внешние адреса не запрашивались, и ни одна ссылка не подтверждает содержимое удалённого объекта."
+    },
+    {
+      "id": "HCR-2026-11-18-19",
+      "title": "Якоря: «36 ссылок с фрагментом» измерены — 18 внутристраничных и 18 межфайловых, все резолвятся",
+      "holdType": "LOCATOR_HOLD",
+      "previousState": "Любой #anchor относился к external и не считался; ссылки файл.md#раздел не выделялись — утверждение §11 «36/36» подтверждалось только самим собой",
+      "closedScope": "Введены состояния fragment/missing-fragment и перепись totals.fragments (total 36 = 18 + 18, resolved 36, unresolved 0); таблица §8 генерируется, утверждение §11 под проверкой",
+      "recordLocations": [
+        "docs/research/HOLDS_REGISTER_2026-11-18.md §23",
+        "data/relative-links-audit-2026-11-18.json",
+        "scripts/audit_relative_links.py"
+      ],
+      "method": "relative-link-audit",
+      "objects": [
+        {
+          "fragmentLinks": 36,
+          "inPage": 18,
+          "crossFile": 18,
+          "resolved": 36,
+          "unresolved": 0
+        }
+      ],
+      "residualHolds": [
+        "LOCATOR_HOLD"
+      ],
+      "residualReason": "Слаги заголовков воспроизводятся приблизительно, поэтому мёртвый внутристраничный якорь — отчёт, а не гейт; компенсация — видимый счётчик в §8."
+    },
+    {
+      "id": "HCR-2026-11-18-20",
+      "title": "Открытые пункты получили имя, а их числа — поле: карта закрытий больше не печатает непроверенный замер",
+      "holdType": "EVIDENCE_HOLD",
+      "previousState": "notClosed не имел id: class служил и названием, и измерением; §0 повторял «134 значения / 39 написаний», ничего не проверяя, а §2 говорил 39 файлов при 38 в инвентаре",
+      "closedScope": "id + title без чисел (тест), §5 без дубля распределения, обе таблицы §9 генерируются из proposal (--write/--check), 5 новых утверждений и totals.jsonHoldsTotal в инвентаре",
+      "recordLocations": [
+        "docs/research/HOLDS_REGISTER_2026-11-18.md §24",
+        "data/hold-value-mapping-proposal-v1.json",
+        "scripts/check_hold_vocabulary.py"
+      ],
+      "method": "hold-vocabulary-mapping",
+      "objects": [
+        {
+          "generatedTables": [
+            "hold-classes",
+            "hold-values"
+          ]
+        }
+      ],
+      "residualHolds": [
+        "EVIDENCE_HOLD"
+      ],
+      "residualReason": "Сам пункт остаётся открытым и является OPEN-HOLDS-VOCABULARY: переписывать holds в machine-SSOT без владельца корпуса нельзя, предложение остаётся PROPOSAL_ONLY. Закрыта неизмеримость пункта, не пункт."
+    },
+    {
+      "id": "HCR-2026-11-18-21",
+      "title": "Список триггеров CI сверен с зависимостями: найдены дубли, асимметрия pr/push и пять невидимых входов гейта публикации",
+      "holdType": "LOCATOR_HOLD",
+      "previousState": "paths: в holds-inventory.yml поддерживался руками: 5 дублей, отчёт ссылок был триггером только для PR, а публикационный гейт читал три файла, правка которых его не запускала",
+      "closedScope": "scripts/audit_ci_triggers.py --check: дубли, симметрия pull_request/push, покрытие исполняемых скриптов, файлы из констант и литералов, объявленные транзитивные входы; списки приведены к одному набору из 49 путей, шаг добавлен в CI",
+      "recordLocations": [
+        "docs/research/HOLDS_REGISTER_2026-11-18.md §25",
+        "scripts/audit_ci_triggers.py",
+        ".github/workflows/holds-inventory.yml"
+      ],
+      "method": "ci-trigger-dependency-audit",
+      "objects": [
+        {
+          "duplicates": 0,
+          "asymmetry": 0,
+          "inputsAdded": 9
+        }
+      ],
+      "residualHolds": [
+        "LOCATOR_HOLD"
+      ],
+      "residualReason": "Транзитивные входы объявлены, а не выведены (общий обход подтянул бы 2 416 наблюдаемых файлов), и правка корпуса вне триггерных путей по-прежнему не запускает гейт — см. §22.2."
+    },
+    {
+      "id": "HCR-2026-11-18-22",
+      "title": "Таблица §11 генерируется из отчёта, а отчёт перестал терять второе цитирование локатора",
+      "holdType": "EVIDENCE_HOLD",
+      "previousState": "Таблица §11 из 17 строк переписывалась руками из отчёта; отчёт хранил одно место цитирования на локатор, поэтому «в 7 файлах» не подтверждалось (в отчёте было 6), второе цитирование было невидимым",
+      "closedScope": "Отчёт schema 2: citations по каждому локатору, totals.citations=19 и citationFiles=7; перезамер с сетью (байты всех 17 совпали); таблица §11 генерируется (--write-pinned-table); --check-report сверяет отчёт с деревом без сети и стоит в CI; гейт таблиц идёт по SLICES, а не по списку имён",
+      "recordLocations": [
+        "docs/research/HOLDS_REGISTER_2026-11-18.md §26",
+        "data/pinned-github-locators-verified-2026-11-18.json",
+        "scripts/verify_pinned_github_locators.py"
+      ],
+      "method": "pinned-github-locator-readback",
+      "objects": [
+        {
+          "locators": 17,
+          "citations": 19,
+          "citationFiles": 7,
+          "match": 4,
+          "mismatch": 0
+        }
+      ],
+      "residualHolds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD"
+      ],
+      "residualReason": "Совпадение хеша удостоверяет байты закреплённого объекта, а не прочтение, не выбор издания и не права; ARCHIVE_HOLD на сканы и PUBLICATION_HOLD не снимаются. Байты можно перепроверить только с сетью — в CI сверяется форма отчёта, и это названо."
+    },
+    {
+      "id": "HCR-2026-11-18-23",
+      "title": "Снимок очереди читал сам себя: исключения индекса выводятся из композиции, ссылочное поле воспроизводимо",
+      "holdType": "EVIDENCE_HOLD",
+      "previousState": "identifier_index исключал только базу очереди и current-authority: оверлеи и собственный предыдущий отчёт служили свидетелями, поэтому recordedInRepository переворачивалось false→true на втором построении с теми же входами",
+      "closedScope": "pipeline_files() выводит исключения из overlaysApplied + снимок; indexExcluded в отчёте (schema 2); composedCounts с нулями по объявленным состояниям и total; регрессия на два построения и три контроля, проверенная в обе стороны; шесть чисел §10 подключены к снимку",
+      "recordLocations": [
+        "docs/research/HOLDS_REGISTER_2026-11-18.md §27",
+        "data/publication-gate-queue-v1.json",
+        "scripts/publication_gate_status.py"
+      ],
+      "method": "self-confirmation-regression",
+      "objects": [
+        {
+          "records": 10,
+          "PROMOTE": 0,
+          "rightsIdsNotRecorded": 0,
+          "indexExcluded": 4
+        }
+      ],
+      "residualHolds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "residualReason": "Воспроизводимость справочного поля не даёт прав и не разрешает публикацию: PROMOTE по-прежнему 0, у трёх записей нет записи в реестре прав. Дефект касался ссылочного поля, а не допуска."
+    },
+    {
+      "id": "HCR-2026-11-18-24",
+      "title": "Подтверждения: числа в заголовках заменены счётчиками из артефактов; три из четырёх заголовков были просрочены",
+      "holdType": "EVIDENCE_HOLD",
+      "previousState": "Заголовки подтверждений и verification.expect носили измерения, печатавшиеся в §0 из реестра: C3 указывал resolves=2 856 и external=5 974 (в артефакте 2 861 и 5 966) и 27 тестов (их 30), C2 — 13 тестов (их 18), C4 — 8 из 24 при полном опросе в §19",
+      "closedScope": "counters (label/artefact/field) у подтверждений, значения читаются из отчётов; неразрешимый счётчик валит --check кодом 2; title и verification.expect без измерений (тест различает идентификаторы и измерения); C4 помечен supersededBy §19",
+      "recordLocations": [
+        "docs/research/HOLDS_REGISTER_2026-11-18.md §28",
+        "data/hold-closure-registry-v1.json",
+        "scripts/render_closures_summary.py"
+      ],
+      "method": "confirmation-counter-audit",
+      "objects": [
+        {
+          "staleTitles": 3,
+          "derivedCounters": 6
+        }
+      ],
+      "residualHolds": [
+        "EVIDENCE_HOLD"
+      ],
+      "residualReason": "Подтверждения остаются подтверждениями: ни одно не снимает удержаний, и C4 переснято в §19. Закрыта просроченность их чисел, не сами удержания."
+    },
+    {
+      "id": "HCR-2026-11-18-25",
+      "title": "Таблицы §15 и §16 генерируются из отчётов; §16 печатает темы коммитов дословно, §15 называет пары поименно",
+      "holdType": "EVIDENCE_HOLD",
+      "previousState": "Таблицы состояний дублей (3/1/6/2) и дат (9/6/2/0) переписывались руками; в §16 две строки ИСКУПЛЕНИЕ/fathers были сокращены до «то же», темы коммитов усечены, а в §15 из шести непохожих пар названа была одна",
+      "closedScope": "Срезы twins и stamps в audit_register_claims.py (--write-twins-table/--write-stamps-table): таблица состояний, поименные пары с перекрытием, сумма «Пар выше порога» под утверждением, дословные темы коммитов и полный список документов",
+      "recordLocations": [
+        "docs/research/HOLDS_REGISTER_2026-11-18.md §29",
+        "data/document-twins-2026-11-18.json",
+        "data/state-stamps-2026-11-18.json"
+      ],
+      "method": "register-claims-audit",
+      "objects": [
+        {
+          "pairs": 12,
+          "identicalText": 3,
+          "stamped": 17,
+          "editedAfterStamp": 6
+        }
+      ],
+      "residualHolds": [
+        "EVIDENCE_HOLD"
+      ],
+      "residualReason": "Дубли и отставшие даты остаются как были: пара 13↔24 ждёт решения владельца индекса, шесть документов менялись после своей даты, и даты не перезаписываются. Закрыта копия чисел, не сами удержания."
+    },
+    {
+      "id": "HCR-2026-11-18-26",
+      "title": "§3 генерируется из реестра закрытий: третья копия перечня отставала на семь строк",
+      "holdType": "EVIDENCE_HOLD",
+      "previousState": "Таблица §3 «что закрыто» обновлялась руками и содержала 18 строк при 25 закрытиях в реестре: семь последних в ней отсутствовали",
+      "closedScope": "render_detail() в render_closures_summary.py печатает closedScope/method/recordLocations из реестра в блок closures-detail; --write и --check отвечают за оба блока; отсутствие маркеров — падение; replace_block получает маркеры параметрами и режет по найденному индексу",
+      "recordLocations": [
+        "docs/research/HOLDS_REGISTER_2026-11-18.md §30",
+        "data/hold-closure-registry-v1.json",
+        "scripts/render_closures_summary.py"
+      ],
+      "method": "register-claims-audit",
+      "objects": [
+        {
+          "rowsBefore": 18,
+          "generatedBlocks": 2
+        }
+      ],
+      "residualHolds": [
+        "EVIDENCE_HOLD"
+      ],
+      "residualReason": "Тексты closedScope в реестре содержат исторические измерения (2 407 файлов у закрытия 07 и т.п.); отличить историческое число от живого пока может читатель, а не проверка — это следующий открытый вопрос."
+    },
+    {
+      "id": "HCR-2026-11-18-27",
+      "title": "Само-счётчики удалены из реестра и из прозы: два из пяти уже разошлись",
+      "holdType": "EVIDENCE_HOLD",
+      "previousState": "Записи реестра и текст регистра цитировали счёт собственных инструментов: claims 46 при 52, triggerPaths 49 при 50, закрытий 26 по построению, плюс три числа утверждений в прозе",
+      "closedScope": "Само-счётчики (closures, confirmations, openItems, claims, triggerPaths) удалены из objects и заменены отсылкой к инструменту; число утверждений убрано из прозы §21.2, §24 и записи 17; добавлены два теста — на ключи в objects и на конструкцию «N утверждени…» в регистре",
+      "recordLocations": [
+        "docs/research/HOLDS_REGISTER_2026-11-18.md §31",
+        "data/hold-closure-registry-v1.json",
+        "scripts/test_hold_closure_registry.py"
+      ],
+      "method": "register-claims-audit",
+      "objects": [
+        {
+          "removedSelfCounts": 5,
+          "staleOfThem": 2
+        }
+      ],
+      "residualHolds": [
+        "EVIDENCE_HOLD"
+      ],
+      "residualReason": "Внешние измерения в записях (2 407 файлов у 07, 541 склейка у 08) остаются снимками закрытия; механической разницы между снимком и живым числом в формате записи нет — только дата среза файла."
+    },
+    {
+      "id": "HCR-2026-11-18-28",
+      "title": "Правило «число тестов — тоже счётчик» применялось к одному предложению; три из шести цитат разошлись",
+      "holdType": "EVIDENCE_HOLD",
+      "previousState": "В прозе оставались пять цитат размера наборов, шестая — в previousState записи 24; §8 называл 27 при фактических 30, §10 — 6 и 13 при фактических 9 и 16, причём запись 24 рядом уже приводила верное число",
+      "closedScope": "Размер набора удалён, а не обновлён; в §8 осталось проверяемое имя CI-шага; добавлены четыре теста — на конструкцию «число + тест» в прозе, на существование цитируемого имени шага среди шагов workflow и на те же счётчики в полях записи (previousState исключён как пересказ прошлой формулировки); свежесть закоммиченного отчёта о ссылках переехала из шага workflow в тест — первый коммит главы упал в CI именно на ней",
+      "recordLocations": [
+        "docs/research/HOLDS_REGISTER_2026-11-18.md §32",
+        "scripts/test_audit_register_claims.py",
+        "scripts/test_hold_closure_registry.py"
+      ],
+      "method": "register-claims-audit",
+      "objects": [
+        {
+          "quotedSuiteSizesRemoved": 6,
+          "staleOfThem": 3,
+          "checksMovedFromCiIntoSuite": 1
+        }
+      ],
+      "residualHolds": [
+        "EVIDENCE_HOLD"
+      ],
+      "residualReason": "Тесты считаются словами («четыре из них падают») мимо проверки; имя шага сверяется с существующим, но не с тем, что шаг делает; у проверки имён сегодня ровно один предмет."
+    },
+    {
+      "id": "HCR-2026-11-18-29",
+      "title": "Аудит собственной работы: мутации нашли три проверки, которые ничего не проверяли",
+      "holdType": "EVIDENCE_HOLD",
+      "previousState": "Регистр был написан и проверен своими же инструментами; ни разу не проверялось, падают ли эти проверки, если внести дефект. §3 печатал первые два локатора из восьми, запись 08 несла флаг TEXT_INTEGRITY_HOLD, которого нет в политике, три метода печатались сырыми слагами, §0 и §3 противоречили друг другу в правиле двусмысленности, а отчёт самодатировки не воспроизводился, потому что записывал сегодняшнюю дату; машинный срез §2 был построен на артефакте, который отставал от дерева",
+      "closedScope": "Восемь дефектов исправлены: §3 печатает все локаторы, §0 — первые два и «и ещё N»; неканонический флаг объявлен в localAxes и помечен в §0; добавлены имена трёх методов, тест падает на методе без имени; словарь имён методов дедуплицирован; обрыв причины открытого пункта помечается «…»; правило двусмысленности приведено к одному (сравниваются значения, тесты в обе стороны); у самодатировки появился --today, и закоммиченный отчёт воспроизводится со своей датой. Сверх правок: тринадцать внесённых поломок — три не были пойманы до правок и ловятся после; инвентарь §2 цитировал артефакт, разошедшийся с деревом, потому что CI сравнивал два прогона между собой, — артефакт перегенерирован и получил тест свежести; после слияния с main пересняты отчёты, пересняты пять просроченных прозовых чисел, ручная копия таблицы в §23 заменена ссылкой на генерируемую",
+      "recordLocations": [
+        "docs/research/HOLDS_REGISTER_2026-11-18.md §33",
+        "scripts/render_closures_summary.py",
+        "scripts/audit_register_claims.py",
+        "scripts/audit_state_stamps.py",
+        "scripts/test_render_closures_summary.py"
+      ],
+      "method": "register-claims-audit",
+      "objects": [
+        {
+          "defectsFixed": 13,
+          "mutationsInjected": 14,
+          "mutationsMissedBeforeFixes": 3,
+          "staleArtefactsFound": 3,
+          "proseCountersResyncedAfterMerge": 8,
+          "snapshotReportsGatedAtPrHead": 6,
+          "testModulesWithEarlyMainGuardFixed": 7
+        }
+      ],
+      "residualHolds": [
+        "EVIDENCE_HOLD"
+      ],
+      "residualReason": "Три шага CI остаются отчётными (дубли, самодатировка, сверка Drive), поэтому свежесть этих отчётов не гейтится; предыдущее состояние записей по-прежнему цитирует исторические числа; проверки ловят цифры, а не слова."
+    }
+  ],
+  "confirmations": [
+    {
+      "id": "HCR-2026-11-18-C1",
+      "title": "Charnock custody v3 ZIP — независимое подтверждение квитанции",
+      "holdType": "ARCHIVE_HOLD",
+      "status": "CONFIRMATION_NOT_CLOSURE",
+      "recordLocations": [
+        "data/charnock-custody-receipt-v3-20261117-r2.json"
+      ],
+      "method": "raw-download-compare",
+      "object": {
+        "driveFileId": "1r2rJUlYFdZKTITF3I9Vz0pNdMQGCSXdH",
+        "bytes": 1045446,
+        "sha256": "9c86b0b1beb0a913546dcc8979c49bdcd6d14ac0446a3f863f2edb510581fc8f"
+      },
+      "result": "Скачанные из Drive байты дали SHA-256 9c86b0b1…fc8f, совпадающий и с `sourceArchiveSha256`, и с `destinationSha256ReadBack` квитанции; это подтверждает уже заявленный readback, но новых прав, локаторов или публикационного решения не даёт.",
+      "alsoVerified": "Два owner-файла квитанции совпадают с текущими байтами репозитория: 00_README_AND_NAVIGATION.md = 2a8d41c113c5c0de826297dbab482024735c594a25debff0befe16615fc2fdb6, 16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md = 706748bb1f3eb22d4b96f00ef6151cdd02c8975749b534d1dd86c7561ebaf832.",
+      "limits": [
+        "Совпадение хешей удостоверяет байты архива, а не право на их публикацию: RIGHTS_HOLD/PUBLICATION_HOLD не снимаются.",
+        "Совпадение с `destinationSha256ReadBack` подтверждает уже заявленный readback; независимость ограничена тем, что оба значения записаны одной стороной.",
+        "Хеш не доказывает, что содержимое архива прочитано и что в нём именно заявленный текст."
+      ],
+      "counters": []
+    },
+    {
+      "id": "HCR-2026-11-18-C2",
+      "title": "Закреплённые GitHub-локаторы перепроверены независимо; заявленные SHA-256 совпали",
+      "holdType": "LOCATOR_HOLD",
+      "status": "CONFIRMATION_NOT_CLOSURE",
+      "closedScope": "Снято не удержание, а сомнение в заявке: 17 локаторов `github.com/…/blob/<commit>/<path>` существуют на своих коммитах (0 недоступных); у 4 заявлен SHA-256 и размер — 4/4 совпали побайтово после независимого скачивания. У 13 заявки нет: байты и хеши измерены и записаны, но закрывать нечего, пока корпус не заявил, что искал.",
+      "recordLocations": [
+        "data/pinned-github-locators-verified-2026-11-18.json",
+        "scripts/verify_pinned_github_locators.py",
+        "docs/research/HOLDS_REGISTER_2026-11-18.md §11"
+      ],
+      "method": "pinned-commit-raw-fetch-and-rehash",
+      "verification": {
+        "command": "python3 -B scripts/verify_pinned_github_locators.py --summary",
+        "expect": "значения — counters карты §0 (читаются из отчёта); сеть нужна только для перезамера байтов",
+        "tests": "python3 -B -m unittest discover -s scripts -p 'test_verify_pinned_github_locators.py' → 13 OK",
+        "note": "нужна сеть: обращение к api.github.com через gh; в CI не включено, чтобы не ломать сборку без сети"
+      },
+      "limits": [
+        "Совпадение хеша удостоверяет байты объекта на коммите, а не факт чтения содержания и не тождество издания.",
+        "ARCHIVE_HOLD на сканы и RIGHTS_HOLD/PUBLICATION_HOLD этим не снимаются.",
+        "URL без закреплённого коммита не проверяются: у них нет версии, к которой можно привязать байты."
+      ],
+      "counters": [
+        {
+          "label": "локаторов",
+          "artefact": "data/pinned-github-locators-verified-2026-11-18.json",
+          "field": "totals.locators"
+        },
+        {
+          "label": "совпавших SHA-256",
+          "artefact": "data/pinned-github-locators-verified-2026-11-18.json",
+          "field": "totals.match"
+        },
+        {
+          "label": "расхождений",
+          "artefact": "data/pinned-github-locators-verified-2026-11-18.json",
+          "field": "totals.mismatch"
+        }
+      ]
+    },
+    {
+      "id": "HCR-2026-11-18-C3",
+      "title": "Якоря разделов разрешаются по заголовкам цели",
+      "holdType": "LOCATOR_HOLD",
+      "status": "CONFIRMATION_NOT_CLOSURE",
+      "closedScope": "Снято сомнение в адресности ссылок вида `файл.md#раздел`: до правки аудит читал только путь, якорь не проверялся. Добавлена проверка фрагмента по заголовкам цели; 36/36 ссылок с фрагментом резолвятся. Два мёртвых якоря: в `docs/research/reformation/README.md` исправлено `пр`→`pr` (заголовок «…после PR #496–499»), в `ИСКУПЛЕНИЕ/18_SERIES_AUDIT_AND_ARCS_2026-10-26.md` ссылка верна — тире в диапазоне `6–7` в slug исчезает, поэтому сравнение нормализует дефисные формы.",
+      "recordLocations": [
+        "scripts/audit_relative_links.py",
+        "scripts/test_audit_relative_links.py",
+        "docs/research/HOLDS_REGISTER_2026-11-18.md §8.1"
+      ],
+      "method": "section-anchor-slug-check",
+      "verification": {
+        "command": "python3 -B scripts/audit_relative_links.py --summary",
+        "expect": "значения — counters карты §0 (из отчёта ссылок); отдельно `--strict` требует, чтобы необъяснённых дефектов не осталось",
+        "tests": "python3 -B -m unittest discover -s scripts -p 'test_audit_relative_links.py' → 27 OK"
+      },
+      "limits": [
+        "Существование заголовка не доказывает, что раздел прочитан и что в нём сказано именно это.",
+        "Якоря `#L12` и фрагменты не-markdown целей не проверяются: заголовков у них нет.",
+        "Slug считается по правилам GitHub приближённо: экзотические символы в заголовке могут дать ложный дефект, поэтому дефисные формы нормализуются."
+      ],
+      "counters": [
+        {
+          "label": "ссылок с фрагментом",
+          "artefact": "data/relative-links-audit-2026-11-18.json",
+          "field": "totals.fragments.total"
+        },
+        {
+          "label": "резолвится",
+          "artefact": "data/relative-links-audit-2026-11-18.json",
+          "field": "totals.fragments.resolved"
+        },
+        {
+          "label": "не резолвится",
+          "artefact": "data/relative-links-audit-2026-11-18.json",
+          "field": "totals.fragments.unresolved"
+        }
+      ]
+    },
+    {
+      "id": "HCR-2026-11-18-C4",
+      "title": "Объекты Drive перечитаны у сервера; размер и SHA-256 совпали с заявленными в реестре",
+      "holdType": "ARCHIVE_HOLD",
+      "status": "CONFIRMATION_NOT_CLOSURE",
+      "closedScope": "Снято сомнение в том, что объекты, на которые ссылаются замыкания HCR-2026-11-18-01 и -02, всё ещё существуют и что их серверный `sha256Checksum` не изменился. Прочитаны метаданные восьми объектов (`files.get`, fields=id,name,size,sha256Checksum,mimeType): 8/8 совпали по размеру и хешу, 0 отсутствующих, 0 расхождений. Байты не скачивались — независимый пересчёт содержимого сделан только для объекта из HCR-C1.",
+      "recordLocations": [
+        "data/drive-metadata-recheck-2026-11-18.json",
+        "docs/research/HOLDS_REGISTER_2026-11-18.md §13"
+      ],
+      "method": "google-drive-server-metadata-read",
+      "verification": {
+        "command": "google_drive.get_file (соединитель) по восьми driveFileId из реестра; сверка size и sha256Checksum с заявленными",
+        "expect": "выборка первых объектов замыканий первого и второго закрытия; полный опрос доведён в §19, значения — counters карты §0",
+        "tests": "сетевой проход, в CI не включён: соединитель Drive недоступен в сборке"
+      },
+      "limits": [
+        "Серверный sha256Checksum — заявление Drive, а не пересчёт байтов: подмена объекта с обновлением метаданных этим не ловится.",
+        "Проверено 8 из 24 объектов; остальные 16 не проверялись.",
+        "Выборка не случайная: первые по порядку объекты замыканий 01 и 02.",
+        "Совпадение хеша не даёт прав на публикацию и не доказывает, что текст прочитан: RIGHTS_HOLD/PUBLICATION_HOLD остаются."
+      ],
+      "counters": [],
+      "supersededBy": "§19"
+    }
+  ],
+  "notClosed": [
+    {
+      "id": "OPEN-HOLDS-VOCABULARY",
+      "title": "Неканонические значения `holds` в machine-SSOT",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "reason": "Смешение осей в machine-SSOT: часть значений — это accessState/rightsState/publicationState, часть — статусы, часть — склейки двух флагов. Переписывать поля без владельца корпуса нельзя.",
+      "proposal": "data/hold-value-mapping-proposal-v1.json (status PROPOSAL_ONLY): 80 значений — канонические флаги, 24 — значения осей, 7 — склейки, 20 — статусы, 3 — требуют чтения записи человеком. Проверка соответствия: python3 -B scripts/check_hold_vocabulary.py --check",
+      "decisionRequiredFrom": "владелец корпуса"
+    },
+    {
+      "id": "OPEN-PRIMARY-SOURCES",
+      "title": "Внешние первоисточники и точные страницы",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD"
+      ],
+      "reason": "Внешние архивы, сканы и печатные издания в этой волне не открывались; исходящая сеть ограничена, а каталог, аннотация и URL не считаются прочтением объекта."
+    },
+    {
+      "id": "OPEN-RIGHTS",
+      "title": "Права на хранение и публикацию",
+      "holds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "reason": "Требуют отдельного лицензионного решения по каждому объекту и не снимаются ни хешами, ни присутствием на Drive.",
+      "queue": "docs/research/PUBLICATION_GATE_QUEUE_2026-11-18.md — 10 записей очереди, PROMOTE 0; для корпусов без записи повышение невозможно арифметически (productWriteRequiresPromoteRecord)",
+      "check": "python3 -B scripts/publication_gate_status.py --check"
+    },
+    {
+      "id": "OPEN-MIRRORS-BEHIND-HEAD",
+      "title": "Зеркала, отставшие от HEAD",
+      "holds": [
+        "ARCHIVE_HOLD"
+      ],
+      "reason": "Текущие редакции томов 00/04/16 и досье новее последних проверенных зеркал; закрытие readback исторических снимков не делает их актуальными. Новая загрузка/квитанция в этой волне не выполнялись."
+    },
+    {
+      "id": "OPEN-INDEPENDENT-REVIEW",
+      "title": "Независимая научная приёмка",
+      "holds": [
+        "EVIDENCE_HOLD"
+      ],
+      "reason": "Независимый внешний рецензент не привлекался; агентская проверка не подменяет рецензию."
+    }
+  ],
+  "summary": {
+    "document": "docs/research/HOLDS_REGISTER_2026-11-18.md",
+    "section": "§0 Карта закрытий",
+    "tool": "scripts/render_closures_summary.py",
+    "check": "python3 -B scripts/render_closures_summary.py --check"
+  }
+}
