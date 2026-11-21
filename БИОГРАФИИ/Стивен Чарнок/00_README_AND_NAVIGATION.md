@@ -27,7 +27,7 @@
 >
 > **Прямые пути к десяти рукописям (не новая иерархия authority):** [Введение](manuscripts/INTRO_MIR_STEPHEN_CHARNOCK_WORKING_DRAFT.md) · [I](manuscripts/I_CHELOVEK_KEMBRIDZH_DUBLIN_LONDON_WORKING_DRAFT.md) · [II](manuscripts/II_UCHENYI_I_PROPOVEDNIK_WORKING_DRAFT.md) · [III](manuscripts/III_CHARNOCK_AND_SCRIPTURE_FROM_TEXT_TO_SERMON_WORKING_DRAFT.md) · [IV](manuscripts/IV_BOGOSLOVSKII_PORTRET_WORKING_DRAFT.md) · [V](manuscripts/V_KAK_PROPOVEDI_STALI_KNIGAMI_WORKING_DRAFT.md) · [VI](manuscripts/VI_GLAVNAYA_KNIGA_BYTIE_I_ATRIBUTY_WORKING_DRAFT.md) · [VII](manuscripts/VII_ZA_PREDELAMI_GLAVNOI_KNIGI_WORKING_DRAFT.md) · [VIII](manuscripts/VIII_CHARNOCK_POSLE_CHARNOCKA_WORKING_DRAFT.md) · [Справочник](manuscripts/REFERENCE_KHRONOLOGIYA_TRUDY_ISTOCHNIKI_WORKING_DRAFT.md).
 >
-> **Архивная граница ED-08:** исторические 15-файловые квитанции удостоверяют только свои исходные байты. Эта редакция 00 **не получает custody задним числом**: до нового snapshot, независимого SHA-256 Drive readback и отдельной фиксации новой квитанции `ARCHIVE_HOLD` остаётся. Аналогично `ED-02 / LOCATOR_HOLD`, `ED-06 (0/12 независимых рецензий)`, `RIGHTS_HOLD` и `PUBLICATION_HOLD` не меняются.
+> **Архивная граница ED-08:** исторические 15-файловые квитанции удостоверяют лишь свои исходные байты. Для этой редакции 00 оформлена отдельная [проверяемая квитанция 15-файлового источникового снимка](../../data/charnock-custody-receipt-v3-20261121-pr620.json) с независимым SHA-256 readback из Google Drive. **Её область охвата — только закреплённые исходные файлы, не вся книга:** за её пределами `ARCHIVE_HOLD` и `EVIDENCE_HOLD` сохраняются. `ED-02 / LOCATOR_HOLD`, `ED-06 (0/12 независимых рецензий)`, `RIGHTS_HOLD` и `PUBLICATION_HOLD` также не снимаются.
 
 
 ## Текущая работа и пределы
