@@ -1974,3 +1974,17 @@ HOLD без изменений: CO 49:100, CO 45:706, `PRINT_IMAGE_HOLD`, пра
 | 4 | Прим. 106 Мелика (сн. 111) | HOLD |
 
 **Вердикты S1–S5 не меняются.**
+
+## 104. Раунд 153 (2026-11-17): сноски 107–108 — Кинер, MSB p. 1833, BDAG p. 112 (Кол. 1:20)
+
+Подробности — `34_` §4.236 (Q232), S251; REPASS-документ, §76.
+
+| # | Место | Итог |
+|---|---|---|
+| 1 | Кинер (сн. 107) | 2-е изд. (2014, p. 572; класс B): «The reconciling even of the invisible powers (1:16) refers to their subordination rather than their salvation (2:15), “peace” being an end to hostilities». Подчинение — только для властей. Текст 1993 г. — HOLD |
+| 2 | MSB, p. 1833 (сн. 107) | NKJV 1997 (OCR, класс B): «total and complete reconciliation of believers… This text does not teach that, as a result, all will believe; rather it teaches that all will ultimately submit… God and those He saved are no longer at enmity». Печатная страница — HOLD |
+| 3 | «Некоторые авторы считают, что «примирение»… означает подчинение земного и небесного» | Оба источника, как и Мелик (§103), различают примирение верующих и покорение враждебных. `STRAWMAN` (умеренно) |
+| 4 | BDAG, p. 112 (сн. 108) | Страница правдоподобна (класс C); глосса — HOLD. Значение слова Кинер не оспаривает, так что довод его тезиса не касается: `NON_SEQUITUR` (мягко) |
+| 5 | Для объёма искупления | Ни один из трёх комментариев не выводит из Кол. 1:20 всеобщую заместительную плату |
+
+**Вердикты S1–S5 не меняются.**
