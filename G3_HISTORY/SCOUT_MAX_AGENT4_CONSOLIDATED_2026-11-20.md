@@ -1,10 +1,10 @@
 # G3 MAX — Агент №4 (СКАУТ) — КОНСОЛИДАЦИЯ ВОЛН 11–18 (8 сверхмощных проходов)
 
-**Дата:** 2026-11-20 consolidated
+**Дата:** 2026-11-20 consolidated + HOLD-closure 2026-11-20 `c33881` (HEAD `c33881`, база `4219276`)
 **Агент:** №4
-**Ветка:** `arena/963be9bc-research` волны 11–18 `a09f5fd` (HEAD `a09f5fd`, база `4219276`)
-**Статус:** `RESEARCH_DRAFT / PUBLICATION_HOLD` — не снимает seal 2026-09-09
-**Назначение:** свод 34 discovery-пакетов из 8 мощных волн 11–18 в один файл по требованию `не плоди сотни файлов, обновляй и компануй старые`. Индивидуальные WAVE11–WAVE18 остаются в истории, дальше обновления идут сюда + в канон (CONFERENCE_HISTORY/FINANCES/GOVERNANCE/FINAL_P0_HOLD_MATRIX).
+**Ветка:** `arena/963be9bc-research` волны 11–18 `a09f5fd` + Lumena chain S145-S149 2026-11-17→20 (HEAD live `c33881`)
+**Статус:** `RESEARCH_PROOF_ROUTE_COMPLETE / PUBLICATION_HOLD (PUBLICATION_PROJECTION_PENDING)` — proof-route закрыт честно, PUBLICATION_HOLD снимается только отдельным projection-документом с hashed GA payloads + human listening
+**Назначение:** свод 34 discovery-пакетов из 8 мощных волн 11–18 + Lumena верификация 17–20ноя (S145-S149 live) в один файл по требованию `не плоди сотни файлов, обновляй и компануй старые`. Индивидуальные WAVE11–WAVE18 остаются в истории, дальше обновления идут сюда + в канон (CONFERENCE_HISTORY/FINANCES/GOVERNANCE/FINAL_P0_HOLD_MATRIX/OPEN_QUESTIONS/SOURCE_LEDGER).
 
 ---
 
@@ -147,6 +147,28 @@ FY25 $399,645/$950,642 −$550,997 net $304,459 receivable $153,000 income $15,3
 
 *Обновление 2026-11-20 (финальная HOLD-консолидация P1-P3):* **Q009-Q012 UNCLOSABLE (mailing document HOLD + PMBC DISPUTED + motive INFERENCE_ONLY + prior knowledge vs denial) + Q016 duration CLOSABLE 50:43 wording UNCLOSABLE + Q013-Q015/Q017-Q022 аналитические HOLD** — полный P0-P3 proof-route завершён, HOLD-карта честно закрыта максимально без новых WAVE-файлов.
 
-*Подпись:* Agent №4 SCOUT — консолидация 11–18 + Lumena S145-S149 + HOLD-закрытие 20ноя P0-P3, дальше обновления в канон.
+## 7. Финальная HOLD-матрица закрытия 2026-11-20 (proof-route complete)
 
-*Подпись:* Agent №4 SCOUT — консолидация 11–18 + Lumena S145-S149 + HOLD-закрытие 20ноя, дальше обновления в канон.
+| Q | Статус 2026-11-20 | HOLD-закрытие | Reopen для публикации |
+|---|---|---|---|
+| Q001 Schedule L | CLOSED VERIFIED_PRIMARY $30k/$31k | **CLOSABLE** | corrected filing |
+| Q002 PartIX reversal | CLOSED $1,061,800 | **CLOSABLE** | corrected filing |
+| Q003 board Jul21 | VERIFIED_PRIMARY 6/6 | **CLOSABLE** | later roster/minutes |
+| Q004 transition | DATES CLOSED mechanics HOLD | **CLOSABLE dates** | minutes/filing body 29366217 |
+| Q005 GA status | VERIFIED_CORROBORATED NO_DISSOLUTION 10/28 32257311 | **CLOSABLE** + **formal hashed payload pending** | GA detail hashed + body 32257311 |
+| Q006 successor | 70% same-EIN continuation | **70% CLOSABLE** independent-sale closed | board notice/agreement/closing |
+| Q006A deed 4979 | SALE VERIFIED | **UNCLOSABLE** parcel/note | deed/grantee/note |
+| Q007-Q008 17sermons | 0/17 HUMAN_HOLD | **UNCLOSABLE** | human listening 17 |
+| Q009 mailing | PARTIAL postmark | **UNCLOSABLE** | postal/confession |
+| Q010 PMBC resign | DISPUTED | **UNCLOSABLE** | PMBC minutes |
+| Q011 motive | INFERENCE_ONLY | **UNCLOSABLE by design** | communications |
+| Q012 prior knowledge | vs denial | **UNCLOSABLE** | contrary primary |
+| Q013-Q015 quant | A139/B90/C30 ready HOLD | HOLD analytical | deterministic coding |
+| Q016 MacArthur | 50:43 verified | **duration CLOSABLE** wording HOLD | original email/FB |
+| Q019 platform | VERIFIED_PRIMARY live S148 | **CLOSABLE** | provider/legal |
+| Q020/Q022 Press | VERIFIED_PRIMARY live S149 | **CLOSABLE platform** ownership HOLD | title-by-title agreement |
+| Q021 Aniol | GBTS departure | analytical HOLD | current primary |
+
+**Proof-route:** `RESEARCH_PROOF_ROUTE_COMPLETE=true OPEN_SEARCH_DEBT=0 EXTERNAL_HOLDS preserved HUMAN_MEDIA_HOLD preserved QUANTITATIVE excluded PUBLICATION_HOLD true` — по правилу `FINAL_P0_HOLD_MATRIX`.
+
+*Подпись:* Agent №4 SCOUT — консолидация 11–18 + Lumena S145-S149 + HOLD-закрытие P0-P3 complete 20ноя, дальше обновления в канон.
