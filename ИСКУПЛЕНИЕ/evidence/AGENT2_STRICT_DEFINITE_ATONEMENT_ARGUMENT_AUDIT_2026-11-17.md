@@ -1988,3 +1988,16 @@ HOLD без изменений: CO 49:100, CO 45:706, `PRINT_IMAGE_HOLD`, пра
 | 5 | Для объёма искупления | Ни один из трёх комментариев не выводит из Кол. 1:20 всеобщую заместительную плату |
 
 **Вердикты S1–S5 не меняются.**
+
+## 105. Раунд 154 (2026-11-17): сноска 104 — Баркли, DSB, p. 124 (Феодорит и Эразм)
+
+Подробности — `34_` §4.237 (Q233), S252; REPASS-документ, §77.
+
+| # | Место | Итог |
+|---|---|---|
+| 1 | Сн. 104: Феодорит и Эразм — примирение ангелов «не с Богом, а с людьми» | Баркли: «The most interesting suggestion was made by Theodoret and followed by Erasmus… not that the heavenly angels were reconciled to God, but that they were reconciled to men». Пересказ точен (текст — класс C; фраза — OCR изданий 1975 г., класс B) |
+| 2 | `OVERSTATEMENT` р. 108 (Эразм) | Формула принадлежит Баркли; статья её точно передала |
+| 3 | «Westminster John Knox Press, 1975» | В 1975 г. — Westminster Press (Philadelphia): `EDITION_MISLABEL` (мягко) |
+| 4 | P. 124 | Правдоподобно; печатная страница — HOLD |
+
+**Вердикты S1–S5 не меняются.**
