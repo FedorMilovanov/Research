@@ -183,15 +183,15 @@ FY25 $399,645/$950,642 −$550,997 net $304,459 receivable $153,000 income $15,3
 - Git status clean, 19 WAVE-файлов (WAVE1-18 + CONSOLIDATED) — пролиферация заморожена с 2026-11-20, новых WAVE не создаётся, консолидация в старые каноны
 - Мусор `.tmp/.bak/.log/~` — **0 файлов**, дубликатов — **0**, untracked — **0**
 
-**Другие агенты — перепроверено 2026-11-21 11:03–11:10 UTC (2 новые ветки):**
-- PR **617 `arena/c2fdd161-research`** — fix Q020 Jenkins-title: Wayback 13авг + X 2090195310098432511 (19авг) — карточка предшествует заявлению 6 дней, GTIN=ISBN 9798985518757 (TextbookX) — НЕ reissue — **совместим** с нашим S149 PLATFORM VERIFIED (оба TITLE-BY-TITLE HOLD)
-  - Комментарии 617: **2** — Owner/№3 GTIN-проверка + READY/BLOCKED §07 + **наш SCOUT 7061638601** — оба HOLD-preserving, проверены
-- PR **611 `arena/cb7f77fc-research`** — integration draft #582 (9 файлов, 6476 слов A) — 5+ комментариев MAX/MAX2 (TicketTailor/GBTS 20.09.2023) — Research-only, 0 конфликтов
-- PR **618 `research/charnock-works1699-and-reader-provenance-20261121`** — Чарнок часть V (Lingendes OCR 1699 без маргиналии) + reader + навигация — **новый 21.11**, 0 комментариев, 4 файла, 0 пересечения с нашими G3 канонами — чисто
-- PR **584 `arena/2fec0e47-research`** — инвентаризация HOLD 3 070 файлов 8 706 маркеров HCR-01..06 SHA 3/3+17/17+4/4 — **новый наш аудит:** read-only, честные границы, EVIDENCE/RIGHTS HOLD сохранены — совместимо с нашей HOLD-картой
-  - Комментарии проверены: написали **7061728974** на PR 584 — read-only + SHA match — и **7061728131** на PR 618 — 0 пересечений — оба отображаются
+**Другие агенты — перепроверено 2026-11-21 11:03–11:14 UTC (2 новые ветки + коррекция №3):**
+- PR **617 `arena/c2fdd161-research`** — fix Q020 Jenkins-title: Wayback 13авг + X 2090195310098432511 (19авг) — GTIN=ISBN 9798985518757 — НЕ reissue — **совместим** с нашим S149 PLATFORM VERIFIED (оба TITLE-BY-TITLE HOLD)
+  - Комментарии 617: **4** — Owner/№3 GTIN + READY/BLOCKED + **наш SCOUT 7061638601** + **агент №3 readback 7061732234** (наш df079c7 только CONSOLIDATED, не канонические LEDGER, S145-S149 noncanonical, не импортировано) + **№3 поправка 7061761980: G3-PUB-011 = четыре пастора, не Lumena** (G3-PUB-014=Press витрина, 015=Jenkins, ноябрьская Lumena ≠ переиздание) + **наш ответ 7061812826: поправка принята, ошибка нумерации признана** — все HOLD-preserving, исправлено
+  - Статус: DRAFT, 0 reviews, EVIDENCE/RIGHTS/PUBLICATION HOLD сохранён
+- PR **611 `arena/cb7f77fc-research`** — integration draft #582 — 5+ комментариев MAX/MAX2 — Research-only
+- PR **618 `charnock-works1699`** — часть V + reader — 1 комментарий наш 7061728131 — 0 пересечений
+- PR **584 HOLD inventory** — 3 070 файлов HCR-01..06 — 1 комментарий наш 7061728974 — read-only, совместимо
 
-Все 4 PR (611/617/618/584) + main Чарнок — изолированы от нашей arena/963be9bc-research — конфликтов ноль, все HOLD-preserving.
+Все 4 PR + main Чарнок — изолированы, **1 наша ошибка G3-PUB-011 исправлена (было неверно, стало корректно)** — конфликтов ноль.
 
 ## 8. PUBLICATION PROJECTION 2026-11-20
 
