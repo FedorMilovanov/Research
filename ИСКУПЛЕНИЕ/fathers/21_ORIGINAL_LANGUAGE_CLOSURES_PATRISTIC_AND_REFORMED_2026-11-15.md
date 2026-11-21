@@ -11,6 +11,7 @@
 ## 1. Кирилл Иерусалимский, *Catechesis* XIII.1–2, 4 (греч., PG 33:773–777) — закрытие остаточного `ORIGINAL_TEXT_HOLD` Волны 11 и `00_` §9 #3
 
 **Канал:** `catholiclibrary.org` (`Synchronized-EN/CyrilOfJerusalem.CatecheticalLectures.en.html`, `chunk.id=00000032`, параллельный греческий текст к NPNF2-07; соответствует PG 33:773–777; печатный скан колонок PG 33 — `LOCATOR_HOLD`).
+*Дополнение 2026-11-17 (раунд 74; `34_` §4.157, S172; аудит AGENT 2 §25):* фраза XIII.4 «ὑπὲρ πάντων ἀνθρώπων… οὐ γὰρ δόκησις ὁ σταυρός, ἐπεὶ δόκησις καὶ ἡ λύτρωσις» найдена и в печатном скане PG 33 (IA `patrologiagraeca33`, файл `PG_0331886`, лист 386, OCR). Номер колонки не прочитан, поэтому `LOCATOR_HOLD` сужен до номера колонки.
 **Что было открыто:** в Волне 11 (`10_`, `15_` §1) был сверен греческий текст *Cat.* XIII.32–33, тогда как на **XIII.2** было честно сохранено `ORIGINAL_TEXT_HOLD`.
 
 **Проверенный греческий текст (`ORIGINAL_TEXT_VERIFIED`):**
@@ -117,11 +118,11 @@
 
 ## 8. Жан Кальвин — закрытие двух явных латинских вопросов `docs/research/atonement/08_` (Раунд 58) и `21_` (§16.5)
 
-### 8.1. Кальвин на Ин. 3:16 (`CO 47:64`, *In Evangelium secundum Iohannem*, Женева 1553) — `propitium` vs `reconciliatum` (`F-51`)
+### 8.1. Кальвин на Ин. 3:16 (`CO 47:64–65`, *In Evangelium secundum Iohannem*, Женева 1553) — `propitium` vs `reconciliatum` (`F-51`)
 
 **Что было открыто:** в `docs/research/atonement/08_john_3_16_exegetical_defense.md` (Раунд 58, §4) было прямо поставлено: *«Выражение „reconciled“ в переводе [CTS W. Pringle] против „propice“ у Амиро — вероятно, переводчик передаёт „propitium“; проверить по латыни (не утверждать)»*.
 
-**Двойное независимое латинское подтверждение (`ORIGINAL_TEXT_VERIFIED` по двум независимым печатным передачам латыни Кальвина — John Goodwin 1651 и A. F. Mitchell / J. P. Struthers; сверка по скану печатного тома CO 47:64 — `LOCATOR_HOLD`):**
+**Двойное независимое латинское подтверждение (`ORIGINAL_TEXT_VERIFIED` по двум независимым печатным передачам латыни Кальвина — John Goodwin 1651 и A. F. Mitchell / J. P. Struthers; сверка по скану печатного тома CO 47:64–65 — `LOCATOR_HOLD`) *(испр. 2026-11-17, AGENT 2: скан CO 47 — `operaquaesupersu0075calv`, лист 53 — прочитан по OCR-слою; фраза «se tamen toti mundo propitium ostendit, quum sine exceptione omnes ad fidem Christi vocat» стоит в **кол. 65** (карта колонтитулов: лист L = кол. 2(L−21)+1 и +2); текст `ORIGINAL_TEXT_VERIFIED` по самому CO, колонка — `LOCATOR_HOLD(visual)`)*:**
 > `Eodem etiam pertinet nomen mundi quo prius usus est. Tametsi enim in mundo nihil reperietur Dei favore dignum, se tamen toti mundo propitium ostendit, quum sine exceptione omnes ad fidem Christi vocat, quae nihil aliud est quam ingressus in vitam. Caeterum meminerimus ita communiter promitti omnibus vitam in Christo, qui crediderint, ut tamen minime communis omnium sit fides. Patet enim omnibus Christus ac expositus est, solis tamen electis oculos Deus aperit.`
 
 **Ключевой вывод (`F-51`, `FALSE_FRIEND`, `QUOTE_RISK`):**
@@ -152,5 +153,5 @@
    - **Василий Великий**, *Hom. in Ps. 48* §4 — точный греческий текст PG 29:440A (полный PDF `khazarzar.skeptik.net` превышает лимит постраничного парсинга; §3 `PG 29:437C` сверен в Волне 11; для §4 сохраняется `ORIGINAL_TEXT_HOLD`);
    - **Ириней Лионский**, *Adv. Haer.* V.1.1 — сплошная колляция печатного тома Harvey II p. 315 / SC 153 (`ORIGINAL_TEXT_HOLD`);
    - **Ипполит** (фрагменты), **Мефодий** (гом. о Кресте), **Александр Александрийский** (V), **Евсевий** (*Похвальное слово Константину* XV и *Demonstratio Evangelica*) — греч. оригиналы (`ORIGINAL_TEXT_HOLD`, `ARCHIVE_HOLD`);
-   - **Гроций** (1617), **Турретин** (1682, XIV.10–11), **Беза** (1587–1588), **Палама/Кавасила** (PG 150–151) и печатные сканы CO 47:64 / CO 55:310 — полистная сверка печатных изданий (`ORIGINAL_TEXT_HOLD` / `LOCATOR_HOLD`).
+   - **Гроций** (1617), **Турретин** (1682, XIV.10–11), **Беза** (1587–1588), **Палама/Кавасила** (PG 150–151) и печатные сканы CO 47:64–65 / CO 55:310 — полистная сверка печатных изданий (`ORIGINAL_TEXT_HOLD` / `LOCATOR_HOLD`).
    - **Статус публикации:** `PUBLICATION_HOLD` под-корпуса сохраняется без изменений.
