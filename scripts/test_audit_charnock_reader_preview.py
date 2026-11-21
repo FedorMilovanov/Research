@@ -31,9 +31,17 @@ class CharnockReaderProofTests(unittest.TestCase):
         opening = self.body[:1800]
         self.assertIn('DRAFT / RESEARCH_ONLY / PUBLICATION_HOLD', opening)
         self.assertIn('443d6aa94ee9685f7534deace0351931cd2d3c20', opening)
+        self.assertIn('а не SHA действующего полного корпуса', opening)
+        self.assertNotIn('Исходные файлы не изменены', opening)
         for hold in ('ED-02', 'ED-06', 'ED-08'):
             self.assertIn(hold, opening)
         self.assertIn('не разрешение на публикацию', opening)
+
+    def test_navigation_does_not_present_historical_main_as_current(self):
+        navigation = (PREVIEW.parent / 'README.md').read_text(encoding='utf-8')
+        self.assertIn('Историческая инженерная точка сборки, не текущий HEAD', navigation)
+        self.assertNotIn('Текущая инженерная опора:', navigation)
+        self.assertIn('PR #616', navigation)
 
     def test_ten_reader_sections_and_linked_contents(self):
         self.assertEqual(len(self.sections), 10)
