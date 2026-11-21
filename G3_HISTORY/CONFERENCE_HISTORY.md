@@ -52,7 +52,7 @@ The [January 29 session and song list](https://web.archive.org/web/2016060923155
 
 ### 2015 — The Bible is the Word of God
 
-The organizer’s [archived blog index](https://web.archive.org/web/20160209061811id_/http://www.g3conference.com:80/category/g3-blog/) retains the entry *2015 G3 Conference Review* dated 30 January. The [recording catalogue](https://www.gnli.com/titles/2015-G3-Conference-or-G3-Ministries/2910) identifies sessions on inerrancy and exposition. The old `g3min.org/2015-g3-conference-review/` is not here treated as a retrieved full review.
+The [Jan 30 review](https://web.archive.org/web/20160608055505id_/http://www.g3conference.com/2015-g3-conference-review), published under G3 Team and signed by Buice, distinguishes the opening address, speaker reminders, breakouts and handout links. The host’s [event notice](https://legacy.sermonaudio.com/event_details.asp?EventID=pm91914164444) advertised historic Bible editions. Challies refers to the exhibit in the [opening of session 2](https://www.sermonaudio.com/sermons/212152051282/a); he does not identify the volume brought on stage. The notice is not a loan inventory.
 
 #### From the 2014 pulpit to a church-planting appeal
 
@@ -110,7 +110,7 @@ A concrete 2020 wide-audience photograph is now source-pinned in `MEDIA_LEDGER.m
 
 ## Phase 3 — 2021: 6,500 and formal institutional scale
 
-G3’s historical conference index identified this edition as *Christ* (`g3min.org/archives/christ/`). This is a historical route, not a verified live programme. The filing establishes scale, not the content of individual sermons.
+The [September 2020 registration capture](https://web.archive.org/web/20200921040915id_/https://g3conference.com/events/2021-g3-conference/) already says **new dates: Sept 30–Oct 2, 2021**, despite October 14–17 still appearing in the ticket access fields. The [Sept 29 event page](https://web.archive.org/web/20210929213145id_/https://g3min.org/events/g3-2021-christ/) gives the revised dates and downtown Atlanta address, with separate English and Spanish preconference links. The [preserved Christ archive](https://web.archive.org/web/20220809023240id_/https://g3min.org/archives/christ/) lists fourteen numbered main sessions and two panels as well as breakouts; Baucham (#10) is displayed after #14. Catalogue order is not delivery order. [Crotts’s account](https://anchoragegrace.org/gospel-grace-and-glory/), *The Preconference* and *Thursday*, is firsthand evidence for particular sessions, not a full running order.
 
 FY2021 Form 990 program text states that G3:
 

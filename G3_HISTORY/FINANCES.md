@@ -184,7 +184,7 @@ FY2023 raw Part III reports, among other activity:
 - four pastors workshops;
 - a national conference with **8,300 attendees**;
 - launch of G3+;
-- a UK Reformation tour;
+- a seven-day UK Reformation tour (Part III.4a; no tour-specific receipts or participant total);
 - twelve books and one music recording;
 - church-network growth to 211 churches.
 
