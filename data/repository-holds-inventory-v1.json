@@ -76,8 +76,8 @@
     ]
   },
   "totals": {
-    "filesScanned": 3155,
-    "filesWithMentions": 932,
+    "filesScanned": 3156,
+    "filesWithMentions": 933,
     "mentions": {
       "ARCHIVE_HOLD": 1429,
       "BLOCKING-HOLD": 16,
@@ -98,16 +98,16 @@
       "HOLD_MAJOR": 11,
       "HOLD_RETAINED": 1,
       "LIVE-READBACK-HOLD": 4,
-      "LOCATOR_HOLD": 1991,
+      "LOCATOR_HOLD": 1992,
       "PAGE-IMAGE-HOLD": 14,
-      "PUBLICATION_HOLD": 2692,
-      "RIGHTS_HOLD": 1501,
+      "PUBLICATION_HOLD": 2693,
+      "RIGHTS_HOLD": 1502,
       "VERSION-HOLD": 23
     },
     "mentionsByStatus": {
       "closed": 824,
       "open": 2377,
-      "unmarked": 6133
+      "unmarked": 6136
     },
     "canonicalFlagLineStatesRecordedAsBothOpenAndClosed": 406,
     "filesWithJsonHolds": 44,
@@ -243,18 +243,18 @@
       }
     },
     "G3_HISTORY": {
-      "files": 93,
+      "files": 94,
       "mentions": {
         "ARCHIVE_HOLD": 22,
         "EVIDENCE_HOLD": 18,
-        "LOCATOR_HOLD": 2,
-        "PUBLICATION_HOLD": 155,
-        "RIGHTS_HOLD": 18
+        "LOCATOR_HOLD": 3,
+        "PUBLICATION_HOLD": 156,
+        "RIGHTS_HOLD": 19
       },
       "status": {
         "closed": 4,
         "open": 5,
-        "unmarked": 206
+        "unmarked": 209
       }
     },
     "LE_CANON_SUCRE": {
@@ -23322,6 +23322,18 @@
       },
       "status": {
         "unmarked": 1
+      }
+    },
+    {
+      "path": "G3_HISTORY/PRODUCT_HANDOFF_G3_HISTORY_BOUNDED_2026-11-22.md",
+      "corpus": "G3_HISTORY",
+      "mentions": {
+        "LOCATOR_HOLD": 1,
+        "PUBLICATION_HOLD": 1,
+        "RIGHTS_HOLD": 1
+      },
+      "status": {
+        "unmarked": 3
       }
     },
     {
