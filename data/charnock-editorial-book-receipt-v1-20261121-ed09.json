@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "CHARNOCK-ED09-EDITORIAL-17-SOURCE-2026-11-21",
+  "evidenceRole": "scope-limited-supplemental-corpus-custody-not-publication-authority",
+  "sourceGitSha": "209c593fc23bcc32c29bc636b93bcf29d892e725",
+  "sourceBranch": "research/charnock-editorial-qa-w1-20261121",
+  "sourceWorkflowRun": 44945130831,
+  "sourceWorkflowArtifactId": 14723088291,
+  "sourceWorkflowArtifactName": "charnock-full-editorial-book-research-only",
+  "sourceWorkflowOuterZipSha256": "f7eb852c3e49b7dbd5d8600a3cb7cd91d1a3e709f0611e6b7455d4563b1f0f60",
+  "archiveFileName": "charnock-full-editorial-book-209c593fc23b.zip",
+  "archiveFormat": "REPRODUCIBLE_ZIP_WITH_INNER_SOURCE_MANIFEST",
+  "archiveBytes": 1000295,
+  "archiveSha256": "c4f719d5449e028568934ac2ea34a0defaf032ff06c007705aa4560f702e2efe",
+  "sourceManifestSha256": "ed07ba1e0447919676988e21cbd6ab857286cac39712bef989f754cc820fa7a7",
+  "sourceFileCount": 17,
+  "manuscriptCount": 10,
+  "editorialReaderCount": 1,
+  "sourceTotalBytes": 3526392,
+  "perFileVerification": "17/17 ORIGINAL SOURCE SHA256 + GIT BLOB SHA1 + ZIP MEMBER READBACK",
+  "sourceScope": "Ten working manuscripts; full 180-footnote reader; updated reader-preview README; three previous ED06 documents; ED02 collation; canonical series plan. The new ED09 audit and its test are outside these 17 archived members.",
+  "sourceMemberIdentity": {
+    "БИОГРАФИИ/Стивен Чарнок/reader-preview/CHARNOCK_FULL_BOOK_EDITORIAL_READER_2026-11-21.md": {
+      "bytes": 452502,
+      "gitBlobSha1": "245b90b462eb8f59434934e40cd767db7d2f634d",
+      "sha256": "087bae6ca07ad20c5aa51022b42aa6120f3450eb9e8eb9d94e47466b1952146c"
+    },
+    "БИОГРАФИИ/Стивен Чарнок/reader-preview/README.md": {
+      "bytes": 8507,
+      "gitBlobSha1": "51df4a270e26886782c96505f1f1332a9a221653",
+      "sha256": "846b4e3a0981acb9d31570d9bb4fa7c0ac08f67e1bc208c7ad1d41155833b47b"
+    }
+  },
+  "externalFacsimilesIncluded": false,
+  "destinationProvider": "Google Drive",
+  "destinationFolderId": "15iNGKO8rN3vJKPbJuXfPVx4rXHER5Xq2",
+  "destinationObjectId": "1LAZNJj2Zu2huKVoqEgnzoV6HHJ7AN2Py",
+  "destinationFileName": "CHARNOCK_ED09_17_BOOK_QA_PR626_209c593fc23b_2026-11-21.zip",
+  "destinationUrl": "https://drive.google.com/file/d/1LAZNJj2Zu2huKVoqEgnzoV6HHJ7AN2Py/view?usp=drivesdk",
+  "destinationBytesReadback": 1000295,
+  "destinationSha256Readback": "c4f719d5449e028568934ac2ea34a0defaf032ff06c007705aa4560f702e2efe",
+  "sourceDestinationExactByteMatch": true,
+  "verificationMethod": "INDEPENDENT_GITHUB_ACTIONS_ARTIFACT_DOWNLOAD_AND_GOOGLE_DRIVE_RAW_DOWNLOAD_LOCAL_SHA256_AND_BYTE_EQUALITY",
+  "verificationDateUtc": "2026-11-21",
+  "previousReceipt": "data/charnock-editorial-book-receipt-v1-20261121.json",
+  "historicalReceiptsUnmodified": true,
+  "evidenceState": "FULL_EDITORIAL_SOURCE_SNAPSHOT_DURABLE_VERIFIED",
+  "rightsState": "RIGHTS_UNKNOWN",
+  "publicationState": "BLOCKED",
+  "holds": [
+    "EVIDENCE_HOLD",
+    "LOCATOR_HOLD",
+    "RIGHTS_HOLD",
+    "PUBLICATION_HOLD"
+  ],
+  "independentTranslationReview": "0/12; ED09 includes unsigned editorial corrections only",
+  "ed02State": "AWAITING_1684_AND_1699_PRIMARY_MARGINAL_IMAGES",
+  "boundary": "Strictly the exact 17-source selection at sourceGitSha; no claim of intellectual, independent, legal, or publication approval. Next changes to the 17 files require a new versioned archive and readback."
+}
