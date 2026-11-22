@@ -2396,7 +2396,7 @@ S. Escobedo III, «2 Peter 2:1 and Universal Redemption» (сайт Alpha & Omeg
 
 ### 64.3. Источники
 
-- (а) **Текст BKC к 2 Пет. 2:1** — по вторичной дословной цитате: S. Escobedo III, «2 Peter 2:1 and Universal Redemption» (сайт Alpha & Omega Ministries, 2002, ред. 2004), основной текст. В прим. 13 сказано: «This was provided from a secondary source referencing: The Bible Knowledge Commentary»; страница не указана. Цитата: «The focus of their heresies was the sovereign Lord, Christ, whom they denied (cf. Jude 4). …How can these false teachers, who were said to be among the people, and whom the Lord had bought (agorasanta, “redeem”), end up in everlasting destruction? Several suggestions have been offered: (1) They were saved but lost their salvation. But this contradicts many other Scriptures (e.g., John 3:16; 5:24; 10:28-29). (2) “Bought” means the Lord created them, not that He saved them. But this stretches the meaning of agorazo (“redeem”). (3) The false prophets merely said they were “bought” by Christ. This, however, seems to read into the verse. (4) They were “redeemed” in the sense that Christ paid the redemptive price for their salvation, but they did not apply it to themselves and so were not saved. Christ’s death is “sufficient” for all (1 Tim. 2:6; Heb. 2:9; 1 John 2:2), but is “efficient” only for those who believe. This is a strong argument for unlimited atonement (the view that Christ died for everyone) and against limited atonement (the view that Christ died only for those whom He would later save)». Класс C: цитата через посредника, без страницы. Совпадающие пересказы (preceptaustin.org, sharing-bread.com) — тоже класс C.
+- (а) **Текст BKC к 2 Пет. 2:1** — по вторичной дословной цитате: S. Escobedo III, «2 Peter 2:1 and Universal Redemption» (сайт Alpha & Omega Ministries, 2002, ред. 2004), основной текст. В прим. 13 сказано: «This was provided from a secondary source referencing: The Bible Knowledge Commentary»; страница не указана. Цитата: «The focus of their heresies was the sovereign Lord, Christ, whom they denied (cf. Jude 4). …How can these false teachers, who were said to be among the people, and whom the Lord had bought (agorasanta, “redeem”), end up in everlasting destruction? Several suggestions have been offered: (1) They were saved but lost their salvation. But this contradicts many other Scriptures (e.g., John 3:16; 5:24; 10:28-29). (2) “Bought” means the Lord created them, not that He saved them. But this stretches the meaning of agorazo (“redeem”). (3) The false prophets merely said they were “bought” by Christ. This, however, seems to read into the verse. (4) They were “redeemed” in the sense that Christ paid the redemptive price for their salvation, but they did not apply it to themselves and so were not saved. Christ’s death is “sufficient” for all (1 Tim. 2:6; Heb. 2:9; 1 John 2:2), but is “efficient” only for those who believe. This is a strong argument for unlimited atonement (the view that Christ died for everyone) and against limited atonement (the view that Christ died only for those whom He would later save)». Класс C: цитата через посредника, без страницы. *(Уточнение раунда 173, §96: курсив в варианте (4) с пометой «(emphasis mine)» и знак примечания [12] после “sufficient” принадлежат Эскобедо; в выписке они сняты. Прим. 13 называет только редакторов BKC (Walvoord и Zuck), автора раздела — нет; авторство Гангела следует из сн. 55 статьи и из сноски Swindoll (б).)* Совпадающие пересказы (preceptaustin.org, sharing-bread.com) — тоже класс C.
 - (б) **Страница.** C. R. Swindoll, *Conquering through Conflict: A Study of 2 Peter* (Insight for Living, 1990), открытая копия IA `conqueringthroug00char`, p. 24, n. 3: «Kenneth O. Gangel, “2 Peter,” in The Bible Knowledge Commentary, New Testament ed., ed. John F. Walvoord and Roy B. Zuck (Wheaton, Ill.: SP Publications, Victor Books, 1983), p. 869». Сноска стоит при цитате о *pheromenoi* к 2 Пет. 1:21. Класс B: p. 869 — конец толкования гл. 1; 2:1 приходится на следующую страницу.
 - Дата разбора Эскобедо: 2002 (ред. 2004). Дата «2018» в §6, ст. 7, — дата переноса блога; цитата старше.
 
@@ -3581,5 +3581,38 @@ S. Escobedo III, «2 Peter 2:1 and Universal Redemption» (сайт Alpha & Omeg
 ### 95.5. Итог
 
 Вердикты раундов 92 и 142 остаются в силе. Исправлены две мои неточности: число словоформ ἀγοράζω (24 → 23, вывод не меняется) и диапазоны страниц «с. 13–14» (с. 13 у Шрайнера, с. 14 у Грина).
+
+**HOLD:** без изменений против §80.4. Вердикты S1–S5 не меняются. Умысел не утверждается.
+
+## 96. Раунд 173 (2026-11-17): самопроверка раунда 141 (сн. 51 и 55, Гангел, BKC p. 870)
+
+**Повод.** Пользователь: «ПРОДОЛЖАЙ» (в продолжение запроса «перепроверяй себя, чисти мусор и готовь к чистому мержу ветку»).
+
+### 96.1. Ветка
+
+- Песочница снова была сброшена; ветка восстановлена из `origin` (`65feeaa4`). Main не менялся (`389de7b1`), ветка с ним синхронна. Временная папка `google_drive/` после скачивания PDF удалена.
+
+### 96.2. Что сделано заново
+
+- (а) **PDF статьи** (класс A1), sha256 совпадает. Конец с. 12: цитата 2 Пет. 2:1 и «Для того чтобы объяснить это…»; с. 13: «…кажущееся противоречие между искуплением и погибелью, предлагались следующие варианты51», варианты 1–3, Шрайнер (сн. 54), Гангел (сн. 55). Тексты §64.2 совпадают.
+- (б) **Эскобедо** (класс C), страница сайта aomin.org (`/aoblog/reformed-apologetics/…`): дата «October 12, 2002», обновление 17.08.2018, в конце «Revised 8/24/04». Цитата BKC с вариантами (1)–(4) — дословно как в §64.3 (а). Вариант (4) выделен курсивом, после него стоит «(emphasis mine)»; после “sufficient” — знак примечания [12] (замечание самого Эскобедо). Прим. 13: «This was provided from a secondary source referencing: *The Bible Knowledge Commentary* written by John F. Walvoord & Roy B. Zuck».
+- (в) **Swindoll** (класс B), IA `conqueringthroug00char`, `inside.php`: n. 3 «Kenneth O. Gangel, "2 Peter," in The Bible Knowledge Commentary, New Testament ed., ed. John F. Walvoord and Roy B. Zuck (Wheaton, Ill.: SP Publications, Victor Books, 1983), p. 869» и абзац «"Borne along" or "carried along" translates the word *pheromenoi*…» — оба на листе 38. По `page_numbers.json` лист 38 = p. 24.
+
+### 96.3. Сверка
+
+| Вопрос | Что видно теперь | Итог |
+|---|---|---|
+| Текст статьи, «с. 12–13» | Фраза со сн. 51 переходит со с. 12 на с. 13 | **В силе** (A1) |
+| Цитата BKC у Эскобедо, дата 2002 / ред. 2004 | Совпадает | **В силе** (C) |
+| p. 869 = 2 Пет. 1:21 (Swindoll) | p. 24, n. 3, при абзаце о *pheromenoi* | **В силе** (B); p. 870 — `LOCATOR_CONSISTENT` |
+| Перевод сн. 55 | Совпадает с цитатой | **ACCURATE** (C) |
+| Курсив варианта (4) | Это выделение Эскобедо («emphasis mine»); в §64.3 (а) снято без пометы | **Уточнение:** помета добавлена в §64.3 (а) |
+| Кто автор цитаты у Эскобедо | Прим. 13 называет только редакторов BKC | **Уточнение:** авторство Гангела — из сн. 55 статьи и Swindoll; на вердикт не влияет |
+| Пересказ вариантов 1–3 | Кроме снятого «seems to» (вариант 3) статья добавляет: «которые говорят о сохранности спасения» (1), «неоправданно» (2), «заставляя его говорить то, чего он не говорит» (3) | **Мягко**, в рамках `HEDGE_DROPPED`; без кавычек, под общей сн. 51 |
+| p. 870 | Печатный текст не открыт | **HOLD** (без изменений) |
+
+### 96.4. Итог
+
+Вердикты раунда 141 остаются в силе. Добавлены три мягких уточнения: курсив в цитате — Эскобедо; его прим. 13 не называет Гангела; пересказ вариантов 1–3 в статье расширен собственными пояснениями.
 
 **HOLD:** без изменений против §80.4. Вердикты S1–S5 не меняются. Умысел не утверждается.
