@@ -21,8 +21,11 @@ Link states:
   links; not a filesystem locator and therefore not judged here.
 
 Code fences and inline code spans are skipped: a link written inside an example
-block or inside backticks is quoted syntax, not a locator. Images are counted separately (``image``) because a missing image
-is a rendering defect, not a citation one.
+block or inside backticks is quoted syntax, not a locator. Top-level fences
+close only with the same marker and at least the opening run length, followed
+by spaces or tabs. This is not a full Markdown renderer or container parser.
+Images are counted separately (``image``) because a missing image is a rendering
+defect, not a citation one.
 
 Cross-file Markdown fragments of the form ``L12`` or ``L12-L34`` are treated as
 GitHub line-anchor syntax, not headings. This allowance checks neither line
@@ -56,7 +59,7 @@ HEADING_RE = re.compile(r"^#{1,6}\s+(.+?)\s*#*\s*$")
 SLUG_DROP_RE = re.compile(r"[^\w\- \u0400-\u04ff]")
 SCHEME_RE = re.compile(r"^(?:https?|mailto|tel|ftp):", re.IGNORECASE)
 BARE_HOST_RE = re.compile(r"^(?:www\.)?[a-z0-9-]+(?:\.[a-z0-9-]+)+/", re.IGNORECASE)
-FENCE_RE = re.compile(r"^\s{0,3}(```|~~~)")
+FENCE_RE = re.compile(r"^ {0,3}(`{3,}|~{3,})(.*)$")
 INLINE_CODE_RE = re.compile(r"`[^`\n]*`")
 LINE_ANCHOR_RE = re.compile(r"L[1-9][0-9]*(?:-L[1-9][0-9]*)?")
 
@@ -78,19 +81,27 @@ def iter_markdown(root: Path) -> list[Path]:
 def strip_fences(text: str, *, strip_inline_code: bool = True) -> str:
     """Drop fenced code, keeping line count; heading slugs retain inline words."""
     result: list[str] = []
-    inside = False
+    fence = ""
     for line in text.splitlines():
-        if FENCE_RE.match(line):
-            inside = not inside
+        match = FENCE_RE.match(line)
+        if fence:
             result.append("")
+            if (match and match.group(1)[0] == fence[0]
+                    and len(match.group(1)) >= len(fence)
+                    and not match.group(2).strip(" \t")):
+                fence = ""
             continue
+        if match:
+            marker, info = match.groups()
+            # A backtick in a backtick fence's info string makes it ordinary text.
+            if marker[0] == "~" or "`" not in info:
+                fence = marker
+                result.append("")
+                continue
         # inline code is quoted syntax (``[x](y)`` as an example), not a locator:
         # blank only the span so that line numbers and the rest of the line survive
-        if inside:
-            result.append("")
-        else:
-            result.append(INLINE_CODE_RE.sub(lambda m: " " * len(m.group(0)), line)
-                          if strip_inline_code else line)
+        result.append(INLINE_CODE_RE.sub(lambda m: " " * len(m.group(0)), line)
+                      if strip_inline_code else line)
     return "\n".join(result)
 
 

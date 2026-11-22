@@ -365,6 +365,101 @@ class LineAnchorTests(unittest.TestCase):
         self.assertEqual(self.state("../../outside.md#L12"), "outside")
 
 
+class FencedBlockTests(unittest.TestCase):
+    """Top-level fences cannot manufacture anchors or hide later real links."""
+
+    def setUp(self) -> None:
+        self.fx = Fixture()
+
+    def tearDown(self) -> None:
+        self.fx.close()
+
+    def findings(self, text: str) -> list[tuple[int, str]]:
+        self.fx.write("docs/page.md", text)
+        return [(row["line"], row["target"]) for row in self.fx.scan()["findings"]]
+
+    def test_shorter_backticks_do_not_manufacture_a_heading(self) -> None:
+        target = self.fx.write("docs/target.md",
+                               "````markdown\n```\n## Ghost\n```\n````\n## Reader `scope`\n")
+        page = self.fx.write("docs/page.md", "")
+        self.assertEqual(arl.anchors_of(target), {"reader-scope"})
+        self.assertEqual(arl.classify("target.md#ghost", page, self.fx.root)[0], "missing-anchor")
+        self.assertEqual(arl.classify("target.md#reader-scope", page, self.fx.root)[0], "resolves")
+
+    def test_other_marker_neither_exposes_example_nor_hides_real_link(self) -> None:
+        for marker, other in (("```", "~~~"), ("~~~", "```")):
+            with self.subTest(marker=marker):
+                text = f"{marker}text\n{other}\n[example](not-real.md)\n{marker}\n[real](gone.md)\n"
+                self.assertEqual(self.findings(text), [(5, "gone.md")])
+
+    def test_closing_marker_with_text_is_still_code(self) -> None:
+        for marker in ("```", "~~~"):
+            for tail in (" text", "\u00a0", " `not whitespace`"):
+                with self.subTest(marker=marker, tail=tail):
+                    text = f"{marker}\n{marker}{tail}\n[example](not-real.md)\n{marker}\n[real](gone.md)\n"
+                    self.assertEqual(self.findings(text), [(5, "gone.md")])
+
+    def test_closer_must_match_or_exceed_opening_length(self) -> None:
+        for marker in ("`", "~"):
+            for width in (3, 4, 5):
+                for indent in ("", " ", "  ", "   "):
+                    with self.subTest(marker=marker, width=width, indent=indent):
+                        text = (f"{indent}{marker * width}text\n{marker * (width - 1)}\n"
+                                f"[example](not-real.md)\n{indent}{marker * (width + 1)} \t\n"
+                                "[real](gone.md)\n")
+                        self.assertEqual(self.findings(text), [(5, "gone.md")])
+
+    def test_backtick_info_string_cannot_contain_a_backtick(self) -> None:
+        for opener in ("```lang `invalid", "````lang ```", "```lang```"):
+            with self.subTest(opener=opener):
+                self.assertEqual(self.findings(opener + "\n[real](gone.md)\n"), [(2, "gone.md")])
+
+    def test_tilde_info_string_can_contain_backticks(self) -> None:
+        text = "~~~lang `allowed`\n[example](not-real.md)\n~~~\n[real](gone.md)\n"
+        self.assertEqual(self.findings(text), [(4, "gone.md")])
+
+    def test_tab_or_nonspace_prefix_does_not_open_a_top_level_fence(self) -> None:
+        for prefix in ("\t", " \t", "\u00a0", "    "):
+            with self.subTest(prefix=prefix):
+                self.assertEqual(self.findings(prefix + "```text\n[real](gone.md)\n"),
+                                 [(2, "gone.md")])
+
+    def test_unterminated_fence_hides_examples_through_end_of_file(self) -> None:
+        for opener, not_closer in (("````text", "```"), ("```text", "~~~"),
+                                   ("~~~~text", "~~~"), ("~~~text", "```")):
+            with self.subTest(opener=opener, not_closer=not_closer):
+                text = f"# Real\n{opener}\n{not_closer}\n## Ghost\n[example](gone.md)\n"
+                target = self.fx.write("docs/target.md", text)
+                self.fx.write("docs/page.md", "")
+                self.assertEqual(arl.anchors_of(target), {"real"})
+                self.assertEqual(self.fx.scan()["findings"], [])
+
+    def test_shorter_fence_cannot_manufacture_an_html_anchor(self) -> None:
+        target = self.fx.write("docs/target.md",
+                               '````html\n```\n<a id="ghost"></a>\n```\n````\n<a id="real"></a>\n')
+        page = self.fx.write("docs/page.md", "")
+        self.assertEqual(arl.anchors_of(target), {"real"})
+        self.assertEqual(arl.classify("target.md#ghost", page, self.fx.root)[0], "missing-anchor")
+        self.assertEqual(arl.classify("target.md#real", page, self.fx.root)[0], "resolves")
+
+    def test_strict_cli_rejects_quoted_heading_without_writes(self) -> None:
+        self.fx.write("docs/target.md", "````md\n```\n## Ghost\n```\n````\n")
+        self.fx.write("docs/page.md", "[reader](target.md#ghost)\n")
+        before = {p.relative_to(self.fx.root): (p.read_bytes(), p.stat().st_mode,
+                                               p.stat().st_mtime_ns)
+                  for p in self.fx.root.rglob("*") if p.is_file()}
+        out, err = io.StringIO(), io.StringIO()
+        with redirect_stdout(out), redirect_stderr(err):
+            code = arl.main(["--root", str(self.fx.root), "--strict", "--summary"])
+        after = {p.relative_to(self.fx.root): (p.read_bytes(), p.stat().st_mode,
+                                              p.stat().st_mtime_ns)
+                 for p in self.fx.root.rglob("*") if p.is_file()}
+        self.assertEqual(before, after)
+        self.assertEqual(code, 1)
+        self.assertIn("missing-anchor=1", out.getvalue())
+        self.assertIn("1 unexplained dead locators", err.getvalue())
+
+
 class InterfaceTests(unittest.TestCase):
     def setUp(self) -> None:
         self.fx = Fixture()
