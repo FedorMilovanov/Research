@@ -2140,7 +2140,7 @@ Wayback Machine, страница `www.gracechurch.org/about/doctrinal-statement
 | Часть сн. 9 | Что у Уайта | Вердикт |
 |---|---|---|
 | Ответ Гессгусену как довод за ограниченное искупление у Кальвина | «Calvin's statement in response to Heshusius is especially telling: „I should like to know how the wicked can eat the flesh of Christ which was not crucified for them…“» — перед колонтитулом «256» | **ACCURATE.** Уайт — пример противоположного прочтения, и статья подаёт его именно так («см., напр.») |
-| Комментарий на 1 Ин. 2:2 | «under the world ‚all‘ [in 1 John 2:2] he does not include the reprobate…» — в том же разделе, непосредственно перед «…interpretation. Calvin's statement in response to Heshusius» (стык не доказан) | **ACCURATE**; страница — p. 255 или p. 254 (`INFERRED`) |
+| Комментарий на 1 Ин. 2:2 | «under the world ‚all‘ [in 1 John 2:2] he does not include the reprobate…» — в том же разделе, перед «…interpretation. Calvin's statement in response to Heshusius» (стык не доказан) *(раунд 179, §102: не «непосредственно» — между ними блок о Гейслере, Ин. 17:9 и Мф. 1:21 / Ин. 15:13 / Тит. 2:14; слово «interpretation» относится к этому блоку)* | **ACCURATE**; страница — p. 255 или p. 254 (`INFERRED`) |
 | Комментарий на 1 Тим. 2:4 | В указателе Писания: с. 169, 257, 259, а не 255 | Довод у Уайта есть, но на соседних страницах. «Напр.» смягчает; пометки нет |
 | Локатор «P. 255» | Отрывок о Гессгусене и 1 Ин. 2:2 стоит перед колонтитулом «256» | **`LOCATOR_VERIFIED`** для печати 2000 г. (граница 254/255 не видна) |
 | «Основные доводы… связаны с» тремя местами | Уайт добавляет и другие доводы: употребление Кальвином слов «reconciliation», «redemption», «propitiation», учение об избрании, мёртвость человека в грехе, ходатайство Христа. За более полным обзором он отсылает к статье Николя (*WTJ* 47, 1985) | **`SOURCE_SAYS_MORE`** (мягко). Для сноски-примера это допустимо: статья отсылает к Аллену за подробным разбором |
@@ -2149,6 +2149,8 @@ Wayback Machine, страница `www.gracechurch.org/about/doctrinal-statement
 **Поправки к корпусу.**
 1. HOLD «White, p. 255 (сн. 9)» (§14, §56–§57; `34_` §4.174 и §4.175 «Чего нет») снят в части текста.
 2. `06_` §9: то, что статья связывает 1 Ин. 2:2, 1 Тим. 2:4 и ответ Гессгусену в один пучок доводов, подтверждено для Уайта как представителя другой стороны. Два из трёх мест — на p. 255 или рядом с ней. Оценка `06_` §9 по существу (смысл фразы из ответа Гессгусену) не меняется.
+
+*(Самопроверка раунда 179, §102: абзац о Гессгусене перед колонтитулом «256» и `LOCATOR_VERIFIED` в силе. Между разбором 1 Ин. 2:2 и абзацем о Гессгусене восстановлен целый блок текста, поэтому разбор 1 Ин. 2:2 может стоять на p. 254 — оценка «p. 255 или p. 254» сдвигается к неопределённой. Печати 2005 г. Open Library не знает.)*
 
 **Сводка §58.**
 - **Снято:** HOLD по сн. 9 (White, p. 255), в части текста (A2, печать 2000 г.).
@@ -3761,3 +3763,34 @@ S. Escobedo III, «2 Peter 2:1 and Universal Redemption» (сайт Alpha & Omeg
 Вердикты раунда 136 остаются в силе. Сноска 17 теперь подтверждена не только по английскому оригиналу, но и по тексту русского перевода, на который она ссылается. Пометка добавлена в §59.
 
 **HOLD:** с. 312 русского издания (как в §59); против §80.4 без изменений. Вердикты S1–S5 не меняются. Умысел не утверждается.
+
+## 102. Раунд 179 (2026-11-17): самопроверка раунда 135 (сн. 9, White, *The Potter's Freedom*, p. 255)
+
+**Повод.** Пользователь: «ПРОДОЛЖАЙ» (в продолжение запроса «перепроверяй себя, чисти мусор и готовь к чистому мержу ветку»).
+
+### 102.1. Что сделано заново
+
+- (а) **PDF статьи** (класс A1): с. 3, сн. 9 — как в §58 («A Defence…», «Calvary Press Publishing, 2005. P. 255»). С. 4: «…как показывает и название его трактата – «О причащении плоти и крови»».
+- (б) **Open Library `search/inside.json`** по книге `pottersfreedomde0000whit` (класс A2). Цепочка от разбора 1 Ин. 2:2 к абзацу о Гессгусене:
+  1. «…include the reprobate, but refers to all who would believe and those who were scat- tered through various regions of the earth.” This is the key affirmation! Here Calvin completely contradicts Dr. Geisler’s interpretation. In fact, as we will see below, CBF identifies the idea expressed by Calvin (and earlier by Augustine) as “an obvious case of eisegesis (reading into the text)” that “does…»
+  2. [стык не сомкнут]
+  3. «…indiscriminate call of the gospel.” This is seen throughout Calvin’s writings, even in the passage cited above regarding John 17:9. / “There are in Scripture as well as in Calvin passages where the particular intent of Christ’s death is stressed.” These include Matthew 1:21, John 15:13, Titus 2:14, etc., where Calvin’s comments provide a particular, not universal, interpretation. / Calvin’s statement in response to Heshusius is especially telling…»
+- (в) **Каталоги** (класс B1): метаданные IA — «2000», «343 p. ; 22 cm», ISBN 1879737434; Open Library, работа OL8507340W — изд. 2000 г. (343 p.) и запись «2009» при том же скане. Печати 2005 г. нет. `inside.php` по этой книге не отвечает.
+
+### 102.2. Сверка
+
+| Вопрос | Что видно теперь | Итог |
+|---|---|---|
+| Текст статьи | Совпадает | **В силе** |
+| Гессгусен на p. 255 | Перед колонтитулом «256» | **`LOCATOR_VERIFIED`**, ACCURATE — в силе |
+| 1 Ин. 2:2 «непосредственно перед» Гессгусеном (§58, таблица) | Между ними блок: «key affirmation», «eisegesis», Ин. 17:9, Мф. 1:21 / Ин. 15:13 / Тит. 2:14; «interpretation» — из этого блока | **Поправка.** Не «непосредственно»; разбор 1 Ин. 2:2 может быть на p. 254. `INFERRED` остаётся, оценка — неопределённая |
+| Полнота | Ещё три места у Уайта на той же странице | `SOURCE_SAYS_MORE` (мягко) — подкреплён |
+| Печать 2005 г. | В каталогах нет; скан — 2000 г. | Вероятно, допечатка; ошибкой не считается |
+| «Переписка» | Статья на с. 4 сама пишет «трактат» | `IMPRECISE_TERM` (мягко) — в силе |
+| «A Defence» | У Уайта «A Defense» | Мелочь, без пометки |
+
+### 102.3. Итог
+
+Вердикт раунда 135 по сноске (`LOCATOR_VERIFIED`, ACCURATE) остаётся в силе. Одно моё утверждение в таблице §58 («непосредственно перед») оказалось неточным и исправлено пометкой на месте. Вывод о странице разбора 1 Ин. 2:2 ослаблен.
+
+**HOLD:** печать 2005 г. и изображения страниц (как в §58); против §80.4 без изменений. Вердикты S1–S5 не меняются. Умысел не утверждается.
