@@ -85,6 +85,12 @@ jobs:
           GILL_PRODUCT_REPO: ../Product
         run: python3 scripts/validate_repository_authority_integrity.py
 
+      - name: Guard relative-link locator regressions
+        working-directory: Research
+        # Offline fixtures test the audit, not the cleanliness of the full link
+        # inventory. Findings and exact exceptions must not be waived by this gate.
+        run: python3 -B -m unittest discover -s scripts -p 'test_audit_relative_links.py' -v
+
       - name: Guard Reformation evidence on every pull request
         working-directory: Research
         run: |

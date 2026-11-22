@@ -9,6 +9,8 @@ newly dead link.
 """
 from __future__ import annotations
 
+from contextlib import redirect_stderr, redirect_stdout
+import io
 import json
 import tempfile
 import unittest
@@ -278,6 +280,89 @@ class SectionAnchorTests(unittest.TestCase):
         self.assertEqual(
             arl.normalise_anchor(arl.slugify("See [`x`](x.md) now")), "see-now"
         )
+
+
+class LineAnchorTests(unittest.TestCase):
+    """Only complete GitHub line tokens may bypass the heading lookup."""
+
+    def setUp(self) -> None:
+        self.fx = Fixture()
+        self.fx.write("docs/target.md", "## Proof\n")
+        self.page = self.fx.write("docs/page.md", "")
+
+    def tearDown(self) -> None:
+        self.fx.close()
+
+    def state(self, link: str) -> str:
+        return arl.classify(link, self.page, self.fx.root)[0]
+
+    def strict(self, link: str) -> tuple[int, str, str]:
+        self.fx.write("docs/page.md", f"[t]({link})\n")
+        before = {p.relative_to(self.fx.root): (p.read_bytes(), p.stat().st_mtime_ns,
+                                               p.stat().st_mode)
+                  for p in self.fx.root.rglob("*") if p.is_file()}
+        out, err = io.StringIO(), io.StringIO()
+        with redirect_stdout(out), redirect_stderr(err):
+            code = arl.main(["--root", str(self.fx.root), "--strict"])
+        after = {p.relative_to(self.fx.root): (p.read_bytes(), p.stat().st_mtime_ns,
+                                              p.stat().st_mode)
+                 for p in self.fx.root.rglob("*") if p.is_file()}
+        self.assertEqual(before, after, "the audit must not repair or rewrite a locator")
+        return code, out.getvalue(), err.getvalue()
+
+    def test_line_prefix_alone_does_not_exempt_a_missing_heading(self) -> None:
+        for fragment in ("L", "LostAnchor", "L12suffix", "L12-typo", "L0", "L01",
+                         "L1-L", "L1-L0", "L1-L02", "L1-L2-extra", "L１", "L1-L٢"):
+            with self.subTest(fragment=fragment):
+                self.assertEqual(self.state(f"target.md#{fragment}"), "missing-anchor")
+
+    def test_complete_ascii_line_tokens_and_url_encoding_keep_the_allowance(self) -> None:
+        for fragment in ("L1", "L12", "L12-L34", "%4C12%2D%4C34"):
+            with self.subTest(fragment=fragment):
+                state, reason = arl.classify(f"target.md#{fragment}", self.page, self.fx.root)
+                self.assertEqual(state, "resolves")
+                self.assertIn("line bounds not checked", reason)
+
+    def test_real_L_named_heading_or_html_anchor_still_resolves(self) -> None:
+        for text, fragment in (("## Library\n", "Library"),
+                               ('<a id="L12suffix"></a>\n', "L12suffix")):
+            with self.subTest(fragment=fragment):
+                self.fx.write("docs/target.md", text)
+                self.assertEqual(self.state(f"target.md#{fragment}"), "resolves")
+
+    def test_line_typo_is_counted_as_a_defect_and_unresolved_fragment(self) -> None:
+        self.fx.write("docs/page.md", "[yes](target.md#L12)\n[no](target.md#L12suffix)\n")
+        report = self.fx.scan()
+        self.assertEqual(report["totals"]["byState"]["resolves"], 1)
+        self.assertEqual(report["totals"]["byState"]["missing-anchor"], 1)
+        self.assertEqual(report["totals"]["unexplained"], 1)
+        self.assertEqual(report["totals"]["fragments"]["unresolved"], 1)
+        self.assertEqual(report["findings"][0]["line"], 2)
+
+    def test_an_exception_for_another_target_cannot_waive_a_line_typo(self) -> None:
+        self.fx.write("docs/page.md", "[no](target.md#LostAnchor)\n")
+        report = self.fx.scan({("docs/page.md", "target.md#L12"): "unrelated target"})
+        self.assertEqual(report["totals"]["explained"], 0)
+        self.assertEqual(report["totals"]["unexplained"], 1)
+        self.assertEqual(report["findings"][0]["target"], "target.md#LostAnchor")
+
+    def test_strict_cli_rejects_unknown_L_fragment_without_writes(self) -> None:
+        code, out, err = self.strict("target.md#LostAnchor")
+        self.assertEqual(code, 1)
+        self.assertIn("missing-anchor=1", out)
+        self.assertIn("1 unexplained dead locators", err)
+
+    def test_strict_cli_accepts_supported_line_syntax_without_writes(self) -> None:
+        code, out, err = self.strict("target.md#L12-L34")
+        self.assertEqual(code, 0)
+        self.assertIn("resolves=1", out)
+        self.assertEqual(err, "")
+
+    def test_valid_line_token_does_not_hide_a_missing_file(self) -> None:
+        self.assertEqual(self.state("gone.md#L12"), "missing")
+
+    def test_valid_line_token_does_not_hide_an_escape_from_the_repository(self) -> None:
+        self.assertEqual(self.state("../../outside.md#L12"), "outside")
 
 
 class InterfaceTests(unittest.TestCase):

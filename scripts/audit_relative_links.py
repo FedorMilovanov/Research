@@ -24,6 +24,11 @@ Code fences and inline code spans are skipped: a link written inside an example
 block or inside backticks is quoted syntax, not a locator. Images are counted separately (``image``) because a missing image
 is a rendering defect, not a citation one.
 
+Cross-file Markdown fragments of the form ``L12`` or ``L12-L34`` are treated as
+GitHub line-anchor syntax, not headings. This allowance checks neither line
+bounds nor the GitHub view mode; it must not exempt arbitrary names beginning
+with ``L`` from the heading check.
+
 Usage::
 
     python3 scripts/audit_relative_links.py --summary
@@ -53,6 +58,7 @@ SCHEME_RE = re.compile(r"^(?:https?|mailto|tel|ftp):", re.IGNORECASE)
 BARE_HOST_RE = re.compile(r"^(?:www\.)?[a-z0-9-]+(?:\.[a-z0-9-]+)+/", re.IGNORECASE)
 FENCE_RE = re.compile(r"^\s{0,3}(```|~~~)")
 INLINE_CODE_RE = re.compile(r"`[^`\n]*`")
+LINE_ANCHOR_RE = re.compile(r"L[1-9][0-9]*(?:-L[1-9][0-9]*)?")
 
 SKIP_DIRS = {".git", "node_modules", ".arena", ".cache", ".local", "__pycache__",
              ".pytest_cache", ".ruff_cache", ".venv", "venv", ".mypy_cache"}
@@ -188,7 +194,9 @@ def classify(raw: str, source: Path, root: Path, anchor_cache: dict[Path, set[st
                 cache[resolved] = anchors
             wanted = normalise_anchor(fragment)
             known = {normalise_anchor(a) for a in anchors}
-            if wanted not in known and not fragment.startswith("L"):
+            if wanted not in known:
+                if LINE_ANCHOR_RE.fullmatch(fragment):
+                    return "resolves", "GitHub line-anchor syntax; line bounds not checked"
                 return "missing-anchor", "no such heading in target"
         return "resolves", "ok"
     if (root / path_part).exists():
