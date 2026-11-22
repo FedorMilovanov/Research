@@ -76,13 +76,13 @@
     ]
   },
   "totals": {
-    "filesScanned": 3150,
-    "filesWithMentions": 925,
+    "filesScanned": 3154,
+    "filesWithMentions": 929,
     "mentions": {
-      "ARCHIVE_HOLD": 1425,
+      "ARCHIVE_HOLD": 1426,
       "BLOCKING-HOLD": 16,
       "BOOK-FULLTEXT-HOLD": 15,
-      "EVIDENCE_HOLD": 1311,
+      "EVIDENCE_HOLD": 1312,
       "HOLD-APPARATUS": 1,
       "HOLD-AS": 3,
       "HOLD-GLOSS": 1,
@@ -98,16 +98,16 @@
       "HOLD_MAJOR": 11,
       "HOLD_RETAINED": 1,
       "LIVE-READBACK-HOLD": 4,
-      "LOCATOR_HOLD": 1990,
+      "LOCATOR_HOLD": 1991,
       "PAGE-IMAGE-HOLD": 14,
-      "PUBLICATION_HOLD": 2682,
-      "RIGHTS_HOLD": 1491,
+      "PUBLICATION_HOLD": 2689,
+      "RIGHTS_HOLD": 1498,
       "VERSION-HOLD": 23
     },
     "mentionsByStatus": {
       "closed": 824,
-      "open": 2375,
-      "unmarked": 6106
+      "open": 2377,
+      "unmarked": 6121
     },
     "canonicalFlagLineStatesRecordedAsBothOpenAndClosed": 406,
     "filesWithJsonHolds": 44,
@@ -356,43 +356,43 @@
       }
     },
     "data": {
-      "files": 24,
+      "files": 25,
       "mentions": {
         "ARCHIVE_HOLD": 8,
         "EVIDENCE_HOLD": 11,
         "HOLD_MAJOR": 3,
         "LOCATOR_HOLD": 27,
-        "PUBLICATION_HOLD": 30,
-        "RIGHTS_HOLD": 14
+        "PUBLICATION_HOLD": 31,
+        "RIGHTS_HOLD": 15
       },
       "status": {
         "closed": 10,
         "open": 11,
-        "unmarked": 75
+        "unmarked": 77
       }
     },
     "docs": {
-      "files": 99,
+      "files": 100,
       "mentions": {
         "ARCHIVE_HOLD": 541,
         "EVIDENCE_HOLD": 437,
         "LOCATOR_HOLD": 333,
-        "PUBLICATION_HOLD": 1042,
-        "RIGHTS_HOLD": 566
+        "PUBLICATION_HOLD": 1044,
+        "RIGHTS_HOLD": 568
       },
       "status": {
         "closed": 247,
-        "open": 1111,
-        "unmarked": 1707
+        "open": 1113,
+        "unmarked": 1709
       }
     },
     "scripts": {
-      "files": 50,
+      "files": 52,
       "mentions": {
-        "ARCHIVE_HOLD": 49,
+        "ARCHIVE_HOLD": 50,
         "BLOCKING-HOLD": 4,
         "BOOK-FULLTEXT-HOLD": 1,
-        "EVIDENCE_HOLD": 55,
+        "EVIDENCE_HOLD": 56,
         "HOLD-APPARATUS": 1,
         "HOLD-AS": 1,
         "HOLD-GLOSS": 1,
@@ -408,16 +408,16 @@
         "HOLD_MAJOR": 1,
         "HOLD_RETAINED": 1,
         "LIVE-READBACK-HOLD": 1,
-        "LOCATOR_HOLD": 24,
+        "LOCATOR_HOLD": 25,
         "PAGE-IMAGE-HOLD": 2,
-        "PUBLICATION_HOLD": 120,
-        "RIGHTS_HOLD": 53,
+        "PUBLICATION_HOLD": 124,
+        "RIGHTS_HOLD": 57,
         "VERSION-HOLD": 4
       },
       "status": {
         "closed": 7,
         "open": 14,
-        "unmarked": 282
+        "unmarked": 293
       }
     },
     "БАПТИСТЫ РОССИИ": {
@@ -26229,6 +26229,17 @@
       }
     },
     {
+      "path": "data/rights-determination-matrix-2026-11-18.json",
+      "corpus": "data",
+      "mentions": {
+        "PUBLICATION_HOLD": 1,
+        "RIGHTS_HOLD": 1
+      },
+      "status": {
+        "unmarked": 2
+      }
+    },
+    {
       "path": "docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md",
       "corpus": "docs",
       "mentions": {
@@ -26247,10 +26258,11 @@
       "corpus": "docs",
       "mentions": {
         "EVIDENCE_HOLD": 1,
-        "PUBLICATION_HOLD": 1,
-        "RIGHTS_HOLD": 1
+        "PUBLICATION_HOLD": 2,
+        "RIGHTS_HOLD": 2
       },
       "status": {
+        "open": 2,
         "unmarked": 3
       }
     },
@@ -26739,6 +26751,17 @@
       "status": {
         "open": 7,
         "unmarked": 10
+      }
+    },
+    {
+      "path": "docs/research/holds/RIGHTS_DETERMINATION_MATRIX_2026-11-18.md",
+      "corpus": "docs",
+      "mentions": {
+        "PUBLICATION_HOLD": 1,
+        "RIGHTS_HOLD": 1
+      },
+      "status": {
+        "unmarked": 2
       }
     },
     {
@@ -27851,6 +27874,20 @@
       }
     },
     {
+      "path": "scripts/render_rights_matrix.py",
+      "corpus": "scripts",
+      "mentions": {
+        "ARCHIVE_HOLD": 1,
+        "EVIDENCE_HOLD": 1,
+        "LOCATOR_HOLD": 1,
+        "PUBLICATION_HOLD": 3,
+        "RIGHTS_HOLD": 3
+      },
+      "status": {
+        "unmarked": 9
+      }
+    },
+    {
       "path": "scripts/run_atonement_mutation_battery.py",
       "corpus": "scripts",
       "mentions": {
@@ -27990,6 +28027,17 @@
       },
       "status": {
         "unmarked": 10
+      }
+    },
+    {
+      "path": "scripts/test_render_rights_matrix.py",
+      "corpus": "scripts",
+      "mentions": {
+        "PUBLICATION_HOLD": 1,
+        "RIGHTS_HOLD": 1
+      },
+      "status": {
+        "unmarked": 2
       }
     },
     {

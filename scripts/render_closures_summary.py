@@ -66,6 +66,7 @@ METHOD_NAMES = {
     "pinned-commit-subdataset-terms-audit": "карта условий поднаборов закреплённого коммита",
     "fresh-shallow-clone-refspec-fixture": "восстановление ветки в свежем shallow-clone fixture",
     "superseded-by-durable-custody-gate": "замещение устаревшего снимка канонической custody-квитанцией",
+    "proposal-only-rights-matrix-gate": "проверка proposal-only матрицы прав по текущим реестрам",
     "section-anchor-slug-check": "сверка якорей по заголовкам раздела",
     "google-drive-server-metadata-read": "чтение серверных метаданных Drive",
 }

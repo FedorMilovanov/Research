@@ -16,7 +16,7 @@ GitHub API для точного head #621 перечисляет 50 путей:
 
 Полное scratch-слияние #621 в актуальный `main` после #584 не является даже текстово бесконфликтным: ровно два конфликта — `ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json` и `ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json`. После сохранения актуальных версий этих двух производных JSON и пересъёма командой `atonement_reshoot_state.py --write` проверка `--check` и 230 тестов `test_atonement_sync.py` проходят. Это доказывает способ механического разрешения, но не принимает спорную исходную прозу #621.
 
-**Актуальное решение:** три узких среза приняты отдельными closures: STEPBible subdataset terms (`HCR-2026-11-18-32`), точная official-core квитанция вместе с независимо написанным полным гейтом (`HCR-2026-11-18-33`) и исправленный shallow-clone runbook с fresh-clone fixture (`HCR-2026-11-18-34`). Actions-custody пакет получил окончательный disposition `REJECTED / SUPERSEDED` в `HCR-2026-11-18-36`: ни один из трёх путей не импортирован. Два исходных official-core prose-файла #621 не приняты; шесть прочих пакетов остаются `HOLD`. Wholesale merge #621 по-прежнему запрещён.
+**Актуальное решение:** три узких среза приняты отдельными closures: STEPBible subdataset terms (`HCR-2026-11-18-32`), точная official-core квитанция вместе с независимо написанным полным гейтом (`HCR-2026-11-18-33`) и исправленный shallow-clone runbook с fresh-clone fixture (`HCR-2026-11-18-34`). Actions-custody пакет получил окончательный disposition `REJECTED / SUPERSEDED` в `HCR-2026-11-18-36`: ни один из трёх путей не импортирован. Два исходных official-core prose-файла #621 не приняты; rights matrix принята только после отделения от inventory и boundary-ремонта (`HCR-2026-11-18-38`); пять прочих пакетов остаются `HOLD`. Wholesale merge #621 по-прежнему запрещён.
 
 ## 2. Пакеты 32 новых путей
 
@@ -26,7 +26,7 @@ GitHub API для точного head #621 перечисляет 50 путей:
 | Actions artifact custody | 3 | Снимок #621 устарел и не подтверждает байтовый readback. Актуальный main уже содержит bounded assessment 38 G3 items, отдельную квитанцию private readback 8/8 и канонический durable manifest; `validate_g3_durable_custody.py` = PASS | G3 custody owner | **REJECTED / SUPERSEDED в HCR-36**; 0 путей импортировано, полный archive остаётся HOLD |
 | Corpus/Drive custody и пары зеркал | 8 | Датированный Drive-снимок, текущие corpus/index JSON и изменённые валидаторы #621. `--cross` на актуальном дереве: 12/13 расходятся | custody owner + владельцы корпусов | **HOLD** |
 | Official-core reproducibility | 3 | Точная data-квитанция принята; независимо добавлен полный offline/`--archive`/`--fetch` гейт. Все три ZIP повторно скачаны по полным commit SHA, размеры и SHA-256 совпали. Два prose-файла #621 не переносились | #584, read-only evidence | **PARTIAL ADMIT выполнен в HCR-33:** data receipt + новый локальный gate; исходная проза остаётся **HOLD** |
-| Rights proposal | 3 | `render_rights_matrix.py --check` проходит, но импортирует не принятый `render_hold_inventory.py`; это предложение, а не authority | #584 | **HOLD** до отделения от непринятого inventory-слоя |
+| Rights proposal | 3 | HCR-38: exact 22-ID set повторно совпал с current corpus records; checker переписан без зависимости от `render_hold_inventory.py`, contradictory network boundary исправлена, prose пересобрана | #584 | **ADMIT после ремонта как `PROPOSAL_NOT_AUTHORITY`**; ни один rights/publication HOLD не снят |
 | HOLD inventory / triage / orchestration | 9 | Производные снимки и документы уже stale; общий раннер падает на inventory, numbers и mirror cross | #584 | **HOLD** |
 | Russian Baptists Drive custody note | 1 | Зависит от четырёх изменённых RBA-файлов и датированных Drive identifiers/readback | RBA custody owner | **HOLD** |
 | SUNO DBNL slug map | 1 | Сам по себе не обновляет реестр; требуются пять пересекающихся путей, принадлежащих #585, и разрешение по record IDs | #585 | **HOLD** |
@@ -117,6 +117,8 @@ Fresh local fixture не использует сеть и не меняет ра
 - `data/rights-determination-matrix-2026-11-18.json`
 - `docs/research/holds/RIGHTS_DETERMINATION_MATRIX_2026-11-18.md`
 - `scripts/render_rights_matrix.py`
+
+**Disposition HCR-38: ADMIT только после ремонта.** Data сохраняет роль `PROPOSAL_NOT_AUTHORITY` и исходные даты. Противоречивая граница «только api.github.com» исправлена: зафиксированные archive.org metadata названы датированными наблюдениями, а не текущим сетевым ответом. Source script не принят verbatim: dependency на отклонённый `render_hold_inventory.py` удалена; новый checker напрямую выводит exact 22-ID set из current corpus JSON, сверяет source path / `recordedRightsState` / `recordedHolds`, запрещает поля с правовым или публикационным эффектом и защищён негативными тестами. Markdown пересобран из repaired data. Ни один corpus record, `rightsState`, `RIGHTS_HOLD`, `PUBLICATION_HOLD` или `PROMOTE=0` не изменён.
 
 **HOLD inventory / triage / orchestration (9):**
 

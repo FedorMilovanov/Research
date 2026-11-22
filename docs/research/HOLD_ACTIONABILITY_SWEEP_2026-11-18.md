@@ -8,7 +8,7 @@
 
 В глобальной карте остаются пять открытых осей. Агент может самостоятельно закрывать только проверяемую машинную неопределённость и узкие источниковые долги, для которых уже есть доступный объект. Нельзя самостоятельно закрыть права, подписать Research → Product handoff, сыграть роль независимого рецензента или объявить старое зеркало актуальным.
 
-В этом проходе сделаны девять безопасных шагов:
+В этом проходе сделаны десять безопасных шагов:
 
 1. три нетипизированных употребления `HOLD` / `FORBIDDEN` прочитаны по record key и исходной строке; неоднозначных *непрочитанных* употреблений теперь нет, но corpus SSOT не переписан;
 2. проект коррекции `G3-PUB-015` включён в G3 integrity gate: гейт защищает две даты, source/claim IDs, состояние `NOT_SIGNED`, supersession старого вывода и сохранение трёх HOLD. Подпись владельца этим не подменяется;
@@ -19,6 +19,7 @@
 7. после интеграции current main новый ED-09 архив Чарнока воспроизведён из точного source Git SHA: все source bytes, inner manifest и deterministic ZIP совпали с durable-квитанцией, а текущие Drive metadata совпали по object ID, размеру и server SHA-256. Независимая проверка переводов, права и публикация не закрыты.
 8. устаревший Actions-custody пакет #621 получил окончательный disposition `REJECTED / SUPERSEDED`: его три пути не импортированы и не создают параллельный SSOT. Для bounded G3 cohort каноническими остаются assessment 38 items и exact receipt только для 8 original ZIP; остальные 30 прямо остаются несохранёнными, а права и публикация заблокированы.
 9. после интеграции main два новых corpus-specific значения в Charnock ED-02 receipt получили контекстное proposal-only соответствие: `ED02_LOCATOR_HOLD` → `LOCATOR_HOLD`, `ED06_INDEPENDENT_REVIEW_HOLD` → `EVIDENCE_HOLD`. Receipt не переписан, review остаётся `0/12`, а vocabulary gate снова воспроизводится.
+10. rights matrix #621 принята только после ремонта: exact proposal set снова совпал с current corpus records, runtime dependency на отклонённый inventory удалена, contradictory network boundary исправлена и защищена тестами. Матрица остаётся `PROPOSAL_NOT_AUTHORITY`; права, публикация и corpus SSOT не изменены.
 
 ## 1. Пять глобальных открытых осей
 
@@ -69,9 +70,10 @@ SSOT не переписан: `data/hold-value-mapping-proposal-v1.json` ост�
 4. **Shallow-clone recovery note — выполнено как HCR-34.** Исходный документ не принят буквально: fetch без destination refspec заменён явным `refs/heads/$branch:refs/remotes/origin/$branch`, добавлены отказ для detached/неизвестной цели и аварийная копия tracked/untracked байтов. Локальный fixture создаёт fresh depth-1 single-branch clone и проверяет, что `reset --mixed` оставляет настоящую рабочую правку поверх точной remote-верхушки.
 5. **Charnock ED-09 durable snapshot — выполнено как HCR-35.** `scripts/check_charnock_editorial_receipt.py --git-source` побайтово пересобирает ограниченный 17-source ZIP из точного Git commit и сверяет квитанцию; offline-режим и негативные тесты включены в CI. Это обновляет custody только для exact snapshot и не подменяет independent review, rights или publication authority.
 6. **Actions custody из #621 — disposition закрыт как HCR-36.** Три dated source paths не импортированы. Их G3-часть замещена exact assessment и canonical 8-object receipt; гейт защищает IDs, bytes, digests, no-repack и обязательные HOLD. Это не объявляет сохранёнными остальные 30 items и весь Actions archive.
-7. **Primary-source microbatch:** если владелец назовёт 1–3 конкретных locator/page HOLD, можно проверить их до конца и зафиксировать узкое отрицательное или положительное решение. Массовое «закрыть все источники» не воспроизводимо.
-8. **Чарнок Drive mirror:** могу подготовить загрузочный manifest и последующий readback, но саму запись в Drive следует делать только после прямого разрешения на эти три текущих файла.
-9. **Vocabulary intake current main — выполнено как HCR-37; migration остаётся owner-blocked.** Два новых Charnock labels покрыты в `PROPOSAL_ONLY` mapping без переписывания receipt. Field-by-field patch возможен только для выбранного corpus owner; глобальная автоматическая замена запрещена, потому что одинаковое слово `HOLD` уже имеет разные контекстные значения.
+7. **Rights matrix из #621 — выполнено после ремонта как HCR-38.** Proposal-only список сверяется с current registries без параллельного inventory SSOT; датированные metadata не выдаются за current response. Это triage для владельца, а не rightsBasis, permission или снятие HOLD.
+8. **Primary-source microbatch:** если владелец назовёт 1–3 конкретных locator/page HOLD, можно проверить их до конца и зафиксировать узкое отрицательное или положительное решение. Массовое «закрыть все источники» не воспроизводимо.
+9. **Чарнок Drive mirror:** могу подготовить загрузочный manifest и последующий readback, но саму запись в Drive следует делать только после прямого разрешения на эти три текущих файла.
+10. **Vocabulary intake current main — выполнено как HCR-37; migration остаётся owner-blocked.** Два новых Charnock labels покрыты в `PROPOSAL_ONLY` mapping без переписывания receipt. Field-by-field patch возможен только для выбранного corpus owner; глобальная автоматическая замена запрещена, потому что одинаковое слово `HOLD` уже имеет разные контекстные значения.
 
 ## 5. Жёсткие границы
 

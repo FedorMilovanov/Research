@@ -1277,6 +1277,40 @@
         "PUBLICATION_HOLD"
       ],
       "residualReason": "Снята только машинная неопределённость двух написаний. Расхождение ED-02 1682 p.84–85 остаётся unresolved; independentTranslationReview остаётся 0/12, и агент не объявляется независимым рецензентом. Receipt продолжает хранить исходные labels, rightsState=RIGHTS_UNKNOWN, publicationState=BLOCKED; PROMOTE остаётся 0."
+    },
+    {
+      "id": "HCR-2026-11-18-38",
+      "title": "Rights matrix #621 отделена от отклонённого inventory и принята только как proposal-only triage",
+      "holdType": "EVIDENCE_HOLD",
+      "previousState": "Трёхфайловый rights-пакет #621 оставался HOLD: checker импортировал непринятый render_hold_inventory.py, source boundary одновременно отрицал archive.org access и сохранял archive.org metadata observations, а generated prose не имела независимого current-registry gate",
+      "closedScope": "Точный proposal-набор повторно выведен из текущих corpus JSON и по-прежнему содержит 22 record IDs с совпадающими source path, recordedRightsState и recordedHolds. Checker теперь напрямую читает current registries, запрещает authority/rights/publication-effect fields, защищает исходные даты внешних наблюдений и явную границу «не текущий сетевой ответ»; противоречивая boundary исправлена, prose пересобрана, негативные тесты и CI добавлены",
+      "recordLocations": [
+        "data/rights-determination-matrix-2026-11-18.json",
+        "docs/research/holds/RIGHTS_DETERMINATION_MATRIX_2026-11-18.md",
+        "scripts/render_rights_matrix.py",
+        "scripts/test_render_rights_matrix.py",
+        "docs/research/PR621_SELECTIVE_INTEGRATION_CROSSWALK_2026-11-18.md §2",
+        "docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md §4"
+      ],
+      "method": "proposal-only-rights-matrix-gate",
+      "objects": [
+        {
+          "sourcePrDataBlob": "b0db75788cf59c0041ae7f937e752820b3533d54",
+          "sourcePrScriptBlob": "7c2edc72ce7cc5bc421f4d046aa2b3369cc976d9",
+          "sourcePrProseBlob": "e552c3155757ea821824c859f6b259462503dea3",
+          "currentDataSha256": "1a11fcb4a8fef762b7256275ebc1f21094e4fde6cfd6af9b3e5f2bd1a50bd575",
+          "currentSelectionEntries": 22,
+          "sourceDataBoundaryRepaired": true,
+          "sourceScriptImportedVerbatim": false,
+          "sourceProseRegenerated": true,
+          "role": "PROPOSAL_NOT_AUTHORITY"
+        }
+      ],
+      "residualHolds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "residualReason": "Закрыта только воспроизводимость rights-triage proposal. Матрица не является юридическим заключением, не устанавливает срок охраны по юрисдикции, не даёт rightsBasis или permission, не меняет corpus records и не снимает ни один HOLD. Датированные GitHub/archive.org observations не представлены как current network response. Решение владельца и переписка с правообладателями остаются; PROMOTE остаётся 0."
     }
   ],
   "confirmations": [
