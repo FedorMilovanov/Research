@@ -2335,7 +2335,7 @@ Wayback Machine, страница `www.gracechurch.org/about/doctrinal-statement
 - (б) обзорный абзац: «…they denied the Lord Jesus Christ by both their behavior and teaching, despite the fact that **as their master he bought them and made them his servants**. When Peter thought of denying the Lord, he considered the penalty that comes from such denial—swift destruction. In vv…»;
 - (в) разбор: «…the phrase “even denying the sovereign Lord who bought them.” The NIV captures precisely the meaning of kai by translating it “even.”¹¹ The Greek word despotēs is not the usual one for “Lord,” and again the NIV’s rendering is» — на этом страница кончается, дальше в OCR идут подстрочные примечания («See especially J. H. Neyrey, 2 Peter…»). Рядом стоят примечания «Rightly Bauckham, Jude, 2 Peter, 239» и «So Bauckham, Jude, 2 Peter, 239; D. G. Horrell…».
 
-**Пробел OCR.** Следующих страниц в индексе нет. Пять характерных выражений из дословной цитаты pp. 331–332 (63.3) дают в этой книге 0 совпадений: «described the false teachers as believers», «judgment of charity», «wolves in the flock», «thorny ground», «phenomenological». Толкования 2:2 в индексе тоже нет: выражение «shameful ways» находится только в переводе перикопы. Поэтому 0 совпадений по словам статьи («pagans who», «shed his blood», «as Master», «death on the cross», «his slaves») доводом против не служат: в индексе нет самих страниц. Попутно: «atoning death», «price» и «part of the church» в доступном OCR встречаются только в толковании 1 Петра.
+**Пробел OCR.** Следующих страниц в индексе нет. *(Уточнение раунда 174, §97: в метаданных IA у этого экземпляра стоит примечание «Inherent missing pages 329-534». Значит, пробел — физический дефект экземпляра, и начинается он с той самой p. 329, на которую ссылается статья. Верхняя граница «534» буквально невозможна: в книге 512 с., а толкование Иуды 4 в индексе есть. Точный диапазон неизвестен.)* Пять характерных выражений из дословной цитаты pp. 331–332 (63.3) дают в этой книге 0 совпадений: «described the false teachers as believers», «judgment of charity», «wolves in the flock», «thorny ground», «phenomenological». Толкования 2:2 в индексе тоже нет: выражение «shameful ways» находится только в переводе перикопы. Поэтому 0 совпадений по словам статьи («pagans who», «shed his blood», «as Master», «death on the cross», «his slaves») доводом против не служат: в индексе нет самих страниц. Попутно: «atoning death», «price» и «part of the church» в доступном OCR встречаются только в толковании 1 Петра.
 
 ### 63.3. Вторичный свидетель для pp. 331–332 (класс B: дословная цитата с локатором)
 
@@ -3616,3 +3616,34 @@ S. Escobedo III, «2 Peter 2:1 and Universal Redemption» (сайт Alpha & Omeg
 Вердикты раунда 141 остаются в силе. Добавлены три мягких уточнения: курсив в цитате — Эскобедо; его прим. 13 не называет Гангела; пересказ вариантов 1–3 в статье расширен собственными пояснениями.
 
 **HOLD:** без изменений против §80.4. Вердикты S1–S5 не меняются. Умысел не утверждается.
+
+## 97. Раунд 174 (2026-11-17): самопроверка раунда 140 (сн. 54, Шрайнер, NAC 37, p. 329)
+
+**Повод.** Пользователь: «ПРОДОЛЖАЙ» (в продолжение запроса «перепроверяй себя, чисти мусор и готовь к чистому мержу ветку»).
+
+### 97.1. Ветка
+
+- Песочница снова была сброшена; ветка восстановлена из `origin` (`d0d3c374`). Main не менялся (`389de7b1`), ветка с ним синхронна.
+
+### 97.2. Что сделано заново
+
+- (а) **Open Library `search/inside.json`** (класс B1): «as their master he bought them» — одно совпадение, `12peterjude0000schr`: «…and teaching, despite the fact that as their master he bought them and made them his servants. When Peter». «captures precisely the meaning» + despotes — тот же экземпляр: «The NIV captures precisely the meaning of kai by translating it “even.” The Greek word despotés is not». «christology of jude» + despotes — тот же экземпляр, толкование Иуды 4. Поле `page_num` во всех ответах — 530.
+- (б) **Метаданные IA** экземпляра `12peterjude0000schr` (класс B): «512 p. ; 24 cm», imagecount 530, доступ ограничен, примечание **«Inherent missing pages 329-534»**. Файл `page_numbers.json` закрыт.
+- (в) **Эскобедо** (aomin.org): прим. 39 — цитата NAC «pages 331-332» дословно как в §63.3 (в оригинале «judgement of charity»); основной текст — слова Чанга с прим. 25 «Andrew Chang, *Second Peter 2:1 and the Extent of the Atonement*, 54-55».
+
+### 97.3. Сверка
+
+| Вопрос | Что видно теперь | Итог |
+|---|---|---|
+| Фраза 1 (ядро «as their master he bought them… his servants») | Найдена снова | **В силе**: `WORDING_PARTIAL` |
+| Почему нет фраз 2–4 и pp. 331–332 | Метаданные: «Inherent missing pages 329-534». Страниц начиная с p. 329 в скане нет; «534» буквально невозможно (512 с.; Иуда 4 в индексе есть) | **Уточнение:** не пробел индексации, а дефект экземпляра. Помечено в §63.2 и `34_` §4.223 |
+| p. 329 | Начало отсутствующих страниц; видимый текст обрывается на «rendering is» | `LOCATOR_PLAUSIBLE` (класс C) в силе; **HOLD** |
+| Вывод на pp. 331–332 (Эскобедо, прим. 39) | Совпадает | `CONTEXT_OMITTED` (класс B) в силе |
+| Слова Чанга (прим. 25) | Совпадают; Шрайнеру не принадлежат | **В силе** |
+| `page_num` в ответах индекса | Всегда 530 = imagecount | Справка: номер страницы попадания из него не выводится |
+
+### 97.4. Итог
+
+Вердикты раунда 140 остаются в силе. Уточнено объяснение пробела: в доступном экземпляре NAC 2003, по метаданным IA, нет страниц начиная с p. 329, то есть именно со страницы, которую называет статья. Поэтому p. 329 и фразы 2–4 на этом экземпляре проверить нельзя в принципе; ноль совпадений по ним ничего не доказывает.
+
+**HOLD:** без изменений против §80.4 (Шрайнер, печатная p. 329 и фразы 2–4). Вердикты S1–S5 не меняются. Умысел не утверждается.
