@@ -105,6 +105,7 @@ class CharnockReaderProofTests(unittest.TestCase):
         chapter = self.body[
             self.sections[7].start():self.sections[8].start()
         ]
+        self.assertIn('| Пастырский вопрос | Сочинение и издание | Объём изученного текста |', chapter)
         self.assertIn('| Откуда вражда к Богу? |', chapter)
         self.assertIn('34 абзаца, печатные с. 6–12', chapter)
         self.assertIn('| Для чего помнить Пятое ноября? |', chapter)
