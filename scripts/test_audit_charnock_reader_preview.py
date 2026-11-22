@@ -118,6 +118,19 @@ class CharnockReaderProofTests(unittest.TestCase):
             chapter,
         )
 
+    def test_manuscripts_and_reader_have_no_invisible_or_mixed_script_typos(self):
+        """Catch invisible soft hyphens and Cyrillic/Latin homoglyphs in prose."""
+        invisible = re.compile(r'[\u00ad\u200b\u200c\u200d\u2060\ufeff]')
+        mixed_word = re.compile(r'(?:[A-Za-z][А-Яа-яЁё]|[А-Яа-яЁё][A-Za-z])')
+        texts = [(str(PREVIEW), self.body)]
+        for name in MANUSCRIPTS:
+            path = ROOT / MANUSCRIPT_DIR / name
+            texts.append((name, path.read_text(encoding='utf-8')))
+        for name, text in texts:
+            with self.subTest(file=name):
+                self.assertIsNone(invisible.search(text), name)
+                self.assertIsNone(mixed_word.search(text), name)
+
     def test_no_duplicate_horizontal_rules_between_chapters(self):
         self.assertNotRegex(self.body, r'(?m)^---[ \t]*\n\s*---[ \t]*$')
 
