@@ -205,6 +205,11 @@ class ProseClaimTests(unittest.TestCase):
         for name in ("holds-array-files-in-section-2", "json-holds-files", "json-holds-values"):
             self.assertEqual(found[name]["state"], "stale", name)
 
+    def test_vocabulary_spelling_claim_accepts_singular_inflection(self) -> None:
+        self.fx.write_json(claims.PROPOSAL, {"counts": {"spellings": 41}})
+        found = self.prose("из них **136 (41 написание)** — неканонические флаги.\n")
+        self.assertEqual(found["hold-vocabulary-spellings"]["state"], "match")
+
 
 class SliceRegistryTests(unittest.TestCase):
     """Every generated block is declared once, and an unknown name is not silently skipped."""

@@ -76,13 +76,13 @@
     ]
   },
   "totals": {
-    "filesScanned": 3148,
-    "filesWithMentions": 924,
+    "filesScanned": 3150,
+    "filesWithMentions": 925,
     "mentions": {
-      "ARCHIVE_HOLD": 1424,
+      "ARCHIVE_HOLD": 1425,
       "BLOCKING-HOLD": 16,
       "BOOK-FULLTEXT-HOLD": 15,
-      "EVIDENCE_HOLD": 1307,
+      "EVIDENCE_HOLD": 1311,
       "HOLD-APPARATUS": 1,
       "HOLD-AS": 3,
       "HOLD-GLOSS": 1,
@@ -98,19 +98,19 @@
       "HOLD_MAJOR": 11,
       "HOLD_RETAINED": 1,
       "LIVE-READBACK-HOLD": 4,
-      "LOCATOR_HOLD": 1987,
+      "LOCATOR_HOLD": 1990,
       "PAGE-IMAGE-HOLD": 14,
-      "PUBLICATION_HOLD": 2676,
-      "RIGHTS_HOLD": 1488,
+      "PUBLICATION_HOLD": 2682,
+      "RIGHTS_HOLD": 1491,
       "VERSION-HOLD": 23
     },
     "mentionsByStatus": {
       "closed": 824,
-      "open": 2369,
-      "unmarked": 6095
+      "open": 2375,
+      "unmarked": 6106
     },
     "canonicalFlagLineStatesRecordedAsBothOpenAndClosed": 406,
-    "filesWithJsonHolds": 43,
+    "filesWithJsonHolds": 44,
     "jsonHoldsValues": {
       "APPARATUS_FALSE_FRIEND": 1,
       "ARCHIVE_HOLD": 1345,
@@ -121,6 +121,8 @@
       "CONTEXT_HOLD": 1,
       "DATE_HOLD": 1,
       "DRAFT / PUBLICATION_HOLD": 2,
+      "ED02_LOCATOR_HOLD": 1,
+      "ED06_INDEPENDENT_REVIEW_HOLD": 1,
       "EDITION_HOLD": 5,
       "EDITION_UNAVAILABLE": 2,
       "EVIDENCE_HOLD": 1118,
@@ -145,19 +147,19 @@
       "PARTIAL_VERIFICATION": 4,
       "PERMISSION_REQUIRED": 1,
       "PRIVATE_STUDY_ONLY": 13,
-      "PUBLICATION_HOLD": 1969,
+      "PUBLICATION_HOLD": 1970,
       "QUOTE_RISK": 6,
       "RECONCILIATION_HOLD": 2,
       "RESEARCH / NOT PRODUCT": 1,
       "RESEARCH / NOT PUBLICATION-READY": 1,
       "RESOLVED-BY-TEXT": 1,
-      "RIGHTS_HOLD": 1360,
+      "RIGHTS_HOLD": 1361,
       "RIGHTS_HOLD + PUBLICATION_HOLD": 1,
       "RIGHTS_UNCLEAR": 1,
       "RIGHTS_UNKNOWN": 3,
       "TEXT_ACCESS_HOLD": 1
     },
-    "jsonHoldsTotal": 6164
+    "jsonHoldsTotal": 6168
   },
   "byCorpus": {
     ".github": {
@@ -241,18 +243,18 @@
       }
     },
     "G3_HISTORY": {
-      "files": 92,
+      "files": 93,
       "mentions": {
-        "ARCHIVE_HOLD": 21,
-        "EVIDENCE_HOLD": 16,
+        "ARCHIVE_HOLD": 22,
+        "EVIDENCE_HOLD": 18,
         "LOCATOR_HOLD": 2,
-        "PUBLICATION_HOLD": 151,
-        "RIGHTS_HOLD": 16
+        "PUBLICATION_HOLD": 155,
+        "RIGHTS_HOLD": 18
       },
       "status": {
         "closed": 4,
         "open": 5,
-        "unmarked": 197
+        "unmarked": 206
       }
     },
     "LE_CANON_SUCRE": {
@@ -373,15 +375,15 @@
       "files": 99,
       "mentions": {
         "ARCHIVE_HOLD": 541,
-        "EVIDENCE_HOLD": 435,
-        "LOCATOR_HOLD": 332,
+        "EVIDENCE_HOLD": 437,
+        "LOCATOR_HOLD": 333,
         "PUBLICATION_HOLD": 1042,
         "RIGHTS_HOLD": 566
       },
       "status": {
         "closed": 247,
-        "open": 1109,
-        "unmarked": 1706
+        "open": 1111,
+        "unmarked": 1707
       }
     },
     "scripts": {
@@ -408,14 +410,14 @@
         "LIVE-READBACK-HOLD": 1,
         "LOCATOR_HOLD": 24,
         "PAGE-IMAGE-HOLD": 2,
-        "PUBLICATION_HOLD": 119,
+        "PUBLICATION_HOLD": 120,
         "RIGHTS_HOLD": 53,
         "VERSION-HOLD": 4
       },
       "status": {
         "closed": 7,
         "open": 14,
-        "unmarked": 281
+        "unmarked": 282
       }
     },
     "БАПТИСТЫ РОССИИ": {
@@ -437,13 +439,13 @@
       "mentions": {
         "ARCHIVE_HOLD": 300,
         "EVIDENCE_HOLD": 76,
-        "LOCATOR_HOLD": 432,
-        "PUBLICATION_HOLD": 367,
-        "RIGHTS_HOLD": 221
+        "LOCATOR_HOLD": 434,
+        "PUBLICATION_HOLD": 368,
+        "RIGHTS_HOLD": 222
       },
       "status": {
         "closed": 110,
-        "open": 405,
+        "open": 409,
         "unmarked": 929
       }
     },
@@ -5265,6 +5267,16 @@
       "values": [
         "EVIDENCE_HOLD",
         "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "path": "data/charnock-editorial-book-receipt-v1-20261122-ed02-1699.json",
+      "pointer": "/holds",
+      "values": [
+        "ED02_LOCATOR_HOLD",
+        "ED06_INDEPENDENT_REVIEW_HOLD",
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ]
@@ -23442,6 +23454,19 @@
       }
     },
     {
+      "path": "G3_HISTORY/tools/test_validate_g3_durable_custody.py",
+      "corpus": "G3_HISTORY",
+      "mentions": {
+        "ARCHIVE_HOLD": 1,
+        "EVIDENCE_HOLD": 1,
+        "PUBLICATION_HOLD": 3,
+        "RIGHTS_HOLD": 1
+      },
+      "status": {
+        "unmarked": 6
+      }
+    },
+    {
       "path": "G3_HISTORY/tools/validate_g3_corpus_integrity.py",
       "corpus": "G3_HISTORY",
       "mentions": {
@@ -23457,12 +23482,12 @@
       "path": "G3_HISTORY/tools/validate_g3_durable_custody.py",
       "corpus": "G3_HISTORY",
       "mentions": {
-        "EVIDENCE_HOLD": 1,
-        "PUBLICATION_HOLD": 3,
-        "RIGHTS_HOLD": 1
+        "EVIDENCE_HOLD": 2,
+        "PUBLICATION_HOLD": 4,
+        "RIGHTS_HOLD": 2
       },
       "status": {
-        "unmarked": 5
+        "unmarked": 8
       }
     },
     {
@@ -26207,11 +26232,13 @@
       "path": "docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md",
       "corpus": "docs",
       "mentions": {
+        "EVIDENCE_HOLD": 1,
+        "LOCATOR_HOLD": 1,
         "PUBLICATION_HOLD": 4,
         "RIGHTS_HOLD": 2
       },
       "status": {
-        "open": 2,
+        "open": 4,
         "unmarked": 4
       }
     },
@@ -26219,11 +26246,12 @@
       "path": "docs/research/PR621_SELECTIVE_INTEGRATION_CROSSWALK_2026-11-18.md",
       "corpus": "docs",
       "mentions": {
+        "EVIDENCE_HOLD": 1,
         "PUBLICATION_HOLD": 1,
         "RIGHTS_HOLD": 1
       },
       "status": {
-        "unmarked": 2
+        "unmarked": 3
       }
     },
     {
@@ -27863,11 +27891,11 @@
       "path": "scripts/test_audit_charnock_editorial_w1.py",
       "corpus": "scripts",
       "mentions": {
-        "PUBLICATION_HOLD": 4,
+        "PUBLICATION_HOLD": 5,
         "RIGHTS_HOLD": 1
       },
       "status": {
-        "unmarked": 5
+        "unmarked": 6
       }
     },
     {
@@ -28712,13 +28740,13 @@
       "path": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED02_LINGENDES_84_87_TO_CHARNOCK_621_ALIGNMENT_2026-11-18.md",
       "corpus": "БИОГРАФИИ",
       "mentions": {
-        "LOCATOR_HOLD": 6,
-        "PUBLICATION_HOLD": 3,
-        "RIGHTS_HOLD": 4
+        "LOCATOR_HOLD": 8,
+        "PUBLICATION_HOLD": 4,
+        "RIGHTS_HOLD": 5
       },
       "status": {
         "closed": 3,
-        "open": 6,
+        "open": 10,
         "unmarked": 7
       }
     },

@@ -6,6 +6,7 @@ import hashlib
 import json
 import re
 import sys
+from collections import Counter
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[2]
@@ -15,6 +16,7 @@ SOURCE_LEDGER = G3 / "SOURCE_LEDGER.md"
 CUSTODY_POLICY = REPO / "data" / "artifact-custody-policy-v2.json"
 PRESERVATION_SOURCE_MANIFEST = G3 / "G3_ACTIONS_PRESERVATION_SOURCE_MANIFEST_2026-11-21.json"
 PRESERVATION_RECEIPT = G3 / "G3_ACTIONS_PRESERVATION_CUSTODY_RECEIPT_2026-11-21.json"
+EXPIRY_COHORT_ASSESSMENT = G3 / "G3_ACTIONS_2026-11-24_EXPIRY_COHORT_ASSESSMENT_2026-11-21.md"
 SHA256_RE = re.compile(r"^[0-9a-f]{64}$")
 SOURCE_ID_RE = re.compile(r"^G3-S\d{3}$")
 
@@ -53,6 +55,82 @@ def load_json(path: Path, label: str, errors: list[str]) -> object | None:
     except Exception as exc:
         errors.append(f"unreadable {label}: {exc}")
         return None
+
+
+def validate_actions_assessment_text(text: str, receipt_ids: set[int], errors: list[str]) -> int:
+    """Validate the bounded 38-item assessment against the exact receipt scope.
+
+    The Markdown is a dated metadata record, not a live API response. This gate
+    protects its internal boundary: exactly eight IDs are covered by the byte
+    receipt and exactly thirty separately enumerated IDs remain unpreserved.
+    """
+    result_match = re.search(r"^## Result\s*$([\s\S]*?)^## Separate disposition", text, flags=re.M)
+    table_match = re.search(
+        r"^## Unpreserved G3 entries in the bounded cohort\s*$([\s\S]*?)^## Boundary retained",
+        text,
+        flags=re.M,
+    )
+    boundary_match = re.search(r"^## Boundary retained\s*$([\s\S]*)", text, flags=re.M)
+    if not result_match or not table_match or not boundary_match:
+        errors.append("G3 Actions expiry assessment lost a required bounded-assessment section")
+        return 0
+
+    result = result_match.group(1)
+    covered_match = re.search(r"covers exactly `8`[\s\S]*?IDs `([0-9, ]+)`", result)
+    if not covered_match:
+        errors.append("G3 Actions expiry assessment does not enumerate the eight receipt-covered IDs")
+        covered_ids: set[int] = set()
+    else:
+        covered_ids = {int(value.strip()) for value in covered_match.group(1).split(",")}
+    if covered_ids != receipt_ids:
+        errors.append("G3 Actions expiry assessment covered IDs differ from the exact custody receipt")
+
+    row_re = re.compile(
+        r"^\|\s*([^|]+?)\s*\|\s*`(\d+)`\s*\|\s*`(g3-[^`]+)`\s*\|",
+        flags=re.M,
+    )
+    rows = row_re.findall(table_match.group(1))
+    unpreserved_ids = [int(artifact_id) for _, artifact_id, _ in rows]
+    unique_unpreserved_ids = set(unpreserved_ids)
+    if len(rows) != 30 or len(unique_unpreserved_ids) != 30:
+        errors.append("G3 Actions expiry assessment must enumerate exactly 30 unique unpreserved artifacts")
+    overlap = receipt_ids & unique_unpreserved_ids
+    if overlap:
+        errors.append(
+            "G3 Actions expiry assessment marks receipt-covered IDs unpreserved: "
+            + ", ".join(str(value) for value in sorted(overlap))
+        )
+    if len(receipt_ids | unique_unpreserved_ids) != 38:
+        errors.append("G3 Actions expiry assessment no longer partitions the exact 38-item bounded cohort")
+
+    expected_categories = {
+        "IRS raw-acquisition output": 8,
+        "Wayback board output": 4,
+        "Buck supporting-media output": 4,
+        "Buck individual-media output": 14,
+    }
+    categories = Counter(category.strip() for category, _, _ in rows)
+    if categories != expected_categories:
+        errors.append(f"G3 Actions unpreserved category counts drift: {dict(categories)!r}")
+
+    if "remaining `30`" not in result or "not thereby preserved" not in result:
+        errors.append("G3 Actions expiry assessment lost its explicit 30-item non-preservation statement")
+    if "NOT_PRESERVED_BY_8_OF_8_RECEIPT" not in text:
+        errors.append("G3 Actions expiry assessment lost its non-preservation status")
+    boundary = boundary_match.group(1)
+    for required in ("PUBLICATION_HOLD", "RIGHTS_HOLD", "EVIDENCE_HOLD", "CATALOG_ONLY"):
+        if required not in boundary:
+            errors.append(f"G3 Actions expiry assessment boundary lost {required}")
+    return len(unique_unpreserved_ids)
+
+
+def validate_actions_assessment(receipt_ids: set[int], errors: list[str]) -> int:
+    try:
+        text = EXPIRY_COHORT_ASSESSMENT.read_text(encoding="utf-8")
+    except Exception as exc:
+        errors.append(f"unreadable G3 Actions expiry assessment: {exc}")
+        return 0
+    return validate_actions_assessment_text(text, receipt_ids, errors)
 
 
 def validate_actions_preservation(data: dict, receipts: list[object], errors: list[str]) -> int:
@@ -238,6 +316,8 @@ def validate_actions_preservation(data: dict, receipts: list[object], errors: li
                 or receipt_set.get("sourceManifestSha256") != source_digest
                 or receipt_set.get("receiptRepositoryPath") != str(PRESERVATION_RECEIPT.relative_to(REPO))):
             errors.append("supplemental G3 Actions receipt-set register fields drift")
+
+    validate_actions_assessment(set(receipt_by_id), errors)
     return len(receipt_by_id)
 
 

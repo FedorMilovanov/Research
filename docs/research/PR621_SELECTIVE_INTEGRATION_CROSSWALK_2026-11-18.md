@@ -16,14 +16,14 @@ GitHub API для точного head #621 перечисляет 50 путей:
 
 Полное scratch-слияние #621 в актуальный `main` после #584 не является даже текстово бесконфликтным: ровно два конфликта — `ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json` и `ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json`. После сохранения актуальных версий этих двух производных JSON и пересъёма командой `atonement_reshoot_state.py --write` проверка `--check` и 230 тестов `test_atonement_sync.py` проходят. Это доказывает способ механического разрешения, но не принимает спорную исходную прозу #621.
 
-**Актуальное решение:** три узких среза приняты отдельными closures: STEPBible subdataset terms (`HCR-2026-11-18-32`), точная official-core квитанция вместе с независимо написанным полным гейтом (`HCR-2026-11-18-33`) и исправленный shallow-clone runbook с fresh-clone fixture (`HCR-2026-11-18-34`). Два исходных official-core prose-файла #621 не приняты; семь прочих пакетов остаются `HOLD`. Wholesale merge #621 по-прежнему запрещён.
+**Актуальное решение:** три узких среза приняты отдельными closures: STEPBible subdataset terms (`HCR-2026-11-18-32`), точная official-core квитанция вместе с независимо написанным полным гейтом (`HCR-2026-11-18-33`) и исправленный shallow-clone runbook с fresh-clone fixture (`HCR-2026-11-18-34`). Actions-custody пакет получил окончательный disposition `REJECTED / SUPERSEDED` в `HCR-2026-11-18-36`: ни один из трёх путей не импортирован. Два исходных official-core prose-файла #621 не приняты; шесть прочих пакетов остаются `HOLD`. Wholesale merge #621 по-прежнему запрещён.
 
 ## 2. Пакеты 32 новых путей
 
 | Пакет | Путей | Зависимости и проверка на актуальном дереве | Владелец | Решение |
 |---|---:|---|---|---|
 | STEPBible subdataset terms | 2 | Только stdlib и закреплённый ZIP. `--check` = 0; ZIP заново скачан по pinned commit, размер и SHA-256 совпали; генерация дала JSON, структурно равный закоммиченному | #584, read-only rights evidence | **ADMIT выполнен в HCR-32**; rights/publication HOLD сохранены |
-| Actions artifact custody | 3 | Снимок #621 устарел и не подтверждает байтовый readback. Актуальный main уже содержит bounded assessment 38 G3 items, отдельную квитанцию private readback 8/8 и канонический durable manifest; `validate_g3_durable_custody.py` = PASS | G3 custody owner | **HOLD**, не дублировать текущий main |
+| Actions artifact custody | 3 | Снимок #621 устарел и не подтверждает байтовый readback. Актуальный main уже содержит bounded assessment 38 G3 items, отдельную квитанцию private readback 8/8 и канонический durable manifest; `validate_g3_durable_custody.py` = PASS | G3 custody owner | **REJECTED / SUPERSEDED в HCR-36**; 0 путей импортировано, полный archive остаётся HOLD |
 | Corpus/Drive custody и пары зеркал | 8 | Датированный Drive-снимок, текущие corpus/index JSON и изменённые валидаторы #621. `--cross` на актуальном дереве: 12/13 расходятся | custody owner + владельцы корпусов | **HOLD** |
 | Official-core reproducibility | 3 | Точная data-квитанция принята; независимо добавлен полный offline/`--archive`/`--fetch` гейт. Все три ZIP повторно скачаны по полным commit SHA, размеры и SHA-256 совпали. Два prose-файла #621 не переносились | #584, read-only evidence | **PARTIAL ADMIT выполнен в HCR-33:** data receipt + новый локальный gate; исходная проза остаётся **HOLD** |
 | Rights proposal | 3 | `render_rights_matrix.py --check` проходит, но импортирует не принятый `render_hold_inventory.py`; это предложение, а не authority | #584 | **HOLD** до отделения от непринятого inventory-слоя |
@@ -91,7 +91,9 @@ Fresh local fixture не использует сеть и не меняет ра
 - `data/artifact-custody-snapshot-2026-11-18.json`
 - `docs/research/holds/ARTIFACT_CUSTODY_SNAPSHOT_2026-11-18.md`
 
-Актуальная замена уже находится в main: `G3_HISTORY/G3_ACTIONS_2026-11-24_EXPIRY_COHORT_ASSESSMENT_2026-11-21.md` отделяет 8 сохранённых объектов от 30 несохранённых; `G3_ACTIONS_PRESERVATION_CUSTODY_RECEIPT_2026-11-21.json` имеет статус `ACQUIRED_DURABLE_8_OF_8_PRIVATE_DRIVE_READBACK_VERIFIED`. Это закрывает старые комментарии о восьми приоритетных artifacts, но не объявляет сохранёнными остальные 30 и не снимает `PUBLICATION_HOLD`/`RIGHTS_HOLD`.
+**Окончательный disposition (HCR-36): `REJECTED / SUPERSEDED`; `sourcePathsImported=0`.** Быстро меняющиеся totals и expiry старого snapshot не принимаются как current authority и параллельный SSOT не создаётся. Актуальная замена в main разделяет exact bounded cohort: `G3_HISTORY/G3_ACTIONS_2026-11-24_EXPIRY_COHORT_ASSESSMENT_2026-11-21.md` отмечает 8 сохранённых объектов и 30 объектов, не сохранённых этой квитанцией. Только 8 перечисленных original ZIP (`2 807 235` bytes) покрыты canonical source manifest, private Drive raw-readback receipt и `DURABLE_CUSTODY_MANIFEST.json`; `G3_ACTIONS_PRESERVATION_CUSTODY_RECEIPT_2026-11-21.json` имеет статус `ACQUIRED_DURABLE_8_OF_8_PRIVATE_DRIVE_READBACK_VERIFIED`.
+
+`validate_g3_durable_custody.py` офлайн проверяет exact IDs, source/destination bytes и SHA-256, original-ZIP/no-repack boundary, canonical links и обязательные `PUBLICATION_HOLD`, `RIGHTS_HOLD`, `EVIDENCE_HOLD`. Это не свежий сетевой readback и не доказательство для остальных 30 объектов, полного Actions archive, title, rights или publication authority; `PROMOTE=0` не меняется.
 
 **Corpus/Drive custody и пары зеркал (8):**
 

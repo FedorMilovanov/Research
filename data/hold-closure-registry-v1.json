@@ -1204,6 +1204,79 @@
         "PUBLICATION_HOLD"
       ],
       "residualReason": "Замыкание относится только к точному 17-source snapshot; ED-09 audit и его тест прямо исключены из архива, а следующие правки требуют новой versioned-квитанции. Внешние факсимиле не включены, ED-02 marginal images остаются open, независимая переводческая проверка равна 0/12, rightsState остаётся RIGHTS_UNKNOWN, publicationState — BLOCKED. Серверный Drive SHA в этом проходе перечитан как metadata, но private ZIP повторно не скачивался. PROMOTE остаётся 0."
+    },
+    {
+      "id": "HCR-2026-11-18-36",
+      "title": "PR #621 Actions-custody snapshot получил окончательный disposition: superseded, не импортировать",
+      "holdType": "ARCHIVE_HOLD",
+      "previousState": "Трёхфайловый пакет #621 оставался HOLD в карте выборочной интеграции: датированный API-снимок смешивал несколько corpus families, содержал быстро устаревающие counts/expiry и не подтверждал byte-level custody; при этом current main уже имел более поздние G3 assessment, exact receipt и durable manifest, но disposition старого пакета не был закрыт окончательно",
+      "closedScope": "Интеграционная неопределённость закрыта отказом от импорта всех трёх source paths #621. Каноническая замена разделяет bounded G3 expiry cohort на 38 exact entries: 8 перечисленных original Actions ZIP имеют private Drive raw-readback receipt и записи durable manifest, 30 прямо остаются unpreserved. validate_g3_durable_custody.py проверяет exact partition 8/30, artifact IDs, category counts, canonical source manifest, source/destination bytes and SHA-256, no-unpack/no-repack boundary и сохранение publication/rights/evidence HOLD; негативные тесты включены в CI",
+      "recordLocations": [
+        "docs/research/PR621_SELECTIVE_INTEGRATION_CROSSWALK_2026-11-18.md §2",
+        "G3_HISTORY/G3_ACTIONS_2026-11-24_EXPIRY_COHORT_ASSESSMENT_2026-11-21.md",
+        "G3_HISTORY/G3_ACTIONS_PRESERVATION_CUSTODY_RECEIPT_2026-11-21.json",
+        "G3_HISTORY/DURABLE_CUSTODY_MANIFEST.json",
+        "G3_HISTORY/tools/validate_g3_durable_custody.py",
+        "G3_HISTORY/tools/test_validate_g3_durable_custody.py",
+        "docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md §4"
+      ],
+      "method": "superseded-by-durable-custody-gate",
+      "objects": [
+        {
+          "sourcePrScriptBlob": "1f79acbd6ea547238123b1cb2de0ff514d07fc51",
+          "sourcePrDataBlob": "fcf7955e38d977d7eeb2b5bfe3d424d08ca4d96e",
+          "sourcePrProseBlob": "60c79c07ede7c2e90a6603d705b6ac71e30b977a",
+          "sourcePathsImported": 0,
+          "boundedCohortArtifacts": 38,
+          "durablyPreservedOriginalZips": 8,
+          "explicitlyUnpreservedArtifacts": 30,
+          "preservedDestinationBytes": 2807235,
+          "sourceManifestSha256": "fd6638227dfdeac0314bbb2f4762ccac64cc7966d2c1a18ab1dede81fdda1be1"
+        }
+      ],
+      "residualHolds": [
+        "ARCHIVE_HOLD",
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "residualReason": "Закрыт только вопрос интеграции устаревшего пакета #621. Тридцать G3 artifacts из bounded cohort не покрыты 8-object receipt и не объявляются сохранёнными; более широкий API inventory не исчерпан. Private Drive bytes в этом проходе не скачивались и не перечитывались live. Receipt не даёт official filing, title/asset evidence, rights clearance или publication authority; PROMOTE остаётся 0."
+    },
+    {
+      "id": "HCR-2026-11-18-37",
+      "title": "Чарнок ED-02/ED-06: новые corpus-specific hold labels классифицированы без переписывания receipt",
+      "holdType": "EVIDENCE_HOLD",
+      "previousState": "После интеграции current main новый durable receipt добавил ED02_LOCATOR_HOLD и ED06_INDEPENDENT_REVIEW_HOLD в массив holds; inventory видел их, но PROPOSAL_ONLY mapping не покрывал эти написания, поэтому vocabulary gate перестал воспроизводиться",
+      "closedScope": "Контекстная неопределённость закрыта в proposal-only слое: ED02_LOCATOR_HOLD сопоставлен с LOCATOR_HOLD по сохранённому 1682 p.84–85 discrepancy, а ED06_INDEPENDENT_REVIEW_HOLD — с EVIDENCE_HOLD по independentTranslationReview=0/12. Инвентарь, proposal counts, генерируемые таблицы и CI-gate снова согласованы; source receipt не переписан; register-claims checker принимает грамматическую форму «41 написание» вместо требования неверного «41 написаний»",
+      "recordLocations": [
+        "data/charnock-editorial-book-receipt-v1-20261122-ed02-1699.json",
+        "data/hold-value-mapping-proposal-v1.json",
+        "scripts/check_hold_vocabulary.py",
+        "scripts/test_check_hold_vocabulary.py",
+        "scripts/audit_register_claims.py",
+        "scripts/test_audit_register_claims.py",
+        "docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md §4"
+      ],
+      "method": "hold-vocabulary-mapping",
+      "objects": [
+        {
+          "receiptSha256": "b8b0862a0e25b5a37b8fdfff340ea8d4e0e0ca0f5fdbf826c0e03ba5f14c4c74",
+          "receiptSourceGitSha": "a3bc670d673e73d006946335a0ceec92f255b104",
+          "classifiedValues": [
+            "ED02_LOCATOR_HOLD",
+            "ED06_INDEPENDENT_REVIEW_HOLD"
+          ],
+          "proposalStatus": "PROPOSAL_ONLY",
+          "sourceReceiptRewritten": false
+        }
+      ],
+      "residualHolds": [
+        "LOCATOR_HOLD",
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "residualReason": "Снята только машинная неопределённость двух написаний. Расхождение ED-02 1682 p.84–85 остаётся unresolved; independentTranslationReview остаётся 0/12, и агент не объявляется независимым рецензентом. Receipt продолжает хранить исходные labels, rightsState=RIGHTS_UNKNOWN, publicationState=BLOCKED; PROMOTE остаётся 0."
     }
   ],
   "confirmations": [

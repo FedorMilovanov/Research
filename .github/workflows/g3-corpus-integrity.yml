@@ -57,7 +57,9 @@ jobs:
         run: python3 G3_HISTORY/tools/validate_g3_workflow_runtime.py
 
       - name: Validate durable cryptographic custody receipts
-        run: python3 G3_HISTORY/tools/validate_g3_durable_custody.py
+        run: |
+          python3 G3_HISTORY/tools/validate_g3_durable_custody.py
+          python3 -B -m unittest discover -s G3_HISTORY/tools -p 'test_validate_g3_durable_custody.py' -v
 
       - name: Ensure validation is read-only
         run: |

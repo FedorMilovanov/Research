@@ -200,7 +200,7 @@ PROSE_CLAIMS: list[dict] = [
      "pattern": r"из них \*\*(?P<n>\d+) \(",
      "artefact": PROPOSAL, "field": "counts.values"},
     {"id": "hold-vocabulary-spellings",
-     "pattern": r"\((?P<n>\d+) написаний\)",
+     "pattern": r"\((?P<n>\d+) написани(?:й|е)\)",
      "artefact": PROPOSAL, "field": "counts.spellings"},
     {"id": "holds-array-files-in-section-2",
      "pattern": r"Гигиена машинных реестров \| (?P<n>\d+) файл(?:а|ов)?(?=\s+с массивом)",

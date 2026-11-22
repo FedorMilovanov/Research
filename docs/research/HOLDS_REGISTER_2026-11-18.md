@@ -11,9 +11,9 @@
 <!-- closures-summary:begin -->
 ## 0. Карта закрытий (генерируется; не редактировать руками)
 
-Закрытий: **35**. Подтверждений без закрытия: **4**. Открытых пунктов по существу: **5**.
+Закрытий: **37**. Подтверждений без закрытия: **4**. Открытых пунктов по существу: **5**.
 
-Типы HOLD: `ARCHIVE_HOLD` — 11, `EVIDENCE_HOLD` — 19, `LOCATOR_HOLD` — 4, `TEXT_INTEGRITY_HOLD` — 1 (ось реестра, не флаг политики).
+Типы HOLD: `ARCHIVE_HOLD` — 12, `EVIDENCE_HOLD` — 20, `LOCATOR_HOLD` — 4, `TEXT_INTEGRITY_HOLD` — 1 (ось реестра, не флаг политики).
 
 | № | Ось | HOLD | Чем проверено | Где запись |
 |---|---|---|---|---|
@@ -52,6 +52,8 @@
 | 33 | Official core: три carrier из истекающего CI artifact воспроизводятся по pinned Git commits | `ARCHIVE_HOLD` | скачивание закреплённого коммита и пересчёт байтов | `data/official-core-datasets-reproducibility-2026-11-18.json`, `scripts/check_official_core_reproducibility.py` и ещё 3 |
 | 34 | Shallow clone: инструкция восстановления ветки исправлена и воспроизведена локальным fixture | `EVIDENCE_HOLD` | восстановление ветки в свежем shallow-clone fixture | `docs/research/arena/SANDBOX_SHALLOW_CLONE_RECOVERY_2026-11-18.md`, `scripts/test_sandbox_shallow_clone_recovery.py` и ещё 3 |
 | 35 | Чарнок ED-09: обновлённый редакционный архив воспроизведён и зарегистрирован как durable snapshot | `ARCHIVE_HOLD` | скачивание и пересчёт байтов | `data/charnock-editorial-book-receipt-v1-20261121-ed09.json`, `scripts/check_charnock_editorial_receipt.py` и ещё 4 |
+| 36 | PR #621 Actions-custody snapshot получил окончательный disposition: superseded, не импортировать | `ARCHIVE_HOLD` | замещение устаревшего снимка канонической custody-квитанцией | `docs/research/PR621_SELECTIVE_INTEGRATION_CROSSWALK_2026-11-18.md §2`, `G3_HISTORY/G3_ACTIONS_2026-11-24_EXPIRY_COHORT_ASSESSMENT_2026-11-21.md` и ещё 5 |
+| 37 | Чарнок ED-02/ED-06: новые corpus-specific hold labels классифицированы без переписывания receipt | `EVIDENCE_HOLD` | соответствие неканонических значений `holds` | `data/charnock-editorial-book-receipt-v1-20261122-ed02-1699.json`, `data/hold-value-mapping-proposal-v1.json` и ещё 5 |
 
 **Подтверждения (не закрытия):**
 - `HCR-2026-11-18-C1` — Charnock custody v3 ZIP — независимое подтверждение квитанции
@@ -93,18 +95,18 @@
 <!-- inventory-slice:begin -->
 | Показатель | Значение |
 |---|---:|
-| просканировано текстовых файлов | 3 148 |
-| файлов хотя бы с одним маркером | 924 |
-| канонические упоминания `PUBLICATION_HOLD` | 2 676 |
-| канонические упоминания `LOCATOR_HOLD` | 1 987 |
-| канонические упоминания `RIGHTS_HOLD` | 1 488 |
-| канонические упоминания `ARCHIVE_HOLD` | 1 424 |
-| канонические упоминания `EVIDENCE_HOLD` | 1 307 |
-| строки, где флаг зафиксирован как действующий (`open`) | 2 369 |
+| просканировано текстовых файлов | 3 150 |
+| файлов хотя бы с одним маркером | 925 |
+| канонические упоминания `PUBLICATION_HOLD` | 2 682 |
+| канонические упоминания `LOCATOR_HOLD` | 1 990 |
+| канонические упоминания `RIGHTS_HOLD` | 1 491 |
+| канонические упоминания `ARCHIVE_HOLD` | 1 425 |
+| канонические упоминания `EVIDENCE_HOLD` | 1 311 |
+| строки, где флаг зафиксирован как действующий (`open`) | 2 375 |
 | строки, где флаг зафиксирован как снятый (`closed`) | 824 |
-| строки без явного состояния (`unmarked`) | 6 095 |
+| строки без явного состояния (`unmarked`) | 6 106 |
 | строки, где одновременно записаны и снятие, и сохранение (`mixed`) | 406 |
-| JSON-файлов с массивом `holds` | 43 |
+| JSON-файлов с массивом `holds` | 44 |
 <!-- inventory-slice:end -->
 
 Замер снят с исключением артефактов, которые **сами описывают удержания** (`data/repository-holds-inventory-v1.json`, `data/hold-closure-registry-v1.json`, `data/hold-value-mapping-proposal-v1.json`, этот регистр): иначе пасс считал бы свои же классы и число зависело бы от того, сколько их перечислили. Поэтому цифры ниже отличаются от предыдущего снимка не только потому, что добавились файлы.
@@ -125,13 +127,13 @@
 <!-- corpus-table:begin -->
 | Корпус | Файлов с маркерами | Канонических упоминаний |
 |---|---:|---:|
-| `docs/` | 99 | 2 916 |
+| `docs/` | 99 | 2 919 |
 | `ИСКУПЛЕНИЕ/` | 153 | 2 522 |
-| `БИОГРАФИИ/` | 58 | 1 396 |
+| `БИОГРАФИИ/` | 58 | 1 400 |
 | `SUNO_HYMNS/` | 65 | 712 |
-| `scripts/` | 50 | 326 |
+| `scripts/` | 50 | 327 |
 | `1КОРИНФЯНАМ_11_ПОКРЫВАЛО/` | 124 | 293 |
-| `G3_HISTORY/` | 92 | 206 |
+| `G3_HISTORY/` | 93 | 215 |
 | `apostasy/` | 116 | 183 |
 | `data/` | 24 | 93 |
 | `ТРУДНЫЕ ТЕКСТЫ/` | 15 | 59 |
@@ -198,6 +200,8 @@ Google Drive не выполнялась; перечень всех закрыт
 | `HCR-2026-11-18-33` | STEPBible-Data, morphhb и SBLGNT заново получены из codeload.github.com по трём полным commit SHA; для каждого размер и полный SHA-256 совпали с квитанцией. Принят отдельный offline-гейт внутренней арифметики и cross-check STEPBible pin, полный --archive/--fetch маршрут и негативные тесты. Истечение CI artifact больше не является потерей единственного воспроизводимого carrier | скачивание закреплённого коммита и пересчёт байтов | [`data/official-core-datasets-reproducibility-2026-11-18.json`](../../data/official-core-datasets-reproducibility-2026-11-18.json), [`scripts/check_official_core_reproducibility.py`](../../scripts/check_official_core_reproducibility.py), [`scripts/test_check_official_core_reproducibility.py`](../../scripts/test_check_official_core_reproducibility.py), [`docs/research/PR621_SELECTIVE_INTEGRATION_CROSSWALK_2026-11-18.md`](../../docs/research/PR621_SELECTIVE_INTEGRATION_CROSSWALK_2026-11-18.md) §2, [`docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md`](../../docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md) §4 |
 | `HCR-2026-11-18-34` | Принят исправленный NOT_AUTHORITY runbook: имя текущей ветки проверяется, tracked и untracked байты получают аварийную копию, полная история достаётся только когда clone действительно shallow, а remote-tracking ref создаётся явным refspec и разрешается в commit до reset --mixed. Offline fixture строит fresh depth-1 single-branch repository, воспроизводит расщепление working tree/.git и доказывает, что reset переводит HEAD на точную remote-верхушку, не теряя настоящую локальную правку | восстановление ветки в свежем shallow-clone fixture | [`docs/research/arena/SANDBOX_SHALLOW_CLONE_RECOVERY_2026-11-18.md`](../../docs/research/arena/SANDBOX_SHALLOW_CLONE_RECOVERY_2026-11-18.md), [`scripts/test_sandbox_shallow_clone_recovery.py`](../../scripts/test_sandbox_shallow_clone_recovery.py), `.github/workflows/holds-inventory.yml`, [`docs/research/PR621_SELECTIVE_INTEGRATION_CROSSWALK_2026-11-18.md`](../../docs/research/PR621_SELECTIVE_INTEGRATION_CROSSWALK_2026-11-18.md) §2, [`docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md`](../../docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md) §4 |
 | `HCR-2026-11-18-35` | Для source Git SHA 209c593fc23bcc32c29bc636b93bcf29d892e725 заново прочитаны из Git все 17 ограниченных source members, пересчитаны их bytes/SHA-256/Git blob IDs, воспроизведены canonical inner manifest и deterministic ZIP. Полученные source bytes, manifest SHA-256, archive bytes и archive SHA-256 точно совпали с ED-09 квитанцией. Текущий read-only ответ Drive по точному имени вернул тот же object ID, размер и server SHA-256; raw destination readback остаётся зафиксирован в квитанции #626 | скачивание и пересчёт байтов | [`data/charnock-editorial-book-receipt-v1-20261121-ed09.json`](../../data/charnock-editorial-book-receipt-v1-20261121-ed09.json), [`scripts/check_charnock_editorial_receipt.py`](../../scripts/check_charnock_editorial_receipt.py), [`scripts/test_check_charnock_editorial_receipt.py`](../../scripts/test_check_charnock_editorial_receipt.py), `.github/workflows/charnock-editorial-book-custody.yml`, `БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED09_FULL_BOOK_EDITORIAL_QA_AND_TEXT_RIGHTS_2026-11-21.md`, [`docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md`](../../docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md) §3 |
+| `HCR-2026-11-18-36` | Интеграционная неопределённость закрыта отказом от импорта всех трёх source paths #621. Каноническая замена разделяет bounded G3 expiry cohort на 38 exact entries: 8 перечисленных original Actions ZIP имеют private Drive raw-readback receipt и записи durable manifest, 30 прямо остаются unpreserved. validate_g3_durable_custody.py проверяет exact partition 8/30, artifact IDs, category counts, canonical source manifest, source/destination bytes and SHA-256, no-unpack/no-repack boundary и сохранение publication/rights/evidence HOLD; негативные тесты включены в CI | замещение устаревшего снимка канонической custody-квитанцией | [`docs/research/PR621_SELECTIVE_INTEGRATION_CROSSWALK_2026-11-18.md`](../../docs/research/PR621_SELECTIVE_INTEGRATION_CROSSWALK_2026-11-18.md) §2, `G3_HISTORY/G3_ACTIONS_2026-11-24_EXPIRY_COHORT_ASSESSMENT_2026-11-21.md`, `G3_HISTORY/G3_ACTIONS_PRESERVATION_CUSTODY_RECEIPT_2026-11-21.json`, `G3_HISTORY/DURABLE_CUSTODY_MANIFEST.json`, `G3_HISTORY/tools/validate_g3_durable_custody.py`, `G3_HISTORY/tools/test_validate_g3_durable_custody.py`, [`docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md`](../../docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md) §4 |
+| `HCR-2026-11-18-37` | Контекстная неопределённость закрыта в proposal-only слое: ED02_LOCATOR_HOLD сопоставлен с LOCATOR_HOLD по сохранённому 1682 p.84–85 discrepancy, а ED06_INDEPENDENT_REVIEW_HOLD — с EVIDENCE_HOLD по independentTranslationReview=0/12. Инвентарь, proposal counts, генерируемые таблицы и CI-gate снова согласованы; source receipt не переписан; register-claims checker принимает грамматическую форму «41 написание» вместо требования неверного «41 написаний» | соответствие неканонических значений `holds` | [`data/charnock-editorial-book-receipt-v1-20261122-ed02-1699.json`](../../data/charnock-editorial-book-receipt-v1-20261122-ed02-1699.json), [`data/hold-value-mapping-proposal-v1.json`](../../data/hold-value-mapping-proposal-v1.json), [`scripts/check_hold_vocabulary.py`](../../scripts/check_hold_vocabulary.py), [`scripts/test_check_hold_vocabulary.py`](../../scripts/test_check_hold_vocabulary.py), [`scripts/audit_register_claims.py`](../../scripts/audit_register_claims.py), [`scripts/test_audit_register_claims.py`](../../scripts/test_audit_register_claims.py), [`docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md`](../../docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md) §4 |
 <!-- closures-detail:end -->
 **Важная граница.** Readback говорит только «байты копии равны байтам источника / байты на Drive
 равны записанному снимку». Он **не** говорит, что в PDF есть нужная печатная страница, что локатор
@@ -215,7 +219,7 @@ Google Drive не выполнялась; перечень всех закрыт
 | `PUBLICATION_HOLD` | фактически весь исследовательский корпус (`PROMOTE` не заявлялся нигде) | редакционное принятие + отдельная Product-проверка на текущем source anchor; Research closure ≠ publication approval |
 | Независимая научная приёмка | Чарнок ED-02/ED-06, «Реформация» (peer review open), Искупление (agent 7) | внешний рецензент/эксперт; агентская проверка его не заменяет |
 | `ARCHIVE_HOLD` по актуальности зеркал | тома 00/04/16 и досье новее последних зеркал | новая загрузка + независимый destination readback + квитанция (в этой волне не выполнялись) |
-| Гигиена машинных реестров | 43 файла с массивом `holds` | см. §5 |
+| Гигиена машинных реестров | 44 файла с массивом `holds` | см. §5 |
 
 ## 5. Наблюдение по машинным реестрам (не исправлялось)
 
@@ -288,8 +292,8 @@ HOLD-флаги считались, а мёртвые относительные
 | Показатель ссылок | Значение |
 |---|---:|
 | Markdown-файлов | 2 427 |
-| ссылок `resolves` | 3 228 |
-| ссылок `external` | 6 583 |
+| ссылок `resolves` | 3 237 |
+| ссылок `external` | 6 592 |
 | ссылок `missing` | 58 |
 | ссылок `outside` | 0 |
 | ссылок `unqualified` | 0 |
@@ -350,7 +354,7 @@ python3 -B scripts/audit_relative_links.py --only missing    # полный сп
 
 ## 9. Неканонические значения `holds`: предложение соответствия (не правка)
 
-В 43 JSON-файлах массивы `holds` содержат 6 164 значения, из них **134 (39 написаний)** — не
+В 44 JSON-файлах массивы `holds` содержат 6 168 значений, из них **136 (41 написание)** — не
 канонические флаги. Это смешение осей, которое policy v2 запрещает концептуально. Автоматически
 переписать такие поля нельзя — это machine-SSOT чужих корпусов, — но и оставлять их без разбора
 значит хранить неизмеримое.
@@ -363,7 +367,7 @@ python3 -B scripts/audit_relative_links.py --only missing    # полный сп
 <!-- hold-classes:begin -->
 | Класс | Значений | Что означает |
 |---|---:|---|
-| `canonical` | 80 | по смыслу это канонический HOLD, записанный своим именем |
+| `canonical` | 82 | по смыслу это канонический HOLD, записанный своим именем |
 | `axis` | 24 | это значение оси policy v2 (`accessState` / `rightsState` / `publicationState` / `locatorState`), а не HOLD |
 | `split` | 7 | в одной строке склеены две вещи (флаг + статус, два флага) |
 | `status` | 20 | статус записи, а не удержание: `OPEN`, `RESOLVED-BY-TEXT`, `RESEARCH / NOT PRODUCT` |
@@ -397,6 +401,8 @@ python3 -B scripts/audit_relative_links.py --only missing    # полный сп
 | `CONFLICT / LOCATOR_HOLD` | 1 | split | LOCATOR_HOLD + conflict record |
 | `CONTEXT_HOLD` | 1 | canonical | EVIDENCE_HOLD |
 | `DATE_HOLD` | 1 | canonical | EVIDENCE_HOLD |
+| `ED02_LOCATOR_HOLD` | 1 | canonical | LOCATOR_HOLD |
+| `ED06_INDEPENDENT_REVIEW_HOLD` | 1 | canonical | EVIDENCE_HOLD (+ corpus-specific independent-review status remains pending) |
 | `FACSIMILE_HOLD` | 1 | canonical | EVIDENCE_HOLD (+ accessState=PARTIAL_OBJECT) |
 | `FORBIDDEN` | 1 | manual | requires per-record reading |
 | `LOCATOR_SINGLE_ATTESTATION` | 1 | canonical | LOCATOR_HOLD |
