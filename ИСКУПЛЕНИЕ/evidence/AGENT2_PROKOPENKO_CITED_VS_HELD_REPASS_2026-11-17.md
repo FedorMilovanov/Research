@@ -3713,7 +3713,7 @@ S. Escobedo III, «2 Peter 2:1 and Universal Redemption» (сайт Alpha & Omeg
 - (а) **PDF статьи** (класс A1): с. 3, цитата Лютера и сн. 5 («Luther’s Works: 56 vols. St. Louis: Concordia, 1976. Vol. 26. P. 285, 277») — как прежде.
 - (б) **Open Library `search/inside.json`** (класс B): Ryken 2005 («26:277», «Ibid., 26:284»); *Gift and Promise* 2016 («LW 26:277»); *Luther Refracted* 2015 («LW 26:281; WA 40/1:439», «LW 26:285; WA 40/1:445»); **новый свидетель** — S. Y. Kim, *Luther on Faith and Love* (Fortress, 2014), IA `lutheronfaithlov0000kims`: «LW 26:285; WA 40/1. 444. 23» и «LW 26:285; WA 40/1. 444, 30-445, 22».
 - (в) **WA 40/I**, открытый скан `werkekritischege40luthuoft`, поиск `inside.php` (класс A2; поле `page` = лист n + 1, страница WA = `page` − 14 — сходится с правилом «лист − 13» из §25.1 и с локатором Kim для «defectus est in re»): WA 433 — «qui habet et portat omnia omnium peccata in corpore suo»; WA 444 — «neque defectus est in re, cum sit verissima» (стк. 22–23), «Quatenus igitur hoc credis, eatenus habes»; WA 445 — «hic enim peccata totius mundi sustulit» (середина страницы), «…[con]iecit peccata totius mundi, Esa. 53. Cap., vicit, delevit et occidit illud in corpore suo» (стк. 30).
-- (г) **IA `lecturesongalati26luth`** (класс B1): *LW* 26, Concordia, 1963; доступ ограничен, `noindex: true`. Поиск `inside.php` по ограниченной книге не отвечает (у открытых книг работает). Open Library: издания LW 26 — 1963, 1964, 1968.
+- (г) **IA `lecturesongalati26luth`** (класс B1): *LW* 26, Concordia, 1963; доступ ограничен, `noindex: true`. Поиск `inside.php` по ограниченной книге не отвечает (у открытых книг работает). Open Library (работа OL795559W): т. 26 — 1963, x+492 pp.; т. 27 — 1964; издания 1976 г. в каталоге нет.
 
 ### 100.2. Сверка
 
@@ -3725,7 +3725,7 @@ S. Escobedo III, «2 Peter 2:1 and Universal Redemption» (сайт Alpha & Omeg
 | Опора первой фразы | «sustulit» — внутри отрезка Kim; «coniecit… delevit» (445.30) — за его пределами | **Мягкое уточнение:** «coniecit» может быть уже на *LW* 286; ACCURATE в силе по «sustulit» |
 | Третья фраза | Без изменений (ближе всего *LW* 26:281 = WA 439) | `WORDING_NOT_LOCATED` (мягко) в силе |
 | Скан *LW* 26 | Есть, ограниченный, `noindex` | Оговорка «в открытом доступе нет» верна |
-| «Concordia, 1976» | Каталог: 1963, 1964, 1968 | Не подтверждено; вероятно, допечатка; ошибкой не считается |
+| «Concordia, 1976» | Каталог: т. 26 — 1963 (x+492 pp.) | Не подтверждено; вероятно, допечатка; ошибкой не считается |
 
 ### 100.3. Итог
 
