@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "CHARNOCK-PORTABLE-READER-7ADF6D1C-2026-11-23",
+  "evidenceRole": "supplemental derivative with source-pinned online references; not 17-member custody snapshot; not offline evidence cache",
+  "sourceGitSha": "7adf6d1cac9acc8c0509738073979d37e857e5d3",
+  "sourceReaderSha256": "86fcb089e4b6a6244ad23d63059987796e0d26a9626022bb82773ef37df88738",
+  "originalSourceArchiveSha256": "7cfa24811c503e2cb9da1c99b79317259c4dd782e0567cff8a8645116324c4cf",
+  "portableReaderSha256": "26db0a02e89147a1d7daa74d5074d98f61b318ddc902b10d28bbdd21473d483d",
+  "portableZipSha256": "30a61ce8063625f7385e274fff527bf05b05feca1f26be4a2929e8bae6951c0c",
+  "portableZipBytes": 120710,
+  "portableZipMemberCount": 3,
+  "portableZipMembers": [
+    "CHARNOCK_FULL_BOOK_PORTABLE_READER.md",
+    "PROVENANCE.json",
+    "README.md"
+  ],
+  "references": {
+    "tocAnchorsUnchanged": 10,
+    "externalUrlsUnchanged": 19,
+    "rewrittenRelativeLinksIncludedInCustodyArchive": 7,
+    "rewrittenRelativeLinksMissingFromCustodyArchive": 229,
+    "totalRewrittenToPinnedResearchCommit": 236
+  },
+  "transformation": "Only destination of 236 Markdown relative links rewritten to GitHub /blob/<sourceGitSha>/ or /tree/<sourceGitSha>/ paths; primary 10-section content and note bodies unchanged; 17-file source custody ZIP unchanged.",
+  "driveFolderId": "15iNGKO8rN3vJKPbJuXfPVx4rXHER5Xq2",
+  "driveObjectId": "1sZsJxGXRWbr537X4qyCpmGv5WjY7vpDC",
+  "driveUrl": "https://drive.google.com/file/d/1sZsJxGXRWbr537X4qyCpmGv5WjY7vpDC/view?usp=drivesdk",
+  "independentlyDownloadedDriveRaw": true,
+  "driveReadbackBytes": 120710,
+  "driveReadbackSha256": "30a61ce8063625f7385e274fff527bf05b05feca1f26be4a2929e8bae6951c0c",
+  "researchOnly": true,
+  "publicationState": "BLOCKED",
+  "independentTranslationReview": "0/12",
+  "holds": [
+    "ED02_LOCATOR_HOLD",
+    "ED06_INDEPENDENT_REVIEW_HOLD",
+    "RIGHTS_HOLD",
+    "PUBLICATION_HOLD"
+  ]
+}
