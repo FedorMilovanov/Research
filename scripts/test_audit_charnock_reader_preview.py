@@ -105,12 +105,10 @@ class CharnockReaderProofTests(unittest.TestCase):
         chapter = self.body[
             self.sections[7].start():self.sections[8].start()
         ]
-        self.assertRegex(
-            chapter, r'(?m)^\\| Откуда вражда к Богу\\?.*34 абзаца',
-        )
-        self.assertRegex(
-            chapter, r'(?m)^\\| Для чего помнить Пятое ноября\\?.*Весь основной цифровой текст',
-        )
+        self.assertIn('| Откуда вражда к Богу? |', chapter)
+        self.assertIn('34 абзаца, печатные с. 6–12', chapter)
+        self.assertIn('| Для чего помнить Пятое ноября? |', chapter)
+        self.assertIn('Весь основной цифровой текст с эпиграфом', chapter)
         self.assertIn('§§21.73–21.74', chapter)
         self.assertIn('§§21.88–21.90', chapter)
         self.assertNotIn('Начало на печатной с. 42', chapter)
