@@ -99,6 +99,26 @@ class CharnockReaderProofTests(unittest.TestCase):
             self.assertTrue(printed_section.endswith('---'), name)
             self.assertEqual(printed_section, reader_section, name)
 
+    def test_chapter_vii_coverage_reflects_verified_source_readings(self):
+        """Prevent the source-depth map from reverting to obsolete partial-read claims."""
+        self.assertEqual(len(self.sections), 10)
+        chapter = self.body[
+            self.sections[7].start():self.sections[8].start()
+        ]
+        self.assertRegex(
+            chapter, r'(?m)^\\| Откуда вражда к Богу\\?.*34 абзаца',
+        )
+        self.assertRegex(
+            chapter, r'(?m)^\\| Для чего помнить Пятое ноября\\?.*Весь основной цифровой текст',
+        )
+        self.assertIn('§§21.73–21.74', chapter)
+        self.assertIn('§§21.88–21.90', chapter)
+        self.assertNotIn('Начало на печатной с. 42', chapter)
+        self.assertNotIn(
+            'В трактате о провидении и памятной проповеди Пятого ноября изучены отдельные',
+            chapter,
+        )
+
     def test_no_duplicate_horizontal_rules_between_chapters(self):
         self.assertNotRegex(self.body, r'(?m)^---[ \t]*\n\s*---[ \t]*$')
 
