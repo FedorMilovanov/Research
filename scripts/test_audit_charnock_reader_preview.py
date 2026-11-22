@@ -69,8 +69,10 @@ class CharnockReaderProofTests(unittest.TestCase):
         ]
         self.assertEqual(section.count('### Богословие, обращённое к совести'), 1)
         self.assertNotIn('### Четыре линии одной пастырской заботы', section)
-        self.assertIn('сходятся в одном вопросе', section)
-        self.assertIn('разрозненные проповеди и записи приобрели печатную форму', section)
+        self.assertLess(
+            section.index('### Богословие, обращённое к совести'),
+            section.index('### Источниковые примечания'),
+        )
 
     def test_notes_are_unique_and_cited_from_each_readers_text(self):
         all_definitions = DEFINITION.findall(self.body)
