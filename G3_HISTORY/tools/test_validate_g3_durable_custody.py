@@ -62,13 +62,35 @@ class ActionsAssessmentTests(unittest.TestCase):
         _, errors = self.validate(mutated)
         self.assertIn("G3 Actions expiry assessment boundary lost PUBLICATION_HOLD", errors)
 
-    def test_hcr36_counts_and_digest_are_derived_from_canonical_evidence(self) -> None:
+    def hcr36(self) -> dict:
         registry = json.loads(
             (validator.REPO / "data" / "hold-closure-registry-v1.json").read_text(encoding="utf-8")
         )
-        closure = next(
+        return next(
             row for row in registry["closures"] if row["id"] == "HCR-2026-11-18-36"
         )
+
+    def test_hcr36_records_exact_rejected_source_blobs(self) -> None:
+        obj = self.hcr36()["objects"][0]
+        self.assertEqual(
+            {
+                key: obj[key]
+                for key in (
+                    "sourcePrScriptBlob",
+                    "sourcePrDataBlob",
+                    "sourcePrProseBlob",
+                )
+            },
+            {
+                "sourcePrScriptBlob": "1f79acbd6ea547238123b1cb2de0ff514d07fc51",
+                "sourcePrDataBlob": "fcf7955e38d977d7eeb2b5bfe3d424d08ca4d96e",
+                "sourcePrProseBlob": "60c79c07ede7c2e90a6603d705b6ac71e30b977a",
+            },
+        )
+        self.assertEqual(obj["sourcePathsImported"], 0)
+
+    def test_hcr36_counts_and_digest_are_derived_from_canonical_evidence(self) -> None:
+        closure = self.hcr36()
         obj = closure["objects"][0]
         source_digest = hashlib.sha256(validator.PRESERVATION_SOURCE_MANIFEST.read_bytes()).hexdigest()
         unpreserved_count, errors = self.validate(self.text)
