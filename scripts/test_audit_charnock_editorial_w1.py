@@ -79,6 +79,26 @@ class CharnockEditorialW1Tests(unittest.TestCase):
         self.assertIn("NOT_PERFORMED", external)
         self.assertNotIn("EXTERNAL_REVIEW 12/12", body)
 
+    def test_early_1699_margin_185_is_grounded_and_hold_limited(self):
+        chapter = (MANUSCRIPTS / "II_UCHENYI_I_PROPOVEDNIK_WORKING_DRAFT.md").read_text(encoding="utf-8")
+        reader = READER.read_text(encoding="utf-8")
+        ed02 = (BASE / "supplemental-audits" / "ED02_LINGENDES_84_87_TO_CHARNOCK_621_ALIGNMENT_2026-11-18.md").read_text(encoding="utf-8")
+        for text, prefix in ((chapter, "[^9]:"), (reader, "[^ch2-9]:")):
+            self.assertIn(prefix, text)
+            footnote = text.split(prefix, 1)[1].split("\n[^", 1)[0]
+            self.assertIn("EARLY_1699_IMAGE_OCR_CORROBORATED", footnote)
+            self.assertIn("p. 185", footnote)
+            self.assertIn("кадре 520", footnote)
+            self.assertIn("1684", footnote)
+            self.assertIn("CATALOG_ONLY", footnote)
+            self.assertNotIn("PAGE_NUMBER_IMAGE_PENDING", footnote)
+            self.assertNotIn("ED-02 CLOSED", footnote)
+        self.assertIn("page=459", ed02)
+        self.assertIn("page=520", ed02)
+        self.assertIn("p.185", ed02)
+        self.assertIn("HUMAN_FACSIMILE_REVIEW_PENDING", ed02)
+        self.assertIn("PUBLICATION_HOLD", ed02)
+
 
 if __name__ == "__main__":
     unittest.main()
