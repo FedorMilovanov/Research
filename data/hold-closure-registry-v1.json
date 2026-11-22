@@ -1311,6 +1311,40 @@
         "PUBLICATION_HOLD"
       ],
       "residualReason": "Закрыта только воспроизводимость rights-triage proposal. Матрица не является юридическим заключением, не устанавливает срок охраны по юрисдикции, не даёт rightsBasis или permission, не меняет corpus records и не снимает ни один HOLD. Датированные GitHub/archive.org observations не представлены как current network response. Решение владельца и переписка с правообладателями остаются; PROMOTE остаётся 0."
+    },
+    {
+      "id": "HCR-2026-11-18-39",
+      "title": "Official-core prose #621 разделена: carrier-view пересобран, смешанная gap-note отклонена",
+      "holdType": "ARCHIVE_HOLD",
+      "previousState": "После HCR-33 точная machine receipt и независимый carrier-gate были приняты, но оба исходных prose-файла #621 оставались HOLD: первый смешивал воспроизводимую квитанцию с быстро устаревающим artifact/API рассказом и дублировал STEPBible triage, второй соединял Drive-наблюдения, неподтверждённый artifact и owner-only предложения по чужим corpus records",
+      "closedScope": "Интеграционный disposition двух prose blobs закрыт без verbatim-импорта. Узкий carrier-view пересобран только из валидированной receipt: exact repositories, full commits, bytes, SHA-256, арифметика, исходная дата и все границы воспроизводятся --check. Отдельная mixed gap-note не принята; её corpus/Drive и HOLD-назначения не получают authority через carrier-квитанцию",
+      "recordLocations": [
+        "data/official-core-datasets-reproducibility-2026-11-18.json",
+        "docs/research/holds/OFFICIAL_CORE_DATASETS_REPRODUCIBILITY_2026-11-18.md",
+        "scripts/check_official_core_reproducibility.py",
+        "scripts/test_check_official_core_reproducibility.py",
+        "docs/research/PR621_SELECTIVE_INTEGRATION_CROSSWALK_2026-11-18.md §2",
+        "docs/research/HOLD_ACTIONABILITY_SWEEP_2026-11-18.md §4"
+      ],
+      "method": "generated-carrier-receipt-view",
+      "objects": [
+        {
+          "sourcePrReproducibilityProseBlob": "7f6bc0a9d23189c9805676d0af1647eb201fc6fa",
+          "sourcePrMixedGapProseBlob": "7145b0a8e5e462f6ae6713ce191d5c12930f063e",
+          "sourcePathsImportedVerbatim": 0,
+          "repairedCarrierViewAdmitted": 1,
+          "mixedGapNoteAdmitted": 0,
+          "generatedMarkdownSha256": "b2a9a90a7884789c4a1961ab02cec5c87794d3364f2f1bd62328903a2931237b",
+          "role": "DERIVED_READ_ONLY_NOT_AUTHORITY"
+        }
+      ],
+      "residualHolds": [
+        "ARCHIVE_HOLD",
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "residualReason": "Закрыт только вопрос, какой prose-view допустимо интегрировать. ZIP не распаковывались и не читались как научные источники; независимая Drive custody-копия не создана; датированная доступность commit не является текущим сетевым ответом. Права, публикация и назначения HOLD в corpus SSOT остаются решениями владельцев; PROMOTE остаётся 0."
     }
   ],
   "confirmations": [

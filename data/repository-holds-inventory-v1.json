@@ -76,13 +76,13 @@
     ]
   },
   "totals": {
-    "filesScanned": 3154,
-    "filesWithMentions": 929,
+    "filesScanned": 3155,
+    "filesWithMentions": 932,
     "mentions": {
-      "ARCHIVE_HOLD": 1426,
+      "ARCHIVE_HOLD": 1429,
       "BLOCKING-HOLD": 16,
       "BOOK-FULLTEXT-HOLD": 15,
-      "EVIDENCE_HOLD": 1312,
+      "EVIDENCE_HOLD": 1315,
       "HOLD-APPARATUS": 1,
       "HOLD-AS": 3,
       "HOLD-GLOSS": 1,
@@ -100,14 +100,14 @@
       "LIVE-READBACK-HOLD": 4,
       "LOCATOR_HOLD": 1991,
       "PAGE-IMAGE-HOLD": 14,
-      "PUBLICATION_HOLD": 2689,
-      "RIGHTS_HOLD": 1498,
+      "PUBLICATION_HOLD": 2692,
+      "RIGHTS_HOLD": 1501,
       "VERSION-HOLD": 23
     },
     "mentionsByStatus": {
       "closed": 824,
       "open": 2377,
-      "unmarked": 6121
+      "unmarked": 6133
     },
     "canonicalFlagLineStatesRecordedAsBothOpenAndClosed": 406,
     "filesWithJsonHolds": 44,
@@ -372,27 +372,27 @@
       }
     },
     "docs": {
-      "files": 100,
+      "files": 101,
       "mentions": {
-        "ARCHIVE_HOLD": 541,
-        "EVIDENCE_HOLD": 437,
+        "ARCHIVE_HOLD": 542,
+        "EVIDENCE_HOLD": 438,
         "LOCATOR_HOLD": 333,
-        "PUBLICATION_HOLD": 1044,
-        "RIGHTS_HOLD": 568
+        "PUBLICATION_HOLD": 1045,
+        "RIGHTS_HOLD": 569
       },
       "status": {
         "closed": 247,
         "open": 1113,
-        "unmarked": 1709
+        "unmarked": 1713
       }
     },
     "scripts": {
-      "files": 52,
+      "files": 54,
       "mentions": {
-        "ARCHIVE_HOLD": 50,
+        "ARCHIVE_HOLD": 52,
         "BLOCKING-HOLD": 4,
         "BOOK-FULLTEXT-HOLD": 1,
-        "EVIDENCE_HOLD": 56,
+        "EVIDENCE_HOLD": 58,
         "HOLD-APPARATUS": 1,
         "HOLD-AS": 1,
         "HOLD-GLOSS": 1,
@@ -410,14 +410,14 @@
         "LIVE-READBACK-HOLD": 1,
         "LOCATOR_HOLD": 25,
         "PAGE-IMAGE-HOLD": 2,
-        "PUBLICATION_HOLD": 124,
-        "RIGHTS_HOLD": 57,
+        "PUBLICATION_HOLD": 126,
+        "RIGHTS_HOLD": 59,
         "VERSION-HOLD": 4
       },
       "status": {
         "closed": 7,
         "open": 14,
-        "unmarked": 293
+        "unmarked": 301
       }
     },
     "БАПТИСТЫ РОССИИ": {
@@ -26754,6 +26754,19 @@
       }
     },
     {
+      "path": "docs/research/holds/OFFICIAL_CORE_DATASETS_REPRODUCIBILITY_2026-11-18.md",
+      "corpus": "docs",
+      "mentions": {
+        "ARCHIVE_HOLD": 1,
+        "EVIDENCE_HOLD": 1,
+        "PUBLICATION_HOLD": 1,
+        "RIGHTS_HOLD": 1
+      },
+      "status": {
+        "unmarked": 4
+      }
+    },
+    {
       "path": "docs/research/holds/RIGHTS_DETERMINATION_MATRIX_2026-11-18.md",
       "corpus": "docs",
       "mentions": {
@@ -27874,6 +27887,19 @@
       }
     },
     {
+      "path": "scripts/check_official_core_reproducibility.py",
+      "corpus": "scripts",
+      "mentions": {
+        "ARCHIVE_HOLD": 1,
+        "EVIDENCE_HOLD": 1,
+        "PUBLICATION_HOLD": 1,
+        "RIGHTS_HOLD": 1
+      },
+      "status": {
+        "unmarked": 4
+      }
+    },
+    {
       "path": "scripts/render_rights_matrix.py",
       "corpus": "scripts",
       "mentions": {
@@ -28005,6 +28031,19 @@
       },
       "status": {
         "unmarked": 16
+      }
+    },
+    {
+      "path": "scripts/test_check_official_core_reproducibility.py",
+      "corpus": "scripts",
+      "mentions": {
+        "ARCHIVE_HOLD": 1,
+        "EVIDENCE_HOLD": 1,
+        "PUBLICATION_HOLD": 1,
+        "RIGHTS_HOLD": 1
+      },
+      "status": {
+        "unmarked": 4
       }
     },
     {
