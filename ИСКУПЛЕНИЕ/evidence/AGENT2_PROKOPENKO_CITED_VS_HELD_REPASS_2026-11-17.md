@@ -2055,7 +2055,7 @@ Wayback Machine, страница `www.gracechurch.org/about/doctrinal-statement
 **Повод.** Льюис и Демарест (сн. 10, 13, 18, 45) стояли в HOLD с раунда 91 (§14): экземпляры на IA с ограниченным доступом, а `inside.php` для них не работает. Полнотекстовый индекс archive.org (`openlibrary.org/search/inside.json`) ищет и по OCR ограниченных экземпляров и возвращает фрагменты текста.
 
 **Источники этого раунда:**
-- (а) G. R. Lewis, B. A. Demarest, *Integrative Theology*, vol. 2 (Grand Rapids: Zondervan); IA `integrativetheol0000dema_t1r1` (в метаданных IA — 1987; том 2 вышел в 1990 г.). Доступ ограничен; текст — фрагменты OCR из индекса. Класс A2.
+- (а) G. R. Lewis, B. A. Demarest, *Integrative Theology*, vol. 2 (Grand Rapids: Zondervan); IA `integrativetheol0000dema_t1r1` (в метаданных IA — 1987; том 2 вышел в 1990 г.) *(раунд 180, §103: выходные данные в OCR — «INTEGRATIVE THEOLOGY, volume 2 Copyright © 1990»; это и есть отдельный т. 2 1990 г.)*. Доступ ограничен; текст — фрагменты OCR из индекса. Класс A2.
 - (б) То же, однотомное издание 1996 г. (IA `integrativetheol0000lewi`); на него ссылается сн. 10 («Zondervan, 1996»). Фрагменты совпадают с (а) дословно. Номера в указателе тома 2 те же: «Turrettin, Francis, 381», «Bloesch, Donald G., 381». Значит, пагинация тома 2 в 1996 г. не менялась.
 - (в) Том 1 (IA `integrativetheol0000dema`, 1987) — контроль для слова «Beza».
 - (г) Текст статьи (веб-PDF teoblogia, фрагменты 1–2): сн. 10, 13, 18, 19 и их места в тексте.
@@ -2107,11 +2107,13 @@ Wayback Machine, страница `www.gracechurch.org/about/doctrinal-statement
 1. HOLD «Л. и Д. по сн. 83» (§24 сводка, §56 сводка; `34_` §4.184 «Чего нет», §4.216 п. 6) снят в части текста. Изображения страниц не открывались.
 2. `34_` §4.184 п. 6: догадка статьи, почему старые авторы предпочитали *particular redemption* («акцент на результате»), у Л. и Д. на p. 381 опирается на «secure». Слова *redemption* в восстановленном отрывке нет. Вывод п. 6 (расхождение со Стюартом) не меняется.
 
+*(Самопроверка раунда 180, §103: цитата «design of the cross was not merely to provide salvation but to secure…» найдена снова в обоих экземплярах; WCF-фраза — тоже. Поправка к строке «В отличие от более ранних…»: слова «sufficient for all» у Л. и Д. есть. Раньше в том же разделе — перед Сперджном, Блёшем и «Scholastic Calvinism, however…» — стоит абзац: «Other moderate Calvinists point out that Christ’s saving provision includes many racial benefits, such as the common blessings of life, the restraint of evil, an objective provision sufficient for all, the removal of every obstacle on God’s side for the forgiveness of sins…» (прим. 57; дальше Сперджн, прим. 59, указатель — p. 380; Блёш, прим. 62; Оуэн, прим. 63). Значит, слова «рамка самой статьи» были неточны: противопоставление «достаточность для всех / схоласты сузили замысел» у Л. и Д. есть, через «however». `SIMPLIFIED` (мягко) остаётся по двум пунктам: (1) у Л. и Д. это «умеренные кальвинисты», в том же ряду — Сперджн (XIX в.) и Блёш (XX в.), а не «более ранние авторы»; (2) их позиция шире «достаточности» — «racial benefits», общая благодать, устранение препятствий «on God’s side». Абзац стоит на p. 380 или раньше (вывод по порядку прим. 57 → 59 и указателю), а не на p. 381.)*
+
 **Сводка §57.**
 - **Снято:** HOLD по сн. 83, в части текста (A2).
 - **Новое:** сн. 83 — `LOCATOR_VERIFIED`; «эффективность / не просто возможным» — ACCURATE; «ранние авторы — достаточность» — `SIMPLIFIED` (мягко).
 - **Теперь все пять сносок на Л. и Д. II (10, 13, 18, 45, 83) сверены по тексту.**
-- **HOLD без изменений:** печать 1990 г. и изображения страниц; Шнукер (сн. 17); White, p. 255 (сн. 9) *(снят в части текста в раунде 135 — §58)*.
+- **HOLD без изменений:** печать 1990 г. *(раунд 180, §103: текст т. 2 © 1990 виден во фрагментах OCR — IA `integrativetheol0000dema_t1r1`)* и изображения страниц; Шнукер (сн. 17); White, p. 255 (сн. 9) *(снят в части текста в раунде 135 — §58)*.
 
 Вердикты S1–S5 не меняются. Умысел не утверждается.
 
@@ -3794,3 +3796,35 @@ S. Escobedo III, «2 Peter 2:1 and Universal Redemption» (сайт Alpha & Omeg
 Вердикт раунда 135 по сноске (`LOCATOR_VERIFIED`, ACCURATE) остаётся в силе. Одно моё утверждение в таблице §58 («непосредственно перед») оказалось неточным и исправлено пометкой на месте. Вывод о странице разбора 1 Ин. 2:2 ослаблен.
 
 **HOLD:** печать 2005 г. и изображения страниц (как в §58); против §80.4 без изменений. Вердикты S1–S5 не меняются. Умысел не утверждается.
+
+## 103. Раунд 180 (2026-11-17): самопроверка раунда 134 (сн. 83, Lewis & Demarest, *Integrative Theology* II, p. 381)
+
+**Повод.** Пользователь: «ПРОДОЛЖАЙ» (в продолжение запроса «перепроверяй себя, чисти мусор и готовь к чистому мержу ветку»).
+
+### 103.1. Что сделано заново
+
+- (а) **PDF статьи** (класс A1): с. 26, сн. 83 — как в §57; библиография, с. 38: «Lewis G. and Demarest B. Integrative Theology: 3 vols. Grand Rapids: Zondervan, 1996.»
+- (б) **Open Library `search/inside.json`** (класс A2), книги `integrativetheol0000dema_t1r1` и `integrativetheol0000lewi`, фрагменты совпадают:
+  1. «salvation. Thus proponents argue that the design of the cross was not merely to provide salvation but to secure» — только эти две книги.
+  2. «to life or death (chap. III) precedes discussion of the work of Christ (chap. VIII)».
+  3. «for the sins of the whole world.’’57 Other moderate Calvinists point out that Christ’s saving provision includes many racial benefits, such as the com- mon blessings of life, the restraint of evil, an objective provision sufficient for all, the removal of every obstacle on God’s side for the forgiveness of sins, and…»
+  4. «C. H. Spurgeon maintains that Christ’s death fulfilled a twofold…»; «59C. H. Spurgeon, ‘‘General and Yet Partic- ular’’…»; «…to the elect.*®! Donald G. Bloesch arrives at a similar conclusion in language colored…» (номер примечания в OCR испорчен); «62Donald G. Bloesch, Essentials of Evangeli- cal Theology…»; «colored by the thought of Barth. / Scholastic Calvinism, however, nar- rowed the intent of the atonement».
+- (в) **Выходные данные** (класс B1): `integrativetheol0000dema_t1r1` — «INTEGRATIVE THEOLOGY, volume 2 Copyright © 1990 by Gordon…»; `integrativetheol0000lewi` — «Copyright © 1996», ISBN 0310209153.
+
+### 103.2. Сверка
+
+| Вопрос | Что видно теперь | Итог |
+|---|---|---|
+| Текст статьи | Совпадает | **В силе** |
+| Цитата «design of the cross… to secure» | В обоих экземплярах | **`LOCATOR_VERIFIED`**, ACCURATE для «эффективности» — в силе |
+| Связь с WCF | «chap. III precedes… chap. VIII» | Частичная опора — в силе |
+| «Sufficiency» — «рамка самой статьи» (§57) | «an objective provision sufficient for all» — у «moderate Calvinists», прим. 57, перед Сперджном (p. 380), Блёшем и «Scholastic Calvinism, however…» | **Поправка.** Контраст «достаточность / схоласты сузили» у Л. и Д. есть |
+| «Более ранние кальвинистские авторы» | У Л. и Д. — умеренные кальвинисты вплоть до Сперджна и Блёша; позиция шире «достаточности»; абзац на p. 380 или раньше | **`SIMPLIFIED`** (мягко) — в силе, сужен |
+| Печать 1990 г. | dema_t1r1 — сам т. 2, © 1990 | Текст виден (OCR); изображения — HOLD |
+| «3 vols. … 1996» | Однотомник 1996 г. с пагинацией томов | Без пометки |
+
+### 103.3. Итог
+
+Вердикт раунда 134 по сноске (`LOCATOR_VERIFIED`; ACCURATE для «эффективности») остаётся в силе. Довод к `SIMPLIFIED` в §57 был частично неверен: Л. и Д. сами пишут «sufficient for all» в абзаце перед схоластами. Помета остаётся мягкой и теперь касается только «более ранних» авторов и сведения их позиции к «достаточности». Поправка внесена пометками на месте (§57; `34_` §4.217).
+
+**HOLD:** изображения pp. 380–381 (печать 1990 г. — снят в части текста); против §80.4 без изменений. Вердикты S1–S5 не меняются. Умысел не утверждается.
