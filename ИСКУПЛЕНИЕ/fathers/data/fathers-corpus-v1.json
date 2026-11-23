@@ -1665,7 +1665,7 @@
     {
       "cardId": "21",
       "father": "John Calvin",
-      "work": "In Evangelium secundum Iohannem on John 3:16 (CO 47:64, Geneva 1553)",
+      "work": "In Evangelium secundum Iohannem on John 3:16 (CO 47:64–65, Geneva 1553)",
       "language": "Latin",
       "edition": "Double-verified Latin via John Goodwin (1651) & A. F. Mitchell / J. P. Struthers (CO 47 print scan LOCATOR_HOLD)",
       "keyPhrase": "se tamen toti mundo propitium ostendit, quum sine exceptione omnes ad fidem Christi vocat... Patet enim omnibus Christus ac expositus est, solis tamen electis oculos Deus aperit",
@@ -1882,7 +1882,7 @@
       "id": "F-29",
       "what": "«Кальвин на Мф. 26:28 / Ин. 10:15 / Ин. 17:9 формулировал оуэновский партикуляризм XVII в.»",
       "whereShown": "полемические пересказы, в т. ч. docs/research/atonement/15_ §3.2",
-      "correction": "по оригиналам Кальвина (CO 45:706, calcom33–35): вторая фраза в кавычках в 15_ §3.2 на Мф. 26:28 сфабрикована (у Кальвина там пастырское увещевание о Лк. «за вас»); на Ин. 10:15 Кальвин не обсуждает предызбрание (это Ин. 10:26 / Inst. III.22.7); на Ин. 17:9 он сопоставляет молитву за избранных с Лк. 23:34 без силлогизма Оуэна 1647 г., а на 1 Ин. 2:2 (CO 55:310) прямо признаёт ломбардскую формулу истинной (verum esse illud dictum fateor)",
+      "correction": "по оригиналам Кальвина (CO 45:711 [исправлено с 706, раунд 68, 34_ §4.151], calcom33–35): вторая фраза в кавычках в 15_ §3.2 на Мф. 26:28 сфабрикована (у Кальвина там пастырское увещевание о Лк. «за вас»); на Ин. 10:15 Кальвин не обсуждает предызбрание (это Ин. 10:26 / Inst. III.22.7); на Ин. 17:9 он сопоставляет молитву за избранных с Лк. 23:34 без силлогизма Оуэна 1647 г., а на 1 Ин. 2:2 (CO 55:310) прямо признаёт ломбардскую формулу истинной (verum esse illud dictum fateor)",
       "tag": "FALSE_LOCATOR (см. 16_ §2.2)"
     },
     {
@@ -2037,7 +2037,7 @@
       "claim": "John Calvin on John 3:16 teaches that God is forensically 'reconciled' to the whole world",
       "source": "21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15.md",
       "status": "FALSE_FRIEND",
-      "resolution": "Double-verified Latin (CO 47:64, Geneva 1553; Goodwin 1651 & Mitchell/Struthers) reads 'se tamen toti mundo propitium ostendit' ('shows Himself propitious/favorable to the whole world' when calling all without exception to faith), NOT 'reconciliatum' (W. Pringle 1847 CTS translation shift), immediately followed by 'Patet enim omnibus Christus ac expositus est, solis tamen electis oculos Deus aperit'."
+      "resolution": "Double-verified Latin (CO 47:64–65, Geneva 1553; Goodwin 1651 & Mitchell/Struthers) reads 'se tamen toti mundo propitium ostendit' ('shows Himself propitious/favorable to the whole world' when calling all without exception to faith), NOT 'reconciliatum' (W. Pringle 1847 CTS translation shift), immediately followed by 'Patet enim omnibus Christus ac expositus est, solis tamen electis oculos Deus aperit'."
     },
     {
       "id": "F-52",
@@ -2299,13 +2299,13 @@
     "разрешеноЛокаторов": 171,
     "неРазрешено": 0,
     "поКлассам": {
-      "БЕЗ МАРКЕРА": 87,
-      "УДЕРЖИВАЕТСЯ": 83,
+      "БЕЗ МАРКЕРА": 86,
+      "УДЕРЖИВАЕТСЯ": 84,
       "СЛУЖЕБНОЕ": 1
     },
     "маркеры": {
-      "всего": 357,
-      "различных": 23,
+      "всего": 360,
+      "различных": 24,
       "словарь": {
         "APPARATUS_FALSE_FRIEND": "УДЕРЖИВАЕТСЯ",
         "ARCHIVE_AVAILABLE": "ЗАКРЫТО",
@@ -2326,6 +2326,7 @@
         "PARTIAL_VERIFICATION": "УДЕРЖИВАЕТСЯ",
         "PUBLICATION_ELIGIBLE": "ЗАКРЫТО",
         "PUBLICATION_HOLD": "УДЕРЖИВАЕТСЯ",
+        "QUOTE_NOT_VERBATIM": "УДЕРЖИВАЕТСЯ",
         "QUOTE_RISK": "УДЕРЖИВАЕТСЯ",
         "RESOLVED": "ЗАКРЫТО",
         "RIGHTS_HOLD": "УДЕРЖИВАЕТСЯ",
@@ -2334,8 +2335,8 @@
       "частоты": {
         "ORIGINAL_TEXT_HOLD": 71,
         "FALSE_FRIEND": 58,
-        "LOCATOR_HOLD": 48,
-        "ORIGINAL_TEXT_VERIFIED": 36,
+        "LOCATOR_HOLD": 49,
+        "ORIGINAL_TEXT_VERIFIED": 37,
         "ARCHIVE_HOLD": 30,
         "RIGHTS_HOLD": 21,
         "PUBLICATION_HOLD": 18,
@@ -2354,6 +2355,7 @@
         "APPARATUS_FALSE_FRIEND": 1,
         "FETCH_HEAD": 1,
         "OPEN_TENSION": 1,
+        "QUOTE_NOT_VERBATIM": 1,
         "RIGHTS_UNCLEAR": 1
       },
       "служебные": [
@@ -2381,7 +2383,7 @@
       "ссылокВнеОбходаЛана": 0,
       "записейВнеСтрокЛана": 0,
       "файловБезКарточкиСостояния": 0,
-      "маркеровВПрозеНеОтражённыхВКарточке": 0,
+      "маркеровВПрозеНеОтражённыхВКарточке": 1,
       "маркеровВКарточкеНеИзПрозыЛана": 22,
       "детально": {
         "02_APOSTOLIC_FATHERS_CARDS.md": {
@@ -2444,6 +2446,15 @@
             "RESEARCH_ONLY",
             "STORAGE_ONLY"
           ],
+          "естьКарточка": true
+        },
+        "20_EASTERN_RUSSIAN_AND_XX_C_ATONEMENT_RECEPTION_AUDIT_1350_2026_2026-11-15.md": {
+          "проза": 7,
+          "карточка": 6,
+          "вПрозеНеВКарточке": [
+            "QUOTE_NOT_VERBATIM"
+          ],
+          "вКарточкеНеИзПрозы": [],
           "естьКарточка": true
         }
       }
@@ -4043,7 +4054,7 @@
         "код": "5@13_AUGUSTINE_AND_MEDIEVAL_TURNING_POINT_2026-11-15",
         "лан": "fathers",
         "файл": "ИСКУПЛЕНИЕ/fathers/13_AUGUSTINE_AND_MEDIEVAL_TURNING_POINT_2026-11-15.md",
-        "строка": 132,
+        "строка": 134,
         "срез": "5. Фома Аквинский (*Summa Theologiae* IIIª qq. 46–49, 1272–1273) — `ORIGINAL_TEXT_VERIFIED` (Леонинская латынь, закрывает `F14-06`)",
         "класс": "БЕЗ МАРКЕРА",
         "маркеров": 0,
@@ -4613,9 +4624,11 @@
         "файл": "ИСКУПЛЕНИЕ/fathers/20_EASTERN_RUSSIAN_AND_XX_C_ATONEMENT_RECEPTION_AUDIT_1350_2026_2026-11-15.md",
         "строка": 133,
         "срез": "5. Русская евангельско-баптистская традиция (1847–2026) и замыкание кольца с современным русскоязычным спором",
-        "класс": "БЕЗ МАРКЕРА",
-        "маркеров": 0,
-        "токены": [],
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
+          "QUOTE_NOT_VERBATIM"
+        ],
         "машинно": false,
         "машинноПоФайлу": true
       },
@@ -4623,7 +4636,7 @@
         "код": "6@20_EASTERN_RUSSIAN_AND_XX_C_ATONEMENT_RECEPTION_AUDIT_1350_2026_2026-11-15",
         "лан": "fathers",
         "файл": "ИСКУПЛЕНИЕ/fathers/20_EASTERN_RUSSIAN_AND_XX_C_ATONEMENT_RECEPTION_AUDIT_1350_2026_2026-11-15.md",
-        "строка": 165,
+        "строка": 170,
         "срез": "6. Сводная карта пяти новых ложных друзей Волны 15 (`F-46`–`F-50`) и итог дуги `12_`–`20_`",
         "класс": "УДЕРЖИВАЕТСЯ",
         "маркеров": 1,
@@ -4657,7 +4670,7 @@
         "код": "2@21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15",
         "лан": "fathers",
         "файл": "ИСКУПЛЕНИЕ/fathers/21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15.md",
-        "строка": 27,
+        "строка": 28,
         "срез": "2. Иоанн Златоуст: *Hom. in Ioannem* LXV.1 (PG 59:361–362, Ин. 11:51–52) и *Hom. in Colossenses* III (PG 62:318–324, Кол. 1:20) — прямой греческий текст",
         "класс": "УДЕРЖИВАЕТСЯ",
         "маркеров": 2,
@@ -4672,7 +4685,7 @@
         "код": "3@21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15",
         "лан": "fathers",
         "файл": "ИСКУПЛЕНИЕ/fathers/21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15.md",
-        "строка": 51,
+        "строка": 52,
         "срез": "3. Августин Иппонский: *Enchiridion* XVI.61–63 (PL 40:260–261) и *Tract. in Io.* 49.27 (PL 35:1756) — латинский оригинал",
         "класс": "УДЕРЖИВАЕТСЯ",
         "маркеров": 2,
@@ -4687,7 +4700,7 @@
         "код": "4@21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15",
         "лан": "fathers",
         "файл": "ИСКУПЛЕНИЕ/fathers/21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15.md",
-        "строка": 64,
+        "строка": 65,
         "срез": "4. Иларий Пиктавийский (`HIL-1`): закрытие `ORIGINAL_TEXT_HOLD` (PL 10 / PL 9) и выявление `FALSE_LOCATOR` в `11_`",
         "класс": "УДЕРЖИВАЕТСЯ",
         "маркеров": 2,
@@ -4704,7 +4717,7 @@
         "код": "5@21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15",
         "лан": "fathers",
         "файл": "ИСКУПЛЕНИЕ/fathers/21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15.md",
-        "строка": 77,
+        "строка": 78,
         "срез": "5. Амвросий Медиоланский (`AMB-1`): закрытие `ORIGINAL_TEXT_HOLD` (PL 16:0150C–D) и поправка дрейфа локатора `10_` (`III.4` → `III.3.19`)",
         "класс": "УДЕРЖИВАЕТСЯ",
         "маркеров": 2,
@@ -4720,7 +4733,7 @@
         "код": "6@21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15",
         "лан": "fathers",
         "файл": "ИСКУПЛЕНИЕ/fathers/21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15.md",
-        "строка": 89,
+        "строка": 90,
         "срез": "6. Иероним Стридонский (`JER-1`): закрытие `ORIGINAL_TEXT_HOLD` (PL 23:0226C)",
         "класс": "УДЕРЖИВАЕТСЯ",
         "маркеров": 2,
@@ -4735,7 +4748,7 @@
         "код": "7@21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15",
         "лан": "fathers",
         "файл": "ИСКУПЛЕНИЕ/fathers/21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15.md",
-        "строка": 100,
+        "строка": 101,
         "срез": "7. Ириней Лионский (*Adv. Haer.* V.1.1 — уточнение `F-4`) и Готшальк из Орбе (IX в.)",
         "класс": "УДЕРЖИВАЕТСЯ",
         "маркеров": 1,
@@ -4751,7 +4764,7 @@
         "код": "8@21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15",
         "лан": "fathers",
         "файл": "ИСКУПЛЕНИЕ/fathers/21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15.md",
-        "строка": 118,
+        "строка": 119,
         "срез": "8. Жан Кальвин — закрытие двух явных латинских вопросов `docs/research/atonement/08_` (Раунд 58) и `21_` (§16.5)",
         "класс": "УДЕРЖИВАЕТСЯ",
         "маркеров": 2,
@@ -4769,7 +4782,7 @@
         "код": "9@21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15",
         "лан": "fathers",
         "файл": "ИСКУПЛЕНИЕ/fathers/21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15.md",
-        "строка": 147,
+        "строка": 148,
         "срез": "9. Постреформационная латынь XVII в. и реестр честных остаточных удержаний",
         "класс": "УДЕРЖИВАЕТСЯ",
         "маркеров": 1,
@@ -4785,9 +4798,9 @@
     ],
     "какЧитать": "покрытоМашинно — сколько кодов строк найдено в машинных списках того же реестра (карточки, молчания, заявки): сверка двух учётов лана, а не похвала сама себе",
     "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check fathers",
-    "measuredAt": "2026-11-19T19:06:15Z",
-    "checkedAt": "2026-11-19T19:06:15Z",
-    "предыдущийСъём": "2026-11-18T19:18:25Z"
+    "measuredAt": "2026-11-20T22:36:53Z",
+    "checkedAt": "2026-11-20T22:36:53Z",
+    "предыдущийСъём": "2026-11-20T22:23:37Z"
   },
   "patristicAndMedievalPrimaryDossierWave10": {
     "recordedAtUtc": "2026-11-15T17:05:00Z",
