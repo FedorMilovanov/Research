@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "type": "DERIVATIVE_PORTABLE_READER_PINNED_ONLINE_SOURCES",
+  "sourceGitSha": "f18a5e0410d06f82acd1cbc57054ee025c57ec58",
+  "sourceCustodyReceipt": "data/charnock-editorial-book-receipt-v2-20261123-pr629-f18a5e0.json",
+  "sourceArchiveSha256": "e511df5b2b07e55ebda4b433b395b1a00d812a17225b950d595e2240347f3065",
+  "sourceBytes": 992494,
+  "portableArchiveName": "CHARNOCK_PORTABLE_READER_PINNED_SOURCES_f18a5e04.zip",
+  "portableBytes": 120985,
+  "portableSha256": "328abd4de805e77ea27d1fb349766fb1f0a6bcbc76e20cfad4f60d73f4083bcf",
+  "zipMemberCount": 3,
+  "rewrittenRelativeReferences": 237,
+  "rewrittenSourcesInOriginalCustodySnapshot": 7,
+  "rewrittenSourcesOutsideCustodySnapshot": 230,
+  "untouchedTocAnchors": 10,
+  "untouchedExternalUrls": 19,
+  "footnoteCount": 180,
+  "addedVisualAuditAtPinnedSha": {
+    "path": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED02_1699_N520_PRINTED_521_MARGINAL_185_VISUAL_2026-11-23.md",
+    "gitBlobSha1": "0f86020f5b6d057100fe893b4cea6c23700c0062",
+    "exists": true
+  },
+  "changedContent": "No prose/notes in source edited by portable packaging; only relative Markdown link targets rewritten to pinned GitHub Research URLs.",
+  "onlineReferences": true,
+  "offlineReaderProse": true,
+  "offlineFullSourceCorpus": false,
+  "drive": {
+    "fileId": "11G4CL4EPvsBPJxjUsPEa8wIyHOgTHh9c",
+    "folderId": "15iNGKO8rN3vJKPbJuXfPVx4rXHER5Xq2",
+    "url": "https://drive.google.com/file/d/11G4CL4EPvsBPJxjUsPEa8wIyHOgTHh9c/view?usp=drivesdk",
+    "readbackBytes": 120985,
+    "readbackSha256": "328abd4de805e77ea27d1fb349766fb1f0a6bcbc76e20cfad4f60d73f4083bcf"
+  },
+  "releaseStatus": "DRAFT / RESEARCH_ONLY / PUBLICATION_HOLD",
+  "independentTranslationReview": "0/12",
+  "holds": [
+    "ED02_1684_VARIANT_UNCOLLATED",
+    "ED06_INDEPENDENT_REVIEW_HOLD",
+    "RIGHTS_HOLD",
+    "PUBLICATION_HOLD"
+  ]
+}
