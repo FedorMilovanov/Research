@@ -304,7 +304,7 @@ Fresh successful reads: Lesley 2024 republication, Lochwood Sept11 calendar, Pra
 
 ## 15. R5 — consolidated decision index and intake checklist (24 Nov 2026)
 
-This is an index of the preceding reader projections, NOT a parallel source registry, new claim IDs, or an approval artifact. Read exact paragraphs and source/locator bullets at the linked internal section before implementing. The repository decision in #632 is still pending; all new prose stays PUBLICATION_HOLD. Existing accepted G3-HIST-PUB-01–09 and surviving G3-PUB-001–014/016 remain authoritative. G3-PUB-015 remains withdrawn, no positive replacement. MAX 0 [independent review of ff72ca93](https://github.com/FedorMilovanov/Research/pull/632#issuecomment-7117314413) accepted ONLY H-G, C-E (four fiscal metrics/chart, not property sentence or wider forensic claims), and E5 (two metadata repairs) **for integration planning**. No wholesale endorsement, even if CI passes. This review is anchored to the earlier SHA; scoped adoption must explicitly reference the final exact head. The prior §6/§9 next-work wording is superseded by this index; evidence and access history remain preserved.
+This is an index of the preceding reader projections, NOT a parallel source registry, new claim IDs, or an approval artifact. Read exact paragraphs and source/locator bullets at the linked internal section before implementing. The repository decision in #632 is still pending; all new prose stays PUBLICATION_HOLD. Existing accepted G3-HIST-PUB-01–09 and surviving G3-PUB-001–014/016 remain authoritative. G3-PUB-015 remains withdrawn, no positive replacement. MAX 0 [independent review of ff72ca93](https://github.com/FedorMilovanov/Research/pull/632#issuecomment-7117314413) accepted H-G, C-E (four fiscal metrics/chart, not property sentence or wider forensic claims), and E5 (two metadata repairs) **for integration planning**. The subsequent [independent review of bdb29b39](https://github.com/FedorMilovanov/Research/pull/632#issuecomment-7117498205) added H-R (May event occurrence only, not the separate op-ed) and H-T (23 selected catalogue associations only). Five planning slices, not five publication grants. No wholesale endorsement, even if CI passes. Reviews are anchored to earlier SHAs; scoped adoption must explicitly reference the final exact head. The prior §6/§9 next-work wording is superseded by this index; evidence and access history remain preserved.
 
 Legend: P = independently accepted for planning, still adoption/release-gated; R = narrow candidate for independent review; K = conditional on already acquired exact readback acceptance or new verified object; HOLD = no new projection. A source URL can be exact but presently inaccessible; a source can support a fact while not granting reproduction rights. Each section below has explicit source URL(s), author/date and within-object locator; abbreviated links here point to the same objects rather than invent new source IDs.
 
@@ -325,11 +325,11 @@ Legend: P = independently accepted for planning, still adoption/release-gated; R
 | H-M (§10) | SBTS announced special rate and scholarship opportunity. | [SBTS notice](https://equip.sbts.edu/article/g3-conference-on-the-church/), heading and first two paragraphs. | R; offer not award; separate music credits. |
 | H-N (§10) | H.B. Charles reports participating in 2016, hosted by Pray’s Mill. | [Author post](https://hbcharlesjr.com/resource-library/articles/saturday-shout-outs-g3-_____-ministry-links/), G3 paragraph/caption. | R; photo derivative 404 per VISUAL, no image rights. |
 | H-O (§10) | AFA announced Jan19–21 2017 venue; Fong reports Miller exposition and other sessions. | [AFA Nov2016](https://afajournal.org/past-issues/2016/november/g3-conference-to-celebrate-reformation/), last two paragraphs; [Fong Feb23](https://theartofgodliness.com/blog/2017223/2017-g3-conference-review), opening and sessions 3/10/11. | R; advertised venue, eyewitness Atlanta event; exact transition date HOLD. |
-| H-P (§14) | Lesley's workshop preparation, group feedback, later apprenticeship. | [2024 republication](https://michellelesley.com/2024/06/06/6-reasons-you-should-attend-the-next-g3-womens-expository-teaching-workshop-2/), §§1–4/6, 2024 Update; [prior archived version](https://web.archive.org/web/20240606100014id_/https://michellelesley.com/2024/06/06/6-reasons-you-should-attend-the-next-g3-womens-expository-teaching-workshop-2/). | R for prior readback, reader link conditional: latest 404, not fresh access. [Lochwood calendar](https://lochwood.church/events-1/g3-biblical-worship-workshop) supports scheduled Sept11 only. |
+| H-P (§14) | Lesley's workshop preparation, group feedback, later apprenticeship. | [2024 republication](https://michellelesley.com/2024/06/06/6-reasons-you-should-attend-the-next-g3-womens-expository-teaching-workshop-2/), §§1–4/6, 2024 Update; [prior archived version](https://web.archive.org/web/20240606100014id_/https://michellelesley.com/2024/06/06/6-reasons-you-should-attend-the-next-g3-womens-expository-teaching-workshop-2/). | R for 2023 cached text/previous readback; K for 2024 apprenticeship. Both original report URLs return 404; live May20 announcement only establishes intent. See §16. [Lochwood calendar](https://lochwood.church/events-1/g3-biblical-worship-workshop) supports scheduled Sept11 only. |
 | H-Q (§14) | Prata reports heard sessions Sep21–23, not whole conference or attendance. | [Day1](https://the-end-time.org/2023/09/21/g3-conference-2023-day-1/), breakouts and Johnson; [Day2](https://the-end-time.org/2023/09/22/g3-conference-2023-day-2/), Coates/White/Peters (R5 fresh); [Day3](https://the-end-time.org/2023/09/23/g3-conference-day-3-final-day-final-thoughts/), Ham/Riccardi. | R beyond HIST-07 announcement; one observer. |
-| H-R (§14) | May2024 regional meeting actually held, participant report; subsequent separate op-ed. | [Registration](https://www.tickettailor.com/events/g3ministries/1010697); [Three Sixteen June5](https://316publishing.com/blogs/blog/june-2024-the-lsb-ppr-conferences-a-new-susan-heck-bible-study-more), In May paragraph; [Buice May23](https://www.christianpost.com/voices/when-preaching-leaves-a-church-christ-goes-with-it.html), Matt28. | R actual occurrence beyond HIST-09 announcement; op-ed not sermon. |
+| H-R (§14) | May2024 regional meeting actually held, participant report; subsequent separate op-ed. | [Registration](https://www.tickettailor.com/events/g3ministries/1010697); [Three Sixteen June5](https://316publishing.com/blogs/blog/june-2024-the-lsb-ppr-conferences-a-new-susan-heck-bible-study-more), In May paragraph; [Buice May23](https://www.christianpost.com/voices/when-preaching-leaves-a-church-christ-goes-with-it.html), Matt28. | P for May event occurrence only, beyond HIST-09 announcement; R for separate op-ed, not sermon. |
 | H-S (§14) | October announced location; Osman proposed topic; Brown invitation and own position. | [Listener registration](https://www.tickettailor.com/events/g3ministries/1010698); [Didaché description](https://didache.captivate.fm/episode/didache-delivering-you-from-deliverance-ministries-a-new-session-at-the-cessationist-conference); [Brown Sept26](https://stream.org/a-friendly-invitation-to-the-speakers-at-the-g3-cessationist-conference/), Terms of Engagement. | R new detail beyond HIST-09; no actual delivery of every session or refusal. Sponsorship offers not receipts. |
-| H-T (§14) | 23 distinct catalogue person/year associations, 11 in 2018, 12 in 2021. | [GNL 2018](https://www.gnli.com/titles/2018-G3-Conference-or-G3-Ministries/2902), first displayed page; [GNL 2021](https://www.gnli.com/titles/2021-G3-National-Conference-or-G3-Ministries/2906), first displayed page. Both R5 fresh, 23/23 match. | R; catalogue-only, beyond HIST-02/03; dedup by person/year in integrated V2. |
+| H-T (§14) | 23 distinct catalogue person/year associations, 11 in 2018, 12 in 2021. | [GNL 2018](https://www.gnli.com/titles/2018-G3-Conference-or-G3-Ministries/2902), first displayed page; [GNL 2021](https://www.gnli.com/titles/2021-G3-National-Conference-or-G3-Ministries/2906), first displayed page. Both R5 fresh, 23/23 match. | P; catalogue-only, beyond HIST-02/03; dedup by person/year in integrated V2; dynamic nine-year layout, not a complete roster. |
 | C-A (§8) | Board reports May4 confrontation/admission, promised refunds/cancelled workshops; Founders reports its response. | [May12 statement rendering](https://the-end-time.org/2025/05/13/g3-president-josh-buice-resigns-amid-scandal/), board signature and May4/8/cancellation; [Founders](https://founders.org/articles/a-statement-regarding-josh-buice/), specified paragraphs. | R for incremental detail, existing PUB-005/006 still control. Refund completion HOLD. |
 | C-B (§8) | Johnson reports March27 advice and measures as far as he knew; Lindale's attributed response. | [Johnson Aug19](https://teampyro.blogspot.com/2026/08/hamans-gallows.html), opening and corrective-measures paragraphs; [ChurchLeaders](https://churchleaders.com/news/2221879-g3-president-scott-aniol-prays-mill-baptist-church-resign-tom-buck.html/2), Lindale elders heading. | R beyond PUB-010; 0/17 item verification, no adjudication or church minutes. |
 | C-C (§11) | 1689 confession allows advice but not imposed jurisdiction; compare admitted process conduct. | [Chapter 26](https://1689londonbaptistconfession.com/26/), §§7,14–15; PUB-011. | R theological interpretation, not new factual verdict. |
@@ -339,12 +339,12 @@ Legend: P = independently accepted for planning, still adoption/release-gated; R
 | C-G (§3) | On Nov24 G3 root was observed redirecting to Lumena; site states Minga presidency and 1689; specific old imprint listings. | [About](https://lumenaministries.com/about/), Our convictions/Our leadership/Our Work (R5 fresh); exact store cards, Give and root listed in §3. | R; extends dated PUB-013/014 observations, not proof of transaction or all rights. |
 | E5 (§13) | Correct date Aug27 and four identified pastors in bibliography. | [MinistryWatch byline](https://ministrywatch.com/g3-ministries-closes-amid-anonymous-smear-campaign/), G3-S017; G3-S015 and existing PUB-011. | P; metadata only, reader links separately verified before release. |
 
-Index integrity: 20 history labels (H-A–T including H-F non-transfer), 7 crisis labels (C-A–G), E5 metadata batch = 28 scope entries, no new claim identifiers. Three P rows only. All other rows require appropriate R/K/HOLD resolution; prior authority is not revoked. H-A–E are five scene labels, not 5 newly adopted claims. Shared URLs or same author's repeated accounts are not independent witnesses.
+Index integrity: 20 history labels (H-A–T including H-F non-transfer), 7 crisis labels (C-A–G), E5 metadata batch = 28 scope entries, no new claim identifiers. Five P rows (H-R is mixed P/R; C-E property context separately R). All other rows and excluded subparts require appropriate R/K/HOLD resolution; prior authority is not revoked. H-A–E are five scene labels, not 5 newly adopted claims. Shared URLs or same author's repeated accounts are not independent witnesses.
 
 ### R5 delta corrections and non-duplication
 
 * FirstLove 2018 images are a distinct 2018 lead, not a new object within G3-M007. Do not increment verified-image count or imply rights.
-* H-Q now explicitly includes Peters's topic from Day2 (author report ¶ after luncheon, not spoken quote), to align narrative with VISUAL/Editorial matrix. The R5 user-facing potential 60 associations remains conditional until V2 integrated dedup; 23 selected additions rechecked against both live catalogue pages, not all catalogues. No attendance curve.
+* H-Q now explicitly includes Peters's topic from Day2 (author report ¶ after luncheon, not spoken quote), to align narrative with VISUAL/Editorial matrix. The potential 60 associations remains conditional until V2 integrated dedup; 23 selected additions rechecked against both live catalogue pages, not all catalogues. No attendance curve.
 * H-P and H-D live source recheck returned 404 and 503 respectively. Do not call either currently accessible; use previously read exact archive if available, or truthful dated access status. No repeat acquisition without a new trigger. H-P earlier 2024 readback remains distinct from present access. C-G now says redirect observed in November, not inferred commencement date. About currently readable, no new title evidence.
 * Existing HIST-05 Aniol announcement, PUB-006 dates, PUB-007 reset, PUB-010 process and PUB-011 admission should not be rewritten as competing claims; only accepted incremental wording belongs in the same article. Existing HIST-09 October occurrence relies on Peters prior report; do not downgrade to mere registration, but H-S new proposed-session details remain only announced.
 * §1 venue observation concerns documented announced venue and prior program, not exact migration date. No new claims that all old links were fixed. §13 metadata correction applies to current Product source records S015/S017, not retroactive historical ledger changes.
@@ -357,3 +357,217 @@ Index integrity: 20 history labels (H-A–T including H-F non-transfer), 7 crisi
 4. Exact-head Research CI and authorized merge/adoption per existing protocol; exact-head Product implementation/approval separately. This document is not signature, approval, merge, deploy, or release. Do not publish every candidate solely because it has a URL.
 
 R5 scope closure: one consolidated source/claim index; editorial overlaps and date/access clarifications incorporated. Known evidence gaps remain bounded, not a reason to keep accumulating redundant narrative or repeatedly fetching failed routes. Next actionable step is coordinator review of individual R/K rows and actual Product integration after adoption.
+
+
+## 16. R5b — independent review intake, narrow adoption bundle and H-P access witness
+
+**Review anchors:** [MAX 0 review 7117314413](https://github.com/FedorMilovanov/Research/pull/632#issuecomment-7117314413) at ff72ca93 and [MAX 0 review 7117498205](https://github.com/FedorMilovanov/Research/pull/632#issuecomment-7117498205) at bdb29b39; [EDITORIAL E8 manuscript](https://github.com/FedorMilovanov/gb-is-my-strength/pull/2380#issuecomment-7117467626) with its [Research crosswalk](https://github.com/FedorMilovanov/Research/pull/632#issuecomment-7117475422). E8 supersedes earlier overlapping prose, not evidence authority. R5 index was read at cfc48582. Product #2380 head remains 1ba041f4 at start of this wave. Visual donor #2383 and Graphics #2381 are separate prototype/component lanes, no authority to publish new claims.
+
+### H-P — targeted source recovery, not a new independent witness
+
+24 Nov 2026 recheck of original author site:
+- June 15 2023 original: https://michellelesley.com/2023/06/15/6-reasons-you-should-attend-the-next-g3-womens-expository-teaching-workshop/ . Direct open 404. Search-indexed historical body (byline Michelle Lesley, June 15 2023; index indicated crawl about three months earlier, not a precise acquisition date) remains readable in search results. This is a cached rendering of the same author object, NOT current live body, raw bytes, independent witness or licensed facsimile. Internal minimal excerpt anchors: §2 “central proposition of the passage”; §4 “small group of about 6-8 women”. §3 names Buice and Buck as main teachers; §4 describes homework and trained group leaders, §6 contrasts collaborative work with lecture recording. Paraphrase only. No additional source ID or raw-object hash invented. Prior dated archive: https://web.archive.org/web/20230625194207id_/https://michellelesley.com/2023/06/15/6-reasons-you-should-attend-the-next-g3-womens-expository-teaching-workshop/ ; previously recorded exact locator, not newly fetched today.
+- June 6 2024 republication: https://michellelesley.com/2024/06/06/6-reasons-you-should-attend-the-next-g3-womens-expository-teaching-workshop-2/ direct open 404 again. Existing source-ledger prior exact locator https://web.archive.org/web/20240606100014id_/https://michellelesley.com/2024/06/06/6-reasons-you-should-attend-the-next-g3-womens-expository-teaching-workshop-2/ , “2024 Update” ¶1; prior R4 author-hosted readback preserved. No freshly acquired durable body/excerpt of apprenticeship. Keep this subclaim conditional; do not invent verbatim words from earlier summary.
+- Alternative actually readable author post https://michellelesley.com/2024/05/20/blog-announcement/ , byline May 20 2024, first paragraph (rendered lines 35–42): announces absence May 28–30 and intention to attend the workshop the following week. Same author's monthly archive https://michellelesley.com/2024/05/ lines 6–14 reproduces same object, not independent witness. A1 author statement / PARTIAL_OBJECT / EXACT_LOCATOR_VERIFIED for **intention**, no proof attendance or apprentice role.
+- Reader-ready safe split: «В отчёте о первом практикуме 2023 года Мишель Лесли описала подготовку конспекта до приезда, анализ контекста Писания и работу в малых группах. В мае 2024 года она сообщила, что собирается вновь посетить практикум». First sentence conditional on accepted prior/cached exact evidence and truthful reader link; second supported by current readable May20 source. Omit apprenticeship if prior archive acceptance is not granted. Neither source is a general survey of G3 educational outcomes. No full-copy republication, no further repeated failed retrieval.
+
+### Exact planning-only subset requested for adoption
+
+Only these five bounded slices have independent MAX 0 planning acceptance. Do not import additional paragraphs just because they share a local label. Proposed reader wording below is an implementation boundary, not permission to publish.
+
+| Scope | E8 placement / source | Maximum narrow meaning | Excluded even from this planning subset |
+|---|---|---|---|
+| H-G | H06 / piper-2019; Desiring God header + named sections in §7 | Jan17 2019, G3 Atlanta, Phil2:17–18; Piper describes age-related obstacles to mission and urges sacrificial joy. Original Russian paraphrase. | Exact audio words, timecodes, empirical age data. |
+| H-R | H11 / reformation-2024 + 316-2024; June5 “In May” | G3 advertised May9–11 at Countryside Bible Church; Three Sixteen reported participation and meeting Pennington. | Buice May23 separate op-ed (R); distribution 3500 belongs to another event; audience totals, full realized schedule. |
+| H-T | Separate V2 figure / proposed gnl-2018, gnl-2021 | Exactly the 23 selected person/year keys and title paraphrases in §14, with partial-catalogue caption. | Full roster, attendance, speech verification, endorsement. Existing 37 keys separate; validate union, 9 dynamic years, print and source-return behavior. |
+| C-E | C02 / existing S002/S028, proposed propublica-990-annual | 28 values in §4, FY ending December 2019–25, USD, result revenue minus expenses, end-year net assets. Derived arithmetic with correct denominators. | Noncash-property sentence (R); property title/deed, cash/reserve equivalence, causal loss allocation, fraud. Existing PUB-002 expense delta remains separate. |
+| E5 | Crisis bibliography / G3-S015, G3-S017 | Attribute named four-person statement to its reproduced text; MinistryWatch byline Aug27, 2026. | Original X body recovery, rights, resignation-mechanics decision, unverified source links. |
+
+The following compact manifest is **derived from §15**, for coordination and validation only. It is not a second source ledger or authorization and must not be consumed as a Product publication registry. All 28 labels stay local to this document. Status P means planning-only; split exclusions above take precedence.
+
+
+```json
+{
+  "schema": "g3-local-review-index-v1",
+  "publicationState": "PUBLICATION_HOLD",
+  "planningAcceptanceOnly": true,
+  "counts": {
+    "R": 20,
+    "HOLD": 1,
+    "P": 5,
+    "K": 2
+  },
+  "scopes": [
+    {
+      "id": "H-A",
+      "status": "R",
+      "placement": "H05",
+      "decisionIndex": "§15 H-A"
+    },
+    {
+      "id": "H-B",
+      "status": "R",
+      "placement": "H08",
+      "decisionIndex": "§15 H-B"
+    },
+    {
+      "id": "H-C",
+      "status": "R",
+      "placement": "H08,H09",
+      "decisionIndex": "§15 H-C"
+    },
+    {
+      "id": "H-D",
+      "status": "R",
+      "placement": "H09",
+      "decisionIndex": "§15 H-D"
+    },
+    {
+      "id": "H-E",
+      "status": "R",
+      "placement": "H04",
+      "decisionIndex": "§15 H-E"
+    },
+    {
+      "id": "H-F",
+      "status": "HOLD",
+      "placement": "none",
+      "decisionIndex": "§15 H-F"
+    },
+    {
+      "id": "H-G",
+      "status": "P",
+      "placement": "H06",
+      "decisionIndex": "§15 H-G"
+    },
+    {
+      "id": "H-H",
+      "status": "R",
+      "placement": "H07",
+      "decisionIndex": "§15 H-H"
+    },
+    {
+      "id": "H-I",
+      "status": "K",
+      "placement": "H07 conditional",
+      "decisionIndex": "§15 H-I"
+    },
+    {
+      "id": "H-J",
+      "status": "R",
+      "placement": "H09,H11",
+      "decisionIndex": "§15 H-J"
+    },
+    {
+      "id": "H-K",
+      "status": "R",
+      "placement": "H10",
+      "decisionIndex": "§15 H-K"
+    },
+    {
+      "id": "H-L",
+      "status": "R",
+      "placement": "H01",
+      "decisionIndex": "§15 H-L"
+    },
+    {
+      "id": "H-M",
+      "status": "R",
+      "placement": "H02",
+      "decisionIndex": "§15 H-M"
+    },
+    {
+      "id": "H-N",
+      "status": "R",
+      "placement": "H03",
+      "decisionIndex": "§15 H-N"
+    },
+    {
+      "id": "H-O",
+      "status": "R",
+      "placement": "H04",
+      "decisionIndex": "§15 H-O"
+    },
+    {
+      "id": "H-P",
+      "status": "R",
+      "placement": "H11",
+      "decisionIndex": "§15 H-P"
+    },
+    {
+      "id": "H-Q",
+      "status": "R",
+      "placement": "H10",
+      "decisionIndex": "§15 H-Q"
+    },
+    {
+      "id": "H-R",
+      "status": "P",
+      "placement": "H11",
+      "decisionIndex": "§15 H-R"
+    },
+    {
+      "id": "H-S",
+      "status": "R",
+      "placement": "H11",
+      "decisionIndex": "§15 H-S"
+    },
+    {
+      "id": "H-T",
+      "status": "P",
+      "placement": "V2",
+      "decisionIndex": "§15 H-T"
+    },
+    {
+      "id": "C-A",
+      "status": "R",
+      "placement": "C03",
+      "decisionIndex": "§15 C-A"
+    },
+    {
+      "id": "C-B",
+      "status": "R",
+      "placement": "C06,C07",
+      "decisionIndex": "§15 C-B"
+    },
+    {
+      "id": "C-C",
+      "status": "R",
+      "placement": "H09,C07",
+      "decisionIndex": "§15 C-C"
+    },
+    {
+      "id": "C-D",
+      "status": "R",
+      "placement": "C04",
+      "decisionIndex": "§15 C-D"
+    },
+    {
+      "id": "C-E",
+      "status": "P",
+      "placement": "C02",
+      "decisionIndex": "§15 C-E"
+    },
+    {
+      "id": "C-F",
+      "status": "K",
+      "placement": "C09",
+      "decisionIndex": "§15 C-F"
+    },
+    {
+      "id": "C-G",
+      "status": "R",
+      "placement": "C09",
+      "decisionIndex": "§15 C-G"
+    },
+    {
+      "id": "E5",
+      "status": "P",
+      "placement": "bibliography",
+      "decisionIndex": "§15 E5"
+    }
+  ]
+}
+```
+
+Acceptance check: 28 unique labels, all have an E8/figure/bibliography placement or explicit no-transfer; planning subset 5; 20 review candidates, 2 conditional rows, 1 HOLD. Mixed subclaims in H-P/H-R/H-J/H-K/C-E retain their narrower gates. E8 source-slug typo `pr ata-day1/2/3` corrected in Editorial's coordination comment to provisional `prata-day1/2/3`; no Product IDs mutated. Existing immutable HIST-PUB and crisis PUB authorities unchanged. No Product writes. Final adoption/merge remains MAX 0 responsibility; all hosted checks must refer to final exact SHA. No redundant full-source discovery requested.
