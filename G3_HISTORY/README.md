@@ -10,6 +10,10 @@
 **Research cutoff:** 2026-09-08  
 **Scope:** history, theology, governance, finances, institutional development, crises, operational wind-down and unresolved legacy/asset questions involving G3 Ministries / G3 Church Network.
 
+## Координация MAX 0
+
+[Единый регламент MAX 0 для NEWS и G3](MAX_AGENT_PROTOCOL.md) — восстановление роли в новом чате, распределение работы, качество редакции и визуала, приёмка. Не заменяет corpus authority и publication gates.
+
 ## Purpose
 
 This is a source-controlled reconstruction of G3 Ministries from planning for the first conference through the 2025–2026 crises and aftermath. It is evidence infrastructure for later journalism/documentary work, not a polemical brief and not publication authorization.
