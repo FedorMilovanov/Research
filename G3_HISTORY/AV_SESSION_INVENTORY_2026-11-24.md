@@ -48,3 +48,32 @@ Rights primary policy https://beta.desiringgod.org/permissions , body §§1 and 
 ## Required next acquisition gate
 
 Local authorized owner environment only, use publisher download as offered and permitted; check actual media identity/duration/hash with ffprobe and approved restricted storage, no public binary/caption commit. Retrieve official captions if actually offered; normalize and preserve provenance; local ASR only if approved offline model exists. If no access, record REQUEST_USER or link-only. No verified start/end time, English audio quote, Russian translated quote, screenshot/hash or media rights supplied today. 0 verified excerpts/0 frames, not a failure of underlying historical facts. EDITORIAL can select priority question, VISUAL/GRAPHICS should implement only real verified material after approval. Pending decisions H-A/B/C/D/C-A/B from #632 R5e remain separate. MAX 0 owns adoption and publication.
+
+
+## AV4 acquisition delta — 2026-11-24, Piper session
+
+This dated delta supersedes **only** the initial AV0/AV1 access/environment observations for the Piper session; all thirteen session IDs, source boundaries and rights HOLD remain. Windows owner-authorized local device accessible; no paid ASR, no new model installation, no access bypass. The 2019-01-17 Atlanta event remains established from Desiring God author page, not inferred from the mirror upload date.
+
+### Acquired research-only mirror media and captions
+
+SermonIndex listing https://sermonindex.net/speakers/john-piper/the-invincible-power-of-joy-for-world-missions/ (body read, player/catalogue 53:16, transcript and MP3 download affordance). Exact acquired download locators and local metadata:
+
+| Object | Exact locator | Bytes | SHA-256 |
+|---|---|---:|---|
+| SermonIndex MP3, SID41487 | https://sermonindex1.b-cdn.net/41/SID41487.mp3 | 25566821 | aa5fb9e25584622bfec5a15b8968f2ed25593400938c8280230e3c099fe33014 |
+| SermonIndex SRT, SQiZ4T-GXsA | https://sermonindex3.b-cdn.net/srt-video/SQiZ4T-GXsA.srt | 55120 | bf67b2a4292b91af2415cd3023b11dd66a50a95843964d74765d88dddc1c95fe |
+
+Stored locally in restricted %LOCALAPPDATA%/G3ResearchAV/2019-PIPER-XBdXKAKwb1g, not in public Git; acquired files named sermonindex-SID41487.mp3 and sermonindex-SQiZ4T-GXsA.srt. FFprobe measured MP3 format, 3195.754671 seconds, mono 44100 Hz. SRT parse 784 segments, first start 710 ms, last end 3189070 ms. Human caption provenance not established. Separate publisher full MP3 attempt resumed HTTP 206 but stopped with curl exit 28 (low-speed timeout), 51563 bytes partial only; not usable media. EDITORIAL independently acquiring official publisher object under its own existing restricted local directory as reported in #634 comment 7118871256. Coordinate before any further publisher download; no duplicate ASR on that object. Mirror and publisher are versions of same session candidate, not independently corroborating witnesses. Do not synchronize clocks across versions.
+
+### Offline local ASR witness, not a verified quotation
+
+- Faster-whisper 1.2.1 with existing small model, CPU int8, four threads, English, beam_size=3, VAD disabled. Prior synthetic speech test exit 0 and exact intended short sentence recognized; GPU large-v3 failed in default allocator (CudaAsyncAllocator::free), then with process-local CT2_CUDA_ALLOCATOR=cub_caching at encode (CUBLAS_STATUS_INTERNAL_ERROR). No global package/driver change. CPU fallback works.
+- FFmpeg decoded the acquired mirror MP3 at 2990–3080 seconds to local mono 16 kHz PCM window. ASR produced 14 segments; elapsed 17.14 s; restricted JSON SHA-256 a08e4c1dff3e9c4c7ff911be5dec6a9527b581d2e64b18335a1ae708d00a8e61. No transcript or audio bytes in Git.
+- Same-window caption rows 740–759 (20), normalized ASCII word sequences compared via difflib.SequenceMatcher(autojunk=False). ASR 115 words / SRT 118 words; ratio 0.9614. Scanning shifts from -20 to +20 s in 250 ms increments yielded the same maximum 0.9614 (one maximizing shift +1500 ms); not a measured synchronization offset, not a word-error rate or whole-file equivalence. Supports local correspondence of this window only.
+
+| Candidate ID | Mirror MP3 ASR window, ms | SRT anchors | Editorial purpose | Status |
+|---|---|---|---|---|
+| G3-AV-2019-PIPER-XBdXKAKwb1g-C01 | 3006800–3019400 | 742–744 | Address to grandparents and mission-related family sacrifice; H06, author-written Comfort Quits Its Creep | ASR_AND_CAPTION_CORRESPONDENCE_ONLY |
+| G3-AV-2019-PIPER-XBdXKAKwb1g-C02 | 3019400–3028200 | 743–745 | Continuation about grandchildren and danger; keep surrounding context | ASR_AND_CAPTION_CORRESPONDENCE_ONLY |
+
+The two adjacent candidate windows are parts of **one** editorial passage, not two independent approved excerpts. ASR avg_logprob -0.193 and -0.227 respectively (model signal, not correctness proof). Original SRT anchor 742 is 3006580–3014720, 744 is 3019840–3023000; row 753 3059190–3062670 and row 181 848730–851030 remain caption-only leads, not automatically selected excerpts. Do not attach these to official YouTube XBdXKAKwb1g or assert exact spoken wording, video frame identity, or public translation permission. No auditory witness claimed. No original quote/translated quote/frames in public repo. Public-safe option remains already adopted G3-HIST-PUB-10 written paraphrase plus source link. Request one human/authorized audio listening check with context, recording-specific link and separate rights review before adopting any AV excerpt; compare against EDITORIAL publisher witness only if same-version timing is established. Zero audio-verified/public-ready excerpts and zero frames remain. 
