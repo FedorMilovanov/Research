@@ -76,4 +76,39 @@ Stored locally in restricted %LOCALAPPDATA%/G3ResearchAV/2019-PIPER-XBdXKAKwb1g,
 | G3-AV-2019-PIPER-XBdXKAKwb1g-C01 | 3006800–3019400 | 742–744 | Address to grandparents and mission-related family sacrifice; H06, author-written Comfort Quits Its Creep | ASR_AND_CAPTION_CORRESPONDENCE_ONLY |
 | G3-AV-2019-PIPER-XBdXKAKwb1g-C02 | 3019400–3028200 | 743–745 | Continuation about grandchildren and danger; keep surrounding context | ASR_AND_CAPTION_CORRESPONDENCE_ONLY |
 
-The two adjacent candidate windows are parts of **one** editorial passage, not two independent approved excerpts. ASR avg_logprob -0.193 and -0.227 respectively (model signal, not correctness proof). Original SRT anchor 742 is 3006580–3014720, 744 is 3019840–3023000; row 753 3059190–3062670 and row 181 848730–851030 remain caption-only leads, not automatically selected excerpts. Do not attach these to official YouTube XBdXKAKwb1g or assert exact spoken wording, video frame identity, or public translation permission. No auditory witness claimed. No original quote/translated quote/frames in public repo. Public-safe option remains already adopted G3-HIST-PUB-10 written paraphrase plus source link. Request one human/authorized audio listening check with context, recording-specific link and separate rights review before adopting any AV excerpt; compare against EDITORIAL publisher witness only if same-version timing is established. Zero audio-verified/public-ready excerpts and zero frames remain. 
+The two adjacent candidate windows are parts of **one** editorial passage, not two independent approved excerpts. ASR avg_logprob -0.193 and -0.227 respectively (model signal, not correctness proof). Original SRT anchor 742 is 3006580–3014720, 744 is 3019840–3023000; row 753 3059190–3062670 and row 181 848730–851030 remain caption-only leads, not automatically selected excerpts. Do not attach these to official YouTube XBdXKAKwb1g or assert exact spoken wording, video frame identity, or public translation permission. No auditory witness claimed. No original quote/translated quote/frames in public repo. Public-safe option remains already adopted G3-HIST-PUB-10 written paraphrase plus source link. Request one human/authorized audio listening check with context, recording-specific link and separate rights review before adopting any AV excerpt; compare against EDITORIAL publisher witness only if same-version timing is established. Zero audio-verified/public-ready excerpts and zero frames remain.
+
+
+## AV5 official-caption acquisition and access reconciliation — 2026-11-24
+
+Independent filesystem read of EDITORIAL E14/E15 files (comments 7118894356 / 7119029749 on #634); no duplicate download, no CUDA, no new ASR, no paid services. Preserve 13 session IDs above. This supersedes the corresponding initial NO_RAW_ACQUISITION state only for actual acquired caption objects, not original audio/video access or rights.
+
+| Session | Exact recording | Caption provenance | Bytes | SHA-256 | Nonempty events | First start / last end ms |
+|---|---|---|---:|---|---:|---|
+| G3-AV-2014-QA-WKeqskrPKfo | https://www.youtube.com/watch?v=WKeqskrPKfo | YouTube automatic en-orig JSON3, retrieved by EDITORIAL E15, independently re-read | 875800 | 1ff388923a01e9436a593d1b9ae3114f4048143cea7e55ef9b23c7509020780c | 1139 | 12070 / 3402020 |
+| G3-AV-2019-PIPER-XBdXKAKwb1g | https://www.youtube.com/watch?v=XBdXKAKwb1g | YouTube automatic en-orig JSON3, retrieved by EDITORIAL E14, independently re-read | 559686 | a1016497f2aed986c97095c5359cfabf583928237f94a924b319e24a32b25881 | 732 | 60 / 3189950 |
+
+Raw files remain in EDITORIAL's restricted local %LOCALAPPDATA%/G3Evidence/<session ID>/<recording ID>.en-orig.json3. Parsed actual events[].segs[].utf8, tStartMs and dDurationMs; last end is max(start+duration), **not measured runtime**. Rolling caption events can overlap and repeat text; event counts are not sentence counts or unique utterances. No speaker diarization. GNL duration for 2014 Q&A is 59:34; last caption end 56:42.020 does not prove video length or identity mismatch, so don't transfer offsets from the catalogue. No caption or media bytes in Git.
+
+### 2014 Q&A — internal review windows, not accepted excerpts
+
+Organizer-indexed https://g3min.org/archives/?conf=2014 identifies Q&A01 and conference theme; https://www.youtube.com/watch?v=WKeqskrPKfo indexed official video description identifies presubmitted questions, https://www.gnli.com/titles/2014-G3-Conference-or-G3-Ministries/2909 lists Various Speakers. Search-index evidence, not fresh archive media playback; do not read one catalogue speaker tag as panel membership or voice identity. Local targeted caption read supports these candidate windows:
+
+| Internal candidate | Recording-specific review window ms | Evidence anchor | Editorial purpose | Limit |
+|---|---|---|---|---|
+| G3-AV-2014-QA-WKeqskrPKfo-C01 | 12000–50000 | 18920, 23720 | Opening moderator addresses Paul Washer; identify question and response | Caption names addressee only; no actual speaker verification |
+| G3-AV-2014-QA-WKeqskrPKfo-C02 | 195000–250000 | 212090, 226700, 234459 | Definition of expository preaching; caption mentions 1 Tim 4:13 | Speaker unknown; verify audio and full Q/A before attributing or translating |
+| G3-AV-2014-QA-WKeqskrPKfo-C03 | 1995000–2070000 | 2024860, 2046700, 2062419 | Church mission discussion; adjacent question/answer boundary | Speaker and proposition unverified; no doctrinal quote |
+| G3-AV-2014-QA-WKeqskrPKfo-C04 | 3070000–3135000 | 3096220, 3100000, 3118960 | Whether to remain in or leave a church; pastoral context | No conclusion or advice inferred from truncated window |
+
+All CAPTION_WINDOW_ONLY / AUDIO_NOT_VERIFIED / RIGHTS_HOLD. Windows are internal navigation targets, not precise excerpt starts/ends. Recommend C02 as most historically relevant H02 candidate, with C03 alternative, no quota. No quoted wording or attribution to Lawson/Washer/Mbewe based on inference.
+
+### 2019 Piper — official recording-specific caption anchors
+
+Official JSON3 event contains grandparents at 3003630–3016890 ms and grandbabies at 3020040–3034980 ms; these are auto-caption event bounds, not exact word timings. This independently corroborates subject/position of the mirror AV4 candidate and E14's file hash; does not prove clock identity or exact spoken wording. Keep mirror MP3 windows at 3006800–3028200 ms separate. Candidate official video context link https://www.youtube.com/watch?v=XBdXKAKwb1g&t=2990s (navigation only; no verified quote). Official MP3 still not acquired by Research; EDITORIAL reports failed publisher transfer, MAX0's separate prior transfer status unknown, no duplicate attempts. No audio playback claimed. Existing author-written paraphrase G3-HIST-PUB-10 remains the public-safe route.
+
+### Closed access paths, no retries
+
+EDITORIAL E15 exact video retrieval returns Private video for 2018 White/Kruger LVVRfu1eLSU, 2020 Q&A2 bWcNfN2zCNM, 2021 Washer BJxgRAV5Ki8, 2022 White manuscripts XmlHYeT8vyc. Independent local inspection of Research's failed 2020/2021 request directories found zero files. Preserve metadata leads, do not use private media workarounds or retry. For Washer, public publisher alternate 2023 edited podcast remains separate clock; for White, premium Rumble not accessed. No substitute clip asserted equivalent. Challies 2018 January author testimony stays separate from his November excerpt; no exact January AV acquisition. Existing crisis/disputed original HOLD unchanged.
+
+Current totals: 13 sessions, two with acquired official automatic captions (one additionally mirror audio/SRT), zero human audio-verified excerpts, zero cleared frames. Request MAX0 accept acquisition-state update only; editorial may use these pointers for direct permitted listening, no public translated quotes/frames or automated promotion. 
