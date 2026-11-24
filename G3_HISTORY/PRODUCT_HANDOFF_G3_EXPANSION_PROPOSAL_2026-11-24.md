@@ -1,0 +1,573 @@
+# G3 — R0/R1/R2/R3/R4 bounded editorial expansion handoff (proposal)
+  
+**Date:** 2026-11-24 UTC+03 (web recheck in this session). **Research baseline:** `91c2cc890a11eb2e50a571a4396794c2ea96bed8`. **Product reviewed:** main `22a44d43e347d141924dfa93a3ec7bfad822dbae`, PR #2380 at `1ba041f402730b498cd34279ffbb08275a5224aa`. AI-assisted Research review; not a human signature, not a publication grant. **Status: BOUNDED_TRANSFER_PROPOSED / PUBLICATION_HOLD for new projections until authorized adoption and Product QA.** Existing #628 and Sep 9 handoff untouched. One corpus; this document is a reader projection, not a competing ledger.
+
+## 1. Audit and editorial diagnosis
+
+The source ledger, claims ledger, conference master, extended candidate and immutable handoffs were inspected at the pinned Research baseline (not all 71 documents read in full). PR #582 and #628 merged; their branches are not active writers. Product #2357 merged; #2380 is the live coordination lane. Reader #2352 excluded. Current Product feature includes 2013–17, 2019–20, 2023–24; the 2018 section is the Dallas statement alone, no dedicated 2021 Christ or 2022 regional narrative. It currently says the precise convention-center transition date remains unknown; existing candidate anchors the 2017 venue in the archived program and participant radio report, so this is a fixable evidence-projection gap, not a reason to invent a date. Product has nine bounded historical projections and separate sealed crisis projections (15 surviving reader claims); the extended candidate is not wholesale cleared. Existing audit: https://github.com/FedorMilovanov/gb-is-my-strength/pull/2380#issuecomment-7116599056. No new live Product HTTP verification: both page fetches returned access errors in this session.
+
+## 2. Proposed reader blocks, history (R1/R2)
+
+Working labels H-A..H-F below are local proposals, NOT new authorized G3-HIST-PUB IDs. Russian text may be rewritten within these limits after adoption; original-language spoken quotations and third-party images are excluded. The 2018/2021/2022 examples below were freshly re-read in their written primary/participant sources, independent of candidate text. Existing source-ledger rows/sections remain the canonical source descriptions.
+
+### H-A — 2018: discipleship is more than a political statement
+
+В январе 2018 года Тим Чаллис посвятил своё выступление на G3 ученичеству в многообразной общине. Чтобы рассказать о жизни Grace Fellowship Church, он заранее собрал членов церкви за общим столом и обсудил с ними, как достигается христианское единство. В конце своего выступления он показал запись, на которой прихожане читали Откр. 5 на разных языках. В феврале Чаллис отдельно изложил семь уроков из опыта этой церкви, в том числе значение гостеприимства.
+
+* A1 / PARTIAL_OBJECT / EXACT_LOCATOR_VERIFIED / RIGHTS_UNKNOWN / REFERENCE, author-controlled post, 2018-01-23, first paragraph: https://www.challies.com/vlog/from-every-tribe-and-language-and-people-and-nation/ ; 2018-02-02, opening and hospitality section: https://www.challies.com/articles/seven-key-lessons-in-diversity-from-grace-fellowship-church/ . Video not played. No inference about every attendee or subsequent political position.
+* Existing candidate § «Ученичество»; the author's post explicitly ties the first account to G3. Link to primary post, not embedded video reuse.
+
+В те же дни конференция стала местом встречи издателей, миссий и радиослужений. По отчёту FirstLove от 30 января, их стенд сначала разместили возле регистрации испаноязычной программы, а к началу основной встречи перенесли в выставочный зал. Команде дали возможность представить служение со сцены; сама миссия сообщила, что раздала более 16 тысяч экземпляров христианской литературы.
+
+* A1 / PARTIAL_OBJECT / EXACT_LOCATOR_VERIFIED / RIGHTS_UNKNOWN / REFERENCE: T. Austin Huggins, 2018-01-30, opening, first NOTE and concluding report, https://www.missionsfirstlove.org/united-states-blog/g3-conference-in-atlanta-georgia . Number is self-reported distributed items, not people, not independent audit. Spanish event Wednesday, English main Jan 18–20, venue Georgia International Convention Center. No attendance extrapolation.
+* Visual lead: original report contains dated group/booth photographs and individual captions; Huggins is bylined author, photographer unconfirmed; permission from FirstLove/actual rightsholder required. Do not copy assets. Candidate archive registration separately provides Jan 17, prices and program; do not promote until readback of precise program.
+
+### H-B — 2021: Christ conference and practical pastoral concerns
+
+Осенью 2021 года центром национальной конференции стало учение о Христе. Пастор Джефф Кроттс из Анкориджа, впервые побывавший на G3, описал её сразу после возвращения. По его рассказу, на предварительной пасторской встрече Джон МакАртур призывал проповедовать о Божьем суде, а в четверг основной конференции обращался к Ис. 52–53. Общее пение вели Боб и Девон Кофлины. Кроттс отмечал, что на встречу приезжали семьями.
+
+* A1 / PARTIAL_OBJECT / EXACT_LOCATOR_VERIFIED / RIGHTS_UNKNOWN / REFERENCE: Jeff Crotts, 2021-10-06, opening, Conference Report, The Preconference, Thursday, Friday: https://anchoragegrace.org/gospel-grace-and-glory/ . Attributed eyewitness report, NOT audio transcript. Omit his 2013/2021 attendance estimates and treat his interpretation of TGC/T4G separately from organizer intentions.
+* Candidate § «Осень 2021» supplies organizer archive of planned dates 30 Sep–2 Oct; two distinct preliminary programs 29 Sep. Already acquired historical captures listed there; not freshly opened here. No claim that Spanish program merely translated English program.
+
+### H-C — 2021–22: a church network through a local congregation's eyes
+
+В начале 2022 года The Garden Church в Нью-Браунфелсе решила присоединиться к церковной сети G3. Пастор Рэнди Бенсон объяснил решение желанием сотрудничать с близкими по убеждениям общинами, получать учебные ресурсы и общаться с другими пасторами. Среди вопросов, которые его интересовали при выборе партнёров, были социальная справедливость, женское пасторство и отношение к государственным ограничениям. В изложении Бенсона участие в сети не означало передачи управления своей церковью.
+
+* A1 / FULL_OBJECT_VERIFIED (written article in existing ledger) / EXACT_LOCATOR_VERIFIED / RIGHTS_UNKNOWN / REFERENCE: Benson, 2022-02-09, first three paragraphs, https://gardenchurchnb.com/the-g3-church-network/ . His congregation's decision, not a network admission instrument, not all churches' views. Historical application archived in candidate § «Что происходило между конференциями»; separate verification for 1689 subscription, Dallas statement and $500 minimum. No general conclusion about actual governance practices.
+* Aniol's announcement 2021-09-01, paragraphs beginning “I am very pleased”, “I am excited”, “With my move”: https://religiousaffections.org/update/important-announcement/ (A1, textual paragraphs read, embedded player not played; rights unknown/reference). He planned books, curricula, a theological journal and digital resources; his earlier Religious Affections archive would remain, possible publication transfer was conditional. Current author bio is retrospective, not part of original 2021 event evidence.
+
+### H-D — 2022: regional Bible conference and local livestream
+
+В сентябре 2022 года региональная встреча Just Thinking About the Bible была посвящена достаточности и безошибочности Писания. Баптистская церковь в Массене (Айова) приглашала жителей смотреть трансляцию в своём здании и предлагала расписание по местному времени. Конференция таким образом служила поводом для совместного изучения темы и за пределами места проведения.
+
+* A3 / PARTIAL_OBJECT / EXACT_LOCATOR_VERIFIED / RIGHTS_UNKNOWN / REFERENCE: church event listing, Sep 15–17, 2022, main invitation and Central Time schedule link: https://massenabaptistchurch.org/events/g3-conference-2022-just-thinking-about-the-bible-live-stream/ . Invitation only, not actual attendance; its Washington DC shorthand not venue proof. Candidate distinguishes Springfield VA lectures, planned museum visit, and two-day free streaming; do not infer actual Saturday transmission.
+* Thematic supplemental context: Darrell Harrison's 2021 written essay https://deacondarrell.blog/2021/03/05/theistic-amorism/ , opening and discussion of selectively emphasizing attributes, A1 / PARTIAL_OBJECT / EXACT_LOCATOR_VERIFIED / RIGHTS_UNKNOWN / REFERENCE. He cautions against describing God only by attributes comfortable to humans. Do not call this the conference transcript: candidate notes title discrepancy Theistic/Deistic Amorism.
+
+### H-E — Sesheke: church planting, not ownership by G3
+
+В июле 2017 года Конрад Мбеве в отчёте церкви Кабвата просил молиться о миссионерских станциях, в которых не было постоянных служителей. Среди них он прямо назвал Сешеке. Это показывает, что история основания общин в Замбии не сводится к одной американской конференции или финансовому сбору.
+
+* A1 / PARTIAL_OBJECT / EXACT_LOCATOR_VERIFIED / RIGHTS_UNKNOWN / REFERENCE: Mbewe, 2017-07-21, Missions, second paragraph, https://sola5.org/ministry-update-kabwata-baptist-church-july-2017/ . No payment or cause implied. Candidate has G3 appeal, Kabwata ordination in 2015, 2020 pastoral succession; precise archive locators in SOURCE_LEDGER; the live 2020 HeartCry URL was not accessible in this check. Retain these as next scoped review, no claim $40k goal was received.
+
+### H-F — remaining rich historical material, next review, not blanket transfer
+
+Candidate headings give exact reading sequence: 2013 first sessions (listener notes vs original audio); 2014 music, Mike Reid hospitality and screen-pastor panel; 2015 exhibition and Scripture (listener account vs exact edition); 2016 Trinity and White pre/post-event; 2017 archived convention-center program, film trailer, radio exhibitor account (live radio URL inaccessible in this check); 2019 family mission, listener diaries; 2020 worship; 2022 salvation hymn list and Gloria Deo; 2023 Aniol–Wilson separate essays, distinct panel and solo sessions; 2024 workshop/course production. See candidate and SOURCE_LEDGER precise locators. Existing evidence is rich but these sections are **not** adopted by this proposal. Stop discovery on exhausted routes unless a targeted original can resolve the relevant claim. Do not re-acquire merely to inflate counts.
+
+## 3. Crisis article: Q005/Q006 operational recheck (R3)
+
+**Correction of novelty:** the 15 Nov overlay had a maintenance placeholder; SOURCE_LEDGER already recorded the About page on **20 Nov** and historical candidate already observed redirects. This session independently confirms those facts; do not advertise the launch as first discovered 24 Nov. New/rechecked dated storefront and donation observations below are operational metadata, NOT proof of asset closing.
+
+| Surface and precise locator | Rendered observation on 24 Nov | State / boundary |
+|---|---|---|
+| https://g3min.org/ → https://lumenaministries.com/ ; returned URL, Our Work | former root returns Lumena landing page; Press and Media links | A2 / PARTIAL_OBJECT / EXACT_LOCATOR_VERIFIED / RIGHTS_UNKNOWN / REFERENCE; HTTP status code/raw bytes not captured |
+| https://lumenaministries.com/about/ ; Our convictions; Our leadership ¶1–2 | Lumena identifies as Reformed Baptist, 1689 confession; president Laramie Minga, G3 media/editor role since 2022, operations role in 2024 according to Lumena | A2 / PARTIAL_OBJECT / EXACT_LOCATOR_VERIFIED / RIGHTS_UNKNOWN / REFERENCE; institutional self-description, not independent employment records or named board roster |
+| https://lumenaministries.com/give/ ; Give online | donation link to lumena.churchcenter.com; site represents itself as 501(c)(3) | A2 / PARTIAL_OBJECT / EXACT_LOCATOR_VERIFIED / RIGHTS_UNKNOWN / REFERENCE; not IRS determination or verified EIN; no transaction performed |
+| https://lumenapress.com/products/tune-my-heart-personal-journal ; title/vendor/ISBN | Scott Aniol, Tune My Heart devotional guide, G3 Press vendor, ISBN 9781959908005 | A2 / PARTIAL_OBJECT / EXACT_LOCATOR_VERIFIED / RIGHTS_UNKNOWN / REFERENCE; rendered card only |
+| https://lumenapress.com/products/citizens-and-exiles ; title/vendor/barcode | Scott Aniol, Citizens & Exiles, G3 Press, 9781959908135 | same; author biography can be stale, not current office |
+| https://lumenapress.com/collections/children/products/bring-them-to-church ; title/vendor/ISBN | Holly Mooney, Bring Them to Church, G3 Press, 978-1-959908-50-0 | same; listing not fulfillment or rights instrument |
+| https://lumenapress.com/ ; navigation and product cards | links to Lumena Media and Ministries; mixed new brand and old imprint metadata | same; no catalogue completeness or sales assertion |
+
+**Proposed Russian update:** При проверке в ноябре 2026 года прежний сайт G3 перенаправлял читателей на Lumena Ministries. Новое служение называет своим президентом Ларами Мингу, ранее отвечавшего в G3 за медиа, редакционную и затем операционную работу. Lumena объявляет два направления — Press и Media — и исповедальную приверженность Лондонскому баптистскому исповеданию 1689 года. На сайте Lumena Press представлены, в частности, издания Скотта Аниола с обозначением G3 Press. Это свидетельство продолжения доступности конкретных каталожных позиций под новой вывеской, но не доказательство передачи прав на все издания или завершения сделки по G3+.
+
+**Registry:** prior G3-S144 records businessId 2751672/control 19085916, filing 32257311 effective 2026-10-28, later filings 32260917/32269080. Fresh attempts at BusinessFilings, NameChangeHistory and BusinessInformation returned access errors in this session. Do not advance the dated registry observation or infer current status. Q005 filing-body/current-status hold remains; Q006 legal acquirer, terms, merchant, title-specific copyrights, subscription migration, board authorization remain external-document hold. The apparent operation of Lumena is distinct from title/ownership. No change to G3-C029/030 approved. No change to unsigned G3-PUB-015 replacement. 
+
+**Source routing P0 for Product:** never cite redirected G3 home/old path as though historical evidence were still there. Use an already read, exact archive capture or stable original host, preserve URL/locator provenance. Existing Product statement link moved to socialjusticestatement.com; no silent rewriting of old Research references. Verify each affected citation by body/meaning, not HTTP 200.
+
+## 4. Financial visual data and no-overclaim (R3/R4)
+
+Existing FINANCES.md annual series, USD, revenue / expenses / annual result / end-of-year net assets:
+  
+| FY | Revenue | Expenses | Result | Net assets |
+|---|---:|---:|---:|---:|
+| 2019 |100|0|100|100|
+| 2020 |204510|29901|174609|174709|
+| 2021 |1471335|1054265|417070|591779|
+| 2022 |1735978|1010186|725792|1318931|
+| 2023 |1705689|2071986|-366297|1043850|
+| 2024 |1212253|1401429|-189176|854674|
+| 2025 |399645|950642|-550997|304459|
+
+Source family IRS G3-S002/S028; raw provenance FY2022–25 in FINANCES, Part IX category reconciliation in FINANCIAL_FORENSICS_2023. Data transcribed from existing master, **not fresh IRS byte acquisition**. Annual result revenue minus expenses; do not equate to net asset movement. A new publication scope decision is required for full annual chart. Existing approved G3-PUB-002 supports a separate original graphic with $1,061,800 increase, conferences/meetings +$817,283, advertising +$246,511; other categories net −$1,994. Not a fraud finding; self-reported tax-return classifications. No attendance chart under Q014. No misleading aggregate of 990 renderer copies as independent witnesses.
+
+## 5. Visual handoff
+
+FirstLove 2018 group, table and booth images are a distinct 2018 source lead (cross-reference, not a new G3-M007 object), author Huggins / actual photographer unknown / permission required. Challies 2018 primary post identifies real Revelation 5 video, no playback or frame permission. Existing MEDIA_LEDGER G3-M017 2020 audience, G3-M013 2022 panel (all rights reserved), G3-M009 2023 contemporaneous report are strong documentary visual candidates, not grants. Use linked references or request rights; create original diagrams for the conference/year sequence, network relationship (no ownership arrow), IRS figures within approved scope, and Lumena public web routing with explicit no legal closing inference. No image binaries copied or generated.
+
+## 6. Acceptance and remaining scope
+
+Two deliverables: (1) H-A–E narrow history prose, linked sources and limits; (2) current Q005/Q006 reader proposal and source routing. All new text remains HOLD until authorized Research adoption and Product exact-head approval. No alteration of immutable September or November 22 handoff, original candidate, allegation ledger or media-rights decisions. BUCK_ITEMS directory contains 17 items and an additional original-media gate for item 10; 0/17 item-level verification remains, no machine-only quote. Other crisis masters were inventoried, not fully independently re-adjudicated; director-transition documentary gates, 2025 presidency dates conflict, late-board continuity, anonymous mailing chain, note linkage and Q020 remain as existing authoritative findings. Further priority: narrowly review the 2014/2015/2017 archive objects, 2022–24 journal and educational documents, then expand only adopted projections; audit the source URLs in the active Product PR. No production changes, no merge requested by this document.
+
+
+## 7. R1/R2 second-wave delta — 2019–2024 theological substance, 24 Nov
+
+Review input: EDITORIAL MAX [comment 7117007505](https://github.com/FedorMilovanov/Research/pull/632#issuecomment-7117007505), MAX 0 draft protocol #631 (not new evidence authority), VISUAL comment 7116959072. The following are candidate reader projections, not authorization. Original written sources re-opened in this session unless explicitly marked prior readback. No audio, videos, full journal issues, IRS raw bytes or images acquired anew. Textual paraphrase and links only. Rights unknown unless noted, publicationState REFERENCE / PUBLICATION_HOLD until adopted.
+
+### H-G — 2019: Piper, mission as a question of joy and sacrifice
+
+17 января 2019 года Джон Пайпер проповедовал на G3 в Атланте по Флп. 2:17–18. Он говорил о трёх препятствиях всемирной миссии: страхе перед опасностью, ненасытном потреблении и привычке к обеспеченной жизни. Последнее он особенно связывал со старшим поколением. В конце проповеди Пайпер обратился к бабушкам и дедушкам: если их взрослые дети готовы отправиться с Евангелием туда, где их семье будет трудно, родители не должны удерживать их лишь из страха за внуков. Он призывал радоваться вместе с ними и даже самим участвовать в миссии. Основанием призыва была радость веры, которую Павел связывает с готовностью отдать себя ради других.
+
+* A1 / PARTIAL_OBJECT / EXACT_LOCATOR_VERIFIED: author-controlled published text, https://www.desiringgod.org/messages/the-invincible-power-of-joy-for-world-missions ; date/event/author/Scripture in header; Politically Correct Cowardice, Unquenchable Consumption, Acceptable Comfort; Comfort Quits Its Creep (two paragraphs), Let Joy Have the Last Word. Source body read in rendered page on Nov 24, not original sound or video. Age-group framing is Piper's pastoral argument, not empirical age statistics. No claim every listener agreed. Avoid verbatim sermon reproduction; no timecode supplied.
+
+### H-H — 2020: worship put into practice
+
+На конференции о богослужении Крис Андерсон участвовал в предварительной дискуссии об общинном пении, которую вёл Боб Кофлин. На отдельном занятии Андерсон объяснял, как выбирать гимны, выражающие библейское учение и предназначенные для совместного пения церкви. В четверг он представил гимн *His Robes for Mine*, а пение возглавил Девон Кофлин. В собственном пояснении к этому гимну Андерсон связывает его содержание с вменением праведности Христа, Его послушанием и заместительной жертвой. На заключительном вечернем хоровом выступлении, по рассказу Андерсона, добровольцами дирижировал соавтор гимна Грег Хабеггер.
+
+* A1 / PARTIAL_OBJECT / EXACT_LOCATOR_VERIFIED: Anderson's first-person report https://churchworksmedia.com/2020/01/30/my-two-cents-on-the-g3-conference/ ; heading "What did Church Works Media’s involvement look like?", bullets 2–5, Thursday and Friday captions. Current page displays original Jan 30, 2020 AND July 20, 2024; preserve both fields without inferring purpose of later date. Do not use his estimate of conference/choir attendance; no claim choir sang this particular hymn.
+* A1/A2 (author notes/publisher metadata respectively) / PARTIAL_OBJECT / EXACT_LOCATOR_VERIFIED: https://churchworksmedia.com/product/his-robes-for-mine-free/ ; credits, ©2008, DOCTRINAL NOTES by Chris Anderson (verses 1–3). Lyrics and music expressly all rights reserved, free download is not republishing permission. Do not copy lyrics, scores, audio, or photos. No claim author's present notes are transcript of introduction.
+* Visual lead: Anderson's report captions identify preconference panel, breakout, hymn introduction, choir rehearsal/performance, audience; rightsholder to be confirmed before reuse. Already G3-M017 for wide shot. No rights promotion.
+
+### H-I — 2020 confessional boundary: Derek Thomas (prior readback only, scoped review needed)
+
+SOURCE_LEDGER row "2020: why a sermon was withheld" has exact prior A3 opening three paragraphs, §8.2 and signature: https://web.archive.org/web/20200223033728id_/https://g3conference.com/articles/statement-derek-thomas/ ; candidate § Январь 2020. It records a Feb 21 board/president decision not to publish Thomas's sermon on Luke 9:28–36, explicitly not calling him a heretic, and reporting his own view that it conformed to Chalcedon. This is an editorial distribution decision, not a ban on his speaking, a transcript, or a church disciplinary judgment. Current archive open failed (transport); do not claim fresh reading. Request MAX 0 acceptance of existing precise evidence or direct archived-body readback before publication. Do not reconstruct disputed wording or equate the board's statement of Thomas's response with his independent statement.
+
+### H-J — Gloria Deo and publishing: author-controlled corroboration, not journal full text
+
+Scott Aniol's own current publications list independently identifies *Biblical Ordinances and Visible Signs* as an article in Gloria Deo 1 (2022), and *A Higher Kingdom: Pure Worship from a Pure Church* in Gloria Deo 3 (2024). He describes his 2022 argument as a historical challenge to reducing the Baptist category of ordinances to only baptism and the Lord's Supper; it distinguishes that category from the term sacrament. Do not misreport it as an argument for extra sacraments. In the later article he connects the church's heavenly citizenship, holiness and corporate worship. His bibliography also lists the G3 Press 2023 hymnal *Psalms and Hymns to the Living God* and his 2024 book *Holy Spirit: God of Order*. This is a source-supported way to show institutional publishing was not exclusively politics.
+
+* A1 / PARTIAL_OBJECT / EXACT_LOCATOR_VERIFIED: https://www.scottaniol.com/publications/ , exact entries named above, including publisher, year and descriptions; authored bibliographic self-description (no proof of print runs, distribution, reception or full journal reading). Existing G3-S022 announcement (May 25 2022, ¶1–3, https://web.archive.org/web/20220602040128id_/https://g3min.org/gloria-deo-journal-of-theology-now-available/) already FULL_OBJECT_VERIFIED for its announcement in ledger, not the issue. Its current live URL returned 503, archive transport failed today. First volume index https://web.archive.org/web/20230607180127id_/https://g3min.org/library-resources/gloria-deo-journal-of-theology-1/ also not freshly readable. Preserve prior verified source; no new full journal authority inferred.
+* Optional visual candidates: actual author-site book cover thumbnails in sections for hymnal, Holy Spirit and Citizens & Exiles; link to author bibliography until actual image identity/rights cleared. No claim of same edition as current Lumena card without comparison.
+
+### H-K — 2023 theological dispute: four turns, not merely two
+
+May 8: Aniol's review of *Mere Christendom*. May 10: Wilson's first response. May 12 at latest: Aniol's rejoinder. May 17: Wilson's further reply, *Looking the Horse of Grace in the Mouth*. The last response adds an important explicit clarification: Wilson rejects formal public acknowledgement of Christ preceding genuine personal faith; he expects broad consensus to arise from evangelism and genuine believers, with mixed nominal and genuine adherence in society afterward. In his first reply he distinguished his postmillennial expectation from what adherents of other eschatologies could support; he also rejected requiring a formally established church as the basis of his project. Aniol's own bibliographic description of *Citizens & Exiles* (G3 Press 2023) emphasizes Christians as citizens of earthly kingdoms and exiles belonging to Christ's redemptive kingdom, maintaining both church mission and active social engagement.
+
+* A1 / PARTIAL_OBJECT / EXACT_LOCATOR_VERIFIED (fresh written readback): https://dougwils.com/the-church/s16-theology/public-theology-comes-out-your-fingertips-also.html , May 10, Introduction; What Sort of Project?; The Second Half of His First Point; Unless We Win. https://dougwils.com/books-and-culture/s7-engaging-the-culture/scott-aniol.html , May 17, Introduction; What Christian Consensus Means, ¶¶1–8; A Little Postmill Exchange (Matt 28, Rom 15). Distinct authored responses; second links Aniol's rejoinder, not independent source for every assertion. Aniol bibliography above, Citizens & Exiles entry. The May 8 review and May 12 rejoinder retain prior exact source-ledger readbacks (archives https://web.archive.org/web/20230508124256id_/https://g3min.org/a-review-of-mere-christendom-by-doug-wilson/ and https://web.archive.org/web/20230512170200id_/https://g3min.org/what-if-we-win-a-brief-response-to-doug-wilson/); current live requests 503 and redirect to Lumena respectively; archive reads failed. Not freshly verified full Aniol articles.
+* Editorial requirement: do not characterize Wilson as advocating formal profession before regeneration, compulsory infant baptism or a state church as necessary to his stated project. Do not say Aniol rejects Christian civic action. Do not promote either author's argument to official institutional vote, a comprehensive definition of theonomy, or cause of 2025–26 scandals. May 17 is an added document to the earlier three-part narrative; use it to avoid caricature. For balanced substantive publication, retain prior readback attribution for Aniol side and obtain/adopt its bounded scope explicitly. No claims about conference panel speech from the essays.
+* Reader-ready synthesis: Спор касался не того, вправе ли христиане участвовать в общественной жизни, а того, какой итог этого участия следует считать выражением верности Христу. Уилсон ожидал общественного исповедания, вырастающего из широкого распространения веры; Аниол различал гражданскую жизнь христианина и искупительное Царство Христа. Эти различия затрагивали эсхатологию и экклезиологию, а не сводились к партийным ярлыкам. (Interpretive synthesis of the cited author texts; no attribution to all G3 members.)
+
+## 8. R3 second-wave crisis evidence — separate projections C-A/C-B
+
+### C-A — May 2025 decision and refund promise
+
+По заявлению совета G3, 4 мая 2025 года пресвитеры Pray’s Mill предъявили Джошу Бьюсу доказательства связи с анонимными аккаунтами; после первоначального отрицания он признал своё участие. 8 мая совет единогласно принял его отставку с поста президента. В сообщении 12 мая организация объявила об отмене ближайшей национальной конференции и всех практикумов 2025 года, пообещав вернуть регистрационные взносы участникам, экспонентам и издателям.
+
+* G3-S008 original archive already in prior handoff; fresh direct rendering of one underlying institutional statement at https://the-end-time.org/2025/05/13/g3-president-josh-buice-resigns-amid-scandal/ , heading "May 12, 2025: Statement Regarding Josh Buice, By The Board of G3 Ministries", paragraphs on May 4, May 8 and cancellation (before signature). A3 underlying statement / PARTIAL_OBJECT / EXACT_LOCATOR_VERIFIED; renderer is not separate witness. No proof actual refunds disbursed or no workshops took place later; FY2025 return reports workshop activity, see BUICE_2025 addendum.
+* Independent institutional response, direct body read https://founders.org/articles/a-statement-regarding-josh-buice/ , paragraphs beginning "We have been informed" and "A large percentage": Founders says it removed Buice's content and reports being targeted, including its president and family. A3/A1 institutional participant / PARTIAL_OBJECT / EXACT_LOCATOR_VERIFIED. Attribute statement, no claim all anonymous allegations proved false or motives independently established. Not necessary to reproduce underlying attacks.
+
+### C-B — Lindale response, Phil Johnson's firsthand chronology
+
+19 августа 2026 года Фил Джонсон сообщил, что ещё 27 марта сам Том Бак передал ему пакет обвинительных материалов, а пресвитеры церкви в Линдейле в тот же день обратились за консультацией. Изучив документы, Джонсон указал Баку на случаи использования формулировок комментариев без указания источника и предложил изменить методы подготовки проповедей. По его свидетельству, Бак согласился, а пресвитеры, насколько было известно Джонсону, выполнили предложенные меры. Бак выступил перед своей общиной, признал неправильность своих действий и сообщил о предпринятых мерах. Это свидетельство консультанта, не протокол собрания общины.
+
+* A1 / PARTIAL_OBJECT / EXACT_LOCATOR_VERIFIED: https://teampyro.blogspot.com/2026/08/hamans-gallows.html , dated Aug 19, Phil Johnson byline; opening two paragraphs, paragraph "I shared my concerns", next three paragraphs ending with public statement. Primary written firsthand account freshly read. Preserve qualifier "as far as I know" in paraphrase. Johnson's evaluation of severity is his own; not an independent item-level audio adjudication or legal finding. 0/17 stays unchanged. No claim every measure was verified from church records.
+* Separate later institutional response as reproduced by ChurchLeaders on Aug 25 https://churchleaders.com/news/2221879-g3-president-scott-aniol-prays-mill-baptist-church-resign-tom-buck.html/2 , heading "First Baptist Church of Lindale Elders Respond", two paragraphs. Underlying A3 / PARTIAL_OBJECT / EXACT_LOCATOR_VERIFIED, original X body not re-acquired; says Lindale elders learned of involvement July 30, sought private meeting and received letter just before publication, wanted reconciliation. Treat as their attributed account; not proof of actual mailing chain, forced/voluntary resignation mechanics or complete reconciliation. No private addresses, no new criminal accusation.
+
+## 9. Link integrity and unresolved early episodes
+
+* Fresh https://socialjusticestatement.com/ read: Introduction, Affirmations & Denials, History and Formation signed attribution to Tom Ascol; June 19 meeting, 14 participants, Sept 4 publication. Confirms semantic destination of Product's replacement domain (same statement and origin account; no byte equivalence to prior host claimed). A1/A3 text-only, exact headings. No new claim about signatory motives.
+* G3 live review/Gloria Deo pages failed 503 or redirected; no substitution of generic Lumena root for historical documents. The old G3 URLs remain provenance. Historical capture references above were previously read in ledger but transport failed this turn. Product should link the exact preserved capture or freshly verified equivalent, not treat status 200 as content equivalence.
+* 2014 Mike Reid (sermon 126141332501), 2015 exhibit event pm91914164444 and Challies sermon 212152051282: live fetch inaccessible. Prior SOURCE_LEDGER warns Reid and Challies text is platform auto transcript; cannot use as quote-safe spoken words. For exhibit, independently verified dated notice or source archive is needed for narrow advertised-items claim; never identify book actually displayed. Sesheke 2014 intern newsletter live route also inaccessible, prior ledger still valid as dated reading. Keep early expansion limited to H-E and separately scoped text from existing archive. Stop repeating failed routes without new transport/evidence trigger.
+* R5 output: H-G/H-H/H-J/H-K and C-A/C-B actual text blocks for review; H-I is conditional on prior readback acceptance, not fresh verification. Full financial chart and separate Q005 index projection remain proposed in §§3–4; not signed, no promotion by this edit. No Product writes, merge or deploy.
+
+
+## 10. R1 third wave — early years through 2017, source-supported scenes
+
+Fresh written readback 24 Nov. Local labels H-L–H-O are proposed only; rights unknown, REFERENCE and PUBLICATION_HOLD until adopted. Existing handoffs preserved. No audio/video played. Do not multiply a catalogue and a recording into independent witnesses of what was said.
+
+### H-L — 2013: hospitality and a conference's purpose
+
+Вспоминая первые встречи, Тим Чаллис писал, что прихожане Pray’s Mill заботились не только о приглашённых проповедниках. Перед его возвращением домой они передавали небольшой подарок для его жены, которая в дни конференции несла дополнительную нагрузку в семье. Чаллис приезжал на G3 восемь лет подряд, обычно оставаясь после своей проповеди до окончания встречи ради общения с другими служителями и слушателями.
+
+* A1 / PARTIAL_OBJECT / EXACT_LOCATOR_VERIFIED: https://www.challies.com/articles/you-me-and-g3/ (23 May 2025), opening paragraphs beginning “I have fond memories” through “For the first couple of them”. Fresh read; retrospective participant account, not annual attendance data. No claim that every speaker received gifts or was present every year. This adds specific meaning to already approved HIST-PUB-01/03, subject to scope adoption.
+
+### H-M — 2014: equipping future pastors, not only preaching to the crowd
+
+Перед второй конференцией, посвящённой Церкви, Южная баптистская семинария сообщила своим студентам о специальной цене регистрации и возможности получить стипендию не менее тысячи долларов для обучения в семинарии. В числе приглашённых проповедников были Стивен Лоусон, Водди Бокам, Тим Чаллис, Конрад Мбеве и Дэвид Миллер.
+
+* A2 / PARTIAL_OBJECT / EXACT_LOCATOR_VERIFIED: https://equip.sbts.edu/article/g3-conference-on-the-church/ heading and two opening paragraphs, explicitly Jan 23–25, Church theme, special rate and scholarship opportunity; date year supplied by already accepted HIST-PUB-02 and GNL 2014. This is an offer, not proof a scholarship was awarded. No amount of registration stated. Pat Sczebel was billed to lead worship; existing archived post-event song list credits Devon Kauflin and others, not a contradiction to resolve by silently assuming either person's absence. No audio. H-L and H-M already share accepted source URLs; no additional external dependency for links.
+
+### H-N — 2016: conference still hosted by a local church
+
+Пастор Х. Б. Чарльз, участвовавший в конференции 2016 года, оставил на своём сайте короткое свидетельство о выступлении и поблагодарил Джоша Бьюса и баптистскую церковь Pray’s Mill в Дугласвилле за приём. Сохранилась и фотография, в подписи к которой Чарльз назвал Лоусона, себя и Бьюса.
+
+* A1 / PARTIAL_OBJECT / EXACT_LOCATOR_VERIFIED: https://hbcharlesjr.com/resource-library/articles/saturday-shout-outs-g3-_____-ministry-links/ caption “G3 CONFERENCE” and first paragraph. Existing ledger dates it Jan 23, 2016; year expressly in body, current render does not show exact byline date in excerpt. Confirm actual appearance and host, not sermon argument from image. Photo is source lead only (author page, photographer unknown, permission required). Do not identify people independently from faces or copy image. June 29 2016 podcast listing https://servantsofgrace.org/33-josh-buice-the-church-g3-conference-and-ministrypodcast/ confirms role (pastor, conference director) and advertised discussion of origins/Reformation; catalogue only for audio, not its spoken content.
+
+### H-O — 2017: the Reformation anniversary in the convention center
+
+В ноябре 2016 года журнал AFA Journal сообщал, что юбилейную конференцию назначили на 19–21 января 2017 года в Georgia International Convention Center. Её программа должна была объединить проповеди, выставки и книжный магазин. Это конкретная объявленная площадка, а не предположение о времени переезда.
+
+О том, каким оказалось содержание встречи для слушателя, рассказал 23 февраля Кит Фонг. По его воспоминаниям, Дэвид Миллер произнёс по памяти отрывок Рим. 3:23–31 и затем изложил его в проповеди об оправдании. Фонг особо отметил выступления Конрада Мбеве о мужестве проповедника и Водди Бокама о необходимости реформации евангельского понимания Церкви. Для самого Фонга итог встречи состоял в том, чтобы вернуться к людям своей общины и служить им с большей любовью.
+
+* B1 / FULL_OBJECT_VERIFIED (short rendered notice, not raw bytes) / EXACT_LOCATOR_VERIFIED: https://afajournal.org/past-issues/2016/november/g3-conference-to-celebrate-reformation/ November issue last two paragraphs. Future-tense notice, no actual attendee proof. Existing SOURCE_LEDGER same row. Pair with earlier archived program (prior verified locator, not fetched now) and participant account for occurrence in Atlanta; do not state precise actual venue from Fong alone (he names Atlanta, not convention center). Candidate radio exhibit URL failed again; STOP_DISCOVERY on that route, no assertion of fresh witness.
+* A1 / PARTIAL_OBJECT / EXACT_LOCATOR_VERIFIED: Keith Fong, Feb 23 (year in URL/context), https://theartofgodliness.com/blog/2017223/2017-g3-conference-review , introductory paragraphs and Session 3, 10, 11. First-person written observations; no verbatim sermon quote. The GNL catalogue independently indexes the named talks: https://www.gnli.com/titles/2017-G3-Conference-or-G3-Ministries/2901 , titles David Miller 31:29, Mbewe 50:12, Baucham 53:32. These are displayed durations, not verified content timestamps; no audio listened. The author uses humour in Session 14 and admits forgetting details of Washer; never treat his humorous aside as a historical event. The account does not establish every sermon title/session order for all editions. Omit his aggregate session counts rather than force reconciliation.
+* Distinct potential source for film: director/host interview https://www.thegospelcoalition.org/article/here-he-stood-talking-with-the-creators-of-luther/ and film website https://www.lutherdocumentary.com/ found as leads; not read in full this wave. No independent verification of G3 trailer debut; keep candidate's prior archival evidence and do not confuse with unrelated Lutheran film premiere.
+
+## 11. R2/R3 — confessional framework and attempted institutional reset
+
+### C-C — separate theological analysis, not a historical accusation
+
+Second London Baptist Confession, ch 26, §§7–10, 14–15, https://1689londonbaptistconfession.com/26/ . Original English selected/rendered text read, explicit section numbers, PARTIAL_OBJECT / EXACT_LOCATOR_VERIFIED. Historical text, modern site rendering rights not assumed; paraphrase. §7 grants each assembled church the authority needed for worship and discipline; §§8–9 describe elders/deacons and election by the church; §14 encourages interchurch communion and mutual edification; §15 explicitly permits assemblies of church representatives for advice in disputed doctrine/administration but denies them coercive jurisdiction or power to impose decisions on churches. §15 is particularly important: autonomy does NOT prohibit seeking help or interchurch advice, so neither consultation with Johnson nor concern about another church is in itself a breach of autonomy. Compare with the four pastors' own admitted actions under accepted G3-PUB-011, not an invented finding that G3 exercised denominational jurisdiction.
+
+Reader-ready synthesis: В баптистском понимании автономия не равнозначна изоляции. Поместные церкви призваны помогать друг другу; в сложных вопросах они могут искать совета других общин. Но совет не становится властью над другой церковью. Именно поэтому признание четырёх пасторов следует рассматривать прежде всего в свете их собственных слов о вмешательстве в дисциплинарный процесс и анонимном распространении материалов, а не как отрицание самого права церквей на братское сотрудничество.
+
+### C-D — 2025: dates and promises of reform
+
+Existing G3-PUB-006/007 already authorize bounded succession/reset. Q004 master controls exact date conflict. Board accepted resignation May 8; appointment effective July 9, announced July 14. FY2025 Part VII “PRESIDENT AS OF 05/2025” conflicts with that same filing's narrative appointment July. Preserve both, no interim-president assumption. Current director exit window is non-primary; do not promote it to exact departure date. 2025 reported four voting/independent governing members vs nine reportable Part VII roles is transition data, NOT one nine-member board snapshot.
+
+Fresh participant statement via contemporaneous renderer: https://www.christianpost.com/news/g3-ministries-announces-scott-aniol-as-new-president.html , Ryan Foley July 16 2025, paragraphs 2–7; A3 underlying G3 announcement / PARTIAL_OBJECT / EXACT_LOCATOR_VERIFIED, B1 reporter context. Aniol's expressed plan was to retain firmness on fundamental doctrine while allowing charitable engagement on secondary disagreements, and to help lesser-known faithful local pastors be heard. Frazier was named board chairman and Minga director of operations at that announcement. Do not use as independent proof of their effective dates, board continuity or endorsement of subsequent action. A second rendition at https://protestia.com/2025/07/17/g3-ministries-announces-new-president-following-josh-buices-departure/ reproduces selected announcement paragraphs and July14 G3 post; one statement family, not two witnesses. Omit its self-reported numerical project claims: titles, users, churches are different metrics and not independently audited.
+* Aniol's own current biography https://www.scottaniol.com/ , Biography ¶¶5–6, confirms publishing/educational background and entry into G3 team fall 2021. A1 / PARTIAL_OBJECT / EXACT_LOCATOR_VERIFIED. This explains prior editorial role, not current G3 presidency or every governance action.
+* Uri Brito July8 2025 interview listing https://www.uribrito.com/p/how-the-filioque-clause-changes-everythinga , Notations > G3 Rebranding & Vision and Collaborative Ministry; publisher-authored episode summary only, not Aniol transcript or evidence of actual internal reform. Do not promote its church count or claim transparent handling as independent proof. Current official G3 pages only found as search leads; existing G3-S009/023/024 keep their prior role. No raw archived body read this wave.
+* Tim Challies' 2026 retrospective https://www.challies.com/articles/a-pair-of-important-lessons-from-the-demise-of-g3/ , paragraphs beginning “In the aftermath” and “I don’t know”; A1 first-person only for his own conversation, author opinion for his organizational interpretation. He explicitly says he did not know whether leadership examined the institution internally; do not present his concern as proven absence of review or cause of collapse. For a reader epilogue attribute as moral reflection, not factual new charge.
+
+## 12. R3/R4 — independent renderer cross-check of all annual figure cells and separate Q005 proposal
+
+### C-E — financial chart scope proposal (explicit approval requested)
+
+Fresh read of https://projects.propublica.org/nonprofits/organizations/842403597 on 24 Nov: headings “Fiscal Year Ending Dec.” for all 2019–2025, four extracted values per year: Revenue / Expenses / Net Income / Net Assets. Compared to §4 and FINANCES.md: 28/28 equal. This is a derivative of the same IRS forms (not independent corroboration, not fresh raw-byte acquisition); A1 underlying return, B1 renderer, PARTIAL_OBJECT / EXACT_LOCATOR_VERIFIED. 2019 is 990-EZ, 2020–25 990. Scope requested: seven FY rows, only these four values, original chart/table and arithmetic derivations, USD, annual fiscal period ending December; label result revenue minus expenses, net assets at year end (not cash). Cite IRS-source family and public reader link. Exclude compensation details, financial-misconduct inference, cash-flow inference, unrelated assets/liabilities; preserve current approved FY2022→23 delta figure as separate. Total three deficits −$1,106,470; net assets 2022→25 declined $1,014,472 (76.9%). These differ; do not describe net asset change as equal to cumulative annual result. Note 2022 $590k contribution includes reported noncash commercial property: not equivalent to cash income or cash reserves; existing FINANCES/FORENSICS raw Schedule M evidence supports this separate context if accepted, property identity and note linkage remain HOLD. ProPublica FY2025 full-renderer route failed; overview was readable. Do not infer May 2025 presidency from renderer's title field. Proposed addition C-E is not adoption or Product release.
+
+### C-F — Georgia registry date-index proposal, separate from Lumena public websites
+
+Using existing G3-S144 exact rendered registry index from Nov15 and source-ledger recheck Nov20, not claiming new registry access in this wave: registered corporation's name amendment effective Oct28 2026, filing 32257311; two amended annual registrations Oct30 and Nov5 (32260917/32269080). On dated readback the index had no dissolution-type entry; current status field and filing bodies not retrieved. Keep original observed dates and discrepancy in filing date fields (Oct28 vs Nov4), use only effective date for narrative. Explicit proposed scope: legal name of same corporation, effective date and two registration dates, absence of dissolution filing on observed date only; no claim of present compliance or acquisition of assets. Public links https://ecorp.sos.ga.gov/BusinessSearch/BusinessFilings?businessId=2751672 and https://ecorp.sos.ga.gov/BusinessSearch/NameChangeHistory?businessId=2751672 , A1 / PARTIAL_OBJECT / EXACT_LOCATOR_VERIFIED (prior readback) / REFERENCE. Conditional on adoption of prior verified evidence; not fresh official verification. Separate from §3 storefront/leadership/redirect observations (C-G scope = existing §3 only). Q006 title, transfer instrument, board authorization, consideration, rights remain HOLD. No assumption that donor/receiver are distinct corporations.
+
+## 13. R5 — editorial source integrity corrections, concrete handoff
+
+Confirm EDITORIAL E5 #issuecomment-7117099870. G3-S017 publisher byline Jessica Eturralde Aug27 2026 freshly read https://ministrywatch.com/g3-ministries-closes-amid-anonymous-smear-campaign/ heading/byline; source ledger explicitly records Sep3 archive capture. Product Sep4 display date is wrong; correct to Aug27, no inference exact first wind-down notice date. G3-S015 names all four Scott Aniol, Jon Norton, Dylan Joyner, Matt Sikes in existing ledger and accepted PUB-011; original X body remains unavailable, use a dated reproduction as reader link with label. Do not describe fourth pastor as unidentified. Both are metadata corrections, not new accusation scope. Source URL display is not right to reproduce. Restore nonempty accessible link labels and contextual citation return via MAX 0 owner. Retain sealed data and historical ledger unchanged unless explicit scope correction. No Product mutation.
+
+Third-wave output: H-L–O, C-C–F, C-G separated scope, two source metadata corrections, 28/28 exact financial value comparison. Early archived 2013 Q&A, 2014 Reid, 2015 exhibition and Sesheke 2015/2020 still depend on prior precise readbacks or inaccessible originals; no more blind repeats. Strong alternative eyewitness narrative now available for 2017. Request MAX 0 review/adopt the bounded factual slices, not whole corpus. No branch duplication, no merge/deploy by Research.
+
+
+## 14. R1/R2 fourth wave — educational method, 2023 actual sessions, 2024 regional events
+
+Fresh rendered web body reads on 24 Nov 2026. This extends previously recorded research (see candidate §§125–205 and SOURCE_LEDGER), not a claim that the earlier researchers missed these events. Local H-P–T labels = proposals, all new projections REFERENCE / PUBLICATION_HOLD pending adoption. Rights unknown; no media reproduction or original audio playback. No fresh PDF acquisition.
+
+### H-P — Expository Teaching Workshop: from text to teacher, 2023–24
+
+В 2023 году Мишель Лесли приняла участие в первом практикуме G3 по преподаванию Писания для женщин. Она описывает не просто лекции, а подготовку к реальному преподаванию в семье и церкви. Участницы заранее изучали отрывки Писания и составляли конспекты. На занятиях разбирали исторический и литературный контекст, структуру текста и его основную мысль. Затем в небольших группах под руководством подготовленных наставниц дорабатывали планы уроков. В 2024 году Лесли вернулась уже как стажёр, готовившийся в будущем руководить такой группой. По её оценке, особенно важными были совместный разбор и обратная связь, которые не заменяет просмотр записи лекции.
+
+* A1 / PARTIAL_OBJECT / EXACT_LOCATOR_VERIFIED: https://michellelesley.com/2024/06/06/6-reasons-you-should-attend-the-next-g3-womens-expository-teaching-workshop-2/ ; June 6 2024 page explicitly says originally published June 15 2023; opening, numbered §§1–4 and 6, “2024 Update” opening paragraph and first bullet. Fresh successful read of original author-hosted republication. Old 2023 live URL returned 404; the 2024 article plus update was readable in wave four but returned 404 on the wave-five recheck. Preserve the dated archive locators from SOURCE_LEDGER; latest access is not confirmed. These are not two independent witnesses. Existing exact Wayback captures remain provenance.
+* She identifies Josh Buice and Tom Buck as main teachers in 2023, groups about 6–8 participants, preparation before arrival, group leaders trained by workshop teachers; describes herself as apprentice in 2024, not as appointed group leader. She explicitly distinguishes her own interpretation of women's teaching from an official organizational decision; do not extrapolate doctrinal alignment or effectiveness of all G3 workshops. No claim that an academic degree or seminary credit was earned. Original ticket 834823 inaccessible in this pass; do not label precise June event dates freshly verified.
+* Separate calendar witness: https://lochwood.church/events-1/g3-biblical-worship-workshop — A3 / FULL_OBJECT_VERIFIED for the rendered short event entry / EXACT_LOCATOR_VERIFIED, heading and Sept 11 2024 date, Lochwood Christian Fellowship, Lakewood CO. This verifies a scheduled workshop at a local church, not delivery/attendance; second-day link unavailable now. Do not turn the calendar into a participant report.
+* Visual lead: Lesley post has images explicitly credited “photo courtesy of G3 Ministries” and 2024 captions “Josh Buice training small group leaders and apprentices”, “Tom Buck instructing the attendees”, “Josh Buice instructing the attendees”, “Class of 2024”; only credit/captions read, individual image bytes not acquired or visually inspected. Credits do not confer reuse rights. Original five-step pedagogical diagram can use H-P only after adoption; mark as reconstruction from participant report, not an official G3 flowchart.
+
+### H-Q — September 2023: theological substance of the national conference
+
+Три записи Элизабет Праты, опубликованные непосредственно в дни конференции, показывают, какие вопросы обсуждались в большом зале и на отдельных занятиях. 21 сентября она слушала Оуэна Стрэна о Божьем суверенитете и стойкости святых, затем с трудом нашла место на занятии Карла Харгроува о провидении: один из слушателей уступил ей стул. После встречи с Эрин Коутс о верности в страданиях Прата вернулась на проповедь Фила Джонсона по 1 Ин. 4:19. На следующий день она записала впечатления о проповеди Джеймса Коутса по Рим. 9, докладе Джеймса Уайта о Божьем суверенитете во времени и выступлении Джастина Питерса о лжеучителях и Божьем суверенитете. На заключительном дне она услышала Кена Хэма о сотворении и Майка Риккарди об искуплении. Таким образом, тема суверенитета связывала вопросы избрания, провидения, Писания, творения и искупления.
+
+* A1 / PARTIAL_OBJECT / EXACT_LOCATOR_VERIFIED: https://the-end-time.org/2023/09/21/g3-conference-2023-day-1/ , paragraphs following singing, lunch and the two breakout reports through Phil Johnson; https://the-end-time.org/2023/09/22/g3-conference-2023-day-2/ , paragraphs following bookstore report, Coates and White, later Peters and panel; https://the-end-time.org/2023/09/23/g3-conference-day-3-final-day-final-thoughts/ , paragraphs about Ham and Riccardi. Publisher bylines Sep21/22/23 2023; Day1/3 also display later May20 2025 date, Day2 Sep23 2023. Same participant, three dated posts, NOT three independent observers. Fresh read, not sermon transcripts. Omit her numerical estimates and exact remembered spoken quotations. She expressly left before certain final sessions on Days1/2/3; no attendance claim for those talks or film screening. Day3 explicitly distinguishes canceled MacArthur video sermon from film and reports changed schedule; no need to elaborate emergency mechanics in narrative.
+* Optional separate reader sentence: during Day2 panel she reports panelists recommending works by Jonathan Edwards and A.W. Pink on God's sovereignty. Do not attribute each recommendation to a named panelist without source. No full Q&A transcript.
+* Visual: Day1 photo links identify bookstore, auditorium and Phil Johnson by author caption; Day2 identifies White and Peters; Day3 includes Ham/Riccardi context. Existing G3-M009, same observer, no duplicate rights record or new photo acquisition. Cite source page for evidence; permission required for copied photographs.
+* Separate H-K clarification from fresh edited interview: https://christoverall.com/article/concise/transcript-interview-with-scott-aniol-on-christian-nationalism/ (Nov 3 2023), A2 publisher-edited interview / PARTIAL_OBJECT / EXACT_LOCATOR_VERIFIED, opening exchange on career/book origins and answer to “two ages”, later reply on state/civil order. Aniol dates start of Citizens and Exiles around 2021, says controversy prompted him to finish it, and distinguishes present redemptive rule and common-grace institutions, with full physical kingdom at Christ's return. He explicitly supports active Christian influence for good in earthly nations. This supplies fresh author-attributed context without replacing the inaccessible May review/rejoinder or treating edited text as original audio. No claim every G3 speaker shared his eschatology.
+
+### H-R — Reformation regional conference, May 2024: actual occurrence corroborated
+
+9–11 мая 2024 года G3 назначила региональную конференцию о Реформации в Countryside Bible Church. О том, что встреча действительно состоялась, свидетельствует отчёт издательства Three Sixteen Publishing от 5 июня: команда сообщила о своём участии и общении с пастором Томом Пеннингтоном. В отдельной статье, опубликованной 23 мая, Джош Бьюс изложил своё понимание связи Реформации с библейской проповедью. Он связывал постоянное обновление церкви с авторитетом Писания и с поручением Христа не просто учить, но учить соблюдать Его заповеди (Мф. 28:18–20).
+
+* A3 / FULL_OBJECT_VERIFIED for registration entry / EXACT_LOCATOR_VERIFIED: https://www.tickettailor.com/events/g3ministries/1010697 , title, dates, location. A1 / PARTIAL_OBJECT / EXACT_LOCATOR_VERIFIED: https://316publishing.com/blogs/blog/june-2024-the-lsb-ppr-conferences-a-new-susan-heck-bible-study-more , June 5 2024 byline, “316 & Conferences”, paragraph beginning “In May”. Independent exhibitor witness to participation at named church, not realization of every session or count. The 3,500 distribution figure in preceding paragraph pertains to a DIFFERENT Answers in Genesis April event; do not attach to G3.
+* A1 authored op-ed / PARTIAL_OBJECT / EXACT_LOCATOR_VERIFIED: https://www.christianpost.com/voices/when-preaching-leaves-a-church-christ-goes-with-it.html , May23 2024 byline, “The modern deformation”, paragraphs on Matt28 and semper reformanda; footer says originally published at G3. Author-controlled argument in republished text, not a Texas sermon transcript or independent historical proof of sweeping claims about Roman Catholicism/Reformers. No unverified Reformation-era statistics. Article follows May conference chronologically, no asserted causal relationship.
+* Visual lead: 316 report image immediately after May paragraph; actual photographer unknown, binary and appearance not verified; rights permission required.
+
+### H-S — October 2024: cessationism, program change and substantive disagreement
+
+В октябре региональную конференцию G3 о прекращении апостольских даров назначили в Первой баптистской церкви Мустанга, штат Оклахома. Ещё 7 сентября в описании своего подкаста Didaché Джастин Питерс представил позднее добавленное выступление Джима Османа о так называемых служениях освобождения от демонов. Вопрос, который намеревались обсуждать, касался не только даров исцеления и пророчества, но и толкования новозаветных повествований об изгнании бесов. 26 сентября Майкл Браун публично предложил докладчикам и участникам фильма Cessationist записать свободную богословскую беседу о том, продолжают ли дары Духа действовать как норма церковной жизни. Он предложил опубликовать её бесплатно.
+
+* A3 / FULL_OBJECT_VERIFIED for registration entry / EXACT_LOCATOR_VERIFIED: https://www.tickettailor.com/events/g3ministries/1010698 , Oct3–5, location. This is listener registration, stronger for event identity than publisher-only offer 1270768; do not copy website's display-time timezone or presume final schedule.
+* A2 publisher-controlled episode description / PARTIAL_OBJECT / EXACT_LOCATOR_VERIFIED: https://didache.captivate.fm/episode/didache-delivering-you-from-deliverance-ministries-a-new-session-at-the-cessationist-conference , Sept7, episode144, descriptive paragraphs. Advertised Osman topic, no audio played, not proof delivery. Prior source-ledger program v3.0 and Peters 2024 newsletter readback remains valid dated evidence; live newsletter returned 406 in this wave; no false fresh reading or proof every listed speaker appeared.
+* A1 / PARTIAL_OBJECT / EXACT_LOCATOR_VERIFIED: https://stream.org/a-friendly-invitation-to-the-speakers-at-the-g3-cessationist-conference/ , Sept26 2024 byline, opening, “Terms of Engagement”, “My Story”. Brown's stated continuationist position and invitation; not proof G3 declined or that proposed dialogue occurred. Distinguish continuationism from every charismatic practice; avoid presenting both positions as identical or as institutional motives.
+* Documented offer contrast: https://www.tickettailor.com/events/g3ministries/1229719 exhibitor registration, “Exhibit Hall Sponsor” and “Gold Sponsorship”, $750 and $2,500 advertised packages. A3 / FULL_OBJECT_VERIFIED for rendered offer / EXACT_LOCATOR_VERIFIED; may illustrate commercial infrastructure if explicitly accepted, not actual sponsorship revenue, paid attendance or profiteering. Same event, not a second conference.
+* Conflicting source: https://cessationism.org/ homepage currently advertises Mustang while its /resources/events/ list search extract gives Sun Valley. Home body read, events subpage only search extract. Keep both as indication of potentially stale listings, do not infer reason/date of move or treat this site as G3. Prior archived exact program and dates control; no attempt to invent a new resolution.
+
+### H-T — bounded extension of VISUAL MAX speaker matrix for 2018 and 2021
+
+Fresh read of GNL catalogue headings and displayed titles; A2 institutional catalogue rendering / PARTIAL_OBJECT / EXACT_LOCATOR_VERIFIED, rights unknown/REFERENCE. These are selected name-year associations, not a full roster; no recording played. Preserve initial view pagination and don't count duplicated title links twice. For V2, use year-specific new source IDs only after scope adoption; no reader-facing duration/timecode required.
+
+| Year | Name | Session topic (Russian paraphrase of catalogue heading) |
+|---|---|---|
+|2018|Steven Lawson|Богословие и славословие|
+|2018|Phil Johnson|Призыв Христа к ученичеству|
+|2018|Tom Ascol|Страх Господень в ученичестве|
+|2018|Voddie Baucham|Воспитание учеников, которые воспитывают других|
+|2018|Derek Thomas|Значение разума|
+|2018|James White|Тексты и переводы Библии|
+|2018|Paul Tripp|Ученичество и воспитание детей|
+|2018|Michael Kruger|Беседа с Джеймсом Уайтом о библейском каноне|
+|2018|Tim Challies|Многообразие в ученичестве|
+|2018|David Miller|Освящение|
+|2018|Josh Buice|Поместная церковь как средоточие ученичества|
+|2021|Owen Strachan|Христос как вечный Судья|
+|2021|Martha Peace|Помощь женщинам в уподоблении Христу|
+|2021|Scott Aniol|Христоцентричное поклонение|
+|2021|James Coates|Следование за Христом и несение креста|
+|2021|Tom Buck|Христоцентричная экспозиционная проповедь|
+|2021|Chip Thornton|Вменённая или сообщённая праведность Христа|
+|2021|Steven Lawson|Свет воскресения Христа|
+|2021|Mike Riccardi|Христос как источник очищения|
+|2021|Paul Washer|Христос, ставший проклятием|
+|2021|Voddie Baucham|Поклонение Сыну Божьему|
+|2021|James White|Христос и творение|
+|2021|Phil Johnson|Вселенское торжество Христа|
+
+Locators: https://www.gnli.com/titles/2018-G3-Conference-or-G3-Ministries/2902 , initial list from Questions & Answers 1 through The Church is Ground-Zero for Discipleship; https://www.gnli.com/titles/2021-G3-National-Conference-or-G3-Ministries/2906 , initial list from Christ as Eternal Judge through The Cosmic Triumph of Christ. 23 selected distinct name-year rows (11+12), not total conference speakers. Joint session identified for White/Kruger, do not make Kruger solo. No assertion that each title's theological proposition was delivered verbatim or that all people shared a position. V2 original 37 associations remain untouched; MAX 0 and VISUAL to merge by unique canonical person/year key only after new projections accepted.
+
+### Fourth-wave acceptance notes
+
+Fresh successful reads: Lesley 2024 republication, Lochwood Sept11 calendar, Prata three days, Aniol edited interview, Three Sixteen report, two attendee registration pages, Buice op-ed, Didaché description, Brown invitation, exhibitor listing, Cessationism.org homepage, GNL 2018 and 2021. Failed routes explicitly noted. No PDF, image binary, audio or original archived source newly acquired. Prior exact readbacks of 2022 Gloria Deo, Tyndale proposed college, curriculum and full workshop schedules remain available for MAX 0 bounded review; do not manufacture fresh access. Preserve the no-publication firewall, no Product writes. 
+
+
+## 15. R5 — consolidated decision index and intake checklist (24 Nov 2026)
+
+This is an index of the preceding reader projections, NOT a parallel source registry, new claim IDs, or an approval artifact. Read exact paragraphs and source/locator bullets at the linked internal section before implementing. The repository decision in #632 is still pending; all new prose stays PUBLICATION_HOLD. Existing accepted G3-HIST-PUB-01–09 and surviving G3-PUB-001–014/016 remain authoritative. G3-PUB-015 remains withdrawn, no positive replacement. MAX 0 [independent review of ff72ca93](https://github.com/FedorMilovanov/Research/pull/632#issuecomment-7117314413) accepted H-G, C-E (four fiscal metrics/chart, not property sentence or wider forensic claims), and E5 (two metadata repairs) **for integration planning**. The subsequent [independent review of bdb29b39](https://github.com/FedorMilovanov/Research/pull/632#issuecomment-7117498205) added H-R (May event occurrence only, not the separate op-ed) and H-T (23 selected catalogue associations only). Five planning slices, not five publication grants. No wholesale endorsement, even if CI passes. Reviews are anchored to earlier SHAs; scoped adoption must explicitly reference the final exact head. The prior §6/§9 next-work wording is superseded by this index; evidence and access history remain preserved.
+
+Legend: P = independently accepted for planning, still adoption/release-gated; R = narrow candidate for independent review; K = conditional on already acquired exact readback acceptance or new verified object; HOLD = no new projection. A source URL can be exact but presently inaccessible; a source can support a fact while not granting reproduction rights. Each section below has explicit source URL(s), author/date and within-object locator; abbreviated links here point to the same objects rather than invent new source IDs.
+
+| Local scope / detailed wording | Proposed reader meaning (maximum for review) | Exact source/locator crosswalk | Decision / relation to current authority |
+|---|---|---|---|
+| [H-A](#h-a--2018-discipleship-is-more-than-a-political-statement) | 2018 Challies describes his own church's unity and hospitality; FirstLove describes booth move and reports free distribution of >16k books/pamphlets, not attendees. | [Challies Jan23](https://www.challies.com/vlog/from-every-tribe-and-language-and-people-and-nation/), first paragraph; [Feb2](https://www.challies.com/articles/seven-key-lessons-in-diversity-from-grace-fellowship-church/), opening & §3; [FirstLove Jan30](https://www.missionsfirstlove.org/united-states-blog/g3-conference-in-atlanta-georgia), first NOTE, conclusion and author signature. | R; distinct from HIST-06/08 Dallas statement; source bodies freshly rechecked in R5. |
+| H-B (§2) | Crotts reports first visit, Christ theme, two distinct MacArthur messages and Kauflin-led singing. | [Crotts Oct6](https://anchoragegrace.org/gospel-grace-and-glory/), Conference Report, The Preconference, Thursday; R5 fresh read. | R; not intent of MacArthur or entire coalition. |
+| H-C (§2) | Benson explains local church decision to join network in 2022; Aniol announces planned publishing/education in 2021. | [Benson Feb9](https://gardenchurchnb.com/the-g3-church-network/), first 3 paragraphs; [Aniol Sep1](https://religiousaffections.org/update/important-announcement/), paragraphs specified in §2. | R for Benson; already HIST-05 for Aniol's announced role/plans, no duplicate authorization. |
+| H-D (§2) | Iowa church invited local viewing of 2022 Bible conference. | [Massena listing](https://massenabaptistchurch.org/events/g3-conference-2022-just-thinking-about-the-bible-live-stream/), invitation and local-time schedule; prior readback, R5 503. | R conditional reader link; invitation, not attendance; Harrison 2021 essay separate, not conference transcript. |
+| H-E (§2) | Mbewe July2017 reports Sesheke without permanent pastor. | [Sola5 letter](https://sola5.org/ministry-update-kabwata-baptist-church-july-2017/), Missions ¶2. | R; no payment or causation. 2014/15/2020 full succession in H-F conditional. |
+| H-F (§2/9) | No new reader claim. Review only precisely located archive sources. | Candidate + SOURCE_LEDGER; 2013 listener notes, 2014 Reid, 2015 exhibit, Sesheke succession, GBTS and Tyndale, curricula. | HOLD for unreviewed extra scope; H-G–T now separately index reviewed parts. |
+| H-G (§7) | Piper Jan17 2019, Phil2:17–18; three age-related obstacles and call to sacrificial missionary joy. | [Desiring God written sermon](https://www.desiringgod.org/messages/the-invincible-power-of-joy-for-world-missions), header and named subsections in §7; R5 fresh. | P; extends HIST-04 from program to written argument only. |
+| H-H (§7) | Anderson reports workshop/hymn introduction/choir; notes explain justification. | [Jan30 report](https://churchworksmedia.com/2020/01/30/my-two-cents-on-the-g3-conference/), involvement bullets 2–5 & captions; [hymn notes](https://churchworksmedia.com/product/his-robes-for-mine-free/), credits/doctrinal notes. | R; extends HIST-02, no lyrics, score, image or choir repertoire inference. |
+| H-I (§7) | Attributed board distribution decision Feb21 2020, not a heresy verdict. | [Prior archive](https://web.archive.org/web/20200223033728id_/https://g3conference.com/articles/statement-derek-thomas/), opening 3 paragraphs, §8.2, signature. | K; current transport failed; disputed sermon wording HOLD. |
+| H-J (§7) | Aniol's bibliographic entries document journal 2022/24 and selected books, not circulation or full journal content. | [Author bibliography](https://www.scottaniol.com/publications/), named entries; G3-S022 prior announcement ¶1–3. | R for bibliography; K for announcement/first issue; no new journal-full-text claim. |
+| H-K (§7/14) | Distinct 2023 written exchanges, Wilson clarifies primacy of genuine faith, Aniol distinguishes kingdoms and supports civic engagement. | [Wilson May10](https://dougwils.com/the-church/s16-theology/public-theology-comes-out-your-fingertips-also.html), What Sort of Project? etc.; [May17](https://dougwils.com/books-and-culture/s7-engaging-the-culture/scott-aniol.html), What Christian Consensus Means; [Aniol Nov3 edited interview](https://christoverall.com/article/concise/transcript-interview-with-scott-aniol-on-christian-nationalism/), book origin/two ages. | R for read texts; K for two prior Aniol May archive objects; no collective institutional doctrine or panel transcript. |
+| H-L (§10) | Challies remembers eight annual visits and hospitality including a gift to his wife. | [May23 2025 memoir](https://www.challies.com/articles/you-me-and-g3/), first three paragraphs; R5 fresh. | R specific new detail; HIST-01/03 only already cover origin/catalogues. |
+| H-M (§10) | SBTS announced special rate and scholarship opportunity. | [SBTS notice](https://equip.sbts.edu/article/g3-conference-on-the-church/), heading and first two paragraphs. | R; offer not award; separate music credits. |
+| H-N (§10) | H.B. Charles reports participating in 2016, hosted by Pray’s Mill. | [Author post](https://hbcharlesjr.com/resource-library/articles/saturday-shout-outs-g3-_____-ministry-links/), G3 paragraph/caption. | R; photo derivative 404 per VISUAL, no image rights. |
+| H-O (§10) | AFA announced Jan19–21 2017 venue; Fong reports Miller exposition and other sessions. | [AFA Nov2016](https://afajournal.org/past-issues/2016/november/g3-conference-to-celebrate-reformation/), last two paragraphs; [Fong Feb23](https://theartofgodliness.com/blog/2017223/2017-g3-conference-review), opening and sessions 3/10/11. | R; advertised venue, eyewitness Atlanta event; exact transition date HOLD. |
+| H-P (§14) | Lesley's workshop preparation, group feedback, later apprenticeship. | [2024 republication](https://michellelesley.com/2024/06/06/6-reasons-you-should-attend-the-next-g3-womens-expository-teaching-workshop-2/), §§1–4/6, 2024 Update; [prior archived version](https://web.archive.org/web/20240606100014id_/https://michellelesley.com/2024/06/06/6-reasons-you-should-attend-the-next-g3-womens-expository-teaching-workshop-2/). | R for 2023 cached text/previous readback; K for 2024 apprenticeship. Both original report URLs return 404; live May20 announcement only establishes intent. See §16. [Lochwood calendar](https://lochwood.church/events-1/g3-biblical-worship-workshop) supports scheduled Sept11 only. |
+| H-Q (§14) | Prata reports heard sessions Sep21–23, not whole conference or attendance. | [Day1](https://the-end-time.org/2023/09/21/g3-conference-2023-day-1/), breakouts and Johnson; [Day2](https://the-end-time.org/2023/09/22/g3-conference-2023-day-2/), Coates/White/Peters (R5 fresh); [Day3](https://the-end-time.org/2023/09/23/g3-conference-day-3-final-day-final-thoughts/), Ham/Riccardi. | R beyond HIST-07 announcement; one observer. |
+| H-R (§14) | May2024 regional meeting actually held, participant report; subsequent separate op-ed. | [Registration](https://www.tickettailor.com/events/g3ministries/1010697); [Three Sixteen June5](https://316publishing.com/blogs/blog/june-2024-the-lsb-ppr-conferences-a-new-susan-heck-bible-study-more), In May paragraph; [Buice May23](https://www.christianpost.com/voices/when-preaching-leaves-a-church-christ-goes-with-it.html), Matt28. | P for May event occurrence only, beyond HIST-09 announcement; R for separate op-ed, not sermon. |
+| H-S (§14) | October announced location; Osman proposed topic; Brown invitation and own position. | [Listener registration](https://www.tickettailor.com/events/g3ministries/1010698); [Didaché description](https://didache.captivate.fm/episode/didache-delivering-you-from-deliverance-ministries-a-new-session-at-the-cessationist-conference); [Brown Sept26](https://stream.org/a-friendly-invitation-to-the-speakers-at-the-g3-cessationist-conference/), Terms of Engagement. | R new detail beyond HIST-09; no actual delivery of every session or refusal. Sponsorship offers not receipts. |
+| H-T (§14) | 23 distinct catalogue person/year associations, 11 in 2018, 12 in 2021. | [GNL 2018](https://www.gnli.com/titles/2018-G3-Conference-or-G3-Ministries/2902), first displayed page; [GNL 2021](https://www.gnli.com/titles/2021-G3-National-Conference-or-G3-Ministries/2906), first displayed page. Both R5 fresh, 23/23 match. | P; catalogue-only, beyond HIST-02/03; dedup by person/year in integrated V2; dynamic nine-year layout, not a complete roster. |
+| C-A (§8) | Board reports May4 confrontation/admission, promised refunds/cancelled workshops; Founders reports its response. | [May12 statement rendering](https://the-end-time.org/2025/05/13/g3-president-josh-buice-resigns-amid-scandal/), board signature and May4/8/cancellation; [Founders](https://founders.org/articles/a-statement-regarding-josh-buice/), specified paragraphs. | R for incremental detail, existing PUB-005/006 still control. Refund completion HOLD. |
+| C-B (§8) | Johnson reports March27 advice and measures as far as he knew; Lindale's attributed response. | [Johnson Aug19](https://teampyro.blogspot.com/2026/08/hamans-gallows.html), opening and corrective-measures paragraphs; [ChurchLeaders](https://churchleaders.com/news/2221879-g3-president-scott-aniol-prays-mill-baptist-church-resign-tom-buck.html/2), Lindale elders heading. | R beyond PUB-010; 0/17 item verification, no adjudication or church minutes. |
+| C-C (§11) | 1689 confession allows advice but not imposed jurisdiction; compare admitted process conduct. | [Chapter 26](https://1689londonbaptistconfession.com/26/), §§7,14–15; PUB-011. | R theological interpretation, not new factual verdict. |
+| C-D (§11) | Board dates May8/July9, new president's expressed vision and named roles at announcement. | Q004 primary board dates; [CP July16](https://www.christianpost.com/news/g3-ministries-announces-scott-aniol-as-new-president.html), ¶2–7. | R for new attributed details; PUB-006/007 already authorize transition/reset. IRS Part VII conflict preserved. |
+| C-E (§4/12) | Four financial metrics, FY ending Dec 2019–25, 28 figures, correct units/signs; cumulative arithmetic. | [Public return rendering](https://projects.propublica.org/nonprofits/organizations/842403597), fiscal-year headings; FINANCES and existing raw provenance. | P for annual chart only; existing PUB-002 separate; $590k property context separately R, title/deed HOLD. |
+| C-F (§12) | Prior Nov15 index and Nov20 ledger record name amendment effective Oct28 and later two registrations. | [Registry filing index](https://ecorp.sos.ga.gov/BusinessSearch/BusinessFilings?businessId=2751672), G3-S144 exact prior dated observation. | K; no fresh status, separate from PUB-001 Sep8 status. |
+| C-G (§3) | On Nov24 G3 root was observed redirecting to Lumena; site states Minga presidency and 1689; specific old imprint listings. | [About](https://lumenaministries.com/about/), Our convictions/Our leadership/Our Work (R5 fresh); exact store cards, Give and root listed in §3. | R; extends dated PUB-013/014 observations, not proof of transaction or all rights. |
+| E5 (§13) | Correct date Aug27 and four identified pastors in bibliography. | [MinistryWatch byline](https://ministrywatch.com/g3-ministries-closes-amid-anonymous-smear-campaign/), G3-S017; G3-S015 and existing PUB-011. | P; metadata only, reader links separately verified before release. |
+
+Index integrity: 20 history labels (H-A–T including H-F non-transfer), 7 crisis labels (C-A–G), E5 metadata batch = 28 scope entries, no new claim identifiers. Five P rows (H-R is mixed P/R; C-E property context separately R). All other rows and excluded subparts require appropriate R/K/HOLD resolution; prior authority is not revoked. H-A–E are five scene labels, not 5 newly adopted claims. Shared URLs or same author's repeated accounts are not independent witnesses.
+
+### R5 delta corrections and non-duplication
+
+* FirstLove 2018 images are a distinct 2018 lead, not a new object within G3-M007. Do not increment verified-image count or imply rights.
+* H-Q now explicitly includes Peters's topic from Day2 (author report ¶ after luncheon, not spoken quote), to align narrative with VISUAL/Editorial matrix. The potential 60 associations remains conditional until V2 integrated dedup; 23 selected additions rechecked against both live catalogue pages, not all catalogues. No attendance curve.
+* H-P and H-D live source recheck returned 404 and 503 respectively. Do not call either currently accessible; use previously read exact archive if available, or truthful dated access status. No repeat acquisition without a new trigger. H-P earlier 2024 readback remains distinct from present access. C-G now says redirect observed in November, not inferred commencement date. About currently readable, no new title evidence.
+* Existing HIST-05 Aniol announcement, PUB-006 dates, PUB-007 reset, PUB-010 process and PUB-011 admission should not be rewritten as competing claims; only accepted incremental wording belongs in the same article. Existing HIST-09 October occurrence relies on Peters prior report; do not downgrade to mere registration, but H-S new proposed-session details remain only announced.
+* §1 venue observation concerns documented announced venue and prior program, not exact migration date. No new claims that all old links were fixed. §13 metadata correction applies to current Product source records S015/S017, not retroactive historical ledger changes.
+
+### Intake gates for MAX 0
+
+1. Record a bounded review decision for each R/K slice to be used, explicitly exclude unaccepted subparts and source family conflation. H-F archive gaps, 0/17 original-media item tests, Q020, Q005 current status/filing body, Q006 rights/transaction and all photo rights remain external HOLD. Do not force a positive resolution for unknowns.
+2. Use single canonical Product lane and typed source projection; E5 URL/access labels must be visible, nonempty and semantically verified. Distinguish live source, archived source, reproduction, unavailable locator. Never show internal Research link as reader substitute. Preserve frozen previous handoff and citation/return mapping.
+3. Financial chart C-E and graphics V1/V2/V3/#2381 require exact integrated data, noJS/keyboard/mobile/print, source return, contrast, build/CI and Product guard, separately rights review. No full Astro/browser claim from isolated prototypes. No new rights permission by this proposal. C-E property context not implicitly approved.
+4. Exact-head Research CI and authorized merge/adoption per existing protocol; exact-head Product implementation/approval separately. This document is not signature, approval, merge, deploy, or release. Do not publish every candidate solely because it has a URL.
+
+R5 scope closure: one consolidated source/claim index; editorial overlaps and date/access clarifications incorporated. Known evidence gaps remain bounded, not a reason to keep accumulating redundant narrative or repeatedly fetching failed routes. Next actionable step is coordinator review of individual R/K rows and actual Product integration after adoption.
+
+
+## 16. R5b — independent review intake, narrow adoption bundle and H-P access witness
+
+**Review anchors:** [MAX 0 review 7117314413](https://github.com/FedorMilovanov/Research/pull/632#issuecomment-7117314413) at ff72ca93 and [MAX 0 review 7117498205](https://github.com/FedorMilovanov/Research/pull/632#issuecomment-7117498205) at bdb29b39; [EDITORIAL E8 manuscript](https://github.com/FedorMilovanov/gb-is-my-strength/pull/2380#issuecomment-7117467626) with its [Research crosswalk](https://github.com/FedorMilovanov/Research/pull/632#issuecomment-7117475422). E8 supersedes earlier overlapping prose, not evidence authority. R5 index was read at cfc48582. Product #2380 head remains 1ba041f4 at start of this wave. Visual donor #2383 and Graphics #2381 are separate prototype/component lanes, no authority to publish new claims.
+
+### H-P — targeted source recovery, not a new independent witness
+
+24 Nov 2026 recheck of original author site:
+- June 15 2023 original: https://michellelesley.com/2023/06/15/6-reasons-you-should-attend-the-next-g3-womens-expository-teaching-workshop/ . Direct open 404. Search-indexed historical body (byline Michelle Lesley, June 15 2023; index indicated crawl about three months earlier, not a precise acquisition date) remains readable in search results. This is a cached rendering of the same author object, NOT current live body, raw bytes, independent witness or licensed facsimile. Internal minimal excerpt anchors: §2 “central proposition of the passage”; §4 “small group of about 6-8 women”. §3 names Buice and Buck as main teachers; §4 describes homework and trained group leaders, §6 contrasts collaborative work with lecture recording. Paraphrase only. No additional source ID or raw-object hash invented. Prior dated archive: https://web.archive.org/web/20230625194207id_/https://michellelesley.com/2023/06/15/6-reasons-you-should-attend-the-next-g3-womens-expository-teaching-workshop/ ; previously recorded exact locator, not newly fetched today.
+- June 6 2024 republication: https://michellelesley.com/2024/06/06/6-reasons-you-should-attend-the-next-g3-womens-expository-teaching-workshop-2/ direct open 404 again. Existing source-ledger prior exact locator https://web.archive.org/web/20240606100014id_/https://michellelesley.com/2024/06/06/6-reasons-you-should-attend-the-next-g3-womens-expository-teaching-workshop-2/ , “2024 Update” ¶1; prior R4 author-hosted readback preserved. No freshly acquired durable body/excerpt of apprenticeship. Keep this subclaim conditional; do not invent verbatim words from earlier summary.
+- Alternative actually readable author post https://michellelesley.com/2024/05/20/blog-announcement/ , byline May 20 2024, first paragraph (rendered lines 35–42): announces absence May 28–30 and intention to attend the workshop the following week. Same author's monthly archive https://michellelesley.com/2024/05/ lines 6–14 reproduces same object, not independent witness. A1 author statement / PARTIAL_OBJECT / EXACT_LOCATOR_VERIFIED for **intention**, no proof attendance or apprentice role.
+- Reader-ready safe split: «В отчёте о первом практикуме 2023 года Мишель Лесли описала подготовку конспекта до приезда, анализ контекста Писания и работу в малых группах. В мае 2024 года она сообщила, что собирается вновь посетить практикум». First sentence conditional on accepted prior/cached exact evidence and truthful reader link; second supported by current readable May20 source. Omit apprenticeship if prior archive acceptance is not granted. Neither source is a general survey of G3 educational outcomes. No full-copy republication, no further repeated failed retrieval.
+
+### Exact planning-only subset requested for adoption
+
+Only these five bounded slices have independent MAX 0 planning acceptance. Do not import additional paragraphs just because they share a local label. Proposed reader wording below is an implementation boundary, not permission to publish.
+
+| Scope | E8 placement / source | Maximum narrow meaning | Excluded even from this planning subset |
+|---|---|---|---|
+| H-G | H06 / piper-2019; Desiring God header + named sections in §7 | Jan17 2019, G3 Atlanta, Phil2:17–18; Piper describes age-related obstacles to mission and urges sacrificial joy. Original Russian paraphrase. | Exact audio words, timecodes, empirical age data. |
+| H-R | H11 / reformation-2024 + 316-2024; June5 “In May” | G3 advertised May9–11 at Countryside Bible Church; Three Sixteen reported participation and meeting Pennington. | Buice May23 separate op-ed (R); distribution 3500 belongs to another event; audience totals, full realized schedule. |
+| H-T | Separate V2 figure / proposed gnl-2018, gnl-2021 | Exactly the 23 selected person/year keys and title paraphrases in §14, with partial-catalogue caption. | Full roster, attendance, speech verification, endorsement. Existing 37 keys separate; validate union, 9 dynamic years, print and source-return behavior. |
+| C-E | C02 / existing S002/S028, proposed propublica-990-annual | 28 values in §4, FY ending December 2019–25, USD, result revenue minus expenses, end-year net assets. Derived arithmetic with correct denominators. | Noncash-property sentence (R); property title/deed, cash/reserve equivalence, causal loss allocation, fraud. Existing PUB-002 expense delta remains separate. |
+| E5 | Crisis bibliography / G3-S015, G3-S017 | Attribute named four-person statement to its reproduced text; MinistryWatch byline Aug27, 2026. | Original X body recovery, rights, resignation-mechanics decision, unverified source links. |
+
+The following compact manifest is **derived from §15**, for coordination and validation only. It is not a second source ledger or authorization and must not be consumed as a Product publication registry. All 28 labels stay local to this document. Status P means planning-only; split exclusions above take precedence.
+
+
+```json
+{
+  "schema": "g3-local-review-index-v1",
+  "publicationState": "PUBLICATION_HOLD",
+  "planningAcceptanceOnly": true,
+  "counts": {
+    "R": 20,
+    "HOLD": 1,
+    "P": 5,
+    "K": 2
+  },
+  "scopes": [
+    {
+      "id": "H-A",
+      "status": "R",
+      "placement": "H05",
+      "decisionIndex": "§15 H-A"
+    },
+    {
+      "id": "H-B",
+      "status": "R",
+      "placement": "H08",
+      "decisionIndex": "§15 H-B"
+    },
+    {
+      "id": "H-C",
+      "status": "R",
+      "placement": "H08,H09",
+      "decisionIndex": "§15 H-C"
+    },
+    {
+      "id": "H-D",
+      "status": "R",
+      "placement": "H09",
+      "decisionIndex": "§15 H-D"
+    },
+    {
+      "id": "H-E",
+      "status": "R",
+      "placement": "H04",
+      "decisionIndex": "§15 H-E"
+    },
+    {
+      "id": "H-F",
+      "status": "HOLD",
+      "placement": "none",
+      "decisionIndex": "§15 H-F"
+    },
+    {
+      "id": "H-G",
+      "status": "P",
+      "placement": "H06",
+      "decisionIndex": "§15 H-G"
+    },
+    {
+      "id": "H-H",
+      "status": "R",
+      "placement": "H07",
+      "decisionIndex": "§15 H-H"
+    },
+    {
+      "id": "H-I",
+      "status": "K",
+      "placement": "H07 conditional",
+      "decisionIndex": "§15 H-I"
+    },
+    {
+      "id": "H-J",
+      "status": "R",
+      "placement": "H09,H11",
+      "decisionIndex": "§15 H-J"
+    },
+    {
+      "id": "H-K",
+      "status": "R",
+      "placement": "H10",
+      "decisionIndex": "§15 H-K"
+    },
+    {
+      "id": "H-L",
+      "status": "R",
+      "placement": "H01",
+      "decisionIndex": "§15 H-L"
+    },
+    {
+      "id": "H-M",
+      "status": "R",
+      "placement": "H02",
+      "decisionIndex": "§15 H-M"
+    },
+    {
+      "id": "H-N",
+      "status": "R",
+      "placement": "H03",
+      "decisionIndex": "§15 H-N"
+    },
+    {
+      "id": "H-O",
+      "status": "R",
+      "placement": "H04",
+      "decisionIndex": "§15 H-O"
+    },
+    {
+      "id": "H-P",
+      "status": "R",
+      "placement": "H11",
+      "decisionIndex": "§15 H-P"
+    },
+    {
+      "id": "H-Q",
+      "status": "R",
+      "placement": "H10",
+      "decisionIndex": "§15 H-Q"
+    },
+    {
+      "id": "H-R",
+      "status": "P",
+      "placement": "H11",
+      "decisionIndex": "§15 H-R"
+    },
+    {
+      "id": "H-S",
+      "status": "R",
+      "placement": "H11",
+      "decisionIndex": "§15 H-S"
+    },
+    {
+      "id": "H-T",
+      "status": "P",
+      "placement": "V2",
+      "decisionIndex": "§15 H-T"
+    },
+    {
+      "id": "C-A",
+      "status": "R",
+      "placement": "C03",
+      "decisionIndex": "§15 C-A"
+    },
+    {
+      "id": "C-B",
+      "status": "R",
+      "placement": "C06,C07",
+      "decisionIndex": "§15 C-B"
+    },
+    {
+      "id": "C-C",
+      "status": "R",
+      "placement": "H09,C07",
+      "decisionIndex": "§15 C-C"
+    },
+    {
+      "id": "C-D",
+      "status": "R",
+      "placement": "C04",
+      "decisionIndex": "§15 C-D"
+    },
+    {
+      "id": "C-E",
+      "status": "P",
+      "placement": "C02",
+      "decisionIndex": "§15 C-E"
+    },
+    {
+      "id": "C-F",
+      "status": "K",
+      "placement": "C09",
+      "decisionIndex": "§15 C-F"
+    },
+    {
+      "id": "C-G",
+      "status": "R",
+      "placement": "C09",
+      "decisionIndex": "§15 C-G"
+    },
+    {
+      "id": "E5",
+      "status": "P",
+      "placement": "bibliography",
+      "decisionIndex": "§15 E5"
+    }
+  ]
+}
+```
+
+Acceptance check: 28 unique labels, all have an E8/figure/bibliography placement or explicit no-transfer; planning subset 5; 20 review candidates, 2 conditional rows, 1 HOLD. Mixed subclaims in H-P/H-R/H-J/H-K/C-E retain their narrower gates. E8 source-slug typo `pr ata-day1/2/3` corrected in Editorial's coordination comment to provisional `prata-day1/2/3`; no Product IDs mutated. Existing immutable HIST-PUB and crisis PUB authorities unchanged. No Product writes. Final adoption/merge remains MAX 0 responsibility; all hosted checks must refer to final exact SHA. No redundant full-source discovery requested.
