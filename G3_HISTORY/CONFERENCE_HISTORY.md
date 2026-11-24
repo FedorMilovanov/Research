@@ -145,7 +145,7 @@ G3’s [study description captured on 14 July 2024](https://web.archive.org/web/
 
 A contemporaneous official G3 article published immediately before the conference likewise states that attendees would gather under the thematic banner of **God's sovereignty**, with **13 main sessions and 15 breakout sessions**.
 
-In her [22 September report](https://the-end-time.org/2023/09/22/g3-conference-2023-day-2/), attendee Elizabeth Prata recalls Canadian pastor James Coates opening the second day with an address on sovereignty in election from Romans 9. Her account identifies the theme of one session, not its exact wording or a consensus among all speakers.
+In her [22 September report](https://the-end-time.org/2023/09/22/g3-conference-2023-day-2/), attendee Elizabeth Prata describes an address she attended on the second day by Canadian pastor James Coates, on sovereignty in election from Romans 9. Her account identifies the theme of one session, not its exact wording or a consensus among all speakers.
 
 The published resources are not a running order. [FOX 5 Atlanta](https://www.fox5atlanta.com/news/g3-national-conference-religious-threat) confirms the Friday evacuation and Saturday resumption; its general description of resuming as planned is not session-level reporting. [Elizabeth Prata, Sept 23](https://the-end-time.org/2023/09/23/g3-conference-day-3-final-day-final-thoughts/), paragraphs from the altered start through hotel checkout, says the video sermon was dropped, Ham opened an hour late and Riccardi followed. She left before Lawson. The Friday film screening and Saturday video sermon were distinct.
 
