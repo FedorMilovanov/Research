@@ -185,6 +185,16 @@ class ProseClaimTests(unittest.TestCase):
         for name in ("holds-array-files-in-section-2", "json-holds-files", "json-holds-values"):
             self.assertEqual(found[name]["state"], "match", name)
 
+    def test_holds_prose_paucal_inflection_uses_declared_counters(self) -> None:
+        self.fx.write_json(claims.INVENTORY, {
+            "totals": {"filesWithJsonHolds": 42, "jsonHoldsTotal": 6160}, "byCorpus": {}
+        })
+        document = ("| Гигиена машинных реестров | 42 файла с массивом `holds` | см. §5 |\n"
+                    "В 42 JSON-файлах массивы `holds` содержат 6 160 значений.\n")
+        found = self.prose(document)
+        for name in ("holds-array-files-in-section-2", "json-holds-files", "json-holds-values"):
+            self.assertEqual(found[name]["state"], "match", name)
+
     def test_holds_prose_inflection_does_not_hide_stale_claim(self) -> None:
         self.fx.write_json(claims.INVENTORY, {
             "totals": {"filesWithJsonHolds": 41, "jsonHoldsTotal": 6156}, "byCorpus": {}
@@ -194,6 +204,11 @@ class ProseClaimTests(unittest.TestCase):
         found = self.prose(document)
         for name in ("holds-array-files-in-section-2", "json-holds-files", "json-holds-values"):
             self.assertEqual(found[name]["state"], "stale", name)
+
+    def test_vocabulary_spelling_claim_accepts_singular_inflection(self) -> None:
+        self.fx.write_json(claims.PROPOSAL, {"counts": {"spellings": 41}})
+        found = self.prose("из них **136 (41 написание)** — неканонические флаги.\n")
+        self.assertEqual(found["hold-vocabulary-spellings"]["state"], "match")
 
 
 class SliceRegistryTests(unittest.TestCase):

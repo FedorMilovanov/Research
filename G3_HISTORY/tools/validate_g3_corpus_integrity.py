@@ -39,6 +39,7 @@ REQUIRED_FILES = [
     G3 / "G3_ACTIONS_PRESERVATION_SOURCE_MANIFEST_2026-11-21.json",
     G3 / "G3_ACTIONS_PRESERVATION_CUSTODY_RECEIPT_2026-11-21.json",
     G3 / "G3_ACTIONS_2026-11-24_EXPIRY_COHORT_ASSESSMENT_2026-11-21.md",
+    G3 / "PRODUCT_HANDOFF_G3_PUB015_CORRECTION_PROPOSAL_2026-11-21.md",
 ]
 
 G3_WORKFLOWS = [
@@ -100,6 +101,7 @@ def main() -> int:
     sources_text = (G3 / "SOURCE_LEDGER.md").read_text(encoding="utf-8")
     open_text = (G3 / "OPEN_QUESTIONS.md").read_text(encoding="utf-8")
     buck_readme = (G3 / "BUCK_ITEMS" / "README.md").read_text(encoding="utf-8")
+    pub015_correction = (G3 / "PRODUCT_HANDOFF_G3_PUB015_CORRECTION_PROPOSAL_2026-11-21.md").read_text(encoding="utf-8")
 
     for name, text in [
         ("README.md", readme),
@@ -112,11 +114,13 @@ def main() -> int:
 
     source_rows = parse_table_rows(sources_text, "G3-S", 9)
     source_ids: set[str] = set()
+    source_by_id: dict[str, list[str]] = {}
     for cells in source_rows:
         sid = cells[0]
         if sid in source_ids:
             errors.append(f"duplicate source id: {sid}")
         source_ids.add(sid)
+        source_by_id[sid] = cells
         klass = cells[3]
         if klass not in ALLOWED_SOURCE_CLASSES:
             errors.append(f"{sid}: invalid source class {klass!r}")
@@ -126,12 +130,14 @@ def main() -> int:
     claim_rows = parse_table_rows(claims_text, "G3-C", 5)
     claim_ids: set[str] = set()
     claim_states: dict[str, str] = {}
+    claim_by_id: dict[str, list[str]] = {}
     for cells in claim_rows:
         cid, _, state, evidence, note = cells[:5]
         if cid in claim_ids:
             errors.append(f"duplicate claim id: {cid}")
         claim_ids.add(cid)
         claim_states[cid] = state
+        claim_by_id[cid] = cells
         if state not in ALLOWED_CLAIM_STATES:
             errors.append(f"{cid}: invalid claim state {state!r}")
         refs = set(re.findall(r"G3-S\d{3}", evidence + " " + note))
@@ -145,6 +151,39 @@ def main() -> int:
         actual = claim_states.get(cid)
         if actual != expected:
             errors.append(f"{cid}: critical firewall state {actual!r}, expected {expected!r}")
+
+    # G3-PUB-015 is a correction proposal, not a signed publication handoff. Protect the
+    # narrow chronology and the unsigned firewall without pretending this validator can sign it.
+    required_pub015_phrases = [
+        "RESEARCH-READY_FOR_OWNER_SIGNATURE / NOT_SIGNED / PRODUCT_PUBLICATION_HOLD",
+        "Q020_JENKINS_TITLE_CORRECTION_2026-11-21.md",
+        "SUPERSEDED_FOR_POST-RETURN-REISSUE_INFERENCE",
+        "PENDING_SIGNED_HANDOFF_AND_PRODUCT_REVIEW",
+        "`EVIDENCE_HOLD`, `RIGHTS_HOLD`, `PUBLICATION_HOLD`",
+        "13 августа 2026 года",
+        "19 августа 2026 года",
+    ]
+    for phrase in required_pub015_phrases:
+        if phrase not in pub015_correction:
+            errors.append(f"G3-PUB-015 correction lost boundary: {phrase!r}")
+
+    expected_sources = {
+        "G3-S054": ("A2", "FULL_OBJECT_VERIFIED", "EXACT_LOCATOR_VERIFIED", "REFERENCE"),
+        "G3-S091": ("A1", "FULL_OBJECT_VERIFIED", "EXACT_LOCATOR_VERIFIED", "REFERENCE"),
+    }
+    for sid, expected in expected_sources.items():
+        row = source_by_id.get(sid)
+        actual = tuple(row[3:7]) if row else None
+        if actual != expected:
+            errors.append(f"{sid}: correction source axes {actual!r}, expected {expected!r}")
+        if row and "Q020_JENKINS_TITLE_CORRECTION_2026-11-21.md" not in " ".join(row):
+            errors.append(f"{sid}: missing canonical Q020 correction link")
+    for cid in ("G3-C066", "G3-C067"):
+        row = claim_by_id.get(cid)
+        if not row or row[2] != "VERIFIED_PRIMARY":
+            errors.append(f"{cid}: correction claim must remain VERIFIED_PRIMARY with its stated limit")
+        if row and "Q020_JENKINS_TITLE_CORRECTION_2026-11-21.md" not in " ".join(row):
+            errors.append(f"{cid}: missing canonical Q020 correction link")
 
     qids = re.findall(r"^### Q(\d{3})\b", open_text, flags=re.M)
     if len(qids) != len(set(qids)):

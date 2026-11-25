@@ -16,24 +16,24 @@ GitHub API для точного head #621 перечисляет 50 путей:
 
 Полное scratch-слияние #621 в актуальный `main` после #584 не является даже текстово бесконфликтным: ровно два конфликта — `ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json` и `ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json`. После сохранения актуальных версий этих двух производных JSON и пересъёма командой `atonement_reshoot_state.py --write` проверка `--check` и 230 тестов `test_atonement_sync.py` проходят. Это доказывает способ механического разрешения, но не принимает спорную исходную прозу #621.
 
-**Решение:** один узкий пакет готов к отдельной приёмке (`ADMIT`); остальные девять пакетов остаются `HOLD`. Ничего из #621 в #584 этим документом не перенесено.
+**Актуальное решение:** три узких среза приняты отдельными closures: STEPBible subdataset terms (`HCR-2026-11-18-32`), точная official-core квитанция вместе с независимо написанным полным гейтом (`HCR-2026-11-18-33`) и исправленный shallow-clone runbook с fresh-clone fixture (`HCR-2026-11-18-34`). Actions-custody пакет получил окончательный disposition `REJECTED / SUPERSEDED` в `HCR-2026-11-18-36`: ни один из трёх путей не импортирован. Из двух исходных official-core prose blobs ни один не принят verbatim: узкий carrier-view независимо пересобран из валидированной receipt, а смешанная gap-note отклонена (`HCR-2026-11-18-39`). Rights matrix принята только после отделения от inventory и boundary-ремонта (`HCR-2026-11-18-38`); пять прочих пакетов остаются `HOLD`. Wholesale merge #621 по-прежнему запрещён.
 
 ## 2. Пакеты 32 новых путей
 
 | Пакет | Путей | Зависимости и проверка на актуальном дереве | Владелец | Решение |
 |---|---:|---|---|---|
-| STEPBible subdataset terms | 2 | Только stdlib и закреплённый ZIP. `--check` = 0; ZIP заново скачан по pinned commit, размер и SHA-256 совпали; генерация дала JSON, структурно равный закоммиченному | #584, read-only rights evidence | **ADMIT** после отдельной приёмки |
-| Actions artifact custody | 3 | Снимок #621 устарел и не подтверждает байтовый readback. Актуальный main уже содержит bounded assessment 38 G3 items, отдельную квитанцию private readback 8/8 и канонический durable manifest; `validate_g3_durable_custody.py` = PASS | G3 custody owner | **HOLD**, не дублировать текущий main |
+| STEPBible subdataset terms | 2 | Только stdlib и закреплённый ZIP. `--check` = 0; ZIP заново скачан по pinned commit, размер и SHA-256 совпали; генерация дала JSON, структурно равный закоммиченному | #584, read-only rights evidence | **ADMIT выполнен в HCR-32**; rights/publication HOLD сохранены |
+| Actions artifact custody | 3 | Снимок #621 устарел и не подтверждает байтовый readback. Актуальный main уже содержит bounded assessment 38 G3 items, отдельную квитанцию private readback 8/8 и канонический durable manifest; `validate_g3_durable_custody.py` = PASS | G3 custody owner | **REJECTED / SUPERSEDED в HCR-36**; 0 путей импортировано, полный archive остаётся HOLD |
 | Corpus/Drive custody и пары зеркал | 8 | Датированный Drive-снимок, текущие corpus/index JSON и изменённые валидаторы #621. `--cross` на актуальном дереве: 12/13 расходятся | custody owner + владельцы корпусов | **HOLD** |
-| Official-core reproducibility | 3 | Данные и проза есть, но отдельного генератора/полного `--check` для всех трёх архивов в пакете нет; один STEPBible-пункт проверяется соседним скриптом | #584, read-only evidence | **HOLD** до собственного воспроизводимого гейта |
-| Rights proposal | 3 | `render_rights_matrix.py --check` проходит, но импортирует не принятый `render_hold_inventory.py`; это предложение, а не authority | #584 | **HOLD** до отделения от непринятого inventory-слоя |
+| Official-core reproducibility | 3 | Точная data-квитанция принята; независимо добавлен полный offline/`--archive`/`--fetch` гейт. Все три ZIP повторно скачаны по полным commit SHA, размеры и SHA-256 совпали. Оба prose blobs разобраны отдельно: carrier-view пересобран из receipt, mixed gap-note отклонена | #584, read-only evidence | **PARTIAL ADMIT выполнен в HCR-33 и HCR-39:** data receipt + новый локальный gate + generated carrier-view; 0 prose paths импортировано verbatim, mixed gap-note остаётся **HOLD** |
+| Rights proposal | 3 | HCR-38: exact 22-ID set повторно совпал с current corpus records; checker переписан без зависимости от `render_hold_inventory.py`, contradictory network boundary исправлена, prose пересобрана | #584 | **ADMIT после ремонта как `PROPOSAL_NOT_AUTHORITY`**; ни один rights/publication HOLD не снят |
 | HOLD inventory / triage / orchestration | 9 | Производные снимки и документы уже stale; общий раннер падает на inventory, numbers и mirror cross | #584 | **HOLD** |
 | Russian Baptists Drive custody note | 1 | Зависит от четырёх изменённых RBA-файлов и датированных Drive identifiers/readback | RBA custody owner | **HOLD** |
 | SUNO DBNL slug map | 1 | Сам по себе не обновляет реестр; требуются пять пересекающихся путей, принадлежащих #585, и разрешение по record IDs | #585 | **HOLD** |
-| Shallow-clone recovery note | 1 | В инструкции `git fetch origin arena/<ветка>` не создаёт гарантированно `origin/arena/<ветка>` в свежем клоне, хотя следующая команда делает reset именно на этот ref; нужен явный refspec | #584 tooling | **HOLD** до исправления команды и теста в fresh shallow clone |
+| Shallow-clone recovery note | 1 | Ошибочная связка заменена явным `refs/heads/$branch:refs/remotes/origin/$branch`; добавлены безопасные backup/precondition границы. Offline fixture воспроизводит fresh depth-1 single-branch clone и сохранение локальной правки после `reset --mixed` | #584 tooling | **ADMIT выполнен в HCR-34** |
 | Pusey II locator note | 1 | Независимая перепроверка подтвердила OCR, но нашла неверную пару p.295 ↔ leaf 306, пропущенный аппарат и границу фрагмента; визуальный C-25 остаётся OPEN | atonement source owner | **HOLD** |
 
-### 2.1. Единственный пакет `ADMIT`
+### 2.1. Принятые узкие срезы
 
 ```text
 scripts/stepbible_subdataset_terms.py
@@ -62,6 +62,29 @@ python3 -B scripts/stepbible_subdataset_terms.py --check
 
 `/tmp/built.json` после JSON-разбора равен source JSON. Скрипт ничего не меняет в HOLD/rights state и прямо ограничивает вывод: лицензия в имени файла — утверждение распространителя, а не разрешение на публикацию.
 
+Official-core срез закрыт отдельно как HCR-33. Из #621 принят только точный data blob; checker и негативные тесты написаны независимо в текущей ветке:
+
+```text
+data/official-core-datasets-reproducibility-2026-11-18.json
+  source git blob 2c1bdecf91f6c05f5cf7ec3187eb86e19bbc905c
+scripts/check_official_core_reproducibility.py
+scripts/test_check_official_core_reproducibility.py
+```
+
+Проверка `--fetch` повторно получила все три ZIP и сверила суммарно `123205547` байт; offline-check и негативные тесты включены в CI. Это закрывает только зависимость от истекающего Actions artifact. Независимая Drive-custody, чтение содержимого, научная приёмка, права, публикация и `PROMOTE=0` не изменены.
+
+HCR-39 закрыл отдельный вопрос о двух official-core prose blobs. Исходный reproducibility-документ `7f6bc0a9…` не принят verbatim: вместо него `check_official_core_reproducibility.py --write` собирает узкий human view только из принятой machine receipt, а `--check` требует точного совпадения Markdown, исходной даты и всех границ. Смешанная gap-note `7145b0a8…` отклонена: её Drive/artifact наблюдения и предложения назначить HOLD в чужих corpus SSOT не выводятся из carrier receipt. Ни одно owner-only решение не принято.
+
+Shallow-clone note принят после исправления, а не как исходный blob. Канонический документ называет source blob, использует явный refspec и не объявляет runbook authority над корпусом:
+
+```text
+docs/research/arena/SANDBOX_SHALLOW_CLONE_RECOVERY_2026-11-18.md
+  source git blob aaef9274f73c258d22bad189d23eacc0b460b411
+scripts/test_sandbox_shallow_clone_recovery.py
+```
+
+Fresh local fixture не использует сеть и не меняет рабочий repository; он проверяется в holds CI. Закрыта ошибка инструкции, а не какой-либо corpus/evidence/rights HOLD.
+
 ### 2.2. Точные пути остальных пакетов
 
 **Actions artifact custody (3):**
@@ -70,7 +93,9 @@ python3 -B scripts/stepbible_subdataset_terms.py --check
 - `data/artifact-custody-snapshot-2026-11-18.json`
 - `docs/research/holds/ARTIFACT_CUSTODY_SNAPSHOT_2026-11-18.md`
 
-Актуальная замена уже находится в main: `G3_HISTORY/G3_ACTIONS_2026-11-24_EXPIRY_COHORT_ASSESSMENT_2026-11-21.md` отделяет 8 сохранённых объектов от 30 несохранённых; `G3_ACTIONS_PRESERVATION_CUSTODY_RECEIPT_2026-11-21.json` имеет статус `ACQUIRED_DURABLE_8_OF_8_PRIVATE_DRIVE_READBACK_VERIFIED`. Это закрывает старые комментарии о восьми приоритетных artifacts, но не объявляет сохранёнными остальные 30 и не снимает `PUBLICATION_HOLD`/`RIGHTS_HOLD`.
+**Окончательный disposition (HCR-36): `REJECTED / SUPERSEDED`; `sourcePathsImported=0`.** Быстро меняющиеся totals и expiry старого snapshot не принимаются как current authority и параллельный SSOT не создаётся. Актуальная замена в main разделяет exact bounded cohort: `G3_HISTORY/G3_ACTIONS_2026-11-24_EXPIRY_COHORT_ASSESSMENT_2026-11-21.md` отмечает 8 сохранённых объектов и 30 объектов, не сохранённых этой квитанцией. Только 8 перечисленных original ZIP (`2 807 235` bytes) покрыты canonical source manifest, private Drive raw-readback receipt и `DURABLE_CUSTODY_MANIFEST.json`; `G3_ACTIONS_PRESERVATION_CUSTODY_RECEIPT_2026-11-21.json` имеет статус `ACQUIRED_DURABLE_8_OF_8_PRIVATE_DRIVE_READBACK_VERIFIED`.
+
+`validate_g3_durable_custody.py` офлайн проверяет exact IDs, source/destination bytes и SHA-256, original-ZIP/no-repack boundary, canonical links и обязательные `PUBLICATION_HOLD`, `RIGHTS_HOLD`, `EVIDENCE_HOLD`. Это не свежий сетевой readback и не доказательство для остальных 30 объектов, полного Actions archive, title, rights или publication authority; `PROMOTE=0` не меняется.
 
 **Corpus/Drive custody и пары зеркал (8):**
 
@@ -83,17 +108,19 @@ python3 -B scripts/stepbible_subdataset_terms.py --check
 - `ИСКУПЛЕНИЕ/evidence/DRIVE_INDEX_BYTES_FIELD_2026-11-18.md`
 - `ИСКУПЛЕНИЕ/evidence/RIGHTS_MIRROR_07_STOP_POINT_2026-11-18.md`
 
-**Official-core reproducibility (3):**
+**Official-core source paths (data receipt принят в HCR-33; prose disposition закрыт в HCR-39):**
 
-- `data/official-core-datasets-reproducibility-2026-11-18.json`
-- `docs/research/holds/OFFICIAL_CORE_DATASETS_REPRODUCIBILITY_2026-11-18.md`
-- `docs/research/holds/OFFICIAL_CORE_59_AND_LEDGER_GAPS_2026-11-18.md`
+- `data/official-core-datasets-reproducibility-2026-11-18.json` — принят точный blob;
+- `docs/research/holds/OFFICIAL_CORE_DATASETS_REPRODUCIBILITY_2026-11-18.md` — source blob не импортирован verbatim; путь занят independently generated carrier-view из принятой receipt;
+- `docs/research/holds/OFFICIAL_CORE_59_AND_LEDGER_GAPS_2026-11-18.md` — отклонён и не переносился: carrier receipt не подтверждает его Drive/artifact и owner-only corpus conclusions.
 
 **Rights proposal (3):**
 
 - `data/rights-determination-matrix-2026-11-18.json`
 - `docs/research/holds/RIGHTS_DETERMINATION_MATRIX_2026-11-18.md`
 - `scripts/render_rights_matrix.py`
+
+**Disposition HCR-38: ADMIT только после ремонта.** Data сохраняет роль `PROPOSAL_NOT_AUTHORITY` и исходные даты. Противоречивая граница «только api.github.com» исправлена: зафиксированные archive.org metadata названы датированными наблюдениями, а не текущим сетевым ответом. Source script не принят verbatim: dependency на отклонённый `render_hold_inventory.py` удалена; новый checker напрямую выводит exact 22-ID set из current corpus JSON, сверяет source path / `recordedRightsState` / `recordedHolds`, запрещает поля с правовым или публикационным эффектом и защищён негативными тестами. Markdown пересобран из repaired data. Ни один corpus record, `rightsState`, `RIGHTS_HOLD`, `PUBLICATION_HOLD` или `PROMOTE=0` не изменён.
 
 **HOLD inventory / triage / orchestration (9):**
 
@@ -107,11 +134,10 @@ python3 -B scripts/stepbible_subdataset_terms.py --check
 - `scripts/render_hold_inventory.py`
 - `scripts/run_research_gates.py`
 
-**Одиночные пакеты (по одному):**
+**Оставшиеся одиночные пакеты (по одному):**
 
 - RBA: `RUSSIAN_BAPTISTS_ARCHIVE/DRIVE_CUSTODY_VS_LEDGER_2026-11-18.md`
 - SUNO: `SUNO_HYMNS/data/dbnl-slug-map-1676.json`
-- shallow clone: `docs/research/arena/SANDBOX_SHALLOW_CLONE_RECOVERY_2026-11-18.md`
 - Pusey: `ИСКУПЛЕНИЕ/evidence/PUSEY_II_294_296_OCR_LOCATOR_2026-11-18.md`
 
 ## 3. Все 18 изменённых путей: владелец и disposition
@@ -200,4 +226,4 @@ python3 -B scripts/test_atonement_sync.py -q
 - Drive snapshot #621 не перечитывался как сегодняшний ответ Drive; наличие ID не равно destination readback.
 - Pusey II page images не открывались визуально; OCR и page-number index не закрывают C-25.
 - DBNL slug map не принят редакционным владельцем #585.
-- `ADMIT` для STEPBible — готовность к отдельному выборочному переносу, **не уже выполненный перенос** и не решение о правах.
+- HCR-32, HCR-33 и HCR-34 уже выполняют три выборочных переноса; HCR-39 допускает только independently generated view принятой HCR-33 receipt и отклоняет mixed gap-note. HCR-32/HCR-33/HCR-39 не являются решением о правах, независимой custody, научной приёмке или публикации; HCR-34 закрывает только дефект tooling-документа.

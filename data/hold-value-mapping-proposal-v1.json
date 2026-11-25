@@ -5,16 +5,21 @@
   "status": "PROPOSAL_ONLY",
   "policy": "data/repository-evidence-policy-v2.json",
   "inventory": "data/repository-holds-inventory-v1.json",
-  "note": "Предложение владельцу корпуса. Ни одно значение в машинных реестрах не перезаписано: здесь только соответствие «написание -> ось/канонический флаг/статус» с обоснованием по policy v2. Канонический флаг — это HOLD; ось — accessState/locatorState/rightsState/publicationState; статус — не удержание. Значения класса `manual` нельзя вывести из строки, их читает человек.",
+  "note": "Предложение владельцу корпуса. Ни одно значение в машинных реестрах не перезаписано: здесь только соответствие «написание -> ось/канонический флаг/статус» с обоснованием по policy v2. Канонический флаг — это HOLD; ось — accessState/rightsState/publicationState/locatorState; статус — не удержание. Значения класса `manual` нельзя вывести из одной строки: три измеренных употребления прочитаны по записи и источнику в `manualResolutions`, но это не разрешение переписывать corpus SSOT.",
   "counts": {
-    "values": 134,
-    "spellings": 39,
+    "values": 136,
+    "spellings": 41,
     "byClass": {
       "axis": 24,
-      "canonical": 80,
+      "canonical": 82,
       "manual": 3,
       "split": 7,
       "status": 20
+    },
+    "manualReview": {
+      "occurrences": 3,
+      "resolvedByRecordContext": 3,
+      "unresolved": 0
     }
   },
   "values": [
@@ -284,6 +289,26 @@
       "justification": "Dating unresolved weakens the claim itself, not its pointer."
     },
     {
+      "value": "ED02_LOCATOR_HOLD",
+      "count": 1,
+      "files": [
+        "data/charnock-editorial-book-receipt-v1-20261122-ed02-1699.json"
+      ],
+      "class": "canonical",
+      "proposedRepresentation": "LOCATOR_HOLD",
+      "justification": "The receipt scientificState keeps the 1682 p.84–85 discrepancy unresolved. ED02 identifies the corpus lane, while the canonical blocking fact is an unresolved locator; preserving the label in a note and using LOCATOR_HOLD keeps that distinction measurable."
+    },
+    {
+      "value": "ED06_INDEPENDENT_REVIEW_HOLD",
+      "count": 1,
+      "files": [
+        "data/charnock-editorial-book-receipt-v1-20261122-ed02-1699.json"
+      ],
+      "class": "canonical",
+      "proposedRepresentation": "EVIDENCE_HOLD (+ corpus-specific independent-review status remains pending)",
+      "justification": "The same receipt records independentTranslationReview=0/12. An agent cannot satisfy independent review; the corpus-specific label denotes an evidentiary blocker and maps to EVIDENCE_HOLD without claiming review or changing the receipt."
+    },
+    {
       "value": "FACSIMILE_HOLD",
       "count": 1,
       "files": [
@@ -422,6 +447,35 @@
       "class": "canonical",
       "proposedRepresentation": "EVIDENCE_HOLD (+ accessState=LINK_ONLY|NOT_ACQUIRED)",
       "justification": "Only a link or a catalogue entry was reachable; the text was not read."
+    }
+  ],
+  "manualResolutions": [
+    {
+      "value": "HOLD",
+      "path": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+      "pointer": "/stateCards/8/holds",
+      "classification": "canonical",
+      "proposedRepresentation": "PUBLICATION_HOLD (redundant legacy spelling; typed flag is already present in the same record)",
+      "sourceLocator": "ИСКУПЛЕНИЕ/15_CALVIN_III24_AND_DORT_II_LOCATORS.md:245",
+      "justification": "Источник говорит `publication HOLD`; та же stateCard уже содержит `PUBLICATION_HOLD`, поэтому отдельного шестого удержания здесь нет."
+    },
+    {
+      "value": "HOLD",
+      "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+      "pointer": "/stateCards/1/holds",
+      "classification": "status",
+      "proposedRepresentation": "legacy untyped marker; no additional hold beyond the co-present typed flags",
+      "sourceLocator": "ИСКУПЛЕНИЕ/synthesis/00_SYNTHESIS_AUTHORITY_2026-10-07.md:18,454,458",
+      "justification": "StateCard является literal-marker fingerprint. В источнике `HOLD` — собирательное имя пяти флагов и статус недоступного издания; конкретные удержания уже перечислены рядом типизированными значениями."
+    },
+    {
+      "value": "FORBIDDEN",
+      "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+      "pointer": "/stateCards/3/holds",
+      "classification": "status",
+      "proposedRepresentation": "status=FORBIDDEN; no hold",
+      "sourceLocator": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md:8,81,717",
+      "justification": "Легенда и C-10 определяют `FORBIDDEN` как статус отсечённой формулировки, а не как ось доступа, прав или публикации."
     }
   ]
 }

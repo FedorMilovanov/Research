@@ -3,24 +3,24 @@
   "authorityId": "RESEARCH-RELATIVE-LINKS-INVENTORY-V1",
   "root": ".",
   "scope": {
-    "markdownFiles": 2423
+    "markdownFiles": 2430
   },
   "totals": {
     "byState": {
-      "resolves": 3198,
+      "resolves": 3252,
       "missing": 58,
       "outside": 0,
       "unqualified": 0,
-      "external": 6570,
+      "external": 6621,
       "missing-anchor": 0,
       "fragment": 28,
       "missing-fragment": 0
     },
     "byKind": {
-      "external": 6570,
+      "external": 6621,
       "fragment": 28,
       "missing": 58,
-      "resolves": 3198
+      "resolves": 3252
     },
     "defects": 58,
     "fragments": {

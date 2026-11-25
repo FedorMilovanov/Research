@@ -77,6 +77,7 @@ jobs:
           python3 G3_HISTORY/tools/validate_g3_corpus_integrity.py
           python3 G3_HISTORY/tools/validate_g3_workflow_runtime.py
           python3 G3_HISTORY/tools/validate_g3_durable_custody.py
+          python3 -B -m unittest discover -s G3_HISTORY/tools -p 'test_validate_g3_durable_custody.py' -v
 
       - name: Validate repository control plane
         working-directory: Research
