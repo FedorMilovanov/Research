@@ -1,0 +1,2626 @@
+{
+  "schemaVersion": 1,
+  "corpusId": "NAMES_OF_GOD_CLAIM_LEVEL_EVIDENCE",
+  "createdAt": "2026-11-07",
+  "scope": "87 tightly scoped research-held claims; 75 typed semantic edges; all 105/105 source/edition-attested original observations now have claim-level linkage. This is STRUCTURAL CLAIM-COVERAGE ZERO only: critical manuscript collation, scholarly editorial acceptance, source rights, and Product approvals remain independent blocked gates.",
+  "editorialPolicy": "Never infer Product approval from link completeness, never replace a cited verse or alternative theory silently; new claims require independent review.",
+  "records": [
+    {
+      "claimId": "CLM-EX3-15-DIVINE-NAME",
+      "claimType": "DIRECT_TEXTUAL_NAMING",
+      "statement": "In Exodus 3:15 YHWH is presented in divine first-person discourse together with the explicit formula 'this is my name'.",
+      "attestationIds": [
+        "ATT-BASE-YHWH-01"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent edition witness check",
+        "source rights",
+        "editorial acceptance"
+      ]
+    },
+    {
+      "claimId": "CLM-IS43-10-NEGATED-EL",
+      "claimType": "NEGATIVE_REFERENT_CONTROL",
+      "statement": "Isaiah 43:10 uses אל in a clause that denies any other god being formed, not to say YHWH himself is a formed deity.",
+      "attestationIds": [
+        "ATT-BASE-EL-04"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent edition witness check",
+        "source rights",
+        "editorial acceptance"
+      ]
+    },
+    {
+      "claimId": "CLM-IS43-12-YHWH-EL",
+      "claimType": "POSITIVE_REFERENT_CONTROL",
+      "statement": "Isaiah 43:12 uses אל in a positive YHWH first-person identification, different in reference from 43:10.",
+      "attestationIds": [
+        "ATT-BASE-EL-05"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent edition witness check",
+        "source rights",
+        "editorial acceptance"
+      ]
+    },
+    {
+      "claimId": "CLM-GEN22-14-PLACE-NAME",
+      "claimType": "NAMED_OBJECT_CONTROL",
+      "statement": "Abraham names the place in Genesis 22:14; the altar he built earlier is not the explicitly named object of 22:14.",
+      "attestationIds": [
+        "ATT-BASE-YIREH-02"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent edition witness check",
+        "source rights",
+        "editorial acceptance"
+      ]
+    },
+    {
+      "claimId": "CLM-EX17-15-ALTAR-MT-LXX",
+      "claimType": "EDITED_TEXT_DIFFERENCE",
+      "statement": "Exodus 17:15 names Moses' altar; the MT form יהוה נסי and Rahlfs-Hanhart Greek Κυριός μου καταφυγή are not identical word-for-word readings.",
+      "attestationIds": [
+        "ATT-BASE-NISSI-01",
+        "ATT-BASE-NISSI-02"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON",
+        "SRC-RAHLFS-EXODUS17",
+        "SRC-NET-EXODUS17"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent edition witness check",
+        "source rights",
+        "editorial acceptance"
+      ]
+    },
+    {
+      "claimId": "CLM-JUD6-23-24-PEACE-ALTAR",
+      "claimType": "NARRATIVE_SPEECH_VS_NAMING",
+      "statement": "Judges 6:23 has YHWH speaking peace, 6:24 has Gideon naming an altar; both refer to peace but have distinct speech acts.",
+      "attestationIds": [
+        "ATT-BASE-SHALOM-01",
+        "ATT-BASE-SHALOM-02"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent edition witness check",
+        "source rights",
+        "editorial acceptance"
+      ]
+    },
+    {
+      "claimId": "CLM-JOHN9-9-HUMAN-EGO-EIMI",
+      "claimType": "HUMAN_NEGATIVE_CONTROL",
+      "statement": "In John 9:9 the formerly blind man uses the Greek expression ego eimi, demonstrating the form is not inherently a proper divine name.",
+      "attestationIds": [
+        "ATT-BASE-EGO-EIMI-03"
+      ],
+      "sourceIds": [
+        "SRC-SBLGNT-DIGITAL-NT"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent edition witness check",
+        "source rights",
+        "editorial acceptance"
+      ]
+    },
+    {
+      "claimId": "CLM-LXX-EX3-JOHN8-DIFFERENT-CLAUSES",
+      "claimType": "CANONICAL_INTERTEXT_BOUNDARY",
+      "statement": "The printed Rahlfs-Hanhart Exodus 3:14 Greek self-revelation has an extra ho on phrase absent from the immediate printed SBLGNT John 8:58 clause; intertextual theology requires argument rather than an asserted verbatim quote.",
+      "attestationIds": [
+        "ATT-BASE-EHYEH-03",
+        "ATT-BASE-EGO-EIMI-02"
+      ],
+      "sourceIds": [
+        "SRC-RAHLFS-EXODUS3",
+        "SRC-SBLGNT-DIGITAL-NT"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent edition witness check",
+        "source rights",
+        "editorial acceptance"
+      ]
+    },
+    {
+      "claimId": "CLM-ABBA-THREE-PRAYER-SUBJECTS",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "statement": "Mark 14:36 presents Jesus praying; Romans 8:15 has believers crying; Galatians 4:6 describes the Spirit of the Son crying despite the shared Abba ho pater phrase.",
+      "attestationIds": [
+        "ATT-BASE-ABBA-01",
+        "ATT-BASE-ABBA-02",
+        "ATT-BASE-ABBA-03"
+      ],
+      "sourceIds": [
+        "SRC-SBLGNT-DIGITAL-NT"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent edition witness check",
+        "source rights",
+        "editorial acceptance"
+      ]
+    },
+    {
+      "claimId": "CLM-YHWH-HISTORICAL-PRONUNCIATION",
+      "claimType": "ATTRIBUTED_HISTORICAL_RECONSTRUCTION",
+      "statement": "The reconstruction Yahweh is supported by multiple interpretive lines but is NOT directly proved as audible Mosaic-period pronunciation by the pointed digital MT.",
+      "attestationIds": [
+        "ATT-BASE-YHWH-01",
+        "ATT-BASE-YHWH-02"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON",
+        "SRC-ROESEL-2007",
+        "SRC-TMSJ-VALDIZAN-EX3-2024"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "AUTHOR_ARGUMENT_NOT_CLOSED",
+      "reviewNeeded": [
+        "original pronunciations from dated ancient witnesses",
+        "independent sound/phonology scholarship",
+        "manuscript reading traditions and opposing views"
+      ]
+    },
+    {
+      "claimId": "CLM-JAS5-4-SABAOTH-GENITIVE",
+      "claimType": "MORPHOLOGICAL_CASE_CONTEXT",
+      "statement": "The printed SBLGNT James 5:4 has Κυρίου Σαβαὼθ in a genitive construction in the warning over withheld wages; this grammatical form differs from κύριος Σαβαὼθ in Romans 9:29.",
+      "attestationIds": [
+        "ATT-BASE-SABAOTH-05"
+      ],
+      "sourceIds": [
+        "SRC-SBLGNT-DIGITAL-NT"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent morphological and edition review",
+        "separate critical manuscript collation where relevant",
+        "theological reception and historical translation boundaries",
+        "source rights and Product editorial acceptance"
+      ]
+    },
+    {
+      "claimId": "CLM-ROM9-29-SABAOTH-ISAIAH",
+      "claimType": "CITATION_SPEECH_CONTEXT",
+      "statement": "The printed SBLGNT Romans 9:29 introduces an Isaiah quotation and gives the form κύριος Σαβαὼθ; it does not itself establish an ancient Greek Vorlage or the manuscript history of the cited Isaiah text.",
+      "attestationIds": [
+        "ATT-BASE-SABAOTH-06"
+      ],
+      "sourceIds": [
+        "SRC-SBLGNT-DIGITAL-NT"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent morphological and edition review",
+        "separate critical manuscript collation where relevant",
+        "theological reception and historical translation boundaries",
+        "source rights and Product editorial acceptance"
+      ]
+    },
+    {
+      "claimId": "CLM-GAL4-6-ABBA-SPIRIT",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "statement": "In printed SBLGNT Galatians 4:6, God (ὁ θεός) is the subject of ἐξαπέστειλεν, the Spirit (τὸ πνεῦμα) is its accusative object, and the agreeing accusative participle κρᾶζον depicts the Spirit crying Αββα ὁ πατήρ; in Romans 8:15 Paul instead writes κράζομεν ('we cry').",
+      "attestationIds": [
+        "ATT-BASE-ABBA-03"
+      ],
+      "sourceIds": [
+        "SRC-SBLGNT-DIGITAL-NT"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent morphological and edition review",
+        "separate critical manuscript collation where relevant",
+        "theological reception and historical translation boundaries",
+        "source rights and Product editorial acceptance"
+      ]
+    },
+    {
+      "claimId": "CLM-LUK1-32-GABRIEL-AGENT",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "statement": "In THGNT Luke 1:32 the narrative speaker is Gabriel, κύριος ὁ θεὸς is the nominative subject of δώσει, and αὐτῷ refers to Jesus as recipient of the promised throne.",
+      "attestationIds": [
+        "ATT-EXT-KYRIOS-HO-THEOS-01"
+      ],
+      "sourceIds": [
+        "SRC-THGNT-LUKE"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent morphological and edition review",
+        "separate critical manuscript collation where relevant",
+        "theological reception and historical translation boundaries",
+        "source rights and Product editorial acceptance"
+      ]
+    },
+    {
+      "claimId": "CLM-EX3-EHYEH-DIVINE-REFERENT",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "statement": "In MT Exodus 3:12 and 3:14 and printed Rahlfs-Hanhart Exodus 3:14, first-person divine speech refers to the God of Israel, while Moses is the addressee. The promise in 3:12 and the naming answer in 3:14 retain different discourse functions.",
+      "attestationIds": [
+        "ATT-BASE-EHYEH-01",
+        "ATT-BASE-EHYEH-02",
+        "ATT-BASE-EHYEH-03"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON",
+        "SRC-RAHLFS-EXODUS3"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent edition and grammatical review",
+        "Hebrew imperfect interpretation and ancient variants",
+        "separate theological reception and source rights",
+        "Product editorial acceptance"
+      ]
+    },
+    {
+      "claimId": "CLM-JER23-6-DAVIDIC-ROYAL-NAME",
+      "claimType": "DIRECT_TEXTUAL_NAMING",
+      "statement": "In the Mechon-Mamre MT of Jeremiah 23:6, the words יהוה צדקנו are explicitly called the name of the future Davidic royal figure in the preceding context (23:5). The masculine designation of his name must not be silently attributed to Jerusalem in this locus, nor identified by grammar alone as a new divine self-naming act.",
+      "attestationIds": [
+        "ATT-BASE-TSIDKENU-01"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON",
+        "SRC-VT-LIEBERMANN-JEREMIAH-2023"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent MT verse/named object and grammatical review",
+        "historical Hebrew syntax and other textual witnesses, including Old Greek Jeremiah",
+        "compare contrary critical scholarship, attribution and copyright",
+        "separate theological reception and Product publication review"
+      ]
+    },
+    {
+      "claimId": "CLM-JER33-16-JERUSALEM-CITY-NAME",
+      "claimType": "NAMED_OBJECT_CONTROL",
+      "statement": "In the Mechon-Mamre MT of Jeremiah 33:16 the name יהוה צדקנו is applied to Jerusalem (לָהּ, feminine dative), contrasting the male royal referent of 23:6. Liebermann's secondary academic account notes an Old Greek textual-history objection, which is NOT independently collated here.",
+      "attestationIds": [
+        "ATT-BASE-TSIDKENU-02"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON",
+        "SRC-VT-LIEBERMANN-JEREMIAH-2023"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent MT verse/named object and grammatical review",
+        "historical Hebrew syntax and other textual witnesses, including Old Greek Jeremiah",
+        "compare contrary critical scholarship, attribution and copyright",
+        "separate theological reception and Product publication review"
+      ]
+    },
+    {
+      "claimId": "CLM-EZ48-35-CITY-NAMING",
+      "claimType": "NAMED_OBJECT_CONTROL",
+      "statement": "In the Mechon-Mamre MT of Ezekiel 48:35, וְשֵׁם-הָעִיר identifies the named object explicitly as the city; יהוה שמה is therefore a city designation about YHWH's presence, not an explicit act of God naming himself.",
+      "attestationIds": [
+        "ATT-BASE-SHAMMAH-01"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent MT verse/named object and grammatical review",
+        "historical Hebrew syntax and other textual witnesses, including Old Greek Jeremiah",
+        "compare contrary critical scholarship, attribution and copyright",
+        "separate theological reception and Product publication review"
+      ]
+    },
+    {
+      "claimId": "CLM-DEUT32-ROCK-DIVINE-METAPHOR",
+      "claimType": "POSITIVE_REFERENT_CONTROL",
+      "statement": "In Deuteronomy 32:4 and 32:18 and Psalm 18:32 MT, צור is a poetic Rock designation referring to YHWH as faithful God, divine giver of life, or uniquely trustworthy Rock. It is contextual divine metaphor, not a direct personal name or proof that every occurrence of צור in Deuteronomy 32 has the same referent.",
+      "attestationIds": [
+        "ATT-BASE-TSUR-01",
+        "ATT-BASE-TSUR-02",
+        "ATT-BASE-TSUR-05"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent reading of Deuteronomy 32 poetry and pronoun shifts, especially 32:30–31",
+        "compare Jewish and Christian interpretations and critical Hebrew manuscript readings",
+        "verify the scope of metaphor rather than universal proper-name classification",
+        "review reuse rights, critical apparatus and Product editorial acceptance"
+      ]
+    },
+    {
+      "claimId": "CLM-DEUT32-31-ROCK-CONTRAST",
+      "claimType": "MIXED_REFERENT_CONTROL",
+      "statement": "In Deuteronomy 32:31 MT כְצוּרֵנוּ צוּרָם juxtaposes 'our Rock' with 'their rock'; the verse has mixed divine and rival referents rather than a universal divine self-name. The pronoun in Deuteronomy 32:30 ('their Rock') occurs in another discourse context and must NOT be mechanically mapped onto the rival referent of 32:31; the 32:30 antecedent and voice require independent discourse review.",
+      "attestationIds": [
+        "ATT-BASE-TSUR-03"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent reading of Deuteronomy 32 poetry and pronoun shifts, especially 32:30–31",
+        "compare Jewish and Christian interpretations and critical Hebrew manuscript readings",
+        "verify the scope of metaphor rather than universal proper-name classification",
+        "review reuse rights, critical apparatus and Product editorial acceptance"
+      ]
+    },
+    {
+      "claimId": "CLM-DEUT32-37-FOREIGN-REFUGE",
+      "claimType": "NEGATIVE_REFERENT_CONTROL",
+      "statement": "In Deuteronomy 32:37–38 MT, 'Where are their gods, the rock in which they took refuge?' uses צור ironically in a challenge to foreign objects of trust. This is not an additional personal title or self-designation of YHWH.",
+      "attestationIds": [
+        "ATT-BASE-TSUR-04"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent reading of Deuteronomy 32 poetry and pronoun shifts, especially 32:30–31",
+        "compare Jewish and Christian interpretations and critical Hebrew manuscript readings",
+        "verify the scope of metaphor rather than universal proper-name classification",
+        "review reuse rights, critical apparatus and Product editorial acceptance"
+      ]
+    },
+    {
+      "claimId": "CLM-ISA7-14-CHILD-NAMING",
+      "claimType": "NAMED_OBJECT_CONTROL",
+      "statement": "In Mechon-Mamre MT Isaiah 7:14, the expression עִמָּנוּ אֵל appears as the prophetic child's assigned name, not an explicit first-person divine self-naming act. The Hebrew וְקָרָאת name-giving verb has a recognized grammatical-person dispute and is not settled here merely by comparison with Greek.",
+      "attestationIds": [
+        "ATT-BASE-IMMANUEL-01"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON",
+        "SRC-NET-ISAIAH7"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent edition-versus-manuscript check with Hebrew and Greek apparatus",
+        "Hebrew Isa7:14 naming verb person and lexical context, including contested interpretations",
+        "compare Isaiah Greek and Matthew citation variants without inferring authorial motive from one text",
+        "separate confessional/historical reception, copyright and Product editorial acceptance"
+      ]
+    },
+    {
+      "claimId": "CLM-ISA7-14-LXX-NAMING-VERB",
+      "claimType": "EDITED_TEXT_DIFFERENCE",
+      "statement": "The publisher's Rahlfs-Hanhart LXX Isaiah 7:14 prints καλέσεις (second-person singular 'you will call') with the name Εμμανουηλ. SBLGNT Matthew 1:23 instead prints καλέσουσιν (third-person plural 'they will call'). This verifies a difference between named printed editions, NOT its origin in original Greek manuscripts or the Evangelist's motivation.",
+      "attestationIds": [
+        "ATT-BASE-IMMANUEL-02"
+      ],
+      "sourceIds": [
+        "SRC-RAHLFS-ISAIAH",
+        "SRC-SBLGNT-DIGITAL-NT"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent edition-versus-manuscript check with Hebrew and Greek apparatus",
+        "Hebrew Isa7:14 naming verb person and lexical context, including contested interpretations",
+        "compare Isaiah Greek and Matthew citation variants without inferring authorial motive from one text",
+        "separate confessional/historical reception, copyright and Product editorial acceptance"
+      ]
+    },
+    {
+      "claimId": "CLM-ISA8-8-IMMANUEL-ADDRESS",
+      "claimType": "NAMED_OBJECT_CONTROL",
+      "statement": "In Mechon-Mamre MT Isaiah 8:8, עִמָּנוּ אֵל occurs in the clause about the land and invading wings. A vocative/address to Immanuel and a name-allusion are contextually discussed readings; the text does not include a fresh child-naming formula here or force a single identity of the referent from syntax alone.",
+      "attestationIds": [
+        "ATT-BASE-IMMANUEL-03"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent edition-versus-manuscript check with Hebrew and Greek apparatus",
+        "Hebrew Isa7:14 naming verb person and lexical context, including contested interpretations",
+        "compare Isaiah Greek and Matthew citation variants without inferring authorial motive from one text",
+        "separate confessional/historical reception, copyright and Product editorial acceptance"
+      ]
+    },
+    {
+      "claimId": "CLM-ISA8-10-DIVINE-PRESENCE",
+      "claimType": "NARRATIVE_SPEECH_VS_NAMING",
+      "statement": "In Mechon-Mamre MT Isaiah 8:10, כִּי עִמָּנוּ אֵל functions as a clause 'for God is with us' explaining why hostile plans fail. This is a statement of divine presence, not a distinct act of assigning a child's name in that verse.",
+      "attestationIds": [
+        "ATT-BASE-IMMANUEL-04"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent edition-versus-manuscript check with Hebrew and Greek apparatus",
+        "Hebrew Isa7:14 naming verb person and lexical context, including contested interpretations",
+        "compare Isaiah Greek and Matthew citation variants without inferring authorial motive from one text",
+        "separate confessional/historical reception, copyright and Product editorial acceptance"
+      ]
+    },
+    {
+      "claimId": "CLM-MATT1-23-IMMANUEL-GLOSS",
+      "claimType": "CANONICAL_INTERTEXT_BOUNDARY",
+      "statement": "The SBLGNT of Matthew 1:23 explicitly cites Isaiah's prophetic child name as Ἐμμανουήλ and glosses it Μεθ’ ἡμῶν ὁ θεός ('God with us'); its καλέσουσιν is third-person plural. This describes Matthew's narrative reception and philological gloss, not a proof that the original Hebrew naming verb or every Isaianic use has the same grammatical person.",
+      "attestationIds": [
+        "ATT-BASE-IMMANUEL-05"
+      ],
+      "sourceIds": [
+        "SRC-SBLGNT-DIGITAL-NT",
+        "SRC-NET-ISAIAH7"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent edition-versus-manuscript check with Hebrew and Greek apparatus",
+        "Hebrew Isa7:14 naming verb person and lexical context, including contested interpretations",
+        "compare Isaiah Greek and Matthew citation variants without inferring authorial motive from one text",
+        "separate confessional/historical reception, copyright and Product editorial acceptance"
+      ]
+    },
+    {
+      "claimId": "CLM-REV1-8-LORD-GOD-ALPHA",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "statement": "Rev1:8 SBLGNT directly says λέγει κύριος, ὁ θεός and applies Alpha/Omega, the One who is/was/is coming, and Almighty to the Lord God. The newly linked ATT-EXT-HO-ON-ERCHOMENOS-02 records the same explicit SBLGNT Lord-God speaker cue. In this printed edition the phrase ἀρχὴ καὶ τέλος is not present in this verse. The in-verse attribution is explicit, while an equation with the speaker in Rev22:13 would require separate argument.",
+      "attestationIds": [
+        "ATT-BASE-ALPHA-OMEGA-01",
+        "ATT-BASE-PANTOKRATOR-01",
+        "ATT-EXT-HO-ON-ERCHOMENOS-02"
+      ],
+      "sourceIds": [
+        "SRC-SBLGNT-DIGITAL-NT",
+        "SRC-SBL-REVELATION"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "speakerEvidenceLevel": "EXPLICIT_SAME_VERSE",
+      "requiresIndependentSpeakerReview": false,
+      "reviewNeeded": [
+        "Ancient Greek manuscript readings and full textual apparatus not collated",
+        "Review speaker handoffs in Rev22:6–16 including angels, Christ and John",
+        "Attribute commentary conclusions; compare alternate academic readings and reception history",
+        "Evaluate permissions before Product/Arena publication"
+      ],
+      "linkedGreetingVersusSpeechStatus": "EXPLICIT_GOD_SPEECH_IN_VERSE8_NOT_JOHN_GREETING_IN_VERSE4"
+    },
+    {
+      "claimId": "CLM-REV21-6-THRONE-SPEAKER",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "statement": "In Rev21:5 SBLGNT the narrator introduces ὁ καθήμενος ἐπὶ τῷ θρόνῳ, the one seated on the throne, as speaker. The continuing speech at Rev21:6 contains Alpha/Omega and Beginning/End; 21:7 says 'I will be God to him'. The speaker is established by a preceding narrator cue, not an explicit 'I Jesus' at verse 6.",
+      "attestationIds": [
+        "ATT-BASE-ALPHA-OMEGA-02",
+        "ATT-EXT-ARCHE-TELOS-01"
+      ],
+      "sourceIds": [
+        "SRC-SBLGNT-DIGITAL-NT",
+        "SRC-SBL-REVELATION"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "speakerEvidenceLevel": "EXPLICIT_PRIOR_NARRATOR_CUE",
+      "requiresIndependentSpeakerReview": false,
+      "reviewNeeded": [
+        "Ancient Greek manuscript readings and full textual apparatus not collated",
+        "Review speaker handoffs in Rev22:6–16 including angels, Christ and John",
+        "Attribute commentary conclusions; compare alternate academic readings and reception history",
+        "Evaluate permissions before Product/Arena publication"
+      ]
+    },
+    {
+      "claimId": "CLM-REV22-13-CHRISTOLOGICAL-INFERENCE",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "statement": "Rev22:13 SBLGNT includes Alpha/Omega, First/Last and Beginning/End. Its verse itself does not name Jesus; the explicit phrase Ἐγὼ Ἰησοῦς occurs in Rev22:16. A Christ-speaker reading is supported by 22:12's coming promise, 22:16 and Tabb's attributed commentary, but intervening angel/John voices mean it remains an inference from discourse, not a speaker named verbatim at v13.",
+      "attestationIds": [
+        "ATT-BASE-ALPHA-OMEGA-03",
+        "ATT-EXT-ARCHE-TELOS-02"
+      ],
+      "sourceIds": [
+        "SRC-SBLGNT-DIGITAL-NT",
+        "SRC-SBL-REVELATION",
+        "SRC-TABB-REVELATION22"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "speakerEvidenceLevel": "CONTEXT_INFERRED_NOT_NAMED_AT_VERSE_13",
+      "requiresIndependentSpeakerReview": true,
+      "reviewNeeded": [
+        "Ancient Greek manuscript readings and full textual apparatus not collated",
+        "Review speaker handoffs in Rev22:6–16 including angels, Christ and John",
+        "Attribute commentary conclusions; compare alternate academic readings and reception history",
+        "Evaluate permissions before Product/Arena publication"
+      ]
+    },
+    {
+      "claimId": "CLM-REV1-8-SBL-TR-EXPANSION",
+      "claimType": "EDITED_TEXT_DIFFERENCE",
+      "statement": "Printed SBLGNT Rev1:8 has κύριος, ὁ θεός without 'beginning and end'; historic Stephanus TR1550 adds ἀρχὴ καὶ τέλος and differs in speech attribution. The NET Bible textual note discusses the longer variant in several witnesses. Comparing two printed texts and an editorial note is not direct collation of ancient Greek manuscripts.",
+      "attestationIds": [
+        "ATT-BASE-ALPHA-OMEGA-01"
+      ],
+      "sourceIds": [
+        "SRC-SBLGNT-DIGITAL-NT",
+        "SRC-TR1550-REV18",
+        "SRC-NET-REV1-8"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "speakerEvidenceLevel": "PRINTED_VARIANT_NOT_NEW_SPEAKER",
+      "requiresIndependentSpeakerReview": false,
+      "reviewNeeded": [
+        "Ancient Greek manuscript readings and full textual apparatus not collated",
+        "Review speaker handoffs in Rev22:6–16 including angels, Christ and John",
+        "Attribute commentary conclusions; compare alternate academic readings and reception history",
+        "Evaluate permissions before Product/Arena publication"
+      ]
+    },
+    {
+      "claimId": "CLM-GEN1-DEUT6-DIVINE-ELOHIM",
+      "claimType": "POSITIVE_REFERENT_CONTROL",
+      "statement": "Genesis 1:1 MT uses morphologically plural אֱלֹהִים with singular בָּרָא (Qal 3ms) as creator subject; Deuteronomy 6:4 uses suffixed אֱלֹהֵינוּ for YHWH 'our God' in the Shema. Both designate Israel's one God in their own contexts; morphology of the noun by itself proves neither a plurality of gods nor an independent grammatical proof of Trinitarian persons.",
+      "attestationIds": [
+        "ATT-BASE-ELOHIM-01",
+        "ATT-BASE-ELOHIM-03"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent Hebrew textual-critical apparatus and comparative translation readings",
+        "lexical and grammatical evaluation by more than one scholarly tradition",
+        "avoid converting contextual noun, place or altar name into divine personal self-naming",
+        "check publication rights and separate Product editorial signoff"
+      ]
+    },
+    {
+      "claimId": "CLM-EX20-OTHER-GODS-NEGATIVE",
+      "claimType": "NEGATIVE_REFERENT_CONTROL",
+      "statement": "In Exodus 20:2 Hebrew MT Mechon-Mamre, אֱלֹהִים אֲחֵרִים is plural 'other gods', prohibited in YHWH's speech. The same clause is normally cited Exodus 20:3 in English/Russian verse numbering. This is explicitly NOT a divine name of YHWH, and the different printed verse-numbering conventions must be kept.",
+      "attestationIds": [
+        "ATT-BASE-ELOHIM-02"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent Hebrew textual-critical apparatus and comparative translation readings",
+        "lexical and grammatical evaluation by more than one scholarly tradition",
+        "avoid converting contextual noun, place or altar name into divine personal self-naming",
+        "check publication rights and separate Product editorial signoff"
+      ]
+    },
+    {
+      "claimId": "CLM-EX34-DEUT32-POSITIVE-EL",
+      "claimType": "POSITIVE_REFERENT_CONTROL",
+      "statement": "Exodus 34:6 MT describes YHWH as אֵל רַחוּם וְחַנּוּן in a proclamation of name and attributes, whereas Deuteronomy 32:4 poetically describes him as אֵל אֱמוּנָה. Both אֵל readings designate YHWH in context; descriptive attributes are not automatically additional independent proper-name self-naming acts.",
+      "attestationIds": [
+        "ATT-BASE-EL-01",
+        "ATT-BASE-EL-02"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent Hebrew textual-critical apparatus and comparative translation readings",
+        "lexical and grammatical evaluation by more than one scholarly tradition",
+        "avoid converting contextual noun, place or altar name into divine personal self-naming",
+        "check publication rights and separate Product editorial signoff"
+      ]
+    },
+    {
+      "claimId": "CLM-DEUT32-12-FOREIGN-EL-NEGATED",
+      "claimType": "NEGATIVE_REFERENT_CONTROL",
+      "statement": "Deuteronomy 32:12 MT writes וְאֵין עִמּוֹ אֵל נֵכָר, denying the presence of a foreign god alongside YHWH. The אֵל in this negated foreign-god expression is NOT an additional YHWH name; this is a contextual negative control independent of positive אֵל in 32:4 and Isaiah 43:12.",
+      "attestationIds": [
+        "ATT-BASE-EL-03"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent Hebrew textual-critical apparatus and comparative translation readings",
+        "lexical and grammatical evaluation by more than one scholarly tradition",
+        "avoid converting contextual noun, place or altar name into divine personal self-naming",
+        "check publication rights and separate Product editorial signoff"
+      ]
+    },
+    {
+      "claimId": "CLM-JUD6-25-BAAL-ALTAR-DISTINCTION",
+      "claimType": "NAMED_OBJECT_CONTROL",
+      "statement": "Judges 6:25 MT names the מִזְבַּח הַבַּעַל, Baal altar belonging to Gideon's father, as an object ordered to be demolished. It is NOT the YHWH-shalom altar Gideon built and named in Judges 6:24; their immediate narrative proximity does not make the foreign altar a divine name or synonym.",
+      "attestationIds": [
+        "ATT-BASE-SHALOM-03"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent Hebrew textual-critical apparatus and comparative translation readings",
+        "lexical and grammatical evaluation by more than one scholarly tradition",
+        "avoid converting contextual noun, place or altar name into divine personal self-naming",
+        "check publication rights and separate Product editorial signoff"
+      ]
+    },
+    {
+      "claimId": "CLM-GEN35-7-EL-BETHEL-PLACE",
+      "claimType": "NAMED_OBJECT_CONTROL",
+      "statement": "In Genesis 35:7 MT Jacob built an altar at the site but וַיִּקְרָא לַמָּקוֹם אֵל בֵּית-אֵל explicitly says he named the PLACE El-bethel. This site name includes the divine element אֵל, but the named object in this verse is the place, not the altar and not God's self-identification by a newly spoken personal name.",
+      "attestationIds": [
+        "ATT-BASE-EL-BETHEL-01"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent Hebrew textual-critical apparatus and comparative translation readings",
+        "lexical and grammatical evaluation by more than one scholarly tradition",
+        "avoid converting contextual noun, place or altar name into divine personal self-naming",
+        "check publication rights and separate Product editorial signoff"
+      ]
+    },
+    {
+      "claimId": "CLM-EX15-26-YHWH-HEALER",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "statement": "Exodus 15:26 MT uses a conditional YHWH speech after Marah: כי אני יהוה רפאך, with רֹפְאֶךָ a participial 'your healer' addressed to Israel (2ms grammar). This is a predication about YHWH in covenant speech and not an independent new Hebrew compound proper name or unrestricted individual medical guarantee.",
+      "attestationIds": [
+        "ATT-BASE-RAPHA-01"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Independent original-language print edition and critical apparatus verification",
+        "Compare grammatical and historical exegetical alternatives before theological cross-testament application",
+        "Separate direct speaker, prayer addressee, nominal predicate and poetic theological intertext",
+        "Verify author/editor rights and independent Product editorial approval"
+      ]
+    },
+    {
+      "claimId": "CLM-JER17-14-HEAL-ME-PRAYER",
+      "claimType": "NARRATIVE_SPEECH_VS_NAMING",
+      "statement": "Jeremiah 17:14 MT uses רְפָאֵנִי יְהוָה וְאֵרָפֵא, an imperative petition 'heal me, LORD' addressed TO YHWH; Jeremiah is the praying speaker, not God declaring himself 'my healer' here. The imperative with a 1cs object and the active participle with 2ms suffix in Ex15:26 must remain distinct.",
+      "attestationIds": [
+        "ATT-BASE-RAPHA-02"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Independent original-language print edition and critical apparatus verification",
+        "Compare grammatical and historical exegetical alternatives before theological cross-testament application",
+        "Separate direct speaker, prayer addressee, nominal predicate and poetic theological intertext",
+        "Verify author/editor rights and independent Product editorial approval"
+      ]
+    },
+    {
+      "claimId": "CLM-EX31-LEV20-YHWH-SANCTIFIES",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "statement": "Exodus 31:13 and Leviticus 20:8 MT contain YHWH's first-person covenant predication מְקַדִּשְׁכֶם ('sanctifying you [plural]'). The 2mp suffix marks the addressed community Israel, not an individual 'me'. Exodus 31:13 states Sabbath sign context; Leviticus 20:8 law/holiness context. Neither is the biblical narration of a separate new proper name or automatic transfer of the Sabbath command to all later communities.",
+      "attestationIds": [
+        "ATT-BASE-MEKODDISHKEM-01",
+        "ATT-BASE-MEKODDISHKEM-02"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Independent original-language print edition and critical apparatus verification",
+        "Compare grammatical and historical exegetical alternatives before theological cross-testament application",
+        "Separate direct speaker, prayer addressee, nominal predicate and poetic theological intertext",
+        "Verify author/editor rights and independent Product editorial approval"
+      ]
+    },
+    {
+      "claimId": "CLM-PS23-YHWH-MY-SHEPHERD",
+      "claimType": "POSITIVE_REFERENT_CONTROL",
+      "statement": "Psalm 23:1 MT (commonly Psalm 22:1 in Russian Synodal numbering) is the psalmist's poetic confession יְהוָה רֹעִי, YHWH my shepherd. The 1cs possessive suffix and root רעה (shepherding) are distinct from Hagar's אֵל רֳאִי root ראה (seeing). This is a hymn's third-person statement about YHWH, not God speaking the words 'I am a shepherd' or a fabricated two-word divine proper name.",
+      "attestationIds": [
+        "ATT-BASE-RO-I-01"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Independent original-language print edition and critical apparatus verification",
+        "Compare grammatical and historical exegetical alternatives before theological cross-testament application",
+        "Separate direct speaker, prayer addressee, nominal predicate and poetic theological intertext",
+        "Verify author/editor rights and independent Product editorial approval"
+      ]
+    },
+    {
+      "claimId": "CLM-JOHN10-JESUS-GOOD-SHEPHERD",
+      "claimType": "CANONICAL_INTERTEXT_BOUNDARY",
+      "statement": "In SBLGNT John 10:11 and 10:14 Jesus explicitly says ἐγώ εἰμι ὁ ποιμὴν ὁ καλός, 'I am the good shepherd', with a definite nominative predicate. This is Jesus' self-description and relates thematically and canonically to Psalm 23's portrayal of YHWH as shepherd, but the Greek predicate is not the identical Hebrew lexical root and is not an absolute predicate-less ἐγώ εἰμι formula such as the form discussed at John 8:58. The separate edition issue after the predicate in John 10:14 does not itself change this title.",
+      "attestationIds": [
+        "ATT-BASE-RO-I-02",
+        "ATT-EXT-POIMEN-HO-KALOS-01",
+        "ATT-EXT-POIMEN-HO-KALOS-02"
+      ],
+      "sourceIds": [
+        "SRC-SBLGNT-DIGITAL-NT"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Independent original-language print edition and critical apparatus verification",
+        "Compare grammatical and historical exegetical alternatives before theological cross-testament application",
+        "Separate direct speaker, prayer addressee, nominal predicate and poetic theological intertext",
+        "Verify author/editor rights and independent Product editorial approval"
+      ]
+    },
+    {
+      "claimId": "CLM-JOHN6-20-ASSURANCE",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "attestationIds": [
+        "ATT-BASE-EGO-EIMI-01"
+      ],
+      "statement": "In SBLGNT John 6:20 Jesus says Ἐγώ εἰμι, μὴ φοβεῖσθε in a scene of frightened disciples seeing him walk on the sea. The first-person expression identifies and reassures his hearers in its discourse; a theological or theophanic allusion is possible but not a unique lexically entailed divine proper name or an exact unshortened LXX Exodus 3:14 quotation.",
+      "sourceIds": [
+        "SRC-SBLGNT-DIGITAL-NT",
+        "SRC-SBLGNT-JOHN-EGO"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Independent SBLGNT reading and printed critical variant apparatus audit for John 6 and 18",
+        "Compare historical and modern discourse/intertext readings of ordinary identification versus theophanic inference",
+        "Do not infer a unique divine proper name solely from unpredicated ἐγώ εἰμι; check John 9:9 human control",
+        "Separate academic and Product permissions; source-specific editorial review remains outstanding"
+      ]
+    },
+    {
+      "claimId": "CLM-JOHN18-5-ARREST-IDENTITY",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "attestationIds": [
+        "ATT-BASE-EGO-EIMI-04"
+      ],
+      "statement": "In SBLGNT John 18:4–5 the arresting party answers Jesus' question 'Whom do you seek?' with 'Jesus the Nazarene' and Jesus responds Ἐγώ εἰμι. He identifies himself as the requested person. Narrative or Christological implications require context and cannot be proved by the two Greek words without the interlocutors' immediately preceding answer.",
+      "sourceIds": [
+        "SRC-SBLGNT-DIGITAL-NT",
+        "SRC-SBLGNT-JOHN-EGO"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Independent SBLGNT reading and printed critical variant apparatus audit for John 6 and 18",
+        "Compare historical and modern discourse/intertext readings of ordinary identification versus theophanic inference",
+        "Do not infer a unique divine proper name solely from unpredicated ἐγώ εἰμι; check John 9:9 human control",
+        "Separate academic and Product permissions; source-specific editorial review remains outstanding"
+      ]
+    },
+    {
+      "claimId": "CLM-JOHN18-6-NARRATOR-REPRISE",
+      "claimType": "NARRATIVE_SPEECH_VS_NAMING",
+      "attestationIds": [
+        "ATT-BASE-EGO-EIMI-05"
+      ],
+      "statement": "SBLGNT John 18:6 recounts what happened when Jesus said Ἐγώ εἰμι: the arresting party stepped backwards and fell. This is the narrator's reference back to the utterance quoted in 18:5, NOT a separately recorded second new utterance in verse 6. The fall invites contextual literary or theological interpretation, but the text does not by itself state a mechanism of miraculous force.",
+      "sourceIds": [
+        "SRC-SBLGNT-DIGITAL-NT",
+        "SRC-SBLGNT-JOHN-EGO"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Independent SBLGNT reading and printed critical variant apparatus audit for John 6 and 18",
+        "Compare historical and modern discourse/intertext readings of ordinary identification versus theophanic inference",
+        "Do not infer a unique divine proper name solely from unpredicated ἐγώ εἰμι; check John 9:9 human control",
+        "Separate academic and Product permissions; source-specific editorial review remains outstanding"
+      ]
+    },
+    {
+      "claimId": "CLM-JOHN18-8-IDENTITY-AND-RELEASE",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "attestationIds": [
+        "ATT-BASE-EGO-EIMI-06"
+      ],
+      "statement": "In SBLGNT John 18:8 Jesus says 'I told you that ἐγώ εἰμι' and continues 'if you seek me, let these men go.' This direct repetition is part of Jesus' response to the arresting party and his request for release of the disciples; it is not an independently coined divine-name formula or a predicate-bearing title such as 'the Good Shepherd' in John 10.",
+      "sourceIds": [
+        "SRC-SBLGNT-DIGITAL-NT",
+        "SRC-SBLGNT-JOHN-EGO"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Independent SBLGNT reading and printed critical variant apparatus audit for John 6 and 18",
+        "Compare historical and modern discourse/intertext readings of ordinary identification versus theophanic inference",
+        "Do not infer a unique divine proper name solely from unpredicated ἐγώ εἰμι; check John 9:9 human control",
+        "Separate academic and Product permissions; source-specific editorial review remains outstanding"
+      ]
+    },
+    {
+      "claimId": "CLM-GEN22-8-ABRAHAM-PROVISION-ANSWER",
+      "claimType": "NARRATIVE_SPEECH_VS_NAMING",
+      "attestationIds": [
+        "ATT-BASE-YIREH-01"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON",
+        "SRC-NET-GENESIS22"
+      ],
+      "statement": "Genesis 22:8 MT records Abraham answering Isaac with אֱלֹהִים יִרְאֶה-לּוֹ, 'God will see/provide for himself', regarding the offering. This is Abraham-to-Isaac future assurance/predication, not a direct divine self-naming speech or naming of either altar or place at verse 8. NET Genesis 22:14 refers back to the 22:8 'provide' argument, while lexical 'see' and contextual provision must be distinguished.",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Independently compare MT and LXX critical apparatus and extant ancient manuscripts before naming a textual variant or Vorlage",
+        "Review Hebrew syntax, Qal/Niphal and readings of Ex17:16 with grammars and competing scholarship",
+        "Keep naming actor and named object separate from etymological/translator explanation",
+        "Check source-specific rights, independent scholarly acceptance, and Product editorial gate before publishing"
+      ]
+    },
+    {
+      "claimId": "CLM-GEN22-14-MOUNTAIN-NIPHAL",
+      "claimType": "MORPHOLOGICAL_CASE_CONTEXT",
+      "attestationIds": [
+        "ATT-BASE-YIREH-03"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON",
+        "SRC-NET-GENESIS22"
+      ],
+      "statement": "Genesis 22:14 MT preserves a closing communal/narratorial saying בְּהַר יְהוָה יֵרָאֶה with a Niphal-form יֵרָאֶה, distinct from active Qal-form יִרְאֶה in Abraham's place-name clause earlier in the same verse and in 22:8. NET translators attribute multiple interpretive translations to the Niphal, including 'it will be seen/provided' and 'YHWH will appear'. It is a formula about the mountain, not another new naming of an altar or unambiguous English proof of 'provide' as the only gloss.",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Independently compare MT and LXX critical apparatus and extant ancient manuscripts before naming a textual variant or Vorlage",
+        "Review Hebrew syntax, Qal/Niphal and readings of Ex17:16 with grammars and competing scholarship",
+        "Keep naming actor and named object separate from etymological/translator explanation",
+        "Check source-specific rights, independent scholarly acceptance, and Product editorial gate before publishing"
+      ]
+    },
+    {
+      "claimId": "CLM-EX17-16-MT-HAND-THRONE-CRUX",
+      "claimType": "ATTRIBUTED_HISTORICAL_RECONSTRUCTION",
+      "attestationIds": [
+        "ATT-BASE-NISSI-03"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON",
+        "SRC-NET-EXODUS17"
+      ],
+      "statement": "The digital Masoretic Hebrew Exodus 17:16 reads כִּי-יָד עַל-כֵּס יָהּ, an obscure explanatory clause following Moses' altar naming in v15, with the written כֵּס ('throne') rather than נֵס ('banner'). NET Bible translator notes discuss possible interpretations and conjectural emendation כֵּס → נֵס; that proposal is scholarly reconstruction, NOT a quoted Masoretic reading or independently verified manuscript variant. The clause is not a second object-naming act.",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Independently compare MT and LXX critical apparatus and extant ancient manuscripts before naming a textual variant or Vorlage",
+        "Review Hebrew syntax, Qal/Niphal and readings of Ex17:16 with grammars and competing scholarship",
+        "Keep naming actor and named object separate from etymological/translator explanation",
+        "Check source-specific rights, independent scholarly acceptance, and Product editorial gate before publishing"
+      ]
+    },
+    {
+      "claimId": "CLM-EX17-16-LXX-HIDDEN-HAND",
+      "claimType": "EDITED_TEXT_DIFFERENCE",
+      "attestationIds": [
+        "ATT-BASE-NISSI-04"
+      ],
+      "sourceIds": [
+        "SRC-RAHLFS-EXODUS17",
+        "SRC-MT-MECHON"
+      ],
+      "statement": "The publisher's Rahlfs-Hanhart Greek Exodus 17:16 prints ὅτι ἐν χειρὶ κρυφαίᾳ and continues with the Lord fighting Amalek. This edited Greek 'in/with a hidden hand' wording is not a word-for-word transcription of MT כִּי-יָד עַל-כֵּס יָהּ; its distinct shape does NOT by itself prove a different ancient Hebrew Vorlage or that the MT ought to be emended. Neither verse 16 surface names a second altar.",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Independently compare MT and LXX critical apparatus and extant ancient manuscripts before naming a textual variant or Vorlage",
+        "Review Hebrew syntax, Qal/Niphal and readings of Ex17:16 with grammars and competing scholarship",
+        "Keep naming actor and named object separate from etymological/translator explanation",
+        "Check source-specific rights, independent scholarly acceptance, and Product editorial gate before publishing"
+      ]
+    },
+    {
+      "claimId": "CLM-ELSHADDAI-GEN17-35-DIVINE-SELF",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "statement": "In Genesis 17:1 and Genesis 35:11 printed MT the deity identifies himself in first-person speech as אֲנִי אֵל שַׁדַּי to Abram/Jacob in separate covenant settings. This direct divine speech is not Isaac's blessing or an act of naming the Bethel site; the exact etymology of Shaddai is not derived by the two appearances.",
+      "attestationIds": [
+        "ATT-BASE-EL-SHADDAI-01",
+        "ATT-BASE-EL-SHADDAI-03"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Check independent Hebrew textual-critical apparatus and grammar before adding variants",
+        "Keep Exodus 6:3 Hebrew name-knowledge and Shaddai etymology debates unresolved; compare independent historical and confessional readings",
+        "Keep each narrator, benediction, human invocation, seraphic hymn and divine oracle distinct",
+        "Obtain source rights and separate scholarly/Product editorial approvals"
+      ]
+    },
+    {
+      "claimId": "CLM-ELSHADDAI-GEN28-ISAAC-BLESSING",
+      "claimType": "NARRATIVE_SPEECH_VS_NAMING",
+      "statement": "Genesis 28:3 printed MT has Isaac invoking וְאֵל שַׁדַּי in blessing Jacob with fruitfulness; the opening conjunction belongs to the verse surface. Isaac, not YHWH, speaks. The title is not newly given to God by a divine self-naming act in this passage.",
+      "attestationIds": [
+        "ATT-BASE-EL-SHADDAI-02"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Check independent Hebrew textual-critical apparatus and grammar before adding variants",
+        "Keep Exodus 6:3 Hebrew name-knowledge and Shaddai etymology debates unresolved; compare independent historical and confessional readings",
+        "Keep each narrator, benediction, human invocation, seraphic hymn and divine oracle distinct",
+        "Obtain source rights and separate scholarly/Product editorial approvals"
+      ]
+    },
+    {
+      "claimId": "CLM-ELSHADDAI-EX6-RETROSPECTIVE-REVELATION",
+      "claimType": "CANONICAL_INTERTEXT_BOUNDARY",
+      "statement": "Exodus 6:2–3 has YHWH speaking retrospectively to Moses about divine appearances to Abraham, Isaac and Jacob with בְּאֵל שַׁדָּי and the explicit knowledge-of-name claim וּשְׁמִי יְהוָה לֹא נוֹדַעְתִּי לָהֶם. The printed שַׁדָּי versus Genesis שַׁדַּי pointed forms are kept as written, without claiming new ancient manuscript evidence. NET's experiential/promise-fulfilment reading is one attributed interpretive model; how this relates to explicit Genesis use of YHWH is disputed, and the historical etymology of Shaddai is unsettled.",
+      "attestationIds": [
+        "ATT-BASE-EL-SHADDAI-04"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON",
+        "SRC-NET-EXO6"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Check independent Hebrew textual-critical apparatus and grammar before adding variants",
+        "Keep Exodus 6:3 Hebrew name-knowledge and Shaddai etymology debates unresolved; compare independent historical and confessional readings",
+        "Keep each narrator, benediction, human invocation, seraphic hymn and divine oracle distinct",
+        "Obtain source rights and separate scholarly/Product editorial approvals"
+      ],
+      "etymologyStatus": "UNRESOLVED_MULTIPLE_HYPOTHESES",
+      "revelationInterpretationStatus": "DISPUTED_NOT_RESOLVED_BY_ONE_NOTE",
+      "speakerEvidenceLevel": "YHWH_RETROSPECTIVE_DIVINE_SPEECH"
+    },
+    {
+      "claimId": "CLM-SABAOTH-1SAM1-3-NARRATOR-WORSHIP",
+      "claimType": "POSITIVE_REFERENT_CONTROL",
+      "statement": "1 Samuel 1:3 printed MT narrates Elkanah going to worship and sacrifice לַיהוָה צְבָאוֹת at Shiloh. The prefixed לַ is part of the original passage; the title is narrated as worship's divine target, not spoken by YHWH as a fresh name or invented by Elkanah.",
+      "attestationIds": [
+        "ATT-BASE-SABAOTH-01"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Check independent Hebrew textual-critical apparatus and grammar before adding variants",
+        "Keep Exodus 6:3 Hebrew name-knowledge and Shaddai etymology debates unresolved; compare independent historical and confessional readings",
+        "Keep each narrator, benediction, human invocation, seraphic hymn and divine oracle distinct",
+        "Obtain source rights and separate scholarly/Product editorial approvals"
+      ]
+    },
+    {
+      "claimId": "CLM-SABAOTH-1SAM17-45-DAVID-BATTLE",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "statement": "In 1 Samuel 17:45 printed MT David addresses Goliath, invoking יהוה צבאות together with the explanatory epithet אֱלֹהֵי מַעַרְכוֹת יִשְׂרָאֵל. David is speaker, and the battle array context is explicit; it does not settle the title's entire historical origin or mean YHWH is only God of human infantry.",
+      "attestationIds": [
+        "ATT-BASE-SABAOTH-02"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Check independent Hebrew textual-critical apparatus and grammar before adding variants",
+        "Keep Exodus 6:3 Hebrew name-knowledge and Shaddai etymology debates unresolved; compare independent historical and confessional readings",
+        "Keep each narrator, benediction, human invocation, seraphic hymn and divine oracle distinct",
+        "Obtain source rights and separate scholarly/Product editorial approvals"
+      ]
+    },
+    {
+      "claimId": "CLM-SABAOTH-ISA6-3-SERAPHIM-HYMN",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "statement": "Isaiah 6:3 printed MT has seraphim calling to one another a holiness hymn addressing YHWH Sabaoth in the throne vision. The heavenly hymn's agents are seraphim, not David or direct divine first-person self-disclosure. The title is not restricted to the military application of 1 Samuel 17:45.",
+      "attestationIds": [
+        "ATT-BASE-SABAOTH-03"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Check independent Hebrew textual-critical apparatus and grammar before adding variants",
+        "Keep Exodus 6:3 Hebrew name-knowledge and Shaddai etymology debates unresolved; compare independent historical and confessional readings",
+        "Keep each narrator, benediction, human invocation, seraphic hymn and divine oracle distinct",
+        "Obtain source rights and separate scholarly/Product editorial approvals"
+      ]
+    },
+    {
+      "claimId": "CLM-SABAOTH-ZECH10-3-PROPHETIC-VOICE",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "statement": "Zechariah 10:3 printed MT mixes divine first-person judgment and a third-person clause כִּי-פָקַד יְהוָה צְבָאוֹת regarding YHWH tending Judah's flock. Do not project the opening first-person voice onto every clause or misidentify the title as spoken there solely in first person.",
+      "attestationIds": [
+        "ATT-BASE-SABAOTH-04"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Check independent Hebrew textual-critical apparatus and grammar before adding variants",
+        "Keep Exodus 6:3 Hebrew name-knowledge and Shaddai etymology debates unresolved; compare independent historical and confessional readings",
+        "Keep each narrator, benediction, human invocation, seraphic hymn and divine oracle distinct",
+        "Obtain source rights and separate scholarly/Product editorial approvals"
+      ]
+    },
+    {
+      "claimId": "CLM-ELYON-GEN14-18-PRIEST-NARRATOR",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "attestationIds": [
+        "ATT-BASE-EL-ELYON-01"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "statement": "MT Genesis 14:18 narrates Melchizedek as priest לְאֵל עֶלְיוֹן (of God Most High); the verse is narrative third-person priesthood designation, not a direct Melchizedek spoken blessing, not Abram's oath and not an explicit self-naming speech of YHWH. The prefixed לְ belongs to the printed phrase; namedObject=God is referent of priesthood designation.",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Compare digital Masoretic reading to independent Hebrew apparatus and grammatical treatments before inferring an ancient editorial layer",
+        "Keep Melchizedek narrative identification, spoken blessing and Abram oath as distinct speaker contexts; do not resolve ancient religious identity by editorial assertion",
+        "Preserve creator/possessor translation disagreement for קֹנֵה and identify modern secondary hypotheses as attributed, not verified manuscript variants",
+        "Obtain independent exegetical review, source-specific rights and separate Product editorial approval"
+      ]
+    },
+    {
+      "claimId": "CLM-ELYON-GEN14-19-20-PRIEST-BLESS-DOXOLOGY",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "attestationIds": [
+        "ATT-BASE-EL-ELYON-02",
+        "ATT-BASE-EL-ELYON-03"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON",
+        "SRC-NET-GEN14"
+      ],
+      "statement": "Genesis 14:19–20 MT has Melchizedek speaking: first a blessing of Abram with prefixed לְאֵל עֶלְיוֹן, then a doxology beginning וּבָרוּךְ אֵל עֶלְיוֹן (registered surface אֵל עֶלְיוֹן). Verse 19 calls God קֹנֵה שָׁמַיִם וָאָרֶץ; NET attributes translation alternatives 'creator' and 'possessor' rather than one demonstrably mandatory English gloss. Neither verse is spoken by God in the first person or an Abram oath.",
+      "creatorPossessorStatus": "NET_TRANSLATION_ALTERNATIVES_NOT_LEXICAL_CERTAINTY",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Compare digital Masoretic reading to independent Hebrew apparatus and grammatical treatments before inferring an ancient editorial layer",
+        "Keep Melchizedek narrative identification, spoken blessing and Abram oath as distinct speaker contexts; do not resolve ancient religious identity by editorial assertion",
+        "Preserve creator/possessor translation disagreement for קֹנֵה and identify modern secondary hypotheses as attributed, not verified manuscript variants",
+        "Obtain independent exegetical review, source-specific rights and separate Product editorial approval"
+      ]
+    },
+    {
+      "claimId": "CLM-ELYON-GEN14-22-ABRAM-YHWH-OATH",
+      "claimType": "CANONICAL_INTERTEXT_BOUNDARY",
+      "attestationIds": [
+        "ATT-BASE-EL-ELYON-04"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON",
+        "SRC-NET-GEN14",
+        "SRC-CARGILL-2019"
+      ],
+      "statement": "MT Genesis 14:22 records Abram speaking an oath to the king of Sodom, using יְהוָה אֵל עֶלְיוֹן and קֹנֵה שָׁמַיִם וָאָרֶץ. In the current printed MT this identifies YHWH with Most High God in Abram's oath, without demonstrating Melchizedek's independent historical cult identity. Robert R. Cargill (2019) proposes as secondary historical-critical hypothesis that YHWH in v22 is a later editorial gloss; the consulted catalogue/abstract does NOT constitute a collated manuscript reading lacking YHWH or settled scholarly consensus. NET's creator/possessor alternatives remain lexical interpretations.",
+      "historicalHypothesisStatus": "ATTRIBUTED_GLOSS_HYPOTHESIS_NO_DIRECT_MANUSCRIPT_COLLATION",
+      "creatorPossessorStatus": "NET_TRANSLATION_ALTERNATIVES_NOT_LEXICAL_CERTAINTY",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Compare digital Masoretic reading to independent Hebrew apparatus and grammatical treatments before inferring an ancient editorial layer",
+        "Keep Melchizedek narrative identification, spoken blessing and Abram oath as distinct speaker contexts; do not resolve ancient religious identity by editorial assertion",
+        "Preserve creator/possessor translation disagreement for קֹנֵה and identify modern secondary hypotheses as attributed, not verified manuscript variants",
+        "Obtain independent exegetical review, source-specific rights and separate Product editorial approval"
+      ]
+    },
+    {
+      "claimId": "CLM-QANNA-EX34-14-NAME-CHARACTER",
+      "claimType": "DIRECT_TEXTUAL_NAMING",
+      "attestationIds": [
+        "ATT-BASE-EL-QANNA-01"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "statement": "Exodus 34:14 MT contains explicit קַנָּא שְׁמוֹ ('Jealous/Zealous is his name') and also אֵל קַנָּא הוּא ('he is a jealous God') in the covenant command against worshiping לְאֵל אַחֵר (another god). The overall divine speech to Moses refers to YHWH in third-person self-description; do not erase the actual name clause, but do not turn its covenant-character epithet into an etymologically unrelated deity or independent proper name distinct from YHWH.",
+      "nameEvidenceStatus": "EXPLICIT_NAME_CLAUSE_CHARACTER_EPITHET",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Compare digital Masoretic reading to independent Hebrew apparatus and grammatical treatments before inferring an ancient editorial layer",
+        "Keep Melchizedek narrative identification, spoken blessing and Abram oath as distinct speaker contexts; do not resolve ancient religious identity by editorial assertion",
+        "Preserve creator/possessor translation disagreement for קֹנֵה and identify modern secondary hypotheses as attributed, not verified manuscript variants",
+        "Obtain independent exegetical review, source-specific rights and separate Product editorial approval"
+      ]
+    },
+    {
+      "claimId": "CLM-QANNA-DEUT4-24-MOSES-WARNING",
+      "claimType": "MORPHOLOGICAL_CASE_CONTEXT",
+      "attestationIds": [
+        "ATT-BASE-EL-QANNA-02"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "statement": "Deuteronomy 4:23–24 MT is Moses' covenantal warning against idolatry. The description of YHWH as consuming fire אֵשׁ אֹכְלָה and אֵל, קַנָּא ('a jealous/zealous God') is in Moses' speech, and unlike Exodus 34:14 Deuteronomy 4:24 does NOT contain the separate name clause קַנָּא שְׁמוֹ. Same character emphasis does not prove a new independent act of naming in this verse.",
+      "nameEvidenceStatus": "NO_NAME_CLAUSE_DESCRIPTIVE_EPITHET",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Compare digital Masoretic reading to independent Hebrew apparatus and grammatical treatments before inferring an ancient editorial layer",
+        "Keep Melchizedek narrative identification, spoken blessing and Abram oath as distinct speaker contexts; do not resolve ancient religious identity by editorial assertion",
+        "Preserve creator/possessor translation disagreement for קֹנֵה and identify modern secondary hypotheses as attributed, not verified manuscript variants",
+        "Obtain independent exegetical review, source-specific rights and separate Product editorial approval"
+      ]
+    },
+    {
+      "claimId": "CLM-DAN7-9-ANCIENT-THRONED-JUDGE",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "attestationIds": [
+        "ATT-BASE-ATIQ-YOMIN-01"
+      ],
+      "sourceIds": [
+        "SRC-DANIEL-ARAMAIC",
+        "SRC-JUDISCH-DAN7-ARAMAIC"
+      ],
+      "statement": "Daniel 7:9 Aramaic has עַתִּיק יוֹמִין as the enthroned Ancient of Days in Daniel's vision, with throne/fire judicial imagery continuing into v10. Daniel narrates a figure he sees; the figure does not pronounce a new name for himself here. The יוֹמִין plural-absolute morphological parsing is an attributed secondary Judisch analysis (citing lexicon not yet checked), not an independently collated BDB conclusion.",
+      "grammaticalEvidenceStatus": "PUBLISHED_DIGITAL_FORM_SECONDARY_ABSOLUTE_PARSE_ONLY",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Inspect independent Aramaic grammar and lexicon page; Judisch's absolute/emphatic plural parsing remains secondary, not directly consulted BDB",
+        "Check independent manuscripts and edited Greek textual apparatus; only pinned printed digital MT/SBLGNT surfaces inspected",
+        "Distinguish biblical scene participants and narration/speech attribution before assigning Christian trinitarian interpretation",
+        "Review diverse historical reception, source permissions, and separate Product editorial approval"
+      ]
+    },
+    {
+      "claimId": "CLM-DAN7-13-ANCIENT-SON-OF-MAN-DISTINCT",
+      "claimType": "CANONICAL_INTERTEXT_BOUNDARY",
+      "attestationIds": [
+        "ATT-BASE-ATIQ-YOMIN-02"
+      ],
+      "sourceIds": [
+        "SRC-DANIEL-ARAMAIC",
+        "SRC-JUDISCH-DAN7-ARAMAIC"
+      ],
+      "statement": "Daniel 7:13 Aramaic עַתִּיק יוֹמַיָּא designates the Ancient of Days to whom another visionary figure כְּבַר אֱנָשׁ ('like a son of man') comes and is brought near. These are distinct literary participants in this scene; later NT christological identification is an interpretive/reception claim, not a claim that Ancient of Days and the approaching figure are one and the same grammatical subject in v13. Judisch's emphatic-plural parse is attributed secondary grammar.",
+      "grammaticalEvidenceStatus": "PUBLISHED_DIGITAL_FORM_SECONDARY_EMPHATIC_PARSE_ONLY",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Inspect independent Aramaic grammar and lexicon page; Judisch's absolute/emphatic plural parsing remains secondary, not directly consulted BDB",
+        "Check independent manuscripts and edited Greek textual apparatus; only pinned printed digital MT/SBLGNT surfaces inspected",
+        "Distinguish biblical scene participants and narration/speech attribution before assigning Christian trinitarian interpretation",
+        "Review diverse historical reception, source permissions, and separate Product editorial approval"
+      ]
+    },
+    {
+      "claimId": "CLM-DAN7-22-ANCIENT-GRANTS-JUDGMENT",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "attestationIds": [
+        "ATT-BASE-ATIQ-YOMIN-03"
+      ],
+      "sourceIds": [
+        "SRC-DANIEL-ARAMAIC",
+        "SRC-JUDISCH-DAN7-ARAMAIC"
+      ],
+      "statement": "Daniel 7:22 repeats עַתִּיק יוֹמַיָּא, describing the Ancient of Days coming while judgment is given for the holy ones of the Most High. This is Daniel's narrated vision with an explicit judgment/outcome, not a recorded first-person direct quote, and not a new separate proper name. The same recorded form as v13 does not collapse the scene into the same action as v13 or prove any later Christian theological identification solely from morphology.",
+      "grammaticalEvidenceStatus": "PUBLISHED_DIGITAL_FORM_SECONDARY_EMPHATIC_PARSE_ONLY",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Inspect independent Aramaic grammar and lexicon page; Judisch's absolute/emphatic plural parsing remains secondary, not directly consulted BDB",
+        "Check independent manuscripts and edited Greek textual apparatus; only pinned printed digital MT/SBLGNT surfaces inspected",
+        "Distinguish biblical scene participants and narration/speech attribution before assigning Christian trinitarian interpretation",
+        "Review diverse historical reception, source permissions, and separate Product editorial approval"
+      ]
+    },
+    {
+      "claimId": "CLM-REV1-4-JOHN-GREETING-TRIAD",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "attestationIds": [
+        "ATT-EXT-HO-ON-ERCHOMENOS-01"
+      ],
+      "sourceIds": [
+        "SRC-SBLGNT-DIGITAL-NT",
+        "SRC-SBL-REVELATION"
+      ],
+      "statement": "In printed SBLGNT Revelation 1:4–5 John gives an epistolary greeting listing ἀπὸ ὁ ὢν καὶ ὁ ἦν καὶ ὁ ἐρχόμενος, then from the seven spirits before the throne, then ἀπὸ Ἰησοῦ Χριστοῦ. The formula is a source of John's greeting, NOT a direct utterance spoken in v4 by the named deity; the attestation's legacy speaker field labels designation referent rather than literal narrator, recorded separately in discourseRoles.narrativeSpeaker. Preserve the unusual printed nominative article after ἀπὸ, do not normalize it silently; triadic sources are syntactically distinguished, and theological links to Exodus 3:14 need independent argument.",
+      "speakerEvidenceLevel": "JOHN_GREETING_NOT_DIRECT_DIVINE_UTTERANCE",
+      "grammaticalEvidenceStatus": "SBLGNT_NOMINATIVE_AFTER_APO_VERIFIED",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Inspect independent Aramaic grammar and lexicon page; Judisch's absolute/emphatic plural parsing remains secondary, not directly consulted BDB",
+        "Check independent manuscripts and edited Greek textual apparatus; only pinned printed digital MT/SBLGNT surfaces inspected",
+        "Distinguish biblical scene participants and narration/speech attribution before assigning Christian trinitarian interpretation",
+        "Review diverse historical reception, source permissions, and separate Product editorial approval"
+      ]
+    },
+    {
+      "claimId": "CLM-REV21-22-LORD-GOD-LAMB-TEMPLE",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "attestationIds": [
+        "ATT-BASE-PANTOKRATOR-02"
+      ],
+      "sourceIds": [
+        "SRC-SBLGNT-DIGITAL-NT",
+        "SRC-SBL-REVELATION"
+      ],
+      "statement": "Revelation 21:22 SBLGNT is John's first-person description that he saw no temple in the New Jerusalem, because ὁ κύριος, ὁ θεός, ὁ παντοκράτωρ and τὸ ἀρνίον are its temple. The printed text grammatically distinguishes Lord God Almighty and the Lamb while relating both to temple reality; these are not interchangeable referential strings, and the verse is not a new direct speech by Lord God or a proof that their shared temple role means no Christology.",
+      "speakerEvidenceLevel": "JOHN_CITY_VISION_NARRATION",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Inspect independent Aramaic grammar and lexicon page; Judisch's absolute/emphatic plural parsing remains secondary, not directly consulted BDB",
+        "Check independent manuscripts and edited Greek textual apparatus; only pinned printed digital MT/SBLGNT surfaces inspected",
+        "Distinguish biblical scene participants and narration/speech attribution before assigning Christian trinitarian interpretation",
+        "Review diverse historical reception, source permissions, and separate Product editorial approval"
+      ]
+    },
+    {
+      "claimId": "CLM-ADONAI-EX34-9-MOSES-PRAYER",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "statement": "Exodus 34:9 printed MT records Moses in direct prayer to YHWH saying אֲדֹנָי twice in one verse, requesting the Lord's presence and pardon for Israel. Both are in Moses' voice, not a divine first-person self-naming speech, and should not be equated automatically with human honorific אֲדֹנִי to Abraham in Genesis 23.",
+      "attestationIds": [
+        "ATT-BASE-ADONAI-01"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Use original printed Mechon-Mamre Hebrew as witness; no manuscript or critical-edition apparatus independently collated",
+        "Separate narrator, Moses prayer, seer, God oracle, editorial punctuation and communal hymn, as applicable",
+        "Check source-specific rights and attribution; NET conjectures and Yah reception references are secondary, not MT text",
+        "Require independent philological/editorial/Product approval before publishing"
+      ],
+      "nameEvidenceStatus": "DIVINE_PRAYER_ADDRESS_TWO_TOKENS_ONE_VERSE"
+    },
+    {
+      "claimId": "CLM-ADONAI-ISA6-1-VISION",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "statement": "In Isaiah 6:1, the prophetic seer Isaiah narrates his vision וָאֶרְאֶה אֶת-אֲדֹנָי ('I saw the Lord') seated on a throne. The prefixed אֶת marks the object of seeing, in contrast to Moses' spoken prayer vocative in Exodus 34:9; verse 1 is not the throne occupant's direct quote of a new title.",
+      "attestationIds": [
+        "ATT-BASE-ADONAI-02"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Use original printed Mechon-Mamre Hebrew as witness; no manuscript or critical-edition apparatus independently collated",
+        "Separate narrator, Moses prayer, seer, God oracle, editorial punctuation and communal hymn, as applicable",
+        "Check source-specific rights and attribution; NET conjectures and Yah reception references are secondary, not MT text",
+        "Require independent philological/editorial/Product approval before publishing"
+      ],
+      "nameEvidenceStatus": "VISION_OBJECT_WITH_ET_MARKER"
+    },
+    {
+      "claimId": "CLM-ADONAI-PS8-2-OUR-LORD-SUFFIX",
+      "claimType": "MORPHOLOGICAL_CASE_CONTEXT",
+      "statement": "Psalm 8:2 in Hebrew MT (commonly Psalm 8:1 in English translations) addresses יְהוָה אֲדֹנֵינוּ, 'YHWH our Lord', a communal possessive-suffix form. It is not identical pointed surface אֲדֹנָי in Exodus 34:9 or the human honorific אֲדֹנִי in Genesis 23; shared root/context does not imply every lord address refers to YHWH.",
+      "attestationIds": [
+        "ATT-BASE-ADONAI-03"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Use original printed Mechon-Mamre Hebrew as witness; no manuscript or critical-edition apparatus independently collated",
+        "Separate narrator, Moses prayer, seer, God oracle, editorial punctuation and communal hymn, as applicable",
+        "Check source-specific rights and attribution; NET conjectures and Yah reception references are secondary, not MT text",
+        "Require independent philological/editorial/Product approval before publishing"
+      ],
+      "nameEvidenceStatus": "LORD_WITH_1CP_POSSESSIVE_AND_EXPLICIT_YHWH"
+    },
+    {
+      "claimId": "CLM-QEDOSH-ISA1-4-REJECTED-HOLY",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "statement": "Isaiah 1:4 rebukes Judah for forsaking YHWH and despising אֶת-קְדוֹשׁ יִשְׂרָאֵל, the Holy One of Israel. This is prophetic indictment with direct-object marker אֶת, not God addressing Israel in self-identifying first-person in the immediate phrase.",
+      "attestationIds": [
+        "ATT-BASE-QEDOSH-YISRAEL-01"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Use original printed Mechon-Mamre Hebrew as witness; no manuscript or critical-edition apparatus independently collated",
+        "Separate narrator, Moses prayer, seer, God oracle, editorial punctuation and communal hymn, as applicable",
+        "Check source-specific rights and attribution; NET conjectures and Yah reception references are secondary, not MT text",
+        "Require independent philological/editorial/Product approval before publishing"
+      ],
+      "nameEvidenceStatus": "PROPHETIC_ACCUSATION_OBJECT_OF_REJECTION"
+    },
+    {
+      "claimId": "CLM-QEDOSH-ISA43-3-GOD-SELF-SAVIOR",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "statement": "Isaiah 43:3 is divine first-person assurance אֲנִי יְהוָה אֱלֹהֶיךָ, קְדוֹשׁ יִשְׂרָאֵל, מוֹשִׁיעֶךָ: YHWH calls himself Israel's God, Holy One, and Savior. The title is one part of an explicit divine oracle and must not be reassigned to a human prophet as grammatical first-person speaker or detached from Savior and YHWH.",
+      "attestationIds": [
+        "ATT-BASE-QEDOSH-YISRAEL-02"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Use original printed Mechon-Mamre Hebrew as witness; no manuscript or critical-edition apparatus independently collated",
+        "Separate narrator, Moses prayer, seer, God oracle, editorial punctuation and communal hymn, as applicable",
+        "Check source-specific rights and attribution; NET conjectures and Yah reception references are secondary, not MT text",
+        "Require independent philological/editorial/Product approval before publishing"
+      ],
+      "nameEvidenceStatus": "DIRECT_DIVINE_ORACLE_IDENTIFICATION_AND_SAVIOR"
+    },
+    {
+      "claimId": "CLM-QEDOSH-ISA47-4-REDEEMER-DOXOLOGY",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "statement": "Isaiah 47:4 MT reads a short plural-community/narrative intervention 'Our Redeemer, YHWH of hosts is his name, the Holy One of Israel' (גֹּאֲלֵנוּ ... קְדוֹשׁ, יִשְׂרָאֵל). Literary speaker assignment is not settled beyond the existing guarded attribution 'prophetic-community voice ... subject to review'; digital Mechon-Mamre comma is editorial punctuation and not a separate Hebrew lexeme or independently verified manuscript segmentation.",
+      "attestationIds": [
+        "ATT-BASE-QEDOSH-YISRAEL-03"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Use original printed Mechon-Mamre Hebrew as witness; no manuscript or critical-edition apparatus independently collated",
+        "Separate narrator, Moses prayer, seer, God oracle, editorial punctuation and communal hymn, as applicable",
+        "Check source-specific rights and attribution; NET conjectures and Yah reception references are secondary, not MT text",
+        "Require independent philological/editorial/Product approval before publishing"
+      ],
+      "nameEvidenceStatus": "REDEEMER_YHWH_SABAOTH_COMMUNITY_INTERJECTION_UNCERTAIN_SPEAKER"
+    },
+    {
+      "claimId": "CLM-YAH-EX15-2-SUNG-ABBREVIATED-NAME",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "statement": "In Exodus 15:1–2, Moses and Israelites sing praise, calling the Lord יָהּ in עָזִּי וְזִמְרָת יָהּ. Here יָהּ is an abbreviated divine name in a sung confession, not a standalone unrelated deity or an independently given name by God in direct speech. The song continues with the divine identification יְהוָה שְׁמוֹ in 15:3; historical usage claims beyond the printed text are secondary.",
+      "attestationIds": [
+        "ATT-EXT-YAH-01"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON",
+        "SRC-JBQ-YAH-2014"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Use original printed Mechon-Mamre Hebrew as witness; no manuscript or critical-edition apparatus independently collated",
+        "Separate narrator, Moses prayer, seer, God oracle, editorial punctuation and communal hymn, as applicable",
+        "Check source-specific rights and attribution; NET conjectures and Yah reception references are secondary, not MT text",
+        "Require independent philological/editorial/Product approval before publishing"
+      ],
+      "nameEvidenceStatus": "SHORT_NAME_IN_MOSES_ISRAEL_SONG_NOT_NEW_DEITY"
+    },
+    {
+      "claimId": "CLM-YAH-PS68-5-BET-NAME-CONJECTURE",
+      "claimType": "MORPHOLOGICAL_CASE_CONTEXT",
+      "statement": "Psalm 68:5 MT (common English Psalm 68:4) prints בְּיָהּ שְׁמוֹ with preposition בְּ on the short name Yah. The NET translator note considers a bet-of-identity interpretation and a conjectural כִּי יָהּ שְׁמוֹ; this is an attributed proposed emendation, NOT the digital printed MT, an independently collated ancient manuscript variant, or proof that the Yah abbreviation is another god. Preserve MT vs common English verse numbering.",
+      "attestationIds": [
+        "ATT-EXT-YAH-02"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON",
+        "SRC-NET-PS68",
+        "SRC-JBQ-YAH-2014"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Use original printed Mechon-Mamre Hebrew as witness; no manuscript or critical-edition apparatus independently collated",
+        "Separate narrator, Moses prayer, seer, God oracle, editorial punctuation and communal hymn, as applicable",
+        "Check source-specific rights and attribution; NET conjectures and Yah reception references are secondary, not MT text",
+        "Require independent philological/editorial/Product approval before publishing"
+      ],
+      "nameEvidenceStatus": "PRINTED_MT_BET_PREFIX_NOT_NET_HYPOTHETICAL_KI",
+      "textualReconstructionStatus": "NET_CONJECTURE_NOT_ATTESTED_MT"
+    },
+    {
+      "claimId": "CLM-GEN16-13-HAGAR-YHWH-NAME-CALLING",
+      "claimType": "DIRECT_TEXTUAL_NAMING",
+      "attestationIds": [
+        "ATT-BASE-EL-ROI-01"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "statement": "Genesis 16:13 MT explicitly uses וַתִּקְרָא שֵׁם-יְהוָה regarding Hagar's calling the name of YHWH who spoke to her, and records her address אַתָּה אֵל רֳאִי. Thus naming/calling of the LORD genuinely occurs in verse 13, but the status of the entire phrase as a later fixed independent proper name is an interpretive question. The following Genesis 16:14 *separately* gives the name of the well Beer-lahai-roi; do not conflate named object, and do not confuse ראה seeing with רעה shepherding just because transliterations resemble 'Roi'.",
+      "nameEvidenceStatus": "EXPLICIT_HAGAR_CALLS_YHWH_NAME_NOT_WELL_NAMING",
+      "rootEvidenceStatus": "HEBREW_RAH_SEE_NOT_RA_AH_SHEPHERD",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Independent original Hebrew textual-critical apparatus and full context not yet collated, digital edited displays only",
+        "Editorial interpretation of Hebrew royal-name clause and traditional Jewish/Christian reception remains disputed",
+        "Do not promote unpinned Greek web presentation to identified ancient manuscript variant; printed Rahlfs-Hanhart only",
+        "Check original-language source permissions, academic review and separate Product editorial gate"
+      ]
+    },
+    {
+      "claimId": "CLM-GEN21-33-ABRAHAM-EL-OLAM-INVOCATION",
+      "claimType": "NARRATIVE_SPEECH_VS_NAMING",
+      "attestationIds": [
+        "ATT-BASE-EL-OLAM-01"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "statement": "In Genesis 21:33 MT, Abraham plants a tree at Beer-sheba and calls there upon בְּשֵׁם יְהוָה, אֵל עוֹלָם, the name of YHWH El Olam, God everlasting. This is an act of calling on YHWH, not YHWH speaking first-person, and not a fresh naming of Beer-sheba (whose place naming context appears in Genesis 21:31). The temporal designation can be translated 'everlasting God' without claiming an independently verified full historical etymology of עוֹלָם.",
+      "nameEvidenceStatus": "ABRAHAM_CALLING_ON_YHWH_NOT_NEW_PLACE_NAME",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Independent original Hebrew textual-critical apparatus and full context not yet collated, digital edited displays only",
+        "Editorial interpretation of Hebrew royal-name clause and traditional Jewish/Christian reception remains disputed",
+        "Do not promote unpinned Greek web presentation to identified ancient manuscript variant; printed Rahlfs-Hanhart only",
+        "Check original-language source permissions, academic review and separate Product editorial gate"
+      ]
+    },
+    {
+      "claimId": "CLM-ISA9-5-ROYAL-NAME-EL-GIBBOR",
+      "claimType": "CANONICAL_INTERTEXT_BOUNDARY",
+      "attestationIds": [
+        "ATT-BASE-EL-GIBBOR-01"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON",
+        "SRC-RAHLFS-ISAIAH",
+        "SRC-ORTHODOX-ISAIAH9",
+        "SRC-RASHI-ISAIAH9",
+        "SRC-RADAK-ISAIAH9"
+      ],
+      "statement": "Isaiah 9:5 Hebrew MT (English 9:6) records אֵל גִּבּוֹר within the complex royal child-name phrase introduced by וַיִּקְרָא שְׁמוֹ. The verse names a child but grammatical division/which title is predicated of whom is disputed in Jewish (separately Rashi and Radak) and Christian reception. The publisher's Rahlfs-Hanhart LXX printed Isaiah 9:5 reads καλεῖται τὸ ὄνομα αὐτοῦ Μεγάλης βουλῆς ἄγγελος; a different unpinned Greek Orthodox web display includes Θεὸς ἰσχυρός. Distinguish these printed web presentations, do not infer a precise ancient Greek manuscript witness or universal LXX reading. The printed Hebrew name words remain visible independently of debated messianic identification.",
+      "nameEvidenceStatus": "ROYAL_CHILD_NAMING_SEQUENCE_ATTRIBUTION_OF_TITLES_DISPUTED",
+      "greekWitnessStatus": "PUBLISHER_LXX_SHORTER_VS_UNPINNED_ORTHODOX_LONGER_NOT_MANUSCRIPT_PROOF",
+      "receptionStatus": "RASHI_RADAK_AND_CHRISTIAN_READINGS_DISTINGUISHED",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Independent original Hebrew textual-critical apparatus and full context not yet collated, digital edited displays only",
+        "Editorial interpretation of Hebrew royal-name clause and traditional Jewish/Christian reception remains disputed",
+        "Do not promote unpinned Greek web presentation to identified ancient manuscript variant; printed Rahlfs-Hanhart only",
+        "Check original-language source permissions, academic review and separate Product editorial gate"
+      ]
+    },
+    {
+      "claimId": "CLM-ISA10-21-REMNANT-TO-MIGHTY-GOD",
+      "claimType": "POSITIVE_REFERENT_CONTROL",
+      "attestationIds": [
+        "ATT-BASE-EL-GIBBOR-02"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "statement": "Isaiah 10:21 MT says a remnant of Jacob shall return אֶל-אֵל, גִּבּוֹר: the first אֶל- is the preposition 'to/unto' and אֵל, גִּבּוֹר refers to mighty God as the destination of the remnant's return. This is not Isaiah 9:5's royal child naming sequence; preserving both אֶל- and אֵל prevents reading it as two gods or flattening the direct divine referent into a child-name argument.",
+      "nameEvidenceStatus": "DIRECT_GOD_REFERENT_OF_REMNANT_RETURN_PREPOSITION_PRESERVED",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Independent original Hebrew textual-critical apparatus and full context not yet collated, digital edited displays only",
+        "Editorial interpretation of Hebrew royal-name clause and traditional Jewish/Christian reception remains disputed",
+        "Do not promote unpinned Greek web presentation to identified ancient manuscript variant; printed Rahlfs-Hanhart only",
+        "Check original-language source permissions, academic review and separate Product editorial gate"
+      ]
+    },
+    {
+      "claimId": "CLM-EX15-3-YHWH-NAME-IN-MOSES-ISRAEL-SONG",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "attestationIds": [
+        "ATT-BASE-YHWH-03"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "statement": "Exodus 15:1–3 introduces the song of Moses and Israel. After the song's short יָהּ in verse 2, verse 3 says יְהוָה שְׁמוֹ, 'YHWH is his name', in a hymnic confession of YHWH as warrior. This is an explicit divine-name clause spoken by Moses and Israel in song, NOT a direct first-person naming revelation newly uttered by God; preserve the nearby short form Yah as related but nonidentical printed morphology.",
+      "nameEvidenceStatus": "HUMAN_HYMN_CONFESSES_YHWH_NAME_NOT_GOD_DIRECT_SPEECH",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Independent original Hebrew textual-critical apparatus and full context not yet collated, digital edited displays only",
+        "Editorial interpretation of Hebrew royal-name clause and traditional Jewish/Christian reception remains disputed",
+        "Do not promote unpinned Greek web presentation to identified ancient manuscript variant; printed Rahlfs-Hanhart only",
+        "Check original-language source permissions, academic review and separate Product editorial gate"
+      ]
+    },
+    {
+      "claimId": "CLM-DEUT32-15-ELOAH-REJECTED-CREATOR",
+      "claimType": "POSITIVE_REFERENT_CONTROL",
+      "attestationIds": [
+        "ATT-EXT-ELOAH-01"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "statement": "Deuteronomy 32:15 (Song of Moses) says Jeshurun וַיִּטֹּשׁ אֱלוֹהַּ עָשָׂהוּ: Jeshurun abandons his Maker Eloah; the divine noun is the grammatical object of the verb, NOT its subject, and the parallel identifies the Rock of his salvation as rejected. This is a singular divine designation in a human prophetic/song rebuke, not a fresh divine self-name or an attestation of a rival deity. A diachronic reconstructed etymology (e.g. Suchard) is not established by the printed verse.",
+      "claimScopeStatus": "MOSES_SONG_OBJECT_OF_REJECTION_NOT_NEW_DEITY",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Digital Mechon-Mamre and SBLGNT sources are printed edited surfaces, not independently collated ancient manuscripts",
+        "Distinguish referent, linguistic form, literary speaker and evidence of direct divine name proclamation from ordinary poetic attributes",
+        "Do not automatically equate Aramaic, Hebrew, Greek or Christian theological interpretations by mere similar gloss",
+        "Check independent grammatical and theological scholarship, rights, and separate Product editorial release before publishing"
+      ]
+    },
+    {
+      "claimId": "CLM-DAN2-18-19-ELAH-SHMAYA-PETITION-PRAISE",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "attestationIds": [
+        "ATT-EXT-ELAH-SHMAYA-01",
+        "ATT-EXT-ELAH-SHMAYA-02"
+      ],
+      "sourceIds": [
+        "SRC-DANIEL-ARAMAIC"
+      ],
+      "statement": "Daniel 2:18 biblical Aramaic narrates the instruction that Daniel's companions should request mercy מִן-קֳדָם אֱלָהּ שְׁמַיָּא about the king's secret; 2:19 the secret is revealed to Daniel, who then blesses לֶאֱלָהּ שְׁמַיָּא. The two forms preserve distinct prepositions and action (petitional request before vs blessing after revelation). Both concern the God of heaven and are narration about human action, not God's two new self-designations. Daniel 2:11 'gods' in pagan plural and v28 an alternate 'God in heaven' phrase are not identical surfaces to these observations.",
+      "claimScopeStatus": "ARAMAIC_REQUEST_BLESSING_DISTINCT_NOT_DIVINE_SPEECH",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Digital Mechon-Mamre and SBLGNT sources are printed edited surfaces, not independently collated ancient manuscripts",
+        "Distinguish referent, linguistic form, literary speaker and evidence of direct divine name proclamation from ordinary poetic attributes",
+        "Do not automatically equate Aramaic, Hebrew, Greek or Christian theological interpretations by mere similar gloss",
+        "Check independent grammatical and theological scholarship, rights, and separate Product editorial release before publishing"
+      ]
+    },
+    {
+      "claimId": "CLM-PS42-3-EL-HAY-LIVING-GOD-THIRST",
+      "claimType": "NARRATIVE_SPEECH_VS_NAMING",
+      "attestationIds": [
+        "ATT-EXT-EL-HAY-01"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "statement": "Psalm 42:3 in Hebrew MT (common English Psalm 42:2) uses לְאֵל חָי in the first-person longing 'my soul thirsts for God, for the living God', alongside parallel לֵאלֹהִים. The lamed is integral; living qualifies God in a personal poetic lament, not an independent ritual act of bestowing a new personal name or quotation of God speaking.",
+      "claimScopeStatus": "POETIC_LONGING_LAMED_LIVING_GOD_NOT_NAME_RITUAL",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Digital Mechon-Mamre and SBLGNT sources are printed edited surfaces, not independently collated ancient manuscripts",
+        "Distinguish referent, linguistic form, literary speaker and evidence of direct divine name proclamation from ordinary poetic attributes",
+        "Do not automatically equate Aramaic, Hebrew, Greek or Christian theological interpretations by mere similar gloss",
+        "Check independent grammatical and theological scholarship, rights, and separate Product editorial release before publishing"
+      ]
+    },
+    {
+      "claimId": "CLM-ISA63-16-AVINU-YHWH-COMMUNAL-FATHER",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "attestationIds": [
+        "ATT-EXT-AVINU-01"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "statement": "Isaiah 63:16 uses אַתָּה יְהוָה אָבִינוּ ('You YHWH are our Father') in a communal/prophetic direct prayer, contrasting lack of recognition by Abraham and Israel. The speaker is the petitioning community within the literary oracle, not YHWH naming himself or necessarily every human possessing the same covenant relationship. Hebrew אָבִינוּ is a possessive 'our Father' word, not the Aramaic transliteration Ἀββᾶ in the Greek NT; the cross-testament comparison is contextual/theological, not lexical identity.",
+      "claimScopeStatus": "COVENANT_COMMUNAL_ADDRESS_DISTINCT_FROM_NT_ABBA",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Digital Mechon-Mamre and SBLGNT sources are printed edited surfaces, not independently collated ancient manuscripts",
+        "Distinguish referent, linguistic form, literary speaker and evidence of direct divine name proclamation from ordinary poetic attributes",
+        "Do not automatically equate Aramaic, Hebrew, Greek or Christian theological interpretations by mere similar gloss",
+        "Check independent grammatical and theological scholarship, rights, and separate Product editorial release before publishing"
+      ]
+    },
+    {
+      "claimId": "CLM-PS27-1-YHWH-ORI-POETIC-PREDICATES",
+      "claimType": "MORPHOLOGICAL_CASE_CONTEXT",
+      "attestationIds": [
+        "ATT-EXT-YHWH-ORI-01"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "statement": "Psalm 27:1's psalmist confesses יְהוָה אוֹרִי וְיִשְׁעִי ('YHWH my light and my salvation'), followed by יְהוָה מָעוֹז-חַיַּי ('YHWH the stronghold of my life'). These are poetic first-person possessive predicates of trust, with no ויקרא שם ritual naming phrase, and do not establish a new autonomous proper personal name 'YHWH-Ori' distinct from YHWH.",
+      "claimScopeStatus": "METAPHOR_FIRST_PERSON_SUFFIX_NO_NAMING_CLAUSE",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Digital Mechon-Mamre and SBLGNT sources are printed edited surfaces, not independently collated ancient manuscripts",
+        "Distinguish referent, linguistic form, literary speaker and evidence of direct divine name proclamation from ordinary poetic attributes",
+        "Do not automatically equate Aramaic, Hebrew, Greek or Christian theological interpretations by mere similar gloss",
+        "Check independent grammatical and theological scholarship, rights, and separate Product editorial release before publishing"
+      ]
+    },
+    {
+      "claimId": "CLM-DEUT32-4-EL-EMUNAH-FAITHFUL-ROCK",
+      "claimType": "MORPHOLOGICAL_CASE_CONTEXT",
+      "attestationIds": [
+        "ATT-EXT-EL-EMUNAH-01"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "statement": "Deuteronomy 32:4 in Moses' Song praises the Rock with הַצּוּר תָּמִים פָּעֳלוֹ and אֵל אֱמוּנָה וְאֵין עָוֶל ('God of faithfulness, without injustice'). This is a divine attribute in parallel poetic predications of YHWH, not a second separate secret proper name or a declaration by YHWH in the first person. Within the same Song, v15's singular Eloah being rejected is the positive divine referent, not an opposing deity.",
+      "claimScopeStatus": "FAITHFULNESS_PARALLEL_TO_ROCK_NO_NEW_NAMING",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Digital Mechon-Mamre and SBLGNT sources are printed edited surfaces, not independently collated ancient manuscripts",
+        "Distinguish referent, linguistic form, literary speaker and evidence of direct divine name proclamation from ordinary poetic attributes",
+        "Do not automatically equate Aramaic, Hebrew, Greek or Christian theological interpretations by mere similar gloss",
+        "Check independent grammatical and theological scholarship, rights, and separate Product editorial release before publishing"
+      ]
+    },
+    {
+      "claimId": "CLM-EX34-6-YHWH-RAHUM-HANNUN-NAME-ATTRIBUTES",
+      "claimType": "DIRECT_TEXTUAL_NAMING",
+      "attestationIds": [
+        "ATT-EXT-EL-RAHUM-HANNUN-01"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "statement": "Exodus 34:5–6 narrates YHWH's cloud presence and proclamation, then YHWH passing before Moses and declaring יְהוָה יְהוָה, אֵל רַחוּם וְחַנּוּן and continuing אֶרֶךְ אַפַּיִם וְרַב-חֶסֶד וֶאֱמֶת. This is an actual divine name proclamation with mercy/grace/long-suffering/faithfulness attributes, unlike an arbitrary isolated poetic epithet. It does NOT independently turn every lexical adjective into another distinct proper divine name nor resolve the interpretive count of traditional 'thirteen attributes'. Moses' subsequent prayer (v9) is a different speaker.",
+      "claimScopeStatus": "NAME_PROCLAMATION_WITH_ATTRIBUTES_NOT_EACH_NEW_PROPER_NAME",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Digital Mechon-Mamre and SBLGNT sources are printed edited surfaces, not independently collated ancient manuscripts",
+        "Distinguish referent, linguistic form, literary speaker and evidence of direct divine name proclamation from ordinary poetic attributes",
+        "Do not automatically equate Aramaic, Hebrew, Greek or Christian theological interpretations by mere similar gloss",
+        "Check independent grammatical and theological scholarship, rights, and separate Product editorial release before publishing"
+      ]
+    },
+    {
+      "claimId": "CLM-JOHN11-25-JESUS-RESURRECTION-LIFE-PREDICATES",
+      "claimType": "CANONICAL_INTERTEXT_BOUNDARY",
+      "attestationIds": [
+        "ATT-EXT-ANASTASIS-ZOE-01"
+      ],
+      "sourceIds": [
+        "SRC-SBLGNT-DIGITAL-NT"
+      ],
+      "statement": "In printed SBLGNT John 11:25 Jesus directly addresses Martha: εἶπεν αὐτῇ ὁ Ἰησοῦς· Ἐγώ εἰμι ἡ ἀνάστασις καὶ ἡ ζωή. These are two coordinated nominal predicates, 'the Resurrection and the Life', within Christ's personal claim amid Lazarus' death and promise that believers will live. This is not a bare εἰμί without a predicate like John 8:58 or a human's identification in John 9:9. A theological connection with divine life/Exodus 3 may be argued separately, not asserted solely as verbatim lexical equivalence. Jesus is speaker and Martha addressee; no independent manuscript critical apparatus collated.",
+      "claimScopeStatus": "JESUS_TO_MARTHA_TWO_NOMINAL_PREDICATES_NOT_BARE_EGO_EIMI",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Digital Mechon-Mamre and SBLGNT sources are printed edited surfaces, not independently collated ancient manuscripts",
+        "Distinguish referent, linguistic form, literary speaker and evidence of direct divine name proclamation from ordinary poetic attributes",
+        "Do not automatically equate Aramaic, Hebrew, Greek or Christian theological interpretations by mere similar gloss",
+        "Check independent grammatical and theological scholarship, rights, and separate Product editorial release before publishing"
+      ]
+    }
+  ],
+  "semanticRelations": [
+    {
+      "relationId": "REL-IS43-EL-REFERENT",
+      "fromClaimId": "CLM-IS43-10-NEGATED-EL",
+      "toClaimId": "CLM-IS43-12-YHWH-EL",
+      "relationType": "CONTRASTS_REFERENT",
+      "rationale": "Identical lexeme family does not imply the same referent in negated and first-person divine contexts.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-MEMORIAL-PLACE-ALTAR",
+      "fromClaimId": "CLM-GEN22-14-PLACE-NAME",
+      "toClaimId": "CLM-EX17-15-ALTAR-MT-LXX",
+      "relationType": "CONTRASTS_NAMED_OBJECT",
+      "rationale": "A named place and a named altar must remain distinct types of commemorative naming.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-EGO-EIMI-CONTEXT",
+      "fromClaimId": "CLM-JOHN9-9-HUMAN-EGO-EIMI",
+      "toClaimId": "CLM-LXX-EX3-JOHN8-DIFFERENT-CLAUSES",
+      "relationType": "LIMITS_INFERENCE",
+      "rationale": "Human use of ego eimi limits inference from the grammatical phrase alone; possible Johannine intertext requires contextual argument.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-YHWH-PRONUNCIATION",
+      "fromClaimId": "CLM-EX3-15-DIVINE-NAME",
+      "toClaimId": "CLM-YHWH-HISTORICAL-PRONUNCIATION",
+      "relationType": "REQUIRES_INDEPENDENT_ATTESTATION",
+      "rationale": "Explicit naming in Exodus does not itself reconstruct the sound of ancient YHWH pronunciation.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-SABAOTH-CASING-CONTEXT",
+      "fromClaimId": "CLM-JAS5-4-SABAOTH-GENITIVE",
+      "toClaimId": "CLM-ROM9-29-SABAOTH-ISAIAH",
+      "relationType": "CONTRASTS_GRAMMATICAL_FORM",
+      "rationale": "Greek Κυρίου at James 5:4 is genitive whereas κύριος at Romans 9:29 is nominative; the shared Σαβαὼθ does not erase differences of case and discourse.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-ABBA-SPIRIT-SPEECH",
+      "fromClaimId": "CLM-ABBA-THREE-PRAYER-SUBJECTS",
+      "toClaimId": "CLM-GAL4-6-ABBA-SPIRIT",
+      "relationType": "SPECIFIES_SPEECH_AGENT",
+      "rationale": "The broader three-passage observation is narrowed to the Galatians 4:6 account of the Spirit crying; editorial grammar still requires independent review.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-EX3-SELF-SPEECH-VS-ADDRESSEE",
+      "fromClaimId": "CLM-EX3-EHYEH-DIVINE-REFERENT",
+      "toClaimId": "CLM-LXX-EX3-JOHN8-DIFFERENT-CLAUSES",
+      "relationType": "SPECIFIES_SPEECH_AGENT",
+      "rationale": "God is the referent of the self-identifying first-person formula; Moses is addressed. Comparison with John 8:58 must keep the referent, addressee, printed Greek wording and possible intertext distinct.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-JER-ROYAL-CITY-NAMING",
+      "fromClaimId": "CLM-JER23-6-DAVIDIC-ROYAL-NAME",
+      "toClaimId": "CLM-JER33-16-JERUSALEM-CITY-NAME",
+      "relationType": "CONTRASTS_NAMED_OBJECT",
+      "rationale": "One identical MT expression belongs to the royal figure in Jer23:6 and the feminine city Jerusalem in Jer33:16. The latter's Old Greek status is a separate secondary research question, not the basis for confusing the Hebrew referents.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-JER-EZEK-CITY-NAME-LIMIT",
+      "fromClaimId": "CLM-JER33-16-JERUSALEM-CITY-NAME",
+      "toClaimId": "CLM-EZ48-35-CITY-NAMING",
+      "relationType": "LIMITS_INFERENCE",
+      "rationale": "Both Hebrew loci name a city in their respective narrative contexts; this does not convert either expression into a stand-alone, verbatim divine personal self-naming.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-TSUR-DIVINE-AND-MIXED",
+      "fromClaimId": "CLM-DEUT32-ROCK-DIVINE-METAPHOR",
+      "toClaimId": "CLM-DEUT32-31-ROCK-CONTRAST",
+      "relationType": "CONTRASTS_REFERENT",
+      "rationale": "Positive Rock metaphors referring to YHWH do not imply the two Rock expressions in Deut32:31 share a referent or are divine proper names.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-TSUR-MIXED-AND-FOREIGN",
+      "fromClaimId": "CLM-DEUT32-31-ROCK-CONTRAST",
+      "toClaimId": "CLM-DEUT32-37-FOREIGN-REFUGE",
+      "relationType": "LIMITS_INFERENCE",
+      "rationale": "Deut32:31 contains two opposed Rock referents, Deut32:37 rhetorically challenges non-YHWH gods; poetic pronoun changes and 32:30 are separately reviewed.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-IMMANUEL-MT-LXX-NAME",
+      "fromClaimId": "CLM-ISA7-14-CHILD-NAMING",
+      "toClaimId": "CLM-ISA7-14-LXX-NAMING-VERB",
+      "relationType": "LIMITS_INFERENCE",
+      "rationale": "MT child's naming in Hebrew and Rahlfs-Hanhart printed καλέσεις are different textual editions with morphology that must be investigated, not silently made verbatim identical.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-IMMANUEL-LXX-MATTHEW-VERB",
+      "fromClaimId": "CLM-ISA7-14-LXX-NAMING-VERB",
+      "toClaimId": "CLM-MATT1-23-IMMANUEL-GLOSS",
+      "relationType": "CONTRASTS_GRAMMATICAL_FORM",
+      "rationale": "Rahlfs-Hanhart LXX Isaiah 7:14 καλέσεις (2 singular) and SBLGNT Matthew 1:23 καλέσουσιν (3 plural) differ as printed; textual/authorial explanation is open.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-IMMANUEL-ISA8-ADDRESS-ASSERTION",
+      "fromClaimId": "CLM-ISA8-8-IMMANUEL-ADDRESS",
+      "toClaimId": "CLM-ISA8-10-DIVINE-PRESENCE",
+      "relationType": "LIMITS_INFERENCE",
+      "rationale": "Isa 8:8 vocative/name allusion remains contextually contested, whereas Isa 8:10 is an explicit assurance clause; identical consonants do not make both child namings.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-IMMANUEL-MT-MATTHEW-RECEPTION",
+      "fromClaimId": "CLM-ISA7-14-CHILD-NAMING",
+      "toClaimId": "CLM-MATT1-23-IMMANUEL-GLOSS",
+      "relationType": "REQUIRES_INDEPENDENT_ATTESTATION",
+      "rationale": "Matthew's christological citation and gloss of Isaiah are canonical reception, while precise historical Hebrew antecedent and original naming-verb forms need separate historical/critical evidence.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-REV-1-21-SPEAKER",
+      "fromClaimId": "CLM-REV1-8-LORD-GOD-ALPHA",
+      "toClaimId": "CLM-REV21-6-THRONE-SPEAKER",
+      "relationType": "CONTRASTS_SPEAKER_EVIDENCE",
+      "rationale": "Same verse identifies Lord God in 1:8; narrator identifies throne speaker in 21:5. This distinguishes evidence, not necessarily persons.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-REV-21-22-SPEAKER",
+      "fromClaimId": "CLM-REV21-6-THRONE-SPEAKER",
+      "toClaimId": "CLM-REV22-13-CHRISTOLOGICAL-INFERENCE",
+      "relationType": "CONTRASTS_SPEAKER_EVIDENCE",
+      "rationale": "21:6 is tied to throne speaker in v5; 22:13 is contextually linked to Jesus, named at 22:16; the evidence types differ.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-REV-1-22-TITLE-CAUTION",
+      "fromClaimId": "CLM-REV1-8-LORD-GOD-ALPHA",
+      "toClaimId": "CLM-REV22-13-CHRISTOLOGICAL-INFERENCE",
+      "relationType": "LIMITS_INFERENCE",
+      "rationale": "Shared Alpha/Omega title does not erase explicit Lord God speech cue in 1:8 versus contextual inference in 22:13.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-REV-1-TR-PRINTED",
+      "fromClaimId": "CLM-REV1-8-LORD-GOD-ALPHA",
+      "toClaimId": "CLM-REV1-8-SBL-TR-EXPANSION",
+      "relationType": "CONTRASTS_PRINTED_EDITION",
+      "rationale": "TR1550 longer 1:8 cannot silently rewrite the attested SBLGNT 1:8 verse.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-ELOHIM-YHWH-OTHER",
+      "fromClaimId": "CLM-GEN1-DEUT6-DIVINE-ELOHIM",
+      "toClaimId": "CLM-EX20-OTHER-GODS-NEGATIVE",
+      "relationType": "CONTRASTS_REFERENT",
+      "rationale": "Same plural-shaped lexeme can designate the creator YHWH or other gods depending on verb agreement and discourse; no morphological shortcut.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-EL-YHWH-FOREIGN",
+      "fromClaimId": "CLM-EX34-DEUT32-POSITIVE-EL",
+      "toClaimId": "CLM-DEUT32-12-FOREIGN-EL-NEGATED",
+      "relationType": "CONTRASTS_REFERENT",
+      "rationale": "YHWH in Ex34:6 and Deut32:4 versus a foreign god whose presence is explicitly denied in Deut32:12.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-GIDEON-YHWH-BAAL-ALTAR",
+      "fromClaimId": "CLM-JUD6-23-24-PEACE-ALTAR",
+      "toClaimId": "CLM-JUD6-25-BAAL-ALTAR-DISTINCTION",
+      "relationType": "CONTRASTS_NAMED_OBJECT",
+      "rationale": "Gideon names a new YHWH-shalom altar in 6:24 and is instructed to destroy his father's Baal altar in 6:25. Distinct cult objects.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-GEN35-PLACE-JUD6-ALTAR",
+      "fromClaimId": "CLM-GEN35-7-EL-BETHEL-PLACE",
+      "toClaimId": "CLM-JUD6-23-24-PEACE-ALTAR",
+      "relationType": "CONTRASTS_NAMED_OBJECT",
+      "rationale": "Gen35:7 explicitly names a place, Jud6:24 explicitly names an altar; do not force a single naming type based on sacred vocabulary.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-RAPHA-EXODUS-JEREMIAH-VOICE",
+      "fromClaimId": "CLM-EX15-26-YHWH-HEALER",
+      "toClaimId": "CLM-JER17-14-HEAL-ME-PRAYER",
+      "relationType": "CONTRASTS_SPEAKER_EVIDENCE",
+      "rationale": "Ex15:26 YHWH addresses Israel, Jer17:14 Jeremiah requests healing FROM YHWH. Root identity does not turn prayer into divine first-person speech.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-YHWH-SANCTIFY-HEAL-SUFFIX",
+      "fromClaimId": "CLM-EX15-26-YHWH-HEALER",
+      "toClaimId": "CLM-EX31-LEV20-YHWH-SANCTIFIES",
+      "relationType": "CONTRASTS_GRAMMATICAL_FORM",
+      "rationale": "רֹפְאֶךָ has the second-person masculine singular suffix; מְקַדִּשְׁכֶם has second-person masculine plural. Context and addressee cannot be flattened.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-PS23-JOHN10-SHEPHERD-BOUNDARY",
+      "fromClaimId": "CLM-PS23-YHWH-MY-SHEPHERD",
+      "toClaimId": "CLM-JOHN10-JESUS-GOOD-SHEPHERD",
+      "relationType": "LIMITS_INFERENCE",
+      "rationale": "Thematic canonical connection does not prove Hebrew and Greek are the same original-language clause, nor does it erase the difference between psalmist and Jesus as speaker.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-JOHN6-JOHN18-SITUATION",
+      "fromClaimId": "CLM-JOHN6-20-ASSURANCE",
+      "toClaimId": "CLM-JOHN18-5-ARREST-IDENTITY",
+      "relationType": "LIMITS_INFERENCE",
+      "rationale": "The same formula in a fearful disciple scene and in an arrest identity-answer scene is not one speech act or automatically the same theological allusion.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-JOHN18-5-6-REPRISE",
+      "fromClaimId": "CLM-JOHN18-5-ARREST-IDENTITY",
+      "toClaimId": "CLM-JOHN18-6-NARRATOR-REPRISE",
+      "relationType": "LIMITS_INFERENCE",
+      "rationale": "The narrator in 18:6 cites the utterance of 18:5 when relating the party's fall; this cannot be counted as a second independent 'I am' statement.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-JOHN18-6-8-AGENCY",
+      "fromClaimId": "CLM-JOHN18-6-NARRATOR-REPRISE",
+      "toClaimId": "CLM-JOHN18-8-IDENTITY-AND-RELEASE",
+      "relationType": "CONTRASTS_SPEAKER_EVIDENCE",
+      "rationale": "John18:6 narrates and reports the earlier quote; John18:8 quotes Jesus directly, adding his protection request.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-JOHN9-JOHN18-IDENTIFICATION",
+      "fromClaimId": "CLM-JOHN9-9-HUMAN-EGO-EIMI",
+      "toClaimId": "CLM-JOHN18-5-ARREST-IDENTITY",
+      "relationType": "CONTRASTS_REFERENT",
+      "rationale": "The previously blind man uses the same self-identification wording in John9:9; Jesus is speaker in John18:5, so wording alone cannot establish a divine lexeme.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-JOHN6-JOHN8-LXX-BOUNDARY",
+      "fromClaimId": "CLM-JOHN6-20-ASSURANCE",
+      "toClaimId": "CLM-LXX-EX3-JOHN8-DIFFERENT-CLAUSES",
+      "relationType": "LIMITS_INFERENCE",
+      "rationale": "John6:20 contains a short identity/assurance clause; the Greek Ex3:14 full wording and John8:58 intertext need independent investigation, not automatic equivalence.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-GEN22-8-PLACE-NAMING-BOUNDARY",
+      "fromClaimId": "CLM-GEN22-8-ABRAHAM-PROVISION-ANSWER",
+      "toClaimId": "CLM-GEN22-14-PLACE-NAME",
+      "relationType": "CONTRASTS_NAMED_OBJECT",
+      "rationale": "Gen22:8 is Abraham's answer to Isaac without object naming; the named object in Gen22:14 is explicitly the place, not the altar.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-GEN22-NAME-NIPHAL-DISTINCTION",
+      "fromClaimId": "CLM-GEN22-14-PLACE-NAME",
+      "toClaimId": "CLM-GEN22-14-MOUNTAIN-NIPHAL",
+      "relationType": "CONTRASTS_GRAMMATICAL_FORM",
+      "rationale": "Gen22:14 active Qal יִרְאֶה in place-name and Niphal יֵרָאֶה in subsequent communal mountain saying must remain distinct printed forms.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-EX17-ALTAR-VERSE16-CONTEXT",
+      "fromClaimId": "CLM-EX17-15-ALTAR-MT-LXX",
+      "toClaimId": "CLM-EX17-16-MT-HAND-THRONE-CRUX",
+      "relationType": "LIMITS_INFERENCE",
+      "rationale": "Moses' 17:15 naming of an altar is distinct from the difficult explanatory clause in 17:16; proposed נֵס is not the written MT כֵּס.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-EX17-MT-LXX-SECRET-HAND",
+      "fromClaimId": "CLM-EX17-16-MT-HAND-THRONE-CRUX",
+      "toClaimId": "CLM-EX17-16-LXX-HIDDEN-HAND",
+      "relationType": "CONTRASTS_PRINTED_EDITION",
+      "rationale": "Printed MT wording in hand/throne/Yah differs from printed LXX secret-hand explanation; this does not independently establish a distinct ancient Vorlage.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-SHADDAI-SELF-BLESSING",
+      "fromClaimId": "CLM-ELSHADDAI-GEN17-35-DIVINE-SELF",
+      "toClaimId": "CLM-ELSHADDAI-GEN28-ISAAC-BLESSING",
+      "relationType": "CONTRASTS_SPEAKER_EVIDENCE",
+      "rationale": "Two direct divine identification speeches differ from Isaac's human blessing.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-SHADDAI-GEN-EX6",
+      "fromClaimId": "CLM-ELSHADDAI-GEN17-35-DIVINE-SELF",
+      "toClaimId": "CLM-ELSHADDAI-EX6-RETROSPECTIVE-REVELATION",
+      "relationType": "LIMITS_INFERENCE",
+      "rationale": "The retrospect in Ex6:3 alongside Genesis first-person forms does not resolve historical revelation or the contested name-knowledge issue by fiat.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-SABAOTH-SHILOH-BATTLE",
+      "fromClaimId": "CLM-SABAOTH-1SAM1-3-NARRATOR-WORSHIP",
+      "toClaimId": "CLM-SABAOTH-1SAM17-45-DAVID-BATTLE",
+      "relationType": "CONTRASTS_SPEAKER_EVIDENCE",
+      "rationale": "Third-person Shiloh worship narration differs from David addressing Goliath.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-SABAOTH-BATTLE-SERAPHIM",
+      "fromClaimId": "CLM-SABAOTH-1SAM17-45-DAVID-BATTLE",
+      "toClaimId": "CLM-SABAOTH-ISA6-3-SERAPHIM-HYMN",
+      "relationType": "CONTRASTS_SPEAKER_EVIDENCE",
+      "rationale": "David's battle invocation differs from the seraphim's heavenly holiness hymn.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-SABAOTH-SERAPHIM-ZECH",
+      "fromClaimId": "CLM-SABAOTH-ISA6-3-SERAPHIM-HYMN",
+      "toClaimId": "CLM-SABAOTH-ZECH10-3-PROPHETIC-VOICE",
+      "relationType": "CONTRASTS_SPEAKER_EVIDENCE",
+      "rationale": "Seraphim call one another versus Zechariah's first/third-person prophetic speech contexts.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-SABAOTH-ISA6-ROM9-QUOTE",
+      "fromClaimId": "CLM-SABAOTH-ISA6-3-SERAPHIM-HYMN",
+      "toClaimId": "CLM-ROM9-29-SABAOTH-ISAIAH",
+      "relationType": "LIMITS_INFERENCE",
+      "rationale": "Romans 9:29 quotes Isaiah 1:9, not the seraphim hymn Isaiah 6:3; a common divine title does not prove direct quotation of Isa6.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-ELYON-PRIESTHOOD-BLESSING",
+      "fromClaimId": "CLM-ELYON-GEN14-18-PRIEST-NARRATOR",
+      "toClaimId": "CLM-ELYON-GEN14-19-20-PRIEST-BLESS-DOXOLOGY",
+      "relationType": "CONTRASTS_SPEAKER_EVIDENCE",
+      "rationale": "Genesis14:18 narrator reports Melchizedek as priest; 14:19–20 Melchizedek speaks blessing and doxology; do not treat narration as an utterance.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-ELYON-MELCHIZEDEK-ABRAM",
+      "fromClaimId": "CLM-ELYON-GEN14-19-20-PRIEST-BLESS-DOXOLOGY",
+      "toClaimId": "CLM-ELYON-GEN14-22-ABRAM-YHWH-OATH",
+      "relationType": "CONTRASTS_SPEAKER_EVIDENCE",
+      "rationale": "Melchizedek's blessing/doxology differs from Abram's oath to the king of Sodom with YHWH explicitly in the MT.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-ELYON-YHWH-ORIGIN-BOUNDARY",
+      "fromClaimId": "CLM-ELYON-GEN14-18-PRIEST-NARRATOR",
+      "toClaimId": "CLM-ELYON-GEN14-22-ABRAM-YHWH-OATH",
+      "relationType": "LIMITS_INFERENCE",
+      "rationale": "Abram's oath joins YHWH+El Elyon in printed MT, but that does not independently settle ancient historical identity of Melchizedek's cult or prove/disprove Cargill's attributed gloss hypothesis.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-QANNA-NAME-VERSUS-ATTRIBUTE",
+      "fromClaimId": "CLM-QANNA-EX34-14-NAME-CHARACTER",
+      "toClaimId": "CLM-QANNA-DEUT4-24-MOSES-WARNING",
+      "relationType": "CONTRASTS_SPEAKER_EVIDENCE",
+      "rationale": "Ex34:14 gives explicit name/character clause inside divine speech; Deut4:24 is Moses' covenantal description with no name clause.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-QANNA-OTHER-GOD-CONTRAST",
+      "fromClaimId": "CLM-EX20-OTHER-GODS-NEGATIVE",
+      "toClaimId": "CLM-QANNA-EX34-14-NAME-CHARACTER",
+      "relationType": "CONTRASTS_REFERENT",
+      "rationale": "Exodus 34:14 distinguishes another worshiped god (לְאֵל אַחֵר) from YHWH, whose name/character is jealous; generic el cannot always be treated as divine YHWH designation.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-DAN7-9-13-APPROACH-DISTINCTION",
+      "fromClaimId": "CLM-DAN7-9-ANCIENT-THRONED-JUDGE",
+      "toClaimId": "CLM-DAN7-13-ANCIENT-SON-OF-MAN-DISTINCT",
+      "relationType": "CONTRASTS_REFERENT",
+      "rationale": "Ancient of Days is the enthroned recipient of approach by a distinct 'like a son of man' visionary figure; theological later reception not identical to grammar.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-DAN7-13-22-ROLE-DISTINCTION",
+      "fromClaimId": "CLM-DAN7-13-ANCIENT-SON-OF-MAN-DISTINCT",
+      "toClaimId": "CLM-DAN7-22-ANCIENT-GRANTS-JUDGMENT",
+      "relationType": "LIMITS_INFERENCE",
+      "rationale": "Ancient of Days in v13 is approached; in v22 arrives and judgment benefits the saints. Shared title does not create a single scene/action nor fix later Christological reception.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-REV1-4-REV1-8-GREETING-VS-QUOTE",
+      "fromClaimId": "CLM-REV1-4-JOHN-GREETING-TRIAD",
+      "toClaimId": "CLM-REV1-8-LORD-GOD-ALPHA",
+      "relationType": "CONTRASTS_SPEAKER_EVIDENCE",
+      "rationale": "Rev1:4 John's greeting contains sources introduced by ἀπὸ; Rev1:8 has the explicit quote attribution λέγει κύριος, ὁ θεός.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-REV1-8-REV21-22-DIVINE-TITLE",
+      "fromClaimId": "CLM-REV1-8-LORD-GOD-ALPHA",
+      "toClaimId": "CLM-REV21-22-LORD-GOD-LAMB-TEMPLE",
+      "relationType": "CONTRASTS_SPEAKER_EVIDENCE",
+      "rationale": "Rev1:8 God is directly named speaker whereas Rev21:22 John narrates a temple vision, with Lord God Almighty alongside Lamb.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-REV21-6-REV21-22-NARRATOR-CUE",
+      "fromClaimId": "CLM-REV21-6-THRONE-SPEAKER",
+      "toClaimId": "CLM-REV21-22-LORD-GOD-LAMB-TEMPLE",
+      "relationType": "CONTRASTS_SPEAKER_EVIDENCE",
+      "rationale": "Rev21:5–6 direct speech of throne-sitter introduced by narrator versus Rev21:22 John narrating the city's absent temple.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-DAN7-13-REV21-22-ONTOLOGY-CAUTION",
+      "fromClaimId": "CLM-DAN7-13-ANCIENT-SON-OF-MAN-DISTINCT",
+      "toClaimId": "CLM-REV21-22-LORD-GOD-LAMB-TEMPLE",
+      "relationType": "LIMITS_INFERENCE",
+      "rationale": "Daniel's Ancient and an approaching son-of-man-like figure, and Revelation's Lord God/Lamb coordinated as temple, are literary scenes with distinct lexemes; cross-testament Christology requires separate evidence, not automatic lexical identity.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-ADONAI-PRAYER-THRONE",
+      "fromClaimId": "CLM-ADONAI-EX34-9-MOSES-PRAYER",
+      "toClaimId": "CLM-ADONAI-ISA6-1-VISION",
+      "relationType": "CONTRASTS_SPEAKER_EVIDENCE",
+      "rationale": "Moses' two prayer addresses to YHWH differ from Isaiah's reporting seeing Adonai as an object, not two direct divine utterances.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-ADONAI-ADONEINU-SUFFIX",
+      "fromClaimId": "CLM-ADONAI-EX34-9-MOSES-PRAYER",
+      "toClaimId": "CLM-ADONAI-PS8-2-OUR-LORD-SUFFIX",
+      "relationType": "CONTRASTS_GRAMMATICAL_FORM",
+      "rationale": "Psalm8 אֲדֹנֵינוּ with communal first-person suffix is not vocalized אֲדֹנָי in Exodus34 nor the human honorific אֲדֹנִי in Genesis23.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-QEDOSH-ACCUSATION-ORACLE",
+      "fromClaimId": "CLM-QEDOSH-ISA1-4-REJECTED-HOLY",
+      "toClaimId": "CLM-QEDOSH-ISA43-3-GOD-SELF-SAVIOR",
+      "relationType": "CONTRASTS_SPEAKER_EVIDENCE",
+      "rationale": "Isaiah1 prophetic indictment names Holy One as rejected object; Isaiah43 YHWH gives first-person identification as Israel's God and Savior.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-QEDOSH-ORACLE-REDEEMER",
+      "fromClaimId": "CLM-QEDOSH-ISA43-3-GOD-SELF-SAVIOR",
+      "toClaimId": "CLM-QEDOSH-ISA47-4-REDEEMER-DOXOLOGY",
+      "relationType": "CONTRASTS_SPEAKER_EVIDENCE",
+      "rationale": "Isa43 divine self-declaration differs from Isa47 poetically placed plural-community Redeemer intervention with literary voice requiring review.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-QEDOSH-REDEEMER-SABAOTH",
+      "fromClaimId": "CLM-QEDOSH-ISA47-4-REDEEMER-DOXOLOGY",
+      "toClaimId": "CLM-SABAOTH-ISA6-3-SERAPHIM-HYMN",
+      "relationType": "CONTRASTS_SPEAKER_EVIDENCE",
+      "rationale": "Isa47 community/narrative Redeemer YHWH Sabaoth line cannot be recast as the angelic Isa6 holiness hymn simply because YHWH of hosts appears in both.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-YAH-EX15-PS68-PREFIX",
+      "fromClaimId": "CLM-YAH-EX15-2-SUNG-ABBREVIATED-NAME",
+      "toClaimId": "CLM-YAH-PS68-5-BET-NAME-CONJECTURE",
+      "relationType": "CONTRASTS_GRAMMATICAL_FORM",
+      "rationale": "Ex15 song records a free Yah while Ps68:5 MT records prefixed bet Yah; NET suggested ki substitution is not the printed Hebrew line.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-YAH-PS68-YHWH-SHORT-NAME",
+      "fromClaimId": "CLM-YAH-PS68-5-BET-NAME-CONJECTURE",
+      "toClaimId": "CLM-EX3-15-DIVINE-NAME",
+      "relationType": "LIMITS_INFERENCE",
+      "rationale": "Yah is a shortened biblical name designation associated with YHWH; the common divine referent does not make an unrelated deity or settle the historical vocalization of the full tetragrammaton.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-HAGAR-ELROI-BEER-WELL",
+      "fromClaimId": "CLM-GEN16-13-HAGAR-YHWH-NAME-CALLING",
+      "toClaimId": "CLM-GEN22-14-PLACE-NAME",
+      "relationType": "CONTRASTS_NAMED_OBJECT",
+      "rationale": "Genesis16:13 Hagar explicitly calls YHWH's name, Genesis16:14 separately names a well; Genesis22:14 Abraham names a place, not a new divine utterance.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-HAGAR-ELROI-SHEPHERD-ROOT",
+      "fromClaimId": "CLM-GEN16-13-HAGAR-YHWH-NAME-CALLING",
+      "toClaimId": "CLM-PS23-YHWH-MY-SHEPHERD",
+      "relationType": "LIMITS_INFERENCE",
+      "rationale": "El Roi Hagar seeing root ראה is distinct from psalm shepherd רעה; transliteration similarity is not common Hebrew etymology.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-EL-OLAM-NAME-PLACE",
+      "fromClaimId": "CLM-GEN21-33-ABRAHAM-EL-OLAM-INVOCATION",
+      "toClaimId": "CLM-GEN22-14-PLACE-NAME",
+      "relationType": "CONTRASTS_NAMED_OBJECT",
+      "rationale": "Abraham calls YHWH El Olam's name in Genesis21:33; Gen22:14 explicitly names a different place, showing naming-object difference.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-ELROI-ELOLAM-SPEAKER",
+      "fromClaimId": "CLM-GEN16-13-HAGAR-YHWH-NAME-CALLING",
+      "toClaimId": "CLM-GEN21-33-ABRAHAM-EL-OLAM-INVOCATION",
+      "relationType": "CONTRASTS_SPEAKER_EVIDENCE",
+      "rationale": "Hagar addresses/calls YHWH in Gen16:13; Abraham invokes YHWH in Gen21:33. Distinct speakers/context, not two YHWH self-speeches.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-EL-GIBBOR-ROYAL-VS-REMNANT",
+      "fromClaimId": "CLM-ISA9-5-ROYAL-NAME-EL-GIBBOR",
+      "toClaimId": "CLM-ISA10-21-REMNANT-TO-MIGHTY-GOD",
+      "relationType": "CONTRASTS_NAMED_OBJECT",
+      "rationale": "Isa9:5 child-naming context with disputed allocation of titles differs from Isa10:21 clear God-referent in remnant's return, not a proof deciding all Isa9 messianic questions.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-YHWH-YAH-EX15-HYMN",
+      "fromClaimId": "CLM-YAH-EX15-2-SUNG-ABBREVIATED-NAME",
+      "toClaimId": "CLM-EX15-3-YHWH-NAME-IN-MOSES-ISRAEL-SONG",
+      "relationType": "CONTRASTS_GRAMMATICAL_FORM",
+      "rationale": "Ex15:2 יָהּ and Ex15:3 יְהוָה שְׁמוֹ are adjacent short/full divine designations in same hymn; neither creates a separate god or two direct divine self naming acts.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-DEUT32-ELOAH-FAITHFULNESS",
+      "fromClaimId": "CLM-DEUT32-15-ELOAH-REJECTED-CREATOR",
+      "toClaimId": "CLM-DEUT32-4-EL-EMUNAH-FAITHFUL-ROCK",
+      "relationType": "LIMITS_INFERENCE",
+      "rationale": "Same Song of Moses describes faithful creator/Rock in v4 and rejected Eloah/Rock in v15; the roles differ by speech act, not divine identity.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-DEUT32-EMUNAH-ROCK",
+      "fromClaimId": "CLM-DEUT32-4-EL-EMUNAH-FAITHFUL-ROCK",
+      "toClaimId": "CLM-DEUT32-ROCK-DIVINE-METAPHOR",
+      "relationType": "LIMITS_INFERENCE",
+      "rationale": "God of faithfulness and the Rock are positive predicates in the same song; attribute is not a second unrelated divine proper name.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-DAN2-GODOFHEAVEN-DAN7-ARAMAIC",
+      "fromClaimId": "CLM-DAN2-18-19-ELAH-SHMAYA-PETITION-PRAISE",
+      "toClaimId": "CLM-DAN7-9-ANCIENT-THRONED-JUDGE",
+      "relationType": "LIMITS_INFERENCE",
+      "rationale": "Daniel 2 human request/blessing for God of heaven and Daniel 7 visionary Ancient of Days are distinct Aramaic designations/context; linguistic similarity as referring to God does not prove a word-for-word identity.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-PS42-LIVING-PS27-LIGHT",
+      "fromClaimId": "CLM-PS42-3-EL-HAY-LIVING-GOD-THIRST",
+      "toClaimId": "CLM-PS27-1-YHWH-ORI-POETIC-PREDICATES",
+      "relationType": "CONTRASTS_GRAMMATICAL_FORM",
+      "rationale": "Ps42 לְאֵל חָי object of longing with lamed versus Ps27 YHWH light/salvation with first-person suffixes; neither is naming in direct divine speech.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-ISA63-AVINU-NT-ABBA",
+      "fromClaimId": "CLM-ISA63-16-AVINU-YHWH-COMMUNAL-FATHER",
+      "toClaimId": "CLM-ABBA-THREE-PRAYER-SUBJECTS",
+      "relationType": "LIMITS_INFERENCE",
+      "rationale": "Isaiah Hebrew collective 'our Father' prayer differs from NT Aramaic Abba in Greek transliteration; shared fatherhood theology not identical linguistic surface or prayer speaker.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-PS27-LIGHT-PS23-SHEPHERD",
+      "fromClaimId": "CLM-PS27-1-YHWH-ORI-POETIC-PREDICATES",
+      "toClaimId": "CLM-PS23-YHWH-MY-SHEPHERD",
+      "relationType": "LIMITS_INFERENCE",
+      "rationale": "YHWH my light and YHWH my shepherd are distinct Psalm images for one God; neither lexical phrase automatically a separate proper personal name.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-EX34-MERCY-MOSES-ADONAI",
+      "fromClaimId": "CLM-EX34-6-YHWH-RAHUM-HANNUN-NAME-ATTRIBUTES",
+      "toClaimId": "CLM-ADONAI-EX34-9-MOSES-PRAYER",
+      "relationType": "CONTRASTS_SPEAKER_EVIDENCE",
+      "rationale": "Divine proclamation in Ex34:6 versus Moses' two Adonai prayer addresses in Ex34:9; the actors are not interchangeable.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-EX34-MERCY-QANNA-CHARACTER",
+      "fromClaimId": "CLM-EX34-6-YHWH-RAHUM-HANNUN-NAME-ATTRIBUTES",
+      "toClaimId": "CLM-QANNA-EX34-14-NAME-CHARACTER",
+      "relationType": "LIMITS_INFERENCE",
+      "rationale": "Ex34:6 name proclamation with attributes and Ex34:14 'jealous is His name' covenant naming clause are related descriptors, not grounds for inventing multiple separate gods or proper names from each adjective.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-JOHN11-JOHN10-CHRIST-PREDICATES",
+      "fromClaimId": "CLM-JOHN11-25-JESUS-RESURRECTION-LIFE-PREDICATES",
+      "toClaimId": "CLM-JOHN10-JESUS-GOOD-SHEPHERD",
+      "relationType": "LIMITS_INFERENCE",
+      "rationale": "Jesus' I-am resurrection/life self-predication to Martha and Good Shepherd discourse in John10 are different explicit predicates, not identical verse speech situations.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-JOHN11-JOHN9-HUMAN-IDENTIFICATION",
+      "fromClaimId": "CLM-JOHN11-25-JESUS-RESURRECTION-LIFE-PREDICATES",
+      "toClaimId": "CLM-JOHN9-9-HUMAN-EGO-EIMI",
+      "relationType": "CONTRASTS_SPEAKER_EVIDENCE",
+      "rationale": "John11 Jesus speaks two Christological predicates, whereas John9 restored blind human uses ego eimi as an identity response; shared verb alone is not exclusive YHWH proper-name formula.",
+      "publicationState": "BLOCKED"
+    }
+  ]
+}

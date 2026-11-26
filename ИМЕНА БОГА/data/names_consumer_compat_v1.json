@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "id": "NG02_CONSUMER_COMPATIBILITY_WITNESS_V1",
+  "createdAt": "2026-11-07",
+  "status": "INTERNAL_RESEARCH_CONTRACT_VERIFIED_EXTERNAL_CONSUMERS_NOT_ATTESTED",
+  "scope": "SOURCE_CONTROL_INTERNAL_ONLY_NO_PRODUCTION_RUNTIME_WITNESS",
+  "authority": "RESEARCH_ONLY_NONPRODUCT_NO_LICENSE_OR_MIGRATION_GRANT",
+  "internalEvidence": {
+    "originalAttestations": 105,
+    "originalInlineLocusIds": 50,
+    "originalMissingInlineLocusIds": 55,
+    "internalLocusSnapshotsCovered": 50,
+    "generalSnapshotsWithoutLocusId": 22,
+    "internalContracts": [
+      {
+        "id": "memorial",
+        "path": "data/memorial_attestation_contract_v1.json",
+        "parentKey": "baselineId",
+        "expectedWitnesses": 16,
+        "mode": "PINNED_INLINE_LOCUS"
+      },
+      {
+        "id": "speech",
+        "path": "data/speech_intertext_contract_v1.json",
+        "parentKey": "baselineId",
+        "expectedWitnesses": 12,
+        "mode": "PINNED_INLINE_LOCUS"
+      },
+      {
+        "id": "extension",
+        "path": "data/extension_attestation_contract_v1.json",
+        "parentKey": "extensionId",
+        "expectedWitnesses": 14,
+        "mode": "PINNED_INLINE_LOCUS"
+      },
+      {
+        "id": "core",
+        "path": "data/core_name_lexeme_contract_v1.json",
+        "parentKey": "baselineId",
+        "expectedWitnesses": 8,
+        "mode": "PINNED_INLINE_LOCUS"
+      },
+      {
+        "id": "general",
+        "path": "data/attestation_contract_v1.json",
+        "parentKey": "baselineId",
+        "expectedWitnesses": 22,
+        "mode": "NO_INLINE_LOCUS_GENERIC_WITNESS"
+      }
+    ]
+  },
+  "externalCandidates": [
+    {
+      "repo": "FedorMilovanov/gb-is-my-strength",
+      "branch": "main",
+      "search": "locusId;names_locus_compat;ИМЕНА БОГА",
+      "evidenceLevel": "READ_ONLY_INDEX_AND_TREE_SEARCH_NO_DIRECT_MATCH_NOT_RUNTIME_PROOF",
+      "consumerContract": "NOT_ATTESTED"
+    },
+    {
+      "repo": "FedorMilovanov/TheLegendaryPoet",
+      "branch": "main",
+      "search": "locusId",
+      "evidenceLevel": "READ_ONLY_INDEX_AND_TREE_SEARCH_NO_DIRECT_MATCH_NOT_RUNTIME_PROOF",
+      "consumerContract": "NOT_ATTESTED"
+    },
+    {
+      "repo": "FedorMilovanov/FedorMilovanov.github.io",
+      "branch": "main",
+      "search": "locusId",
+      "evidenceLevel": "READ_ONLY_INDEX_AND_TREE_SEARCH_NO_DIRECT_MATCH_NOT_RUNTIME_PROOF",
+      "consumerContract": "NOT_ATTESTED"
+    }
+  ],
+  "sourceControlSnapshots": {
+    "checkedAt": "2026-11-07",
+    "method": "GITHUB_PINNED_COMMIT_AND_BLOB_READ_ONLY_NO_DEPLOY_OR_BUNDLE_TEST",
+    "status": "SCOPED_SOURCE_ENTRYPOINTS_READ_NOT_CONSUMER_ATTESTATION",
+    "candidates": [
+      {
+        "repo": "FedorMilovanov/gb-is-my-strength",
+        "revisionSha": "5e2db6f0fdd0257818f1a215fca16d4cc884e2d8",
+        "readScope": "SELECTED_SOURCE_ENTRYPOINTS_ONLY_NOT_BUILD_OR_RUNTIME",
+        "observation": "NO_DIRECT_NAMES_CORPUS_IMPORT_IN_INSPECTED_FILES",
+        "runtimeVerified": false,
+        "inspectedFiles": [
+          {
+            "path": "src/pages/index.astro",
+            "blobSha": "dba91b0d51d84d00d3541d493cd6687386177bdb"
+          },
+          {
+            "path": "src/data/site.ts",
+            "blobSha": "0f2713923979bbc14c8821c23c8208de42bbf4c9"
+          },
+          {
+            "path": "src/pages/app/index.astro",
+            "blobSha": "b1803910fb4240b664cc34aa33dc94e767df3d78"
+          }
+        ]
+      },
+      {
+        "repo": "FedorMilovanov/TheLegendaryPoet",
+        "revisionSha": "46c66f2251168d5aaebe1455b5ba96dad5a8c884",
+        "readScope": "SELECTED_SOURCE_ENTRYPOINTS_ONLY_NOT_BUILD_OR_RUNTIME",
+        "observation": "NO_DIRECT_NAMES_CORPUS_IMPORT_IN_INSPECTED_FILES",
+        "runtimeVerified": false,
+        "inspectedFiles": [
+          {
+            "path": "src/routes/routeModules.ts",
+            "blobSha": "fe54ccfea147aa23f716a34cfad88e5020342bf0"
+          },
+          {
+            "path": "src/routes/route-contract.json",
+            "blobSha": "5ba44865039a66b2f1c7de733f799b300ececfd2"
+          },
+          {
+            "path": "src/App.tsx",
+            "blobSha": "b524046498c1a94b83a88b6119b8fdce49c624f6"
+          }
+        ]
+      },
+      {
+        "repo": "FedorMilovanov/FedorMilovanov.github.io",
+        "revisionSha": "117314ef8a927d6eacfd135e1dfd347873c1cea0",
+        "readScope": "SELECTED_SOURCE_ENTRYPOINTS_ONLY_NOT_BUILD_OR_RUNTIME",
+        "observation": "NO_DIRECT_NAMES_CORPUS_IMPORT_IN_INSPECTED_FILES",
+        "runtimeVerified": false,
+        "inspectedFiles": [
+          {
+            "path": "index.html",
+            "blobSha": "96b66e22f9ed7bbe1638c89d485c2b885d9d9b30"
+          },
+          {
+            "path": "portfolio/index.html",
+            "blobSha": "43d7a1a57a440fcd3b3ca3678b2b6ff0fe7fe613"
+          }
+        ]
+      }
+    ]
+  },
+  "v2Gate": {
+    "approval": "BLOCKED_PENDING_EXTERNAL_CONSUMER_CONTRACT",
+    "automaticInlineBackfill": false,
+    "compatibilityRule": "V1_INLINE_50_AND_ABSENT_55_IMMUTABLE_V2_REQUIRES_EXPLICIT_DUAL_READ_VERSIONING",
+    "deploymentEvidence": "NONE",
+    "productApprovals": 0,
+    "criticalManuscriptCollations": 0,
+    "rightsGrant": "NOT_ESTABLISHED",
+    "externalConsumerVerification": "NOT_COMPLETED",
+    "nextAction": "Obtain exact Product/Arena consumer repo/build/deployment, test real import and dual-read contract on pinned revision, approve migration explicitly; until then no Product changes."
+  }
+}
