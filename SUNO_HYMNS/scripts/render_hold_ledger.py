@@ -3,6 +3,8 @@
 
 Читает source-registry и claim-ledger, пишет Markdown-зеркало. Реестры не меняет.
 Запуск:  python3 scripts/render_hold_ledger.py
+Проверка без записи: python3 scripts/render_hold_ledger.py --check
+(сверяет зеркало с реестрами; расхождение только в дате сборки считается нормой)
 
 Зеркало нужно затем, чтобы расхождение между тем, что заявлено в досье, и тем, что
 действительно не проверено, было видно в один взгляд: HOLD, о котором забыли, — это
@@ -12,6 +14,8 @@
 import datetime
 import json
 import pathlib
+import re
+import sys
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 SRC_JSON = ROOT / "data" / "source-registry-v1.json"
@@ -124,13 +128,36 @@ def main():
                "прямо оговаривается в тексте рубрики.")
     out.append("")
 
-    OUT.write_text("\n".join(out) + "\n", encoding="utf-8")
+    text = "\n".join(out) + "\n"
+
+    if "--check" in sys.argv[1:]:
+        if not OUT.exists():
+            print(f"FAIL: нет {OUT.relative_to(ROOT)}", file=sys.stderr)
+            return 1
+        on_disk = OUT.read_text(encoding="utf-8")
+        if on_disk == text:
+            print("SUNO hold ledger: PASS (зеркало совпадает с реестрами)")
+            return 0
+        # Дата сборки меняется каждый день и не является расхождением по существу.
+        strip_date = lambda t: re.sub(r"сборка от \d{4}-\d{2}-\d{2}", "сборка от <дата>", t)
+        if strip_date(on_disk) == strip_date(text):
+            print("SUNO hold ledger: PASS (расходится только дата сборки)")
+            return 0
+        print(
+            f"FAIL: {OUT.relative_to(ROOT)} не совпадает с реестрами; "
+            "пересобрать: python3 scripts/render_hold_ledger.py",
+            file=sys.stderr,
+        )
+        return 1
+
+    OUT.write_text(text, encoding="utf-8")
     print(f"собрано: {OUT.relative_to(ROOT)}; "
           f"ARCHIVE={src_counts['ARCHIVE_HOLD']}/{clm_counts['ARCHIVE_HOLD']} "
           f"LOCATOR={src_counts['LOCATOR_HOLD']}/{clm_counts['LOCATOR_HOLD']} "
           f"EVIDENCE={src_counts['EVIDENCE_HOLD']}/{clm_counts['EVIDENCE_HOLD']} "
           f"RIGHTS={src_counts['RIGHTS_HOLD']}/{clm_counts['RIGHTS_HOLD']}")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

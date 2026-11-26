@@ -1,7 +1,7 @@
 # РУССКИЕ БАПТИСТЫ — архив и точка восстановления
 
 **Статус:** активный исследовательский корпус  
-**Канонический каталог:** [Google Sheets MASTER ARCHIVE CATALOG](https://docs.google.com/spreadsheets/d/1y9d_7bWAEsz8iYdMuRrtb6onDYEXLQx5PgT95oYNsSM/edit)  
+**Канонический каталог:** [Google Sheets MASTER ARCHIVE CATALOG](https://docs.google.com/spreadsheets/d/1y9d_7bWAEsz8iYdMuRrtb6onDYEXLQx5PgT95oYNsSM/edit) — живой, `version` 313, изменён 2026-08-19; одноимённый «FINAL SNAPSHOT … 2026-07-31 17-40 MSK» (`1tfS6Ephz1bNLublaRjuNvP032eJyo-Yr8uc6ZvSpu_g`) — замороженная копия того же каталога на 31 июля, после создания не менялась, каноном не является (сверка: [`DRIVE_SNAPSHOT_MANIFEST_2026-07-31.md`](RUSSIAN_BAPTISTS_ARCHIVE/DRIVE_SNAPSHOT_MANIFEST_2026-07-31.md), раздел от 2026-11-18)  
 **Детальный аудит «Братского листка»:** [Google Sheets](https://docs.google.com/spreadsheets/d/15L76H5bufK9Pr8EelwO-KZTYXuKX-weKnOh7qV_ze6k/edit)  
 **Канонический evidence ledger:** [`BRATSKY_LISTOK_1906_1910_RESEARCH_LEDGER_2026-07-31.md`](RUSSIAN_BAPTISTS_ARCHIVE/BRATSKY_LISTOK_1906_1910_RESEARCH_LEDGER_2026-07-31.md)  
 **Telegram missing-15 recovery ledger:** [`bratsky_listok_telegram_missing_15_recovery_2026-07-31.csv`](RUSSIAN_BAPTISTS_ARCHIVE/bratsky_listok_telegram_missing_15_recovery_2026-07-31.csv)  

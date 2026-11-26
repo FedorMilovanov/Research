@@ -1,0 +1,623 @@
+{
+  "schemaVersion": 1,
+  "artifactId": "RIGHTS-DETERMINATION-MATRIX-2026-11-18",
+  "role": "PROPOSAL_NOT_AUTHORITY",
+  "generatedAt": "2026-11-18",
+  "policy": "AGENT_RULES.md; data/repository-evidence-policy-v2.json; data/artifact-custody-policy-v2.json",
+  "scope": "22 объекта, которые в docs/research/holds/HOLD_INVENTORY.md §4.7 держат только права/публикацию и требуют установления прав. Матрица не меняет rightsState и не снимает ни один HOLD.",
+  "selectionRule": "holds ⊆ {RIGHTS_HOLD, PUBLICATION_HOLD} ∧ accessState=FULL_OBJECT_VERIFIED ∧ locatorState=EXACT_LOCATOR_VERIFIED ∧ rightsState ∈ {RIGHTS_UNKNOWN, PERMISSION_REQUIRED}",
+  "layers": {
+    "work": "Само произведение: автор, дата, срок охраны.",
+    "edition": "Конкретное издание и его аппарат (критическое издание, перевод, редактура).",
+    "scan": "Цифровой объект: скан, транскрипция, OCR и условия оцифровщика.",
+    "site": "Страница-публикатор: вёрстка, примечания, корпус сайта."
+  },
+  "categories": {
+    "PD_WORK_MODERN_TRANSCRIPTION": {
+      "title": "Произведение в общественном достоянии, вопрос только на слое транскрипции",
+      "whatItMeans": "Произведение вышло из-под охраны по дате. Вопрос не «дадут ли разрешение», а «что именно копируется»: если продукт цитирует текст, а не вёрстку/примечания сайта, отдельного разрешения не требуется — требуется записанное основание прав.",
+      "needsCorrespondence": false,
+      "closure": "Владелец записывает rightsBasis (дата произведения + что именно не копируется с сайта) и решает режим цитирования."
+    },
+    "PD_WORK_MODERN_TRANSLATION": {
+      "title": "Произведение в общественном достоянии, вопрос на слое современного перевода",
+      "whatItMeans": "Оригинал XVI–XVII вв. в общественном достоянии, но прочитанная страница содержит современный перевод и/или модернизацию, которые охраняются отдельно. Разрешения требует не произведение, а выбранный перевод.",
+      "needsCorrespondence": false,
+      "closure": "Либо цитировать проверенное PD-издание/перевод (нужен объект-заместитель с проверенным титулом), либо оставить современный перевод как ссылку с атрибуцией и не воспроизводить его текст."
+    },
+    "THIRD_PARTY_MODERN": {
+      "title": "Современный объект третьего лица",
+      "whatItMeans": "Произведение создано в действующий срок охраны и принадлежит конкретному правообладателю. Бесплатного пути нет: либо разрешение, либо отказ от воспроизведения в пользу ссылки и краткой цитаты.",
+      "needsCorrespondence": true,
+      "closure": "Письменное разрешение правообладателя либо решение владельца цитировать в пределах права цитирования с атрибуцией."
+    },
+    "DIGITIZER_NO_LICENSE_DECLARED": {
+      "title": "Скан PD-издания: лицензии нет, статус заявлен",
+      "whatItMeans": "Само издание вышло из-под охраны (титул/колофон проверен визуально). Репозиторий, раздающий файлы сканов, не заявляет лицензии — но выше по цепочке оцифровщик заявил статус предмета (`NOT_IN_COPYRIGHT`, University of Toronto / Robarts). Статус — не лицензия: он говорит, что издание не под охраной, и ничего не разрешает в отношении самих файлов сканов. Незаполненное место нельзя закрыть ссылкой на «проектную» лицензию другого репозитория.",
+      "needsCorrespondence": false,
+      "closure": "Одно из двух: (а) политика владельца по faithful reproduction PD-издания, когда оцифровщик заявил статус, но не лицензию, с записанным обоснованием; (б) получить те же страницы там, где разрешение на переиспользование сканов написано словами, а не выводится из статуса издания."
+    },
+    "RIGHTS_ADMINISTRATOR_NAMED": {
+      "title": "Правообладатель назван, нужен запрос",
+      "whatItMeans": "В репозитории уже зафиксировано, кто распоряжается правами. Дальнейшая работа — переписка, а не поиск.",
+      "needsCorrespondence": true,
+      "closure": "Письменный ответ правообладателя с условиями; до ответа HOLD остаётся."
+    },
+    "REFUSED_BY_RECORDED_FINDING": {
+      "title": "Отказ уже записан",
+      "whatItMeans": "Объект исключён записанным вердиктом. Это не открытый вопрос прав: работы по нему нет, HOLD остаётся как исключение.",
+      "needsCorrespondence": false,
+      "closure": "Ничего не требуется; объект не должен попадать в очередь запросов."
+    }
+  },
+  "entries": [
+    {
+      "id": "SRC-PHOS-CLEM-TEXT",
+      "source": "SUNO_HYMNS/data/source-registry-v1.json",
+      "recordedRightsState": "RIGHTS_UNKNOWN",
+      "recordedHolds": [
+        "RIGHTS_HOLD"
+      ],
+      "what": "Греческий текст гимна Климента Александрийского с параллельным английским переводом, Catholic Library",
+      "layer": "site",
+      "evidenceInRepo": [
+        "Греческий текст прочитан целиком, evidenceClass C, publicationState REFERENCE",
+        "Записанное ограничение: не указано критическое издание, по которому набран текст; английский перевод расходится с греческим (ἀπλανῶν)"
+      ],
+      "gap": "Нет rightsBasis: не записано, что именно охраняется (перевод и вёрстка сайта), и по какому PD-изданию цитировать греческий",
+      "category": "PD_WORK_MODERN_TRANSCRIPTION",
+      "action": "Записать rightsBasis: греческий оригинал — PD; перевод и вёрстка Catholic Library не воспроизводятся. Для цитат найти проверенное PD-издание греческого текста (объект-заместитель, не эта страница)"
+    },
+    {
+      "id": "SRC-PHOS-CLEM-EB1911",
+      "source": "SUNO_HYMNS/data/source-registry-v1.json",
+      "recordedRightsState": "RIGHTS_UNKNOWN",
+      "recordedHolds": [
+        "RIGHTS_HOLD"
+      ],
+      "what": "Encyclopaedia Britannica, 11-е изд. (1910–1911), т. 14, с. 182, статья «Hymns» — вычитанный скан страницы на Wikisource",
+      "layer": "scan",
+      "evidenceInRepo": [
+        "Страница прочитана целиком, evidenceClass C, publicationState REFERENCE",
+        "Источник — скан страницы издания 1911 г. (Wikisource Page:EB1911 Volume 14.djvu/194)"
+      ],
+      "gap": "Нет rightsBasis; не записано, что издание 1911 г. вне охраны и что копируется текст, а не разметка/примечания Wikisource",
+      "category": "PD_WORK_MODERN_TRANSCRIPTION",
+      "action": "Записать rightsBasis: издание 1911 г. — PD по дате; при дословном переносе транскрипции указать Wikisource и её условия"
+    },
+    {
+      "id": "SRC-PHOS-CLEM-MCCLINTOCK",
+      "source": "SUNO_HYMNS/data/source-registry-v1.json",
+      "recordedRightsState": "RIGHTS_UNKNOWN",
+      "recordedHolds": [
+        "RIGHTS_HOLD"
+      ],
+      "what": "McClintock and Strong, Cyclopedia (XIX в.), статья «Stomion Polon Adaon», перепечатка на biblicalcyclopedia.com",
+      "layer": "site",
+      "evidenceInRepo": [
+        "Статья прочитана целиком, evidenceClass C, publicationState REFERENCE",
+        "Записанные дефекты оцифровки: пропущенные придыхания, «18605» вместо 1865"
+      ],
+      "gap": "Нет rightsBasis; не разделены PD-текст XIX в. и современная перепечатка сайта",
+      "category": "PD_WORK_MODERN_TRANSCRIPTION",
+      "action": "Записать rightsBasis: текст XIX в. — PD; перепечатка и её дефекты не воспроизводятся, цитата сверяется по скану издания"
+    },
+    {
+      "id": "SRC-CONF-1689-LBCF",
+      "source": "SUNO_HYMNS/data/source-registry-v1.json",
+      "recordedRightsState": "RIGHTS_UNKNOWN",
+      "recordedHolds": [
+        "RIGHTS_HOLD"
+      ],
+      "what": "Лондонское баптистское исповедание веры 1689 г., гл. 8 и 22 — текст на reformedreader.org",
+      "layer": "site",
+      "evidenceInRepo": [
+        "Обе главы прочитаны целиком, evidenceClass A1, publicationState REFERENCE",
+        "Цитаты с номерами параграфов уже вошли в supports"
+      ],
+      "gap": "Нет rightsBasis; исторический документ 1689 г. не отличён от транскрипции на конкретном сайте",
+      "category": "PD_WORK_MODERN_TRANSCRIPTION",
+      "action": "Записать rightsBasis: документ 1689 г. — PD; сверять цитаты по академическому изданию, а не по сайту"
+    },
+    {
+      "id": "SRC-PHOS-SHOEMAKER-LECTURE-2017",
+      "source": "SUNO_HYMNS/data/source-registry-v1.json",
+      "recordedRightsState": "RIGHTS_UNKNOWN",
+      "recordedHolds": [
+        "RIGHTS_HOLD"
+      ],
+      "what": "Стенограмма лекции С. Шумейкера, Университет Портленда, 31.01.2017 (PDF)",
+      "layer": "work",
+      "evidenceInRepo": [
+        "Все 8 чанков прочитаны, evidenceClass B1, publicationState REFERENCE",
+        "Записанное ограничение: это популярное изложение, а не книга 2016 г."
+      ],
+      "gap": "Нет ни лицензии, ни разрешения; объект создан в действующий срок охраны и принадлежит лектору и/или университету",
+      "category": "THIRD_PARTY_MODERN",
+      "action": "Либо запрос Шумейкеру/университету, либо отказ от воспроизведения: тезис держать на книге Yale 2016 с атрибуцией, а стенограмму не цитировать блоками"
+    },
+    {
+      "id": "SRC-PHOS-EPIPHANIUS-COLLYRIDIANS-LOCATORS",
+      "source": "SUNO_HYMNS/data/source-registry-v1.json",
+      "recordedRightsState": "RIGHTS_UNKNOWN",
+      "recordedHolds": [
+        "RIGHTS_HOLD"
+      ],
+      "what": "Patrick Madrid, «Collyridianism», Catholic Answers Magazine (1994) — пересказ «Панариона» 78–79",
+      "layer": "work",
+      "evidenceInRepo": [
+        "Прочитан целиком, evidenceClass C, publicationState REFERENCE",
+        "Локаторы уже сверены с греческим текстом (SRC-PHOS-EPIPHANIUS-PANARION-78); перевод Williams не открывался"
+      ],
+      "gap": "Нет прав основания; статья 1994 г. охраняется, а её ценность для продукта — только в локаторах",
+      "category": "THIRD_PARTY_MODERN",
+      "action": "Не воспроизводить: локаторы уже перенесены на Епифания, статья остаётся навигационным следом. Записать это как решение, а не как разрешение"
+    },
+    {
+      "id": "CROSSWIRE-RUSSYNODALLIO-1.0.3",
+      "source": "data/bible-corpus-rights-provenance-2026-08-06.json",
+      "recordedRightsState": "PERMISSION_REQUIRED",
+      "recordedHolds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "what": "The SWORD Project module RusSynodalLIO 1.0.3 (2019-01-07)",
+      "layer": "edition",
+      "evidenceInRepo": [
+        "Записанный вердикт: разрешение дано CrossWire, не нижестоящим издателям; «Reject as an unlicensed Product corpus source»",
+        "publicationState=BLOCKED"
+      ],
+      "gap": "Нет — вопрос закрыт записанным отказом",
+      "category": "REFUSED_BY_RECORDED_FINDING",
+      "action": "Ничего: объект не входит в очередь запросов, HOLD остаётся как исключение"
+    },
+    {
+      "id": "RBO-KASSIAN-CATALOG-2039",
+      "source": "data/bible-corpus-rights-provenance-2026-08-06.json",
+      "recordedRightsState": "PERMISSION_REQUIRED",
+      "recordedHolds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "what": "Новый Завет в переводе еп. Кассиана, изд. РБО 2023, ISBN 978-5-7454-1784-9",
+      "layer": "edition",
+      "evidenceInRepo": [
+        "Каталог РБО прямо указывает, что издание вышло с разрешения РБО",
+        "Правообладатель-распорядитель назван: РБО"
+      ],
+      "gap": "Нет письменного разрешения для этого продукта",
+      "category": "RIGHTS_ADMINISTRATOR_NAMED",
+      "action": "Запрос в РБО с указанием объёма (какие книги, какой формат, какое распространение). До ответа — BLOCKED"
+    },
+    {
+      "id": "ONLY-BIBLE-KASSIAN-PERMISSION-NOTICE",
+      "source": "data/bible-corpus-rights-provenance-2026-08-06.json",
+      "recordedRightsState": "PERMISSION_REQUIRED",
+      "recordedHolds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "what": "Библия Онлайн — уведомление о правах на перевод Кассиана",
+      "layer": "site",
+      "evidenceInRepo": [
+        "evidenceClass B1; подтверждает, что онлайн-издатель показывает текст по разрешению и что РБО — распорядитель прав",
+        "Явно записано: это не разрешение для данного продукта"
+      ],
+      "gap": "Нет — объект не требует отдельного запроса, он corroboration к RBO-KASSIAN-CATALOG-2039",
+      "category": "RIGHTS_ADMINISTRATOR_NAMED",
+      "action": "Отдельное письмо не нужно: закрывается тем же ответом РБО, что и основной каталог"
+    },
+    {
+      "id": "dort",
+      "source": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-05.json",
+      "recordedRightsState": "RIGHTS_UNKNOWN",
+      "recordedHolds": [
+        "PUBLICATION_HOLD"
+      ],
+      "what": "Каноны Дортского синода — страница rca.org (современный английский перевод)",
+      "layer": "edition",
+      "evidenceInRepo": [
+        "Захваченный HTML, evidenceClass A3, readScope: Head II art. 1–9 и отклонения I–VII",
+        "Записано: прочитан не весь документ (fullWorkRead=false), collation изданий не выполнялась"
+      ],
+      "gap": "Не назван перевод: охраняется не постановление 1619 г., а английский текст на странице RCA",
+      "category": "PD_WORK_MODERN_TRANSLATION",
+      "action": "Выбрать: цитировать по проверенному PD-переводу (нужен объект-заместитель) либо оставить rca.org ссылкой и не воспроизводить текст"
+    },
+    {
+      "id": "westminster",
+      "source": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-05.json",
+      "recordedRightsState": "RIGHTS_UNKNOWN",
+      "recordedHolds": [
+        "PUBLICATION_HOLD"
+      ],
+      "what": "Вестминстерское исповедание — страница opc.org, readScope III.6–7, VIII.5–8, XI.1–4",
+      "layer": "edition",
+      "evidenceInRepo": [
+        "Захваченный HTML, evidenceClass A3",
+        "Записано: прочитаны только указанные разделы"
+      ],
+      "gap": "Не названа редакция/модернизация: текст 1646/1788 гг. PD, конкретная версия на OPC — нет",
+      "category": "PD_WORK_MODERN_TRANSLATION",
+      "action": "То же: либо PD-редакция как объект-заместитель, либо ссылка без воспроизведения"
+    },
+    {
+      "id": "heidelberg",
+      "source": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-05.json",
+      "recordedRightsState": "RIGHTS_UNKNOWN",
+      "recordedHolds": [
+        "PUBLICATION_HOLD"
+      ],
+      "what": "Гейдельбергский катехизис — страница frcna.org, readScope вопросы 20, 37, 54, 61",
+      "layer": "edition",
+      "evidenceInRepo": [
+        "Захваченный HTML, evidenceClass A3",
+        "Записано: прочитаны четыре вопроса, не весь катехизис"
+      ],
+      "gap": "Не назван перевод (1563 г. — PD, английский текст на FRCNA — нет)",
+      "category": "PD_WORK_MODERN_TRANSLATION",
+      "action": "То же, что для dort/westminster"
+    },
+    {
+      "id": "davenant2024",
+      "source": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-05.json",
+      "recordedRightsState": "RIGHTS_UNKNOWN",
+      "recordedHolds": [
+        "PUBLICATION_HOLD"
+      ],
+      "what": "Davenant Press, «On the Death of Christ» — издательская страница перевода 2024 г.",
+      "layer": "edition",
+      "evidenceInRepo": [
+        "Захваченный HTML, evidenceClass A2, readScope: только описание издателя и сведения о переводчике",
+        "Записано: полный том не читался"
+      ],
+      "gap": "Перевод 2024 г. охраняется; воспроизведение невозможно без разрешения издателя",
+      "category": "THIRD_PARTY_MODERN",
+      "action": "Либо запрос Davenant Press, либо опора на латинский текст/старое издание; страница остаётся библиографической ссылкой"
+    },
+    {
+      "id": "articles39",
+      "source": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-05.json",
+      "recordedRightsState": "RIGHTS_UNKNOWN",
+      "recordedHolds": [
+        "PUBLICATION_HOLD"
+      ],
+      "what": "39 статей — страница anglican.ca, readScope: статья XXXI",
+      "layer": "edition",
+      "evidenceInRepo": [
+        "Захваченный HTML, evidenceClass A3",
+        "Записано: прочитана одна статья"
+      ],
+      "gap": "Не названа редакция: текст 1571/1802 гг. PD, конкретная версия на anglican.ca — нет",
+      "category": "PD_WORK_MODERN_TRANSLATION",
+      "action": "То же: PD-редакция как объект-заместитель либо ссылка без воспроизведения"
+    },
+    {
+      "id": "PUSEY-V1-COLOPHON-JPG",
+      "source": "ИСКУПЛЕНИЕ/evidence/source_controls_wave8_2026-11-03.json",
+      "recordedRightsState": "RIGHTS_UNKNOWN",
+      "recordedHolds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD"
+      ],
+      "what": "Колофон Pusey 1872, Vol. I, с. [ii] — скан i0008 из OGL-репозитория сканов",
+      "layer": "scan",
+      "evidenceInRepo": [
+        "Скан осмотрен визуально: Clarendon Press, «Londini: Apud A. Macmillan et Socios, Typographos Academicos»",
+        "Объект запинен: repo OpenGreekAndLatin/2013-11-26-23-24_operacyrilli03cyriuoft_jp2_OCT7_rev, commit 9f4df68b, sha256 195d23bf…"
+      ],
+      "gap": "Оцифровщик лицензию не заявил, но заявил статус: см. раздел 4 отчёта (IA item `operacyrilli03cyriuoft`, `possible-copyright-status: NOT_IN_COPYRIGHT`, спонсор и держатель скана — University of Toronto, Robarts; у GitHub-зеркала лицензии нет)",
+      "category": "DIGITIZER_NO_LICENSE_DECLARED",
+      "action": "Решение владельца: политика faithful reproduction PD-издания при отсутствии заявленной лицензии оцифровщика, либо переприобретение из источника с явным заявлением о правах"
+    },
+    {
+      "id": "PUSEY-V1-TITLE-JPG",
+      "source": "ИСКУПЛЕНИЕ/evidence/source_controls_wave8_2026-11-03.json",
+      "recordedRightsState": "RIGHTS_UNKNOWN",
+      "recordedHolds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD"
+      ],
+      "what": "Титульный лист Pusey 1872, Vol. I, с. [iii] — скан i0009",
+      "layer": "scan",
+      "evidenceInRepo": [
+        "Скан осмотрен визуально, evidenceClass A1",
+        "Тот же запиненный репозиторий и коммит, что у колофона"
+      ],
+      "gap": "Оцифровщик лицензию не заявил, но заявил статус: см. раздел 4 отчёта (IA item `operacyrilli03cyriuoft`, `possible-copyright-status: NOT_IN_COPYRIGHT`, спонсор и держатель скана — University of Toronto, Robarts; у GitHub-зеркала лицензии нет)",
+      "category": "DIGITIZER_NO_LICENSE_DECLARED",
+      "action": "Та же пара вариантов, что для колофона; закрывать восемь узлов одной политикой, а не по одному"
+    },
+    {
+      "id": "PUSEY-V1-PRAEF-VII-JPG",
+      "source": "ИСКУПЛЕНИЕ/evidence/source_controls_wave8_2026-11-03.json",
+      "recordedRightsState": "RIGHTS_UNKNOWN",
+      "recordedHolds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD"
+      ],
+      "what": "Praefatio Pusey 1872, Vol. I, с. vii — скан i0013",
+      "layer": "scan",
+      "evidenceInRepo": [
+        "Скан осмотрен визуально, evidenceClass A1",
+        "Репозиторий и коммит запинены"
+      ],
+      "gap": "Оцифровщик лицензию не заявил, но заявил статус: см. раздел 4 отчёта (IA item `operacyrilli03cyriuoft`, `possible-copyright-status: NOT_IN_COPYRIGHT`, спонсор и держатель скана — University of Toronto, Robarts; у GitHub-зеркала лицензии нет)",
+      "category": "DIGITIZER_NO_LICENSE_DECLARED",
+      "action": "Одна политика на восемь узлов"
+    },
+    {
+      "id": "PUSEY-V1-PRAEF-VIII-JPG",
+      "source": "ИСКУПЛЕНИЕ/evidence/source_controls_wave8_2026-11-03.json",
+      "recordedRightsState": "RIGHTS_UNKNOWN",
+      "recordedHolds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD"
+      ],
+      "what": "Praefatio Pusey 1872, Vol. I, с. viii — скан i0014",
+      "layer": "scan",
+      "evidenceInRepo": [
+        "Скан осмотрен визуально, evidenceClass A1",
+        "Репозиторий и коммит запинены"
+      ],
+      "gap": "Оцифровщик лицензию не заявил, но заявил статус: см. раздел 4 отчёта (IA item `operacyrilli03cyriuoft`, `possible-copyright-status: NOT_IN_COPYRIGHT`, спонсор и держатель скана — University of Toronto, Robarts; у GitHub-зеркала лицензии нет)",
+      "category": "DIGITIZER_NO_LICENSE_DECLARED",
+      "action": "Одна политика на восемь узлов"
+    },
+    {
+      "id": "PUSEY-V1-PRAEF-IX-JPG",
+      "source": "ИСКУПЛЕНИЕ/evidence/source_controls_wave8_2026-11-03.json",
+      "recordedRightsState": "RIGHTS_UNKNOWN",
+      "recordedHolds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD"
+      ],
+      "what": "Praefatio Pusey 1872, Vol. I, с. ix — скан i0015",
+      "layer": "scan",
+      "evidenceInRepo": [
+        "Скан осмотрен визуально, evidenceClass A1",
+        "Репозиторий и коммит запинены"
+      ],
+      "gap": "Оцифровщик лицензию не заявил, но заявил статус: см. раздел 4 отчёта (IA item `operacyrilli03cyriuoft`, `possible-copyright-status: NOT_IN_COPYRIGHT`, спонсор и держатель скана — University of Toronto, Robarts; у GitHub-зеркала лицензии нет)",
+      "category": "DIGITIZER_NO_LICENSE_DECLARED",
+      "action": "Одна политика на восемь узлов"
+    },
+    {
+      "id": "PUSEY-V1-PRAEF-X-JPG",
+      "source": "ИСКУПЛЕНИЕ/evidence/source_controls_wave8_2026-11-03.json",
+      "recordedRightsState": "RIGHTS_UNKNOWN",
+      "recordedHolds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD"
+      ],
+      "what": "Praefatio Pusey 1872, Vol. I, с. x — скан i0016",
+      "layer": "scan",
+      "evidenceInRepo": [
+        "Скан осмотрен визуально, evidenceClass A1",
+        "Репозиторий и коммит запинены"
+      ],
+      "gap": "Оцифровщик лицензию не заявил, но заявил статус: см. раздел 4 отчёта (IA item `operacyrilli03cyriuoft`, `possible-copyright-status: NOT_IN_COPYRIGHT`, спонсор и держатель скана — University of Toronto, Robarts; у GitHub-зеркала лицензии нет)",
+      "category": "DIGITIZER_NO_LICENSE_DECLARED",
+      "action": "Одна политика на восемь узлов"
+    },
+    {
+      "id": "PUSEY-V1-ERRATUM-JPG",
+      "source": "ИСКУПЛЕНИЕ/evidence/source_controls_wave8_2026-11-03.json",
+      "recordedRightsState": "RIGHTS_UNKNOWN",
+      "recordedHolds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD"
+      ],
+      "what": "Erratum in Praefationem Voluminis I — скан из того же тома",
+      "layer": "scan",
+      "evidenceInRepo": [
+        "Скан осмотрен визуально, evidenceClass A1",
+        "Репозиторий и коммит запинены"
+      ],
+      "gap": "Оцифровщик лицензию не заявил, но заявил статус: см. раздел 4 отчёта (IA item `operacyrilli03cyriuoft`, `possible-copyright-status: NOT_IN_COPYRIGHT`, спонсор и держатель скана — University of Toronto, Robarts; у GitHub-зеркала лицензии нет)",
+      "category": "DIGITIZER_NO_LICENSE_DECLARED",
+      "action": "Одна политика на восемь узлов"
+    },
+    {
+      "id": "PUSEY-V1-CAPITA-JPG",
+      "source": "ИСКУПЛЕНИЕ/evidence/source_controls_wave8_2026-11-03.json",
+      "recordedRightsState": "RIGHTS_UNKNOWN",
+      "recordedHolds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD"
+      ],
+      "what": "Основная страница Pusey 1872, Vol. I, с. 8 — скан i0028 (разметка Aubert, поля, аппарат)",
+      "layer": "scan",
+      "evidenceInRepo": [
+        "Скан осмотрен визуально: внутренние маркеры Aubert, внешние ссылки на Писание, нижний греческий аппарат",
+        "Репозиторий и коммит запинены"
+      ],
+      "gap": "Оцифровщик лицензию не заявил, но заявил статус: см. раздел 4 отчёта (IA item `operacyrilli03cyriuoft`, `possible-copyright-status: NOT_IN_COPYRIGHT`, спонсор и держатель скана — University of Toronto, Robarts; у GitHub-зеркала лицензии нет)",
+      "category": "DIGITIZER_NO_LICENSE_DECLARED",
+      "action": "Одна политика на восемь узлов"
+    }
+  ],
+  "digitizerCheck": {
+    "checkedAt": "2026-11-18",
+    "repository": "OpenGreekAndLatin/2013-11-26-23-24_operacyrilli03cyriuoft_jp2_OCT7_rev",
+    "method": "gh api repos/<repo> (license) и gh api repos/<repo>/contents/ (список корня); только чтение",
+    "observed": {
+      "githubLicenseField": null,
+      "rootEntries": [
+        "2013-11-26-23-24_operacyrilli03cyriuoft_jp2_OCT7_rev.book (dir)"
+      ],
+      "licenseFilePresent": false,
+      "readmePresent": false
+    },
+    "contrast": {
+      "repository": "OpenGreekAndLatin/First1KGreek",
+      "githubLicenseField": "CC-BY-SA-4.0",
+      "note": "Проектная лицензия корпусных репозиториев OGL не переносится на репозитории сканов автоматически: у них лицензия не заявлена вовсе."
+    },
+    "repoStatementOnFile": {
+      "path": "ИСКУПЛЕНИЕ/evidence/source_controls_wave7_2026-11-03.json",
+      "key": "rights.openGreek",
+      "value": "Aggregate CC BY-SA 4.0; project OCR additionally CC BY 4.0 per LICENSE. Selected row license=PD describes underlying edition, not automatic release of all digital components.",
+      "reading": "Это утверждение относится к корпусу OGL, у которого LICENSE есть. Для репозитория сканов оно не подтверждено и не опровергнуто: там LICENSE отсутствует."
+    },
+    "upstream": {
+      "checkedAt": "2026-11-18",
+      "itemId": "operacyrilli03cyriuoft",
+      "metadataUrl": "https://archive.org/metadata/operacyrilli03cyriuoft",
+      "method": "одно чтение метаданных предмета (archive.org metadata API); файлы не скачивались",
+      "observed": {
+        "possibleCopyrightStatus": "NOT_IN_COPYRIGHT",
+        "sponsor": "University of Toronto",
+        "contributor": "Robarts - University of Toronto",
+        "scanningCenter": "uoft",
+        "collections": [
+          "robarts",
+          "toronto",
+          "university_of_toronto"
+        ],
+        "date": "1868",
+        "publisher": "Oxonium : Typ. Clar.",
+        "volume": "3",
+        "language": [
+          "grc",
+          "lat"
+        ]
+      },
+      "reading": "Заявление существует, но оно не лицензия: `possible-copyright-status` — поле статуса предмета, а не разрешение на переиспользование сканов. GitHub-зеркало этого поля не несёт вовсе, поэтому проверка репозитория его и не увидела."
+    },
+    "byteCheck": {
+      "checkedAt": "2026-11-18",
+      "method": "gh api contents по запиненному коммиту 9f4df68b, sha256 локально, затем визуальное чтение титула",
+      "objects": [
+        {
+          "id": "PUSEY-V1-COLOPHON-JPG",
+          "path": "…book/i0008.jpg",
+          "bytes": 43885,
+          "sha256Matched": true
+        },
+        {
+          "id": "PUSEY-V1-TITLE-JPG",
+          "path": "…book/i0009.jpg",
+          "bytes": 85938,
+          "sha256Matched": true
+        }
+      ],
+      "visualRead": "Титул прочитан глазами: «SANCTI PATRIS NOSTRI CYRILLI ARCHIEPISCOPI ALEXANDRINI IN D. JOANNIS EVANGELIUM … EDIDIT POST AUBERTUM PHILIPPUS EDVARDUS PUSEY, A.M.», «VOL. I.», «Oxonii E TYPOGRAPHEO CLARENDONIANO MDCCCLXXII», карандашная помета «Opera. Vol. 3». Библиотечный номер тома (3) и печатный номер (I) расходятся; запись реестра описывает печатный."
+    },
+    "corpusItems": {
+      "checkedAt": "2026-11-18",
+      "method": "одно чтение <archive.org>/metadata/<id>/metadata на предмет; файлы не скачивались",
+      "note": "Предметы, на которые опирается кирилловский корпус. Проверены не все: список охватывает те, что названы в реестрах волн 7–9 и в досье C-25.",
+      "items": [
+        {
+          "id": "operacyrilli03cyriuoft",
+          "volume": "3 (печатный I)",
+          "year": "1868",
+          "publisher": "Oxonium : Typ. Clar.",
+          "possibleCopyrightStatus": "NOT_IN_COPYRIGHT",
+          "copyrightRegion": null,
+          "sponsor": "University of Toronto",
+          "contributor": "Robarts - University of Toronto",
+          "scanningCenter": "uoft",
+          "imagecount": 754,
+          "ppi": 400,
+          "usedFor": "8 узлов PUSEY-V1 (титул, Praefatio, Erratum, Capita)",
+          "qualityNote": "Метаданные предмета: `notes: tight gutter`, `page_number_confidence: 96`. Число кадров у предмета (754) больше числа файлов в GitHub-инвентаре (i0001–i0718): расхождение не объяснено, кадры за пределами 718 не проверялись."
+        },
+        {
+          "id": "operacyrilli04cyriuoft",
+          "volume": "4 (печатный II)",
+          "year": "1868",
+          "publisher": "Oxonium : Typ. Clar.",
+          "possibleCopyrightStatus": "NOT_IN_COPYRIGHT",
+          "copyrightRegion": null,
+          "sponsor": "University of Toronto",
+          "contributor": "Robarts - University of Toronto",
+          "scanningCenter": "uoft",
+          "imagecount": 758,
+          "ppi": 400,
+          "usedFor": "OCR кн. VI–VII; целевые страницы 294–296 = кадры 306–308"
+        },
+        {
+          "id": "operacyrilli05cyriuoft",
+          "volume": "5 (печатный III)",
+          "year": "1868",
+          "publisher": "Oxonium : Typ. Clar.",
+          "possibleCopyrightStatus": "NOT_IN_COPYRIGHT",
+          "copyrightRegion": null,
+          "sponsor": "University of Toronto",
+          "contributor": "Robarts - University of Toronto",
+          "scanningCenter": "uoft",
+          "imagecount": 724,
+          "ppi": 400,
+          "usedFor": "идентификация томов; в выборке корпуса не читался"
+        },
+        {
+          "id": "sanctipatrisnos02pusegoog",
+          "volume": "печатный II (Google, Michigan)",
+          "year": "1872",
+          "publisher": "Oxonii, e typographeo Clarendoniano",
+          "possibleCopyrightStatus": "NOT_IN_COPYRIGHT",
+          "copyrightRegion": "US",
+          "sponsor": "Google",
+          "contributor": "University of Michigan",
+          "scanningCenter": "google",
+          "imagecount": 775,
+          "ppi": null,
+          "usedFor": "второй канал к тем же страницам т. II; в корпусе читался только OCR"
+        },
+        {
+          "id": "indjoannisevang00pusegoog",
+          "volume": "печатный II (Google, Wisconsin)",
+          "year": "1872",
+          "publisher": "Oxonii, e typographeo Clarendoniano",
+          "possibleCopyrightStatus": "NOT_IN_COPYRIGHT",
+          "copyrightRegion": "US",
+          "sponsor": "Google",
+          "contributor": "University of Wisconsin - Madison",
+          "scanningCenter": "google",
+          "imagecount": 709,
+          "ppi": 600,
+          "usedFor": "третий канал к тем же страницам; в корпусе не использовался"
+        },
+        {
+          "id": "patrologiaecurs25hopfgoog",
+          "volume": "74",
+          "year": "1859",
+          "publisher": "Parisiis",
+          "possibleCopyrightStatus": "NOT_IN_COPYRIGHT",
+          "copyrightRegion": "US",
+          "sponsor": "Google",
+          "contributor": "Harvard University",
+          "scanningCenter": "google",
+          "imagecount": 641,
+          "ppi": 600,
+          "usedFor": "PG 74, кол. 69–70 — второй контрольный канал для C-25"
+        }
+      ],
+      "reading": "У всех шести предметов статус заявлен и одинаков: `NOT_IN_COPYRIGHT`. Это снимает вопрос «оцифровщик молчал» для всего корпуса, но не даёт лицензии: у трёх Google-предметов дополнительно указан `copyright-region: US`, то есть заявление локальное, а не всемирное. Практический вывод для C-25: целевые страницы существуют как изображения в трёх независимых каналах (758, 775 и 709 кадров), поэтому «сканов нет» — неверно; недоступен не объект, а скачивание из этой среды."
+    }
+  },
+  "summary": {
+    "total": 22,
+    "byCategory": {
+      "PD_WORK_MODERN_TRANSCRIPTION": 4,
+      "PD_WORK_MODERN_TRANSLATION": 4,
+      "THIRD_PARTY_MODERN": 3,
+      "DIGITIZER_NO_LICENSE_DECLARED": 8,
+      "RIGHTS_ADMINISTRATOR_NAMED": 2,
+      "REFUSED_BY_RECORDED_FINDING": 1
+    },
+    "needsCorrespondence": 5,
+    "resolvedWithoutWork": 1,
+    "ownerDecisionOnly": 16,
+    "note": "16 объектов не требуют переписки: им нужен записанный rightsBasis или решение о политике. Пять требуют письма: 3 правообладателя современных текстов и 1 распорядитель (РБО, два объекта одним ответом). Один уже закрыт отказом."
+  },
+  "boundaries": [
+    "Это не юридическое заключение и не снятие HOLD: rightsState меняет только владелец.",
+    "Классификация опирается на дату и природу объекта, записанные в репозитории, а не на внешнюю проверку сроков охраны по юрисдикциям.",
+    "Внешние проверки выполнены только по api.github.com; archive.org, rca.org, opc.org, frcna.org, anglican.ca, catholic.com в этой сессии не открывались.",
+    "Отсутствие заявленной лицензии у оцифровщика не читается ни как разрешение, ни как запрет.",
+    "Проверка оцифровщика 2026-11-18 покрывает шесть предметов archive.org из числа цитируемых корпусом; остальные идентификаторы реестров не читались. Соответствие «кадр ↔ печатная страница» проверено только для т. I (титул прочитан визуально) и выведено из page_numbers.json для т. II; на других предметах оно не проверялось."
+  ]
+}

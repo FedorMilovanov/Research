@@ -1,0 +1,844 @@
+{
+  "schemaVersion": 1,
+  "artifactId": "ARTIFACT-CUSTODY-SNAPSHOT-2026-11-18",
+  "role": "DERIVED_READ_ONLY_NOT_AUTHORITY",
+  "generatedAt": "2026-11-18",
+  "repo": "FedorMilovanov/Research",
+  "method": "gh api repos/<repo>/actions/artifacts по всем страницам; gitleaks-отчёты исключены как шум сканера",
+  "families": [
+    {
+      "family": "ephemeral-second-editorial-40-pdf",
+      "artifacts": 2,
+      "bytes": 2544452839,
+      "firstCreated": "2026-11-17",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-11-24",
+      "expired": 0,
+      "branches": [
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2"
+      ],
+      "class": "DURABLE_ON_DRIVE_RECEIPTED",
+      "why": "Байты найдены на Drive 2026-11-18, квитанция записана в CORPUS_CUSTODY_RECEIPTS.",
+      "workflow": ".github/workflows/build-commons-second-editorial-40-pdf.yml",
+      "retentionDays": 7,
+      "declaresEphemeral": true,
+      "declaresNoDurableReceipt": true,
+      "drive": {
+        "class": "DURABLE_ON_DRIVE_RECEIPTED",
+        "folder": "02 — SECOND EDITORIAL 40",
+        "folderId": "1qba3eUdOo0x4Sp2T1viB_MMdWQf80UtZ",
+        "objects": 40,
+        "bytes": 1250680919,
+        "sha256Present": true,
+        "manifest": {
+          "name": "SECOND EDITORIAL 40 — MANIFEST RIGHTS SHA256.zip",
+          "id": "1bHbwp7AoS2F645_BZhNVNTjWfKYoHm4g",
+          "bytes": 25419,
+          "sha256": "f363ec567be8a40cd5828d251e288572270c4368f5940602c0b29548b4a7e547"
+        },
+        "observed": "40 PDF в четырёх шардах 01-10 / 11-20 / 21-30 / 31-40, у каждого серверный sha256Checksum; рядом ZIP с манифестом прав и SHA-256. Суммарный объём 1 250 680 919 Б сложен из серверных `size` по шардам (351 290 078 + 200 155 682 + 360 460 618 + 338 774 541) 2026-11-18.",
+        "missing": "Квитанция теперь есть: docs/research/holds/CORPUS_CUSTODY_RECEIPTS_2026-11-18.md (снята 2026-11-18). Пофайловые суммы остаются только на Drive; содержимое шардов не сверялось."
+      }
+    },
+    {
+      "family": "ephemeral-commons-strict-literary-pdf-40plus",
+      "artifacts": 2,
+      "bytes": 1253265815,
+      "firstCreated": "2026-11-17",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-11-24",
+      "expired": 0,
+      "branches": [
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2"
+      ],
+      "class": "DURABLE_ON_DRIVE_RECEIPTED",
+      "why": "Байты найдены на Drive 2026-11-18, квитанция записана в CORPUS_CUSTODY_RECEIPTS.",
+      "workflow": ".github/workflows/build-commons-russian-literature-open-pdf-archive.yml",
+      "retentionDays": 7,
+      "declaresEphemeral": true,
+      "declaresNoDurableReceipt": true,
+      "drive": {
+        "class": "DURABLE_ON_DRIVE_RECEIPTED",
+        "folder": "01 — COMMONS STRICT 40",
+        "folderId": "1DSfzT3YJC19iI0YG9IjfOXybVilgnQFJ",
+        "objects": 9,
+        "bytes": 610192501,
+        "sha256Present": true,
+        "manifest": {
+          "name": "commons_strict_sha256_verification.txt",
+          "id": "1PvXKzW6Oq1U7qP-j0FLIXx_gv19ogez9",
+          "bytes": 3110,
+          "sha256": null
+        },
+        "observed": "Девять ZIP-шардов (01-10 / 11-20 / 21-30 / 31-40, по частям A/B/C), сумма размеров 610 192 501 Б против 610 183 443 Б заявленных для 40 PDF; файл проверки перечисляет 40 из 40 «OK».",
+        "missing": "В репозитории нет квитанции, связывающей ID папки и суммы шардов с манифестом."
+      }
+    },
+    {
+      "family": "ephemeral-official-core-acquisition-59-v2",
+      "artifacts": 2,
+      "bytes": 1022896773,
+      "firstCreated": "2026-11-17",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-11-24",
+      "expired": 0,
+      "branches": [
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2"
+      ],
+      "class": "NO_DURABLE_DESTINATION",
+      "why": "На Drive только манифест; объекты воспроизводимы по коммиту, артефакт не единственный носитель.",
+      "workflow": ".github/workflows/official-core-acquisition-40plus.yml",
+      "retentionDays": 7,
+      "declaresEphemeral": true,
+      "declaresNoDurableReceipt": true,
+      "drive": {
+        "class": "NO_DURABLE_DESTINATION",
+        "folder": null,
+        "folderId": null,
+        "objects": 0,
+        "bytes": 0,
+        "sha256Present": false,
+        "manifest": {
+          "name": "2026-07-30 — OFFICIAL CORE ACQUISITION 59 — V2 MANIFEST.zip",
+          "id": "1EccGOxBl74_8X-03tRwQz2W_J-3N9phB",
+          "bytes": 19137,
+          "sha256": null
+        },
+        "observed": "На Drive только манифест 19 137 Б и документ статуса; STEPBible, morphhb и SBLGNT поиском не обнаружены — это же записано в самом документе статуса от 2026-07-30.",
+        "missing": "На Drive наборов нет, но байты воспроизводимы по зафиксированным коммитам (размеры совпали байт в байт, 2026-11-18): см. docs/research/holds/OFFICIAL_CORE_DATASETS_REPRODUCIBILITY_2026-11-18.md. Артефакт 2026-11-24 — дедлайн удобства, не хранения."
+      }
+    },
+    {
+      "family": "ephemeral-poet-portrait-review-v4",
+      "artifacts": 11,
+      "bytes": 316242407,
+      "firstCreated": "2026-11-01",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-12-01",
+      "expired": 0,
+      "branches": [
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2"
+      ],
+      "class": "REVIEW_MATERIAL_ONLY",
+      "why": "На Drive только итог ревью; скачанные кандидаты — расходный материал и доказательством не являются.",
+      "workflow": ".github/workflows/build-poet-portrait-review-candidates.yml",
+      "retentionDays": 30,
+      "declaresEphemeral": true,
+      "declaresNoDurableReceipt": true,
+      "drive": {
+        "class": "REVIEW_MATERIAL_ONLY",
+        "folder": "01 — PEOPLE & PORTRAITS",
+        "folderId": "1YlAac-1QA_iiWPK63X7ZINsJmaPy6ndH",
+        "objects": 0,
+        "bytes": 0,
+        "sha256Present": false,
+        "manifest": null,
+        "observed": "На Drive — итог ревью: контрольные листы и списки кандидатов. Скачанные изображения кандидатов на Drive не переносились и доказательством не являются.",
+        "missing": "Ничего: расходный материал ревью не подлежит хранению как доказательство."
+      }
+    },
+    {
+      "family": "ephemeral-ephemera-review-candidates",
+      "artifacts": 11,
+      "bytes": 282489273,
+      "firstCreated": "2026-11-01",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-12-01",
+      "expired": 0,
+      "branches": [
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2"
+      ],
+      "class": "REVIEW_MATERIAL_ONLY",
+      "why": "На Drive только итог ревью; скачанные кандидаты — расходный материал и доказательством не являются.",
+      "workflow": ".github/workflows/build-ephemera-review-candidates.yml",
+      "retentionDays": 30,
+      "declaresEphemeral": true,
+      "declaresNoDurableReceipt": true,
+      "drive": {
+        "class": "REVIEW_MATERIAL_ONLY",
+        "folder": "01 — PEOPLE & PORTRAITS",
+        "folderId": "1YlAac-1QA_iiWPK63X7ZINsJmaPy6ndH",
+        "objects": 0,
+        "bytes": 0,
+        "sha256Present": false,
+        "manifest": null,
+        "observed": "На Drive — контрольные листы, ephemera-candidates.csv (1,2 МБ) и ephemera-candidates.json (1,7 МБ): то, по чему принималось решение.",
+        "missing": "Ничего по хранению; сами кандидаты — расходный материал."
+      }
+    },
+    {
+      "family": "ephemeral-approved-ephemera-originals",
+      "artifacts": 2,
+      "bytes": 213327748,
+      "firstCreated": "2026-11-17",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-11-24",
+      "expired": 0,
+      "branches": [
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2"
+      ],
+      "class": "DURABLE_ON_DRIVE_RECEIPTED",
+      "why": "Байты найдены на Drive 2026-11-18, квитанция записана в CORPUS_CUSTODY_RECEIPTS.",
+      "workflow": ".github/workflows/download-approved-ephemera-originals.yml",
+      "retentionDays": 7,
+      "declaresEphemeral": true,
+      "declaresNoDurableReceipt": true,
+      "drive": {
+        "class": "DURABLE_ON_DRIVE_RECEIPTED",
+        "folder": "02 — APPROVED EPHEMERA 63",
+        "folderId": "1vfSja20qrEwQNuYDS1dI_WFZYxD18-_C",
+        "objects": 5,
+        "bytes": 133208395,
+        "sha256Present": true,
+        "manifest": {
+          "name": "EPHEMERA 63 — MANIFEST RIGHTS SHA256.zip",
+          "id": "1XVd-P7ttZrWnvmow0A0s2Bb3KVN-Srp3",
+          "bytes": 27553,
+          "sha256": null
+        },
+        "observed": "Четыре шарда оригиналов (01-16, 17-32, 33-48, 49-63) плюс контрольный лист и кандидаты; у каждого серверная сумма.",
+        "missing": "Квитанция есть: CORPUS_CUSTODY_RECEIPTS_2026-11-18.md §3. Артефакт больше суммы шардов — расхождение не объяснено."
+      }
+    },
+    {
+      "family": "ephemeral-approved-core-poet-portraits",
+      "artifacts": 2,
+      "bytes": 63239012,
+      "firstCreated": "2026-11-17",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-11-24",
+      "expired": 0,
+      "branches": [
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2"
+      ],
+      "class": "DURABLE_ON_DRIVE_RECEIPTED",
+      "why": "Байты найдены на Drive 2026-11-18, квитанция записана в CORPUS_CUSTODY_RECEIPTS.",
+      "workflow": ".github/workflows/download-approved-core-poet-portraits.yml",
+      "retentionDays": 7,
+      "declaresEphemeral": true,
+      "declaresNoDurableReceipt": true,
+      "drive": {
+        "class": "DURABLE_ON_DRIVE_RECEIPTED",
+        "folder": "01 — APPROVED CORE POET PORTRAITS 45",
+        "folderId": "1BcHMZEPJtTDbE9zXZnRLtjCBtvGG3S02",
+        "objects": 3,
+        "bytes": 15606930,
+        "sha256Present": true,
+        "manifest": {
+          "name": "PORTRAITS 45 — MANIFEST RIGHTS SHA256.zip",
+          "id": "1wqrGOW86x_cHPW14Xe_6x9yvaYxJS8sD",
+          "bytes": 23433,
+          "sha256": null
+        },
+        "observed": "Три ZIP-шарда с серверными суммами и манифест прав. В самом allowlist-файле статус записан как CURRENT LICENSE RECHECK REQUIRED.",
+        "missing": "Квитанция есть: docs/research/holds/CORPUS_CUSTODY_RECEIPTS_2026-11-18.md §3. Объём артефакта больше суммы шардов, причина расхождения не установлена."
+      }
+    },
+    {
+      "family": "total-cross-repo-source-audit",
+      "artifacts": 16,
+      "bytes": 31206062,
+      "firstCreated": "2026-10-26",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-11-25",
+      "expired": 0,
+      "branches": [
+        "arena/c5406629-research",
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2",
+        "main"
+      ],
+      "class": "REGENERABLE_AUDIT",
+      "why": "Сводный аудит источников: отчёт о состоянии, а не приобретённый объект.",
+      "workflow": ".github/workflows/total-cross-repo-source-audit.yml",
+      "retentionDays": 30,
+      "declaresEphemeral": false,
+      "declaresNoDurableReceipt": false,
+      "drive": null
+    },
+    {
+      "family": "charnock-custody-v3-research-only",
+      "artifacts": 6,
+      "bytes": 6267303,
+      "firstCreated": "2026-11-17",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-12-17",
+      "expired": 0,
+      "branches": [
+        "charnock/custody-v3-source-snapshot-20261117",
+        "charnock/ed02-custody-authority-20261117",
+        "main"
+      ],
+      "class": "HAS_DURABLE_RECEIPT",
+      "why": "Оба V3-архива имеют квитанцию с Drive ID и SHA-256; сумма сверена с Drive 2026-11-18.",
+      "workflow": ".github/workflows/charnock-custody-snapshot.yml",
+      "retentionDays": 30,
+      "declaresEphemeral": false,
+      "declaresNoDurableReceipt": false,
+      "drive": null
+    },
+    {
+      "family": "1peter-product-handoff",
+      "artifacts": 25,
+      "bytes": 1924600,
+      "firstCreated": "2026-11-01",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-12-01",
+      "expired": 0,
+      "branches": [
+        "arena/576cf1ae-research",
+        "dependabot/github_actions/actions/checkout-7.0.1",
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2",
+        "main"
+      ],
+      "class": "REGENERABLE_AUDIT",
+      "why": "Пакет handoff собирается из файлов репозитория; артефакт — производная сборка.",
+      "workflow": ".github/workflows/1peter-product-handoff-audit.yml",
+      "retentionDays": 30,
+      "declaresEphemeral": false,
+      "declaresNoDurableReceipt": false,
+      "drive": null
+    },
+    {
+      "family": "g3-archive-content-inventory",
+      "artifacts": 2,
+      "bytes": 1693836,
+      "firstCreated": "2026-11-17",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-11-24",
+      "expired": 0,
+      "branches": [
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2"
+      ],
+      "class": "NON_DETERMINISTIC_ACQUISITION",
+      "why": "G3: записи IRS, округов, Wayback-снимки. Wayback и опубликованный IRS XML стабильны, но записи округов и текущие страницы меняются; квитанции на хранение нет.",
+      "workflow": ".github/workflows/g3-archive-content-inventory-acquisition.yml",
+      "retentionDays": 7,
+      "declaresEphemeral": true,
+      "declaresNoDurableReceipt": false,
+      "drive": null
+    },
+    {
+      "family": "g3-douglas-property",
+      "artifacts": 2,
+      "bytes": 972884,
+      "firstCreated": "2026-11-17",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-11-24",
+      "expired": 0,
+      "branches": [
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2"
+      ],
+      "class": "NON_DETERMINISTIC_ACQUISITION",
+      "why": "G3: записи IRS, округов, Wayback-снимки. Wayback и опубликованный IRS XML стабильны, но записи округов и текущие страницы меняются; квитанции на хранение нет.",
+      "workflow": ".github/workflows/g3-douglas-property-acquisition.yml",
+      "retentionDays": 7,
+      "declaresEphemeral": true,
+      "declaresNoDurableReceipt": false,
+      "drive": null
+    },
+    {
+      "family": "baptist-scan-request-package",
+      "artifacts": 10,
+      "bytes": 596762,
+      "firstCreated": "2026-11-01",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-12-01",
+      "expired": 0,
+      "branches": [
+        "arena/eba7cf2b-research",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2",
+        "main"
+      ],
+      "class": "REGENERABLE_PACKAGE",
+      "why": "Пакет запроса на сканы — заявка, а не сам скан.",
+      "workflow": ".github/workflows/baptist-scan-acquisition.yml",
+      "retentionDays": 30,
+      "declaresEphemeral": false,
+      "declaresNoDurableReceipt": false,
+      "drive": null
+    },
+    {
+      "family": "g3-irs-FY2025",
+      "artifacts": 2,
+      "bytes": 313313,
+      "firstCreated": "2026-11-17",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-11-24",
+      "expired": 0,
+      "branches": [
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2"
+      ],
+      "class": "NON_DETERMINISTIC_ACQUISITION",
+      "why": "G3: записи IRS, округов, Wayback-снимки. Wayback и опубликованный IRS XML стабильны, но записи округов и текущие страницы меняются; квитанции на хранение нет.",
+      "workflow": ".github/workflows/g3-irs-raw-acquisition.yml",
+      "retentionDays": 7,
+      "declaresEphemeral": true,
+      "declaresNoDurableReceipt": true,
+      "drive": null
+    },
+    {
+      "family": "g3-irs-FY2024",
+      "artifacts": 2,
+      "bytes": 309732,
+      "firstCreated": "2026-11-17",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-11-24",
+      "expired": 0,
+      "branches": [
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2"
+      ],
+      "class": "NON_DETERMINISTIC_ACQUISITION",
+      "why": "G3: записи IRS, округов, Wayback-снимки. Wayback и опубликованный IRS XML стабильны, но записи округов и текущие страницы меняются; квитанции на хранение нет.",
+      "workflow": ".github/workflows/g3-irs-raw-acquisition.yml",
+      "retentionDays": 7,
+      "declaresEphemeral": true,
+      "declaresNoDurableReceipt": true,
+      "drive": null
+    },
+    {
+      "family": "g3-buck-media",
+      "artifacts": 14,
+      "bytes": 277229,
+      "firstCreated": "2026-11-17",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-11-24",
+      "expired": 0,
+      "branches": [
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2"
+      ],
+      "class": "NON_DETERMINISTIC_ACQUISITION",
+      "why": "G3: записи IRS, округов, Wayback-снимки. Wayback и опубликованный IRS XML стабильны, но записи округов и текущие страницы меняются; квитанции на хранение нет.",
+      "workflow": ".github/workflows/g3-buck-media-windows.yml",
+      "retentionDays": 7,
+      "declaresEphemeral": false,
+      "declaresNoDurableReceipt": false,
+      "drive": null
+    },
+    {
+      "family": "g3-irs-FY2023",
+      "artifacts": 2,
+      "bytes": 241083,
+      "firstCreated": "2026-11-17",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-11-24",
+      "expired": 0,
+      "branches": [
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2"
+      ],
+      "class": "NON_DETERMINISTIC_ACQUISITION",
+      "why": "G3: записи IRS, округов, Wayback-снимки. Wayback и опубликованный IRS XML стабильны, но записи округов и текущие страницы меняются; квитанции на хранение нет.",
+      "workflow": ".github/workflows/g3-irs-raw-acquisition.yml",
+      "retentionDays": 7,
+      "declaresEphemeral": true,
+      "declaresNoDurableReceipt": true,
+      "drive": null
+    },
+    {
+      "family": "g3-wayback-late-board",
+      "artifacts": 2,
+      "bytes": 219732,
+      "firstCreated": "2026-11-17",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-11-24",
+      "expired": 0,
+      "branches": [
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2"
+      ],
+      "class": "NON_DETERMINISTIC_ACQUISITION",
+      "why": "G3: записи IRS, округов, Wayback-снимки. Wayback и опубликованный IRS XML стабильны, но записи округов и текущие страницы меняются; квитанции на хранение нет.",
+      "workflow": ".github/workflows/g3-wayback-2025-board-transition.yml",
+      "retentionDays": 7,
+      "declaresEphemeral": true,
+      "declaresNoDurableReceipt": true,
+      "drive": null
+    },
+    {
+      "family": "g3-irs-FY2022_LATER",
+      "artifacts": 2,
+      "bytes": 210678,
+      "firstCreated": "2026-11-17",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-11-24",
+      "expired": 0,
+      "branches": [
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2"
+      ],
+      "class": "NON_DETERMINISTIC_ACQUISITION",
+      "why": "G3: записи IRS, округов, Wayback-снимки. Wayback и опубликованный IRS XML стабильны, но записи округов и текущие страницы меняются; квитанции на хранение нет.",
+      "workflow": ".github/workflows/g3-irs-raw-acquisition.yml",
+      "retentionDays": 7,
+      "declaresEphemeral": true,
+      "declaresNoDurableReceipt": true,
+      "drive": null
+    },
+    {
+      "family": "baptist-proof-ledger-v2-canonical-view",
+      "artifacts": 10,
+      "bytes": 204764,
+      "firstCreated": "2026-11-01",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-12-01",
+      "expired": 0,
+      "branches": [
+        "arena/eba7cf2b-research",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2",
+        "main"
+      ],
+      "class": "REGENERABLE_VIEW",
+      "why": "Канонический вид строится из реестра в репозитории.",
+      "workflow": ".github/workflows/baptist-proof-ledger-v2.yml",
+      "retentionDays": 30,
+      "declaresEphemeral": false,
+      "declaresNoDurableReceipt": false,
+      "drive": null
+    },
+    {
+      "family": "official-digital-collections-link-audit",
+      "artifacts": 15,
+      "bytes": 138005,
+      "firstCreated": "2026-10-21",
+      "lastCreated": "2026-11-18",
+      "earliestExpiry": "2026-11-20",
+      "expired": 0,
+      "branches": [
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2",
+        "main"
+      ],
+      "class": "REGENERABLE_AUDIT",
+      "why": "Проверка ссылок: результат — отчёт о состоянии URL на момент прогона. Перепрогон даёт новый отчёт, но исходные объекты не теряются.",
+      "workflow": ".github/workflows/audit-official-digital-collections-links.yml",
+      "retentionDays": 30,
+      "declaresEphemeral": false,
+      "declaresNoDurableReceipt": false,
+      "drive": null
+    },
+    {
+      "family": "g3-georgia-entity",
+      "artifacts": 2,
+      "bytes": 137035,
+      "firstCreated": "2026-11-17",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-11-24",
+      "expired": 0,
+      "branches": [
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2"
+      ],
+      "class": "NON_DETERMINISTIC_ACQUISITION",
+      "why": "G3: записи IRS, округов, Wayback-снимки. Wayback и опубликованный IRS XML стабильны, но записи округов и текущие страницы меняются; квитанции на хранение нет.",
+      "workflow": ".github/workflows/g3-georgia-entity-acquisition.yml",
+      "retentionDays": 7,
+      "declaresEphemeral": true,
+      "declaresNoDurableReceipt": true,
+      "drive": null
+    },
+    {
+      "family": "google-drive-upload-46-link-audit",
+      "artifacts": 16,
+      "bytes": 103135,
+      "firstCreated": "2026-10-20",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-11-19",
+      "expired": 0,
+      "branches": [
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2",
+        "main"
+      ],
+      "class": "REGENERABLE_AUDIT",
+      "why": "Проверка ссылок: результат — отчёт о состоянии URL на момент прогона. Перепрогон даёт новый отчёт, но исходные объекты не теряются.",
+      "workflow": ".github/workflows/audit-google-drive-upload-links.yml",
+      "retentionDays": 30,
+      "declaresEphemeral": false,
+      "declaresNoDurableReceipt": false,
+      "drive": null
+    },
+    {
+      "family": "g3-buck-titus-media-evidence",
+      "artifacts": 2,
+      "bytes": 38646,
+      "firstCreated": "2026-11-17",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-11-24",
+      "expired": 0,
+      "branches": [
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2"
+      ],
+      "class": "NON_DETERMINISTIC_ACQUISITION",
+      "why": "G3: записи IRS, округов, Wayback-снимки. Wayback и опубликованный IRS XML стабильны, но записи округов и текущие страницы меняются; квитанции на хранение нет.",
+      "workflow": ".github/workflows/g3-buck-media-windows.yml",
+      "retentionDays": 7,
+      "declaresEphemeral": false,
+      "declaresNoDurableReceipt": false,
+      "drive": null
+    },
+    {
+      "family": "g3-wayback-2025-board",
+      "artifacts": 2,
+      "bytes": 18190,
+      "firstCreated": "2026-11-17",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-11-24",
+      "expired": 0,
+      "branches": [
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2"
+      ],
+      "class": "NON_DETERMINISTIC_ACQUISITION",
+      "why": "G3: записи IRS, округов, Wayback-снимки. Wayback и опубликованный IRS XML стабильны, но записи округов и текущие страницы меняются; квитанции на хранение нет.",
+      "workflow": ".github/workflows/g3-wayback-2025-board-transition.yml",
+      "retentionDays": 7,
+      "declaresEphemeral": true,
+      "declaresNoDurableReceipt": true,
+      "drive": null
+    },
+    {
+      "family": "g3-buck-rss-media-inventory",
+      "artifacts": 2,
+      "bytes": 13087,
+      "firstCreated": "2026-11-17",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-11-24",
+      "expired": 0,
+      "branches": [
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2"
+      ],
+      "class": "NON_DETERMINISTIC_ACQUISITION",
+      "why": "G3: записи IRS, округов, Wayback-снимки. Wayback и опубликованный IRS XML стабильны, но записи округов и текущие страницы меняются; квитанции на хранение нет.",
+      "workflow": ".github/workflows/g3-buck-media-windows.yml",
+      "retentionDays": 7,
+      "declaresEphemeral": false,
+      "declaresNoDurableReceipt": false,
+      "drive": null
+    },
+    {
+      "family": "g3-content-inventory",
+      "artifacts": 2,
+      "bytes": 3480,
+      "firstCreated": "2026-11-17",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-11-24",
+      "expired": 0,
+      "branches": [
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2"
+      ],
+      "class": "NON_DETERMINISTIC_ACQUISITION",
+      "why": "G3: записи IRS, округов, Wayback-снимки. Wayback и опубликованный IRS XML стабильны, но записи округов и текущие страницы меняются; квитанции на хранение нет.",
+      "workflow": ".github/workflows/g3-content-inventory-acquisition.yml",
+      "retentionDays": 7,
+      "declaresEphemeral": false,
+      "declaresNoDurableReceipt": false,
+      "drive": null
+    }
+  ],
+  "totals": {
+    "artifacts": 168,
+    "bytes": 5740803423,
+    "expired": 0,
+    "families": 27,
+    "byClass": {
+      "DURABLE_ON_DRIVE_RECEIPTED": 8,
+      "NO_DURABLE_DESTINATION": 2,
+      "REVIEW_MATERIAL_ONLY": 22,
+      "REGENERABLE_AUDIT": 72,
+      "HAS_DURABLE_RECEIPT": 6,
+      "NON_DETERMINISTIC_ACQUISITION": 38,
+      "REGENERABLE_PACKAGE": 10,
+      "REGENERABLE_VIEW": 10
+    },
+    "bytesByClass": {
+      "DURABLE_ON_DRIVE_RECEIPTED": 4074285414,
+      "NO_DURABLE_DESTINATION": 1022896773,
+      "REVIEW_MATERIAL_ONLY": 598731680,
+      "REGENERABLE_AUDIT": 33371802,
+      "HAS_DURABLE_RECEIPT": 6267303,
+      "NON_DETERMINISTIC_ACQUISITION": 4448925,
+      "REGENERABLE_PACKAGE": 596762,
+      "REGENERABLE_VIEW": 204764
+    }
+  },
+  "driveVerification": {
+    "ephemeral-second-editorial-40-pdf": {
+      "class": "DURABLE_ON_DRIVE_RECEIPTED",
+      "folder": "02 — SECOND EDITORIAL 40",
+      "folderId": "1qba3eUdOo0x4Sp2T1viB_MMdWQf80UtZ",
+      "objects": 40,
+      "bytes": 1250680919,
+      "sha256Present": true,
+      "manifest": {
+        "name": "SECOND EDITORIAL 40 — MANIFEST RIGHTS SHA256.zip",
+        "id": "1bHbwp7AoS2F645_BZhNVNTjWfKYoHm4g",
+        "bytes": 25419,
+        "sha256": "f363ec567be8a40cd5828d251e288572270c4368f5940602c0b29548b4a7e547"
+      },
+      "observed": "40 PDF в четырёх шардах 01-10 / 11-20 / 21-30 / 31-40, у каждого серверный sha256Checksum; рядом ZIP с манифестом прав и SHA-256. Суммарный объём 1 250 680 919 Б сложен из серверных `size` по шардам (351 290 078 + 200 155 682 + 360 460 618 + 338 774 541) 2026-11-18.",
+      "missing": "Квитанция теперь есть: docs/research/holds/CORPUS_CUSTODY_RECEIPTS_2026-11-18.md (снята 2026-11-18). Пофайловые суммы остаются только на Drive; содержимое шардов не сверялось."
+    },
+    "ephemeral-commons-strict-literary-pdf-40plus": {
+      "class": "DURABLE_ON_DRIVE_RECEIPTED",
+      "folder": "01 — COMMONS STRICT 40",
+      "folderId": "1DSfzT3YJC19iI0YG9IjfOXybVilgnQFJ",
+      "objects": 9,
+      "bytes": 610192501,
+      "sha256Present": true,
+      "manifest": {
+        "name": "commons_strict_sha256_verification.txt",
+        "id": "1PvXKzW6Oq1U7qP-j0FLIXx_gv19ogez9",
+        "bytes": 3110,
+        "sha256": null
+      },
+      "observed": "Девять ZIP-шардов (01-10 / 11-20 / 21-30 / 31-40, по частям A/B/C), сумма размеров 610 192 501 Б против 610 183 443 Б заявленных для 40 PDF; файл проверки перечисляет 40 из 40 «OK».",
+      "missing": "В репозитории нет квитанции, связывающей ID папки и суммы шардов с манифестом."
+    },
+    "ephemeral-approved-core-poet-portraits": {
+      "class": "DURABLE_ON_DRIVE_RECEIPTED",
+      "folder": "01 — APPROVED CORE POET PORTRAITS 45",
+      "folderId": "1BcHMZEPJtTDbE9zXZnRLtjCBtvGG3S02",
+      "objects": 3,
+      "bytes": 15606930,
+      "sha256Present": true,
+      "manifest": {
+        "name": "PORTRAITS 45 — MANIFEST RIGHTS SHA256.zip",
+        "id": "1wqrGOW86x_cHPW14Xe_6x9yvaYxJS8sD",
+        "bytes": 23433,
+        "sha256": null
+      },
+      "observed": "Три ZIP-шарда с серверными суммами и манифест прав. В самом allowlist-файле статус записан как CURRENT LICENSE RECHECK REQUIRED.",
+      "missing": "Квитанция есть: docs/research/holds/CORPUS_CUSTODY_RECEIPTS_2026-11-18.md §3. Объём артефакта больше суммы шардов, причина расхождения не установлена."
+    },
+    "ephemeral-approved-ephemera-originals": {
+      "class": "DURABLE_ON_DRIVE_RECEIPTED",
+      "folder": "02 — APPROVED EPHEMERA 63",
+      "folderId": "1vfSja20qrEwQNuYDS1dI_WFZYxD18-_C",
+      "objects": 5,
+      "bytes": 133208395,
+      "sha256Present": true,
+      "manifest": {
+        "name": "EPHEMERA 63 — MANIFEST RIGHTS SHA256.zip",
+        "id": "1XVd-P7ttZrWnvmow0A0s2Bb3KVN-Srp3",
+        "bytes": 27553,
+        "sha256": null
+      },
+      "observed": "Четыре шарда оригиналов (01-16, 17-32, 33-48, 49-63) плюс контрольный лист и кандидаты; у каждого серверная сумма.",
+      "missing": "Квитанция есть: CORPUS_CUSTODY_RECEIPTS_2026-11-18.md §3. Артефакт больше суммы шардов — расхождение не объяснено."
+    },
+    "ephemeral-poet-portrait-review-v4": {
+      "class": "REVIEW_MATERIAL_ONLY",
+      "folder": "01 — PEOPLE & PORTRAITS",
+      "folderId": "1YlAac-1QA_iiWPK63X7ZINsJmaPy6ndH",
+      "objects": 0,
+      "bytes": 0,
+      "sha256Present": false,
+      "manifest": null,
+      "observed": "На Drive — итог ревью: контрольные листы и списки кандидатов. Скачанные изображения кандидатов на Drive не переносились и доказательством не являются.",
+      "missing": "Ничего: расходный материал ревью не подлежит хранению как доказательство."
+    },
+    "ephemeral-ephemera-review-candidates": {
+      "class": "REVIEW_MATERIAL_ONLY",
+      "folder": "01 — PEOPLE & PORTRAITS",
+      "folderId": "1YlAac-1QA_iiWPK63X7ZINsJmaPy6ndH",
+      "objects": 0,
+      "bytes": 0,
+      "sha256Present": false,
+      "manifest": null,
+      "observed": "На Drive — контрольные листы, ephemera-candidates.csv (1,2 МБ) и ephemera-candidates.json (1,7 МБ): то, по чему принималось решение.",
+      "missing": "Ничего по хранению; сами кандидаты — расходный материал."
+    },
+    "ephemeral-official-core-acquisition-59-v2": {
+      "class": "NO_DURABLE_DESTINATION",
+      "folder": null,
+      "folderId": null,
+      "objects": 0,
+      "bytes": 0,
+      "sha256Present": false,
+      "manifest": {
+        "name": "2026-07-30 — OFFICIAL CORE ACQUISITION 59 — V2 MANIFEST.zip",
+        "id": "1EccGOxBl74_8X-03tRwQz2W_J-3N9phB",
+        "bytes": 19137,
+        "sha256": null
+      },
+      "observed": "На Drive только манифест 19 137 Б и документ статуса; STEPBible, morphhb и SBLGNT поиском не обнаружены — это же записано в самом документе статуса от 2026-07-30.",
+      "missing": "На Drive наборов нет, но байты воспроизводимы по зафиксированным коммитам (размеры совпали байт в байт, 2026-11-18): см. docs/research/holds/OFFICIAL_CORE_DATASETS_REPRODUCIBILITY_2026-11-18.md. Артефакт 2026-11-24 — дедлайн удобства, не хранения."
+    }
+  },
+  "deadlines": {
+    "2026-11-19": {
+      "bytes": 103135,
+      "families": [
+        "google-drive-upload-46-link-audit"
+      ]
+    },
+    "2026-11-20": {
+      "bytes": 138005,
+      "families": [
+        "official-digital-collections-link-audit"
+      ]
+    },
+    "2026-11-24": {
+      "bytes": 5101631112,
+      "families": [
+        "ephemeral-approved-core-poet-portraits",
+        "ephemeral-approved-ephemera-originals",
+        "ephemeral-commons-strict-literary-pdf-40plus",
+        "ephemeral-official-core-acquisition-59-v2",
+        "ephemeral-second-editorial-40-pdf",
+        "g3-archive-content-inventory",
+        "g3-buck-media",
+        "g3-buck-rss-media-inventory",
+        "g3-buck-titus-media-evidence",
+        "g3-content-inventory",
+        "g3-douglas-property",
+        "g3-georgia-entity",
+        "g3-irs-FY2022_LATER",
+        "g3-irs-FY2023",
+        "g3-irs-FY2024",
+        "g3-irs-FY2025",
+        "g3-wayback-2025-board",
+        "g3-wayback-late-board"
+      ]
+    },
+    "2026-11-25": {
+      "bytes": 31206062,
+      "families": [
+        "total-cross-repo-source-audit"
+      ]
+    },
+    "2026-12-01": {
+      "bytes": 601457806,
+      "families": [
+        "1peter-product-handoff",
+        "baptist-proof-ledger-v2-canonical-view",
+        "baptist-scan-request-package",
+        "ephemeral-ephemera-review-candidates",
+        "ephemeral-poet-portrait-review-v4"
+      ]
+    },
+    "2026-12-17": {
+      "bytes": 6267303,
+      "families": [
+        "charnock-custody-v3-research-only"
+      ]
+    }
+  }
+}

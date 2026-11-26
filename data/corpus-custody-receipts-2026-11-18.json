@@ -1,0 +1,1457 @@
+{
+  "schemaVersion": 1,
+  "artifactId": "CORPUS-CUSTODY-RECEIPTS-2026-11-18",
+  "role": "DERIVED_READ_ONLY_NOT_AUTHORITY",
+  "checkedAt": "2026-11-18",
+  "method": "list_files по ID папки, get_file по объекту, read_file_text по текстовому файлу; только чтение, ни один объект не скачивался и не изменялся",
+  "purpose": "Зафиксировать, где физически лежат два корпуса, которые до сих пор жили только в артефактах CI. Квитанция про носитель, не про права и не про публикацию.",
+  "corpora": [
+    {
+      "name": "COMMONS STRICT 40 — строгий корпус 40 PDF по русской литературе",
+      "claimInRepo": {
+        "path": "SOURCE_LIBRARY/COMMONS_RUSSIAN_LITERATURE_40PLUS_PDF_PASS_2026-07-30.md",
+        "bytes": 610183443,
+        "pages": 12434,
+        "pdfs": 40,
+        "sha256Matches": 40,
+        "licences": {
+          "Public Domain": 39,
+          "CC BY-SA 4.0": 1
+        }
+      },
+      "drive": {
+        "folder": "01 — COMMONS STRICT 40",
+        "folderId": "1DSfzT3YJC19iI0YG9IjfOXybVilgnQFJ"
+      },
+      "objects": [
+        {
+          "name": "01 — PDF 01-10 — PART A.zip",
+          "id": "1JcpOMbKwNPWl0KaXQldKP74NgopPwYsJ",
+          "bytes": 93419267,
+          "sha256": "36e94ab7ba382a2f1766e0e95b34c48ea383eb2f38c53a38ccb7404a8ff084d5"
+        },
+        {
+          "name": "01 — PDF 01-10 — PART B.zip",
+          "id": "13k_0dAsEktbR_wB_DjHqapgQX4svc7dd",
+          "bytes": 35560492,
+          "sha256": "88a6cc17782c7263f9a4c4ceb26ba8f4ee784d1a0ffa1f50e4f8c69c866c0a8c"
+        },
+        {
+          "name": "02 — PDF 11-20 — PART A.zip",
+          "id": "1VKlMMB2bMTFqkplVqx4k1WWUwmrEyD7v",
+          "bytes": 90799683,
+          "sha256": "aca6903acdfaf66d55d22e7f57527f54ff48afb6ca8c82172330b49c05654454"
+        },
+        {
+          "name": "02 — PDF 11-20 — PART B.zip",
+          "id": "1NyDYYVSuPxk-5jjvuPb59SYLK5qPqSdG",
+          "bytes": 22299138,
+          "sha256": "5ff95785dd455a9701a8d24bb06d63eb75c6d1ae8b1a441d5da004cd9c55b9a2"
+        },
+        {
+          "name": "03 — PDF 21-30 — PART A.zip",
+          "id": "1ybgXXoI2Txfwk37Hl7jP2SfIkp8DwJA4",
+          "bytes": 89990950,
+          "sha256": "0d2c417fde0c0be5ed36684acd1cd78dc525db27773384b1a872b6aa2483b4cf"
+        },
+        {
+          "name": "03 — PDF 21-30 — PART B.zip",
+          "id": "16YwcXyvR0iGfUpq4PSSDeaN9l5UWVaBZ",
+          "bytes": 62752353,
+          "sha256": "dc4c148d3e9220367d54eac8e27c51011c08d390a84ec4b55958a88831b4244c"
+        },
+        {
+          "name": "04 — PDF 31-40 — PART A.zip",
+          "id": "1ErA3Xo8IGfWr42K-rOcGEOlUZwfaavoL",
+          "bytes": 84277081,
+          "sha256": "589049c2a691be19811a737fb3ecc0b3804cc642be5091649a25d4f309e99ebb"
+        },
+        {
+          "name": "04 — PDF 31-40 — PART B.zip",
+          "id": "1qnTCG2WCTQXqogN5QYzula2rn4h3rl81",
+          "bytes": 87106112,
+          "sha256": "f026b53cf6a4f0107c41fb84d84d9fa9137bdb2f6a7c6875ff337b64a12f43d7"
+        },
+        {
+          "name": "04 — PDF 31-40 — PART C.zip",
+          "id": "1s45tVKvZMKFJyDzY_5brSm08AfFSWWG_",
+          "bytes": 43987425,
+          "sha256": "565f7d2486e8d0d2dd6f1f0b1610b02b4816947a1ad8d293ecc189cdf2132fc5"
+        }
+      ],
+      "aggregate": {
+        "objects": 9,
+        "bytes": 610192501,
+        "bytesVsClaim": 9058
+      },
+      "controlFiles": [
+        {
+          "name": "commons_strict_sha256_verification.txt",
+          "id": "1PvXKzW6Oq1U7qP-j0FLIXx_gv19ogez9",
+          "bytes": 3110,
+          "content": "40 строк «OK», по одной на PDF"
+        },
+        {
+          "name": "COMMONS STRICT 40 — ORIGINAL MANIFEST.zip",
+          "id": "1qdpO--2fZim1Ui4suCm0hoxppCEhl0kM",
+          "bytes": 27136
+        },
+        {
+          "name": "COMMONS STRICT 40 — PROCESSED CONTROL PACKAGE.zip",
+          "id": "1RIA4gU8AkkwQ-JR72Ek5pCJr-5VBnnQC",
+          "bytes": 826936
+        }
+      ],
+      "verdict": "Байты корпуса в шардах на Drive. Разница 9 058 Б между суммой шардов и заявленным объёмом PDF объясняется оверхедом zip (заголовки, имена), а не расхождением объектов.",
+      "unverified": [
+        "Содержимое шардов не распаковывалось",
+        "Пофайловые SHA-256 внутри шардов против списка «OK» не сверялись — сверялся только итоговый объём"
+      ]
+    },
+    {
+      "name": "SECOND EDITORIAL 40 — второй редакционный корпус 40 открытых PDF",
+      "claimInRepo": {
+        "path": "SOURCE_LIBRARY/SECOND_EDITORIAL_40_PDF_PASS_2026-07-30.md",
+        "pdfs": 40
+      },
+      "drive": {
+        "folder": "02 — SECOND EDITORIAL 40",
+        "folderId": "1qba3eUdOo0x4Sp2T1viB_MMdWQf80UtZ",
+        "shards": [
+          {
+            "name": "01-10",
+            "id": "1cLg23XvpSxTuJXG14pwsxHACmbbqrah4"
+          },
+          {
+            "name": "11-20",
+            "id": "1fDuFrAOklfmazeC1wvkuIFN_HiuojybM"
+          },
+          {
+            "name": "21-30",
+            "id": "14QR3UlghkWlXABp52feO1Dkpzy_2NYIu"
+          },
+          {
+            "name": "31-40",
+            "id": "1DRavSKBH34HABvRLrovlampMZWTwDwqW"
+          }
+        ]
+      },
+      "objects": {
+        "count": 40,
+        "perShard": 10,
+        "perFileSha256Present": true
+      },
+      "controlFiles": [
+        {
+          "name": "SECOND EDITORIAL 40 — MANIFEST RIGHTS SHA256.zip",
+          "id": "1bHbwp7AoS2F645_BZhNVNTjWfKYoHm4g",
+          "bytes": 25419,
+          "sha256": "f363ec567be8a40cd5828d251e288572270c4368f5940602c0b29548b4a7e547"
+        }
+      ],
+      "verdict": "40 PDF на месте, у каждого серверный sha256Checksum, рядом ZIP с манифестом прав и сумм. Суммарный объём 1 250 680 919 Б записан как итог по четырём шардам; пофайловые суммы остаются на Drive и в репозиторий не перенесены.",
+      "unverified": [
+        "Пофайловые суммы прочитаны через коннектор, но в репозиторий не перенесены: перенос 40 значений вручную создаёт риск опечатки, который нечем проверить. В репозитории записан только итог по шардам.",
+        "Итог — сумма серверных `size`, а не сумма `sha256`. Совпадение обоих даёт манифест на Drive.",
+        "Содержимое PDF не открывалось."
+      ],
+      "aggregate": {
+        "checkedAt": "2026-11-18",
+        "method": "сложение серверных `size` по четырём папкам-шардам через коннектор Drive; ни один файл не скачивался",
+        "files": 40,
+        "bytesTotal": 1250680919,
+        "perShardBytes": {
+          "01-10": 351290078,
+          "11-20": 200155682,
+          "21-30": 360460618,
+          "31-40": 338774541
+        }
+      }
+    },
+    {
+      "name": "APPROVED CORE POET PORTRAITS 45 — одобренные портреты ядра поэтов",
+      "claimInRepo": {
+        "path": "SOURCE_LIBRARY/processed/APPROVED_CORE_POET_PORTRAITS_45_ALLOWLIST_2026-07-30.md",
+        "portraits": 45,
+        "statusInFile": "CURRENT LICENSE RECHECK REQUIRED"
+      },
+      "drive": {
+        "folder": "01 — APPROVED CORE POET PORTRAITS 45",
+        "folderId": "1BcHMZEPJtTDbE9zXZnRLtjCBtvGG3S02"
+      },
+      "objects": [
+        {
+          "name": "01 — ESENIN BUNIN SEVERYANIN.zip",
+          "id": "1p74lMCCL-4jBUoJAkTIMwlNc-Z44o29p",
+          "bytes": 5693954,
+          "sha256": "bbb49e2606080312d8325b5c5fbabdedfbde7cf804623ad3abdd3a74243effeb"
+        },
+        {
+          "name": "02 — BALMONT TYUTCHEV MAYKOV.zip",
+          "id": "1npjCwiSvNAGv_uNB7gYmn4Q2TTj-dvRb",
+          "bytes": 4297804,
+          "sha256": "b6e8ffb483b11b05431ad71458775b3fd0d394f6874d52c560298325b0703609"
+        },
+        {
+          "name": "03 — BRYUSOV BLOK FET.zip",
+          "id": "1TUIiE80Kuv0VIzeTGsTYwSYk8hUHfv4b",
+          "bytes": 5615172,
+          "sha256": "ee82a6eb81d7988aa1d08f9612fb9bd7a3c1411fbf53ab9ca521a81c9cf2074c"
+        }
+      ],
+      "aggregate": {
+        "objects": 3,
+        "bytes": 15606930
+      },
+      "controlFiles": [
+        {
+          "name": "PORTRAITS 45 — MANIFEST RIGHTS SHA256.zip",
+          "id": "1wqrGOW86x_cHPW14Xe_6x9yvaYxJS8sD",
+          "bytes": 23433
+        }
+      ],
+      "verdict": "Три ZIP-шарда с серверными суммами плюс манифест прав и SHA-256. Байты одобренного набора на Drive есть.",
+      "unverified": [
+        "Соответствие шардов артефакту по объёму не установлено: артефакт 63 239 012 Б на два прогона против 15 606 930 Б на Drive",
+        "Содержимое не распаковывалось"
+      ]
+    },
+    {
+      "name": "APPROVED EPHEMERA 63 — одобренные эфемериды",
+      "claimInRepo": {
+        "path": "SOURCE_LIBRARY/processed/APPROVED_EPHEMERA_63_ALLOWLIST_2026-07-30.md",
+        "objects": 63
+      },
+      "drive": {
+        "folder": "02 — APPROVED EPHEMERA 63",
+        "folderId": "1vfSja20qrEwQNuYDS1dI_WFZYxD18-_C"
+      },
+      "objects": [
+        {
+          "name": "01 — ORIGINALS 01-16.zip",
+          "id": "14DsRdBd3zvEvR9JiF_2yAOL-agZfE7GU",
+          "bytes": 3942853,
+          "sha256": "12d846f929afd6f660d8da87b3cc07344afea2a1c5809d5dbc22435e8ab30341"
+        },
+        {
+          "name": "02 — ORIGINALS 17-32.zip",
+          "id": "1yi5Vzi7DbTFVhJ5IaIAmTsXjDvFdm72C",
+          "bytes": 30333112,
+          "sha256": "b3e719420f395b4b045f42b4724d4c7ef482fdc6dc9ee8d17337b0b0e2093807"
+        },
+        {
+          "name": "03 — ORIGINALS 33-48.zip",
+          "id": "1fVWuckOkgxHRTmdxyLqvfSJR35mjkRsi",
+          "bytes": 60674985,
+          "sha256": "7c2ca45bb72fbbaf0f817961c73e490d286044e7e828986496a2bfb75ec8c29d"
+        },
+        {
+          "name": "04 — ORIGINALS 49-63.zip",
+          "id": "1-JY6zCDgDp0I38oqXLZaQCbEfL20wef-",
+          "bytes": 11570623,
+          "sha256": "b216b40d956ce7c7262e4aef28990941b2376b783b613e02ba95683794f8234c"
+        },
+        {
+          "name": "90 — REVIEW CONTACT SHEETS AND CANDIDATES.zip",
+          "id": "13JOBCx_Pu5FfIPOshYYEOMPBkPCRQndl",
+          "bytes": 26686822,
+          "sha256": "2b311c3743e6ae8f931a2cb2f548df95a44263f25bcfcc9258672c9415e27a27"
+        }
+      ],
+      "aggregate": {
+        "objects": 5,
+        "bytes": 133208395
+      },
+      "controlFiles": [
+        {
+          "name": "EPHEMERA 63 — MANIFEST RIGHTS SHA256.zip",
+          "id": "1XVd-P7ttZrWnvmow0A0s2Bb3KVN-Srp3",
+          "bytes": 27553
+        }
+      ],
+      "verdict": "Четыре шарда оригиналов (01-16, 17-32, 33-48, 49-63) плюс контрольный лист и кандидаты; у каждого серверная сумма. Байты одобренного набора на Drive есть.",
+      "unverified": [
+        "Объём артефакта (213 327 748 Б на два прогона) больше суммы шардов; причина расхождения не установлена",
+        "Содержимое не распаковывалось"
+      ]
+    }
+  ],
+  "boundaries": [
+    "Квитанция подтверждает наличие байтов на носителе. Она не подтверждает права, не разрешает публикацию и не снимает ни один HOLD.",
+    "Совпадение объёма — не тождество содержимого. Проверка содержимого требует распаковки и сверки пофайловых сумм.",
+    "Значения сняты 2026-11-18. Перезапись объекта на Drive изменит сумму, и квитанция устареет — её пересобирают, а не правят."
+  ],
+  "driveHoldAreas": [
+    {
+      "folder": "99 — HOLD — DUPLICATES, UNCLEAR & TO REVIEW",
+      "folderId": "1ZMOonLynLF2ykCLNjh4fTXbT6vRvZSXr",
+      "referencedInRepo": false,
+      "checkedAt": "2026-11-18",
+      "method": "list_files по ID папки и search_files по именам объектов; read_file_text для двух PDF",
+      "objects": [
+        {
+          "name": "OLD DRAFT — БАПТИСТЫ MASTER CATALOG — НЕ ИСПОЛЬЗОВАТЬ",
+          "id": "1c_Okh7AnWp2N6V6eq5BWI9TlIYCgi0WjxrxN9zMfKoE",
+          "type": "application/vnd.google-apps.spreadsheet",
+          "bytes": 1547983,
+          "sha256": null,
+          "status": "SUPERSEDED_BY_NAME",
+          "note": "Имя само объявляет черновик непригодным к использованию; в репозитории объект не цитируется."
+        },
+        {
+          "name": "sinichkin (1).dialog3.pdf",
+          "id": "10tviSg3ywPg3nESVA00mxWhYCTrr09tF",
+          "type": "application/pdf",
+          "bytes": 263540,
+          "sha256": "0f454c7bdc1bb563a9827213bd0f3f48e8feb5666896e06f23ab8e97ef08d4a7",
+          "status": "BYTE_IDENTICAL_DUPLICATE",
+          "duplicateOf": "1chedeNOxeFNqrWDa8yTKNfyiAaHc08rm",
+          "duplicateParent": "17gFvLg_yjpDEoU7eqPTLO9U0C6bp_4Nn",
+          "note": "«Богословский вестник» ЕХБ, № 12 (2006), ISSN 1815-8803, с. 87–127 — сводный отчёт о встрече СЦ ЕХБ с ВСЕХБ 23 марта 1966 г., составленный А. В. Синичкиным. Не скан, а реконструкция; современное издание."
+        },
+        {
+          "name": "ИСП_Краткая записка.pdf",
+          "id": "19hDwRip7EIE9HnFEwI0xtFJnjSzRtF7x",
+          "type": "application/pdf",
+          "bytes": 376310,
+          "sha256": "7d651ff5a408b4813f5a9386b419d278890d167dc7c0997a23cb923ff77cfcc3",
+          "status": "BYTE_IDENTICAL_DUPLICATE",
+          "duplicateOf": "1190iff8v0RmdoL4qgG0idB--KZ8nUKxq",
+          "duplicateParent": "17gFvLg_yjpDEoU7eqPTLO9U0C6bp_4Nn",
+          "note": "«Краткая записка о возникновении, развитии и настоящем положении евангельского движения в России» — записка И. С. Проханова в МВД 8 января 1905 г., составлена И. П. Кушнеровым при участии В. И. Долгополова и В. Н. Иванова; 22 приложения. Первоисточник 1905 г."
+        }
+      ],
+      "verdict": "Уникального содержимого нет: два PDF побайтово совпадают (равные sha256) с копиями в папке 17gFvLg_yjpDEoU7eqPTLO9U0C6bp_4Nn, которую корпус РБА уже считает дублем, а третий объект — таблица, имя которой прямо запрещает использование.",
+      "limits": [
+        "Факт совпадения установлен по серверным sha256, а не по скачиванию файлов.",
+        "Ни один объект не проверялся на пригодность как доказательство: проверялась только уникальность места хранения.",
+        "Папка не описана ни в одном документе репозитория до 2026-11-18 — это и было найдено."
+      ]
+    },
+    {
+      "folder": "99 — QUARANTINE — ТЕСТЫ И НЕОПОЗНАННОЕ",
+      "folderId": "1oZlhSG9Y1U9MpO38mpV_Jco6GTrAXSEh",
+      "referencedInRepo": false,
+      "checkedAt": "2026-11-18",
+      "method": "list_files по ID папки и вложенных папок до четвёртого уровня; read_file_text для двух JSON и двух CSV; read_file_text на пустом документе вернул extraction_status=empty",
+      "contents": [
+        {
+          "name": "TEST — GOOGLE DRIVE CONNECTOR — 2026-07-30",
+          "id": "11q4Cb4kZd5Qv3CxV8jxQWTSXAjYPRo__",
+          "items": 1,
+          "what": "CHATGPT_DRIVE_CONNECTION_OK.txt, 91 B — проверка подключения.",
+          "status": "TECHNICAL"
+        },
+        {
+          "name": "02 — HISTORY AUDIT — FINDINGS & SAFE CLEANUP PLAN",
+          "id": "1F9Sgqc2aCcQP2plydI66ykpORXv_rT_R",
+          "items": 2,
+          "what": "Две пустые подпапки; в «01 — READABLE REPORTS» один Google Doc, который экспортируется пустым (extraction_status=empty, 3 байта).",
+          "status": "PLACEHOLDER_EMPTY"
+        },
+        {
+          "name": "90 — TECHNICAL AI ACCESS — НЕ КОНТЕНТ",
+          "id": "1OxRefJrtnJN2rvOoPFJtrFvI3Q9HOVMH",
+          "items": 3,
+          "what": "Манифесты технического прохода 2026-07-30 и распакованные копии посторонних архивов (git-архив истории чужого проекта, скриншоты сервиса Microlink).",
+          "status": "TECHNICAL"
+        }
+      ],
+      "census": {
+        "artifact": "AI_ACCESS_MANIFEST_20260730-192437.csv",
+        "artifactId": "1HBFJ4NuT4JBUentvgbmj4J-1u3W3bAes",
+        "bytes": 2262138,
+        "companionSummary": "AI_ACCESS_SUMMARY_20260730-192437.json",
+        "scanned": 6028,
+        "direct": 6026,
+        "largeSkipped": 2,
+        "maxFileMb": 90,
+        "maxItemsPerFolder": 75,
+        "errors": 0,
+        "created": "2026-07-30T19:25:02+03:00"
+      },
+      "verdict": "Исследовательского содержимого нет: тест подключения, пустой документ-заглушка и технические манифесты. Ценность одна и косвенная — манифест даёт счётчик объектов Drive на 2026-07-30 (6028 просканировано), но с оговорками, которые не позволяют считать его полным.",
+      "limits": [
+        "Манифест не читался построчно: заявлены только числа из его сводки (232 B JSON), сам CSV на 2 262 138 B не разбирался.",
+        "Счётчик 6028 — не население Drive: при обходе стоял потолок 75 объектов на папку и пропуск файлов больше 90 MB, поэтому это нижняя граница.",
+        "Снимок сделан 2026-07-30 и с тех пор не обновлялся; к текущей дате он не привязан.",
+        "Ни один объект внутри «05 — EXTRACTED LARGE ARCHIVES» не открывался: содержание определено по именам папок верхнего уровня."
+      ]
+    }
+  ],
+  "sharingPosture": {
+    "checkedAt": "2026-11-18",
+    "method": "list_permissions по каждому объекту; смотрелись type, role, emailAddress, domain, allowFileDiscovery",
+    "question": "Видит ли кто-нибудь эти объекты, кроме владельца?",
+    "objects": [
+      {
+        "kind": "folder",
+        "label": "01 — COMMONS STRICT 40",
+        "id": "1DSfzT3YJC19iI0YG9IjfOXybVilgnQFJ",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "folder",
+        "label": "02 — SECOND EDITORIAL 40",
+        "id": "1qba3eUdOo0x4Sp2T1viB_MMdWQf80UtZ",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "folder",
+        "label": "01 — APPROVED CORE POET PORTRAITS 45",
+        "id": "1BcHMZEPJtTDbE9zXZnRLtjCBtvGG3S02",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "folder",
+        "label": "02 — APPROVED EPHEMERA 63",
+        "id": "1vfSja20qrEwQNuYDS1dI_WFZYxD18-_C",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "folder",
+        "label": "99 — HOLD — DUPLICATES, UNCLEAR & TO REVIEW",
+        "id": "1ZMOonLynLF2ykCLNjh4fTXbT6vRvZSXr",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "folder",
+        "label": "99 — QUARANTINE — ТЕСТЫ И НЕОПОЗНАННОЕ",
+        "id": "1oZlhSG9Y1U9MpO38mpV_Jco6GTrAXSEh",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "folder",
+        "label": "99 — HOLD — SUPERSEDED MIRRORS",
+        "id": "1FK7_q8431ys6MAv_0zFsXfht1Dnl5wmd",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "shard",
+        "family": "commons",
+        "id": "1JcpOMbKwNPWl0KaXQldKP74NgopPwYsJ",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "shard",
+        "family": "commons",
+        "id": "13k_0dAsEktbR_wB_DjHqapgQX4svc7dd",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "shard",
+        "family": "commons",
+        "id": "1VKlMMB2bMTFqkplVqx4k1WWUwmrEyD7v",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "shard",
+        "family": "commons",
+        "id": "1NyDYYVSuPxk-5jjvuPb59SYLK5qPqSdG",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "shard",
+        "family": "commons",
+        "id": "1ybgXXoI2Txfwk37Hl7jP2SfIkp8DwJA4",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "shard",
+        "family": "commons",
+        "id": "16YwcXyvR0iGfUpq4PSSDeaN9l5UWVaBZ",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "shard",
+        "family": "commons",
+        "id": "1ErA3Xo8IGfWr42K-rOcGEOlUZwfaavoL",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "shard",
+        "family": "commons",
+        "id": "1qnTCG2WCTQXqogN5QYzula2rn4h3rl81",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "shard",
+        "family": "commons",
+        "id": "1s45tVKvZMKFJyDzY_5brSm08AfFSWWG_",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "shard",
+        "family": "second-editorial",
+        "id": "1cLg23XvpSxTuJXG14pwsxHACmbbqrah4",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "shard",
+        "family": "second-editorial",
+        "id": "1fDuFrAOklfmazeC1wvkuIFN_HiuojybM",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "shard",
+        "family": "second-editorial",
+        "id": "14QR3UlghkWlXABp52feO1Dkpzy_2NYIu",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "shard",
+        "family": "second-editorial",
+        "id": "1DRavSKBH34HABvRLrovlampMZWTwDwqW",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "shard",
+        "family": "portraits",
+        "id": "1p74lMCCL-4jBUoJAkTIMwlNc-Z44o29p",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "shard",
+        "family": "portraits",
+        "id": "1npjCwiSvNAGv_uNB7gYmn4Q2TTj-dvRb",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "shard",
+        "family": "portraits",
+        "id": "1TUIiE80Kuv0VIzeTGsTYwSYk8hUHfv4b",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "shard",
+        "family": "ephemera",
+        "id": "14DsRdBd3zvEvR9JiF_2yAOL-agZfE7GU",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "shard",
+        "family": "ephemera",
+        "id": "1yi5Vzi7DbTFVhJ5IaIAmTsXjDvFdm72C",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "shard",
+        "family": "ephemera",
+        "id": "1fVWuckOkgxHRTmdxyLqvfSJR35mjkRsi",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "shard",
+        "family": "ephemera",
+        "id": "1-JY6zCDgDp0I38oqXLZaQCbEfL20wef-",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "shard",
+        "family": "ephemera",
+        "id": "13JOBCx_Pu5FfIPOshYYEOMPBkPCRQndl",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "file",
+        "label": "OFFICIAL CORE ACQUISITION 59 — STATUS & GAPS (Google Doc)",
+        "id": "1zIOOcYUrOfNf1liH7-XDn_JjtE0E5auejyqeAp5q9A8",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "file",
+        "label": "PORTRAITS 45 — MANIFEST RIGHTS SHA256.zip",
+        "id": "1bHbwp7AoS2F645_BZhNVNTjWfKYoHm4g",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "control-file",
+        "label": "commons_strict_sha256_verification.txt",
+        "id": "1PvXKzW6Oq1U7qP-j0FLIXx_gv19ogez9",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "control-file",
+        "label": "COMMONS STRICT 40 — ORIGINAL MANIFEST.zip",
+        "id": "1qdpO--2fZim1Ui4suCm0hoxppCEhl0kM",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "control-file",
+        "label": "COMMONS STRICT 40 — PROCESSED CONTROL PACKAGE.zip",
+        "id": "1RIA4gU8AkkwQ-JR72Ek5pCJr-5VBnnQC",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      }
+    ],
+    "counts": {
+      "folders": 7,
+      "shards": 21,
+      "manifests": 2,
+      "controlFiles": 3,
+      "total": 33,
+      "shardsByFamily": {
+        "commons": 9,
+        "second-editorial": 4,
+        "portraits": 3,
+        "ephemera": 5
+      },
+      "familiesFullyCovered": [
+        "commons",
+        "second-editorial",
+        "portraits",
+        "ephemera"
+      ]
+    },
+    "summary": "33 объекта, у каждого ровно одно разрешение — владелец; ни одного anyone, ни одного domain, ни одного второго пользователя. Четыре папки семейств покрыты целиком: все 21 шард и все сопутствующие файлы, то есть всё, что в них лежит.",
+    "limits": [
+      "Проверены четыре папки семейств, три карантинные папки и всё содержимое первых четырёх. Остальные области Drive (архив РБА, ИСКУПЛЕНИЕ и прочие) не проверялись вовсе.",
+      "Владелец — потребительский аккаунт Gmail: domain-разрешений здесь не может быть по определению, их отсутствие ничего не доказывает.",
+      "Права доступа могут измениться в любой момент после этой проверки; значения сняты 2026-11-18.",
+      "Открытость источника (DBNL, archive.org) и открытость нашего хранилища — разные вещи; запись только про наше хранилище.",
+      "Карантинные папки проверены как папки; их содержимое отдельно не перепроверялось — кроме двух объектов, у которых уже сняты квитанции в §5 и §6."
+    ],
+    "ancestors": {
+      "question": "Может ли доступ прийти сверху: унаследован ли объект от расшаренного предка?",
+      "method": "get_file(fields=parents) от каждой папки семейства до корня, затем list_permissions на каждом предке",
+      "checkedAt": "2026-11-18",
+      "chain": [
+        {
+          "name": "00 — GITHUB PROJECTS — FedorMilovanov",
+          "id": "1nDRnR-zd86qhgsGt6_ycPDu1F-2E_abH",
+          "permissions": [
+            {
+              "type": "user",
+              "role": "owner",
+              "email": "oldpoet2025@gmail.com"
+            }
+          ],
+          "anyone": false,
+          "domain": false
+        },
+        {
+          "name": "02 — TheLegendaryPoet — САЙТ О ПОЭТАХ",
+          "id": "15GOHglfgGwORn_mM9YqSfKJvLfXDu4Vu",
+          "permissions": [
+            {
+              "type": "user",
+              "role": "owner",
+              "email": "oldpoet2025@gmail.com"
+            }
+          ],
+          "anyone": false,
+          "domain": false
+        },
+        {
+          "name": "01 — SOURCES — PDF LIBRARY",
+          "id": "1-A9Rk7TqAPKbWDl0OzvpL6uFOog3cPQR",
+          "permissions": [
+            {
+              "type": "user",
+              "role": "owner",
+              "email": "oldpoet2025@gmail.com"
+            }
+          ],
+          "anyone": false,
+          "domain": false
+        },
+        {
+          "name": "02 — MEDIA — PORTRAITS & EPHEMERA",
+          "id": "1DvT6JoP2MJ6584km3eqOZYKJfwXIDLFB",
+          "permissions": [
+            {
+              "type": "user",
+              "role": "owner",
+              "email": "oldpoet2025@gmail.com"
+            }
+          ],
+          "anyone": false,
+          "domain": false
+        },
+        {
+          "name": "03 — Research — ИССЛЕДОВАТЕЛЬСКИЙ БЭКЕНД",
+          "id": "1Eb8qglwGIqeJY-02J8eXNpDaQfdkmozs",
+          "permissions": [
+            {
+              "type": "user",
+              "role": "owner",
+              "email": "oldpoet2025@gmail.com"
+            }
+          ],
+          "anyone": false,
+          "domain": false
+        },
+        {
+          "name": "01 — РУССКИЕ БАПТИСТЫ — RESEARCH CORPUS",
+          "id": "1B5i05JKLeb7mA0cOjM9_q7EYQR4qDKpz",
+          "permissions": [
+            {
+              "type": "user",
+              "role": "owner",
+              "email": "oldpoet2025@gmail.com"
+            }
+          ],
+          "anyone": false,
+          "domain": false
+        },
+        {
+          "name": "07 — СЕРИЯ «ИСКУПЛЕНИЕ»",
+          "id": "1VULVPNq4DbBFS5KvBDpSkJOlx4jbEQAV",
+          "permissions": [
+            {
+              "type": "user",
+              "role": "owner",
+              "email": "oldpoet2025@gmail.com"
+            }
+          ],
+          "anyone": false,
+          "domain": false
+        }
+      ],
+      "tree": [
+        "00 — GITHUB PROJECTS — FedorMilovanov (1nDRnR…)",
+        "  02 — TheLegendaryPoet — САЙТ О ПОЭТАХ (15GOHgl…)",
+        "    01 — SOURCES — PDF LIBRARY (1-A9Rk7…) → 01 COMMONS STRICT 40, 02 SECOND EDITORIAL 40",
+        "    02 — MEDIA — PORTRAITS & EPHEMERA (1DvT6Jo…) → портреты 45, эфемериды 63",
+        "  03 — Research — ИССЛЕДОВАТЕЛЬСКИЙ БЭКЕНД (1Eb8qgl…)",
+        "    01 — РУССКИЕ БАПТИСТЫ — RESEARCH CORPUS (1B5i05J…) → 99 — HOLD — DUPLICATES, UNCLEAR & TO REVIEW",
+        "    07 — СЕРИЯ «ИСКУПЛЕНИЕ» (1VULVPN…) → 99 — HOLD — SUPERSEDED MIRRORS",
+        "  99 — QUARANTINE — ТЕСТЫ И НЕОПОЗНАННОЕ (1oZlhSG9…)"
+      ],
+      "extraRootFolder": {
+        "name": "Искупление",
+        "id": "1RBmK2XWQMhFvjL9G3-WnlqAh2o76bX_3",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      "result": "Семь предков и одна корневая папка «Искупление» — у каждой ровно одно разрешение: владелец. Ни на одном уровне цепочки от корня до объектов нет ни anyone, ни domain, ни второго пользователя.",
+      "limits": [
+        "Проверены только предки перечисленных объектов; остальные ветки «00 — GITHUB PROJECTS» не смотрелись.",
+        "Корень My Drive отдельно не проверялся: у корня нет списка разрешений в том же смысле, что у папки.",
+        "Права предка могут измениться после проверки; значения сняты 2026-11-18."
+      ],
+      "siblingsUnderGithubProjects": {
+        "note": "Все семь папок-детей «00 — GITHUB PROJECTS» проверены: три из них — предки объектов (02, 03, 99), четыре остальные проверены отдельно.",
+        "checked": [
+          {
+            "name": "00 — START HERE — INDEX, LINKS, RIGHTS",
+            "id": "13stt7DBDwc-hkqgpez6GMANFkiIuJgfC",
+            "permissions": [
+              {
+                "type": "user",
+                "role": "owner",
+                "email": "oldpoet2025@gmail.com"
+              }
+            ],
+            "anyone": false,
+            "domain": false
+          },
+          {
+            "name": "01 — gb-is-my-strength — GOSPOD-BOG.RU",
+            "id": "1kJ0hLJOFCCePhUKiynUJ6S6us2HELD-W",
+            "permissions": [
+              {
+                "type": "user",
+                "role": "owner",
+                "email": "oldpoet2025@gmail.com"
+              }
+            ],
+            "anyone": false,
+            "domain": false
+          },
+          {
+            "name": "04 — AuditRepo — АУДИТ И ВЕРИФИКАЦИЯ",
+            "id": "1NBIapUtgwzXJ1TSuAjkuH9a3DnLwHzwt",
+            "permissions": [
+              {
+                "type": "user",
+                "role": "owner",
+                "email": "oldpoet2025@gmail.com"
+              }
+            ],
+            "anyone": false,
+            "domain": false
+          },
+          {
+            "name": "90 — SHARED — ОБЩИЕ МАТЕРИАЛЫ МЕЖДУ ПРОЕКТАМИ",
+            "id": "1C5nkQe1cLPOkekBy7elCnmPZ1_99IBBm",
+            "permissions": [
+              {
+                "type": "user",
+                "role": "owner",
+                "email": "oldpoet2025@gmail.com"
+              }
+            ],
+            "anyone": false,
+            "domain": false
+          }
+        ],
+        "result": "все семь — только владелец"
+      },
+      "rootLevelResearchItems": {
+        "note": "Объекты верхнего уровня My Drive, относящиеся к исследованию, проверены отдельно; остальные 28 объектов корня — не исследовательские (торты, скриншоты, боты) и не проверялись.",
+        "checked": [
+          {
+            "name": "Искупление",
+            "id": "1RBmK2XWQMhFvjL9G3-WnlqAh2o76bX_3",
+            "permissions": [
+              {
+                "type": "user",
+                "role": "owner",
+                "email": "oldpoet2025@gmail.com"
+              }
+            ],
+            "anyone": false,
+            "domain": false
+          },
+          {
+            "name": "99 — EMERGENCY SNAPSHOT — РУССКИЕ БАПТИСТЫ — 2026-07-31",
+            "id": "1W8egf7QYGqBxKee_YgvGldxhcNyfTJRa",
+            "permissions": [
+              {
+                "type": "user",
+                "role": "owner",
+                "email": "oldpoet2025@gmail.com"
+              }
+            ],
+            "anyone": false,
+            "domain": false
+          },
+          {
+            "name": "Ограниченное искупление - Алексей Прокопенко.pdf",
+            "id": "1ZlmUe1PfCeZFAB2aZjjLcx7R7s3stWQo",
+            "permissions": [
+              {
+                "type": "user",
+                "role": "owner",
+                "email": "oldpoet2025@gmail.com"
+              }
+            ],
+            "anyone": false,
+            "domain": false
+          },
+          {
+            "name": "Grace Church (RU)",
+            "id": "1_PWjTMHvLEyTpXiAqvcpooLzY0Mbxm39",
+            "permissions": [
+              {
+                "type": "user",
+                "role": "owner",
+                "email": "oldpoet2025@gmail.com"
+              }
+            ],
+            "anyone": false,
+            "domain": false
+          }
+        ],
+        "result": "все четыре — только владелец"
+      },
+      "totals": {
+        "familyObjects": 33,
+        "ancestors": 7,
+        "siblings": 4,
+        "rootLevel": 4,
+        "grandTotal": 48,
+        "allOwnerOnly": true
+      }
+    }
+  },
+  "rbaRightsManifest": {
+    "checkedAt": "2026-11-18",
+    "folder": {
+      "name": "08 — RIGHTS, MANIFESTS & SHA256",
+      "id": "1aj8HdRA9EcqW6NLLHaw9M68hY8rOGMEd",
+      "parent": "01 — РУССКИЕ БАПТИСТЫ — RESEARCH CORPUS (1B5i05JKLeb7mA0cOjM9_q7EYQR4qDKpz)",
+      "objectCount": 1
+    },
+    "file": {
+      "name": "SINICHKIN — WORKING LIBRARY ACTIONS & SHA256.csv",
+      "id": "1lrMtZKiaF8ocAp-kqLerQ_37H4-rFi_0",
+      "bytes": 77692,
+      "sha256": "8a3684581df7d8fc353bce518f79177c49bf23f92e6c52dc3c1f099acb9d270b",
+      "columns": [
+        "Source",
+        "SHA256",
+        "Action",
+        "Destination"
+      ],
+      "actionValue": "COPIED_TO_WORKING_LIBRARY",
+      "sourceRoot": "04 — CHANNEL METADATA & EXPORTS\\ChatExport_2026-06-27\\files\\",
+      "destinationRoot": "01 — РУССКИЕ БАПТИСТЫ — RESEARCH CORPUS\\00 — СИНИЧКИН — MASTER INTAKE & ORIGINALS\\02 — SOURCES, LINKS & BAPTIST PDF\\01 — PDF & BOOKS FROM SINICHKIN\\BATCH-0001\\"
+    },
+    "findings": [
+      "Папка с именем «RIGHTS» содержит один файл, и это не определение прав, а журнал копирования: Source / SHA256 / Action / Destination.",
+      "Ни файла, ни папки нет в репозитории: поиск по ID и по обоим именам даёт 0.",
+      "Пути, записанные в журнале, описывают дерево, которого больше нет: папки «00 — СИНИЧКИН — MASTER INTAKE & ORIGINALS» среди 12 текущих детей корпуса нет, а в «90 — SOURCE INTAKES & ORIGINALS» лежит «01 — СИНИЧКИН — TELEGRAM CHANNEL EXPORT — SOURCE INTAKE». Сверять надо по SHA256, а не по путям."
+    ],
+    "limits": [
+      "Строки не считались: прочитаны первые ~3 КБ из 77 692 Б, структура и первые пять записей.",
+      "Хеши из журнала с текущими файлами архива не сверялись — это отдельная работа, и без неё журнал ничего не подтверждает.",
+      "Другие папки корпуса РБА, кроме 02 (периодика) и 08 (этот журнал) и 99 (HOLD), не читались."
+    ],
+    "reconciliation": {
+      "method": "по SHA-256, не по путям: пути в журнале описывают дерево, которого больше нет",
+      "sourceSide": {
+        "path": "90 — SOURCE INTAKES & ORIGINALS\\01 — СИНИЧКИН — TELEGRAM CHANNEL EXPORT — SOURCE INTAKE\\01 — RAW CHANNEL MATERIALS — СИНИЧКИН\\04 — CHANNEL METADATA & EXPORTS\\ChatExport_2026-06-27\\files",
+        "id": "17gFvLg_yjpDEoU7eqPTLO9U0C6bp_4Nn",
+        "objectCount": 177,
+        "note": "PDF и рядом с каждым *_thumb.jpg; самих PDF порядка 90"
+      },
+      "destinationSide": {
+        "status": "NOT_FOUND_AS_WRITTEN",
+        "missingPath": "00 — СИНИЧКИН — MASTER INTAKE & ORIGINALS\\02 — SOURCES, LINKS & BAPTIST PDF\\01 — PDF & BOOKS FROM SINICHKIN\\BATCH-0001",
+        "stillPresent": "01 — PDF & BOOKS FROM SINICHKIN под 02 — SOURCES, LINKS & BAPTIST PDF отсутствует; там теперь 2 PDF и один zip",
+        "foundInstead": {
+          "folder": "01 — БАПТИСТ",
+          "id": "1fbtu6bbko-ruWMznopxi6nOhFE7-kQ08",
+          "parent": "02 — PERIODICALS (17zQ9dAkjJTaZOuy8GWtnnwtc--8hS1_b)"
+        },
+        "workingCopy": {
+          "path": "09 — INBOX — NEW PDF, PHOTOS & MATERIALS\\90 — PROCESSED — AWAITING FINAL PLACEMENT\\2026-07-30 — SINICHKIN PDF WORKING COPY — PROCESSED & EMPTY",
+          "id": "1NW82MDkm1OfLpS3lf5CV0cHMB_jgY6NY",
+          "children": [
+            {
+              "name": "BATCH-0001",
+              "id": "1oqkaSb3sc9RT5IkMjKxG8PB6FDzfS9YW",
+              "objectCount": 0
+            },
+            {
+              "name": "BATCH-0002",
+              "id": "18Kv0vrAHZC7jGv6LAie_wz2tEFuMWzX2",
+              "objectCount": 0
+            }
+          ],
+          "note": "Партия не исчезла бесследно: рабочая копия СИНИЧКИНА есть, в двух партиях, и обе пусты — файлы вынуты после раскладки. Имя папки само это и говорит: PROCESSED & EMPTY."
+        }
+      },
+      "verifiedDuplicates": [
+        {
+          "name": "_Батist_ 1 января 1909 года.pdf",
+          "sha256": "9fc077725f2db38bb22a3b34822910319d9f878365f96cb3288bbfb3995895f8",
+          "bytes": 8381880,
+          "sourceId": "1wzwNp2WuriZXlk4MaHx0-_BtDJsbzXMM",
+          "archiveId": "1of5R9xUYNC2cHXNVuHLAHhPkCMKL_PZS"
+        },
+        {
+          "name": "_Батist_ 1 июня 1911.23.pdf",
+          "sha256": "9fa70ec2c037fb2a36e4cf8c15b74741b4c59374d888056afc5512b346b3f371",
+          "bytes": 4669811,
+          "sourceId": "1MlDPua2ftFxwtcgXkSMp3_ezvCjAzUgL",
+          "archiveId": "16kDhC5fgFIYmmR-KR050kcnFPKt30CLf"
+        },
+        {
+          "name": "_Батist_ 1 января 1910 года.pdf",
+          "sha256": "34023b196ea1858603ed13324b4cfadce95438bfe49bd867f7f69a03b22a3a56",
+          "bytes": 4961746,
+          "sourceId": "1uVSMRGoHyti8LrQtxURtp8-bePSLwLe2",
+          "archiveId": "1Lcov9OqNPzAPs5tuo7Xe1nv2CxaYxav5"
+        },
+        {
+          "name": "_Батist_ 1 января 1911 года.pdf",
+          "sha256": "a4c2ff0c0943af482213583e629bae3fe621e83f58902988438a170b78e6d6a5",
+          "bytes": 5288660,
+          "sourceId": "10GRFhBmvECroX-OsEO-ENhIsnhVG4ylQ",
+          "archiveId": "1Pzz94HIW74YNrp9S0N9ra2vB1XW_abSk"
+        },
+        {
+          "name": "_Батist_ 10 марта 1910 года.pdf",
+          "sha256": "6ba9708c18b42f4842099cbb90ba28eee78b3bca1d4ac8aa9a2a360fb435b0bc",
+          "bytes": 5199640,
+          "sourceId": "1AgFmQawx_55ly98TH5DmtJ46Be9SqSAj",
+          "archiveId": "1Ilk2NYifXUalmaA-FTOH9bk3eSF3Vxcl"
+        }
+      ],
+      "verifiedDuplicatesCount": 5,
+      "ambiguousName": {
+        "name": "BATCH-0001",
+        "note": "в My Drive не менее 10 папок с этим именем у разных родителей — имя само по себе не идентифицирует партию"
+      },
+      "limits": [
+        "Сверены пять пар из порядка 90 PDF экспорта — выборка первых по порядку имён, не случайная.",
+        "Строки журнала не считались и с диском не сверялись построчно: журнал прочитан на первые ~3 КБ.",
+        "Папка 01 — БАПТИСТ не пересчитана: список отдаётся страницами, total_count равен размеру страницы.",
+        "Куда именно вынуты файлы из BATCH-0002, не проверялось: сверены только пять пар BATCH-0001."
+      ]
+    }
+  },
+  "corpusSectionsNotInLedger": {
+    "checkedAt": "2026-11-18",
+    "corpus": {
+      "id": "1B5i05JKLeb7mA0cOjM9_q7EYQR4qDKpz",
+      "name": "01 — РУССКИЕ БАПТИСТЫ — RESEARCH CORPUS",
+      "childFolders": 12
+    },
+    "inLedger": [
+      "00 — INDEX, ROADMAP & MASTER CATALOG",
+      "01 — PDF LIBRARY",
+      "02 — PERIODICALS",
+      "99 — HOLD"
+    ],
+    "notInLedger": [
+      {
+        "section": "03 — PRIMARY SOURCES — DOCUMENTS, LETTERS & LAWS",
+        "id": "1EB6Y0Ho1RHjKfkMbKfItxoIoUA0SBQHx",
+        "childFolders": 9,
+        "defect": "две параллельные нумерации: 01–05 (съезды, дом Евангелия, церковные документы, пресса) и 01–03 (законы, письма, дневники); номер раздела перестаёт задавать порядок"
+      },
+      {
+        "section": "04 — PEOPLE, CHURCHES & ORGANIZATIONS",
+        "id": "1PhEduUYKutHTsf3HaPJfngG15aWaef20",
+        "childFolders": 4,
+        "children": [
+          "01 — PEOPLE — BIOGRAPHIES & NAME AUTHORITY",
+          "02 — CHURCHES & LOCAL COMMUNITIES",
+          "03 — UNIONS, MISSIONS & ORGANIZATIONS",
+          "04 — PLACES, REGIONS & MAPS"
+        ]
+      },
+      {
+        "section": "05 — PHOTO ARCHIVE — CAPTIONS, RIGHTS & ARTICLE-READY",
+        "id": "1sOBqlgLjPqAhEoVuAvPpiSYzkquXhxXq",
+        "childFolders": 9,
+        "defect": "нет раздела 07; есть собственный правовой ящик 08 — RIGHTS OR SOURCE UNCLEAR и 09 — UNCAPTIONED — NEEDS IDENTIFICATION"
+      },
+      {
+        "section": "06 — SERIES DOSSIERS — ARTICLES & CHRONOLOGY",
+        "id": "1bDmRcCQKBzhVy9Jn0siXlOCkwSmnTHA6",
+        "childFolders": 5,
+        "children": [
+          "00 — MASTER CHRONOLOGY & SERIES MAP",
+          "01 — PLANNED ARTICLE DOSSIERS",
+          "02 — IN PROGRESS",
+          "03 — READY FOR SITE & PUBLICATION",
+          "90 — THEMATIC BACKLOG"
+        ]
+      },
+      {
+        "section": "07 — BIBLIOGRAPHY, LINKS & TO DOWNLOAD",
+        "id": "1od2nZzYeoHxzhVoRH_2_5FsVY1WqSkJ3",
+        "childFolders": 6,
+        "defect": "нет раздела 02; есть 06 — PAYWALLED, ARCHIVE ACCESS & PERMISSIONS NEEDED"
+      },
+      {
+        "section": "09 — INBOX — NEW PDF, PHOTOS & MATERIALS",
+        "id": "1DLLOg8LW130z6C1bvhkz7g1PH8707vZD",
+        "childFolders": 6,
+        "children": [
+          "01 — NEW PDF",
+          "02 — NEW PHOTOS & SCANS",
+          "03 — NEW LINKS, NOTES & BIBLIOGRAPHY",
+          "04 — NEW AUDIO & VIDEO",
+          "05 — NEW ZIP, EXPORTS & BULK INTAKES",
+          "90 — PROCESSED — AWAITING FINAL PLACEMENT"
+        ]
+      }
+    ],
+    "rightsQueuesOutsideLedger": [
+      {
+        "path": "05 — PHOTO ARCHIVE\\08 — RIGHTS OR SOURCE UNCLEAR",
+        "id": "1qjYcgRpPIwzSnRCKU29Ui0ZdXhJzHHxk",
+        "objectCount": 0,
+        "measuredAt": "2026-11-18"
+      },
+      {
+        "path": "05 — PHOTO ARCHIVE\\09 — UNCAPTIONED — NEEDS IDENTIFICATION",
+        "id": "11p2KPAS9LWb1TeveIAtvrWN3GhJXbTJS",
+        "objectCount": 0,
+        "measuredAt": "2026-11-18"
+      },
+      {
+        "path": "07 — BIBLIOGRAPHY\\06 — PAYWALLED, ARCHIVE ACCESS & PERMISSIONS NEEDED",
+        "id": "14DJ-u0hsqXAkyGCIwEr_WPMuZrX13sG2",
+        "objectCount": 0,
+        "measuredAt": "2026-11-18"
+      }
+    ],
+    "limits": [
+      "Читался только верхний уровень шести разделов: ни одного файла внутри, ни одной подпапки второго уровня.",
+      "Правовые ящики измерены на верхнем уровне: три папки, по нулю объектов в каждой.",
+      "Утверждение «открытых записей без RIGHTS_HOLD — 0» относится к леджеру репозитория; пустые ящики корпуса не делают его утверждением о корпусе."
+    ],
+    "rightsQueuesMeasured": {
+      "objects": 0,
+      "conclusion": "Все три правовых ящика корпуса пусты. Значит ноль открытых записей без RIGHTS_HOLD не опровергается ими — и не подтверждается: очередь пуста не потому, что споров о правах нет, а потому, что ни один объект корпуса в неё не положен."
+    }
+  },
+  "corpusOwnIndex": {
+    "checkedAt": "2026-11-18",
+    "folder": {
+      "name": "00 — INDEX, ROADMAP & MASTER CATALOG",
+      "id": "1JOrP8aO2XIrK3JzXsfKw8aTBbCNbyjkw",
+      "objectCount": 5
+    },
+    "objects": [
+      {
+        "name": "README — SOURCE INTAKE SINICHKIN — STORAGE RULES.txt",
+        "id": "1cGbpwLZFYDfnGHWabC33B01g_NP0pnOJ",
+        "bytes": 1381,
+        "inRepo": false
+      },
+      {
+        "name": "README — КАК ПОПОЛНЯТЬ И ИСПОЛЬЗОВАТЬ АРХИВ «РУССКИЕ БАПТИСТЫ»",
+        "id": "15-9ZA3y2IItoM-UEaFY6kHEAZDkLlAORwjoToETgxMA",
+        "googleDoc": true,
+        "exportedChars": 4246,
+        "listingBytes": 3030,
+        "inRepo": false
+      },
+      {
+        "name": "SINICHKIN — AUDIO & VIDEO INDEX — 52 FILES.csv",
+        "id": "1iiJMBxjbY7MjJZW61mHwC2G6nDP0mdVM",
+        "bytes": 9987,
+        "inRepo": false
+      },
+      {
+        "name": "SINICHKIN — MASTER FILE CATALOG — 5941 FILES.csv",
+        "id": "1nIayA3h9JuBrUQ8QJcf95hA3K4orGTwS",
+        "bytes": 1469442,
+        "files": 5941,
+        "inRepo": false
+      },
+      {
+        "name": "РУССКИЕ БАПТИСТЫ — MASTER ARCHIVE CATALOG",
+        "id": "1y9d_7bWAEsz8iYdMuRrtb6onDYEXLQx5PgT95oYNsSM",
+        "bytes": 2986417,
+        "googleSheet": true,
+        "inRepo": true,
+        "repoReference": "00_RUSSIAN_BAPTISTS_ARCHIVE.md и DRIVE_SNAPSHOT_MANIFEST_2026-07-31.md"
+      }
+    ],
+    "ownRules": {
+      "originals": "90 — SOURCE INTAKES & ORIGINALS: оригинальные ZIP и крупные поступления хранятся неизменными",
+      "workCopies": "02 — SOURCES, LINKS & BAPTIST PDF\\01 — PDF & BOOKS FROM SINICHKIN",
+      "texts": "02 — SOURCES, LINKS & BAPTIST PDF\\02 — TEXTS & NOTES FROM SINICHKIN",
+      "catalogs": "03 — CATALOGS & WORKING INDEXES",
+      "missingIssueRule": "отсутствующий выпуск сначала отмечается в очереди TO DOWNLOAD и не считается утраченным без библиографической проверки"
+    },
+    "violations": [
+      "Пункт 3 правил хранения называет путь 02 — SOURCES, LINKS & BAPTIST PDF\\01 — PDF & BOOKS FROM SINICHKIN; такого уровня больше нет, а рабочие копии выпусков лежат в 02 — PERIODICALS\\01 — БАПТИСТ.",
+      "Пункт 4 называет 02\\02 — TEXTS & NOTES FROM SINICHKIN; этой папки тоже нет: в 02 осталось два объекта (папка 01 — PDF — ИСТОРИЯ И ДОКТРИНА БАПТИСТОВ и zip).",
+      "Ни один из двух README о правилах хранения в репозитории не упомянут.",
+      "Машинный каталог на 5 941 файл в репозитории не упомянут ни разу."
+    ],
+    "limits": [
+      "Прочитаны два README (1 381 байт текста и 4 246 символов экспорта); CSV на 1 469 442 байта и таблица на 2 986 417 байт не открывались.",
+      "Число 5 941 взято из имени файла, а не из подсчёта строк.",
+      "У Google Doc размер в листинге (3 030) не равен длине текста при экспорте (4 246) — это разные величины, и путать их нельзя."
+    ],
+    "masterFileCatalog": {
+      "columns": [
+        "RelativePath",
+        "FileName",
+        "Extension",
+        "SizeBytes",
+        "SizeMiB",
+        "SHA256",
+        "Category",
+        "DirectAccess"
+      ],
+      "whyItMatters": "каталог несёт SHA-256 на каждый файл, поэтому сверка с Drive механическая: одинаковые значения sha256Checksum у объекта и в строке каталога",
+      "spotCheck20261118": {
+        "checked": 6,
+        "agreed": 6,
+        "rows": [
+          {
+            "file": "messages.html",
+            "sha256": "054b3e3bc3246b7467ecc1d9aa9bcc14a161e2894e10fc7b9153df79e687b0d7"
+          },
+          {
+            "file": "messages2.html",
+            "sha256": "c213712ba02eff620f788251889ca0d3572405378333e36d73b1f126030615da"
+          },
+          {
+            "file": "messages3.html",
+            "sha256": "a87417ed50bf952f8711e580fb445af38f54ec64bcdf30510d08b7afe98fc3c4"
+          },
+          {
+            "file": "messages4.html",
+            "sha256": "6f908b8ca33dfbb95b503bba1d57c8cfcbd367209075c85310350c289e1d27b0"
+          },
+          {
+            "file": "messages5.html",
+            "sha256": "540fd2b98e2ca2bc082e0274de6a9666a18eebc006384aa8f6463286f82c59ba"
+          },
+          {
+            "file": "messages6.html",
+            "sha256": "6d7f979a54dbf64a6ebf2ca369191188c59858f47f9a1204c4758e3da0a76fb9"
+          }
+        ],
+        "note": "шесть первых строк каталога против шести объектов каталога экспорта на Drive: совпали все шесть"
+      },
+      "limits": [
+        "Прочитаны первые 1 600 символов из 1 469 442; строки не считались.",
+        "Остальные 5 935 строк не сверялись."
+      ]
+    }
+  }
+}
