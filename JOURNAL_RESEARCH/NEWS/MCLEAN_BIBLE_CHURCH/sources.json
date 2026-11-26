@@ -1,0 +1,695 @@
+{
+  "caseId": "JR-MBC-2026",
+  "version": 9,
+  "reviewedAt": "2026-11-18",
+  "corpus": "JOURNAL_RESEARCH/NEWS/MCLEAN_BIBLE_CHURCH",
+  "evidencePolicy": "data/repository-evidence-policy-v2.json",
+  "publicationDecision": "PUBLICATION_HOLD",
+  "objects": [
+    {
+      "sourceId": "JR-MBC-001",
+      "title": "Court of Appeals of Virginia, Gaskins II, 19 May 2026, Record 0185-25-4",
+      "url": "https://www.vacourts.gov/static/opinions/opncavwp/0185254.pdf",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "REFERENCE",
+      "locator": "pp.1–3, 5–6, 9–10, 20–21; text extraction and p.1 image checked",
+      "provesOnly": "Court's own procedural findings and cited litigant allegations; no determination of personal financial wrongdoing",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-002",
+      "title": "Court of Appeals of Virginia, Gaskins I, 13 June 2023, Record 1074-22-4",
+      "url": "https://law.justia.com/cases/virginia/court-of-appeals-unpublished/2023/1074-22-4.html",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "REFERENCE",
+      "locator": "Opinion summary and case number; full item-level read pending",
+      "provesOnly": "2023 partial affirmance/reversal and remand; does not prove 2021 alleged constitutional breach",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-003",
+      "title": "McLean Bible Church — official history",
+      "url": "https://mcleanbible.org/history/",
+      "evidenceClass": "A3",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "History: Lon Solomon; David Platt; Mike Kelsey sections",
+      "provesOnly": "Institutional self-description of pastoral chronology; not independent conflict adjudication",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-004",
+      "title": "MBC: Frequently Asked Questions (published revision date 13 Aug 2021)",
+      "url": "https://mcleanbible.org/faq/",
+      "evidenceClass": "A3",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "FAQ updated 13 Aug 2021, section 1 'Has MBC's relationship with SBC changed since 2016?', first two paragraphs",
+      "provesOnly": "Church's public explanation states initial elders motion 23 Mar 2016, support suspended June 2021, elders decided to end agreement 9 Aug 2021; first-party narrative, not signed 2016 minutes",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD"
+      ],
+      "mergedFormerSourceIds": [
+        "JR-MBC-023"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-005",
+      "title": "McLean Bible Church — commonly asked questions",
+      "url": "https://mcleanbible.org/questions/",
+      "evidenceClass": "A3",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "MBC Commonly Asked Questions, visibly revised 13 Aug 2021; section on 23 Mar 2016 elders' motion, 9 Aug 2021 decision, and giving",
+      "provesOnly": "MBC's dated institutional account: partnership decision 23 Mar 2016, suspension of financial support June 2021, elders' unanimous decision to end cooperation on 9 Aug 2021; not independent verification of the March 2016 motion or money trail",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-006",
+      "title": "Larry Cooper, MBC Board chairman, letter to Ashley Clayton, 6 Apr 2021",
+      "url": "https://mcleanbible.org/legalupdate16",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "Single-page letter, dated 6 Apr 2021; entire text and page visually checked",
+      "provesOnly": "MBC Board chair said that cooperation with SBC bodies began before Platt and that MBC understood it was not a formal denominational affiliation; this is his documented 2021 position",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-007",
+      "title": "MBC elders — November 2, 2024 statement",
+      "url": "https://mcleanbible.org/updates/",
+      "evidenceClass": "A3",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "FROM MBC ELDERS – NOVEMBER 2, 2024",
+      "provesOnly": "The elder board's support for Platt and denial of critics' account",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-008",
+      "title": "MBC — Wade Burnett lawsuit report, February–March 2025",
+      "url": "https://mcleanbible.org/wp-content/uploads/2025/03/MBC-Lawsuit-Report-2021-2024.pdf",
+      "evidenceClass": "A3",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "PDF, 25 pp; full point-by-point independent read pending",
+      "provesOnly": "Interested party report, not judicial finding",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-009",
+      "title": "MBC Constitution, 2023 edition",
+      "url": "https://mcleanbible.org/wp-content/uploads/2023/05/MBC-Constitution_2023.pdf",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "May 2023 MBC Constitution: printed p.8 Article VII §4 'Audits and Church Records' independently read and page-image checked; other cited Articles I, IV, V reviewed previously",
+      "provesOnly": "Under its 2023 text, elders must commission annual audits and present summaries to members, who may review audited statements at church offices in the presence of designated leaders. This is an access rule and institutional duty, NOT possession of audit opinions or proof these rules governed earlier years.",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-010",
+      "title": "The Christian Post — Virginia court rejects MBC rehearing, 10 Nov 2026",
+      "url": "https://www.christianpost.com/news/virginia-court-rejects-mclean-bibles-attempt-to-stop-lawsuit.html",
+      "evidenceClass": "B1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "Michael Gryboski, The Christian Post, published 10 Nov 2026, report of 9 Nov one-sentence order; author quotes attorneys for both sides",
+      "provesOnly": "Verifies that this journalist reported receipt of the Nov 9 denial and records named sides' quotes; original Nov 9 SCV order itself is not possessed",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-011",
+      "title": "Christianity Today — Platt's MBC conflict over elder vote, July 2021",
+      "url": "https://www.christianitytoday.com/2021/07/david-platt-mclean-bible-church-elder-race-politics-critics/",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "21 July 2021 report; contextual contemporary interviews",
+      "provesOnly": "Independent background, not a primary finding about finances",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-012",
+      "title": "MinistryWatch — Warren Cole Smith, Conflict Entrepreneurs, 30 Jun 2025",
+      "url": "https://ministrywatch.com/david-platt-and-mclean-bible-church-are-victims-of-conflict-entrepreneurs/",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "Opinion/analysis, 30 June 2025",
+      "provesOnly": "Direct contrary evaluation of film's principal allegations; authorial opinion, not judicial exoneration",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-013",
+      "title": "Baptist News Global — Understanding the David Platt Story, 2024",
+      "url": "https://baptistnews.com/article/understanding-the-david-platt-story/",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "2024 journalistic background",
+      "provesOnly": "Informed reaction and additional chronology, not film claim proof",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-014",
+      "title": "Church Reform Initiative — Part 1 documentary announcement, 2024",
+      "url": "https://www.churchreforminitiative.org/articles/new-documentary-release-part-1-of-the-real-david-platt",
+      "evidenceClass": "A3",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "CRI announcement as its own statement",
+      "provesOnly": "Shows producers' accusation/framing; no independent corroboration",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-015",
+      "title": "Church Reform Initiative — Courting Years and correspondence leads",
+      "url": "https://www.churchreforminitiative.org/thecourtingyearsdavidplatt",
+      "evidenceClass": "C",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "Page listing claims and linked letter/email exhibits; linked originals not independently acquired",
+      "provesOnly": "Potential document leads. Do not promote authors' interpretation or transcript as fact",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-016",
+      "title": "Church Reform Initiative — The Takeover and correspondence leads",
+      "url": "https://www.churchreforminitiative.org/thetakeoverdavidplatt",
+      "evidenceClass": "C",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "Page listing 2017 documents; full originals and provenance pending",
+      "provesOnly": "Claim leads from litigation participant; duplicate originals must count once",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-017",
+      "title": "Center for Baptist Leadership — Non-denominational No More, May 2025",
+      "url": "https://centerforbaptistleadership.org/autonomous-no-more-how-sbc-insiders-hijacked-mclean-bible-raided-its-finances-and-split-the-church/",
+      "evidenceClass": "C",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "Byline/production lineage CRI members; fact checking needed",
+      "provesOnly": "Not a new independent corroboration of CRI's film",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-018",
+      "title": "Baptist News Global — Court returns MBC case, 19 May 2026",
+      "url": "https://baptistnews.com/article/mclean-bible-church-case-gets-new-life-in-appeals-court-ruling/",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "Mark Wingfield, 19 May 2026 report",
+      "provesOnly": "Journalistic summary secondary to primary Gaskins II opinion",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-019",
+      "title": "MBC elders' official 'Legal Update': partnership, audit assertions, and source exhibits",
+      "url": "https://mcleanbible.org/legalupdate/",
+      "evidenceClass": "A3",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "Seven numbered MBC findings, especially #1, #4, #5, #6 and exhibits linked 17–39; date on page to verify, context post-2023",
+      "provesOnly": "MBC acknowledges terminology/implementation confusion and asserts financial flows survived independent audit; auditor reports themselves not supplied by this statement",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD"
+      ],
+      "mergedFormerSourceIds": [
+        "JR-MBC-029"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-020",
+      "title": "Church Reform Initiative — Part 2 documentary announcement, 2024",
+      "url": "https://www.churchreforminitiative.org/articles/new-documentary-release-part-1-of-the-real-david-platt-33n7e",
+      "evidenceClass": "A3",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "CRI release text",
+      "provesOnly": "Announcement proves film/claim publication, not truth of allegations",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-021",
+      "title": "Ashley Clayton (SBC Executive Committee), letter clarifying 'affiliation' vs 'membership', made public by MBC June 2021",
+      "url": "https://mcleanbible.org/wp-content/uploads/2021/06/SBC_Letter.pdf",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "Single-page reprinted/redacted letter; entire printed page and image checked; exact signing date not printed in public reproduction",
+      "provesOnly": "An SBC Executive Committee official wrote that MBC's cooperation did not mean denominational membership and that the SBC database ID was for accounting; reprint hosted by MBC, not independently authenticated from SBC servers",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-022",
+      "title": "Larry Cooper, MBC Board chair, 13 Aug 2021 withdrawal letter to Ashley Clayton",
+      "url": "https://mcleanbible.org/wp-content/uploads/2021/08/Larry-Cooper-SBC-Withdrawal-Letter.pdf",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "Signed one-page original MBC letter, dated 13 Aug 2021; text and page image checked",
+      "provesOnly": "Board chair formally informed SBC of unanimous vote to withdraw from 2016 cooperation; letter proves communication and institutional position, not independent verification of all practical downstream terminations",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-024",
+      "title": "The Christian Post, 20 Oct 2026: Virginia Supreme Court initial dismissal of MBC appeal",
+      "url": "https://www.christianpost.com/books/va-supreme-court-allows-mclean-bible-church-lawsuit-to-continue.html",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "Article published 20 Oct 2026; precise order/document not independently read",
+      "provesOnly": "Reports an earlier separate procedural action on appeal; don't collapse Oct denial and Nov 9 rehearing denial into one event",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-025",
+      "title": "MBC-reproduced elder board minutes: 23 Mar 2016 SBC/NAMB partnership motion",
+      "url": "https://mcleanbible.org/legalupdate2",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "One-page excerpt headed 'Partnership with the North American Mission Board, Southern Baptist Convention'; page text and image verified, full minutes + Attachment 9 not supplied",
+      "provesOnly": "Dale's partnership proposal was approved on motion by Lon seconded by John; mentions New City Network and draft letter. Excerpt does not itself establish wording or approval of all later agreements",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-026",
+      "title": "SBCV Church Information and Partnership Form, 2017, officially rehosted by MBC",
+      "url": "https://mcleanbible.org/legalupdate19",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "REFERENCE",
+      "locator": "Four-page redacted form; printed page 1 (2016 vote date 3/23/16, Unique Partnership, BFM 2000); printed page 3 (dated signatures 28–29 Aug 2017); image checked",
+      "provesOnly": "Documents a submitted state-convention partnership application and agreement to cooperate; DOES NOT by itself establish denominational governance or invalidate Article I §2 of applicable constitution; mirrors of form not independent evidence",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-027",
+      "title": "MBC-published NCN contributions summary, 2017–2021",
+      "url": "https://mcleanbible.org/legalupdate20",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "Single-page MBC source summary, 2017–2021; visual and text verified, total $5,276,708",
+      "provesOnly": "Published MBC summary prints total ,276,708, but five annual rows add to ,276,707 (one-dollar discrepancy). This is a self-reported MBC->NCN schedule, not an independent end-use audit",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD",
+        "EVIDENCE_HOLD"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-028",
+      "title": "MBC and NCN payments to SBC and related organizations, 2017–2020",
+      "url": "https://mcleanbible.org/legalupdate21",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "Single-page accounting-style schedule, 2017–2020; visual and text verified, reported total $1,963,552",
+      "provesOnly": "Payments reported for two entities and multiple beneficiaries, including church plants; possible overlap with source JR-MBC-027, do not sum or infer fraud",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-030",
+      "title": "Historical pre-2023 MBC constitution scan (provenance subject to review)",
+      "url": "https://static1.squarespace.com/static/65d7a10086d588109eb3c279/t/65ef9ab84c9da064d14794a9/1710201529920/MBC_000642_Constitution.pdf",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "REFERENCE",
+      "locator": "Confidential-labeled discovery scan from an interested-party host, pages 3 Article I §2 and 8–9 membership/8-week inactivity; exact adoption date not established from scan",
+      "provesOnly": "Proves text appears in a historical scan; DOES NOT prove this exact scan was the governing edition in 2016 or 2021. Similar 2014-revised constitution annexed to 2017 form is same family, not independent confirmation",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-031",
+      "title": "MBC trustees' undated and unsigned proposed letter to SBC Executive Committee",
+      "url": "https://mcleanbible.org/legalupdate3",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "One scanned page, no date and no executed signatures; entire PDF page visually inspected",
+      "provesOnly": "A draft requests partnership with national SBC, says no desire at THAT time to formalize state-convention/local-association partnership, mentions Cooperative Program and financial contributions; blank signature lines do not establish dispatch or acceptance",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-032",
+      "title": "New City Network incorporation and bylaws PDF (MBC-hosted collection)",
+      "url": "https://mcleanbible.org/legalupdate4",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "24-page combined file; PDF pp.0 and 6, 15–16 and 20 images inspected; bylaws printed pp.10, 11, 15; selected clauses independently extracted, exact adoption not certified",
+      "provesOnly": "NCN is integrated auxiliary of MBC. NCN's official affiliation and oversight sit with MBC, whose elders can remove NCN directors, control important transfers, receive financial reports and resolve bylaws disputes. Does not establish that SBC controls MBC. Full version, signed adoption, and later amendments not independently proved",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD",
+        "EVIDENCE_HOLD"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-033",
+      "title": "MBC–New City Network MOU Support Services Addendum effective 2017",
+      "url": "https://mcleanbible.org/legalupdate5",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "7-page PDF, title page, pp.3–4 and signature/approval p.7 inspected; document updated 16 May 2016, effective calendar 2017, NCN approved 21 May 2017, MBC approved 24 May 2017",
+      "provesOnly": "MBC handles bank accounts, general ledger, payroll, monthly reporting and annual audit preparation for NCN; NCN approves its own disbursements and reimburses direct costs and services. Not the same as the missing March 2016 SBC Attachment 9 or Attachment 10, and not a direct SBC–MBC control agreement",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD",
+        "EVIDENCE_HOLD"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-034",
+      "title": "MBC 'Stewardship Integrity' financial controls statement, hosted 2019/12",
+      "url": "https://mcleanbible.org/wp-content/uploads/2019/12/StewardshipIntegrity.pdf",
+      "evidenceClass": "A3",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "One-page official MBC policy statement; text and page image checked; publication/revision date beyond URL directory not independently dated",
+      "provesOnly": "MBC states that elders review/sign most checks, senior pastor cannot sign disbursement checks, budgets pass congregation vote, and annual external audit is done. A policy statement is not independent proof of actual control execution or auditor's opinion.",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD"
+      ],
+      "integrityFlags": [
+        "SELF_REPORTED_CONTROL_DESIGN_ONLY"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-035",
+      "title": "MBC congregation meeting minutes, March 29 2017, NCN and finances",
+      "url": "https://mcleanbible.org/legalupdate13",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "Two-page file; p.1 image checked, both pages text reviewed; NCN section p.1 and proposed 2017 budget p.2",
+      "provesOnly": "The published minutes record Clint Clifton's public presentation on NCN, 40 church plants at various maturity stages, staff reductions under revenue pressure, and a proposed 2017 budget of $29,744,787 accepted by members. Statements and minutes are not independent proof of number of plants or implementation of budget.",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD",
+        "EVIDENCE_HOLD"
+      ],
+      "integrityFlags": [
+        "PUBLISHED_MINUTES_WITHOUT_FULL_ATTACHMENT_A"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-036",
+      "title": "MBC congregation meeting minutes, Dec 6 2017, NCN and 2018 budget",
+      "url": "https://mcleanbible.org/legalupdate14",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "Two-page PDF; p.1 image checked, p.2 text reviewed; NCN update and budget sections p.1",
+      "provesOnly": "The published minutes record a public NCN update including a claim of over 50 pastors trained, YTD expense review, and approval of 2018 budget; no line-item accounting or independent number verification appears in these minutes.",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD",
+        "EVIDENCE_HOLD"
+      ],
+      "integrityFlags": [
+        "PUBLISHED_MINUTES_WITHOUT_BUDGET_ATTACHMENTS"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-037",
+      "title": "MBC congregation meeting minutes, Mar 28 2018, internally conflicting date fields",
+      "url": "https://mcleanbible.org/legalupdate15",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "Two-page file both pages text and images read; heading says Mar 28 2018, footer says 04/25/2017, attachments refer to Dec 28 2018 (future relative to heading), secretary signature visible",
+      "provesOnly": "Text records a public NCN update on 45 trained pastors and 9 training for military installations, and financial review. However contradictory footer/attachment dates and nonmonotonic training counts versus Dec 2017 require verification from another archival original; do not use to support precise longitudinal totals.",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD",
+        "ARCHIVE_HOLD",
+        "EVIDENCE_HOLD"
+      ],
+      "integrityFlags": [
+        "INTERNAL_DOCUMENT_DATE_CONFLICT",
+        "CROSS_DOCUMENT_REPORTED_COUNTS_CONFLICT",
+        "INDEPENDENT_AUTHENTICATION_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-038",
+      "title": "Virginia Appellate Case Management System ACMS public terms of use",
+      "url": "https://eapps.courts.state.va.us/acms-public",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "Official public EULA/terms page, §3.7 User Conduct; lines 47–59 prohibit automated scripting, AI/bots to navigate/access or download inside ACMS",
+      "provesOnly": "Public court database is a relevant source location but explicitly bars use of automated bots/AI. No protected case queries or document downloads made. Official Oct 2 and Nov 9 2026 orders remain unacquired. Seek court clerk or a voluntarily provided original rather than automate ACMS.",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD"
+      ],
+      "integrityFlags": [
+        "AI_AUTOMATION_PROHIBITED_BY_SOURCE_TERMS"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-039",
+      "title": "NCN September 2017 executive financial summary, litigation discovery copy MBC_001505–001506",
+      "url": "https://static1.squarespace.com/static/65d7a10086d588109eb3c279/t/681cd765ef7b62602715b065/1746720613182/MBC_001505-001506.pdf",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "REFERENCE",
+      "locator": "Two-page internal NCN September 2017 financial summary, image and text checked: p.1 cash/revenue/expenses/payable; p.2 YTD contributions, other revenue and NAMB apprenticeship note. Stamped CONFIDENTIAL and hosted by an interested third party.",
+      "provesOnly": "The source describes YTD contributions $1,077,199, other revenue $58,977 (primarily NAMB apprentice funds through MBC), liabilities due to MBC $105,777, plus expense lines and 2017 timing. Illustrates MBC↔NCN inter-entity flows. Not independent audit and not proof that every amount is accurate, lawful or unlawful.",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD",
+        "EVIDENCE_HOLD"
+      ],
+      "integrityFlags": [
+        "CONFIDENTIAL_DISCOVERY_COPY",
+        "HOSTED_BY_LITIGATION_PARTICIPANT",
+        "NO_INDEPENDENT_ACCOUNTING_AUTHENTICATION",
+        "NOT_AN_AUDIT_OPINION"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-040",
+      "title": "Court of Appeals of Virginia official oral argument audio index: Gaskins I (2023) and Gaskins II (2026)",
+      "url": "https://vacourts.gov/courts/cav/oral_arguments/home",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "Official Court of Appeals of Virginia oral arguments listing: Feb 15 2023, Region 4, record 1074-22-4 (Gaskins v. MBC); Mar 25 2026, Region 4, record 0185-25-4 (Gaskins v. MBC). Both listed with 'Play Audio' control; indexed listing inspected, no recording downloaded or listened to.",
+      "provesOnly": "The court's public index identifies oral-argument audio entries associated with two numbered Gaskins appeals. It does not verify what anyone said, the recording quality, or the content of either hearing. Not a primary source for a spoken quotation until the actual recording is lawfully obtained and heard.",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD",
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD"
+      ],
+      "integrityFlags": [
+        "OFFICIAL_INDEX_ONLY",
+        "AUDIO_NOT_DOWNLOADED_OR_LISTENED",
+        "NO_VERIFIED_AUDIO_TIMECODES"
+      ]
+    }
+  ]
+}
