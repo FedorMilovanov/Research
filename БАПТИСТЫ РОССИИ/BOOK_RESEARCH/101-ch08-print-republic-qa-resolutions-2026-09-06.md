@@ -80,7 +80,7 @@ MASTER rows 1485 / 2264 внутренне противоречат себе:
 - `Баптист`, **№27**, 1911;
 - дата: **29 июня 1911**;
 - page reconstruction: 18 displayed pages;
-- page 7: **Фёдор Носков, `Автобиография и исповедь сектанта`**;
+- цифровой раздел 7: **Фёдор Носков, `Автобиография и исповедь сектанта`**;
 - отдельная публикация того же архива прямо называет статью материалом из конфискованного `Баптиста` №27 и говорит, что из-за неё был изъят весь номер.
 
 Public witnesses checked 2026-09-06:
@@ -98,6 +98,17 @@ Public witnesses checked 2026-09-06:
 
 Современный web archive показывает publisher metadata, которое конфликтует с установленной редакционной хронологией `Баптиста`. Поэтому поле publisher из этого web reconstruction **не использовать как authority**. Для issue number/date/article location источник полезен; для publisher/editor attribution — нет без отдельной сверки.
 
+### 27 ноября 2026 — уточнение источниковой границы и маршрут к судебному оригиналу
+
+Современная реконструкция [№27, раздел 7](https://mscexb.ru/newspaper-cms/view-newspaper.php?id=paper-1767397762-461ce8&page=7) содержит современную редакторскую атрибуцию изъятия номера статье Носкова; эта плашка **не является судебным документом 1911–1912 годов**. Указатель сайта нумерует статьи/разделы, а не обязательно печатные страницы: «7» — цифровой локатор. Номер и дата выпуска по реконструкции установлены; печатную пагинацию, факт и юридические основания ареста нужно проверять отдельно.
+
+1. [№27, раздел 17](https://mscexb.ru/newspaper-cms/view-newspaper.php?id=paper-1767397762-461ce8&page=17): текст выходных сведений называет ответственным редактором-издателем **В. Г. Павлова**, типография «Техник», Одесса, Успенская, 56. Это чтение современной текстовой передачи выходных данных, не визуальная сверка оригинала. Поле «Издатель: Иван Степанович Проханов» на том же сайте противоречит этому тексту.
+2. Л. Н. Беляева, М. К. Зиновьева, М. М. Никифоров, [«Библиография периодических изданий России. 1901–1916», т. 1, 1958, с. 54–55, №236](https://ru.djvu.online/file/e1FchEtATKMCc): с 1910 редактор-издатель В. Г. Павлов; с 1912 Д. И. Мазаев. В описании прямо приведены **цензурные дела Главного управления по делам печати, II отделение, №36 за 1912 г. и №457 за 1909 г.** Это старые делопроизводственные номера, прочитанные в цифровой текстовой передаче библиографии (B1). Современные опись/единица хранения/листы РГИА и содержание дел **ещё не установлены**. Не преобразовывать эти номера в непроверенный современный архивный шифр. Фонд 776 РГИА — поисковый маршрут, не доказательство конкретного дела.
+3. [ГПИБ: официальный указатель арестованных изданий по 15 апреля 1914 г., издание МВД 1915 г.](https://elib.shpl.ru/ru/nodes/19965-alfavitnyy-ukazatel-knigam-i-broshyuram-a-takzhe-numeram-povremennyh-izdaniy-arest-na-kotorye-utverzhden-sudebnymi-ustanovleniyami-po-15-e-aprelya-1914-goda-vzamen-izd-glavnym-upravleniem-po-delam-pechati-v-1913-godu-takogo-zhe-ukaz-spb-1915), 127 с.; [каталог серии](https://elib.shpl.ru/nodes/66233) указывает также выпуск по 1 января 1913 г. Это независимый институциональный маршрут к записи об аресте. Нужная строка указателя не прочитана.
+4. [№28 от 6 июля 1911](https://mscexb.ru/newspaper-cms/view-newspaper.php?id=paper-1767571104-a56b42) повторяет заголовок и текст передовицы «Нужно работать»; это свидетельство повторения в современных реконструкциях, не установленная перепечатка целого номера. [№29 от 13 июля, раздел 6](https://mscexb.ru/newspaper-cms/view-newspaper.php?id=paper-1767568442-21913b&page=6) содержит редакторское сообщение современного архива о повторном размещении окончания переписки Мазаева с молоканином. На страницах №26/27/29 воспроизводится тот же современный составной текст с примечаниями; эти URL нельзя считать тремя независимыми первичными свидетелями. Требуется сопоставить изображения №27–29 и собственно исторический текст.
+
+Итог: исправление номера №97 → №27 остаётся действующим на уровне цифрового представления. Атрибуция конфискации современному архиву обязательна; независимая судебная запись остаётся `LOCATOR_HOLD / EVIDENCE_HOLD`. Не менять права и допуск публикации. Следующее действие: проверить официальные указатели, затем сопоставить исторические делопроизводственные номера с современной описью РГИА (только бесплатный маршрут).
+
 ### What remains open
 
 Ещё не закрыты на primary/legal level:
@@ -108,16 +119,19 @@ Public witnesses checked 2026-09-06:
 - wording оправдания;
 - wording решения о конфискации/уничтожении.
 
-Safe now:
+Safe now (уточнено 27.11.2026):
+> `В современной реконструкции журнала «Баптист» №27 от 29 июня 1911 года опубликован автобиографический текст Фёдора Носкова; составители архива связывают изъятие номера с этой статьёй. Судебное решение ещё предстоит проверить.`
+
+HISTORICAL / SUPERSEDED — прежняя формулировка без указания посредника:
 > `Журнал «Баптист» №27 от 29 июня 1911 года, содержавший автобиографический текст Фёдора Носкова, был конфискован.`
 
 HOLD:
 > полная судебная последовательность 1912 года до independent/primary recovery.
 
 Future ledger:
-`conflict_notes = "MASTER rows 1485/2264 first say issue 97 and later issue 27. Full-text issue witness confirms Baptist No.27, 29 Jun 1911, with Fedor Noskov article on p.7 and identifies it as the confiscated issue. Treat No.97 as caption/transcription error. Court details remain source HOLD."`
+`conflict_notes = "MASTER rows 1485/2264 first say issue 97 and later issue 27. Full-text reconstruction identifies Baptist No.27, 29 Jun 1911, with Fedor Noskov article in digital section 7; modern archive attributes confiscation to the article. Treat No.97 as caption/transcription error pending contrary primary evidence. Printed pagination and court details remain source HOLD."`
 
-Status: **ISSUE NUMBER RESOLVED / COURT DETAILS OPEN**.
+Status: **ISSUE NUMBER RESOLVED IN DIGITAL REPRESENTATION / CONFISCATION ATTRIBUTED TO MODERN ARCHIVE / COURT DETAILS OPEN**.
 
 ---
 
@@ -128,7 +142,7 @@ Status: **ISSUE NUMBER RESOLVED / COURT DETAILS OPEN**.
 | Manifest date in MASTER | 17 Sep / conflict | **17 Oct 1905 resolved** |
 | first `Христианин` production terminology | mixed `lithographic / multiplying / glass hectograph` | **narrative safe; technical equivalence HOLD** |
 | confiscated `Баптист` issue | `№97` vs `№27` | **№27, 29 Jun 1911 resolved** |
-| Noskov article location | caption-led | **p. 7 in modern full-text reconstruction** |
+| Noskov article location | caption-led | **digital section 7 in modern full-text reconstruction; printed folio not verified** |
 | court-case details | caption-led | **still HOLD** |
 
 These corrections must be applied to eventual Chapter 8 prose, captions and media ledger before any `BOOK-READY` claim.
