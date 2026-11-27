@@ -39,6 +39,10 @@ Crucial title audit from 2026-07-31:
 - page count: **10 pages**;
 - canonical local slot is therefore tied to printed parent №6, while the owner/source filename labels it May.
 
+### Independent page recheck, 27 November 2026
+
+[Recorded reviewer verification in PR #547](https://github.com/FedorMilovanov/Research/pull/547#issuecomment-7068396651): the reviewer downloaded Drive object `1M_jJBvfs5FFCqpQ-TpOgsQ_ewskYZrnH` (4,875,926 bytes) and reported a locally recomputed SHA256 identical to MASTER row 75. This is a modern 2025 compilation of ten raster page images, without a text layer, not a born-digital archival original. The reviewer visually checked pages 1 and 10: page 1 names the parent `Христианин` №6 (1906) and contains May chronology (5, 13 and 16 May); page 10 includes the editorial signature `Редакторъ-Издатель И. С. Прохановъ`. This establishes the printed parent, internal May evidence and the editor-publisher on the inspected pages. It does not establish that this was the first issue, independently prove free distribution, or clear scan provenance/rights. MAX W04 transfers this attributed reviewer receipt; no new local PDF download or image inspection is claimed.
+
 ### Status
 - binary receipt: CLOSED;
 - SHA256: CLOSED;
@@ -240,7 +244,7 @@ This means Chapter 8 is **closer to the minimum 2-object media gate than origina
 
 ## 9. Immediate production queue
 
-1. Re-open / render MASTER row75 received PDF and verify cover/title + one network page.
+1. MASTER row75: page 1 / printed parent and page 10 / editorial signature verified by the attributed PR #547 reviewer. Select any further illustration only against its exact visual locator; rights and provenance remain open.
 2. Re-open / render MASTER row97 `Утренняя звезда` 30.10.1915 and visually identify censorship strips/page numbers.
 3. Resolve rights/provenance for both local objects.
 4. Receive/hash official `Христианин` 1906 №1.
