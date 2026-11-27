@@ -50,6 +50,30 @@ class CharnockReaderProofTests(unittest.TestCase):
         toc = self.body.split('## Содержание\n\n', 1)[1].split('\n\n---', 1)[0]
         self.assertEqual(len(re.findall(r'^\d+\. \[', toc, re.MULTILINE)), 10)
 
+    def test_toc_links_match_actual_headings_not_just_item_count(self):
+        """The ten Markdown links must resolve to the actual GitHub heading slugs."""
+        toc = self.body.split('## Содержание\n\n', 1)[1].split('\n\n---', 1)[0]
+        links = re.findall(
+            r'^\d+\. \[([^\]]+)\]\(#([^)]+)\)$', toc, re.MULTILINE,
+        )
+        self.assertEqual(len(links), len(self.sections))
+        for (label, link_target), chapter in zip(links, self.sections):
+            heading = chapter.group(1)
+            slug = re.sub(r'[^\w -]', '', heading.lower()).replace(' ', '-')
+            self.assertEqual(label, heading)
+            self.assertEqual(link_target, slug, heading)
+
+    def test_chapter_iv_ends_once_without_repeated_theological_summary(self):
+        section = self.body[
+            self.sections[4].start():self.sections[5].start()
+        ]
+        self.assertEqual(section.count('### Богословие, обращённое к совести'), 1)
+        self.assertNotIn('### Четыре линии одной пастырской заботы', section)
+        self.assertLess(
+            section.index('### Богословие, обращённое к совести'),
+            section.index('### Источниковые примечания'),
+        )
+
     def test_notes_are_unique_and_cited_from_each_readers_text(self):
         all_definitions = DEFINITION.findall(self.body)
         self.assertEqual(len(all_definitions), 180)
@@ -98,6 +122,38 @@ class CharnockReaderProofTests(unittest.TestCase):
             printed_section = self.body[self.sections[index].end():after].strip()
             self.assertTrue(printed_section.endswith('---'), name)
             self.assertEqual(printed_section, reader_section, name)
+
+    def test_chapter_vii_coverage_reflects_verified_source_readings(self):
+        """Prevent the source-depth map from reverting to obsolete partial-read claims."""
+        self.assertEqual(len(self.sections), 10)
+        chapter = self.body[
+            self.sections[7].start():self.sections[8].start()
+        ]
+        self.assertIn('| Пастырский вопрос | Сочинение и издание | Объём изученного текста |', chapter)
+        self.assertIn('| Откуда вражда к Богу? |', chapter)
+        self.assertIn('34 абзаца, печатные с. 6–12', chapter)
+        self.assertIn('| Для чего помнить Пятое ноября? |', chapter)
+        self.assertIn('Весь основной цифровой текст с эпиграфом', chapter)
+        self.assertIn('§§21.73–21.74', chapter)
+        self.assertIn('§§21.88–21.90', chapter)
+        self.assertNotIn('Начало на печатной с. 42', chapter)
+        self.assertNotIn(
+            'В трактате о провидении и памятной проповеди Пятого ноября изучены отдельные',
+            chapter,
+        )
+
+    def test_manuscripts_and_reader_have_no_invisible_or_mixed_script_typos(self):
+        """Catch invisible soft hyphens and Cyrillic/Latin homoglyphs in prose."""
+        invisible = re.compile(r'[\u00ad\u200b\u200c\u200d\u2060\ufeff]')
+        mixed_word = re.compile(r'(?:[A-Za-z][А-Яа-яЁё]|[А-Яа-яЁё][A-Za-z])')
+        texts = [(str(PREVIEW), self.body)]
+        for name in MANUSCRIPTS:
+            path = ROOT / MANUSCRIPT_DIR / name
+            texts.append((name, path.read_text(encoding='utf-8')))
+        for name, text in texts:
+            with self.subTest(file=name):
+                self.assertIsNone(invisible.search(text), name)
+                self.assertIsNone(mixed_word.search(text), name)
 
     def test_no_duplicate_horizontal_rules_between_chapters(self):
         self.assertNotRegex(self.body, r'(?m)^---[ \t]*\n\s*---[ \t]*$')

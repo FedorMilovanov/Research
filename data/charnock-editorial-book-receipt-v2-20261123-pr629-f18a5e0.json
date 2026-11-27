@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "CHARNOCK-ED02-IMAGE-VERIFIED-1699-20261123",
+  "sourceGitSha": "f18a5e0410d06f82acd1cbc57054ee025c57ec58",
+  "sourceFileCount": 17,
+  "archiveMemberCount": 18,
+  "manuscriptCount": 10,
+  "sourceArchiveName": "charnock-full-editorial-book-f18a5e0410d0.zip",
+  "archiveBytes": 992494,
+  "archiveSha256": "e511df5b2b07e55ebda4b433b395b1a00d812a17225b950d595e2240347f3065",
+  "sourceManifestSha256": "d3b6d529eb51bcf3c1c2e6fed9da4db7fdd3d20bc6880a23d52920cb73898905",
+  "createdBy": "deterministic reproduction of .github/workflows/charnock-editorial-book-custody.yml; exact 17 source blob hashes checked against prior verified custody zip; 2 changed blobs checked against current GitHub",
+  "archiveIntegrity": "18/18 ZIP members readable and all source manifest SHA-256 and Git blob SHA-1 checked",
+  "chapterParity": "10/10 exact after Markdown footnote remapping",
+  "uniqueFootnoteDefinitions": 180,
+  "footnoteReferences": 283,
+  "changedSourceBlobs": {
+    "БИОГРАФИИ/Стивен Чарнок/manuscripts/II_UCHENYI_I_PROPOVEDNIK_WORKING_DRAFT.md": {
+      "gitBlobSha1": "1e627c0e9b62bb516bbffbaf1c5ff801e32448db",
+      "sha256": "9e948e19fee3a885a1dac4fbba7888757eca055ff323de3d19b68d6cc86b56c6",
+      "bytes": 52288
+    },
+    "БИОГРАФИИ/Стивен Чарнок/reader-preview/CHARNOCK_FULL_BOOK_EDITORIAL_READER_2026-11-21.md": {
+      "gitBlobSha1": "e8f621271a40a9d5d76b948d3c2332232c85e6a2",
+      "sha256": "fe2fa4294098f7544f1f2508d9d0da2987caa68a0d8a3faed8c15c4aedef9cd5",
+      "bytes": 433378
+    }
+  },
+  "visualSource": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/ED02_1699_N520_PRINTED_521_MARGINAL_185_VISUAL_2026-11-23.md",
+  "visualVerdicts": {
+    "leaf": "n520",
+    "printedPage": 521,
+    "correctsAutomaticallySuggestedPrintedPage": 513,
+    "margin": "Lingend. de Eucharist. p. 185.",
+    "status": "VERIFIED_BY_IMAGE",
+    "otherEdition1684": "CATALOG_ONLY",
+    "autograph": "UNPROVEN"
+  },
+  "drive": {
+    "fileId": "1D64pxJHO46DGQbP4zvSjA_EI8pxODtS_",
+    "folderId": "15iNGKO8rN3vJKPbJuXfPVx4rXHER5Xq2",
+    "url": "https://drive.google.com/file/d/1D64pxJHO46DGQbP4zvSjA_EI8pxODtS_/view?usp=drivesdk",
+    "uploadedBytes": 992494,
+    "independentReadbackBytes": 992494,
+    "independentReadbackSha256": "e511df5b2b07e55ebda4b433b395b1a00d812a17225b950d595e2240347f3065"
+  },
+  "previousCustodySnapshot": {
+    "sourceGitSha": "7adf6d1cac9acc8c0509738073979d37e857e5d3",
+    "sha256": "7cfa24811c503e2cb9da1c99b79317259c4dd782e0567cff8a8645116324c4cf",
+    "preserved": true
+  },
+  "independentTranslationReview": "0/12",
+  "holds": [
+    "ED02_OTHER_VARIANT_1684",
+    "ED06_INDEPENDENT_REVIEW_HOLD",
+    "RIGHTS_HOLD",
+    "PUBLICATION_HOLD"
+  ],
+  "publicationState": "DRAFT / RESEARCH_ONLY / PUBLICATION_HOLD",
+  "ciStatusAtReceipt": "NOT_YET_COMPLETED_ON_EXACT_SOURCE_SHA"
+}
