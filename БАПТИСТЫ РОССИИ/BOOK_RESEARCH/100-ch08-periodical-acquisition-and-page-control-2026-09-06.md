@@ -132,9 +132,23 @@ Therefore:
 - official/public facsimile route: CLOSED;
 - preliminary rights route: CLOSED / PD candidate;
 - canonical local receipt + our SHA256: OPEN;
-- page visual verification after controlled receipt: OPEN.
+- selected external page visual verification: VERIFIED (W30, PDF indices 0–4 and 21); full 22-page inspection and verification against a controlled local receipt: OPEN.
 
-Do not call first `Баптист` `IN DRIVE` yet.
+### W30 — first-issue page images and exact editorial evidence (28 November 2026)
+
+[Official RS ECB PDF, 1907 №1, 22 digital pages](https://baptist.org.ru/wp-content/uploads/2026/02/baptist1907_01.pdf), linked from [the official periodicals index](https://baptist.org.ru/izdaniya/baptist/). Six images directly inspected, not OCR; no download/hash or Drive receipt claimed. The issue's existence and route were known in ledger 84; the new evidence is selected page-level reading.
+
+- PDF index 0, unnumbered first/title page (conventionally p. 1): №1, June 1907, spiritual-moral journal, organ of Russian Baptists; Matthew 28:19–20 and a captioned illustration of Christ's baptism by John in the Jordan. The inaugural editorial statement presents service to Christ's church through reporting Baptist faith, doctrine and life in Russia and abroad; sermons and scriptural exposition, news of worldwide Christian life from a Baptist viewpoint, defence of the gospel and Christian unity are explicit aims. No author signature visible on this page; do not identify the illustration's artist from appearance.
+- Printed p. 2 / PDF index 1: Apostles' Creed introduced as recognized by Baptists and read at the London world congress, followed by Article I of the Brief Baptist Confession, on the Word of God: enumerated canonical books, divine inspiration and Scripture as the sole rule of faith and life. This is the periodical's own doctrinal and editorial witness, not independent proof of universal subscription by every Baptist or of congress proceedings.
+- Printed pp. 2–4 / indices 1–3, complete article «Название „Баптисты“»: acknowledges discomfort with the non-Russian name, explains believer's baptism by immersion and the international link to churches outside Russia; retains the name while extending fellowship to believers who believe and are baptized regardless of their name. It also explicitly distinguishes Baptist baptism from infant baptism. Attribute this to the article (no visible author signature at its end), not automatically to Mazaev personally. Do not equate unity in Christ with the abolition of confessional differences.
+- Printed pp. 4–5 / indices 3–4: beginning of «Вера Божия» on Acts 16:16–40; the exposition emphasizes salvation through faith in Christ. Only these two pages read, not the complete sermon.
+- Printed p. 22 / index 21: colophon identifies responsible editor-publisher D. I. Mazaev, Nakhichevan-on-Don, 2nd Voznesenskaya Street, own house no. 23, printer F. P. Pavlov, Rostov-on-Don. Distinguish editorial address from printing location; neither should be silently normalized into the other. The same page prints an attributed letter report about English Christians deciding to discontinue financial assistance on the assumption that persecution had ended in Russia; it is a report, not independent proof of actual freedom or a financial transaction.
+- [Commons 1907 category](https://commons.wikimedia.org/wiki/Category:Baptist_(Russian_magazine),_1907) lists all six 1907 DjVu issues. No independence or byte equality with the official PDF established. The official index also assigns the same link to both 1907 №1 and 1909 №1; do not infer correct 1909 identity from anchor labels. The 1907 PDF itself confirms the correct 1907 identity.
+- Secondary comparison: I. P. Plett, *История евангельских христиан-баптистов 1905–1944* (2009), p. 23, explicitly locates the inaugural programme at 1907 №1 p. 1 ([text](https://djvu.online/file/gUelaYOtdwn1E)); its generic Rostov location is refined by the actual colophon. The visual original is stronger for the exact wording and editorial address. No reliance on a later reproduction for these readings.
+
+Reader-ready passage for #547: «Первый номер „Баптиста“, вышедший в июне 1907 года, открывался изображением крещения Христа в Иордане и словами Великого поручения. За редакционным обращением следовали Апостольский символ веры и первый раздел краткого баптистского вероучения — о Слове Божьем. В статье о названии „баптисты“ автор объяснял, почему русские верующие сохраняли это имя: оно связывало их понимание крещения с братством за пределами России. При этом он не считал само название важнее церковного мира. Редакция находилась в доме Дея Мазаева в Нахичевани-на-Дону, а печатался журнал в Ростове-на-Дону». Sources: first page, pp. 2–4, 22; editorial programme and theology are direct page evidence. No claim that Mazaev wrote the unsigned article, or that its particular fellowship formula represented every evangelical group.
+
+Do not call first `Баптист` `IN DRIVE` yet. Physical provenance, exact binary identity, remaining pages, image rights and publication approval remain open.
 
 ---
 
