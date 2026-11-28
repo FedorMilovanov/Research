@@ -8763,12 +8763,12 @@
     },
     {
       "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article15_dort_westminster_saumur_english_hu.md",
-      "sha256": "5bce51a326bf2542e3887a2c162ad9a6706f7ab8eefab647b32b1f23cc6c171f",
+      "sha256": "9407a4b5bdc660483b41d8e16ddc14845d6519a8f2324dd2a6bfe1f5f41491ce",
       "reviewedAt": "2026-11-10",
       "note": "Статья №15/18: читательский исторический анализ Дорт II.3/5/8/Rejection, WCF/1689 VIII.5/8, английских делегатов и условного реформатского универсализма. Первичная сверка строго по архивным локаторам, не новый полный просмотр трактатов. HISTORICAL_SOURCE_HOLD/ATTRIBUTION_HOLD/RIGHTS_HOLD/PUBLICATION_HOLD. NOT PEER REVIEWED.",
       "publicationEligible": false,
-      "digestRefreshedAt": "2026-11-17",
-      "digestRefreshedReason": "Agent 7 editorial patchset (93 scoped replacements, #541); 2026-11-17: narrow, non-publication distinction of the Acta 1620 Sententia, the separate 1629 Collegiat Suffrage, and the final Canons, based on text-only HathiTrust OCR and EEBO-TCP transcript. The Acta image check, band R autograph/crosswalk, full Lynch reading, peer review, and publication remain on HOLD; this digest refresh verifies bytes only and upgrades no evidence or publication status."
+      "digestRefreshedAt": "2026-11-28",
+      "digestRefreshedReason": "Agent 7 editorial patchset (93 scoped replacements, #541); 2026-11-17: narrow, non-publication distinction of the Acta 1620 Sententia, the separate 1629 Collegiat Suffrage, and the final Canons, based on text-only HathiTrust OCR and EEBO-TCP transcript. The Acta image check, band R autograph/crosswalk, full Lynch reading, peer review, and publication remain on HOLD; this digest refresh verifies bytes only and upgrades no evidence or publication status. Historical 2026-11-17 SHA-256: 5bce51a326bf2542e3887a2c162ad9a6706f7ab8eefab647b32b1f23cc6c171f. 2026-11-28 W12–W19: HUA crosswalk R → 52 confirmed by custodian, not autograph; English 1629 article II complete section read in official TCP transcription, Allport 1844 pp. 188–189 and Perkins 1598 pp. 74–75 text-only; no Latin facsimile or full Lynch reading, no peer review, all publication/rights HOLD retained. SHA-256 recalculated from actual Git blob 02fb4972b943980b6a855af2b7511c5dc784f807 (64029 bytes)."
     },
     {
       "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article16_boundaries_calvinism_reformed_family.md",
