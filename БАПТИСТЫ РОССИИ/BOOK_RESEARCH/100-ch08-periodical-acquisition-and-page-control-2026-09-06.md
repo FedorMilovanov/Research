@@ -117,7 +117,17 @@ Therefore:
 - SHA256 for received canonical 1906 `Христианин`: OPEN;
 - page visual/quote gate: OPEN.
 
-P0 target remains official `Христианин` 1906 №1.
+### W31 — selected first-issue visual reading
+
+[Commons copy of №1, January 1906](https://commons.wikimedia.org/wiki/File:Журнал_«Христианин»,_СПб.,_1906,_№01.pdf), 57 digital pages, 23.77 MiB; upload history attributes transfer to the former official RS ECB PDF URL in 2018. [Current official index](https://baptist.org.ru/izdaniya/hristianin/) links [the same-named official PDF](https://baptist.org.ru/wp-content/uploads/2026/02/khristianin-1_1906.pdf). Both full-PDF fetches rejected at 24,922,934 B; container download failed DNS. No current byte equality or new SHA256. Two 960px per-page Commons images actually inspected.
+
+- Digital page 1: illustrated cover, №1, January 1906, first year. Christ speaking from a boat to listeners by the shore (artist not identified); 1 Cor. 1:22–23, unity/freedom/love maxim, and wording of Phil. 1:27. Printed reference appears as «Филипп 1,17», not the correct biblical locator 1:27; distinguish historical printing from editorial normalization.
+- [Digital page 2](https://commons.wikimedia.org/w/index.php?page=2&title=File:Журнал_«Христианин»,_СПб.,_1906,_№01.pdf): title leaf independently dated January 1906, №1; imprint at bottom **1905**, St Petersburg, typography A. Lashinsky, Kirpichny lane, house 3. This is the January 1906 numbered issue with a 1905 imprint, not proof that the November trial number has been recovered. Do not equate imprint year with actual day of circulation. Contents identify Spurgeon's sermon «Как воскрешать мертвых», p.13; «Христос распятый», signed И. С. П., p.39; «Вера (для юных читателей)», p.47; appendix «Оправдание Христом». Contents locators only, not claims that articles were read.
+- [Братский вестник 1947 №5](https://mbchurch.ru/publications/brotherly_journal/1628/): retrospective narrative describes two earlier manuscript/multiplication-apparatus issues and Zhidkov's handwriting, then regular typography from 1906. Not an image of those earlier issues; precise machine remains open. Commons provides PD-scan candidate, not final media approval.
+
+Proposed reader paragraph: «Январский номер 1906 года имел на титуле дату выпуска, но в типографских выходных данных стоял ещё 1905 год. На обложке помещены евангельские слова о распятом Христе и единстве веры. Оглавление показывает, что редакция с самого начала соединяла проповедь, богословие и наставление молодёжи: в первом номере были заявлены беседа Сперджена, статья о распятом Христе и приложение об оправдании Христом». Selected external page visual VERIFIED; full original receipt, rights, reading of articles and full issue remain OPEN.
+
+P0 target remains controlled receipt of official `Христианин` 1906 №1.
 
 ---
 
@@ -163,7 +173,16 @@ Therefore target `Утренняя звезда` 1910 №4 remains:
 - official route: CLOSED;
 - canonical receipt: OPEN;
 - SHA256: OPEN;
-- page visual: OPEN.
+- page visual: OPEN (1910 №4 not inspected this wave).
+
+
+### W31 — earliest issue chronology and holder locator
+
+[RNB, *Газеты дореволюционной России 1703–1917: каталог*, СПб., 2007](https://militera.org/books/pdf/enc/biblio_gazety-dorrev-rossii.pdf#page=407), printed p.407, entry 5219, PDF index 406 and title page index 0 visually checked: first issue explicitly `1909, №1 (19 дек.)`; holdings 1909 №1, 1910–1916, 1917 №1 (24 March); shelfmark **Газ.1-П/1-217**. Record identifies a break August 1916–23 March 1917 and supplements; this is holder bibliography, not inspection of newspaper pages.
+
+[Проханов, *В котле России*, online Russian translation](https://krashve.ru/wp-content/uploads/2021/01/ivan_prohanov_-_v_kotle_rossii.pdf#page=66), p.66, PDF index 65 visually checked: remembers first printed number on 1 January 1910 and distinguishes six periodical functions (spiritual, church needs, youth, children, music and broader public life). Edition/translator and English original not verified here. **19 December 1909 Julian = 1 January 1910 Gregorian**, so these two witnesses may refer to precisely the same day. Do not invent a December trial issue separate from the January first number, or declare the memoir date erroneous. Calendar convention of translated memoir and original masthead require confirmation. [RNB online index](https://nlr.ru/res/inv/ukazat55/cat_show.php?p=3&rid=7957) indexed record corroborates the 1909 start but direct access timed out; [RS ECB periodicals index](https://baptist.org.ru/izdaniya/) describes 1910 start and linked newspaper archive returned 404. These failures do not negate ledger 80.
+
+Reader wording: «На рубеже 1909–1910 годов Проханов начал выпускать еженедельную „Утреннюю звезду“». Note with RNB p.407/entry 5219 and memoir p.66: likely old/new-style equivalence, not separate issue proof. Next bounded action: original RNB №1, 19.12.1909, Газ.1-П/1-217. No original newspaper page, full object, new checksum or rights claimed.
 
 ---
 
