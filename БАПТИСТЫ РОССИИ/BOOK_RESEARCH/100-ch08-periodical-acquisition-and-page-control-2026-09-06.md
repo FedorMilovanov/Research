@@ -153,7 +153,7 @@ Therefore target `Утренняя звезда` 1910 №4 remains:
 
 ---
 
-## 6. `Утренняя звезда`, 1915 — strong local censorship object already received
+## 6. `Утренняя звезда`, 1915 — verified wartime press and legal/community evidence
 
 MASTER row 97:
 - series: `УТРЕННЯЯ ЗВЕЗДА`;
@@ -178,20 +178,27 @@ Contents include:
 This one object can show, physically and without reconstruction:
 - weekly evangelical current-affairs press;
 - the wartime public sphere;
-- censorship operating directly on the printed page;
+- the visible blank column and contemporary reports of administrative restrictions (the cause of the blank space itself remains unverified);
 - the mature relationship between `Утренняя звезда` and the wider Prokhanov print ecosystem.
+
+### W23 — actual binary and eight-page visual inspection, 28 November 2026
+
+[Drive object](https://drive.google.com/file/d/1ilzW_kOr2tfSAjmIdqbhukvnUj0GaG2n/view): received through the authorized Drive connector, 8,002,892 bytes, independently recomputed SHA256 exactly equal to MASTER row 97 above. PDF has eight raster pages and no extractable text layer; metadata dates the modern JPEG-to-PDF compilation to 30.10.2024 (not a historical digital original). All eight page images were opened; targeted crops on pp. 1 and 5 were read directly, without OCR. Printed numbers 2–8 match PDF pages 2–8; first page has the masthead. Not a complete transcription.
+
+- **p. 1, masthead and «Десятилетие „Христианина“»:** №44, VI year, Petrograd, Friday 30 October 1915; weekly on Fridays, single issue 5 kopecks, editorial correspondence addressed to I. S. Prokhanov, subscription/advertising to «Радуга», Стремянная 11. The anniversary article explicitly dates the Main Administration for Press Affairs' permission for Prokhanov to print, publish and edit the monthly spiritual magazine to **3 November 1905** (date as printed, old style). The article distinguishes the permission anniversary from the anniversary of actual publication and announces a planned celebration on 6 December 1915. This is contemporary retrospective editorial testimony, not the administrative permit itself, and the announcement does not prove that the celebration occurred.
+- **p. 5, «О метрической записи детей»:** printed copies of the First Kharkov community's application and Kharkov provincial administration's reply, 5 May 1915, department I, desk I, addressed to the bailiff of Kharkov precinct 6. The reply concerns children from marriages conducted in the Orthodox rite who were not entered in the Orthodox registers in time; entry in sectarian registers is to follow the procedure for correction/addition under competent supervision. Scope is this case, not a general abolition of registration restrictions.
+- **p. 5, «О закрытии общины»:** printed complaint addressed to the First Department of the Governing Senate, by members of the council of the Temryuk–Anapa community of Russian Christians-Baptists of evangelical confession, Anapa, 20 October 1915. According to the complainants, the funeral procession on 17 April took a different street because of mud; judicial proceedings were discontinued, then the authorities administratively closed the registered community and prohibited prayer gatherings on 1 June. The council says it had not received the closure order and asks the Senate to overturn it; it invokes point 6 of section II of the decree of 17 October 1906 (not the 1905 Manifesto). A1 participant testimony as reproduced in the periodical, not the original signed petition, closure order or Senate judgment. A dark blot obscures a small part of the complaint; no restoration of obscured words asserted.
+- **p. 7:** printed editorial imprint I. S. Prokhanov; large visibly blank area in the right column below the continuation marker, with show-through of reverse-side printing. No legible explicit censorship attribution in this area. Physical blank space is confirmed; MASTER's interpretation that censorship removed material is **not established by the blank space alone**. Do not label it as a proven censor's cut without another edition, editor's note or archival evidence.
+- **p. 8:** advertisements of publishing partnership «Радуга», Стремянная 11, books and hymn collections; offers annual sets of «Христианин» for 1908–1910, 1 rouble 50 kopecks per set compared with subscription price 3 roubles 60 kopecks. Useful direct evidence of periodical/book distribution, not proof of actual sales or circulation.
 
 ### Current status
 
-- canonical binary receipt: CLOSED;
-- SHA256: CLOSED;
-- issue/date identity: CLOSED;
-- censorship interpretation: MASTER-ANNOTATED, needs exact page visual recheck before publication caption;
-- rights/provenance: OPEN;
-- page visual verification for white censorship strips: OPEN;
-- derivative/web path: OPEN.
-
-Exact Drive metadata search by filename did not surface the byte through the current connector, so do not claim a newly fetched binary. MASTER receipt remains the authority for present archive state.
+- canonical binary receipt and SHA256: CLOSED, independently reverified;
+- issue/date identity and eight-page visual inspection: CLOSED;
+- exact page locators pp. 1, 5, 7, 8: VERIFIED for the specific observations above;
+- censorship interpretation: MASTER-ANNOTATED / EVIDENCE_HOLD (blank area physically verified, causal attribution not established);
+- rights/provenance: OPEN; derivative/web path: OPEN; publication eligibility unchanged.
+- Earlier connector filename-search limitation: SUPERSEDED by the exact-ID receipt; no new permanent Drive copy created.
 
 ---
 
@@ -225,13 +232,13 @@ Until this closes, do not generate a fake `Беседа` cover or reconstruct th
 - derivative: OPEN.
 
 **Object B — `Утренняя звезда`, 30 Oct 1915**
-- bytes: YES by MASTER receipt;
-- SHA256: YES;
-- censorship page concept: STRONG, exact page visual recheck OPEN;
+- bytes: YES, W23 independent exact-ID receipt;
+- SHA256: YES, independently reproduced;
+- page visual: YES, all eight images opened; targeted pp. 1, 5, 7, 8; censorship causation remains HOLD;
 - rights: OPEN;
 - derivative: OPEN.
 
-This means Chapter 8 is **closer to the minimum 2-object media gate than originally assessed**. It is still not BOOK-READY because rights, exact page visual checks and derivatives/media-ledger publication fields remain open.
+This means Chapter 8 is **closer to the minimum 2-object media gate than originally assessed**. It is still not BOOK-READY because rights, provenance, causal attribution of the blank area and derivatives/media-ledger publication fields remain open.
 
 ### External-but-not-local priority
 
@@ -245,11 +252,11 @@ This means Chapter 8 is **closer to the minimum 2-object media gate than origina
 ## 9. Immediate production queue
 
 1. MASTER row75: page 1 / printed parent and page 10 / editorial signature verified by the attributed PR #547 reviewer. Select any further illustration only against its exact visual locator; rights and provenance remain open.
-2. Re-open / render MASTER row97 `Утренняя звезда` 30.10.1915 and visually identify censorship strips/page numbers.
+2. MASTER row97: binary/hash and all page images checked W23; use pp. 1, 5, 7, 8 for the bounded observations above. Do not infer censor removal from the blank column; pursue an independent causal witness only if the caption requires it.
 3. Resolve rights/provenance for both local objects.
 4. Receive/hash official `Христианин` 1906 №1.
 5. Receive/hash `Баптист` 1907 №1.
 6. Receive/hash `Утренняя звезда` 1910 №4.
 7. Continue hardest acquisition: `Беседа`.
 
-Current verdict: **NARRATIVE DRAFT-READY / TWO STRONG LOCAL MEDIA RECEIPTS IDENTIFIED / RIGHTS + PAGE VISUAL + DERIVATIVES OPEN / NOT BOOK-READY**.
+Current verdict: **NARRATIVE DRAFT-READY / TWO STRONG LOCAL MEDIA RECEIPTS WITH PAGE CONTROL / RIGHTS + PROVENANCE + DERIVATIVES OPEN / NOT BOOK-READY**.
