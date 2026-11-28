@@ -184,6 +184,19 @@ Therefore target `Утренняя звезда` 1910 №4 remains:
 
 Reader wording: «На рубеже 1909–1910 годов Проханов начал выпускать еженедельную „Утреннюю звезду“». Note with RNB p.407/entry 5219 and memoir p.66: likely old/new-style equivalence, not separate issue proof. Next bounded action: original RNB №1, 19.12.1909, Газ.1-П/1-217. No original newspaper page, full object, new checksum or rights claimed.
 
+
+### W32 — directly inspected 1910 first-page witness, №41
+
+[Commons archival image, №41](https://commons.wikimedia.org/wiki/File:Газета_Утренняя_Звезда_1910-41.png), permanent revision 855280429: original PNG 3299 × 5109, 29 MB, uploaded 15 July 2017, author unknown; Commons PD-old-70 and PD-US tags, repository's rights gate unchanged. Direct visual read of 1920 × 2973 derivative, not OCR, not whole issue. [Exact image route](https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Газета_Утренняя_Звезда_1910-41.png/1920px-Газета_Утренняя_Звезда_1910-41.png).
+
+- Masthead: «Утренняя звезда», №41, first year, St Petersburg, Friday 8 October 1910 (printed date), weekly on Fridays, separate number 5 kopecks. Self-description concerns the religious awakening of the Russian people; the five named domains are religion, politics, public life, science and literature. This is a direct visual confirmation for that number, not an extrapolation to the inaugural issue. Do not infer the first issue date solely from issue numbering or weekday.
+- Left column: editorial communications directed to I. S. Prokhanov, Chernyshev lane, house 12, flat 53; subscription money and advertisements routed through publishing partnership Raduga, Voznesensky prospect, house 40 (also repeated in the foot-of-page banner). Petersburg subscription 2 r. 50 k. per year; separate regional tariff is printed. Do not equate advertised prices with actual revenue or subscriber numbers.
+- Actual juxtaposition of articles: «О безпорядкахъ въ семинаріяхъ» addresses students and religious education; «При дверяхъ» offers spiritual exhortation; «За недѣлю» presents domestic and foreign news, including reports on the imperial funds and the monarchy in England. Reader notices address subscription arrears and correspondence with the office. Exact column headers and placement are visible; no claim to have fully transcribed these articles or to verify the news reports themselves.
+- Dossier 80 was reread: the already recorded direct routes for [1910 №1](https://baptist.org.ru/_service/33957/download/id/246321/name/Utrennyaya-zvezda%2B1910_1.pdf) returned oversized response (28,331,217 B), [№4](https://baptist.org.ru/_service/33957/download/id/295211/name/Utrennyaya-zvezda%2B1910_4.pdf) inaccessible. No new acquisition, checksum, complete issue or №4 article reading. The external visual evidence for №41 is separate from the still-open №4 target and first issue RNB locator. No independence of this image from official series copies established.
+- Reader-ready evidence: «Осенью 1910 года „Утренняя звезда“ уже выходила каждую пятницу. На первой полосе номера от 8 октября рядом с духовным наставлением обсуждались события в семинариях и новости политики, а в заголовке газета прямо объявляла своим предметом не только религию, но и общественную жизнь, науку и литературу. Статьи направляли в редакцию Проханова, а подписку обслуживало товарищество „Радуга“». Cite first page №41; do not identify it as №4 or use this as a witness to the exact opening date.
+
+External first-page visual locator for №41 VERIFIED; canonical full receipt, issue №1/№4 page controls, provenance, item-level rights and publication HOLD remain. STOP_DISCOVERY on the same legacy PDF routes absent a genuinely different access path.
+
 ---
 
 ## 6. `Утренняя звезда`, 1915 — verified wartime press and legal/community evidence
